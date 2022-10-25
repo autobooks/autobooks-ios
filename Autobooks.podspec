@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.license = 'Apache2'
   s.summary = 'Autobooks SDK for iOS'
   s.homepage = 'https://github.com/autobooks/autobooks-ios'
-  s.authors = { 'Autobooks' => 'helpdesk@autobooks.co' }
+  s.authors = { 'Autobooks' => 'developer@autobooks.co' }
   s.source = { :git => 'https://github.com/autobooks/autobooks-ios.git', :tag => s.version }
   s.documentation_url = 'https://autobooks.github.io/autobooks-ios/documentation/autobooks'
 
