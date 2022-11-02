@@ -105,8 +105,7 @@ extension Stub.Payload {
 
 /// Type encapsulating a set of stubbed responses for Autobooks API calls.
 ///
-/// - Note: You cannot create instances of this type. Instead, use one of the preconfigured instances available as
-///         static values.
+/// - Note: You cannot create instances of this type. Instead, use one of the preconfigured static values.
 ///
 public struct Stubs: Equatable {
     private var stubs: [Resource.ID: Stub] = [:]
@@ -220,7 +219,9 @@ extension Stubs {
     /// All requests succeed.
     public static var successes: Stubs {
         let statusResponse = Status.enabled
-        let enabledResponse = LoginResponse(status: .success(.init(accessToken: "accessToken", status: .enabled)))
+        let enabledResponse = LoginResponse(status: .success(.stub),
+                                            invoicingURL: .invoicing,
+                                            paymentFormURL: .paymentForm)
         let paymentTokenResponse = PaymentTokenResponse(token: "paymentToken")
 
         let transaction = Transaction.stub
@@ -263,7 +264,9 @@ extension Stubs {
     /// All requests fail once before succeeding.
     public static var failures: Stubs {
         let statusResponse = Status.enabled
-        let enabledResponse = LoginResponse(status: .success(.init(accessToken: "accessToken", status: .enabled)))
+        let enabledResponse = LoginResponse(status: .success(.stub),
+                                            invoicingURL: .invoicing,
+                                            paymentFormURL: .paymentForm)
         let paymentTokenResponse = PaymentTokenResponse(token: "paymentToken")
 
         let transaction = Transaction.stub
@@ -307,11 +310,17 @@ extension Stubs {
     public static func webPrompts(loadedWebURL: URL, needsEnrollmentCallback: URL, hasMissingInfoCallback: URL) -> Stubs {
         let statusResponse = Status.enabled
         let needsEnrollmentResponse = LoginResponse(status: .needsEnrollment(.init(callbackURL: needsEnrollmentCallback,
-                                                                                   url: loadedWebURL)))
+                                                                                   url: loadedWebURL)),
+                                                    invoicingURL: .invoicing,
+                                                    paymentFormURL: .paymentForm)
         let hasMissingInfoResponse = LoginResponse(status: .success(.init(accessToken: "accessToken",
                                                                           status: .hasMissingInfo(.init(callbackURL: hasMissingInfoCallback,
-                                                                                                        url: loadedWebURL)))))
-        let enabledResponse = LoginResponse(status: .success(.init(accessToken: "accessToken", status: .enabled)))
+                                                                                                        url: loadedWebURL)))),
+                                                   invoicingURL: .invoicing,
+                                                   paymentFormURL: .paymentForm)
+        let enabledResponse = LoginResponse(status: .success(.stub),
+                                            invoicingURL: .invoicing,
+                                            paymentFormURL: .paymentForm)
         let paymentTokenResponse = PaymentTokenResponse(token: "paymentToken")
         let transaction = Transaction.stub
         let transactionResponse = TransactionResponse(result: .success(transaction))
@@ -353,4 +362,13 @@ extension Stubs {
 
         return stubs
     }
+}
+
+extension LoginResponse.LoginStatus.Success {
+    static let stub = Self(accessToken: "accessToken", status: .enabled)
+}
+
+extension URL {
+    static let paymentForm = URL(string: "https://app.autobooks.co/payment-form/default?launchmode=PaymentForm&viewmode=PaymentForm")!
+    static let invoicing = URL(string: "https://app.autobooks.co/invoicing/invoices?launchmode=CreateInvoice&viewmode=Invoicing")!
 }

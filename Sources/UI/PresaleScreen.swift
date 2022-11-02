@@ -2,10 +2,10 @@ import SwiftUI
 
 @available(iOS 15.4, *)
 struct PresaleScreen: View {
-    @StateObject private var store: RootStore
+    @StateObject private var store: TapToPayStore
     @State private var showValidity = false
 
-    init(store: RootStore) {
+    init(store: TapToPayStore) {
         _store = StateObject(wrappedValue: store)
     }
 

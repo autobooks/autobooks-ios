@@ -3,7 +3,7 @@
 import Combine
 import XCTest
 
-@available(iOS 15.4, *)
+@available(iOS 15.0, *)
 @MainActor
 final class StoreTests: XCTestCase {
     struct State: Equatable {
@@ -81,6 +81,7 @@ final class StoreTests: XCTestCase {
             }
             return values
         }
+
         store.send(.append(newValue))
         let values = await waiter.value
 
@@ -102,6 +103,7 @@ final class StoreTests: XCTestCase {
             }
             return values
         }
+
         store.send(.appendAsync(newValue))
         let values = await waiter.value
 
@@ -124,6 +126,7 @@ final class StoreTests: XCTestCase {
             }
             return values
         }
+
         store.send(.appendMany)
         let values = await waiter.value
 
@@ -134,7 +137,7 @@ final class StoreTests: XCTestCase {
     func testThatStoreCanScopeToChildForSyncEffects() async {
         // Given
         let store = Store(initialState: State(), reducer: reducer, environment: Environment())
-        let child = store.scope(state: \.childState, action: Action.child)
+        let child = store.scope(state: \.childState, action: Action.child, environment: { $0 })
         let newString = "newString"
 
         // When
@@ -146,10 +149,71 @@ final class StoreTests: XCTestCase {
             }
             return values
         }
+
         child.send(.updateString(newString))
         let values = await waiter.value
 
         // Then
         XCTAssertEqual(values, [.init(isLoading: false, someString: newString)])
+    }
+
+    func testThatChildStoresSeeActionsFromParent() async {
+        // Given
+        let store = Store(initialState: State(), reducer: reducer, environment: Environment())
+        let child = store.scope(state: \.childState, action: Action.child, environment: { $0 })
+        let newString = "newString"
+
+        // When
+        let waiter = Task { () -> [ChildState] in
+            var values: [ChildState] = []
+            for await value in child.$state.values {
+                values.append(value)
+                break
+            }
+            return values
+        }
+
+        store.send(.child(.updateString(newString)))
+        let values = await waiter.value
+
+        // Then
+        XCTAssertEqual(values, [.init(isLoading: false, someString: newString)])
+    }
+
+    func testThatScopedStoresAreNotUpdatedForUnscopedState() async {
+        // Given
+        let store = Store(initialState: State(), reducer: reducer, environment: Environment())
+        let childStore = store.scope(state: \.childState, action: Action.child, environment: { $0 })
+        let newInt = 1
+
+        // When
+        let parentWaiter = Task { () -> [Int] in
+            var ints: [Int] = []
+            for await value in store.$state.values.map(\.ints) {
+                ints = value
+                break
+            }
+
+            return ints
+        }
+
+        let childWaiter = Task { () -> [ChildState] in
+            var values: [ChildState] = []
+            for await value in childStore.$state.values {
+                values.append(value)
+                break
+            }
+            return values
+        }
+
+        store.send(.append(1))
+        async let childValues = childWaiter.value
+        async let parentValues = parentWaiter.value
+
+        let (child, parent) = await (childValues, parentValues)
+
+        // Then
+        XCTAssertEqual(parent, [newInt])
+        XCTAssertEqual(child, [.init(isLoading: false, someString: "string")])
     }
 }

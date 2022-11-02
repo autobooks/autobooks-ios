@@ -6,12 +6,12 @@ struct TransactionSummary: View {
         case success, details
     }
 
-    @StateObject private var store: RootStore
+    @StateObject private var store: TapToPayStore
 
-    private let transaction: KeyPath<RootState, Transaction?>
+    private let transaction: KeyPath<TapToPay.State, Transaction?>
     private let configuration: Configuration
 
-    init(store: RootStore, transaction: KeyPath<RootState, Transaction?>, configuration: Configuration) {
+    init(store: TapToPayStore, transaction: KeyPath<TapToPay.State, Transaction?>, configuration: Configuration) {
         _store = StateObject(wrappedValue: store)
         self.transaction = transaction
         self.configuration = configuration
@@ -134,13 +134,13 @@ struct TransactionProperties: View {
 
 @available(iOS 15.4, *)
 struct ReceiptInput: View {
-    @StateObject private var store: RootStore
+    @StateObject private var store: TapToPayStore
     @State private var showValidation = false
     @State private var isPresentingRefundAlert = false
 
     private let configuration: TransactionSummary.Configuration
 
-    init(store: RootStore, configuration: TransactionSummary.Configuration) {
+    init(store: TapToPayStore, configuration: TransactionSummary.Configuration) {
         _store = StateObject(wrappedValue: store)
         self.configuration = configuration
     }

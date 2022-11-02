@@ -57,7 +57,7 @@ extension Result {
         return failure
     }
 
-    @available(iOS 13, *)
+    @available(iOS 13.0, *)
     init(_ work: () async throws -> Success) async where Failure == Error {
         do {
             let value = try await work()
@@ -67,7 +67,7 @@ extension Result {
         }
     }
 
-    @available(iOS 13, *)
+    @available(iOS 13.0, *)
     func flatMap<NewSuccess>(_ transform: (Success) async -> Result<NewSuccess, Failure>) async -> Result<NewSuccess, Failure> {
         switch self {
         case let .success(value):
@@ -77,7 +77,7 @@ extension Result {
         }
     }
 
-    @available(iOS 13, *)
+    @available(iOS 13.0, *)
     func then(perform: (Self) async -> Void) async -> Self {
         await perform(self)
 
@@ -98,13 +98,13 @@ extension Result {
 
 extension UIApplication {
     var activeRootViewController: UIViewController? {
-        if #available(iOS 15, *) {
+        if #available(iOS 15.0, *) {
             return connectedScenes
                 .compactMap { $0 as? UIWindowScene }
                 .first { $0.activationState == .foregroundActive }?
                 .keyWindow?
                 .rootViewController
-        } else if #available(iOS 13, *) {
+        } else if #available(iOS 13.0, *) {
             return connectedScenes
                 .compactMap { $0 as? UIWindowScene }
                 .first { $0.activationState == .foregroundActive }?
@@ -136,8 +136,23 @@ extension UIDevice {
         Int(modelIdentifier.drop { !$0.isNumber }.prefix { $0.isNumber }) ?? 0
     }
 
+    var minorModelNumber: Int {
+        Int(modelIdentifier.drop { $0 != "," }.prefix { $0.isNumber }) ?? 0
+    }
+
     var supportsTapToPay: Bool {
-        if #available(iOS 15.4, *), userInterfaceIdiom == .phone, modelNumber > 11 {
+        if #available(iOS 15.4, *),
+           userInterfaceIdiom == .phone,
+           modelNumber >= 11,
+           !(modelNumber == 11 && minorModelNumber == 8) { // iPhone XR doesn't support Tap to Pay.
+            return true
+        } else {
+            return false
+        }
+    }
+
+    var supports13OrLater: Bool {
+        if userInterfaceIdiom == .phone, modelNumber >= 8 {
             return true
         } else {
             return false

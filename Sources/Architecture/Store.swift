@@ -1,8 +1,8 @@
 import Combine
 import SwiftUI
 
-@available(iOS 15.4, *)
 @MainActor
+@available(iOS 14.0, *)
 final class Store<State: Equatable, Action, Environment>: ObservableObject {
     @Published var state: State
     @Published private var rawState: State
@@ -18,17 +18,20 @@ final class Store<State: Equatable, Action, Environment>: ObservableObject {
         $rawState.removeDuplicates().assign(to: &$state)
     }
 
-    func scope<ChildState: Equatable, ChildAction>(state toChildState: @escaping (State) -> ChildState,
-                                                   action fromChildAction: @escaping (ChildAction) -> Action) -> Store<ChildState, ChildAction, Environment> {
-        let childReducer = Reducer<ChildState, ChildAction, Environment> { [self] childState, childAction, _ in
+    func scope<ChildState: Equatable, ChildAction, ChildEnvironment>(
+        state toChildState: @escaping (State) -> ChildState,
+        action fromChildAction: @escaping (ChildAction) -> Action,
+        environment toChildEnvironment: (Environment) -> ChildEnvironment
+    ) -> Store<ChildState, ChildAction, ChildEnvironment> {
+        let childReducer = Reducer<ChildState, ChildAction, ChildEnvironment> { [self] childState, childAction, _ in
             send(fromChildAction(childAction))
             childState = toChildState(state)
             return nil
         }
-        let child = Store<ChildState, ChildAction, Environment>(initialState: toChildState(state),
-                                                                reducer: childReducer,
-                                                                environment: environment)
-        $state.map(toChildState).assign(to: &child.$rawState)
+        let child = Store<ChildState, ChildAction, ChildEnvironment>(initialState: toChildState(state),
+                                                                     reducer: childReducer,
+                                                                     environment: toChildEnvironment(environment))
+        $state.map(toChildState).removeDuplicates().assign(to: &child.$rawState)
 
         return child
     }
@@ -46,16 +49,19 @@ final class Store<State: Equatable, Action, Environment>: ObservableObject {
         }
     }
 
+    @available(iOS 15.0, *)
     func send(_ action: Action, while predicate: @escaping (State) -> Bool) async {
         send(action)
         await yield(while: predicate)
     }
 
+    @available(iOS 15.0, *)
     func send(_ action: Action, animation: Animation?, while predicate: @escaping (State) -> Bool) async {
         send(action, animation: animation)
         await yield(while: predicate)
     }
 
+    @available(iOS 15.0, *)
     func yield(while predicate: @escaping (State) -> Bool) async {
         _ = await $state.values.first { !predicate($0) }
     }

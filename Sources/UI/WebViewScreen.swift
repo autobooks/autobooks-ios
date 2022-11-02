@@ -2,7 +2,7 @@ import SwiftUI
 
 @available(iOS 15.4, *)
 struct WebViewScreen: View {
-    let store: RootStore
+    let store: TapToPayStore
     let state: Navigation.Configuration.WebViewState
 
     var body: some View {

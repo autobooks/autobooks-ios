@@ -3,8 +3,8 @@ import SwiftUI
 import UIKit
 
 @available(iOS 15.4, *)
-final class SupportedFlowController: UINavigationController {
-    private let store: RootStore
+final class TapToPayFlowController: UINavigationController {
+    private let store: TapToPayStore
     private var observationToken: Cancellable?
     private var configuration: Autobooks.Configuration
 
@@ -12,7 +12,7 @@ final class SupportedFlowController: UINavigationController {
         viewControllers.compactMap { ($0 as? NavigationRepresentable)?.configuration }
     }
 
-    init(store: RootStore, configuration: Autobooks.Configuration) {
+    init(store: TapToPayStore, configuration: Autobooks.Configuration) {
         self.store = store
         self.configuration = configuration
 
@@ -118,7 +118,7 @@ final class SupportedFlowController: UINavigationController {
 }
 
 @available(iOS 15.4, *)
-extension SupportedFlowController: UIAdaptivePresentationControllerDelegate {
+extension TapToPayFlowController: UIAdaptivePresentationControllerDelegate {
     func presentationControllerShouldDismiss(_ presentationController: UIPresentationController) -> Bool {
         !(store.state.receiptInputVisibility == .visible(.loading))
     }
@@ -130,7 +130,7 @@ extension SupportedFlowController: UIAdaptivePresentationControllerDelegate {
 }
 
 @available(iOS 15.4, *)
-extension SupportedFlowController: UINavigationControllerDelegate {
+extension TapToPayFlowController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
         // If our navigation state is out of sync with the current controllers the user has manually navigated or swiped back.
         // Bring the states back into sync by synchronizing with the RootState.
@@ -200,18 +200,29 @@ enum Navigation: Equatable {
             }
         }
 
-        func screenController(using store: RootStore, configuration: Autobooks.Configuration) -> UIViewController {
-            ScreenViewController(navConfiguration: self) {
+        @MainActor
+        func screenController(using store: TapToPayStore, configuration: Autobooks.Configuration) -> UIViewController {
+            ScreenViewController(configuration: self) {
                 Group {
                     switch self {
                     case .start:
                         StartingScreen(store: store)
                     case .loading:
-                        LoadingScreen(store: store)
+                        LoadingScreen(
+                            store: store.scope(
+                                state: { parentState in
+                                    .init(initialLoad: parentState.initialLoad)
+                                },
+                                action: { childAction in
+                                    childAction.action
+                                },
+                                environment: { _ in .init() }
+                            )
+                        )
                     case let .webview(state):
                         WebViewScreen(store: store, state: state)
                     case .notEnabled:
-                        NotEnabledScreen(store: store)
+                        NotEnabledScreen()
                     case .presale:
                         PresaleScreen(store: store)
                     case .tapToPay:
@@ -231,7 +242,7 @@ enum Navigation: Equatable {
 }
 
 @available(iOS 15.4, *)
-final class ScreenViewController<Screen: View>: UIHostingController<Screen>, NavigationRepresentable {
+private final class ScreenViewController<Screen: View>: WorkingHostingController<Screen>, NavigationRepresentable {
     override var navigationItem: UINavigationItem {
         let item = super.navigationItem
         item.title = configuration.title
@@ -247,8 +258,8 @@ final class ScreenViewController<Screen: View>: UIHostingController<Screen>, Nav
 
     let configuration: Navigation.Configuration
 
-    init(navConfiguration: Navigation.Configuration, @ViewBuilder screen: () -> Screen) {
-        configuration = navConfiguration
+    init(configuration: Navigation.Configuration, @ViewBuilder screen: () -> Screen) {
+        self.configuration = configuration
 
         super.init(rootView: screen())
     }

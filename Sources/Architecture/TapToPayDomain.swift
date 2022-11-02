@@ -6,146 +6,106 @@ import ProximityReader
 #endif
 
 @available(iOS 15.4, *)
-typealias RootStore = Store<RootState, RootAction, RootEnvironment>
+typealias TapToPayStore = Store<TapToPay.State, TapToPay.Action, TapToPay.Environment>
 
 @available(iOS 15.4, *)
-struct RootState: Equatable {
-    enum WaitingWebView: Equatable {
-        case needEnrollment(Navigation.Configuration.WebViewState),
-             hasMissingInfo(Navigation.Configuration.WebViewState)
+struct TapToPay {
+    struct State: Equatable {
+        enum WaitingWebView: Equatable {
+            case needEnrollment(Navigation.Configuration.WebViewState),
+                 hasMissingInfo(Navigation.Configuration.WebViewState)
 
-        var state: Navigation.Configuration.WebViewState {
-            switch self {
-            case let .needEnrollment(state), let .hasMissingInfo(state):
-                return state
+            var state: Navigation.Configuration.WebViewState {
+                switch self {
+                case let .needEnrollment(state), let .hasMissingInfo(state):
+                    return state
+                }
             }
         }
-    }
 
-    enum ReceiptInputVisibility: Equatable {
-        enum VisibleState: Equatable {
-            case idle, loading, success, failure
+        enum ReceiptInputVisibility: Equatable {
+            enum VisibleState: Equatable {
+                case idle, loading, success, failure
+            }
+
+            case visible(VisibleState)
+            case hidden
         }
 
-        case visible(VisibleState)
-        case hidden
-    }
-
-    enum InitialLoad: Equatable {
-        case idle
-        case loading(LoadingState)
-        case finished
-
-        mutating func transition(to state: InitialLoad) {
-            guard self != .finished else { return }
-
-            self = state
+        var navigation: Navigation
+        var initialLoad: InitialLoad<Action> = .idle
+        var statusState = Loadable<Status, APIError>.initialLoad(.idle)
+        var loginState = Loadable<LoginResponse, APIError>.initialLoad(.idle)
+        var paymentTokenState = Loadable<PaymentTokenResponse, APIError>.initialLoad(.idle)
+        var waitingWebView: WaitingWebView?
+        var paymentSessionPreparation: PaymentSession.PreparationEvent?
+        var paymentAmount = PaymentAmount()
+        var tapToPayError: PaymentSession.ReadError?
+        var isTransactionLoading = false
+        var transactionResult: Result<TransactionResponse, APIError>?
+        var emailInput = EmailInput()
+        var receiptInputVisibility: ReceiptInputVisibility = .visible(.idle)
+        var hasSentTransactionReceipt: Bool {
+            (transactionResult?.success?.transaction?.lastReceiptEmail ??
+                selectedTransaction?.lastReceiptEmail) != nil
         }
 
-        struct LoadingState: Equatable {
-            static func login(isFailure: Bool = false) -> LoadingState {
-                .init(message: "Logging in...", retryAction: .performLogin, isFailure: isFailure)
-            }
-
-            static func fetchingPaymentToken(isFailure: Bool = false) -> LoadingState {
-                .init(message: "Fetching payment token...", retryAction: .fetchReaderToken(id: nil), isFailure: isFailure)
-            }
-
-            static func fetchingStatus(isFailure: Bool = false) -> LoadingState {
-                .init(message: "Fetching status...", retryAction: .fetchStatus, isFailure: isFailure)
-            }
-
-            static func preparingReader(progress: Int, isFailure: Bool = false) -> LoadingState {
-                .init(message: "Preparing card reader... \n\(progress)%", retryAction: .prepareTapToPay, isFailure: isFailure)
-            }
-
-            let message: String
-            let retryAction: RootAction
-            let isFailure: Bool
-        }
+        var transactionsState = Loadable<[Transaction], APIError>.initialLoad(.idle)
+        var selectedTransaction: Transaction?
+        var cancelTransactionState = Loadable<Transaction, APIError>.initialLoad(.idle)
+        var refundTransactionState = Loadable<Transaction, APIError>.initialLoad(.idle)
     }
 
-    var navigation: Navigation
-    var initialLoad: InitialLoad = .idle
-    var statusState = Loadable<Status, APIError>.initialLoad(.idle)
-    var loginState = Loadable<LoginResponse, APIError>.initialLoad(.idle)
-    var paymentTokenState = Loadable<PaymentTokenResponse, APIError>.initialLoad(.idle)
-    var waitingWebView: WaitingWebView?
-    var paymentSessionPreparation: PaymentSession.PreparationEvent?
-    var paymentAmount = PaymentAmount()
-    var tapToPayError: PaymentSession.ReadError?
-    var isTransactionLoading = false
-    var transactionResult: Result<TransactionResponse, APIError>?
-    var emailInput = EmailInput()
-    var receiptInputVisibility: ReceiptInputVisibility = .visible(.idle)
-    var hasSentTransactionReceipt: Bool {
-        (transactionResult?.success?.transaction?.lastReceiptEmail ??
-            selectedTransaction?.lastReceiptEmail) != nil
+    enum Action: Equatable {
+        case start
+        case performLogin
+        case receiveLogin(Result<LoginResponse, APIError>)
+        case fetchReaderToken(id: String?)
+        case receiveReaderToken(Result<PaymentTokenResponse, APIError>)
+        case fetchStatus
+        case receiveStatus(Result<Status, APIError>)
+        case prepareTapToPay
+        case receiveTapToPayPreparationEvent(PaymentSession.PreparationEvent)
+        case readerReady
+        case paymentInput(PaymentAmount)
+        case startTransaction
+        case retryTransaction
+        case tapToPayEvent(PaymentSession.ReadEvent)
+        case tapToPayFailed(PaymentSession.ReadError)
+        case tapToPayComplete(PaymentSession.ReadResult)
+        case transactionComplete(Result<TransactionResponse, APIError>)
+        case makeAnotherPayment
+        case closeTapToPay
+        case emailInput(EmailInput)
+        case sendReceiptRequest
+        case receiveReceiptResponse(Result<Transaction, APIError>)
+        case hideReceiptInput
+        case makeReceiptInputIdle
+        case showTransactions
+        case synchronizeNavigation(Navigation)
+        case fetchTransactions
+        case receiveTransactionsResponse(Result<[Transaction], APIError>)
+        case cancelTransaction(id: String)
+        case receiveCancelTransactionResponse(Result<Transaction, APIError>)
+        case refundTransaction(id: String)
+        case receiveRefundTransactionResponse(Result<Transaction, APIError>)
+        case selectTransaction(Transaction)
+        case resetSelectedTransaction
+        case updateSelectedTransaction(Transaction)
+        case openURL(URL)
+        case handleCallbackURL(URL)
     }
 
-    var transactionsState = Loadable<[Transaction], APIError>.initialLoad(.idle)
-    var selectedTransaction: Transaction?
-    var cancelTransactionState = Loadable<Transaction, APIError>.initialLoad(.idle)
-    var refundTransactionState = Loadable<Transaction, APIError>.initialLoad(.idle)
-}
+    struct Environment {
+        let api: AutobooksAPI
+        let defaults: Defaults
+        let paymentSession: PaymentSession
+        let dismiss: () -> Void
+        let openURL: (URL) -> Void
+    }
 
-@available(iOS 15.4, *)
-enum RootAction: Equatable {
-    case start
-    case performLogin
-    case receiveLogin(Result<LoginResponse, APIError>)
-    case fetchReaderToken(id: String?)
-    case receiveReaderToken(Result<PaymentTokenResponse, APIError>)
-    case fetchStatus
-    case receiveStatus(Result<Status, APIError>)
-    case prepareTapToPay
-    case receiveTapToPayPreparationEvent(PaymentSession.PreparationEvent)
-    case readerReady
-    case paymentInput(PaymentAmount)
-    case startTransaction
-    case retryTransaction
-    case tapToPayEvent(PaymentSession.ReadEvent)
-    case tapToPayFailed(PaymentSession.ReadError)
-    case tapToPayComplete(PaymentSession.ReadResult)
-    case transactionComplete(Result<TransactionResponse, APIError>)
-    case makeAnotherPayment
-    case closeTapToPay
-    case emailInput(EmailInput)
-    case sendReceiptRequest
-    case receiveReceiptResponse(Result<Transaction, APIError>)
-    case hideReceiptInput
-    case makeReceiptInputIdle
-    case showTransactions
-    case synchronizeNavigation(Navigation)
-    case fetchTransactions
-    case receiveTransactionsResponse(Result<[Transaction], APIError>)
-    case cancelTransaction(id: String)
-    case receiveCancelTransactionResponse(Result<Transaction, APIError>)
-    case refundTransaction(id: String)
-    case receiveRefundTransactionResponse(Result<Transaction, APIError>)
-    case selectTransaction(Transaction)
-    case resetSelectedTransaction
-    case updateSelectedTransaction(Transaction)
-    case openURL(URL)
-    case handleCallbackURL(URL)
-}
-
-@available(iOS 15.4, *)
-struct RootEnvironment {
-    let api: AutobooksAPI
-    let defaults: Defaults
-    let paymentSession: PaymentSession
-    let dismiss: () -> Void
-    let openURL: (URL) -> Void
-}
-
-@available(iOS 15.4, *)
-typealias RootReducer = Reducer<RootState, RootAction, RootEnvironment>
-
-@available(iOS 15.4, *)
-extension RootReducer {
-    static var `default`: RootReducer {
-        Self { state, action, environment in
+    var reducer: Reducer<State, Action, Environment> {
+        .init { state, action, environment in
             switch action {
             case .start:
                 environment.defaults.isPreviouslyLaunched = true
@@ -338,7 +298,7 @@ extension RootReducer {
                 state.emailInput = EmailInput()
                 state.receiptInputVisibility = .visible(.success)
 
-                let action: RootAction
+                let action: TapToPay.Action
                 if state.selectedTransaction != nil {
                     state.selectedTransaction = value
                     action = .makeReceiptInputIdle
@@ -384,7 +344,7 @@ extension RootReducer {
                 state.navigation = .navigate([.loading])
                 state.waitingWebView = nil
 
-                let action: RootAction
+                let action: TapToPay.Action
                 switch waitingWebView {
                 case .needEnrollment:
                     action = .performLogin
@@ -467,22 +427,11 @@ extension RootReducer {
 }
 
 @available(iOS 15.4, *)
-enum AppError {
+enum TapToPayError {
     case api(APIError)
     case reader(PaymentSession.ReaderError)
     case session(PaymentSession.ReadError)
 }
 
 @available(iOS 15.4, *)
-extension AppError: Equatable {
-    static func ==(lhs: Self, rhs: Self) -> Bool {
-        switch (lhs, rhs) {
-        case let (.api(right), .api(left)):
-            return right == left
-        case let (.session(right), .session(left)):
-            return right == left
-        default:
-            return false
-        }
-    }
-}
+extension TapToPayError: Equatable {}
