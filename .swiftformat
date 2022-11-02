@@ -10,7 +10,7 @@
 
 # format options
 
---closingparen same-line
+--closingparen balanced
 --commas inline
 --comments indent
 --decimalgrouping 3,5
@@ -26,4 +26,4 @@
 --stripunusedargs closure-only
 --wraparguments preserve
 --wrapcollections preserve
---wrapparameters after-first
+--wrapparameters preserve

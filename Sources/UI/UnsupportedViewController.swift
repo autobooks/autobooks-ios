@@ -2,18 +2,41 @@ import SwiftUI
 import UIKit
 
 final class UnsupportedViewController: UIViewController {
-    private var imageView = UIImageView()
-    private var titleLabel = UILabel()
-    private var messageLabel = UILabel()
+    enum LaunchSource {
+        case tapToPay, webFeature
+    }
 
-    var labels: (title: String, message: String) {
-        if UIDevice.current.supportsTapToPay { // iPhone XS or later.
-            return (title: "Your iOS version isn't supported",
-                    message: "You can't use the card reader until you update it")
-        } else {
-            return (title: "Your device isn't supported",
-                    message: "This feature can only be used on an iPhone XS or newer")
+    private let imageView = UIImageView()
+    private let titleLabel = UILabel()
+    private let messageLabel = UILabel()
+
+    private var labels: (title: String, message: String) {
+        switch launchSource {
+        case .tapToPay:
+            if UIDevice.current.supportsTapToPay { // iPhone XS or later.
+                return (title: "Your iOS version isn't supported",
+                        message: "This feature can only be used on iOS 15.4 or newer")
+            } else {
+                return (title: "Your device isn't supported",
+                        message: "This feature can only be used on an iPhone XS or newer")
+            }
+        case .webFeature:
+            if UIDevice.current.supports13OrLater { // iPhone 6s or later.
+                return (title: "Your iOS version isn't supported",
+                        message: "This feature can only be used on iOS 14 or newer")
+            } else {
+                return (title: "Your device isn't supported",
+                        message: "This feature can only be used on an iPhone 6s or newer")
+            }
         }
+    }
+
+    private let launchSource: LaunchSource
+
+    init(launchSource: LaunchSource) {
+        self.launchSource = launchSource
+
+        super.init(nibName: nil, bundle: nil)
     }
 
     override func viewDidLoad() {
@@ -28,7 +51,7 @@ final class UnsupportedViewController: UIViewController {
         }
 
         let image = UIImage(named: "tapToPayIcon", in: .resources, compatibleWith: nil)
-        imageView = UIImageView(image: image)
+        imageView.image = image
         if #available(iOS 13, *) {
             imageView.tintColor = .label
         } else {
@@ -58,23 +81,30 @@ final class UnsupportedViewController: UIViewController {
     }
 
     func applyConstraints() {
-        NSLayoutConstraint.activate([imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-                                     imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 36),
-                                     imageView.widthAnchor.constraint(equalToConstant: 95),
-                                     imageView.heightAnchor.constraint(equalToConstant: 56),
+        NSLayoutConstraint.activate([
+            imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 36),
+            imageView.widthAnchor.constraint(equalToConstant: 95),
+            imageView.heightAnchor.constraint(equalToConstant: 56),
 
-                                     titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-                                     titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 100),
-                                     titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
-                                     titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
+            titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 100),
+            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
 
-                                     messageLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-                                     messageLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 48),
-                                     messageLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
-                                     messageLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10)])
+            messageLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            messageLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 48),
+            messageLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
+            messageLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10)
+        ])
     }
 
     @objc func dismissView(sender: UIButton) {
         dismiss(animated: true)
+    }
+
+    @available(*, unavailable)
+    @MainActor dynamic required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }

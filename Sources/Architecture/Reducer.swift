@@ -1,11 +1,11 @@
 import SwiftUI
 
 /// Reducer signature when expressed as a closure.
-@available(iOS 15.4, *)
+@available(iOS 13.0, *)
 typealias ReducerClosure<State, Action, Environment> = @MainActor (inout State, Action, Environment) -> Effect<Action>?
 
 /// Type which reduces state and actions into mutations and optional effects.
-@available(iOS 15.4, *)
+@available(iOS 13.0, *)
 struct Reducer<State, Action, Environment> {
     /// Combine multiple `Reducer`s into a single instance.
     ///
@@ -45,7 +45,7 @@ struct Reducer<State, Action, Environment> {
 }
 
 /// Type encapsulating a unit of work which later returns an action back into a reducer.
-@available(iOS 15.4, *)
+@available(iOS 13.0, *)
 @MainActor
 final class Effect<Action> {
     typealias Operation = @MainActor (Sender<Action>) -> Void
@@ -105,7 +105,7 @@ final class Effect<Action> {
 
 /// Type encapsulating a connection between an action and a receiver. Allows the sending of multiple actions through the
 /// same connection.
-@available(iOS 15.4, *)
+@available(iOS 13.0, *)
 @MainActor
 struct Sender<Action> {
     let send: (Action) -> Void

@@ -47,16 +47,16 @@ There are only a few steps to integrate the Autobooks SDK with your banking app.
 
 Autobooks web features are bundled with the SDK using a simple presentation interface and requiring only a login token from the Autobooks SSO payload.
 
-To start the Autobooks Payment Form feature, provide the Autobooks SSO payload as a `String`:
+To start the Autobooks Payment Form feature, provide the Autobooks subscription key and SSO payload as `String`s:
 
 ```swift
-Autobooks.startPaymentForm(loginToken: <someLoginToken>)
+Autobooks.startPaymentForm(subscriptionKey: <subscriptionKey>, loginToken: <loginToken>)
 ```
 
 The Invoicing feature can be started similarly:
 
 ```swift
-Autobooks.startInvoicing(loginToken: <someLoginToken>)
+Autobooks.startInvoicing(subscriptionKey: <subscriptionKey>, loginToken: <someLoginToken>)
 ```
 
 ## Customizing the Autobooks Experience

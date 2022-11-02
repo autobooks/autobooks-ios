@@ -1,6 +1,6 @@
 import SwiftUI
 
-@available(iOS 15.0, *)
+@available(iOS 14.0, *)
 struct ActionButtonStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         ActionButton(configuration: configuration)
@@ -32,7 +32,7 @@ struct ActionButtonStyle: ButtonStyle {
     }
 }
 
-@available(iOS 15.0, *)
+@available(iOS 14.0, *)
 extension ButtonStyle where Self == ActionButtonStyle {
     static var action: ActionButtonStyle {
         ActionButtonStyle()

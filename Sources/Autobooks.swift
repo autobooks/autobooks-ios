@@ -10,12 +10,12 @@ public enum Autobooks {
         ///
         /// Current Defaults:
         ///  * `environment` = `.staging`
-        ///  * `primaryColor` = `.blue`
+        ///  * `primaryColor` = `.systemBlue`
         ///  * `responseProvider` = `.hybrid(.successes)`
         ///  * `shouldFallBackToPaymentForm` = `false`
         ///
         public static let `default` = Configuration(environment: .staging,
-                                                    primaryColor: .blue,
+                                                    primaryColor: .systemBlue,
                                                     responseProvider: .hybrid(.successes),
                                                     shouldFallBackToPaymentForm: false)
 
@@ -81,7 +81,7 @@ public enum Autobooks {
     }
 
     /// Current version of the Autobooks SDK.
-    public static let version = "0.1.0"
+    public static let version = "0.2.0"
 
     private static var handleURL: ((URL) -> Void)?
 
@@ -97,79 +97,61 @@ public enum Autobooks {
                                      configuration: Configuration = .default,
                                      loginProvider: @escaping @Sendable () async throws -> String) {
         if #available(iOS 15.4, *), PaymentSession.isSupported {
-            // Trampoline into the main actor, as we can't mark the Autobooks type @MainActor due to availability.
+            // Trampoline onto the main actor, as we can't mark the Autobooks type @MainActor due to availability.
             Task { @MainActor in
                 presentTapToPayController(subscriptionKey: subscriptionKey,
                                           configuration: configuration,
                                           loginProvider: loginProvider)
             }
         } else {
-            let rootController: UIViewController
-
             // When the device supports tap to pay, don't fallback despite the configuration so we can tell the user to
             // update their OS.
-            if configuration.shouldFallBackToPaymentForm, !UIDevice.current.supportsTapToPay {
-                rootController = WebFeatureViewController(feature: .paymentForm)
+            if #available(iOS 14.0, *), configuration.shouldFallBackToPaymentForm, !UIDevice.current.supportsTapToPay {
+                Task { @MainActor in
+                    // If we fail to get a login token, just proceed with an invalid one to trigger the login failure
+                    // screen.
+                    let loginToken = (try? await loginProvider()) ?? "invalidToken"
+                    startWebFeature(.paymentForm(sdkConfiguration: configuration),
+                                    subscriptionKey: subscriptionKey,
+                                    loginToken: loginToken,
+                                    configuration: configuration)
+                }
             } else {
-                rootController = UnsupportedViewController()
+                present(UnsupportedViewController(launchSource: .tapToPay), configuration: configuration)
             }
-
-            present(rootController, configuration: configuration)
         }
-    }
-
-    @available(iOS 15.4, *)
-    @MainActor
-    private static func presentTapToPayController(subscriptionKey: String,
-                                                  configuration: Configuration,
-                                                  loginProvider: @escaping @Sendable () async throws -> String) {
-        let api = AutobooksAPI(subscriptionKey: subscriptionKey,
-                               environment: configuration.environment,
-                               responseProvider: configuration.responseProvider,
-                               loginProvider: loginProvider)
-        let environment = RootEnvironment(
-            api: api,
-            defaults: Defaults(),
-            paymentSession: PaymentSession(),
-            dismiss: {
-                UIApplication.shared.activeRootViewController?.dismiss(animated: true)
-            },
-            openURL: { url in
-                UIApplication.shared.open(url)
-            })
-        let isPreviouslyLaunched = environment.defaults.isPreviouslyLaunched
-        let navigation: Navigation = isPreviouslyLaunched ? .navigate([.loading]) : .navigate([.start])
-        let store = Store(initialState: RootState(navigation: navigation),
-                          reducer: RootReducer.default.debug(),
-                          environment: environment)
-        if isPreviouslyLaunched {
-            store.send(.performLogin, animation: .default)
-        }
-        handleURL = { [weak store] url in store?.send(.handleCallbackURL(url)) }
-
-        present(SupportedFlowController(store: store, configuration: configuration), configuration: configuration)
     }
 
     /// Start the Autobooks Payment Form feature.
     ///
     /// - Parameters:
+    ///   - subscriptionKey: Autobooks subscription key.
     ///   - loginToken:    Autobooks SSO payload as a `String`, used to initialize the web feature.
     ///   - configuration: `Configuration` value to be used. `.default` by default.
     ///
-    public static func startPaymentForm(loginToken: String,
+    public static func startPaymentForm(subscriptionKey: String,
+                                        loginToken: String,
                                         configuration: Configuration = .default) {
-        startWebFeature(.paymentForm, loginToken: loginToken, configuration: configuration)
+        startWebFeature(.paymentForm(sdkConfiguration: configuration),
+                        subscriptionKey: subscriptionKey,
+                        loginToken: loginToken,
+                        configuration: configuration)
     }
 
     /// Start the Autobooks Invoicing feature.
     ///
     /// - Parameters:
+    ///   - subscriptionKey: Autobooks subscription key.
     ///   - loginToken:    Autobooks SSO payload as a `String`, used to initialize the web feature.
     ///   - configuration: `Configuration` value to be used. `.default` by default.
     ///
-    public static func startInvoicing(loginToken: String,
+    public static func startInvoicing(subscriptionKey: String,
+                                      loginToken: String,
                                       configuration: Configuration = .default) {
-        startWebFeature(.invoicing, loginToken: loginToken, configuration: configuration)
+        startWebFeature(.invoicing(sdkConfiguration: configuration),
+                        subscriptionKey: subscriptionKey,
+                        loginToken: loginToken,
+                        configuration: configuration)
     }
 
     /// Passes a callback `URL` to the Autobooks SDK to handle as part of the Enrollment or More Info web flows.
@@ -196,11 +178,63 @@ public enum Autobooks {
     }
     #endif
 
-    private static func startWebFeature(_ feature: WebFeature,
+    @available(iOS 15.4, *)
+    @MainActor
+    private static func presentTapToPayController(subscriptionKey: String,
+                                                  configuration: Configuration,
+                                                  loginProvider: @escaping @Sendable () async throws -> String) {
+        let api = AutobooksAPI(subscriptionKey: subscriptionKey,
+                               environment: configuration.environment,
+                               responseProvider: configuration.responseProvider,
+                               loginProvider: loginProvider)
+        let environment = TapToPay.Environment(
+            api: api,
+            defaults: Defaults(),
+            paymentSession: PaymentSession(),
+            dismiss: {
+                UIApplication.shared.activeRootViewController?.dismiss(animated: true)
+            },
+            openURL: { url in
+                UIApplication.shared.open(url)
+            }
+        )
+        let isPreviouslyLaunched = environment.defaults.isPreviouslyLaunched
+        let navigation: Navigation = isPreviouslyLaunched ? .navigate([.loading]) : .navigate([.start])
+        let store = TapToPayStore(initialState: TapToPay.State(navigation: navigation),
+                                  reducer: TapToPay().reducer.debug(),
+                                  environment: environment)
+        if isPreviouslyLaunched {
+            store.send(.performLogin, animation: .default)
+        }
+        handleURL = { [weak store] url in store?.send(.handleCallbackURL(url)) }
+
+        present(TapToPayFlowController(store: store, configuration: configuration), configuration: configuration)
+    }
+
+    private static func startWebFeature(_ feature: WebFeatureConfiguration,
+                                        subscriptionKey: String,
                                         loginToken: String,
                                         configuration: Configuration) {
-        let controller = WebFeatureViewController(feature: feature)
-        present(controller, configuration: configuration, transparentNavigationBar: false)
+        if #available(iOS 14.0, *) {
+            // Trampoline onto the main actor, as we can't mark the Autobooks type @MainActor due to availability.
+            Task { @MainActor in
+                let api = AutobooksAPI(subscriptionKey: subscriptionKey,
+                                       environment: configuration.environment,
+                                       responseProvider: configuration.responseProvider,
+                                       loginProvider: { loginToken })
+                let environment = WebFeature.Environment(api: api, dismiss: {
+                    UIApplication.shared.activeRootViewController?.dismiss(animated: true)
+                })
+                let store = WebFeatureStore(initialState: .init(),
+                                            reducer: WebFeature(feature: feature).reducer.debug(),
+                                            environment: environment)
+                store.send(.performLogin)
+                present(WebFeatureFlowController(store: store, configuration: feature),
+                        configuration: configuration)
+            }
+        } else {
+            present(UnsupportedViewController(launchSource: .webFeature), configuration: configuration)
+        }
     }
 
     private static func present(_ controller: UIViewController,
@@ -220,19 +254,28 @@ public enum Autobooks {
         UIApplication.shared.activeRootViewController?.present(navigationController, animated: true)
     }
 
-    enum WebFeature {
-        case paymentForm, invoicing
-
-        var url: URL {
-            .init(string: "https://www.autobooks.co")!
+    struct WebFeatureConfiguration {
+        enum Kind {
+            case paymentForm, invoicing
         }
 
+        static func paymentForm(sdkConfiguration: Autobooks.Configuration) -> WebFeatureConfiguration {
+            .init(kind: .paymentForm, sdkConfiguration: sdkConfiguration)
+        }
+
+        static func invoicing(sdkConfiguration: Autobooks.Configuration) -> WebFeatureConfiguration {
+            .init(kind: .invoicing, sdkConfiguration: sdkConfiguration)
+        }
+
+        let kind: Kind
+        let sdkConfiguration: Autobooks.Configuration
+
         var title: String {
-            switch self {
-            case .paymentForm:
-                return "Payments"
+            switch kind {
             case .invoicing:
                 return "Invoicing"
+            case .paymentForm:
+                return "Payments"
             }
         }
     }

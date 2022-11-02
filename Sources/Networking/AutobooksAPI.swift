@@ -1,6 +1,6 @@
 import Foundation
 
-@available(iOS 15.4, *)
+@available(iOS 13.0, *)
 final class AutobooksAPI {
     private let session: URLSession
     private let environment: Autobooks.BackendEnvironment

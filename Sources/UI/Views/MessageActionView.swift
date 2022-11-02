@@ -1,28 +1,29 @@
 import SwiftUI
 
-@available(iOS 15.4, *)
+@available(iOS 14.0, *)
 struct MessageActionView: View {
     struct Action {
-        static func tryAgain(_ action: RootAction) -> Action {
+        static func tryAgain(_ action: @escaping () -> Void) -> Action {
             .init(title: "Try Again", action: action)
         }
 
-        static var start: Action {
-            .init(title: "Get Started", action: .start)
+        static func start(_ action: @escaping () -> Void) -> Action {
+            .init(title: "Get Started", action: action)
         }
 
         let title: String
-        let action: RootAction
-    }
+        let action: () -> Void
 
-    @StateObject private var store: RootStore
+        func callAsFunction() {
+            action()
+        }
+    }
 
     let title: String
     let message: String
     let action: Action?
 
-    init(store: RootStore, title: String, message: String, action: Action?) {
-        _store = StateObject(wrappedValue: store)
+    init(title: String, message: String, action: Action?) {
         self.title = title
         self.message = message
         self.action = action
@@ -50,15 +51,13 @@ struct MessageActionView: View {
                     .font(.title2)
                     .multilineTextAlignment(.center)
             }
-            .accessibilityRepresentation {
-                Text("\(title). \(message).")
-            }
+            .accessibilityElement(children: .combine)
 
             Spacer()
 
             if let action = action {
                 Button {
-                    store.send(action.action)
+                    action()
                 } label: {
                     Text(action.title)
                 }
