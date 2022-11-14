@@ -1,0 +1,34 @@
+name: "PR Builder"
+
+on:
+  pull_request:
+    branches:
+      - "**"
+    paths-ignore:
+      - "README.md"
+
+concurrency:
+  # Ensure only the latest build of this PR runes.
+  group: ${{ github.ref_name }}
+  # Cancel any inflight builds when a duplicate is detected.
+  cancel-in-progress: true
+
+jobs:
+  Xcode13:
+    name: Run Tests on Xcode 13, iOS 15
+    runs-on: macos-12
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Tests
+        # Set pipefail so Fastlane failures fail the build.
+        run: set -o pipefail && bundle exec fastlane run15Tests
+  Xcode14:
+    name: Run Tests on Xcode 14, iOS 16
+    runs-on: macos-12
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Tests
+        # Set pipefail so Fastlane failures fail the build.
+        run: set -o pipefail && bundle exec fastlane run16Tests

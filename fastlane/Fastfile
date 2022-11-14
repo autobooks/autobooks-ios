@@ -18,7 +18,7 @@ platform :ios do
 
   desc "Run tests on iOS 16."
   lane :run16Tests do
-    xcversion(version: "~> 14.0.0")
+    xcversion(version: "~> 14.1.0")
     # Test the Xcode project.
     scan(project: 'Autobooks.xcodeproj', scheme: 'Autobooks', device: 'iPhone 14 Pro', clean: true, result_bundle: true)
     # Test the Swift Package
@@ -27,7 +27,7 @@ platform :ios do
 
   desc "Generate documentation for GitHub Pages."
   lane :generateDocs do
-    xcversion(version: "~> 14.0.0")
+    xcversion(version: "~> 14.1.0")
     sh "cd ..; mkdir -p DocBuild DocOutput && xcodebuild docbuild -scheme Autobooks -destination 'name=iPhone 14 Pro' -derivedDataPath DocBuild"
     sh "cd ..; xcrun docc process-archive transform-for-static-hosting $(find DocBuild -type d -name '*.doccarchive') --output-path DocOutput --hosting-base-path autobooks-ios"
   end
