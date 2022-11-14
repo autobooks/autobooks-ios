@@ -32,3 +32,23 @@ jobs:
       - name: Run Tests
         # Set pipefail so Fastlane failures fail the build.
         run: set -o pipefail && fastlane run16Tests
+  CocoaPods13:
+    name: Lint the Podspec
+    runs-on: macos-12
+    env:
+      DEVELOPER_DIR: "/Applications/Xcode_13.4.1.app/Contents/Developer"
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v3
+      - name: Lint
+        run: set -o pipefail && pod lib lint
+  CocoaPods14:
+    name: Lint the Podspec
+    runs-on: macos-12
+    env:
+      DEVELOPER_DIR: "/Applications/Xcode_14.1.app/Contents/Developer"
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v3
+      - name: Lint
+        run: set -o pipefail && pod lib lint

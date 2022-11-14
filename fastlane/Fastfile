@@ -13,7 +13,7 @@ platform :ios do
     # Test the Xcode project.
     scan(project: 'Autobooks.xcodeproj', scheme: 'Autobooks', device: 'iPhone 13 Pro', clean: true, result_bundle: true)
     # Test the Swift Package
-    scan(workspace: '.swiftpm/xcode/package.xcworkspace', scheme: 'Autobooks', device: 'iPhone 13 Pro', clean: true, result_bundle: true)
+    # scan(workspace: '.swiftpm/xcode/package.xcworkspace', scheme: 'Autobooks', device: 'iPhone 13 Pro', clean: true, result_bundle: true)
   end
 
   desc "Run tests on iOS 16."
@@ -22,7 +22,7 @@ platform :ios do
     # Test the Xcode project.
     scan(project: 'Autobooks.xcodeproj', scheme: 'Autobooks', device: 'iPhone 14 Pro', clean: true, result_bundle: true)
     # Test the Swift Package
-    scan(workspace: '.swiftpm/xcode/package.xcworkspace', scheme: 'Autobooks', device: 'iPhone 14 Pro', clean: true, result_bundle: true)
+    # scan(workspace: '.swiftpm/xcode/package.xcworkspace', scheme: 'Autobooks', device: 'iPhone 14 Pro', clean: true, result_bundle: true)
   end
 
   desc "Generate documentation for GitHub Pages."
