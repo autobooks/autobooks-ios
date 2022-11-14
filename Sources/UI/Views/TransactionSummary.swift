@@ -8,88 +8,83 @@ struct TransactionSummary: View {
 
     @StateObject private var store: TapToPayStore
 
-    private let transaction: KeyPath<TapToPay.State, Transaction?>
+    private let transaction: Transaction
     private let configuration: Configuration
 
-    init(store: TapToPayStore, transaction: KeyPath<TapToPay.State, Transaction?>, configuration: Configuration) {
+    init(store: TapToPayStore, transaction: Transaction, configuration: Configuration) {
         _store = StateObject(wrappedValue: store)
         self.transaction = transaction
         self.configuration = configuration
     }
 
     var body: some View {
-        if let transaction = store.state[keyPath: transaction] {
-            VStack(alignment: .leading, spacing: 0) {
-                if store.state.selectedTransaction?.status == .canceled || store.state.selectedTransaction?.status == .refunded {
-                    Spacer()
-                        .frame(height: 8)
+        VStack(alignment: .leading, spacing: 0) {
+            if store.state.selectedTransaction?.status == .canceled || store.state.selectedTransaction?.status == .refunded {
+                Spacer()
+                    .frame(height: 8)
 
-                    Banner(transaction: transaction)
-                        .lineLimit(1)
-                }
-
-                VStack(alignment: .leading, spacing: 0) {
-                    Spacer()
-                        .frame(height: 40)
-
-                    AmountText(formattedAmount: transaction.total)
-                        .zIndex(1)
-
-                    Spacer()
-                        .frame(height: 56)
-
-                    TransactionProperties(transaction: transaction)
-                        .zIndex(1)
-
-                    Spacer()
-                        .frame(height: 56)
-
-                    ReceiptInput(store: store, configuration: configuration)
-
-                    Spacer()
-                        .frame(height: 4)
-
-                    if store.state.selectedTransaction?.status == .cancelable {
-                        LoadableAlertButton(loadingState: store.state.cancelTransactionState,
-                                            title: "Cancel Payment",
-                                            loadingTitle: "Canceling...",
-                                            successTitle: "Payment Canceled",
-                                            alertTitle: "Confirm Cancelation",
-                                            alertButtonTitle: "Cancel Payment",
-                                            alertMessage: """
-                                            This action can’t be undone. \
-                                            Your customer will receive a cancelation receipt \
-                                            to the email on file, if one exists.
-                                            """) {
-                            guard let transaction = store.state.selectedTransaction else { return }
-                            store.send(.cancelTransaction(id: transaction.id), animation: .linear)
-                        }
-                    }
-
-                    if store.state.selectedTransaction?.status == .refundable {
-                        LoadableAlertButton(loadingState: store.state.refundTransactionState,
-                                            title: "Refund Payment",
-                                            loadingTitle: "Refunding...",
-                                            successTitle: "Payment Refunded",
-                                            alertTitle: "Confirm Full Refund",
-                                            alertButtonTitle: "Refund Payment",
-                                            alertMessage: """
-                                            This action can’t be undone. \
-                                            Your customer will receive a refund receipt \
-                                            to the email on file, if one exists.
-                                            """) {
-                            guard let transaction = store.state.selectedTransaction else { return }
-                            store.send(.refundTransaction(id: transaction.id), animation: .linear)
-                        }
-                    }
-
-                    Spacer()
-                }
-                .padding(.horizontal, 32)
+                Banner(transaction: transaction)
+                    .lineLimit(1)
             }
-        } else {
-            // Transition to empty when we don't have a transaction, as it likely means we're in the middle of dismissal.
-            EmptyView()
+
+            VStack(alignment: .leading, spacing: 0) {
+                Spacer()
+                    .frame(height: 40)
+
+                AmountText(formattedAmount: transaction.total)
+                    .zIndex(1)
+
+                Spacer()
+                    .frame(height: 56)
+
+                TransactionProperties(transaction: transaction)
+                    .zIndex(1)
+
+                Spacer()
+                    .frame(height: 56)
+
+                ReceiptInput(store: store, configuration: configuration)
+
+                Spacer()
+                    .frame(height: 4)
+
+                if store.state.selectedTransaction?.status == .cancelable {
+                    LoadableAlertButton(loadingState: store.state.cancelTransactionState,
+                                        title: "Cancel Payment",
+                                        loadingTitle: "Canceling...",
+                                        successTitle: "Payment Canceled",
+                                        alertTitle: "Confirm Cancelation",
+                                        alertButtonTitle: "Cancel Payment",
+                                        alertMessage: """
+                                        This action can’t be undone. \
+                                        Your customer will receive a cancelation receipt \
+                                        to the email on file, if one exists.
+                                        """) {
+                        guard let transaction = store.state.selectedTransaction else { return }
+                        store.send(.cancelTransaction(id: transaction.id), animation: .linear)
+                    }
+                }
+
+                if store.state.selectedTransaction?.status == .refundable {
+                    LoadableAlertButton(loadingState: store.state.refundTransactionState,
+                                        title: "Refund Payment",
+                                        loadingTitle: "Refunding...",
+                                        successTitle: "Payment Refunded",
+                                        alertTitle: "Confirm Full Refund",
+                                        alertButtonTitle: "Refund Payment",
+                                        alertMessage: """
+                                        This action can’t be undone. \
+                                        Your customer will receive a refund receipt \
+                                        to the email on file, if one exists.
+                                        """) {
+                        guard let transaction = store.state.selectedTransaction else { return }
+                        store.send(.refundTransaction(id: transaction.id), animation: .linear)
+                    }
+                }
+
+                Spacer()
+            }
+            .padding(.horizontal, 32)
         }
     }
 }

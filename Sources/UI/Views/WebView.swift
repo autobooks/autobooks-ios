@@ -3,31 +3,110 @@ import WebKit
 
 @available(iOS 14.0, *)
 struct WebView: View {
-    private enum LoadingState {
-        case idle
-        case loading(progress: Double?)
+    enum LoadingState: Equatable {
+        case initialLoad(Load)
+        case loaded(Load)
+
+        enum Load: Equatable {
+            case idle
+            case loadingStarted
+            case loading(progress: Double)
+            case error
+        }
 
         var isLoading: Bool {
-            guard case .loading = self else { return false }
+            switch self {
+            case .initialLoad(.loading), .loaded(.loading):
+                return true
+            default:
+                return false
+            }
+        }
 
-            return true
+        var isError: Bool {
+            switch self {
+            case .initialLoad(.error), .loaded(.error):
+                return true
+            default:
+                return false
+            }
         }
 
         var progress: Double? {
-            guard case let .loading(progress) = self else { return nil }
+            switch self {
+            case let .initialLoad(.loading(progress)),
+                 let .loaded(.loading(progress)):
+                return progress
+            default:
+                return nil
+            }
+        }
 
-            return progress
+        var isInitialLoadFailure: Bool {
+            switch self {
+            case .initialLoad(.error):
+                return true
+            default:
+                return false
+            }
+        }
+
+        mutating func startLoading() {
+            switch self {
+            case .initialLoad(.idle):
+                self = .initialLoad(.loadingStarted)
+            case .loaded(.idle):
+                self = .loaded(.loadingStarted)
+            default:
+                break
+            }
+        }
+
+        mutating func updateProgress(_ progress: Double) {
+            switch self {
+            case .initialLoad(.loadingStarted), .loaded(.loadingStarted), .initialLoad(.loading), .loaded(.loading):
+                self = .initialLoad(.loading(progress: progress))
+            default:
+                break
+            }
+        }
+
+        mutating func updateToError() {
+            switch self {
+            case .initialLoad:
+                self = .initialLoad(.error)
+            case .loaded:
+                self = .loaded(.error)
+            }
+        }
+
+        mutating func finishLoading() {
+            switch self {
+            case .initialLoad:
+                self = .initialLoad(.idle)
+            case .loaded:
+                self = .loaded(.idle)
+            }
         }
     }
 
-    @State private var state: LoadingState = .loading(progress: nil)
+    @State private var state: LoadingState = .initialLoad(.idle)
 
     let initialURL: URL
 
     var body: some View {
-        WrappedWebView(initialURL: initialURL, state: $state)
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .overlay(progressOverlay, alignment: .top)
+        if state.isInitialLoadFailure {
+            MessageActionView(title: "Something went wrong",
+                              message: "Try again or check back later",
+                              sourceDomain: .webFeature,
+                              action: .tryAgain {
+                                  state = .initialLoad(.idle)
+                              })
+        } else {
+            WrappedWebView(initialURL: initialURL, state: $state)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .overlay(progressOverlay, alignment: .top)
+        }
     }
 
     @ViewBuilder
@@ -73,22 +152,38 @@ struct WebView: View {
             }
 
             func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-                defer { decisionHandler(.allow) }
+                var policy: WKNavigationActionPolicy = .allow
 
-                guard observations.isEmpty else { return }
+                if navigationAction.navigationType == .linkActivated, let url = navigationAction.request.url {
+                    policy = .cancel
+                    UIApplication.shared.open(url)
+                }
 
-                observations = [
-                    webView.observe(\.estimatedProgress) { [unowned self] webView, _ in
-                        state = (webView.isLoading) ? .loading(progress: webView.estimatedProgress) : .idle
-                    },
-                    webView.observe(\.isLoading) { [unowned self] webView, _ in
-                        if !webView.isLoading {
-                            withAnimation {
-                                state = .idle
-                            }
+                if observations.isEmpty {
+                    observations = [
+                        webView.observe(\.estimatedProgress) { [unowned self] webView, _ in
+                            state.updateProgress(webView.estimatedProgress)
                         }
-                    }
-                ]
+                    ]
+                }
+
+                decisionHandler(policy)
+            }
+
+            func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+                state.startLoading()
+            }
+
+            func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+                state.finishLoading()
+            }
+
+            func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+                state.updateToError()
+            }
+
+            func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+                state.updateToError()
             }
         }
     }

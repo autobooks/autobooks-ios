@@ -19,14 +19,40 @@ struct MessageActionView: View {
         }
     }
 
+    enum SourceDomain {
+        case tapToPay, webFeature
+    }
+
+    private struct MessageIcon: View {
+        let domain: SourceDomain
+
+        var body: some View {
+            switch domain {
+            case .tapToPay:
+                if let image = UIImage(named: "tapToPayIcon", in: .resources, compatibleWith: nil) {
+                    Image(uiImage: image)
+                        .accessibilityHidden(true)
+                }
+            case .webFeature:
+                Image(systemName: "exclamationmark.triangle")
+                    .font(.system(size: 72))
+                    .accessibilityHidden(true)
+            }
+        }
+    }
+
     let title: String
     let message: String
+    let sourceDomain: SourceDomain
     let action: Action?
+    let secondaryAction: Action?
 
-    init(title: String, message: String, action: Action?) {
+    init(title: String, message: String, sourceDomain: SourceDomain = .tapToPay, action: Action?, secondaryAction: Action? = nil) {
         self.title = title
         self.message = message
+        self.sourceDomain = sourceDomain
         self.action = action
+        self.secondaryAction = secondaryAction
     }
 
     var body: some View {
@@ -34,10 +60,7 @@ struct MessageActionView: View {
             Spacer()
                 .frame(height: 36)
 
-            if let image = UIImage(named: "tapToPayIcon", in: .resources, compatibleWith: nil) {
-                Image(uiImage: image)
-                    .accessibilityHidden(true)
-            }
+            MessageIcon(domain: sourceDomain)
 
             Spacer()
                 .frame(height: 93)
@@ -62,6 +85,15 @@ struct MessageActionView: View {
                     Text(action.title)
                 }
                 .buttonStyle(.action)
+            }
+
+            if let secondaryAction = secondaryAction {
+                Button {
+                    secondaryAction()
+                } label: {
+                    Text(secondaryAction.title)
+                }
+                .buttonStyle(.secondary)
             }
         }
         .padding(32)

@@ -34,8 +34,10 @@ final class TapToPayFlowController: UINavigationController {
         // Prevents duplicate navigations regardless of type.
         guard navigation.configurations != currentNavigationConfigurations else { return }
 
-        if navigation.configurations.last == .postsale, presentedViewController == nil {
-            let controller = Navigation.Configuration.postsale.screenController(using: store, configuration: configuration)
+        if let lastConfiguration = navigation.configurations.last,
+           case .postsale = lastConfiguration,
+           presentedViewController == nil {
+            let controller = lastConfiguration.screenController(using: store, configuration: configuration)
             let navigationController = UINavigationController(rootViewController: controller)
             navigationController.navigationBar.prefersLargeTitles = true
             navigationController.presentationController?.delegate = self
@@ -158,7 +160,8 @@ enum Navigation: Equatable {
     }
 
     enum Configuration: Equatable {
-        case start, loading, webview(WebViewState), notEnabled, presale, tapToPay, postsale,
+        case start, loading, webview(WebViewState),
+             notEnabled, presale, tapToPay, postsale(Bool),
              transactions, transactionDetails
 
         struct WebViewState: Equatable {
@@ -182,8 +185,8 @@ enum Navigation: Equatable {
                 return nil
             case .presale:
                 return "New Payment"
-            case .postsale:
-                return "Payment Successful"
+            case let .postsale(isSuccess):
+                return isSuccess ? "Payment Successful" : nil
             case .transactions:
                 return "Transactions"
             case .transactionDetails:

@@ -46,9 +46,9 @@ struct WebFeature {
 
                 switch feature.kind {
                 case .paymentForm:
-                    state.navigation.append(.feature(response.paymentFormURL))
+                    state.navigation.append(.feature(response.webFeatureURLs.paymentForm))
                 case .invoicing:
-                    state.navigation.append(.feature(response.invoicingURL))
+                    state.navigation.append(.feature(response.webFeatureURLs.invoicing))
                 }
 
                 return nil

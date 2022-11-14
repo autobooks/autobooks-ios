@@ -9,15 +9,15 @@ public enum Autobooks {
         /// Default Autobooks SDK configuration.
         ///
         /// Current Defaults:
-        ///  * `environment` = `.staging`
+        ///  * `environment` = `.production`
         ///  * `primaryColor` = `.systemBlue`
-        ///  * `responseProvider` = `.hybrid(.successes)`
-        ///  * `shouldFallBackToPaymentForm` = `false`
+        ///  * `responseProvider` = `.live`
+        ///  * `shouldFallBackToPaymentForm` = `true`
         ///
-        public static let `default` = Configuration(environment: .staging,
+        public static let `default` = Configuration(environment: .production,
                                                     primaryColor: .systemBlue,
-                                                    responseProvider: .hybrid(.successes),
-                                                    shouldFallBackToPaymentForm: false)
+                                                    responseProvider: .live,
+                                                    shouldFallBackToPaymentForm: true)
 
         /// `BackendEnvironment` to use for network requests.
         public let environment: BackendEnvironment
@@ -81,11 +81,14 @@ public enum Autobooks {
     }
 
     /// Current version of the Autobooks SDK.
-    public static let version = "0.2.0"
+    public static let version = "1.0.0"
 
     private static var handleURL: ((URL) -> Void)?
 
     /// Start the Autobooks Tap to Pay feature or fall back to the Payment Form on unsupported devices, if configured.
+    ///
+    /// - Note: For the 1.0.x releases, this method will always show the web payment form. A future release will enable
+    ///         true Tap to Pay functionality.
     ///
     /// - Parameters:
     ///   - subscriptionKey: Autobooks subscription key.
@@ -96,30 +99,30 @@ public enum Autobooks {
     public static func startTapToPay(subscriptionKey: String,
                                      configuration: Configuration = .default,
                                      loginProvider: @escaping @Sendable () async throws -> String) {
-        if #available(iOS 15.4, *), PaymentSession.isSupported {
-            // Trampoline onto the main actor, as we can't mark the Autobooks type @MainActor due to availability.
+//        if #available(iOS 15.4, *), PaymentSession.isSupported {
+//            // Trampoline onto the main actor, as we can't mark the Autobooks type @MainActor due to availability.
+//            Task { @MainActor in
+//                presentTapToPayController(subscriptionKey: subscriptionKey,
+//                                          configuration: configuration,
+//                                          loginProvider: loginProvider)
+//            }
+//        } else {
+        // When the device supports tap to pay, don't fallback despite the configuration so we can tell the user to
+        // update their OS.
+        if #available(iOS 14.0, *) /* , configuration.shouldFallBackToPaymentForm, !UIDevice.current.supportsTapToPay */ {
             Task { @MainActor in
-                presentTapToPayController(subscriptionKey: subscriptionKey,
-                                          configuration: configuration,
-                                          loginProvider: loginProvider)
+                // If we fail to get a login token, just proceed with an invalid one to trigger the login failure
+                // screen.
+                let loginToken = (try? await loginProvider()) ?? "invalidToken"
+                startWebFeature(.paymentForm(sdkConfiguration: configuration),
+                                subscriptionKey: subscriptionKey,
+                                loginToken: loginToken,
+                                configuration: configuration)
             }
         } else {
-            // When the device supports tap to pay, don't fallback despite the configuration so we can tell the user to
-            // update their OS.
-            if #available(iOS 14.0, *), configuration.shouldFallBackToPaymentForm, !UIDevice.current.supportsTapToPay {
-                Task { @MainActor in
-                    // If we fail to get a login token, just proceed with an invalid one to trigger the login failure
-                    // screen.
-                    let loginToken = (try? await loginProvider()) ?? "invalidToken"
-                    startWebFeature(.paymentForm(sdkConfiguration: configuration),
-                                    subscriptionKey: subscriptionKey,
-                                    loginToken: loginToken,
-                                    configuration: configuration)
-                }
-            } else {
-                present(UnsupportedViewController(launchSource: .tapToPay), configuration: configuration)
-            }
+            present(UnsupportedViewController(launchSource: .tapToPay), configuration: configuration)
         }
+//        }
     }
 
     /// Start the Autobooks Payment Form feature.
@@ -201,7 +204,7 @@ public enum Autobooks {
         let isPreviouslyLaunched = environment.defaults.isPreviouslyLaunched
         let navigation: Navigation = isPreviouslyLaunched ? .navigate([.loading]) : .navigate([.start])
         let store = TapToPayStore(initialState: TapToPay.State(navigation: navigation),
-                                  reducer: TapToPay().reducer.debug(),
+                                  reducer: TapToPay().reducer,
                                   environment: environment)
         if isPreviouslyLaunched {
             store.send(.performLogin, animation: .default)
@@ -226,7 +229,7 @@ public enum Autobooks {
                     UIApplication.shared.activeRootViewController?.dismiss(animated: true)
                 })
                 let store = WebFeatureStore(initialState: .init(),
-                                            reducer: WebFeature(feature: feature).reducer.debug(),
+                                            reducer: WebFeature(feature: feature).reducer,
                                             environment: environment)
                 store.send(.performLogin)
                 present(WebFeatureFlowController(store: store, configuration: feature),

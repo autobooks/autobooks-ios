@@ -39,7 +39,7 @@ extension ButtonStyle where Self == ActionButtonStyle {
     }
 }
 
-@available(iOS 15.0, *)
+@available(iOS 14.0, *)
 struct SecondaryButtonStyle: ButtonStyle {
     let isFailure: Bool
 
@@ -82,7 +82,7 @@ struct SecondaryButtonStyle: ButtonStyle {
     }
 }
 
-@available(iOS 15.0, *)
+@available(iOS 14.0, *)
 extension ButtonStyle where Self == SecondaryButtonStyle {
     static var secondary: SecondaryButtonStyle {
         SecondaryButtonStyle(isFailure: false)

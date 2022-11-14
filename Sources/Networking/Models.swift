@@ -61,8 +61,18 @@ extension LoginRequest: Encodable {}
 
 struct LoginResponse: Equatable {
     let status: LoginStatus
-    let invoicingURL: URL
-    let paymentFormURL: URL
+    let webFeatureURLs: WebFeatureURLs
+}
+
+extension LoginResponse {
+    struct WebFeatureURLs: Codable, Equatable {
+        let invoicing: URL
+        let paymentForm: URL
+
+        enum CodingKeys: String, CodingKey {
+            case invoicing = "invoicingModuleUrl", paymentForm = "paymentFormModuleUrl"
+        }
+    }
 }
 
 extension LoginResponse {
@@ -94,23 +104,21 @@ extension LoginResponse {
 
 extension LoginResponse: Codable {
     private enum URLCodingKeys: String, CodingKey {
-        case invoicingURL = "invoicingUrl", paymentFormURL = "paymentFormUrl"
+        case webFeatureURLs = "moduleUrls"
     }
 
     init(from decoder: Decoder) throws {
         status = try LoginResponse.LoginStatus(from: decoder)
 
         let container = try decoder.container(keyedBy: URLCodingKeys.self)
-        invoicingURL = try container.decode(URL.self, forKey: .invoicingURL)
-        paymentFormURL = try container.decode(URL.self, forKey: .paymentFormURL)
+        webFeatureURLs = try container.decode(WebFeatureURLs.self, forKey: .webFeatureURLs)
     }
 
     func encode(to encoder: Encoder) throws {
         try status.encode(to: encoder)
 
         var container = encoder.container(keyedBy: URLCodingKeys.self)
-        try container.encode(invoicingURL, forKey: .invoicingURL)
-        try container.encode(paymentFormURL, forKey: .paymentFormURL)
+        try container.encode(webFeatureURLs, forKey: .webFeatureURLs)
     }
 }
 

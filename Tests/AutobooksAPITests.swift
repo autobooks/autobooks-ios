@@ -9,8 +9,7 @@ final class AutobooksAPITests: XCTestCase {
         // Given
         let loginResponse = LoginResponse(status: .success(.init(accessToken: "accessToken",
                                                                  status: .enabled)),
-                                          invoicingURL: .invoicing,
-                                          paymentFormURL: .paymentForm)
+                                          webFeatureURLs: .stub)
         let stub = Stub.success(providing: loginResponse)
 
         let api = AutobooksAPI(subscriptionKey: "subscriptionKey", responseProvider: .stubs(Stubs([.login: stub]))) {
@@ -30,8 +29,7 @@ final class AutobooksAPITests: XCTestCase {
         // Given
         let loginResponse = LoginResponse(status: .success(.init(accessToken: "accessToken",
                                                                  status: .enabled)),
-                                          invoicingURL: .invoicing,
-                                          paymentFormURL: .paymentForm)
+                                          webFeatureURLs: .stub)
         let stub = Stub([.failure(), .success(providing: loginResponse)])
 
         let api = AutobooksAPI(subscriptionKey: "subscriptionKey", responseProvider: .stubs(Stubs([.login: stub]))) {
@@ -90,8 +88,7 @@ final class AutobooksAPITests: XCTestCase {
         let status = Status.enabled
         let loginResponse = LoginResponse(status: .success(.init(accessToken: session,
                                                                  status: .enabled)),
-                                          invoicingURL: .invoicing,
-                                          paymentFormURL: .paymentForm)
+                                          webFeatureURLs: .stub)
         let loginStub = Stub.success(providing: loginResponse)
         let statusStub = Stub.success(providing: status)
         let api = AutobooksAPI(subscriptionKey: "subscriptionKey",
@@ -114,8 +111,7 @@ final class AutobooksAPITests: XCTestCase {
         let session = "session"
         let loginResponse = LoginResponse(status: .success(.init(accessToken: session,
                                                                  status: .enabled)),
-                                          invoicingURL: .invoicing,
-                                          paymentFormURL: .paymentForm)
+                                          webFeatureURLs: .stub)
         let loginStub = Stub.success(providing: loginResponse)
         let statusStub = Stub.failure()
         let api = AutobooksAPI(subscriptionKey: "subscriptionKey",
@@ -140,8 +136,7 @@ final class AutobooksAPITests: XCTestCase {
         let readerID = "readerID"
         let loginResponse = LoginResponse(status: .success(.init(accessToken: session,
                                                                  status: .enabled)),
-                                          invoicingURL: .invoicing,
-                                          paymentFormURL: .paymentForm)
+                                          webFeatureURLs: .stub)
         let loginStub = Stub.success(providing: loginResponse)
         let tokenResponse = PaymentTokenResponse(token: token)
         let tokenStub = Stub.success(providing: tokenResponse)
@@ -167,8 +162,7 @@ final class AutobooksAPITests: XCTestCase {
         let readerID = "readerID"
         let loginResponse = LoginResponse(status: .success(.init(accessToken: session,
                                                                  status: .enabled)),
-                                          invoicingURL: .invoicing,
-                                          paymentFormURL: .paymentForm)
+                                          webFeatureURLs: .stub)
         let loginStub = Stub.success(providing: loginResponse)
         let tokenStub = Stub.failure()
         let api = AutobooksAPI(subscriptionKey: "subscriptionKey",
@@ -192,8 +186,7 @@ final class AutobooksAPITests: XCTestCase {
         let session = "session"
         let loginResponse = LoginResponse(status: .success(.init(accessToken: session,
                                                                  status: .enabled)),
-                                          invoicingURL: .invoicing,
-                                          paymentFormURL: .paymentForm)
+                                          webFeatureURLs: .stub)
         let loginStub = Stub.success(providing: loginResponse)
         let transactionResponse = TransactionResponse(result: .success(.stub))
         let transactionStub = Stub.success(providing: transactionResponse)
@@ -217,8 +210,7 @@ final class AutobooksAPITests: XCTestCase {
         let session = "session"
         let loginResponse = LoginResponse(status: .success(.init(accessToken: session,
                                                                  status: .enabled)),
-                                          invoicingURL: .invoicing,
-                                          paymentFormURL: .paymentForm)
+                                          webFeatureURLs: .stub)
         let loginStub = Stub.success(providing: loginResponse)
         let transactionStub = Stub.failure()
         let api = AutobooksAPI(subscriptionKey: "subscriptionKey",
@@ -242,8 +234,7 @@ final class AutobooksAPITests: XCTestCase {
         let transactionID = "transactionID"
         let loginResponse = LoginResponse(status: .success(.init(accessToken: bearerToken,
                                                                  status: .enabled)),
-                                          invoicingURL: .invoicing,
-                                          paymentFormURL: .paymentForm)
+                                          webFeatureURLs: .stub)
         let loginStub = Stub.success(providing: loginResponse)
         let receiptResponse = Transaction.stub
         let receiptStub = Stub.success(providing: receiptResponse)

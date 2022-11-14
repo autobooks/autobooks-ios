@@ -220,8 +220,7 @@ extension Stubs {
     public static var successes: Stubs {
         let statusResponse = Status.enabled
         let enabledResponse = LoginResponse(status: .success(.stub),
-                                            invoicingURL: .invoicing,
-                                            paymentFormURL: .paymentForm)
+                                            webFeatureURLs: .stub)
         let paymentTokenResponse = PaymentTokenResponse(token: "paymentToken")
 
         let transaction = Transaction.stub
@@ -265,8 +264,7 @@ extension Stubs {
     public static var failures: Stubs {
         let statusResponse = Status.enabled
         let enabledResponse = LoginResponse(status: .success(.stub),
-                                            invoicingURL: .invoicing,
-                                            paymentFormURL: .paymentForm)
+                                            webFeatureURLs: .stub)
         let paymentTokenResponse = PaymentTokenResponse(token: "paymentToken")
 
         let transaction = Transaction.stub
@@ -311,16 +309,13 @@ extension Stubs {
         let statusResponse = Status.enabled
         let needsEnrollmentResponse = LoginResponse(status: .needsEnrollment(.init(callbackURL: needsEnrollmentCallback,
                                                                                    url: loadedWebURL)),
-                                                    invoicingURL: .invoicing,
-                                                    paymentFormURL: .paymentForm)
+                                                    webFeatureURLs: .stub)
         let hasMissingInfoResponse = LoginResponse(status: .success(.init(accessToken: "accessToken",
                                                                           status: .hasMissingInfo(.init(callbackURL: hasMissingInfoCallback,
                                                                                                         url: loadedWebURL)))),
-                                                   invoicingURL: .invoicing,
-                                                   paymentFormURL: .paymentForm)
+                                                   webFeatureURLs: .stub)
         let enabledResponse = LoginResponse(status: .success(.stub),
-                                            invoicingURL: .invoicing,
-                                            paymentFormURL: .paymentForm)
+                                            webFeatureURLs: .stub)
         let paymentTokenResponse = PaymentTokenResponse(token: "paymentToken")
         let transaction = Transaction.stub
         let transactionResponse = TransactionResponse(result: .success(transaction))
@@ -366,6 +361,10 @@ extension Stubs {
 
 extension LoginResponse.LoginStatus.Success {
     static let stub = Self(accessToken: "accessToken", status: .enabled)
+}
+
+extension LoginResponse.WebFeatureURLs {
+    static let stub = Self(invoicing: .invoicing, paymentForm: .paymentForm)
 }
 
 extension URL {
