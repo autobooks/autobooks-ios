@@ -269,7 +269,7 @@ struct TapToPay {
                 state.transactionResult = result
                 state.isTransactionLoading = false
 
-                state.navigation = .navigate([.presale, .tapToPay, .postsale])
+                state.navigation = .navigate([.presale, .tapToPay, .postsale(result.isSuccess)])
 
                 return nil
             case .makeAnotherPayment:

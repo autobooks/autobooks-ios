@@ -9,9 +9,13 @@ struct TransactionDetailsScreen: View {
     }
 
     var body: some View {
-        TransactionSummary(store: store, transaction: \.selectedTransaction, configuration: .details)
-            .onDisappear {
-                store.send(.resetSelectedTransaction)
-            }
+        if let transaction = store.state.selectedTransaction {
+            TransactionSummary(store: store, transaction: transaction, configuration: .details)
+                .onDisappear {
+                    store.send(.resetSelectedTransaction)
+                }
+        } else {
+            EmptyView()
+        }
     }
 }

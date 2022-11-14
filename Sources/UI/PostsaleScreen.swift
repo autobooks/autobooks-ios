@@ -9,7 +9,26 @@ struct PostsaleScreen: View {
     }
 
     var body: some View {
-        TransactionSummary(store: store, transaction: \.transactionResult?.success?.transaction, configuration: .success)
+        switch store.state.transactionResult {
+        case let .success(response):
+            if let transaction = response.transaction {
+                TransactionSummary(store: store, transaction: transaction, configuration: .success)
+            } else {
+                failureMessageView
+            }
+        case .failure:
+            failureMessageView
+        case nil:
+            EmptyView()
+        }
+    }
+
+    private var failureMessageView: some View {
+        MessageActionView(title: "Something Went Wrong",
+                          message: "Please try again",
+                          action: .tryAgain {
+                              store.send(.retryTransaction)
+                          })
     }
 }
 
