@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Run Tests
         # Set pipefail so Fastlane failures fail the build.
-        run: set -o pipefail && bundle exec fastlane run15Tests
+        run: set -o pipefail && fastlane run15Tests
   Xcode14:
     name: Run Tests on Xcode 14, iOS 16
     runs-on: macos-12
@@ -31,4 +31,4 @@ jobs:
       - uses: actions/checkout@v3
       - name: Run Tests
         # Set pipefail so Fastlane failures fail the build.
-        run: set -o pipefail && bundle exec fastlane run16Tests
+        run: set -o pipefail && fastlane run16Tests
