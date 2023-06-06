@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '14.0'
 
   s.swift_versions = ['5']
-
-  s.source_files = 'Sources/**/*.swift'
-  s.resources = "Sources/Resources/*.xcassets"
+  
+  s.vendored_frameworks = 'Frameworks/Autobooks.xcframework.zip', 'Frameworks/triPOSMobileSDK.xcframework.zip', 'Frameworks/Segment.xcframework.zip', 'Frameworks/Sovran.xcframework.zip'
 end
