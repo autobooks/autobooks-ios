@@ -6,7 +6,7 @@ import WebKit
 @available(iOS 14.0, *)
 final class WebFeatureFlowController: UINavigationController {
     private let store: WebFeatureStore
-    private let configuration: Autobooks.WebFeatureConfiguration
+    private let configuration: AB.WebFeatureConfiguration
     private lazy var closeButton: UIBarButtonItem = .init(title: "Close",
                                                           style: .done,
                                                           target: self,
@@ -14,7 +14,7 @@ final class WebFeatureFlowController: UINavigationController {
 
     private var storeObservation: AnyCancellable?
 
-    init(store: WebFeatureStore, configuration: Autobooks.WebFeatureConfiguration) {
+    init(store: WebFeatureStore, configuration: AB.WebFeatureConfiguration) {
         self.store = store
         self.configuration = configuration
 
@@ -37,7 +37,7 @@ final class WebFeatureFlowController: UINavigationController {
 
         addCloseButton(to: loadingController)
 
-        storeObservation = store.$state
+        self.storeObservation = store.statePublisher
             .map(\.navigation)
             .compactMap { navigation in
                 if case let .feature(url) = navigation.last {
@@ -47,7 +47,7 @@ final class WebFeatureFlowController: UINavigationController {
                 }
             }
             .sink { [unowned self] url in
-                self.pushWebView(to: url)
+                pushWebView(to: url)
             }
     }
 

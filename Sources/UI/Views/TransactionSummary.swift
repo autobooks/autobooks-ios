@@ -1,29 +1,50 @@
 import SwiftUI
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 struct TransactionSummary: View {
+    typealias ViewStore = Store<TransactionDetails.State, TransactionDetails.Action, TapToPay.Environment>
+
     enum Configuration {
-        case success, details
+        case success
+        case details
     }
 
-    @StateObject private var store: TapToPayStore
+    @StateObject private var store: ViewStore
 
-    private let transaction: Transaction
     private let configuration: Configuration
 
-    init(store: TapToPayStore, transaction: Transaction, configuration: Configuration) {
+    private var transaction: Transaction {
+        store.state.transaction
+    }
+
+    private var isStatusBannerVisible: Bool {
+        configuration == .details && (transaction.status == .canceled || transaction.status == .refunded)
+    }
+
+    private var isDetailsTransactionCancellable: Bool {
+        configuration == .details && transaction.status == .cancelable
+    }
+
+    private var isDetailsTransactionRefundable: Bool {
+        configuration == .details && transaction.status == .refundable
+    }
+
+    private var isReceiptSendable: Bool {
+        transaction.canRequestReceipt
+    }
+
+    init(store: ViewStore, configuration: Configuration) {
         _store = StateObject(wrappedValue: store)
-        self.transaction = transaction
         self.configuration = configuration
     }
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            if store.state.selectedTransaction?.status == .canceled || store.state.selectedTransaction?.status == .refunded {
+            if isStatusBannerVisible {
                 Spacer()
                     .frame(height: 8)
 
-                Banner(transaction: transaction)
+                Banner(transaction: store.state.transaction)
                     .lineLimit(1)
             }
 
@@ -31,7 +52,7 @@ struct TransactionSummary: View {
                 Spacer()
                     .frame(height: 40)
 
-                AmountText(formattedAmount: transaction.total)
+                AmountText(formattedAmount: transaction.formattedAmount)
                     .zIndex(1)
 
                 Spacer()
@@ -40,45 +61,42 @@ struct TransactionSummary: View {
                 TransactionProperties(transaction: transaction)
                     .zIndex(1)
 
-                Spacer()
-                    .frame(height: 56)
+                if !UIDevice.current.hasShortScreen {
+                    Spacer()
+                        .frame(height: 56)
+                }
 
-                ReceiptInput(store: store, configuration: configuration)
+                if isReceiptSendable {
+                    ReceiptInput(store: store.scope(state: \.receipt, action: TransactionDetails.Action.receipt),
+                                 configuration: configuration) {
+                        store.send(.done)
+                    }
+                }
 
                 Spacer()
                     .frame(height: 4)
 
-                if store.state.selectedTransaction?.status == .cancelable {
-                    LoadableAlertButton(loadingState: store.state.cancelTransactionState,
+                if isDetailsTransactionCancellable {
+                    LoadableAlertButton(loadingState: store.onlyState.state.transactionUpdate,
                                         title: "Cancel Payment",
                                         loadingTitle: "Canceling...",
                                         successTitle: "Payment Canceled",
-                                        alertTitle: "Confirm Cancelation",
+                                        failureTitle: "Cancellation Failed",
+                                        alertTitle: "Confirm Cancellation",
                                         alertButtonTitle: "Cancel Payment",
-                                        alertMessage: """
-                                        This action can’t be undone. \
-                                        Your customer will receive a cancelation receipt \
-                                        to the email on file, if one exists.
-                                        """) {
-                        guard let transaction = store.state.selectedTransaction else { return }
-                        store.send(.cancelTransaction(id: transaction.id), animation: .linear)
+                                        alertMessage: "This action can’t be undone.") {
+                        store.send(.cancelTransaction, animation: .linear)
                     }
-                }
-
-                if store.state.selectedTransaction?.status == .refundable {
-                    LoadableAlertButton(loadingState: store.state.refundTransactionState,
+                } else if isDetailsTransactionRefundable {
+                    LoadableAlertButton(loadingState: store.onlyState.state.transactionUpdate,
                                         title: "Refund Payment",
                                         loadingTitle: "Refunding...",
                                         successTitle: "Payment Refunded",
+                                        failureTitle: "Refund Failed",
                                         alertTitle: "Confirm Full Refund",
                                         alertButtonTitle: "Refund Payment",
-                                        alertMessage: """
-                                        This action can’t be undone. \
-                                        Your customer will receive a refund receipt \
-                                        to the email on file, if one exists.
-                                        """) {
-                        guard let transaction = store.state.selectedTransaction else { return }
-                        store.send(.refundTransaction(id: transaction.id), animation: .linear)
+                                        alertMessage: "This action can’t be undone.") {
+                        store.send(.refundTransaction, animation: .linear)
                     }
                 }
 
@@ -89,8 +107,8 @@ struct TransactionSummary: View {
     }
 }
 
-@available(iOS 15.4, *)
-struct AmountText: View {
+@available(iOS 16.0, *)
+private struct AmountText: View {
     let formattedAmount: String
 
     var body: some View {
@@ -101,8 +119,8 @@ struct AmountText: View {
     }
 }
 
-@available(iOS 15.4, *)
-struct TransactionProperties: View {
+@available(iOS 16.0, *)
+private struct TransactionProperties: View {
     let transaction: Transaction
 
     var body: some View {
@@ -127,47 +145,52 @@ struct TransactionProperties: View {
     }
 }
 
-@available(iOS 15.4, *)
-struct ReceiptInput: View {
-    @StateObject private var store: TapToPayStore
+@available(iOS 16.0, *)
+private struct ReceiptInput: View {
+    typealias ViewStore = Store<Receipt.State, Receipt.Action, TapToPay.Environment>
+
+    @StateObject private var store: ViewStore
+
     @State private var showValidation = false
     @State private var isPresentingRefundAlert = false
 
     private let configuration: TransactionSummary.Configuration
+    private let onDone: () -> Void
 
-    init(store: TapToPayStore, configuration: TransactionSummary.Configuration) {
+    init(store: ViewStore, configuration: TransactionSummary.Configuration, onDone: @escaping () -> Void) {
         _store = StateObject(wrappedValue: store)
         self.configuration = configuration
+        self.onDone = onDone
     }
 
     var body: some View {
         input
-            .onChange(of: store.state.emailInput) { _ in
+            .onChange(of: store.state.input) { _ in
                 showValidation = false
             }
     }
 
     @ViewBuilder
     private var input: some View {
-        switch store.state.receiptInputVisibility {
+        switch store.state.inputVisibility {
         case let .visible(visibility):
             VStack {
                 VStack(spacing: 4) {
                     VStack {
-                        if showValidation && !store.state.emailInput.isValid {
+                        if showValidation, !store.state.input.isValid {
                             ErrorText("Enter a valid email address")
                         }
                     }
                     .frame(height: 18)
 
-                    EmailTextField(input: Binding(get: { store.state.emailInput },
+                    EmailTextField(input: Binding(get: { store.state.input },
                                                   set: { store.send(.emailInput($0)) }))
                         .disabled(visibility != .idle)
                 }
 
                 Button {
-                    if store.state.emailInput.isValid {
-                        store.send(.sendReceiptRequest, animation: .linear)
+                    if store.state.input.isValid {
+                        store.send(.sendReceiptRequest(store.state.transactionID), animation: .linear)
                     } else {
                         showValidation = true
                     }
@@ -209,8 +232,9 @@ struct ReceiptInput: View {
             .transition(.move(edge: .top).combined(with: .opacity))
         case .hidden:
             Button("Done") {
-                store.send(.makeAnotherPayment)
+                onDone()
             }
+            .padding(.top, 16)
             .buttonStyle(.action)
             .transition(.move(edge: .bottom).combined(with: .opacity))
         }

@@ -1,6 +1,6 @@
 import SwiftUI
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 struct TransactionsScreen: View {
     @StateObject private var store: TapToPayStore
 
@@ -16,11 +16,14 @@ struct TransactionsScreen: View {
     @ViewBuilder
     private var content: some View {
         switch store.state.transactionsState {
-        case .initialLoad(.idle), .initialLoad(.loading):
+        case .initialLoad(.idle),
+             .initialLoad(.loading):
             initialLoadingView
         case .initialLoad(.failed):
             initialFailureView
-        case let .loaded(.loaded(transactions)), let .loaded(.failed(_, transactions)), let .loaded(.refreshing(transactions)):
+        case let .loaded(.loaded(transactions)),
+             let .loaded(.failed(_, transactions)),
+             let .loaded(.refreshing(transactions)):
             if transactions.isEmpty {
                 refreshableEmptyView
             } else {
@@ -32,16 +35,12 @@ struct TransactionsScreen: View {
     @ViewBuilder
     private var refreshableEmptyView: some View {
         #if swift(>=5.7)
-        if #available(iOS 16, *) {
-            ScrollView {
-                emptyView
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .refreshable {
-                await store.send(.fetchTransactions, while: \.transactionsState.isRefreshing)
-            }
-        } else {
+        ScrollView {
             emptyView
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .refreshable {
+            await store.send(.fetchTransactions, while: \.transactionsState.isRefreshing)
         }
         #else
         emptyView
@@ -93,6 +92,9 @@ struct TransactionsScreen: View {
         .refreshable {
             await store.send(.fetchTransactions, while: \.transactionsState.isRefreshing)
         }
+        .onAppear {
+            Analytics.shared.log(.visitedTransactions)
+        }
     }
 
     private var initialLoadingView: some View {
@@ -141,7 +143,7 @@ struct TransactionsScreen: View {
     private func buildSections(from transactions: [Transaction]) -> [TransactionSection] {
         transactions
             .chunkedByDay()
-            .map { TransactionSection(title: $0[0].date.formatted(date: .long, time: .omitted), transactions: $0) }
+            .map { TransactionSection(title: $0[0].createdOn.formatted(date: .long, time: .omitted), transactions: $0) }
     }
 }
 
@@ -150,6 +152,13 @@ private struct TransactionView: View {
     @Environment(\.primaryColor) var primaryColor
 
     let transaction: Transaction
+    
+    static let dateFormatter: DateFormatter = {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .none
+        dateFormatter.timeStyle = .short
+        return dateFormatter
+    }()
 
     var body: some View {
         HStack(spacing: 12) {
@@ -158,17 +167,28 @@ private struct TransactionView: View {
                 .font(.system(size: 30))
 
             VStack(alignment: .leading) {
-                Text(transaction.total)
-                    .font(.system(.body).bold())
-                Text(transaction.name)
-                    .font(.system(.subheadline))
-                    .foregroundColor(.secondary)
-            }
+                HStack {
+                    Text(transaction.formattedAmount)
+                        .font(.system(.headline))
+                        .frame(maxWidth: .infinity, alignment: .leading)
 
-            Spacer()
+                    if transaction.status == .canceled || transaction.status == .refunded {
+                        StatusView(status: transaction.status)
+                            .frame(maxWidth: .infinity, alignment: .trailing)
+                    }
+                }
+                
+                HStack {
+                    Text(transaction.card.description)
+                        .font(.system(.subheadline))
+                        .foregroundColor(.secondary)
+                        .frame(maxWidth: .infinity, alignment: .leading)
 
-            if transaction.status == .canceled || transaction.status == .refunded {
-                StatusView(status: transaction.status)
+                    Text(TransactionView.dateFormatter.string(from: transaction.createdOn))
+                        .font(.system(.subheadline))
+                        .foregroundColor(.secondary)
+                        .frame(maxWidth: .infinity, alignment: .trailing)
+                }
             }
 
             Image(systemName: "chevron.right")
@@ -177,7 +197,7 @@ private struct TransactionView: View {
         }
         .contentShape(Rectangle())
         .accessibilityRepresentation {
-            Text("\(transaction.total) to \(transaction.name)")
+            Text("\(transaction.formattedAmount) to \(transaction.card.description)")
         }
         .accessibilityAddTraits(.isButton)
     }
@@ -196,16 +216,16 @@ private struct StatusView: View {
     }
 }
 
-extension Array where Element == Transaction {
-    fileprivate func chunkedByDay() -> [[Transaction]] {
+private extension [Transaction] {
+    func chunkedByDay() -> [[Transaction]] {
         let calendar = Calendar(identifier: .gregorian)
         var dayChunks: [[Transaction]] = []
         var currentIndex = 0
         while currentIndex < count {
             var chunk: [Transaction] = []
-            let chunkStartDate = self[currentIndex].date
+            let chunkStartDate = self[currentIndex].createdOn
 
-            while currentIndex < count, calendar.isDate(self[currentIndex].date, inSameDayAs: chunkStartDate) {
+            while currentIndex < count, calendar.isDate(self[currentIndex].createdOn, inSameDayAs: chunkStartDate) {
                 chunk.append(self[currentIndex])
                 currentIndex += 1
             }

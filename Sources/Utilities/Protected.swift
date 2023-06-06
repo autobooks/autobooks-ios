@@ -4,7 +4,7 @@ final class UnfairLock {
     private let unfairLock: os_unfair_lock_t
 
     init() {
-        unfairLock = .allocate(capacity: 1)
+        self.unfairLock = .allocate(capacity: 1)
         unfairLock.initialize(to: os_unfair_lock())
     }
 
@@ -27,7 +27,8 @@ final class UnfairLock {
     ///
     /// - Returns:           The value the closure generated.
     func around<T>(_ closure: () throws -> T) rethrows -> T {
-        lock(); defer { unlock() }
+        lock()
+        defer { unlock() }
         return try closure()
     }
 
@@ -35,7 +36,8 @@ final class UnfairLock {
     ///
     /// - Parameter closure: The closure to run.
     func around(_ closure: () throws -> Void) rethrows {
-        lock(); defer { unlock() }
+        lock()
+        defer { unlock() }
         try closure()
     }
 }
@@ -60,7 +62,7 @@ final class Protected<T> {
     var projectedValue: Protected<T> { self }
 
     init(wrappedValue: T) {
-        value = wrappedValue
+        self.value = wrappedValue
     }
 
     /// Synchronously read or transform the contained value.

@@ -25,7 +25,8 @@ extension Loadable {
         switch self {
         case .initialLoad(.loading):
             return true
-        case .initialLoad(.idle), .initialLoad(.failed):
+        case .initialLoad(.idle),
+             .initialLoad(.failed):
             return false
         case let .loaded(loadedValue):
             return loadedValue.isRefreshing
@@ -33,7 +34,9 @@ extension Loadable {
     }
 
     var value: Value? {
-        guard case let .loaded(value) = self else { return nil }
+        guard case let .loaded(value) = self else {
+            return nil
+        }
 
         return value.value
     }
@@ -42,7 +45,8 @@ extension Loadable {
         switch self {
         case .initialLoad(.idle):
             return nil
-        case let .initialLoad(.failed(error as Error?)), let .initialLoad(.loading(error)):
+        case let .initialLoad(.failed(error as Error?)),
+             let .initialLoad(.loading(error)):
             return error
         case let .loaded(loadedValue):
             return loadedValue.error
@@ -102,20 +106,26 @@ extension Loaded: Equatable where Value: Equatable, Error: Equatable {}
 
 extension Loaded {
     var isRefreshing: Bool {
-        guard case .refreshing = self else { return false }
+        guard case .refreshing = self else {
+            return false
+        }
 
         return true
     }
 
     var value: Value {
         switch self {
-        case let .loaded(value), let .failed(_, value), let .refreshing(value):
+        case let .loaded(value),
+             let .failed(_, value),
+             let .refreshing(value):
             return value
         }
     }
 
     var error: Error? {
-        guard case let .failed(error, _) = self else { return nil }
+        guard case let .failed(error, _) = self else {
+            return nil
+        }
 
         return error
     }

@@ -3,7 +3,7 @@ import UIKit
 
 // #if !canImport(ProximityReader)
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 class PaymentCardReader {
     struct Options {
         var vasMerchants: [VASRequest.Merchant] = []
@@ -43,7 +43,9 @@ class PaymentCardReader {
     {}]
 
     func nextPreparationFailure() -> PreparationClosure {
-        guard !preparationFailures.isEmpty else { fatalError("preparationFailures is empty.") }
+        guard !preparationFailures.isEmpty else {
+            fatalError("preparationFailures is empty.")
+        }
 
         if preparationFailures.count > 1 {
             let failure = preparationFailures.removeFirst()
@@ -56,13 +58,13 @@ class PaymentCardReader {
     // MARK: -
 
     func linkAccount(using token: PaymentCardReader.Token) async throws {
-        print("*** Linking account.")
+        Log.proximityReader.info("*** Linking account.")
         try? await Task.sleep(nanoseconds: 100 * NSEC_PER_MSEC)
     }
 
     func prepare(using token: PaymentCardReader.Token,
                  updateHandler: ((PaymentCardReader.UpdateEvent) -> Void)?) async throws -> PaymentCardReaderSession {
-        if let updateHandler = updateHandler {
+        if let updateHandler {
             updateHandler(.notReady)
             updateHandler(.progress(0))
             for completion in stride(from: 10, through: 100, by: 10) {
@@ -78,7 +80,7 @@ class PaymentCardReader {
     }
 }
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 enum PaymentCardReaderError: Error, Equatable {
     case accountAlreadyLinked
     case accountLinkingCancelled
@@ -111,7 +113,7 @@ enum PaymentCardReaderError: Error, Equatable {
     }
 }
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 class PaymentCardReaderSession {
     enum Event: Hashable {
         case readyForTap
@@ -171,11 +173,13 @@ class PaymentCardReaderSession {
 
     private var payloadSequences: [[Payload]] = [
         // [.event(.readyForTap), .event(.cardDetected), .event(.removeCard), .sessionError(.cardReadFailed)],
-        [.event(.readyForTap), .event(.cardDetected), .event(.removeCard), .event(.completed)]
+        [.event(.readyForTap), .event(.cardDetected), .event(.removeCard), .event(.completed)],
     ]
 
     func nextPayloadSequence() -> [Payload] {
-        guard !payloadSequences.isEmpty else { fatalError("payloadSequence is empty.") }
+        guard !payloadSequences.isEmpty else {
+            fatalError("payloadSequence is empty.")
+        }
 
         if payloadSequences.count > 1 {
             let failure = payloadSequences.removeFirst()
@@ -210,7 +214,7 @@ class PaymentCardReaderSession {
     }
 }
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 struct PaymentCardTransactionRequest {
     enum TransactionType: Hashable {
         case purchase
@@ -228,7 +232,7 @@ struct PaymentCardTransactionRequest {
     }
 }
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 struct PaymentCardVerificationRequest {
     enum Reason: Hashable {
         case lookUp
@@ -242,11 +246,11 @@ struct PaymentCardVerificationRequest {
 
     init(currencyCode: String, for reason: PaymentCardVerificationRequest.Reason = .other) {
         self.currencyCode = currencyCode
-        verificationReason = reason
+        self.verificationReason = reason
     }
 }
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 struct PaymentCardReadResult: Equatable, Identifiable {
     let id: String
     let generalCardData: String?
@@ -259,7 +263,7 @@ struct PaymentCardReadResult: Equatable, Identifiable {
     }
 }
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 class VASRequest {
     struct Merchant: Identifiable {
         let id: String

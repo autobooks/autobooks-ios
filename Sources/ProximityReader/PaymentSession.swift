@@ -4,11 +4,13 @@ import Foundation
 // import ProximityReader
 // #endif
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 @MainActor
 final class PaymentSession {
     enum State {
-        case idle, preparing, ready
+        case idle
+        case preparing
+        case ready
     }
 
     enum PreparationEvent {
@@ -18,7 +20,9 @@ final class PaymentSession {
         case ready
 
         var error: PaymentCardReaderError? {
-            guard case let .error(error) = self else { return nil }
+            guard case let .error(error) = self else {
+                return nil
+            }
 
             return error
         }
@@ -32,7 +36,9 @@ final class PaymentSession {
         }
 
         var progress: Int {
-            guard case let .progress(value) = self else { return self == .ready ? 100 : 0 }
+            guard case let .progress(value) = self else {
+                return self == .ready ? 100 : 0
+            }
 
             return value
         }
@@ -143,26 +149,16 @@ final class PaymentSession {
     }
 
     private let reader: PaymentCardReader
-    private var pspToken: String?
     private var session: PaymentCardReaderSession?
 
     init(reader: PaymentCardReader = PaymentCardReader()) {
         self.reader = reader
     }
 
-    func acceptToken(_ token: String) {
-        pspToken = token
-    }
-
     func prepare() -> AsyncStream<PreparationEvent> {
         AsyncStream { continuation in
-            guard let pspToken = pspToken else {
-                print("*** No payment token!")
-                continuation.finish()
-                return
-            }
-
-            let token = PaymentCardReader.Token(rawValue: pspToken)
+            // Can be removed once refactored on top of triPOS.
+            let token = PaymentCardReader.Token(rawValue: "fakeToken")
 
             Task {
                 do {
@@ -197,17 +193,17 @@ final class PaymentSession {
                             }
                             continuation.yield(.ready)
                         } catch let error as PaymentCardReaderError {
-                            print("*** Preparation failed: \(error)")
+                            Log.proximityReader.error("*** Preparation failed: \(error)")
                             continuation.yield(.error(error))
                         } catch {
-                            print("Inner reader received other error: \(error)")
+                            Log.proximityReader.error("Inner reader received other error: \(error)")
                         }
                     } else {
-                        print("*** Preparation failed: \(error)")
+                        Log.proximityReader.error("*** Preparation failed: \(error)")
                         continuation.yield(.error(error))
                     }
                 } catch {
-                    print("Reader received other error: \(error)")
+                    Log.proximityReader.error("Reader received other error: \(error)")
                 }
 
                 continuation.finish()
@@ -218,7 +214,10 @@ final class PaymentSession {
     func read(amount: Decimal) -> AsyncStream<ReadEvent> {
         AsyncStream { continuation in
             Task {
-                guard let session = session else { continuation.finish(); return } // TODO: State error.
+                guard let session else {
+                    continuation.finish()
+                    return
+                } // TODO: State error.
 
                 do {
                     let result = try await session.readPaymentCard(.init(amount: amount,
@@ -256,7 +255,7 @@ final class PaymentSession {
     }
 }
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 extension PaymentSession.ReadError {
     init(_ underlyingReadError: PaymentCardReaderSession.ReadError) {
         switch underlyingReadError {
@@ -305,22 +304,18 @@ extension PaymentSession.ReadError {
         case let .invalidVASRequestParameters(parameters):
             self = .invalidVASRequestParameters(parameters)
         default:
-            if #available(iOS 16, *) {
-                switch underlyingReadError {
-                case .pinEntryFailed:
-                    self = .pinEntryFailed
-                case .pinTokenInvalid:
-                    self = .pinTokenInvalid
-                case .pinEntryTimeout:
-                    self = .pinEntryTimeout
-                case .pinCancelled:
-                    self = .pinCancelled
-                case .pinNotAllowed:
-                    self = .pinNotAllowed
-                default:
-                    self = .unknown
-                }
-            } else {
+            switch underlyingReadError {
+            case .pinEntryFailed:
+                self = .pinEntryFailed
+            case .pinTokenInvalid:
+                self = .pinTokenInvalid
+            case .pinEntryTimeout:
+                self = .pinEntryTimeout
+            case .pinCancelled:
+                self = .pinCancelled
+            case .pinNotAllowed:
+                self = .pinNotAllowed
+            default:
                 self = .unknown
             }
         }
@@ -329,11 +324,12 @@ extension PaymentSession.ReadError {
 
 #if canImport(ProximityReader)
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 extension PaymentSession.PreparationEvent: Equatable {
-    static func ==(lhs: PaymentSession.PreparationEvent, rhs: PaymentSession.PreparationEvent) -> Bool {
+    static func == (lhs: PaymentSession.PreparationEvent, rhs: PaymentSession.PreparationEvent) -> Bool {
         switch (lhs, rhs) {
-        case (.notReady, .notReady), (.ready, .ready):
+        case (.notReady, .notReady),
+             (.ready, .ready):
             return true
         case let (.progress(lProgress), .progress(rProgress)):
             return lProgress == rProgress
@@ -345,13 +341,18 @@ extension PaymentSession.PreparationEvent: Equatable {
     }
 }
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 extension PaymentSession.ReadEvent: Equatable {
-    static func ==(lhs: PaymentSession.ReadEvent, rhs: PaymentSession.ReadEvent) -> Bool {
+    static func == (lhs: PaymentSession.ReadEvent, rhs: PaymentSession.ReadEvent) -> Bool {
         switch (lhs, rhs) {
-        case (.readyForTap, .readyForTap), (.cardDetected, .cardDetected), (.readCancelled, .readCancelled),
-             (.readNotCompleted, .readNotCompleted), (.pinEntry, .pinEntry), (.removeCard, .removeCard),
-             (.readCompleted, .readCompleted), (.retrying, .retrying):
+        case (.readyForTap, .readyForTap),
+             (.cardDetected, .cardDetected),
+             (.readCancelled, .readCancelled),
+             (.readNotCompleted, .readNotCompleted),
+             (.pinEntry, .pinEntry),
+             (.removeCard, .removeCard),
+             (.readCompleted, .readCompleted),
+             (.retrying, .retrying):
             return true
         case let (.error(lError), .error(rError)):
             return lError == rError
@@ -363,20 +364,20 @@ extension PaymentSession.ReadEvent: Equatable {
     }
 }
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 extension PaymentSession.ReadResult: Equatable {
-    static func ==(lhs: PaymentSession.ReadResult, rhs: PaymentSession.ReadResult) -> Bool {
+    static func == (lhs: PaymentSession.ReadResult, rhs: PaymentSession.ReadResult) -> Bool {
         lhs.id == rhs.id
     }
 }
 
 #else
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 extension PaymentSession.PreparationEvent: Equatable {}
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 extension PaymentSession.ReadEvent: Equatable {}
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 extension PaymentSession.ReadResult: Equatable {}
 
 #endif

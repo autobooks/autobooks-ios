@@ -1,6 +1,6 @@
 import SwiftUI
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 struct LoadableButton<Value, Error: Swift.Error>: View {
     let action: () -> Void
     let loadingState: Loadable<Value, Error>
@@ -33,14 +33,17 @@ struct LoadableButton<Value, Error: Swift.Error>: View {
                     Image(systemName: "checkmark")
                 }
             case .initialLoad(.failed):
-                Text(failureTitle ?? title)
+                HStack {
+                    Text(failureTitle ?? title)
+                    Image(systemName: "xmark")
+                }
             }
         }
         .disabled(!loadingState.isIdle)
     }
 }
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 struct LoadableAlertButton<Success, Failure: Error>: View {
     @State private var isPresenting: Bool = false
 

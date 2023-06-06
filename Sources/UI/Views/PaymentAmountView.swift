@@ -1,7 +1,7 @@
 import SwiftUI
 import UIKit
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 struct PaymentAmountView: View {
     @Binding var amount: PaymentAmount
     @Binding var showValidity: Bool
@@ -121,7 +121,9 @@ struct PaymentAmountView: View {
 
             func reset() {
                 let emptyState = AmountState()
-                guard amountState != emptyState else { return }
+                guard amountState != emptyState else {
+                    return
+                }
 
                 amountState = emptyState
                 amountLabel.attributedText = NSAttributedString(amountState.attributed)
@@ -134,11 +136,19 @@ struct PaymentAmountView: View {
             }
 
             func insertText(_ text: String) {
-                guard text.count == 1 else { print("*** empty or long text"); return }
+                guard text.count == 1 else {
+                    Log.sdk.debug("*** empty or long text")
+                    return
+                }
 
-                guard let character = text.first else { print("*** no character"); return }
+                guard let character = text.first else {
+                    Log.sdk.debug("*** no character")
+                    return
+                }
 
-                guard (character.isASCII && character.isWholeNumber) || character == "." else { return }
+                guard (character.isASCII && character.isWholeNumber) || character == "." else {
+                    return
+                }
 
                 amountState.insert(character)
                 if amountState.isOverInserted {
@@ -199,40 +209,49 @@ struct PaymentAmount: Equatable {
     }
 }
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 extension PaymentAmount {
     init(_ amountState: AmountState) {
-        decimal = amountState.decimal
-        formatted = amountState.formatted
-        validity = amountState.validity
-        isValid = amountState.isValid
+        self.decimal = amountState.decimal
+        self.formatted = amountState.formatted
+        self.validity = amountState.validity
+        self.isValid = amountState.isValid
     }
 
     init() {
-        decimal = 0
-        formatted = "$0"
-        validity = .lessThanOne
-        isValid = false
+        self.decimal = 0
+        self.formatted = "$0"
+        self.validity = .lessThanOne
+        self.isValid = false
     }
 }
 
 enum PaymentValidity: Equatable {
-    case valid, lessThanOne, missingCents, tooMuch
+    case valid
+    case lessThanOne
+    case missingCents
+    case tooMuch
 
     var message: String? {
         switch self {
-        case .valid: return nil
-        case .lessThanOne: return "Please enter at least $1"
-        case .missingCents: return "Please enter the full amount"
-        case .tooMuch: return "You can't enter more than $9,999,999.99"
+        case .valid:
+            return nil
+        case .lessThanOne:
+            return "Please enter at least $1"
+        case .missingCents:
+            return "Please enter the full amount"
+        case .tooMuch:
+            return "You can't enter more than $9,999,999.99"
         }
     }
 }
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 struct AmountState: Equatable {
     enum Action {
-        case insert, delete, overInsert
+        case insert
+        case delete
+        case overInsert
     }
 
     private static let font: UIFont = {
@@ -263,7 +282,7 @@ struct AmountState: Equatable {
         var attributes = AttributeContainer()
         attributes.font = AmountState.font
         attributes.foregroundColor = .tertiaryLabel
-        attributed = AttributedString("$0", attributes: attributes)
+        self.attributed = AttributedString("$0", attributes: attributes)
     }
 
     mutating func insert(_ character: Character) {
@@ -274,7 +293,7 @@ struct AmountState: Equatable {
                 isInDecimal = true
                 updateState(for: .insert)
             }
-        } else if character.isASCII && character.isWholeNumber {
+        } else if character.isASCII, character.isWholeNumber {
             if isInDecimal {
                 if cents.count < 2 {
                     cents.append(character)
@@ -284,9 +303,11 @@ struct AmountState: Equatable {
                 }
             } else {
                 if dollars.count < maxDollarLength {
-                    if dollars.isEmpty && character == "0" {
+                    #if !DEBUG
+                    if dollars.isEmpty, character == "0" {
                         return // Ignore leading 0.
                     }
+                    #endif
 
                     dollars.append(character)
                     updateState(for: .insert)
@@ -327,7 +348,7 @@ struct AmountState: Equatable {
         let dollarsToFormat = (dollars.isEmpty) ? "0" : dollars
         let centsToFormat = (cents.isEmpty && !isInDecimal) ? "." : ".\(cents)"
         decimal = Decimal(string: "\(dollarsToFormat)\(centsToFormat)") ?? 0
-        formatted = decimal.formatted(.currency(code: "USD").precision(.fractionLength(isInDecimal ? 2 : 0)))
+        formatted = decimal.formatted(.dollars.precision(.fractionLength(isInDecimal ? 2 : 0)))
     }
 
     private mutating func updateAttributedString() {

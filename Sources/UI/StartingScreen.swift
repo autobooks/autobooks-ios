@@ -1,6 +1,6 @@
 import SwiftUI
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 struct StartingScreen: View {
     @StateObject private var store: TapToPayStore
 
@@ -11,7 +11,7 @@ struct StartingScreen: View {
     var body: some View {
         MessageActionView(title: "Tap to Pay on iPhone has to be set up on this device.",
                           message: "This will take a few minutes.",
-                          action: .start {
+                          action: MessageActionView.Action(title: "Get Started") {
                               store.send(.start)
                           })
     }

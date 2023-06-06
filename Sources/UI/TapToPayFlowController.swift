@@ -2,17 +2,17 @@ import Combine
 import SwiftUI
 import UIKit
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 final class TapToPayFlowController: UINavigationController {
     private let store: TapToPayStore
     private var observationToken: Cancellable?
-    private var configuration: Autobooks.Configuration
+    private var configuration: AB.Configuration
 
     var currentNavigationConfigurations: [Navigation.Configuration] {
         viewControllers.compactMap { ($0 as? NavigationRepresentable)?.configuration }
     }
 
-    init(store: TapToPayStore, configuration: Autobooks.Configuration) {
+    init(store: TapToPayStore, configuration: AB.Configuration) {
         self.store = store
         self.configuration = configuration
 
@@ -20,7 +20,7 @@ final class TapToPayFlowController: UINavigationController {
 
         delegate = self
 
-        observationToken = store.$state
+        self.observationToken = store.statePublisher
             .map(\.navigation)
             .removeDuplicates()
             .sink { [unowned self] navigation in
@@ -29,10 +29,15 @@ final class TapToPayFlowController: UINavigationController {
     }
 
     func handleNavigation(_ navigation: Navigation) {
-        guard !navigation.configurations.isEmpty else { print("*** Navigation was empty, ignoring."); return }
+        guard !navigation.configurations.isEmpty else {
+            Log.sdk.warning("*** Navigation was empty, ignoring.")
+            return
+        }
 
         // Prevents duplicate navigations regardless of type.
-        guard navigation.configurations != currentNavigationConfigurations else { return }
+        guard navigation.configurations != currentNavigationConfigurations else {
+            return
+        }
 
         if let lastConfiguration = navigation.configurations.last,
            case .postsale = lastConfiguration,
@@ -87,13 +92,47 @@ final class TapToPayFlowController: UINavigationController {
                                                                               target: self,
                                                                               action: #selector(closeTapToPay))
         }
+        
+        switch configuration {
+        case .presale:
+            if viewController.navigationItem.rightBarButtonItem == nil {
+                viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Transactions",
+                                                                                   style: .plain,
+                                                                                   target: self,
+                                                                                   action: #selector(showTransactions))
+            }
+        
+        case .virtualTerminal:
+            if viewController.navigationItem.leftBarButtonItem == nil {
+                viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Close",
+                                                                                  style: .done,
+                                                                                  target: self,
+                                                                                  action: #selector(dismissVirtualTerminal))
+            }
+        
+        case .cardEducation:
+            if viewController.navigationItem.rightBarButtonItem == nil {
+                viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next",
+                                                                                   style: .plain,
+                                                                                   target: self,
+                                                                                   action: #selector(showPhoneEducation))
+            }
 
-        if configuration == .presale, viewController.navigationItem.rightBarButtonItem == nil {
-            viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Transactions",
-                                                                               style: .plain,
-                                                                               target: self,
-                                                                               action: #selector(showTransactions))
+        case .phoneEducation:
+            if viewController.navigationItem.rightBarButtonItem == nil {
+                viewController.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next",
+                                                                                   style: .plain,
+                                                                                   target: self,
+                                                                                   action: #selector(showFirstTimeSetup))
+            }
+
+        default:
+            break
         }
+    }
+    
+    @objc private func dismissVirtualTerminal() {
+        store.send(.makeAnotherPayment)
     }
 
     @objc private func closeTapToPay() {
@@ -113,16 +152,24 @@ final class TapToPayFlowController: UINavigationController {
         store.send(.showTransactions)
     }
 
+    @objc private func showPhoneEducation() {
+        store.send(.phoneEducation)
+    }
+
+    @objc private func showFirstTimeSetup() {
+        store.send(.firstTimeSetup)
+    }
+
     @available(*, unavailable)
     @MainActor dynamic required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 extension TapToPayFlowController: UIAdaptivePresentationControllerDelegate {
     func presentationControllerShouldDismiss(_ presentationController: UIPresentationController) -> Bool {
-        !(store.state.receiptInputVisibility == .visible(.loading))
+        !(store.state.postsaleState?.details?.receipt.inputVisibility == .visible(.loading))
     }
 
     func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
@@ -131,12 +178,14 @@ extension TapToPayFlowController: UIAdaptivePresentationControllerDelegate {
     }
 }
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 extension TapToPayFlowController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
         // If our navigation state is out of sync with the current controllers the user has manually navigated or swiped back.
         // Bring the states back into sync by synchronizing with the RootState.
-        guard currentNavigationConfigurations.count < store.state.navigation.configurations.count else { return }
+        guard currentNavigationConfigurations.count < store.state.navigation.configurations.count else {
+            return
+        }
 
         // If we're navigating back from the transaction details screen, refresh the transactions.
         if store.state.navigation.configurations.last == .transactionDetails {
@@ -147,32 +196,53 @@ extension TapToPayFlowController: UINavigationControllerDelegate {
     }
 }
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 enum Navigation: Equatable {
     case navigate([Configuration])
     case reset([Configuration])
 
     var configurations: [Configuration] {
         switch self {
-        case let .navigate(configurations), let .reset(configurations):
+        case let .navigate(configurations),
+             let .reset(configurations):
             return configurations
         }
     }
 
     enum Configuration: Equatable {
-        case start, loading, webview(WebViewState),
-             notEnabled, presale, tapToPay, postsale(Bool),
-             transactions, transactionDetails
+        case start
+        case loading
+        case webview(WebViewState)
+        case virtualTerminal(VirtualTerminalState)
+        case waiting
+        case cardEducation
+        case firstTimeSetup
+        case phoneEducation
+        case notEnabled
+        case presale
+        case tapToPay
+        case postsale(Bool)
+        case transactions
+        case transactionDetails
+        
+        struct VirtualTerminalState: Equatable {
+            let url: URL
+        }
 
         struct WebViewState: Equatable {
             let title: String
             let url: URL
-            let callbackURL: URL
+            
+            static func == (lhs: WebViewState, rhs: WebViewState) -> Bool {
+                lhs.url.withoutQueries == rhs.url.withoutQueries
+            }
         }
 
         var showCloseButton: Bool {
             switch self {
-            case .transactions, .transactionDetails:
+            case .transactions,
+                 .transactionDetails,
+                 .virtualTerminal:
                 return false
             default:
                 return true
@@ -181,7 +251,16 @@ enum Navigation: Equatable {
 
         var title: String? {
             switch self {
-            case .start, .loading, .webview, .tapToPay, .notEnabled:
+            case .start,
+                 .loading,
+                 .webview,
+                 .tapToPay,
+                 .notEnabled,
+                 .virtualTerminal,
+                 .waiting,
+                 .cardEducation,
+                 .phoneEducation,
+                 .firstTimeSetup:
                 return nil
             case .presale:
                 return "New Payment"
@@ -196,15 +275,27 @@ enum Navigation: Equatable {
 
         var titleDisplayMode: UINavigationItem.LargeTitleDisplayMode {
             switch self {
-            case .start, .loading, .webview, .tapToPay, .notEnabled:
+            case .start,
+                 .loading,
+                 .webview,
+                 .tapToPay,
+                 .notEnabled,
+                 .virtualTerminal,
+                 .waiting,
+                 .cardEducation,
+                 .phoneEducation,
+                 .firstTimeSetup:
                 return .never
-            case .presale, .postsale, .transactions, .transactionDetails:
+            case .presale,
+                 .postsale,
+                 .transactions,
+                 .transactionDetails:
                 return .always
             }
         }
 
         @MainActor
-        func screenController(using store: TapToPayStore, configuration: Autobooks.Configuration) -> UIViewController {
+        func screenController(using store: TapToPayStore, configuration: AB.Configuration) -> UIViewController {
             ScreenViewController(configuration: self) {
                 Group {
                     switch self {
@@ -231,11 +322,27 @@ enum Navigation: Equatable {
                     case .tapToPay:
                         TapToPayScreen(store: store)
                     case .postsale:
-                        PostsaleScreen(store: store)
+                        OptionalScoped(store: store.scope(state: \.postsaleState,
+                                                          action: TapToPay.Action.postsale)) { scopedStore in
+                            PostsaleScreen(store: scopedStore)
+                        }
                     case .transactions:
                         TransactionsScreen(store: store)
                     case .transactionDetails:
-                        TransactionDetailsScreen(store: store)
+                        OptionalScoped(store: store.scope(state: \.selectedTransaction,
+                                                          action: TapToPay.Action.transactionDetails)) { scopedStore in
+                            TransactionDetailsScreen(store: scopedStore)
+                        }
+                    case let .virtualTerminal(state):
+                        WebViewScreen(store: store, state: WebViewState(title: "Virtual Terminal", url: state.url))
+                    case .waiting:
+                        OnboardingWaitForPaymentEnablementView(store: store)
+                    case .cardEducation:
+                        OnboardingCardPayEducationView()
+                    case .phoneEducation:
+                        OnboardingPhonePayEducationView()
+                    case .firstTimeSetup:
+                        OnboardingWaitForTTPSetupView()
                     }
                 }
                 .environment(\.primaryColor, Color(configuration.primaryColor))
@@ -244,8 +351,8 @@ enum Navigation: Equatable {
     }
 }
 
-@available(iOS 15.4, *)
-private final class ScreenViewController<Screen: View>: WorkingHostingController<Screen>, NavigationRepresentable {
+@available(iOS 16.0, *)
+private final class ScreenViewController<Screen: View>: UIHostingController<Screen>, NavigationRepresentable {
     override var navigationItem: UINavigationItem {
         let item = super.navigationItem
         item.title = configuration.title
@@ -279,7 +386,7 @@ private final class ScreenViewController<Screen: View>: WorkingHostingController
     }
 }
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 protocol NavigationRepresentable {
     var configuration: Navigation.Configuration { get }
 }
@@ -288,7 +395,9 @@ extension UINavigationController {
     func customizeNavigationBarAppearance(primaryColor: UIColor, isTransparent: Bool = true) {
         navigationBar.tintColor = primaryColor
 
-        guard #available(iOS 13, *) else { return }
+        guard #available(iOS 13, *) else {
+            return
+        }
 
         let customAppearance = UINavigationBarAppearance()
 
@@ -308,12 +417,6 @@ extension UINavigationController {
         customAppearance.backButtonAppearance = barButtonItemAppearance
         customAppearance.doneButtonAppearance = barButtonItemAppearance
 
-        navigationBar.scrollEdgeAppearance = customAppearance
-        navigationBar.compactAppearance = customAppearance
         navigationBar.standardAppearance = customAppearance
-
-        if #available(iOS 15.0, *) {
-            navigationBar.compactScrollEdgeAppearance = customAppearance
-        }
     }
 }

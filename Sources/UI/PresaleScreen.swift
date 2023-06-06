@@ -1,6 +1,6 @@
 import SwiftUI
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 struct PresaleScreen: View {
     @StateObject private var store: TapToPayStore
     @State private var showValidity = false
@@ -28,7 +28,12 @@ struct PresaleScreen: View {
 
             Button {
                 if store.state.paymentAmount.isValid {
-                    store.send(.startTransaction)
+                    if store.state.useExpressApi {
+                        store.send(.startExpressTransaction)
+                    } else {
+                        Analytics.shared.log(.tappedCharge(store.state.paymentAmount.decimal))
+                        store.send(.startTransaction)
+                    }
                 } else {
                     showValidity = true
                 }
@@ -40,6 +45,12 @@ struct PresaleScreen: View {
                 .font(.system(.body).weight(.bold))
             }
             .buttonStyle(.action)
+            
+            Button("Manual Card Entry") {
+                store.send(.openVirtualTerminal)
+            }
+            .font(.system(.body).weight(.bold))
+            .frame(height: 50)
 
             Spacer()
         }

@@ -3,7 +3,8 @@ import UIKit
 
 final class UnsupportedViewController: UIViewController {
     enum LaunchSource {
-        case tapToPay, webFeature
+        case tapToPay
+        case webFeature
     }
 
     private let imageView = UIImageView()
@@ -15,7 +16,7 @@ final class UnsupportedViewController: UIViewController {
         case .tapToPay:
             if UIDevice.current.supportsTapToPay { // iPhone XS or later.
                 return (title: "Your iOS version isn't supported",
-                        message: "This feature can only be used on iOS 15.4 or newer")
+                        message: "This feature can only be used on iOS 16.0 or newer")
             } else {
                 return (title: "Your device isn't supported",
                         message: "This feature can only be used on an iPhone XS or newer")
@@ -95,7 +96,7 @@ final class UnsupportedViewController: UIViewController {
             messageLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             messageLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 48),
             messageLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
-            messageLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10)
+            messageLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
         ])
     }
 

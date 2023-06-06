@@ -25,22 +25,59 @@ struct Reducer<State, Action, Environment> {
         self.reducerClosure = reducerClosure
     }
 
+    func toParent<ParentState, ParentAction, ParentEnvironment>(
+        _ childStatePath: WritableKeyPath<ParentState, State>,
+        toChildAction: @escaping (ParentAction) -> Action?,
+        toParentAction: @escaping (Action) -> ParentAction,
+        toChildEnvironment: @escaping (ParentEnvironment) -> Environment
+    ) -> Reducer<ParentState, ParentAction, ParentEnvironment> {
+        .init { parentState, parentAction, parentEnvironment in
+            guard let childAction = toChildAction(parentAction) else {
+                return nil
+            }
+
+            var childState = parentState[keyPath: childStatePath]
+
+            let childEffect = self(&childState, childAction, toChildEnvironment(parentEnvironment))
+            parentState[keyPath: childStatePath] = childState
+
+            return childEffect.map { effect in
+                Effect { parentSender in
+                    effect.perform { childAction in
+                        parentSender(toParentAction(childAction))
+                    }
+                }
+            }
+        }
+    }
+
+    func optional() -> Reducer<State?, Action, Environment> {
+        .init { state, action, environment in
+            guard state != nil else {
+                Log.sdk.debug("*** Attempted to operate on nil state from optional() reducer.")
+                return nil
+            }
+
+            return self(&state!, action, environment)
+        }
+    }
+
     @MainActor
     func callAsFunction(_ state: inout State, _ action: Action, _ environment: Environment) -> Effect<Action>? {
         reducerClosure(&state, action, environment)
     }
 
-    /// When the `DEBUG` compilation condition is active, adds a higher-order reducer which prints incoming actions.
-    func debug() -> Self {
-        #if DEBUG
+    /// Adds a higher-order reducer which logs incoming actions and posts some actions as Notifications.
+    func logAndPostNotifications() -> Self {
         Self { state, action, environment in
-            print("*** Action: \(action)")
+            Log.sdk.debug("*** Action: \(String(describing: action))")
+            
+            let notificationName = Notification.Name(String(describing: action))
+            let notification = Notification(name: notificationName)
+            NotificationCenter.default.post(notification)
 
             return self(&state, action, environment)
         }
-        #else
-        self
-        #endif
     }
 }
 
@@ -71,6 +108,15 @@ final class Effect<Action> {
     static func run(_ operation: @escaping (Sender<Action>) async -> Void) -> Effect<Action> {
         Effect { send in
             Task {
+                await operation(send)
+            }
+        }
+    }
+
+    static func run(after seconds: Double, operation: @escaping (Sender<Action>) async -> Void) -> Effect<Action> {
+        Effect { send in
+            Task {
+                try? await Task.sleep(nanoseconds: UInt64(seconds * Double(NSEC_PER_SEC)))
                 await operation(send)
             }
         }

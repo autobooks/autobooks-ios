@@ -5,7 +5,7 @@ typealias WebFeatureStore = Store<WebFeature.State, WebFeature.Action, WebFeatur
 
 @available(iOS 14.0, *)
 struct WebFeature {
-    let feature: Autobooks.WebFeatureConfiguration
+    let feature: AB.WebFeatureConfiguration
 
     enum Navigation: Equatable {
         case login

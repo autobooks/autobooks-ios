@@ -1,8 +1,7 @@
 @testable import Autobooks
-
 import XCTest
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 @MainActor
 final class TapToPayDomainTests: XCTestCase {
     func testThatTapToPayStoreCallsDismissProvider() {
@@ -14,9 +13,9 @@ final class TapToPayDomainTests: XCTestCase {
                                                defaults: Defaults(),
                                                paymentSession: PaymentSession(),
                                                dismiss: { dismissCalled = true },
-                                               openURL: { _ in })
+                                               openURL: { _ in }, triPOS: TriPOS(device: .simulated, mode: .certification))
         let store = TapToPayStore(initialState: .init(navigation: .navigate([.loading])),
-                                  reducer: TapToPay().reducer,
+                                  reducer: TapToPay.reducer,
                                   environment: environment)
 
         // When
@@ -36,9 +35,9 @@ final class TapToPayDomainTests: XCTestCase {
                                                defaults: Defaults(),
                                                paymentSession: PaymentSession(),
                                                dismiss: {},
-                                               openURL: { url in receivedURL = url })
+                                               openURL: { url in receivedURL = url }, triPOS: TriPOS(device: .simulated, mode: .certification))
         let store = TapToPayStore(initialState: .init(navigation: .navigate([.loading])),
-                                  reducer: TapToPay().reducer,
+                                  reducer: TapToPay.reducer,
                                   environment: environment)
 
         // When
@@ -46,32 +45,5 @@ final class TapToPayDomainTests: XCTestCase {
 
         // Then
         XCTAssertEqual(receivedURL, sentURL)
-    }
-
-    func testThatTapToPayStoreProperlyMutatesAfterCallbackURL() {
-        // This test leaves handleCallbackURL effects in flight.
-        // Given
-        let environment = TapToPay.Environment(api: .init(subscriptionKey: "subscriptionKey",
-                                                          environment: .dev,
-                                                          loginProvider: { "login" }),
-                                               defaults: Defaults(),
-                                               paymentSession: PaymentSession(),
-                                               dismiss: {},
-                                               openURL: { _ in })
-        // Callback URL needs waitingWebView.
-        let state = TapToPay.State(navigation: .navigate([.loading]),
-                                   waitingWebView: .needEnrollment(.init(title: "Needs Enrollment",
-                                                                         url: .paymentForm,
-                                                                         callbackURL: .paymentForm)))
-        let store = TapToPayStore(initialState: state,
-                                  reducer: TapToPay().reducer,
-                                  environment: environment)
-
-        // When
-        store.send(.handleCallbackURL(.paymentForm))
-
-        // Then
-        XCTAssertEqual(store.state.navigation, .navigate([.loading]))
-        XCTAssertEqual(store.state.waitingWebView, nil)
     }
 }

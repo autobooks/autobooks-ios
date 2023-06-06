@@ -6,7 +6,9 @@ extension Binding {
     func removeDuplicates(by isDuplicate: @escaping (Value, Value) -> Bool) -> Self {
         .init(get: { self.wrappedValue },
               set: { newValue, transaction in
-                  guard !isDuplicate(self.wrappedValue, newValue) else { return }
+                  guard !isDuplicate(self.wrappedValue, newValue) else {
+                      return
+                  }
                   self.transaction(transaction).wrappedValue = newValue
               })
     }
@@ -32,6 +34,33 @@ extension Bundle {
     }
 }
 
+extension Decimal {
+    var dollars: String {
+        if #available(iOS 15, *) {
+            return formatted(.dollars)
+        } else {
+            return NumberFormatter.dollars.string(from: NSDecimalNumber(decimal: self))!
+        }
+    }
+}
+
+@available(iOS 15.0, *)
+extension FormatStyle where Self == Decimal.FormatStyle.Currency {
+    static var dollars: Decimal.FormatStyle.Currency {
+        .currency(code: "usd")
+    }
+}
+
+extension NumberFormatter {
+    static let dollars: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        formatter.currencyCode = "USD"
+
+        return formatter
+    }()
+}
+
 extension Result {
     var isFailure: Bool {
         !isSuccess
@@ -46,13 +75,17 @@ extension Result {
     }
 
     var success: Success? {
-        guard case let .success(success) = self else { return nil }
+        guard case let .success(success) = self else {
+            return nil
+        }
 
         return success
     }
 
     var failure: Failure? {
-        guard case let .failure(failure) = self else { return nil }
+        guard case let .failure(failure) = self else {
+            return nil
+        }
 
         return failure
     }
@@ -132,30 +165,67 @@ extension UIDevice {
         }
     }
 
-    var modelNumber: Int {
-        Int(modelIdentifier.drop { !$0.isNumber }.prefix { $0.isNumber }) ?? 0
-    }
-
-    var minorModelNumber: Int {
-        Int(modelIdentifier.drop { $0 != "," }.prefix { $0.isNumber }) ?? 0
-    }
-
     var supportsTapToPay: Bool {
-        if #available(iOS 15.4, *),
-           userInterfaceIdiom == .phone,
-           modelNumber >= 11,
-           !(modelNumber == 11 && minorModelNumber == 8) { // iPhone XR doesn't support Tap to Pay.
-            return true
+        if #available(iOS 16.0, *) {
+            guard let deviceDescription = DeviceType(modelIdentifier)?.deviceDescription else {
+                return false
+            }
+            
+            return DeviceDescription.iPhoneXS.orLater.contains(deviceDescription)
         } else {
             return false
         }
+    }
+    
+    var hasShortScreen: Bool {
+        guard let deviceDescription = DeviceType(modelIdentifier)?.deviceDescription else {
+            return false
+        }
+        
+        return Set<DeviceDescription>(arrayLiteral:
+            // 5.8 inch
+            .iPhone14,
+            .iPhone13Pro,
+            .iPhone13,
+            .iPhone13Mini,
+            .iPhone12Pro,
+            .iPhone12,
+            .iPhone12Mini,
+            .iPhone11Pro,
+            .iPhoneXS,
+            .iPhoneX,
+                                      
+            // 5.5 inch
+            .iPhone8Plus,
+            .iPhone7Plus,
+            .iPhone6sPlus,
+                                      
+            // 4.7 inch
+            .iPhoneSE3rdGeneration,
+            .iPhoneSE2ndGeneration,
+            .iPhone8,
+            .iPhone7,
+            .iPhone6s,
+            .iPhone6,
+                                      
+            // 4 inch
+            .iPhoneSE1stGeneration).contains(deviceDescription)
     }
 
     var supports13OrLater: Bool {
-        if userInterfaceIdiom == .phone, modelNumber >= 8 {
-            return true
-        } else {
+        guard let deviceDescription = DeviceType(modelIdentifier)?.deviceDescription else {
             return false
         }
+
+        return Set<DeviceDescription>(arrayLiteral:
+            .iPhone11, .iPhone11Pro, .iPhone11ProMax,
+            .iPhoneXS, .iPhoneXSMax,
+            .iPhoneXR,
+            .iPhoneX,
+            .iPhone8, .iPhone8Plus,
+            .iPhone7, .iPhone7Plus,
+            .iPhone6s, .iPhone6sPlus,
+            .iPhoneSE1stGeneration, .iPhoneSE2ndGeneration,
+            .iPodTouch7thGeneration).contains(deviceDescription)
     }
 }

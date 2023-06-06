@@ -10,7 +10,11 @@ struct MessageActionView: View {
         static func start(_ action: @escaping () -> Void) -> Action {
             .init(title: "Get Started", action: action)
         }
-
+        
+        static func callUs(_ action: @escaping () -> Void) -> Action {
+            .init(title: "If this problem persists, call us toll-free at (866) 617-3122for assistance.", action: action)
+        }
+        
         let title: String
         let action: () -> Void
 
@@ -18,14 +22,15 @@ struct MessageActionView: View {
             action()
         }
     }
-
+    
     enum SourceDomain {
-        case tapToPay, webFeature
+        case tapToPay
+        case webFeature
     }
-
+    
     private struct MessageIcon: View {
         let domain: SourceDomain
-
+        
         var body: some View {
             switch domain {
             case .tapToPay:
@@ -40,45 +45,83 @@ struct MessageActionView: View {
             }
         }
     }
-
+    
     let title: String
     let message: String
     let sourceDomain: SourceDomain
     let action: Action?
     let secondaryAction: Action?
+    let callUsAction: Action?
 
-    init(title: String, message: String, sourceDomain: SourceDomain = .tapToPay, action: Action?, secondaryAction: Action? = nil) {
+    @State private var showingLogSheet = false
+
+    init(title: String, message: String, sourceDomain: SourceDomain = .tapToPay, action: Action?, secondaryAction: Action? = nil, callUsAction: Action? = nil) {
         self.title = title
         self.message = message
         self.sourceDomain = sourceDomain
         self.action = action
         self.secondaryAction = secondaryAction
+        self.callUsAction = callUsAction
     }
-
+    
     var body: some View {
         VStack {
             Spacer()
                 .frame(height: 36)
-
+            
             MessageIcon(domain: sourceDomain)
-
+            
             Spacer()
                 .frame(height: 93)
-
+            
             VStack(spacing: 56) {
-                Text(title)
-                    .font(.largeTitle.weight(.bold))
-                    .multilineTextAlignment(.center)
+                Button {
+                    showingLogSheet.toggle()
+                } label: {
+                    Text(title)
+                        .font(.largeTitle.weight(.bold))
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.primary)
+                }
+                .sheet(isPresented: $showingLogSheet) {
+                    LogSheetView()
+                }
 
                 Text(message)
                     .font(.title2)
                     .multilineTextAlignment(.center)
             }
             .accessibilityElement(children: .combine)
+            
+            Spacer()
+                .frame(height: 20)
+            
+            if let callUsAction {
+                VStack {
+                    Text("If this problem persists, call us toll-free at")
+                        .foregroundColor(.black)
+                        .font(.caption)
+                        .multilineTextAlignment(.center)
+                    HStack {
+                        Button(action: callUsAction.action) {
+                            Text("(866) 617-3122")
+                                .foregroundColor(.blue)
+                                .font(.caption)
+                                .padding(.trailing, -5)
+                        }
+                        
+                        Text("for assistance.")
+                            .foregroundColor(.black)
+                            .font(.caption)
+                            .multilineTextAlignment(.center)
+                    }
+                }
+                .buttonStyle(.plain)
+                .background(Color.clear)
+            }
 
             Spacer()
-
-            if let action = action {
+            if let action {
                 Button {
                     action()
                 } label: {
@@ -86,8 +129,8 @@ struct MessageActionView: View {
                 }
                 .buttonStyle(.action)
             }
-
-            if let secondaryAction = secondaryAction {
+            
+            if let secondaryAction {
                 Button {
                     secondaryAction()
                 } label: {
@@ -98,4 +141,63 @@ struct MessageActionView: View {
         }
         .padding(32)
     }
+}
+
+struct ActivityView: UIViewControllerRepresentable {
+    typealias Callback = (_ activityType: UIActivity.ActivityType?, _ completed: Bool, _ returnedItems: [Any]?, _ error: Error?) -> Void
+    typealias UIViewControllerType = UIActivityViewController
+
+    let activityItems: [Any]
+    let applicationActivities: [UIActivity]? = nil
+    let excludedActivityTypes: [UIActivity.ActivityType]? = nil
+    let callback: Callback? = nil
+
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        let controller = UIActivityViewController(
+            activityItems: activityItems,
+            applicationActivities: applicationActivities
+        )
+        controller.excludedActivityTypes = excludedActivityTypes
+        controller.completionWithItemsHandler = callback
+        return controller
+    }
+    
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
+}
+
+struct LogSheetView: View {
+    @Environment(\.presentationMode) var presentationMode
+    @State private var showingActivitySheet = false
+
+    var body: some View {
+        NavigationView {
+            let logTextView = LogTextView()
+            
+            logTextView
+                .navigationBarItems(leading: Button(action: {
+                    showingActivitySheet.toggle()
+                }, label: {
+                    Image(systemName: "square.and.arrow.up")
+                })
+                .sheet(isPresented: $showingActivitySheet) {
+                    ActivityView(activityItems: [logTextView.textView.text ?? ""])
+                },
+                                    
+                trailing: Button("Close") {
+                    presentationMode.wrappedValue.dismiss()
+                })
+        }
+    }
+}
+
+struct LogTextView: UIViewRepresentable {
+    let textView = UITextView()
+
+    func makeUIView(context: Context) -> UITextView {
+        textView.font = UIFont.monospacedSystemFont(ofSize: 14, weight: .semibold)
+        textView.text = Log.logEntries(since: -30).reversed().joined(separator: "\n")
+        return textView
+    }
+
+    func updateUIView(_ uiView: UITextView, context: Context) {}
 }

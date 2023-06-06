@@ -8,7 +8,7 @@ class WorkingHostingController<RootView: View>: UIViewController {
     private let hostingController: UIHostingController<RootView>
 
     init(rootView: RootView) {
-        hostingController = UIHostingController(rootView: rootView)
+        self.hostingController = UIHostingController(rootView: rootView)
 
         super.init(nibName: nil, bundle: nil)
     }
@@ -25,7 +25,7 @@ class WorkingHostingController<RootView: View>: UIViewController {
             view.safeAreaLayoutGuide.topAnchor.constraint(equalTo: hostingController.view.topAnchor),
             view.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: hostingController.view.bottomAnchor),
             view.safeAreaLayoutGuide.leadingAnchor.constraint(equalTo: hostingController.view.leadingAnchor),
-            view.safeAreaLayoutGuide.trailingAnchor.constraint(equalTo: hostingController.view.trailingAnchor)
+            view.safeAreaLayoutGuide.trailingAnchor.constraint(equalTo: hostingController.view.trailingAnchor),
         ])
 
         addChild(hostingController)

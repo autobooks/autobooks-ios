@@ -1,15 +1,14 @@
 @testable import Autobooks
-
 import XCTest
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 @MainActor
 final class AutobooksAPITests: XCTestCase {
     func testThatAPICanPerformLogin() async {
         // Given
         let loginResponse = LoginResponse(status: .success(.init(accessToken: "accessToken",
-                                                                 status: .enabled)),
-                                          webFeatureURLs: .stub)
+                                                                 status: .enabled(.stub))),
+                                          webFeatureURLs: .stub, tapToPayRates: .stub)
         let stub = Stub.success(providing: loginResponse)
 
         let api = AutobooksAPI(subscriptionKey: "subscriptionKey", responseProvider: .stubs(Stubs([.login: stub]))) {
@@ -28,8 +27,8 @@ final class AutobooksAPITests: XCTestCase {
     func testThatAPICanPerformFailedAndSuccessfulLogin() async {
         // Given
         let loginResponse = LoginResponse(status: .success(.init(accessToken: "accessToken",
-                                                                 status: .enabled)),
-                                          webFeatureURLs: .stub)
+                                                                 status: .enabled(.stub))),
+                                          webFeatureURLs: .stub, tapToPayRates: .stub)
         let stub = Stub([.failure(), .success(providing: loginResponse)])
 
         let api = AutobooksAPI(subscriptionKey: "subscriptionKey", responseProvider: .stubs(Stubs([.login: stub]))) {
@@ -85,10 +84,10 @@ final class AutobooksAPITests: XCTestCase {
     func testThatAPICanFetchStatus() async throws {
         // Given
         let session = "session"
-        let status = Status.enabled
+        let status = Status.enabled(.stub)
         let loginResponse = LoginResponse(status: .success(.init(accessToken: session,
-                                                                 status: .enabled)),
-                                          webFeatureURLs: .stub)
+                                                                 status: .enabled(.stub))),
+                                          webFeatureURLs: .stub, tapToPayRates: .stub)
         let loginStub = Stub.success(providing: loginResponse)
         let statusStub = Stub.success(providing: status)
         let api = AutobooksAPI(subscriptionKey: "subscriptionKey",
@@ -110,8 +109,8 @@ final class AutobooksAPITests: XCTestCase {
         // Given
         let session = "session"
         let loginResponse = LoginResponse(status: .success(.init(accessToken: session,
-                                                                 status: .enabled)),
-                                          webFeatureURLs: .stub)
+                                                                 status: .enabled(.stub))),
+                                          webFeatureURLs: .stub, tapToPayRates: .stub)
         let loginStub = Stub.success(providing: loginResponse)
         let statusStub = Stub.failure()
         let api = AutobooksAPI(subscriptionKey: "subscriptionKey",
@@ -129,114 +128,117 @@ final class AutobooksAPITests: XCTestCase {
         XCTAssertTrue(result.isFailure)
     }
 
-    func testThatAPICanFetchReaderToken() async throws {
+    func testThatAPICanPerformCreateTransaction() async throws {
         // Given
         let session = "session"
-        let token = "token"
-        let readerID = "readerID"
+        let uuid = UUID()
+        let referenceNumber = "1234"
+        let ticketNumber = "5678"
         let loginResponse = LoginResponse(status: .success(.init(accessToken: session,
-                                                                 status: .enabled)),
-                                          webFeatureURLs: .stub)
+                                                                 status: .enabled(.stub))),
+                                          webFeatureURLs: .stub, tapToPayRates: .stub)
         let loginStub = Stub.success(providing: loginResponse)
-        let tokenResponse = PaymentTokenResponse(token: token)
-        let tokenStub = Stub.success(providing: tokenResponse)
+        let createResponse = CreateTransactionResponse(uuid: uuid,
+                                                       referenceNumber: referenceNumber,
+                                                       ticketNumber: ticketNumber)
+        let createStub = Stub.success(providing: createResponse)
         let api = AutobooksAPI(subscriptionKey: "subscriptionKey",
-                               responseProvider: .stubs(Stubs([.login: loginStub, .paymentToken: tokenStub]))) {
+                               responseProvider: .stubs(Stubs([.login: loginStub, .createTransaction: createStub]))) {
             session
         }
 
         // When
         _ = await api.performLogin()
-        let result = await api.fetchPaymentToken(forReaderID: readerID)
+        let result = await api.createTransaction(for: 1, type: .sale)
 
         // Then
-        XCTAssertEqual(tokenStub.lastRequest?.bearerToken, session)
-        XCTAssertNotNil(tokenStub.lastRequest?.subscriptionKey)
-        XCTAssertEqual(result.success?.token, token)
-        XCTAssertEqual(tokenStub.lastRequest?.url?.query, "cardReaderId=\(readerID)")
-    }
-
-    func testThatAPICanErrorReaderToken() async throws {
-        // Given
-        let session = "session"
-        let readerID = "readerID"
-        let loginResponse = LoginResponse(status: .success(.init(accessToken: session,
-                                                                 status: .enabled)),
-                                          webFeatureURLs: .stub)
-        let loginStub = Stub.success(providing: loginResponse)
-        let tokenStub = Stub.failure()
-        let api = AutobooksAPI(subscriptionKey: "subscriptionKey",
-                               responseProvider: .stubs(Stubs([.login: loginStub, .paymentToken: tokenStub]))) {
-            session
-        }
-
-        // When
-        _ = await api.performLogin()
-        let result = await api.fetchPaymentToken(forReaderID: readerID)
-
-        // Then
-        XCTAssertEqual(tokenStub.lastRequest?.bearerToken, session)
-        XCTAssertNotNil(tokenStub.lastRequest?.subscriptionKey)
-        XCTAssertTrue(result.isFailure)
-        XCTAssertEqual(tokenStub.lastRequest?.url?.query, "cardReaderId=\(readerID)")
-    }
-
-    func testThatAPICanPerformTransaction() async throws {
-        // Given
-        let session = "session"
-        let loginResponse = LoginResponse(status: .success(.init(accessToken: session,
-                                                                 status: .enabled)),
-                                          webFeatureURLs: .stub)
-        let loginStub = Stub.success(providing: loginResponse)
-        let transactionResponse = TransactionResponse(result: .success(.stub))
-        let transactionStub = Stub.success(providing: transactionResponse)
-        let api = AutobooksAPI(subscriptionKey: "subscriptionKey",
-                               responseProvider: .stubs(Stubs([.login: loginStub, .transaction: transactionStub]))) {
-            session
-        }
-
-        // When
-        _ = await api.performLogin()
-        let result = await api.performTransaction(.init(cardReaderBlob: "blob"))
-
-        // Then
-        XCTAssertEqual(transactionStub.lastRequest?.bearerToken, session)
-        XCTAssertNotNil(transactionStub.lastRequest?.subscriptionKey)
+        XCTAssertEqual(createStub.lastRequest?.bearerToken, session)
+        XCTAssertNotNil(createStub.lastRequest?.subscriptionKey)
+        XCTAssertEqual(result.success, .init(uuid: uuid, referenceNumber: referenceNumber, ticketNumber: ticketNumber))
         XCTAssertTrue(result.isSuccess)
     }
 
-    func testThatAPICanReturnErrorOnTransaction() async throws {
+    func testThatAPICanReturnErrorOnCreateTransaction() async throws {
         // Given
         let session = "session"
         let loginResponse = LoginResponse(status: .success(.init(accessToken: session,
-                                                                 status: .enabled)),
-                                          webFeatureURLs: .stub)
+                                                                 status: .enabled(.stub))),
+                                          webFeatureURLs: .stub, tapToPayRates: .stub)
         let loginStub = Stub.success(providing: loginResponse)
-        let transactionStub = Stub.failure()
+        let createStub = Stub.failure()
         let api = AutobooksAPI(subscriptionKey: "subscriptionKey",
-                               responseProvider: .stubs(Stubs([.login: loginStub, .transaction: transactionStub]))) {
+                               responseProvider: .stubs(Stubs([.login: loginStub, .createTransaction: createStub]))) {
             session
         }
 
         // When
         _ = await api.performLogin()
-        let result = await api.performTransaction(.init(cardReaderBlob: "blob"))
+        let result = await api.createTransaction(for: 1, type: .sale)
 
         // Then
-        XCTAssertEqual(transactionStub.lastRequest?.bearerToken, session)
-        XCTAssertNotNil(transactionStub.lastRequest?.subscriptionKey)
+        XCTAssertEqual(createStub.lastRequest?.bearerToken, session)
+        XCTAssertNotNil(createStub.lastRequest?.subscriptionKey)
+        XCTAssertTrue(result.isFailure)
+    }
+
+    func testThatAPICanPerformSyncTransaction() async throws {
+        // Given
+        let session = "session"
+        let uuid = UUID()
+        let loginResponse = LoginResponse(status: .success(.init(accessToken: session,
+                                                                 status: .enabled(.stub))),
+                                          webFeatureURLs: .stub, tapToPayRates: .stub)
+        let loginStub = Stub.success(providing: loginResponse)
+        let syncResponse = Transaction.random(uuid: uuid)
+        let syncStub = Stub.success(providing: syncResponse)
+        let api = AutobooksAPI(subscriptionKey: "subscriptionKey",
+                               responseProvider: .stubs(Stubs([.login: loginStub, .syncTransaction: syncStub]))) {
+            session
+        }
+
+        // When
+        _ = await api.performLogin()
+        let result = await api.syncTransaction(uuid, transactionID: "transactionID")
+
+        // Then
+        XCTAssertEqual(syncStub.lastRequest?.bearerToken, session)
+        XCTAssertNotNil(syncStub.lastRequest?.subscriptionKey)
+        XCTAssertEqual(result.success?.uuid, syncResponse.uuid)
+        XCTAssertTrue(result.isSuccess)
+    }
+
+    func testThatAPICanReturnErrorOnSyncTransaction() async throws {
+        // Given
+        let session = "session"
+        let loginResponse = LoginResponse(status: .success(.init(accessToken: session,
+                                                                 status: .enabled(.stub))),
+                                          webFeatureURLs: .stub, tapToPayRates: .stub)
+        let loginStub = Stub.success(providing: loginResponse)
+        let syncStub = Stub.failure()
+        let api = AutobooksAPI(subscriptionKey: "subscriptionKey",
+                               responseProvider: .stubs(Stubs([.login: loginStub, .syncTransaction: syncStub]))) {
+            session
+        }
+
+        // When
+        _ = await api.performLogin()
+        let result = await api.syncTransaction(UUID(), transactionID: "transactionID")
+
+        // Then
+        XCTAssertEqual(syncStub.lastRequest?.bearerToken, session)
+        XCTAssertNotNil(syncStub.lastRequest?.subscriptionKey)
         XCTAssertTrue(result.isFailure)
     }
 
     func testThatAPICanRequestReceipt() async {
         // Given
         let bearerToken = "bearerToken"
-        let transactionID = "transactionID"
+        let uuid = UUID()
         let loginResponse = LoginResponse(status: .success(.init(accessToken: bearerToken,
-                                                                 status: .enabled)),
-                                          webFeatureURLs: .stub)
+                                                                 status: .enabled(.stub))),
+                                          webFeatureURLs: .stub, tapToPayRates: .stub)
         let loginStub = Stub.success(providing: loginResponse)
-        let receiptResponse = Transaction.stub
+        let receiptResponse = Transaction.random(uuid: uuid)
         let receiptStub = Stub.success(providing: receiptResponse)
         let api = AutobooksAPI(subscriptionKey: "subscriptionKey",
                                responseProvider: .stubs(Stubs([.login: loginStub, .receipt: receiptStub]))) {
@@ -245,19 +247,21 @@ final class AutobooksAPITests: XCTestCase {
 
         // When
         _ = await api.performLogin()
-        let result = await api.requestReceipt(forTransactionID: transactionID, email: "some@email.com")
+        let result = await api.requestReceipt(forTransactionID: uuid, email: "some@email.com")
 
         // Then
         XCTAssertEqual(receiptStub.lastRequest?.bearerToken, bearerToken)
         XCTAssertNotNil(receiptStub.lastRequest?.subscriptionKey)
-        XCTAssertTrue(receiptStub.lastRequest?.url?.path.contains(transactionID) == true)
+        XCTAssertTrue(receiptStub.lastRequest?.url?.path.contains(uuid.uuidString) == true)
         XCTAssertTrue(result.isSuccess)
     }
 }
 
-extension APIError {
-    fileprivate var networkErrorCode: URLError.Code? {
-        guard case let .network(error) = self else { return nil }
+private extension APIError {
+    var networkErrorCode: URLError.Code? {
+        guard case let .network(error) = self else {
+            return nil
+        }
 
         return error.code
     }

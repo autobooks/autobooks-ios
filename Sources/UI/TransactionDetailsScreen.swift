@@ -1,21 +1,19 @@
 import SwiftUI
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 struct TransactionDetailsScreen: View {
-    @StateObject private var store: TapToPayStore
+    typealias ViewStore = Store<TransactionDetails.State, TransactionDetails.Action, TapToPay.Environment>
 
-    init(store: TapToPayStore) {
+    @StateObject private var store: ViewStore
+
+    init(store: ViewStore) {
         _store = StateObject(wrappedValue: store)
     }
 
     var body: some View {
-        if let transaction = store.state.selectedTransaction {
-            TransactionSummary(store: store, transaction: transaction, configuration: .details)
-                .onDisappear {
-                    store.send(.resetSelectedTransaction)
-                }
-        } else {
-            EmptyView()
-        }
+        TransactionSummary(store: store, configuration: .details)
+            .onDisappear {
+                store.send(.onDisappear)
+            }
     }
 }

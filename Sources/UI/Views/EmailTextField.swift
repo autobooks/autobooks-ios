@@ -1,6 +1,6 @@
 import SwiftUI
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 struct EmailTextField: View {
     @Binding var input: EmailInput
 
@@ -10,6 +10,7 @@ struct EmailTextField: View {
                 .bidirectionalMap(toOutput: \.email,
                                   fromOutput: EmailInput.init)
                 .removeDuplicates(by: ==))
+                .disableAutocorrection(true)
                 .keyboardType(.emailAddress)
                 .textInputAutocapitalization(.never)
 
@@ -40,6 +41,6 @@ extension EmailInput {
         self.email = email
         let emailRegex = #"^\S+@\S+\.\S+$"#
         let result = email.range(of: emailRegex, options: .regularExpression)
-        isValid = result != nil
+        self.isValid = result != nil
     }
 }

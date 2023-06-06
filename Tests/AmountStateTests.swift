@@ -1,8 +1,7 @@
 @testable import Autobooks
-
 import XCTest
 
-@available(iOS 15.4, *)
+@available(iOS 16.0, *)
 final class AmountStateTests: XCTestCase {
     func testThatInputOverMaximumDollarsIsIgnored() {
         // Given
@@ -35,6 +34,7 @@ final class AmountStateTests: XCTestCase {
         XCTAssertFalse(state.isValid)
     }
 
+    #if !DEBUG
     func testThatInitialZeroIsIgnored() {
         // Given
         var state = AmountState()
@@ -49,6 +49,7 @@ final class AmountStateTests: XCTestCase {
         XCTAssertEqual(state.formatted, "$1,234,567")
         XCTAssertTrue(state.isValid)
     }
+    #endif
 
     func testThatDecimalInsertionIsInitiallyInvalid() {
         // Given

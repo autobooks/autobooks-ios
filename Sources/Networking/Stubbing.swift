@@ -16,11 +16,11 @@ final class Stub {
         case networkError(URLError, delay: DispatchTimeInterval? = nil)
     }
 
-    static func providing<T>(_ response: Response<T>, statusCode: Int, after delay: DispatchTimeInterval? = nil) -> Stub {
+    static func providing(_ response: Response<some Any>, statusCode: Int, after delay: DispatchTimeInterval? = nil) -> Stub {
         Stub([.providing(response, statusCode: statusCode, after: delay)])
     }
 
-    static func success<Value>(providing value: Value, after delay: DispatchTimeInterval? = nil) -> Stub where Value: Codable {
+    static func success(providing value: some Codable, after delay: DispatchTimeInterval? = nil) -> Stub {
         Stub([.success(providing: value, after: delay)])
     }
 
@@ -43,13 +43,13 @@ final class Stub {
     @Protected
     private(set) var requests: [URLRequest] = []
 
-    init(_ payloads: [Payload], delay: DispatchTimeInterval? = nil) {
+    init(_ payloads: [Payload], delay: DispatchTimeInterval? = .seconds(1)) {
         self.payloads = payloads
         self.delay = delay
     }
 
     init(data: Data, statusCode: Int, delay: DispatchTimeInterval? = nil) {
-        payloads = [.response(statusCode: statusCode, data: data, delay: delay)]
+        self.payloads = [.response(statusCode: statusCode, data: data, delay: delay)]
         self.delay = nil
     }
 
@@ -58,7 +58,9 @@ final class Stub {
     }
 
     fileprivate func nextPayload() -> Payload {
-        guard !payloads.isEmpty else { fatalError("Stub payloads should never be empty.") }
+        guard !payloads.isEmpty else {
+            fatalError("Stub payloads should never be empty.")
+        }
 
         if payloads.count == 1 {
             return payloads[0]
@@ -71,19 +73,22 @@ final class Stub {
 }
 
 extension Stub: Equatable {
-    static func ==(lhs: Stub, rhs: Stub) -> Bool {
+    static func == (lhs: Stub, rhs: Stub) -> Bool {
         ObjectIdentifier(lhs) == ObjectIdentifier(rhs)
     }
 }
 
 extension Stub.Payload {
-    static func providing<T>(_ response: Response<T>, statusCode: Int, after delay: DispatchTimeInterval? = nil) -> Stub.Payload {
+    static func providing(_ response: Response<some Any>,
+                          statusCode: Int,
+                          after delay: DispatchTimeInterval? = .seconds(1)) -> Stub.Payload {
         .response(statusCode: statusCode,
                   data: (try? JSONEncoder.autobooks.encode(response)) ?? Data("invalid stub".utf8),
                   delay: delay)
     }
 
-    static func success<Value>(providing value: Value, after delay: DispatchTimeInterval? = nil) -> Stub.Payload where Value: Codable {
+    static func success<Value>(providing value: Value,
+                               after delay: DispatchTimeInterval? = .seconds(1)) -> Stub.Payload where Value: Codable {
         let response = Response<Value>(id: "id", date: Date(), result: .success(value))
 
         return providing(response, statusCode: 200, after: delay)
@@ -94,7 +99,7 @@ extension Stub.Payload {
                         error: ResponseError = .init(statusCode: 400,
                                                      description: "description",
                                                      presentableDescription: nil),
-                        after delay: DispatchTimeInterval? = nil) -> Stub.Payload {
+                        after delay: DispatchTimeInterval? = .seconds(1)) -> Stub.Payload {
         .providing(Response<Stub.Empty>(id: id,
                                         date: date,
                                         result: .failure(error)),
@@ -121,7 +126,7 @@ public struct Stubs: Equatable {
     subscript(_ id: Resource.ID) -> Stub? {
         get { stubs[id] }
         set {
-            if let newValue = newValue {
+            if let newValue {
                 stubs[id] = newValue
             } else {
                 stubs.removeValue(forKey: id)
@@ -134,7 +139,9 @@ final class StubProvider: URLProtocol {
     static var stubber: Stubber?
 
     override class func canInit(with task: URLSessionTask) -> Bool {
-        guard let id = task.id else { return false }
+        guard let id = task.id else {
+            return false
+        }
 
         return stubber?.stubs[id] != nil
     }
@@ -215,159 +222,201 @@ final class StubProvider: URLProtocol {
     }
 }
 
-extension Stubs {
+public extension Stubs {
     /// All requests succeed.
-    public static var successes: Stubs {
-        let statusResponse = Status.enabled
-        let enabledResponse = LoginResponse(status: .success(.stub),
-                                            webFeatureURLs: .stub)
-        let paymentTokenResponse = PaymentTokenResponse(token: "paymentToken")
-
-        let transaction = Transaction.stub
-        let transactionResponse = TransactionResponse(result: .success(transaction))
-        let receiptResponse = Transaction(transactionID: transaction.transactionID,
-                                          name: transaction.name,
-                                          cardDescription: transaction.cardDescription,
-                                          date: transaction.date,
-                                          total: transaction.total,
-                                          lastReceiptEmail: "some@email.com",
-                                          status: .final)
-        let transactionsResponse: [Transaction] = [.stub, .stub, .stub, .stub, .stub, .stub, .stub, .stub]
-            .sorted { $0.date > $1.date }
-        let cancelTransactionResponse = Transaction(transactionID: transaction.transactionID,
-                                                    name: transaction.name,
-                                                    cardDescription: transaction.cardDescription,
-                                                    date: transaction.date,
-                                                    total: transaction.total,
-                                                    lastReceiptEmail: "some@email.com",
-                                                    status: .canceled)
-        let refundTransactionResponse = Transaction(transactionID: transaction.transactionID,
-                                                    name: transaction.name,
-                                                    cardDescription: transaction.cardDescription,
-                                                    date: transaction.date,
-                                                    total: transaction.total,
-                                                    lastReceiptEmail: "refund@email.com",
-                                                    status: .refunded)
-        let stubs = Stubs([.login: .success(providing: enabledResponse, after: .seconds(1)),
-                           .paymentToken: .success(providing: paymentTokenResponse, after: .seconds(1)),
-                           .status: .success(providing: statusResponse, after: .seconds(1)),
-                           .transaction: .success(providing: transactionResponse, after: .seconds(1)),
-                           .receipt: .success(providing: receiptResponse, after: .seconds(1)),
-                           .transactions: .success(providing: transactionsResponse, after: .seconds(1)),
-                           .cancelTransaction: .success(providing: cancelTransactionResponse, after: .seconds(1)),
-                           .refundTransaction: .success(providing: refundTransactionResponse, after: .seconds(1))])
+    static var successes: Stubs {
+        let statusResponse = Status.enabled(.stub)
+        let enabledResponse = LoginResponse(status: .success(.stub), webFeatureURLs: .stub, tapToPayRates: .stub)
+        let uuid = UUID()
+        let createTransactionResponse = CreateTransactionResponse(uuid: uuid,
+                                                                  referenceNumber: "1234",
+                                                                  ticketNumber: "1234")
+        let transaction = Transaction.random(uuid: uuid)
+        let receiptResponse = Transaction(uuid: transaction.uuid,
+                                          createdOn: transaction.createdOn,
+                                          formattedAmount: transaction.formattedAmount,
+                                          type: transaction.type,
+                                          status: transaction.status,
+                                          receiptRecipients: [.init(email: "some@email.com")],
+                                          card: transaction.card,
+                                          associatedTransactionRequestDate: transaction.associatedTransactionRequestDate,
+                                          canRequestReceipt: transaction.canRequestReceipt)
+        let transactionsResponse: [Transaction] = [
+            .random(), .random(), .random(), .random(), .random(), .random(), .random(), .random(),
+        ]
+        .sorted { $0.createdOn > $1.createdOn }
+        let cancelTransactionResponse = Transaction(uuid: transaction.uuid,
+                                                    createdOn: transaction.createdOn,
+                                                    formattedAmount: transaction.formattedAmount,
+                                                    type: transaction.type,
+                                                    status: .canceled,
+                                                    receiptRecipients: [],
+                                                    card: transaction.card,
+                                                    associatedTransactionRequestDate: transaction.associatedTransactionRequestDate,
+                                                    canRequestReceipt: transaction.canRequestReceipt)
+        let refundTransactionResponse = Transaction(uuid: transaction.uuid,
+                                                    createdOn: transaction.createdOn,
+                                                    formattedAmount: transaction.formattedAmount,
+                                                    type: transaction.type,
+                                                    status: .refunded,
+                                                    receiptRecipients: [],
+                                                    card: transaction.card,
+                                                    associatedTransactionRequestDate: transaction.associatedTransactionRequestDate,
+                                                    canRequestReceipt: transaction.canRequestReceipt)
+        let stubs = Stubs([
+            .login: .success(providing: enabledResponse),
+            .status: .success(providing: statusResponse),
+            .createTransaction: .success(providing: createTransactionResponse),
+            .syncTransaction: .success(providing: transaction),
+            .receipt: .success(providing: receiptResponse),
+            .transactions: .success(providing: transactionsResponse),
+            .cancelTransaction: .success(providing: cancelTransactionResponse),
+            .refundTransaction: .success(providing: refundTransactionResponse),
+        ])
 
         return stubs
     }
 
     /// All requests fail once before succeeding.
-    public static var failures: Stubs {
-        let statusResponse = Status.enabled
+    static var failures: Stubs {
+        let statusResponse = Status.enabled(.stub)
         let enabledResponse = LoginResponse(status: .success(.stub),
-                                            webFeatureURLs: .stub)
-        let paymentTokenResponse = PaymentTokenResponse(token: "paymentToken")
-
-        let transaction = Transaction.stub
-        let transactionResponse = TransactionResponse(result: .success(transaction))
-        let receiptResponse = Transaction(transactionID: transaction.transactionID,
-                                          name: transaction.name,
-                                          cardDescription: transaction.cardDescription,
-                                          date: transaction.date,
-                                          total: transaction.total,
-                                          lastReceiptEmail: "some@email.com",
-                                          status: .cancelable)
-        let transactionsResponse: [Transaction] = [.stub, .stub, .stub, .stub, .stub, .stub, .stub, .stub]
-            .sorted { $0.date > $1.date }
-        let cancelTransactionResponse = Transaction(transactionID: transaction.transactionID,
-                                                    name: transaction.name,
-                                                    cardDescription: transaction.cardDescription,
-                                                    date: transaction.date,
-                                                    total: transaction.total,
-                                                    lastReceiptEmail: "some@email.com",
-                                                    status: .canceled)
-        let refundTransactionResponse = Transaction(transactionID: transaction.transactionID,
-                                                    name: transaction.name,
-                                                    cardDescription: transaction.cardDescription,
-                                                    date: transaction.date,
-                                                    total: transaction.total,
-                                                    lastReceiptEmail: "refund@email.com",
-                                                    status: .refundable)
-        let stubs = Stubs([.login: Stub([.failure(), .success(providing: enabledResponse)], delay: .seconds(1)),
-                           .paymentToken: Stub([.failure(), .success(providing: paymentTokenResponse)], delay: .seconds(1)),
-                           .status: Stub([.failure(), .success(providing: statusResponse)], delay: .seconds(1)),
-                           .transaction: Stub([.failure(), .success(providing: transactionResponse)], delay: .seconds(1)),
-                           .receipt: Stub([.failure(), .success(providing: receiptResponse)], delay: .seconds(1)),
-                           .transactions: Stub([.failure(), .success(providing: transactionsResponse)], delay: .seconds(1)),
-                           .cancelTransaction: Stub([.failure(), .success(providing: cancelTransactionResponse, after: .seconds(1))]),
-                           .refundTransaction: Stub([.failure(), .success(providing: refundTransactionResponse)], delay: .seconds(1))])
+                                            webFeatureURLs: .stub, tapToPayRates: .stub)
+        let uuid = UUID()
+        let createTransactionResponse = CreateTransactionResponse(uuid: uuid,
+                                                                  referenceNumber: "1234",
+                                                                  ticketNumber: "1234")
+        let transaction = Transaction.random(uuid: uuid)
+        let receiptResponse = Transaction(uuid: transaction.uuid,
+                                          createdOn: transaction.createdOn,
+                                          formattedAmount: transaction.formattedAmount,
+                                          type: transaction.type,
+                                          status: transaction.status,
+                                          receiptRecipients: [.init(email: "some@email.com")],
+                                          card: transaction.card,
+                                          associatedTransactionRequestDate: transaction.associatedTransactionRequestDate,
+                                          canRequestReceipt: transaction.canRequestReceipt)
+        let transactionsResponse: [Transaction] = [
+            .random(), .random(), .random(), .random(), .random(), .random(), .random(), .random(),
+        ]
+        .sorted { $0.createdOn > $1.createdOn }
+        let cancelTransactionResponse = Transaction(uuid: transaction.uuid,
+                                                    createdOn: transaction.createdOn,
+                                                    formattedAmount: transaction.formattedAmount,
+                                                    type: transaction.type,
+                                                    status: .canceled,
+                                                    receiptRecipients: [],
+                                                    card: transaction.card,
+                                                    associatedTransactionRequestDate: transaction.associatedTransactionRequestDate,
+                                                    canRequestReceipt: transaction.canRequestReceipt)
+        
+        let refundTransactionResponse = Transaction(uuid: transaction.uuid,
+                                                    createdOn: transaction.createdOn,
+                                                    formattedAmount: transaction.formattedAmount,
+                                                    type: transaction.type,
+                                                    status: .refunded,
+                                                    receiptRecipients: [],
+                                                    card: transaction.card,
+                                                    associatedTransactionRequestDate: transaction.associatedTransactionRequestDate,
+                                                    canRequestReceipt: transaction.canRequestReceipt)
+        
+        let stubs = Stubs([
+            .login: Stub([.failure(), .success(providing: enabledResponse)]),
+            .status: Stub([.failure(), .success(providing: statusResponse)]),
+            .createTransaction: Stub([.failure(), .success(providing: createTransactionResponse)]),
+            .syncTransaction: Stub([.failure(), .success(providing: transaction)]),
+            .receipt: Stub([.failure(), .success(providing: receiptResponse)]),
+            .transactions: Stub([.failure(), .success(providing: transactionsResponse)]),
+            .cancelTransaction: Stub([.failure(), .success(providing: cancelTransactionResponse)]),
+            .refundTransaction: Stub([.failure(), .success(providing: refundTransactionResponse)]),
+        ])
 
         return stubs
     }
 
     /// All requests succeed, but the web prompts are triggered on login.
-    public static func webPrompts(loadedWebURL: URL, needsEnrollmentCallback: URL, hasMissingInfoCallback: URL) -> Stubs {
-        let statusResponse = Status.enabled
-        let needsEnrollmentResponse = LoginResponse(status: .needsEnrollment(.init(callbackURL: needsEnrollmentCallback,
-                                                                                   url: loadedWebURL)),
-                                                    webFeatureURLs: .stub)
+    static func webPrompts(loadedWebURL: URL, needsEnrollmentCallback: URL, hasMissingInfoCallback: URL) -> Stubs {
+        let statusResponse = Status.enabled(.stub)
+        let needsEnrollmentResponse = LoginResponse(status: .needsEnrollment(.init(url: loadedWebURL)),
+                                                    webFeatureURLs: .stub, tapToPayRates: .stub)
         let hasMissingInfoResponse = LoginResponse(status: .success(.init(accessToken: "accessToken",
-                                                                          status: .hasMissingInfo(.init(callbackURL: hasMissingInfoCallback,
-                                                                                                        url: loadedWebURL)))),
-                                                   webFeatureURLs: .stub)
-        let enabledResponse = LoginResponse(status: .success(.stub),
-                                            webFeatureURLs: .stub)
-        let paymentTokenResponse = PaymentTokenResponse(token: "paymentToken")
-        let transaction = Transaction.stub
-        let transactionResponse = TransactionResponse(result: .success(transaction))
-        let receiptResponse = Transaction(transactionID: transaction.transactionID,
-                                          name: transaction.name,
-                                          cardDescription: transaction.cardDescription,
-                                          date: transaction.date,
-                                          total: transaction.total,
-                                          lastReceiptEmail: "some@email.com",
-                                          status: .refundable)
-        let transactionsResponse: [Transaction] = [.stub, .stub, .stub, .stub, .stub, .stub, .stub, .stub]
-            .sorted { $0.date > $1.date }
-        let cancelTransactionResponse = Transaction(transactionID: transaction.transactionID,
-                                                    name: transaction.name,
-                                                    cardDescription: transaction.cardDescription,
-                                                    date: transaction.date,
-                                                    total: transaction.total,
-                                                    lastReceiptEmail: "some@email.com",
-                                                    status: .canceled)
-        let refundTransactionResponse = Transaction(transactionID: transaction.transactionID,
-                                                    name: transaction.name,
-                                                    cardDescription: transaction.cardDescription,
-                                                    date: transaction.date,
-                                                    total: transaction.total,
-                                                    lastReceiptEmail: "refund@email.com",
-                                                    status: .refunded)
+                                                                          status: .hasMissingInfo(.init(url: loadedWebURL)))),
+                                                   webFeatureURLs: .stub, tapToPayRates: .stub)
+        let enabledResponse = LoginResponse(status: .success(.stub), webFeatureURLs: .stub, tapToPayRates: .stub)
+        let uuid = UUID()
+        let createTransactionResponse = CreateTransactionResponse(uuid: uuid,
+                                                                  referenceNumber: "1234",
+                                                                  ticketNumber: "1234")
+        let transaction = Transaction.random(uuid: uuid)
+        let receiptResponse = Transaction(uuid: transaction.uuid,
+                                          createdOn: transaction.createdOn,
+                                          formattedAmount: transaction.formattedAmount,
+                                          type: transaction.type,
+                                          status: transaction.status,
+                                          receiptRecipients: [.init(email: "some@email.com")],
+                                          card: transaction.card,
+                                          associatedTransactionRequestDate: transaction.associatedTransactionRequestDate,
+                                          canRequestReceipt: transaction.canRequestReceipt)
+        
+        let transactionsResponse: [Transaction] = [
+            .random(), .random(), .random(), .random(), .random(), .random(), .random(), .random(),
+        ]
+        .sorted { $0.createdOn > $1.createdOn }
+        let cancelTransactionResponse = Transaction(uuid: transaction.uuid,
+                                                    createdOn: transaction.createdOn,
+                                                    formattedAmount: transaction.formattedAmount,
+                                                    type: transaction.type,
+                                                    status: .canceled,
+                                                    receiptRecipients: [],
+                                                    card: transaction.card,
+                                                    associatedTransactionRequestDate: transaction.associatedTransactionRequestDate,
+                                                    canRequestReceipt: transaction.canRequestReceipt)
+        
+        let refundTransactionResponse = Transaction(uuid: transaction.uuid,
+                                                    createdOn: transaction.createdOn,
+                                                    formattedAmount: transaction.formattedAmount,
+                                                    type: transaction.type,
+                                                    status: .refunded,
+                                                    receiptRecipients: [],
+                                                    card: transaction.card,
+                                                    associatedTransactionRequestDate: transaction.associatedTransactionRequestDate,
+                                                    canRequestReceipt: transaction.canRequestReceipt)
+        
         let stubs = Stubs([
-            .login: Stub([.success(providing: needsEnrollmentResponse, after: .seconds(1)),
-                          .success(providing: hasMissingInfoResponse, after: .seconds(1)),
-                          .success(providing: enabledResponse, after: .seconds(1))]),
-            .paymentToken: .success(providing: paymentTokenResponse, after: .seconds(1)),
-            .status: .success(providing: statusResponse, after: .seconds(1)),
-            .transaction: .success(providing: transactionResponse, after: .seconds(1)),
-            .receipt: .success(providing: receiptResponse, after: .seconds(1)),
-            .transactions: .success(providing: transactionsResponse, after: .seconds(1)),
-            .cancelTransaction: .success(providing: cancelTransactionResponse, after: .seconds(1)),
-            .refundTransaction: .success(providing: refundTransactionResponse, after: .seconds(1))
+            .login: Stub([.success(providing: needsEnrollmentResponse),
+                          .success(providing: hasMissingInfoResponse),
+                          .success(providing: enabledResponse)]),
+            .status: Stub([.failure(), .success(providing: statusResponse)]),
+            .createTransaction: Stub([.failure(), .success(providing: createTransactionResponse)]),
+            .syncTransaction: Stub([.failure(), .success(providing: transaction)]),
+            .receipt: Stub([.failure(), .success(providing: receiptResponse)]),
+            .transactions: Stub([.failure(), .success(providing: transactionsResponse)]),
+            .cancelTransaction: Stub([.failure(), .success(providing: cancelTransactionResponse)]),
+            .refundTransaction: Stub([.failure(), .success(providing: refundTransactionResponse)]),
         ])
 
         return stubs
     }
 }
 
+extension Status.Enabled {
+    static let stub = Self(merchantCredentials: .init(accountToken: "079701FC1CBBEACDC0353ADFD246B965965C19C69BE2BC2B102DBCD524A78301A2AC6D01", accountId: "1045826", acceptorId: "364801436", applicationId: "14643", applicationVersion: "1.0.0", applicationName: "Autobooks"))
+}
+
 extension LoginResponse.LoginStatus.Success {
-    static let stub = Self(accessToken: "accessToken", status: .enabled)
+    static let stub = Self(accessToken: "accessToken", status: .enabled(.stub))
 }
 
 extension LoginResponse.WebFeatureURLs {
-    static let stub = Self(invoicing: .invoicing, paymentForm: .paymentForm)
+    static let stub = Self(invoicing: .invoicing, paymentForm: .paymentForm, virtualTerminal: .virtualTerminal)
+}
+
+extension LoginResponse.TapToPayRates {
+    static let stub = Self(ttpFeeValue: 0.0275, ttpFeeCap: nil, vtfFeeValue: 0.0289, vtfFeeCap: nil)
 }
 
 extension URL {
     static let paymentForm = URL(string: "https://app.autobooks.co/payment-form/default?launchmode=PaymentForm&viewmode=PaymentForm")!
     static let invoicing = URL(string: "https://app.autobooks.co/invoicing/invoices?launchmode=CreateInvoice&viewmode=Invoicing")!
+    static let virtualTerminal = URL(string: "https://app.autobooks.co/virtual-terminal/")!
 }

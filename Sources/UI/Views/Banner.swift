@@ -28,6 +28,7 @@ struct Banner: View {
             Text(message)
         }
         .font(.subheadline)
+        .minimumScaleFactor(0.5)
         .frame(maxWidth: .infinity, minHeight: 53, alignment: .leading)
         .padding(.horizontal, 32)
         .background(Color(.systemGroupedBackground))
@@ -37,10 +38,17 @@ struct Banner: View {
 @available(iOS 15.0.0, *)
 extension Banner {
     init?(transaction: Transaction) {
+        guard let associatedTransactionRequestDate = transaction.associatedTransactionRequestDate else {
+            return nil
+        }
+
         switch transaction.status {
-        case .canceled: style = .canceled(transaction.date)
-        case .refunded: style = .refunded(transaction.date)
-        default: return nil
+        case .canceled:
+            self.style = .canceled(associatedTransactionRequestDate)
+        case .refunded:
+            self.style = .refunded(associatedTransactionRequestDate)
+        default:
+            return nil
         }
     }
 }

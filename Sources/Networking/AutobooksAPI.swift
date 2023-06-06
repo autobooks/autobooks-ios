@@ -3,15 +3,15 @@ import Foundation
 @available(iOS 13.0, *)
 final class AutobooksAPI {
     private let session: URLSession
-    private let environment: Autobooks.BackendEnvironment
-    private let responseProvider: Autobooks.ResponseProvider
+    private let environment: AB.BackendEnvironment
+    private let responseProvider: AB.ResponseProvider
     private let loginProvider: @Sendable () async throws -> String
 
     private var bearerToken: String?
 
     init(subscriptionKey: String,
-         environment: Autobooks.BackendEnvironment = .dev,
-         responseProvider: Autobooks.ResponseProvider = .stubs(.successes),
+         environment: AB.BackendEnvironment = .dev,
+         responseProvider: AB.ResponseProvider = .stubs(.successes),
          loginProvider: @escaping @Sendable () async throws -> String) {
         let configuration = URLSessionConfiguration.default
         let jsonMIMEType = "application/json"
@@ -19,11 +19,12 @@ final class AutobooksAPI {
         configuration.contentType = jsonMIMEType
         let version = ProcessInfo.processInfo.operatingSystemVersion
         let versionString = "\(version.majorVersion).\(version.minorVersion).\(version.patchVersion)"
-        configuration.userAgent = "AutobooksSDK/\(Autobooks.version) iOS/\(versionString)"
+        configuration.userAgent = "AutobooksSDK/\(AB.version) iOS/\(versionString)"
         configuration.subscriptionKey = subscriptionKey
 
         switch responseProvider {
-        case var .stubs(stubs) where !stubs.isEmpty, var .hybrid(stubs) where !stubs.isEmpty:
+        case var .stubs(stubs) where !stubs.isEmpty,
+             var .hybrid(stubs) where !stubs.isEmpty:
             if case .hybrid = responseProvider {
                 // Login is real in hybrid case.
                 stubs[.login] = nil
@@ -36,7 +37,7 @@ final class AutobooksAPI {
             break
         }
 
-        session = URLSession(configuration: configuration)
+        self.session = URLSession(configuration: configuration)
         self.environment = environment
         self.responseProvider = responseProvider
         self.loginProvider = loginProvider
@@ -53,7 +54,7 @@ final class AutobooksAPI {
         }
         .mapError(APIError.loginProvider)
         .flatMap { loginToken in
-            await perform(.init(environment: environment, resource: .login(LoginRequest(ssoPayload: loginToken))))
+            await perform(.login(LoginRequest(ssoPayload: loginToken)))
         }
         .then {
             bearerToken = $0.success?.status.accessToken
@@ -61,36 +62,37 @@ final class AutobooksAPI {
     }
 
     func fetchStatus() async -> Result<Status, APIError> {
-        await perform(.init(environment: environment, resource: .status))
+        await perform(.status)
     }
 
-    func fetchPaymentToken(forReaderID readerID: String?) async -> Result<PaymentTokenResponse, APIError> {
-        await perform(.init(environment: environment, resource: .paymentToken(.init(cardReaderID: readerID))))
+    func createTransaction(for amount: Decimal, type: Transaction.TransactionType) async -> Result<CreateTransactionResponse, APIError> {
+        await perform(.createTransaction(.init(amount: amount, type: type)))
     }
 
-    func performTransaction(_ transaction: TransactionRequest) async -> Result<TransactionResponse, APIError> {
-        await perform(.init(environment: environment, resource: .transaction(transaction)))
+    func syncTransaction(_ uuid: UUID, transactionID: String) async -> Result<Transaction, APIError> {
+        await perform(.syncTransaction(.init(uuid: uuid, transactionID: transactionID)))
     }
 
-    func requestReceipt(forTransactionID transactionID: String, email: String) async -> Result<Transaction, APIError> {
-        await perform(.init(environment: environment, resource: .receipt(.init(transactionID: transactionID,
-                                                                               email: email))))
+    func requestReceipt(forTransactionID transactionID: UUID, email: String) async -> Result<Transaction, APIError> {
+        await perform(.receipt(.init(uuid: transactionID, email: email)))
     }
 
     func fetchTransactions() async -> Result<[Transaction], APIError> {
-        await perform(.init(environment: environment, resource: .transactions))
+        await perform(.transactions)
     }
 
-    func cancelTransaction(_ transactionID: String) async -> Result<Transaction, APIError> {
-        await perform(.init(environment: environment, resource: .cancelTransaction(transactionID)))
+    func cancelTransaction(_ uuid: UUID) async -> Result<Transaction, APIError> {
+        await perform(.cancelTransaction(uuid))
     }
 
-    func refundTransaction(_ transactionID: String) async -> Result<Transaction, APIError> {
-        await perform(.init(environment: environment, resource: .refundTransaction(transactionID)))
+    func refundTransaction(_ uuid: UUID) async -> Result<Transaction, APIError> {
+        await perform(.refundTransaction(uuid))
     }
 
-    private func perform<Success: Codable>(_ request: Request, decoding type: Success.Type = Success.self) async -> Result<Success, APIError> {
-        await Result { () async throws -> Response<Success> in
+    private func perform<Success: Codable>(_ resource: Resource, decoding type: Success.Type = Success.self) async -> Result<Success, APIError> {
+        let request = Request(environment: environment, resource: resource)
+
+        return await Result { () async throws -> Response<Success> in
             var urlRequest = try request.urlRequest
 
             if request.isAuthenticated {
@@ -122,6 +124,7 @@ enum APIError: Error {
     case network(URLError)
     case response(ResponseError)
     case unknown(Error)
+    case triPOS(TriPOSError)
 }
 
 extension APIError {
@@ -135,6 +138,8 @@ extension APIError {
             self = .network(error)
         case let error as DecodingError:
             self = .decoding(error)
+        case let error as TriPOSError:
+            self = .triPOS(error)
         default:
             self = .unknown(error)
         }
@@ -142,15 +147,17 @@ extension APIError {
 }
 
 extension APIError: Equatable {
-    static func ==(lhs: Self, rhs: Self) -> Bool {
+    static func == (lhs: Self, rhs: Self) -> Bool {
         switch (lhs, rhs) {
         case (.missingSessionToken, .missingSessionToken): return true
         case let (.encoding(left), .encoding(right)):
             return (left as NSError) == (right as NSError)
         case let (.decoding(left), .decoding(right)):
             return (left as NSError) == (right as NSError)
+        case let (.triPOS(left), .triPOS(right)): return left == right
         case let (.network(left), .network(right)): return left == right
-        case let (.loginProvider(left), .loginProvider(right)), let (.unknown(left), .unknown(right)):
+        case let (.loginProvider(left), .loginProvider(right)),
+             let (.unknown(left), .unknown(right)):
             return left.localizedDescription == right.localizedDescription
         default:
             return false
@@ -163,7 +170,7 @@ extension URLSession {
     struct MalformedCompletion: Error {}
 
     func data(for urlRequest: URLRequest, id: Resource.ID) async throws -> (Data, HTTPURLResponse) {
-        return try await withCheckedThrowingContinuation { continuation in
+        try await withCheckedThrowingContinuation { continuation in
             let task = dataTask(with: urlRequest) { data, response, error in
                 switch (data, response, error) {
                 case let (_, _, error?):
@@ -197,7 +204,7 @@ extension URLRequest {
     var bearerToken: String? {
         get { (authorization?.drop { $0 != " " }.dropFirst()).map(String.init) }
         set {
-            if let newValue = newValue {
+            if let newValue {
                 authorization = "Bearer \(newValue)"
             } else {
                 authorization = nil
