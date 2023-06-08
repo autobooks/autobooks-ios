@@ -7787,588 +7787,588 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "BooleanLiteral",
-      "offset": 16202,
+      "offset": 16274,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "BooleanLiteral",
-      "offset": 16708,
+      "offset": 16852,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "BooleanLiteral",
-      "offset": 17213,
+      "offset": 17423,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "BooleanLiteral",
-      "offset": 17719,
+      "offset": 18001,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 26675,
+      "offset": 26957,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (5th generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 26770,
+      "offset": 27052,
       "length": 27,
       "value": "\"iPad Air (5th generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 26859,
+      "offset": 27141,
       "length": 37,
       "value": "\"iPad Pro (11-inch) (3rd generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 26953,
+      "offset": 27235,
       "length": 28,
       "value": "\"iPad mini (5th generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 27037,
+      "offset": 27319,
       "length": 27,
       "value": "\"iPad Air (3rd generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 27117,
+      "offset": 27399,
       "length": 23,
       "value": "\"iPad (8th generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 27184,
+      "offset": 27466,
       "length": 11,
       "value": "\"iPhone XS\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 27242,
+      "offset": 27524,
       "length": 15,
       "value": "\"iPhone XS Max\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 27301,
+      "offset": 27583,
       "length": 11,
       "value": "\"iPhone XR\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 27365,
+      "offset": 27647,
       "length": 23,
       "value": "\"iPad (9th generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 27432,
+      "offset": 27714,
       "length": 11,
       "value": "\"iPhone 11\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 27490,
+      "offset": 27772,
       "length": 15,
       "value": "\"iPhone 11 Pro\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 27555,
+      "offset": 27837,
       "length": 19,
       "value": "\"iPhone 11 Pro Max\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 27631,
+      "offset": 27913,
       "length": 28,
       "value": "\"iPhone SE (2nd generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 27715,
+      "offset": 27997,
       "length": 27,
       "value": "\"iPad Air (4th generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 27796,
+      "offset": 28078,
       "length": 24,
       "value": "\"iPad (10th generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 27868,
+      "offset": 28150,
       "length": 16,
       "value": "\"iPhone 12 mini\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 27928,
+      "offset": 28210,
       "length": 11,
       "value": "\"iPhone 12\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 27986,
+      "offset": 28268,
       "length": 15,
       "value": "\"iPhone 12 Pro\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 28051,
+      "offset": 28333,
       "length": 19,
       "value": "\"iPhone 12 Pro Max\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 28127,
+      "offset": 28409,
       "length": 28,
       "value": "\"iPad mini (6th generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 28202,
+      "offset": 28484,
       "length": 15,
       "value": "\"iPhone 13 Pro\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 28267,
+      "offset": 28549,
       "length": 19,
       "value": "\"iPhone 13 Pro Max\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 28334,
+      "offset": 28616,
       "length": 16,
       "value": "\"iPhone 13 mini\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 28394,
+      "offset": 28676,
       "length": 11,
       "value": "\"iPhone 13\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 28462,
+      "offset": 28744,
       "length": 28,
       "value": "\"iPhone SE (3rd generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 28534,
+      "offset": 28816,
       "length": 11,
       "value": "\"iPhone 14\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 28593,
+      "offset": 28875,
       "length": 16,
       "value": "\"iPhone 14 Plus\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 28671,
+      "offset": 28953,
       "length": 37,
       "value": "\"iPad Pro (11-inch) (4th generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 28771,
+      "offset": 29053,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (6th generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 28863,
+      "offset": 29145,
       "length": 23,
       "value": "\"iPad (5th generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 28930,
+      "offset": 29212,
       "length": 11,
       "value": "\"iPhone 6s\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 28989,
+      "offset": 29271,
       "length": 16,
       "value": "\"iPhone 6s Plus\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 29062,
+      "offset": 29344,
       "length": 28,
       "value": "\"iPhone SE (1st generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 29139,
+      "offset": 29421,
       "length": 21,
       "value": "\"iPad Pro (9.7-inch)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 29210,
+      "offset": 29492,
       "length": 22,
       "value": "\"iPad Pro (12.9-inch)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 29295,
+      "offset": 29577,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (2nd generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 29384,
+      "offset": 29666,
       "length": 22,
       "value": "\"iPad Pro (10.5-inch)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 29459,
+      "offset": 29741,
       "length": 23,
       "value": "\"iPad (7th generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 29535,
+      "offset": 29817,
       "length": 23,
       "value": "\"iPad (6th generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 29601,
+      "offset": 29883,
       "length": 10,
       "value": "\"iPhone 7\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 29658,
+      "offset": 29940,
       "length": 15,
       "value": "\"iPhone 7 Plus\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 29731,
+      "offset": 30013,
       "length": 29,
       "value": "\"iPod touch (7th generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 29809,
+      "offset": 30091,
       "length": 20,
       "value": "\"iPad Pro (11-inch)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 29891,
+      "offset": 30173,
       "length": 37,
       "value": "\"iPad Pro (11-inch) (2nd generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 29991,
+      "offset": 30273,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (4th generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 30093,
+      "offset": 30375,
       "length": 39,
       "value": "\"iPad Pro (12.9-inch) (3rd generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 30175,
+      "offset": 30457,
       "length": 10,
       "value": "\"iPhone 8\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 30232,
+      "offset": 30514,
       "length": 15,
       "value": "\"iPhone 8 Plus\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 30290,
+      "offset": 30572,
       "length": 10,
       "value": "\"iPhone X\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 30347,
+      "offset": 30629,
       "length": 15,
       "value": "\"iPhone 14 Pro\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 30412,
+      "offset": 30694,
       "length": 19,
       "value": "\"iPhone 14 Pro Max\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 30472,
+      "offset": 30754,
       "length": 8,
       "value": "\"iPad 2\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 30524,
+      "offset": 30806,
       "length": 11,
       "value": "\"iPhone 4S\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 30579,
+      "offset": 30861,
       "length": 11,
       "value": "\"iPad mini\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 30635,
+      "offset": 30917,
       "length": 12,
       "value": "\"iPod touch\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 30700,
+      "offset": 30982,
       "length": 23,
       "value": "\"iPad (3rd generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 30776,
+      "offset": 31058,
       "length": 23,
       "value": "\"iPad (4th generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 30842,
+      "offset": 31124,
       "length": 10,
       "value": "\"iPad Air\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 30897,
+      "offset": 31179,
       "length": 13,
       "value": "\"iPad mini 2\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 30955,
+      "offset": 31237,
       "length": 13,
       "value": "\"iPad mini 3\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 31012,
+      "offset": 31294,
       "length": 11,
       "value": "\"iPhone 5s\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 31068,
+      "offset": 31350,
       "length": 13,
       "value": "\"iPad mini 4\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 31128,
+      "offset": 31410,
       "length": 15,
       "value": "\"iPhone 6 Plus\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 31186,
+      "offset": 31468,
       "length": 10,
       "value": "\"iPhone 6\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 31254,
+      "offset": 31536,
       "length": 29,
       "value": "\"iPod touch (6th generation)\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 31327,
+      "offset": 31609,
       "length": 12,
       "value": "\"iPad Air 2\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 31382,
+      "offset": 31664,
       "length": 10,
       "value": "\"iPhone 5\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 31436,
+      "offset": 31718,
       "length": 11,
       "value": "\"iPhone 5c\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 32625,
+      "offset": 32907,
       "length": 49,
       "value": "\"\\A(iPhone|iPad|iPod)(\\d{1,2})\\,(\\d{1,2})\\z\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "Array",
-      "offset": 32824,
+      "offset": 33106,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 32956,
+      "offset": 33238,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 33014,
+      "offset": 33296,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 33096,
+      "offset": 33378,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 33200,
+      "offset": 33482,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 33270,
+      "offset": 33552,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "IntegerLiteral",
-      "offset": 33340,
+      "offset": 33622,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 33623,
+      "offset": 33905,
       "length": 8,
       "value": "\"iPhone\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 33697,
+      "offset": 33979,
       "length": 6,
       "value": "\"iPad\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 33767,
+      "offset": 34049,
       "length": 6,
       "value": "\"iPod\""
     },
