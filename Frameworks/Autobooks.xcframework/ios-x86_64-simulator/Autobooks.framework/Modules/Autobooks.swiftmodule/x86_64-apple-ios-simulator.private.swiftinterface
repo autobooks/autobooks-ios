@@ -1,0 +1,71 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Autobooks
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Combine
+import Foundation
+import OSLog
+import ProximityReader
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _SceneKit_SwiftUI
+import _StringProcessing
+public struct Stubs : Swift.Equatable {
+  public static func == (a: Autobooks.Stubs, b: Autobooks.Stubs) -> Swift.Bool
+}
+extension Autobooks.Stubs {
+  public static var successes: Autobooks.Stubs {
+    get
+  }
+  public static var failures: Autobooks.Stubs {
+    get
+  }
+  public static func webPrompts(loadedWebURL: Foundation.URL, needsEnrollmentCallback: Foundation.URL, hasMissingInfoCallback: Foundation.URL) -> Autobooks.Stubs
+}
+public enum AB {
+  public struct Configuration {
+    public static let `default`: Autobooks.AB.Configuration
+    public let environment: Autobooks.AB.BackendEnvironment
+    public let primaryColor: UIKit.UIColor
+    public let responseProvider: Autobooks.AB.ResponseProvider
+    public let shouldFallBackToPaymentForm: Swift.Bool
+    public init(environment: Autobooks.AB.BackendEnvironment, primaryColor: UIKit.UIColor, responseProvider: Autobooks.AB.ResponseProvider, shouldFallBackToPaymentForm: Swift.Bool)
+  }
+  public enum BackendEnvironment {
+    case dev
+    case staging
+    case production
+    public static func == (a: Autobooks.AB.BackendEnvironment, b: Autobooks.AB.BackendEnvironment) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum ResponseProvider : Swift.Equatable {
+    case backendMocked
+    case hybrid(Autobooks.Stubs)
+    case live
+    case stubs(Autobooks.Stubs)
+    public static func == (a: Autobooks.AB.ResponseProvider, b: Autobooks.AB.ResponseProvider) -> Swift.Bool
+  }
+  public enum Device : Swift.Equatable {
+    case simulated
+    case real(ipAddress: Swift.String)
+    public static func == (a: Autobooks.AB.Device, b: Autobooks.AB.Device) -> Swift.Bool
+  }
+  public static let version: Swift.String
+  public static var supportsTapToPay: Swift.Bool {
+    get
+  }
+  #if compiler(>=5.3) && $AsyncAwait && $Sendable
+  public static func startTapToPay(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration = .default, device: Autobooks.AB.Device, useExpressApi: Swift.Bool = false, loginProvider: @escaping @Sendable () async throws -> Swift.String)
+  #endif
+  public static func startPaymentForm(subscriptionKey: Swift.String, loginToken: Swift.String, configuration: Autobooks.AB.Configuration = .default)
+  public static func startInvoicing(subscriptionKey: Swift.String, loginToken: Swift.String, configuration: Autobooks.AB.Configuration = .default)
+  public static func stop()
+}
+extension Autobooks.AB.BackendEnvironment : Swift.Equatable {}
+extension Autobooks.AB.BackendEnvironment : Swift.Hashable {}

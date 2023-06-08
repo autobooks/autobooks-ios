@@ -1,0 +1,2345 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "triPOSMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "triPOSMobileSDK_Private",
+        "printedName": "triPOSMobileSDK_Private",
+        "declKind": "Import",
+        "moduleName": "triPOSMobileSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Logger",
+        "printedName": "Logger",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Logger",
+                "printedName": "triPOSMobileSDK.Logger",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)Logger"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)Logger(im)init",
+            "mangledName": "$s15triPOSMobileSDK6LoggerCACycfc",
+            "moduleName": "triPOSMobileSDK",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@triPOSMobileSDK@objc(cs)Logger",
+        "mangledName": "$s15triPOSMobileSDK6LoggerC",
+        "moduleName": "triPOSMobileSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "triPOSMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PaymentCardReaderBridgeProtocol",
+        "printedName": "PaymentCardReaderBridgeProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "prepareStatus",
+            "printedName": "prepareStatus(description:progress:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@triPOSMobileSDK@objc(pl)PaymentCardReaderBridgeProtocol(im)prepareStatusWithDescription:progress:",
+            "mangledName": "$s15triPOSMobileSDK31PaymentCardReaderBridgeProtocolP13prepareStatus11description8progressySS_SitF",
+            "moduleName": "triPOSMobileSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : triPOSMobileSDK.PaymentCardReaderBridgeProtocol>",
+            "sugared_genericSig": "<Self where Self : triPOSMobileSDK.PaymentCardReaderBridgeProtocol>",
+            "protocolReq": true,
+            "objc_name": "prepareStatusWithDescription:progress:",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@triPOSMobileSDK@objc(pl)PaymentCardReaderBridgeProtocol",
+        "mangledName": "$s15triPOSMobileSDK31PaymentCardReaderBridgeProtocolP",
+        "moduleName": "triPOSMobileSDK",
+        "genericSig": "<τ_0_0 : ObjectiveC.NSObjectProtocol>",
+        "sugared_genericSig": "<Self : ObjectiveC.NSObjectProtocol>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "triPOSMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PaymentCardReaderToken",
+        "printedName": "PaymentCardReaderToken",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "PaymentCardReaderTokenError",
+            "printedName": "PaymentCardReaderTokenError",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "jwtIsNil",
+                "printedName": "jwtIsNil",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(triPOSMobileSDK.PaymentCardReaderToken.PaymentCardReaderTokenError.Type) -> triPOSMobileSDK.PaymentCardReaderToken.PaymentCardReaderTokenError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentCardReaderTokenError",
+                        "printedName": "triPOSMobileSDK.PaymentCardReaderToken.PaymentCardReaderTokenError",
+                        "usr": "s:15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "triPOSMobileSDK.PaymentCardReaderToken.PaymentCardReaderTokenError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PaymentCardReaderTokenError",
+                            "printedName": "triPOSMobileSDK.PaymentCardReaderToken.PaymentCardReaderTokenError",
+                            "usr": "s:15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO8jwtIsNilyA2EmF",
+                "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO8jwtIsNilyA2EmF",
+                "moduleName": "triPOSMobileSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "tooFewBlocks",
+                "printedName": "tooFewBlocks",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(triPOSMobileSDK.PaymentCardReaderToken.PaymentCardReaderTokenError.Type) -> triPOSMobileSDK.PaymentCardReaderToken.PaymentCardReaderTokenError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentCardReaderTokenError",
+                        "printedName": "triPOSMobileSDK.PaymentCardReaderToken.PaymentCardReaderTokenError",
+                        "usr": "s:15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "triPOSMobileSDK.PaymentCardReaderToken.PaymentCardReaderTokenError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PaymentCardReaderTokenError",
+                            "printedName": "triPOSMobileSDK.PaymentCardReaderToken.PaymentCardReaderTokenError",
+                            "usr": "s:15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO12tooFewBlocksyA2EmF",
+                "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO12tooFewBlocksyA2EmF",
+                "moduleName": "triPOSMobileSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "errorDecodingBase64",
+                "printedName": "errorDecodingBase64",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(triPOSMobileSDK.PaymentCardReaderToken.PaymentCardReaderTokenError.Type) -> (Swift.String?) -> triPOSMobileSDK.PaymentCardReaderToken.PaymentCardReaderTokenError",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String?) -> triPOSMobileSDK.PaymentCardReaderToken.PaymentCardReaderTokenError",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PaymentCardReaderTokenError",
+                            "printedName": "triPOSMobileSDK.PaymentCardReaderToken.PaymentCardReaderTokenError",
+                            "usr": "s:15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "triPOSMobileSDK.PaymentCardReaderToken.PaymentCardReaderTokenError.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PaymentCardReaderTokenError",
+                            "printedName": "triPOSMobileSDK.PaymentCardReaderToken.PaymentCardReaderTokenError",
+                            "usr": "s:15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO19errorDecodingBase64yAESSSgcAEmF",
+                "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO19errorDecodingBase64yAESSSgcAEmF",
+                "moduleName": "triPOSMobileSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "errorDescription",
+                "printedName": "errorDescription",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO16errorDescriptionSSvp",
+                "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO16errorDescriptionSSvp",
+                "moduleName": "triPOSMobileSDK",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO16errorDescriptionSSvg",
+                    "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO16errorDescriptionSSvg",
+                    "moduleName": "triPOSMobileSDK",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "errorName",
+                "printedName": "errorName",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO9errorNameSSvp",
+                "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO9errorNameSSvp",
+                "moduleName": "triPOSMobileSDK",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO9errorNameSSvg",
+                    "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO9errorNameSSvg",
+                    "moduleName": "triPOSMobileSDK",
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO",
+            "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC0defG5ErrorO",
+            "moduleName": "triPOSMobileSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Error",
+                "printedName": "Error",
+                "usr": "s:s5ErrorP",
+                "mangledName": "$ss5ErrorP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rawToken",
+            "printedName": "rawToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(py)rawToken",
+            "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC03rawG0SSSgvp",
+            "moduleName": "triPOSMobileSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(im)rawToken",
+                "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC03rawG0SSSgvg",
+                "moduleName": "triPOSMobileSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "issuedAtTime",
+            "printedName": "issuedAtTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(py)issuedAtTime",
+            "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC12issuedAtTime10Foundation4DateVSgvp",
+            "moduleName": "triPOSMobileSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(im)issuedAtTime",
+                "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC12issuedAtTime10Foundation4DateVSgvg",
+                "moduleName": "triPOSMobileSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expirationTime",
+            "printedName": "expirationTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(py)expirationTime",
+            "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC14expirationTime10Foundation4DateVSgvp",
+            "moduleName": "triPOSMobileSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(im)expirationTime",
+                "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC14expirationTime10Foundation4DateVSgvg",
+                "moduleName": "triPOSMobileSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeTillExpiration",
+            "printedName": "timeTillExpiration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(py)timeTillExpiration",
+            "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC18timeTillExpirationSdvp",
+            "moduleName": "triPOSMobileSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(im)timeTillExpiration",
+                "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC18timeTillExpirationSdvg",
+                "moduleName": "triPOSMobileSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isExpired",
+            "printedName": "isExpired",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(py)isExpired",
+            "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC9isExpiredSbvp",
+            "moduleName": "triPOSMobileSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(im)isExpired",
+                "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC9isExpiredSbvg",
+                "moduleName": "triPOSMobileSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "terminalProfileId",
+            "printedName": "terminalProfileId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(py)terminalProfileId",
+            "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC17terminalProfileIdSSSgvp",
+            "moduleName": "triPOSMobileSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(im)terminalProfileId",
+                "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC17terminalProfileIdSSSgvg",
+                "moduleName": "triPOSMobileSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "merchantIdentifier",
+            "printedName": "merchantIdentifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(py)merchantIdentifier",
+            "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC18merchantIdentifierSSSgvp",
+            "moduleName": "triPOSMobileSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(im)merchantIdentifier",
+                "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC18merchantIdentifierSSSgvg",
+                "moduleName": "triPOSMobileSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "merchantBannerName",
+            "printedName": "merchantBannerName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(py)merchantBannerName",
+            "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC18merchantBannerNameSSSgvp",
+            "moduleName": "triPOSMobileSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(im)merchantBannerName",
+                "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC18merchantBannerNameSSSgvg",
+                "moduleName": "triPOSMobileSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(jwt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentCardReaderToken",
+                "printedName": "triPOSMobileSDK.PaymentCardReaderToken",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(im)initWithJwt:error:",
+            "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC3jwtACSSSg_tKcfc",
+            "moduleName": "triPOSMobileSDK",
+            "objc_name": "initWithJwt:error:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "parseFromJwt",
+            "printedName": "parseFromJwt(jwt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(im)parseFromJwtWithJwt:error:",
+            "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC12parseFromJwt3jwtySS_tKF",
+            "moduleName": "triPOSMobileSDK",
+            "objc_name": "parseFromJwtWithJwt:error:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "base64",
+            "printedName": "base64(fromJwtBase64:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(im)base64FromJwtBase64:",
+            "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC6base6413fromJwtBase64S2S_tF",
+            "moduleName": "triPOSMobileSDK",
+            "objc_name": "base64FromJwtBase64:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "middleBlock",
+            "printedName": "middleBlock(ofBase64:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(im)middleBlockOfBase64:error:",
+            "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC11middleBlock8ofBase64S2S_tKF",
+            "moduleName": "triPOSMobileSDK",
+            "objc_name": "middleBlockOfBase64:error:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dictionary",
+            "printedName": "dictionary(fromBase64:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(im)dictionaryFromBase64:error:",
+            "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC10dictionary10fromBase64SDySSypGSS_tKF",
+            "moduleName": "triPOSMobileSDK",
+            "objc_name": "dictionaryFromBase64:error:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "date",
+            "printedName": "date(fromEpoch:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(im)dateFromEpoch:",
+            "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC4date9fromEpoch10Foundation4DateVSd_tF",
+            "moduleName": "triPOSMobileSDK",
+            "objc_name": "dateFromEpoch:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "logToken",
+            "printedName": "logToken()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(im)logToken",
+            "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC03logG0yyF",
+            "moduleName": "triPOSMobileSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentCardReaderToken",
+                "printedName": "triPOSMobileSDK.PaymentCardReaderToken",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken(im)init",
+            "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenCACycfc",
+            "moduleName": "triPOSMobileSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken",
+        "mangledName": "$s15triPOSMobileSDK22PaymentCardReaderTokenC",
+        "moduleName": "triPOSMobileSDK",
+        "intro_iOS": "16",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "Available"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "triPOSMobileSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "ProximityReader",
+        "printedName": "ProximityReader",
+        "declKind": "Import",
+        "moduleName": "triPOSMobileSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PaymentCardReaderBridge",
+        "printedName": "PaymentCardReaderBridge",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "statusDelegate",
+            "printedName": "statusDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "triPOSMobileSDK.PaymentCardReaderBridgeProtocol?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentCardReaderBridgeProtocol",
+                    "printedName": "triPOSMobileSDK.PaymentCardReaderBridgeProtocol",
+                    "usr": "c:@M@triPOSMobileSDK@objc(pl)PaymentCardReaderBridgeProtocol"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(py)statusDelegate",
+            "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC14statusDelegateAA0defG8Protocol_pSgvp",
+            "moduleName": "triPOSMobileSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "triPOSMobileSDK.PaymentCardReaderBridgeProtocol?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentCardReaderBridgeProtocol",
+                        "printedName": "triPOSMobileSDK.PaymentCardReaderBridgeProtocol",
+                        "usr": "c:@M@triPOSMobileSDK@objc(pl)PaymentCardReaderBridgeProtocol"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(im)statusDelegate",
+                "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC14statusDelegateAA0defG8Protocol_pSgvg",
+                "moduleName": "triPOSMobileSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "triPOSMobileSDK.PaymentCardReaderBridgeProtocol?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentCardReaderBridgeProtocol",
+                        "printedName": "triPOSMobileSDK.PaymentCardReaderBridgeProtocol",
+                        "usr": "c:@M@triPOSMobileSDK@objc(pl)PaymentCardReaderBridgeProtocol"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(im)setStatusDelegate:",
+                "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC14statusDelegateAA0defG8Protocol_pSgvs",
+                "moduleName": "triPOSMobileSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:15triPOSMobileSDK23PaymentCardReaderBridgeC14statusDelegateAA0defG8Protocol_pSgvM",
+                "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC14statusDelegateAA0defG8Protocol_pSgvM",
+                "moduleName": "triPOSMobileSDK",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "readerIdentifier",
+            "printedName": "readerIdentifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(py)readerIdentifier",
+            "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC16readerIdentifierSSvp",
+            "moduleName": "triPOSMobileSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(im)readerIdentifier",
+                "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC16readerIdentifierSSvg",
+                "moduleName": "triPOSMobileSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentCardReaderBridge",
+                "printedName": "triPOSMobileSDK.PaymentCardReaderBridge",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(im)init",
+            "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeCACycfc",
+            "moduleName": "triPOSMobileSDK",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "isSupported",
+            "printedName": "isSupported",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(py)isSupported",
+            "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC11isSupportedSbvp",
+            "moduleName": "triPOSMobileSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(im)isSupported",
+                "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC11isSupportedSbvg",
+                "moduleName": "triPOSMobileSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "linkAccount",
+            "printedName": "linkAccount(paymentCardReaderToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentCardReaderToken",
+                "printedName": "triPOSMobileSDK.PaymentCardReaderToken",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(im)linkAccountWithPaymentCardReaderToken:completionHandler:",
+            "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC11linkAccount07paymenteF5TokenyAA0defK0C_tYaKF",
+            "moduleName": "triPOSMobileSDK",
+            "objc_name": "linkAccountWithPaymentCardReaderToken:completionHandler:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "prepare",
+            "printedName": "prepare(paymentCardReaderToken:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentCardReaderToken",
+                "printedName": "triPOSMobileSDK.PaymentCardReaderToken",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderToken"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(im)prepareWithPaymentCardReaderToken:completionHandler:",
+            "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC7prepare07paymenteF5TokenSbAA0defJ0C_tYaKF",
+            "moduleName": "triPOSMobileSDK",
+            "objc_name": "prepareWithPaymentCardReaderToken:completionHandler:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "isConnected",
+            "printedName": "isConnected",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(py)isConnected",
+            "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC11isConnectedSbvp",
+            "moduleName": "triPOSMobileSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(im)isConnected",
+                "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC11isConnectedSbvg",
+                "moduleName": "triPOSMobileSDK",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "deinitialize",
+            "printedName": "deinitialize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(im)deinitializeWithCompletionHandler:",
+            "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC12deinitializeyyYaKF",
+            "moduleName": "triPOSMobileSDK",
+            "objc_name": "deinitializeWithCompletionHandler:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "CardData",
+            "printedName": "CardData",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "id",
+                "printedName": "id",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC2idSSSgvp",
+                "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC2idSSSgvp",
+                "moduleName": "triPOSMobileSDK",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl",
+                  "ObjC"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC2idSSSgvg",
+                    "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC2idSSSgvg",
+                    "moduleName": "triPOSMobileSDK",
+                    "implicit": true,
+                    "declAttributes": [
+                      "ObjC"
+                    ],
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC2idSSSgvs",
+                    "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC2idSSSgvs",
+                    "moduleName": "triPOSMobileSDK",
+                    "implicit": true,
+                    "declAttributes": [
+                      "ObjC"
+                    ],
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC2idSSSgvM",
+                    "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC2idSSSgvM",
+                    "moduleName": "triPOSMobileSDK",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "generalCardData",
+                "printedName": "generalCardData",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC07generaleH0SSSgvp",
+                "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC07generaleH0SSSgvp",
+                "moduleName": "triPOSMobileSDK",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl",
+                  "ObjC"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC07generaleH0SSSgvg",
+                    "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC07generaleH0SSSgvg",
+                    "moduleName": "triPOSMobileSDK",
+                    "implicit": true,
+                    "declAttributes": [
+                      "ObjC"
+                    ],
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC07generaleH0SSSgvs",
+                    "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC07generaleH0SSSgvs",
+                    "moduleName": "triPOSMobileSDK",
+                    "implicit": true,
+                    "declAttributes": [
+                      "ObjC"
+                    ],
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC07generaleH0SSSgvM",
+                    "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC07generaleH0SSSgvM",
+                    "moduleName": "triPOSMobileSDK",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "paymentCardData",
+                "printedName": "paymentCardData",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC07paymenteH0SSSgvp",
+                "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC07paymenteH0SSSgvp",
+                "moduleName": "triPOSMobileSDK",
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl",
+                  "ObjC"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC07paymenteH0SSSgvg",
+                    "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC07paymenteH0SSSgvg",
+                    "moduleName": "triPOSMobileSDK",
+                    "implicit": true,
+                    "declAttributes": [
+                      "ObjC"
+                    ],
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC07paymenteH0SSSgvs",
+                    "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC07paymenteH0SSSgvs",
+                    "moduleName": "triPOSMobileSDK",
+                    "implicit": true,
+                    "declAttributes": [
+                      "ObjC"
+                    ],
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC07paymenteH0SSSgvM",
+                    "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC07paymenteH0SSSgvM",
+                    "moduleName": "triPOSMobileSDK",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardData",
+                    "printedName": "triPOSMobileSDK.PaymentCardReaderBridge.CardData",
+                    "usr": "s:15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataCAEycfc",
+                "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataCAEycfc",
+                "moduleName": "triPOSMobileSDK",
+                "overriding": true,
+                "implicit": true,
+                "objc_name": "init",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC",
+                  "Override"
+                ],
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC",
+            "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC",
+            "moduleName": "triPOSMobileSDK",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "superclassUsr": "c:objc(cs)NSObject",
+            "hasMissingDesignatedInitializers": true,
+            "superclassNames": [
+              "ObjectiveC.NSObject"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CVarArg",
+                "printedName": "CVarArg",
+                "usr": "s:s7CVarArgP",
+                "mangledName": "$ss7CVarArgP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObservingPublishing",
+                "printedName": "_KeyValueCodingAndObservingPublishing",
+                "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+                "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "_KeyValueCodingAndObserving",
+                "printedName": "_KeyValueCodingAndObserving",
+                "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+                "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "readPaymentCard",
+            "printedName": "readPaymentCard(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CardData",
+                "printedName": "triPOSMobileSDK.PaymentCardReaderBridge.CardData",
+                "usr": "s:15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSDecimalNumber",
+                "printedName": "Foundation.NSDecimalNumber",
+                "usr": "c:objc(cs)NSDecimalNumber"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(im)readPaymentCardFor:completionHandler:",
+            "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC04readdE03forAC0E4DataCSo15NSDecimalNumberC_tYaKF",
+            "moduleName": "triPOSMobileSDK",
+            "objc_name": "readPaymentCardFor:completionHandler:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(im)resetWithCompletionHandler:",
+            "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC5resetSbyYaKF",
+            "moduleName": "triPOSMobileSDK",
+            "objc_name": "resetWithCompletionHandler:",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "ObjC"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "lastErrorName",
+            "printedName": "lastErrorName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(py)lastErrorName",
+            "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC13lastErrorNameSSSgvp",
+            "moduleName": "triPOSMobileSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(im)lastErrorName",
+                "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC13lastErrorNameSSSgvg",
+                "moduleName": "triPOSMobileSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lastErrorDescription",
+            "printedName": "lastErrorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(py)lastErrorDescription",
+            "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC20lastErrorDescriptionSSSgvp",
+            "moduleName": "triPOSMobileSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(im)lastErrorDescription",
+                "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC20lastErrorDescriptionSSSgvg",
+                "moduleName": "triPOSMobileSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge",
+        "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC",
+        "moduleName": "triPOSMobileSDK",
+        "intro_iOS": "16.0",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "Available",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/ec2-user\/Documents\/_work\/3\/s\/triPOSMobileSDK\/PoiDevice\/PoiDevice\/AppleTapToPay\/PaymentCardReaderToken.swift",
+      "kind": "StringLiteral",
+      "offset": 120,
+      "length": 22,
+      "value": "\"triPOSMobileSDK.PaymentCardReaderToken\""
+    },
+    {
+      "filePath": "\/Users\/ec2-user\/Documents\/_work\/3\/s\/triPOSMobileSDK\/PoiDevice\/PoiDevice\/AppleTapToPay\/PaymentCardReaderBridge.swift",
+      "kind": "StringLiteral",
+      "offset": 5433,
+      "length": 8,
+      "value": "\"triPOSMobileSDK.CardData\""
+    }
+  ]
+}

@@ -1,0 +1,863 @@
+<?xml version="1.0"?>
+<Tags>
+  <tag id="T4F" caption="4F" description="Application Dedicated File (ADF) Name" min="5" max="16" datatype="HexAscii" type="Emv" />
+  <tag id="T50" caption="50" description="Application Label" min="1" max="16" datatype="Ascii" type="Emv" />
+  <tag id="T57" caption="57" description="Track 2 Equivalent Data" min="0" max="19" datatype="HexAscii" type="Emv" />
+  <tag id="T5A" caption="5A" description="Application Primary Account Number (PAN)" min="0" max="10" datatype="HexAscii" type="Emv" />
+  <tag id="T5F20" caption="5F20" description="Cardholder Name" min="2" max="26" datatype="Ascii" type="Emv" />
+  <tag id="T5F24" caption="5F24" description="Application Expiration Date (YYMMDD)" min="3" max="3" datatype="HexAscii" type="Emv" />
+  <tag id="T5F28" caption="5F28" description="Issuer Country Code, 3 digit numeric" min="2" max="2" datatype="HexAscii" type="Emv" />
+  <tag id="T5F2A" caption="5F2A" description="Transaction Currency Code" min="2" max="2" datatype="HexAscii" type="Emv" message3309="true" />
+  <tag id="T5F2D" caption="5F2D" description="Preferred Languages" min="2" max="8" datatype="Ascii" type="Emv" />
+  <tag id="T5F30" caption="5F30" description="Service Code" min="2" max="2" datatype="HexAscii" type="Emv" />
+  <tag id="T5F34" caption="5F34" description="Application Primary Account Number (PAN) Sequence Number" min="1" max="1" datatype="HexAscii" type="Emv" />
+  <tag id="T5F55" caption="5F55" description="Issuer Country Code, 2 digit alpha" min="2" max="2" datatype="Ascii" type="Emv" />
+  <tag id="T5F56" caption="5F56" description="Issuer Country Code, 3 digit alpha" min="3" max="3" datatype="Ascii" type="Emv" />
+  <tag id="T71" caption="71" description="Issuer Script Template 1" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="T72" caption="72" description="Issuer Script Template 2" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="T81" caption="81" description="Amount, Authorized (Binary)" min="4" max="4" datatype="HexAscii" type="Emv" />
+  <tag id="T82" caption="82" description="Application Interchange Profile (AIP)" min="2" max="2" datatype="HexAscii" type="Emv" bitwise="true">
+    <meaning value="7" description="SDA supported" />
+    <meaning value="6" description="DDA supported" />
+    <meaning value="5" description="Cardholder verification is supported" />
+    <meaning value="4" description="Terminal risk management is to be performed" />
+    <meaning value="3" description="Issuer authentication is supported" />
+    <meaning value="1" description="CDA supported" />
+  </tag>
+  <tag id="T84" caption="84" description="Dedicated File (DF) Name" min="5" max="16" datatype="HexAscii" type="Emv" />
+  <tag id="T86" caption="86" description="Issuer Script Command" min="0" max="261" datatype="HexAscii" type="Emv" />
+  <tag id="T87" caption="87" description="Application Priority Indicator" min="1" max="1" datatype="HexAscii" type="Emv" />
+  <tag id="T89" caption="89" description="Authorization Code" min="2" max="2" datatype="HexAscii" type="Emv" />
+  <tag id="T8A" caption="8A" description="Authorization Response Code (ARC)" min="2" max="2" datatype="Ascii" type="Emv" message3304="true" >
+    <meaning value="00" description="Online approval" />
+    <meaning value="01" description="Referral requested by issuer" />
+    <meaning value="04" description="Capture card" />
+    <meaning value="05" description="Online decline" />
+    <meaning value="Y1" description="Offline approved" />
+    <meaning value="Y3" description="Unable to go online, offline approved" />
+    <meaning value="Z1" description="Offline declined" />
+    <meaning value="Z3" description="Unable to go online, offline declined" />
+  </tag>
+  <!--- T8E is parsed in code -->
+  <tag id="T8E" caption="8E" description="Card Holder Verification Method (CVM) List" min="0" max="252" datatype="HexAscii" type="Emv" bitwise="true" />
+  <tag id="T8C" caption="8C" description="Card Risk Management Data Object List" min="0" max="252" datatype="HexAscii" type="Emv" bitwise="true" />
+  <tag id="T8D" caption="8D" description="Card Risk Management Data Object List 2" min="0" max="252" datatype="HexAscii" type="Emv" bitwise="true" />
+  <tag id="T8F" caption="8F" description="Card Identifies the certification authority's public key in conjunction with the RID" min="0" max="252" datatype="HexAscii" type="Emv" bitwise="true" />
+  <tag id="T91" caption="91" description="Issuer Authentication Data" min="8" max="16" datatype="HexAscii" type="Emv" />
+  <tag id="T95" caption="95" description="Terminal Verification Results (TVR)" min="5" max="5" datatype="HexAscii" type="Emv" bitwise="true">
+    <meaning value="8" description="Offline data authentication was not performed" />
+    <meaning value="7" description="SDA failed" />
+    <meaning value="6" description="ICC data missing" />
+    <meaning value="5" description="Card appears on terminal exception file" />
+    <meaning value="4" description="DDA failed" />
+    <meaning value="3" description="CDA failed" />
+    <meaning value="2" description="SDA selected" />
+    <meaning value="16" description="ICC and terminal have different application versions" />
+    <meaning value="15" description="Expired application" />
+    <meaning value="14" description="Application not yet effective" />
+    <meaning value="13" description="Requested service not allowed for card product" />
+    <meaning value="12" description="New card" />
+    <meaning value="24" description="Cardholder verification was not successful" />
+    <meaning value="23" description="Unrecognised CVM" />
+    <meaning value="22" description="PIN try Limit exceeded" />
+    <meaning value="21" description="PIN entry required and PIN pad not present or not working" />
+    <meaning value="20" description="PIN entry required, PIN pad present, but PIN was not entered" />
+    <meaning value="19" description="Online PIN entered" />
+    <meaning value="32" description="Transaction exceeds floor limit" />
+    <meaning value="31" description="Lower consecutive offline limit exceeded" />
+    <meaning value="30" description="Upper consecutive offline limit exceeded" />
+    <meaning value="29" description="Transaction selected randomly for online processing" />
+    <meaning value="28" description="Merchant forced transaction online" />
+    <meaning value="40" description="Default TDOL used" />
+    <meaning value="39" description="Issuer authentication failed" />
+    <meaning value="38" description="Script processing failed before final GENERATE AC" />
+    <meaning value="37" description="Script processing failed after final GENERATE AC" />
+  </tag>
+  <tag id="T99" caption="99" description="PIN block" min="0" max="0" datatype="Ascii" type="Emv" />
+  <tag id="T9A" caption="9A" description="Transaction Date (Local - YYMMDD) - Terminal" min="3" max="3" datatype="HexAscii" type="Emv" />
+  <tag id="T9B" caption="9B" description="Transaction Status Information (TSI)" min="2" max="2" datatype="HexAscii" type="Emv" bitwise="true">
+    <meaning value="8" description="Offline data authentication was performed" />
+    <meaning value="7" description="Cardholder verification was performed" />
+    <meaning value="6" description="Card risk management was performed" />
+    <meaning value="5" description="Issuer authentication was performed" />
+    <meaning value="4" description="Terminal risk management was performed" />
+    <meaning value="3" description="Script processing was performed" />
+  </tag>
+  <tag id="T9C" caption="9C" description="Transaction Type" min="1" max="1" datatype="HexAscii" type="Emv" default="Configuration specific value">
+    <meaning value="00" description="Purchase" />
+    <meaning value="09" description="Purchase with cashback" />
+    <meaning value="20" description="Refund" />
+    <meaning value="30" description="Account verify" />
+  </tag>
+  <tag id="T9F02" caption="9F02" description="Amount, Authorized (Numeric)" min="6" max="6" datatype="HexAscii" type="Emv" message3309="true" />
+  <tag id="T9F03" caption="9F03" description="Amount, Other (Numeric) - Cashback Amount" min="6" max="6" datatype="HexAscii" type="Emv" />
+  <tag id="T9F06" caption="9F06" description="Application Identifier (AID) - Terminal" min="5" max="16" datatype="HexAscii" type="Emv" />
+  <tag id="T9F04" caption="9F04" description="Amount, Other (Binary) - Cashback Amount" min="4" max="4" datatype="HexAscii" type="Emv" />
+  <tag id="T9F07" caption="9F07" description="Application Usage Control (AUC)" min="2" max="2" datatype="HexAscii" type="Emv" bitwise="true">
+    <meaning value="8" description="Valid for domestic cash transactions" />
+    <meaning value="7" description="Valid for international cash transactions" />
+    <meaning value="6" description="Valid for domestic goods" />
+    <meaning value="5" description="Valid for international goods" />
+    <meaning value="4" description="Valid for domestic services" />
+    <meaning value="3" description="Valid for international services" />
+    <meaning value="2" description="Valid at ATMs" />
+    <meaning value="1" description="Valid at terminals other than ATMs" />
+    <meaning value="16" description="Domestic cashback allowed" />
+    <meaning value="15" description="International cashback allowed" />
+  </tag>
+  <tag id="T9F08" caption="9F08" description="Application Version Number - ICC" min="2" max="2" datatype="HexAscii" type="Emv" />
+  <tag id="T9F09" caption="9F09" description="Application Version Number - Terminal" min="2" max="2" datatype="HexAscii" type="Emv" />
+  <tag id="T9F0B" caption="9F0B" description="Cardholder Name Extended" min="27" max="45" datatype="Ascii" type="Emv" />
+  <tag id="T9F0D" caption="9F0D" description="Issuer Action Code (IAC) Default" min="5" max="5" datatype="HexAscii" type="Emv" />
+  <tag id="T9F0E" caption="9F0E" description="Issuer Action Code (IAC) Denial" min="5" max="5" datatype="HexAscii" type="Emv" />
+  <tag id="T9F0F" caption="9F0F" description="Issuer Action Code (IAC) Online" min="5" max="5" datatype="HexAscii" type="Emv" />
+  <tag id="T9F10" caption="9F10" description="Issuer Application Data (IAD)" min="0" max="32" datatype="HexAscii" type="Emv" />
+  <tag id="T9F11" caption="9F11" description="Issuer Code Table Index" min="1" max="1" datatype="HexAscii" type="Emv" />
+  <tag id="T9F12" caption="9F12" description="Application Preferred Name" min="1" max="16" datatype="HexAscii" type="Emv" />
+  <tag id="T9F14" caption="9F14" description="Lower Consecutive Offline Limit" min="1" max="1" datatype="HexAscii" type="Emv" />
+  <tag id="T9F17" caption="9F17" description="Personal Identification Number (PIN) Try Counter" min="1" max="1" datatype="HexAscii" type="Emv" />
+  <tag id="T9F18" caption="9F18" description="Issuer Script Identifier" min="4" max="4" datatype="HexAscii" type="Emv" />
+  <tag id="T9F1A" caption="9F1A" description="Terminal Country Code" min="2" max="2" datatype="HexAscii" type="Emv" message3309="true">
+    <meaning value="0840" description="USA" />
+    <meaning value="0124" description="Canada" />
+  </tag>
+  <tag id="T9F1B" caption="9F1B" description="Terminal Floor Limit" min="4" max="4" datatype="HexAscii" type="Emv" />
+  <tag id="T9F1E" caption="9F1E" description="Interface Device (IFD) Serial Number" min="8" max="8" datatype="Ascii" type="Emv" />
+  <tag id="T9F20" caption="9F20" description="Track 2 Discretionary Data" min="1" max="16" datatype="HexAscii" type="Emv" />
+  <tag id="T9F21" caption="9F21" description="Transaction Time" min="3" max="3" datatype="HexAscii" type="Emv" />
+  <tag id="T9F24" caption="9F24" description="Payment Account Reference" min="24" max="29" datatype="HexAscii" type="Emv" />
+  <tag id="T9F26" caption="9F26" description="Application Cryptogram (AC)" min="8" max="8" datatype="HexAscii" type="Emv" />
+  <!--- T9F27 is parsed in code -->
+  <tag id="T9F27" caption="9F27" description="Cryptogram Information Data (CID)" min="1" max="1" datatype="HexAscii" type="Emv" bitwise="true" />
+  <tag id="T9F33" caption="9F33" description="Terminal Capabilities" min="3" max="3" datatype="HexAscii" type="Emv" message3309="true" bitwise="true">
+    <meaning value="8" description="Manual key entry" />
+    <meaning value="7" description="Magnetic stripe" />
+    <meaning value="6" description="IC with contacts" />
+    <meaning value="16" description="Plaintext PIN for ICC verification" />
+    <meaning value="15" description="Enciphered PIN for online verification" />
+    <meaning value="14" description="Signature" />
+    <meaning value="13" description="Enciphered PIN for offline verification" />
+    <meaning value="12" description="No CVM required" />
+    <meaning value="24" description="SDA" />
+    <meaning value="23" description="DDA" />
+    <meaning value="22" description="Card capture" />
+    <meaning value="21" description="RFU" />
+    <meaning value="20" description="CDA" />
+  </tag>
+  <!--- T9F34 is parsed in code -->
+  <tag id="T9F34" caption="9F34" description="Cardholder Verification Method (CVM) Results (CVMR)" min="3" max="3" datatype="HexAscii" type="Emv" bitwise="true" />
+  <tag id="T9F35" caption="9F35" description="Terminal Type" min="1" max="1" datatype="HexAscii" type="Emv">
+    <meaning value="11" description="Attended - Online only - Operational Control Provided By Financial Institution" />
+    <meaning value="12" description="Attended - Offline with online capability - Operational Control Provided By Financial Institution" />
+    <meaning value="13" description="Attended - Offline only - Operational Control Provided By Financial Institution" />
+    <meaning value="14" description="Unattended - Online only - Operational Control Provided By Financial Institution" />
+    <meaning value="15" description="Unattended - Offline with online capability - Operational Control Provided By Financial Institution" />
+    <meaning value="16" description="Unattended - Offline only - Operational Control Provided By Financial Institution" />
+    <meaning value="21" description="Attended - Online only - Operational Control Provided By Merchant" />
+    <meaning value="22" description="Attended - Offline with online capability - Operational Control Provided By Merchant" />
+    <meaning value="23" description="Attended - Offline only - Operational Control Provided By Merchant" />
+    <meaning value="24" description="Unattended - Online only - Operational Control Provided By Merchant" />
+    <meaning value="25" description="Unattended - Offline with online capability - Operational Control Provided By Merchant" />
+    <meaning value="26" description="Unattended - Offline only - Operational Control Provided By Merchant" />
+    <meaning value="34" description="Unattended - Online only - Operational Control Provided By Cardholder" />
+    <meaning value="35" description="Unattended - Offline with online capability - Operational Control Provided By Cardholder" />
+    <meaning value="36" description="Unattended - Offline only - Operational Control Provided By Cardholder" />
+  </tag>
+  <tag id="T9F36" caption="9F36" description="Application Transaction Counter (ATC)" min="2" max="2" datatype="HexAscii" type="Emv" />
+  <tag id="T9F37" caption="9F37" description="Unpredictable Number" min="4" max="4" datatype="HexAscii" type="Emv" />
+  <tag id="T9F39" caption="9F39" description="Point-of-Service (POS) Entry Mode" min="1" max="1" datatype="HexAscii" type="Emv">
+    <meaning value="01" description="Entry mode – manual" />
+    <meaning value="02" description="Entry mode - magnetic stripe reader" />
+    <meaning value="03" description="Entry mode - bar code" />
+    <meaning value="04" description="Entry mode - Optical Character Recognition (OCR)" />
+    <meaning value="05" description="Entry mode - Integrated Circuit Card (EMV)" />
+    <meaning value="07" description="Entry Mode - proximity payment using ICC data" />
+    <meaning value="80" description="Entry mode - ICC fallback to magnetic stripe" />
+    <meaning value="81" description="Entry mode - electronic commerce" />
+    <meaning value="90" description="Entry mode - complete contents of magnetic stripe" />
+    <meaning value="91" description="Entry Mode - proximity payment using magnetic stripe data" />
+  </tag>
+  <tag id="T9F40" caption="9F40" description="Additional Terminal Capabilities" min="5" max="5" datatype="HexAscii" type="Emv" bitwise="true">
+    <meaning value="8" description="Cash" />
+    <meaning value="7" description="Goods" />
+    <meaning value="6" description="Services" />
+    <meaning value="5" description="Cashback" />
+    <meaning value="4" description="Inquiry" />
+    <meaning value="3" description="Transfer" />
+    <meaning value="2" description="Payment" />
+    <meaning value="1" description="Administrative" />
+    <meaning value="16" description="Cash deposit" />
+    <meaning value="24" description="Numeric keys" />
+    <meaning value="23" description="Alphabetic and special characters keys" />
+    <meaning value="22" description="Command keys" />
+    <meaning value="21" description="Function keys" />
+    <meaning value="32" description="Print, attendtant" />
+    <meaning value="31" description="Print, cardholder" />
+    <meaning value="30" description="Display, attendant" />
+    <meaning value="29" description="Display, cardholder" />
+    <meaning value="26" description="Code table 10" />
+    <meaning value="25" description="Code table 9" />
+    <meaning value="40" description="Code table 8" />
+    <meaning value="39" description="Code table 7" />
+    <meaning value="38" description="Code table 6" />
+    <meaning value="37" description="Code table 5" />
+    <meaning value="36" description="Code table 4" />
+    <meaning value="35" description="Code table 3" />
+    <meaning value="34" description="Code table 2" />
+    <meaning value="33" description="Code table 1" />
+  </tag>
+  <tag id="T9F41" caption="9F41" description="Transaction Sequence Counter" min="2" max="4" datatype="HexAscii" type="Emv" />
+  <tag id="T9F42" caption="9F42" description="Application Currency Code" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F50" caption="9F50" description="Offine Accumulator Balance" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F50" caption="9F50" description="Application Dual Currency Code" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F51" caption="9F51" description="Application Currency Code" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F51" caption="9F51" description="DRDOL" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F51" caption="9F51" description="Lower Cumulative Offline Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F51" caption="9F51" description="Dual Currency Cumulative Total Transaction Amount Lower Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F52" caption="9F52" description="Application Default Action (ADA)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F52" caption="9F52" description="Merchant Type Indicator Limits - 1" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F52" caption="9F52" description="Dual Currency Cumulative Total Transaction Amount Upper Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F53" caption="9F53" description="Consecutive Transaction Counter International Limit (CTCIL)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F53" caption="9F53" description="Transaction Category Code" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F53" caption="9F53" description="Non-Domestic Consecutive Transaction Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="DISCOVER-T9F53" caption="9F53" description="Contactless Card Verification Results" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F54" caption="9F54" description="Cumulative Total Transaction Amount Limit (CTTAL)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F54" caption="9F54" description="DS ODS Card" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F54" caption="9F54" description="Merchant Type Indicator Limits - 2" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F54" caption="9F54" description="Cumulative Total Transaction Amount Lower Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F55" caption="9F55" description="Geographic Indicator" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F55" caption="9F55" description="Issuer Authentication Flags" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F55" caption="9F55" description="Merchant Type Indicator Limits - 3" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F55" caption="9F55" description="Non-Domestic Upper Consecutive Offline Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F56" caption="9F56" description="Issuer Authentication Indicator" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F56" caption="9F56" description="Issuer Proprietary Bitmap" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F56" caption="9F56" description="Merchant Type Indicator Limits - 4" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F56" caption="9F56" description="Cumulative Total Transaction Amount Upper Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F57" caption="9F57" description="Issuer Country Code" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F57" caption="9F57" description="Terminal Club Identifier" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F57" caption="9F57" description="Merchant Type Indicator Limits - 5" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F58" caption="9F58" description="Consecutive Transaction Counter Limit (CTCL)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F58" caption="9F58" description="Merchant Type Indicator" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F58" caption="9F58" description="Card Lower Consecutive Offline Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F59" caption="9F59" description="Consecutive Transaction Counter Upper Limit (CTCUL)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F59" caption="9F59" description="Terminal Transaction Information (TTI)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F59" caption="9F59" description="Card Upper Consecutive Offline Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F5A" caption="9F5A" description="Application Program Identifier (Program ID)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F5A" caption="9F5A" description="Terminal Transaction Type (TTT)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F5B" caption="9F5B" description="Issuer Script Results" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F5B" caption="9F5B" description="DSDOL" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="DISCOVER-T9F5B" caption="9F5B" description="Issuer Script Results" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F5C" caption="9F5C" description="Cumulative Total Transaction Amount Upper Limit (CTTAUL)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F5C" caption="9F5C" description="DS Requested Operator ID" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F5C" caption="9F5C" description="Upper Cumulative Offline Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F5D" caption="9F5D" description="Available Offline Spending Amount (AOSA)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F5D" caption="9F5D" description="Application Capabilities Information" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F5D" caption="9F5D" description="Terminal Contactless Receipt Required Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="DISCOVER-T9F5D" caption="9F5D" description="Offline Balance (for non D-PAS)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F5E" caption="9F5E" description="Consecutive Transaction International Upper Limit (CTIUL)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F5E" caption="9F5E" description="DS ID" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F5E" caption="9F5E" description="Terminal Option Status (TOS)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F5F" caption="9F5F" description="DS Slot Availability" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F5F" caption="9F5F" description="Terminal (Reader) Contactless Floor Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F60" caption="9F60" description="CVC3 (Track1)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F60" caption="9F60" description="Contactless Cumulative Total Transaction Amount Lower Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F61" caption="9F61" description="CVC3 (Track2)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F61" caption="9F61" description="Card Option Status (COS)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F61" caption="9F61" description="Contactless Cumulative Total Transaction Amount upper Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F62" caption="9F62" description="PCVC3(Track1)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F62" caption="9F62" description="Card Product Code" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F63" caption="9F63" description="Offline Counter Initial Value" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F63" caption="9F63" description="PUNATC(Track1)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F63" caption="9F63" description="Card Transaction Information (CTI)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F63" caption="9F63" description="Contactless Non-Domestic Consecutive Transaction Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F64" caption="9F64" description="NATC(Track1)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F64" caption="9F64" description="Card Verification Result (CVR)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F64" caption="9F64" description="Single Transaction Value Upper Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F65" caption="9F65" description="PCVC3(Track2)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F65" caption="9F65" description="Contact Card Floor limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F65" caption="9F65" description="Single Transaction Value Upper Limit – Dual Currency" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="T9F66" caption="9F66" description="Terminal Transaction Qualifiers (TTQ)" min="0" max="0" datatype="HexAscii" type="Emv" bitwise="true">
+    <meaning value="8" description="Contactless magnetic stripe (MSD) supported" />
+    <meaning value="7" description="Contactless VSDC supported" />
+    <meaning value="6" description="Contactless qVSDC supported" />
+    <meaning value="5" description="Contact VSDC (EMV chip) supported" />
+    <meaning value="4" description="Reader is Offline Only" />
+    <meaning value="3" description="Online PIN supported" />
+    <meaning value="2" description="Signature supported" />
+    <meaning value="16" description="Online cryptogram required" />
+    <meaning value="15" description="CVM required" />
+  </tag>
+  <tag id="MC-T9F66" caption="9F66" description="PUNATC(Track2)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F66" caption="9F66" description="Single Transaction Value Limit Check – Dual Currency Code" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F67" caption="9F67" description="MSD Offset" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F67" caption="9F67" description="NATC(Track2)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F67" caption="9F67" description="Contact Card Issuer Action Code - Denial" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F67" caption="9F67" description="Payment Device Type and Capabilities Indicator" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F68" caption="9F68" description="Card Additional Processes(CAP)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F68" caption="9F68" description="Contact Card Issuer Action Code - Default" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F69" caption="9F69" description="Card Authentication Related Data" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F69" caption="9F69" description="UDOL" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F69" caption="9F69" description="Contact Card Issuer Action Code - Online" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F6A" caption="9F6A" description="Unpredictable Number (Numeric)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F6A" caption="9F6A" description="Contactless Card Floor Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F6B" caption="9F6B" description="Card CVM Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F6B" caption="9F6B" description="Track 2 Data" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F6B" caption="9F6B" description="Contactless Card Issuer Action Code - Denial" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F6C" caption="9F6C" description="Card Transaction Qualifiers (CTQ)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F6C" caption="9F6C" description="Mag-stripe Application Version Number(Card)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="DISCOVER-T9F6C" caption="9F6C" description="Card Transaction Qualifiers (CTQ)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F6D" caption="9F6D" description="VLP Reset Threshold" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F6D" caption="9F6D" description="Mag-stripe Application Version Number (Reader)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F6D" caption="9F6D" description="Contactless Card Issuer Action Code - Online" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F6D" caption="9F6D" description="Expresspay Terminal Capabilities" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F6E" caption="9F6E" description="Form Factor Indicator(FFI)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F6E" caption="9F6E" description="Third Party Data" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F6E" caption="9F6E" description="Terminal Transaction Capabilities" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F6F" caption="9F6F" description="DS Slot Management Control" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F6F" caption="9F6F" description="Contactless Card Issuer Action Code - Other Interface" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F70" caption="9F70" description="Protected Data Envelope 1" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="INTERAC-T9F70" caption="9F70" description="Form Factor Indicator" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F70" caption="9F70" description="Card Interface Capabilities" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F71" caption="9F71" description="Protected Data Envelope 2" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="AMEX-T9F71" caption="9F71" description="Mobile CVM Results" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="DISCOVER-T9F71" caption="9F71" description="Card Processing Requirements (CPR)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F72" caption="9F72" description="Consecutive Transaction Limit (International —Country)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F72" caption="9F72" description="Protected Data Envelope 3" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F73" caption="9F73" description="(contact) Currency Conversion Factor / (c-less) Currency Conversion Parameters" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F73" caption="9F73" description="Protected Data Envelope 4" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F74" caption="9F74" description="VLP Issuer Authorization Code" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F74" caption="9F74" description="Protected Data Envelope 5" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F75" caption="9F75" description="Cumulative Total Transaction Amount Limit (Dual Currency)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F75" caption="9F75" description="Unprotected Data Envelope 1" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F76" caption="9F76" description="Secondary Application Currency Code" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F76" caption="9F76" description="Unprotected Data Envelope 2" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F77" caption="9F77" description="VLP Funds Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F77" caption="9F77" description="Unprotected Data Envelope 3" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F78" caption="9F78" description="VLP Single Transaction Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F78" caption="9F78" description="Unprotected Data Envelope 4" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F79" caption="9F79" description="VLP Available Funds" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F79" caption="9F79" description="Unprotected Data Envelope 5" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F7A" caption="9F7A" description="VLP Terminal Support Indicator" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F7B" caption="9F7B" description="VLP Terminal Transaction Limit" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F7C" caption="9F7C" description="Customer Exclusive Data (CED)" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F7C" caption="9F7C" description="Merchant Custom Data" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F7D" caption="9F7D" description="DS Summary 1" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="DISCOVER-T9F7D" caption="9F7D" description="Discover® Network RF Contactless Payment application version number" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F7E" caption="9F7E" description="(contact) Application Life Cycle Data / (c-less) Mobile Support Indicator" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="DISCOVER-T9F7E" caption="9F7E" description="Dynamic Card Verification Value(DCVV )[for ZIP version 2 cards or D-PAS MS Mode cards]" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="VISA-T9F7F" caption="9F7F" description="Card Production Life Cycle(CPLC) Data" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="MC-T9F7F" caption="9F7F" description="DS Unpredictable Number" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="TDF03" caption="DF03" description="Terminal Action Code (TAC) Default" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="TDF04" caption="DF04" description="Terminal Action Code Denial" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="TDF05" caption="DF05" description="Terminal Action Code Online" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="TDF11" caption="DF11" description="Issuer Script Results" min="0" max="0" datatype="HexAscii" type="Emv" />
+  <tag id="D1000" caption="1000" description="Interac Account Type" min="1" max="1" datatype="Ascii" type="NonEmv">
+    <meaning value="0" description="Checquing" />
+    <meaning value="1" description="Savings" />
+  </tag>
+  <tag id="D1001" caption="1001" description="EMV CVM indication of whether PIN entry is required for transaction" min="1" max="1" datatype="Ascii" type="NonEmv">
+    <meaning value="0" description="Not required" />
+    <meaning value="1" description="Required" />
+    <meaning value="U" description="Error, data is unavailable" />
+  </tag>
+  <tag id="D1002" caption="1002" description="Signature Required" min="1" max="1" datatype="Ascii" type="NonEmv">
+    <meaning value="0" description="Not required" />
+    <meaning value="1" description="Required" />
+    <meaning value="U" description="Error, data is unavailable" />
+  </tag>
+  <tag id="D1003" caption="1003" description="Confirmation Response Code" min="1" max="1" datatype="Ascii" type="NonEmv">
+    <meaning value="A" description="Approve (purchase or refund)" />
+    <meaning value="D" description="Decline (purchase or refund)" />
+    <meaning value="C" description="Completed (refund)" />
+    <meaning value="E" description="Error or incompletion (purchase or refund)" />
+  </tag>
+  <tag id="D1004" caption="1004" description="Host Response Availability" min="1" max="1" datatype="HexAscii" type="NonEmv" message3304="true" >
+    <meaning value="00" description="Host response not available" />
+    <meaning value="01" description="Host response available" />
+  </tag>
+  <tag id="D1005" caption="1005" description="Transaction Type" min="2" max="2" datatype="Ascii" type="NonEmv">
+    <meaning value="00" description="Purchase" />
+    <meaning value="01" description="Refund" />
+    <meaning value="02" description="Void-Purchase" />
+    <meaning value="03" description="Void-Refund" />
+  </tag>
+  <tag id="D1006" caption="1006" description="Authorization Request MAC Value" min="8" max="8" datatype="Ascii" type="NonEmv" />
+  <tag id="D1007" caption="1007" description="Authorization Response MAC Value" min="8" max="8" datatype="Ascii" type="NonEmv" />
+  <tag id="D1008" caption="1008" description="Authorization Response Terminal Serial Number" min="8" max="8" datatype="Ascii" type="NonEmv" />
+  <tag id="D1009" caption="1009" description="Authorization Response Base 24 Response Code" min="3" max="3" datatype="HexAscii" type="NonEmv" />
+  <tag id="D100A" caption="100A" description="Authorization Response Approval Code" min="8" max="8" datatype="HexAscii" type="NonEmv" />
+  <tag id="D100B" caption="100B" description="Authorization Response Retrieval Reference Number" min="10" max="10" datatype="HexAscii" type="NonEmv" />
+  <tag id="D100C" caption="100C" description="Authorization Response MAC Session Key" min="16" max="16" datatype="HexAscii" type="NonEmv" />
+  <tag id="D100D" caption="100D" description="Authorization Response PIN Session Key" min="16" max="16" datatype="HexAscii" type="NonEmv" />
+  <tag id="D100E" caption="100E" description="User Language" min="2" max="2" datatype="Ascii" type="NonEmv">
+    <meaning value="EN" description="English" />
+    <meaning value="FR" description="French" />
+    <meaning value="ES" description="Spanish (not used in Canada)" />
+  </tag>
+  <tag id="D100F" caption="100F" description="Pin Entry Successful Flag" min="1" max="1" datatype="Ascii" type="NonEmv">
+    <meaning value="0" description="Not successful" />
+    <meaning value="1" description="Successful" />
+    <meaning value="U" description="Error, data is unavailable" />
+  </tag>
+  <tag id="D1010" caption="1010" description="Error Response Code" min="3" max="8" datatype="Ascii" type="NonEmv">
+    <meaning value="ARRT" description="Authorization response received timeout" />
+    <meaning value="ARSF" description="Authorization request sent failed" />
+    <meaning value="CABLK" description="Card/Application blocked" />
+    <meaning value="CAN" description="Transaction cancelled" />
+    <meaning value="CDIV" description="Card data invalid" />
+    <meaning value="CDIVN" description="Card data invalid" />
+    <meaning value="CEXP" description="Card/Application is expired" />
+    <meaning value="CNSUP" description="Card not supported" />
+    <meaning value="CRPRE" description="Card removed prematurely" />
+    <meaning value="CRSF" description="Confirmation response sent failed" />
+    <meaning value="FATAL" description="Fatal error" />
+    <meaning value="T2CF" description="Track 2 consistency check failed" />
+    <meaning value="TPSF" description="Transaction preparation sent failed" />
+    <meaning value="UITMO" description="User interface timeout" />
+    <meaning value="NOPINKEY" description="PIN key missing from configured index" />
+    <meaning value="CRERR"  description="Cless Error - Card read" />
+    <meaning value="CRNS"   description="Cless Error - Card not supported" />
+    <meaning value="COLLIS" description="Cless Error - Card collision" />
+    <meaning value="RETAP"  description="Cless Error - Retap required" />
+    <meaning value="TXLE"   description="Cless Error - Transaction limit exceeded" />
+    <meaning value="TXLEA"  description="Cless Error - Transaction limit exceeded all" />
+    <meaning value="USECHP" description="Cless Error - Use chip interface" />
+    <meaning value="NOKEY"  description="Cless Error - No Encrypt key" />
+    <meaning value="CVMMSD" description="Cless Error - CVM MSD error" />
+    <meaning value="CABLK"  description="Cless Error - Card blocked" />
+    <meaning value="APBLK"  description="Cless Error - Application blocked" />
+    <meaning value="DATINV" description="Cless Error - Data Invalid" />
+    <meaning value="MAXEXC" description="Cless Error - Maximum retries exceeded" />
+    <meaning value="PAYINV" description="Cless Error - Invalid payment" />
+    <meaning value="CLSERR" description="Cless Error - Unknown error" />
+  </tag>
+  <tag id="D1011" caption="1011" description="Special Case Authorization" min="2" max="2" datatype="Ascii" type="NonEmv">
+    <meaning value="00" description="Approved" />
+    <meaning value="01" description="Voice referral" />
+    <meaning value="05" description="Declined" />
+    <meaning value="10" description="Partial authorization" />
+    <meaning value="55" description="Bad PIN value" />
+  </tag>
+  <tag id="D1012" caption="1012" description="Contactless Transaction Outcome" min="2" max="2" datatype="Ascii" type="NonEmv">
+    <meaning value="01" description="Offline approved" />
+    <meaning value="02" description="Online approved" />
+    <meaning value="03" description="Online requested" />
+    <meaning value="04" description="Normal decline" />
+    <meaning value="05" description="Use chip interface" />
+    <meaning value="06" description="Enter pass code in mobile and re-tap" />
+  </tag>
+  <tag id="D1013" caption="1013" description="Contactless Profile Used" min="1" max="1" datatype="Ascii" type="NonEmv">
+    <meaning value="E" description="EMV interface" />
+    <meaning value="M" description="Magstripe (MSD) interface" />
+    <meaning value="L" description="Legacy interface (JCB Only)" />
+  </tag>
+  <tag id="D1016" caption="1016" description="US Common Debit Identifier" min="0" max="0" datatype="HexAscii" type="NonEmv" />
+  <tag id="D101B" caption="101B" description="Online PIN Required" min="1" max="1" datatype="Ascii" type="NonEmv">
+    <meaning value="1" description="Required" />
+    <meaning value="0" description="Not required" />
+  </tag>
+  <tag id="D101C" caption="101C" description="No CVM" min="1" max="1" datatype="Ascii" type="NonEmv">
+    <meaning value="1" description="Required" />
+    <meaning value="0" description="Not required" />
+  </tag>
+  <tag id="D101D" caption="101D" description="Mobile CVM" min="1" max="1" datatype="Ascii" type="NonEmv">
+    <meaning value="1" description="Required" />
+    <meaning value="0" description="Not required" />
+  </tag>
+  <tag id="D101E" caption="101E" description="Mobile CVM Results" min="1" max="1" datatype="Ascii" type="NonEmv">
+    <meaning value="0" description="Unknown" />
+    <meaning value="1" description="Failed" />
+    <meaning value="2" description="Successful" />
+    <meaning value="3" description="Blocked" />
+  </tag>
+  <tag id="D1021" caption="1021" description="Outcome Parameter Set" min="9" max="9" datatype="HexAscii" type="NonEmv" />
+  <tag id="D1022" caption="1022" description="UIR On Outcome Data" min="22" max="22" datatype="HexAscii" type="NonEmv" />
+  <tag id="D1023" caption="1023" description="UIR On Restart Data" min="22" max="22" datatype="HexAscii" type="NonEmv" />
+  <tag id="D9000" caption="9000" description="Card Payment Type" min="1" max="1" datatype="Ascii" type="NonEmv">
+    <meaning value="A" description="Debit" />
+    <meaning value="B" description="Credit" />
+  </tag>
+  <tag id="D9001" caption="9001" description="Card Entry Mode" min="1" max="1" datatype="Ascii" type="NonEmv">
+    <meaning value="C" description="Chip entry" />
+    <meaning value="D" description="Contactless EMV entry" />
+  </tag>
+  <tag id="DFF1D" caption="FF1D" description="Masked or Encrypted PAN" min="0" max="0" datatype="Ascii" type="NonEmv" />
+  <tag id="DFF1E" caption="FF1E" description="Encrypted Track 1 Data" min="0" max="0" datatype="Ascii" type="NonEmv" />
+  <tag id="DFF1F" caption="FF1F" description="Encrypted Track 2 Data" min="0" max="0" datatype="Ascii" type="NonEmv" />
+  <tag id="DFF20" caption="FF20" description="ETB" min="0" max="0" datatype="Ascii" type="NonEmv" />
+  <tag id="DFF21" caption="FF21" description="Encrypted Track 3 Data" min="0" max="0" datatype="Ascii" type="NonEmv" />
+  <tag id="T9FA13D" caption="9FA13D" description="Terminal application name" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA226" caption="9FA226" description="Partial approval" min="0" max="0" datatype="Ascii" type="SemiIntegrated">
+    <meaning value="0" description="No" />
+    <meaning value="1" description="Yes" />
+    <meaning value="2" description="TBD" />
+    <meaning value="3" description="TBD" />
+    <meaning value="4" description="TBD" />
+  </tag>
+  <tag id="T9FA294" caption="9FA294" description="Emv rejected status for reversal" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2A2" caption="9FA2A2" description="Tokenization transaction mode" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2A3" caption="9FA2A3" description="Clear account number from R017 group response" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2A4" caption="9FA2A4" description="Masked account number from R017 group response" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2A5" caption="9FA2A5" description="Last 4 of account number from R017 group response" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2A6" caption="9FA2A6" description="Tokenization result from R017 group response" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2A7" caption="9FA2A7" description="Token returned in R017 group response" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2A8" caption="9FA2A8" description="Token ID returned in R017 group response" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2A9" caption="9FA2A9" description="In G028 group, card expiration data in YYMM format or spaces" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2AA" caption="9FA2AA" description="Host extended error code from R998 group response" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2AB" caption="9FA2AB" description="Host extended short description  from R998 group response" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2AC" caption="9FA2AC" description="Host extended detail description from R998 group response" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2AD" caption="9FA2AD" description="Host extended required action from R998 group response" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2B3" caption="9FA2B3" description="CPC tax amount" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2B4" caption="9FA2B4" description="CPC tax type" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2B7" caption="9FA2B7" description="Gateway response code" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2B8" caption="9FA2B8" description="Gateway response text" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2B9" caption="9FA2B9" description="AVS Result text from host" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2C0" caption="9FA2C0" description="CVV result text from host" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2C1" caption="9FA2C1" description="CPC Indicator returned by host" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2C6" caption="9FA2C6" description="Gateway transaction id" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2C7" caption="9FA2C7" description="Diagnostics type" min="0" max="0" datatype="Ascii" type="SemiIntegrated">
+    <meaning value="1" description="Get pending transaction" />
+    <meaning value="2" description="Get configuration" />
+    <meaning value="3" description="Test host timeout : ON" />
+    <meaning value="4" description="Test host timeout : OFF" />
+  </tag>
+  <tag id="T9FA2C9" caption="9FA2C9" description="Diagnostics type" min="0" max="0" datatype="Ascii" type="SemiIntegrated">
+    <meaning value="0" description="no PDL available" />
+    <meaning value="1" description="PDL available" />
+  </tag>
+  <tag id="T9FA2D5" caption="9FA2D5" description="QPS flag" min="0" max="0" datatype="Ascii" type="SemiIntegrated">
+    <meaning value="0" description="No rules (PIN and signature)" />
+    <meaning value="1" description="PIN bypass (only signature)" />
+    <meaning value="2" description="Signature bypass (only PIN)" />
+    <meaning value="3" description="PIN and signature bypass" />
+  </tag>
+  <tag id="T9FA2C2" caption="9FA2C2" description="Card type string" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2C5" caption="9FA2C5" description="Transaction descriptor" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2C8" caption="9FA2C8" description="CPC customer code" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2D8" caption="9FA2D8" description="Download availability" min="0" max="0" datatype="Ascii" type="SemiIntegrated">
+    <meaning value="0" description="Download not available" />
+    <meaning value="1" description="Download available" />
+  </tag>
+  <tag id="T9FA2DA" caption="9FA2DA" description="Diagnostic text 1" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2DB" caption="9FA2DB" description="Diagnostic text 2" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2DC" caption="9FA2DC" description="Diagnostic text 3" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA2DD" caption="9FA2DD" description="Diagnostic text 4" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA405" caption="9FA405" description="Two characters mnemonic" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA434" caption="9FA434" description="Merchant ID" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA435" caption="9FA435" description="Merchant terminal id" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA441" caption="9FA441" description="Batch total count" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA442" caption="9FA442" description="Batch total amount" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA445" caption="9FA445" description="Merchant bank id" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA701" caption="9FA701" description="Track 1 data (card holder data)" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA702" caption="9FA702" description="Track 2 data (card holder data)" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA703" caption="9FA703" description="Track 3 data (card holder data)" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA706" caption="9FA706" description="Transaction type" min="0" max="0" datatype="Ascii" type="SemiIntegrated">
+    <meaning value="00" description="Acknowledge" />
+    <meaning value="01" description="Sale transaction" />
+    <meaning value="02" description="Void sale transaction" />
+    <meaning value="03" description="Return transaction" />
+    <meaning value="04" description="Void return transaction" />
+    <meaning value="05" description="Voice authorization transaction" />
+    <meaning value="06" description="Account verify transaction" />
+    <meaning value="07" description="Lane closed" />
+    <meaning value="08" description="Heartbeat" />
+    <meaning value="09" description="Download" />
+    <meaning value="10" description="EMV PDL" />
+    <meaning value="11" description="Clear batch" />
+    <meaning value="12" description="Close batch" />
+    <meaning value="13" description="CPCEdit" />
+    <meaning value="14" description="Diagnostics" />
+  </tag>
+  <tag id="T9FA708" caption="9FA708" description="Transaction status provided by host" min="0" max="0" datatype="Ascii" type="SemiIntegrated">
+    <meaning value="AA" description="Approved" />
+    <meaning value="MD" description="Merchant declined" />
+  </tag>
+  <tag id="T9FA70A" caption="9FA70A" description="Card expiry date" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA70B" caption="9FA70B" description="Customer card account #" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA70D" caption="9FA70D" description="Customer card entry mode" min="0" max="0" datatype="Ascii" type="SemiIntegrated">
+    <meaning value="M" description="Manual" />
+    <meaning value="1" description="Track 1" />
+    <meaning value="2" description="Track 2" />
+    <meaning value="3" description="Contactless track 2" />
+    <meaning value="4" description="Contactless track 1" />
+    <meaning value="C" description="Chip" />
+    <meaning value="D" description="Contactless chip" />
+  </tag>
+  <tag id="T9FA70F" caption="9FA70F" description="Customer ZIP code" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA710" caption="9FA710" description="Customer address" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA713" caption="9FA713" description="Encrypted PIN block DUKPT (Block 8 Byte)" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA714" caption="9FA714" description="Clerk ID" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA720" caption="9FA720" description="Amount confirmed" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA721" caption="9FA721" description="Transaction amount in cents" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA722" caption="9FA722" description="Tax amount in cents" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA724" caption="9FA724" description="Tip amount in cents" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA725" caption="9FA725" description="Total amount in cents" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA726" caption="9FA726" description="Cashback amount" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA727" caption="9FA727" description="Transaction surcharge fee" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA72B" caption="9FA72B" description="Authorized amount" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA72C" caption="9FA72C" description="Available balance" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA732" caption="9FA732" description="Transaction fee amount in cents" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA735" caption="9FA735" description="CVV" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA736" caption="9FA736" description="CVV indicator" min="0" max="0" datatype="Ascii" type="SemiIntegrated">
+    <meaning value="0" description="Not provided" />
+    <meaning value="1" description="Provide" />
+    <meaning value="2" description="Illegible" />
+    <meaning value="9" description="Not present" />
+  </tag>
+  <tag id="T9FA737" caption="9FA737" description="Card not present" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA752" caption="9FA752" description="Transaction card type" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA790" caption="9FA790" description="Emv PIN entered flag" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA793" caption="9FA793" description="Is signature capture required" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA795" caption="9FA795" description="Emv online PIN entered flag" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA7B5" caption="9FA7B5" description="Transaction reference number" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA7B6" caption="9FA7B6" description="DUKPT serial number" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA7B8" caption="9FA7B8" description="Reference number returned by issuer" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA7DC" caption="9FA7DC" description="Original RRN" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA92A" caption="9FA92A" description="Return transaction total count" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA92B" caption="9FA92B" description="Return transaction total amount" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA92C" caption="9FA92C" description="Sale transaction total count" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA92D" caption="9FA92D" description="Sale transaction total amount" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA92E" caption="9FA92E" description="Batch total return count" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FA92F" caption="9FA92F" description="Batch total return amount" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAB01" caption="9FAB01" description="Transaction online status" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAB06" caption="9FAB06" description="Original authorization amount approved by host" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAB30" caption="9FAB30" description="Current transaction Date YYMMDD format" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAB31" caption="9FAB31" description="Current transaction Time HHMMSS format" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAB32" caption="9FAB32" description="Host approval code" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAB33" caption="9FAB33" description="Host Response code" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAB34" caption="9FAB34" description="Host response text" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAB36" caption="9FAB36" description="CVV verification result from host" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAB37" caption="9FAB37" description="Address verification result" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAB4C" caption="9FAB4C" description="Host batch number" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAB66" caption="9FAB66" description="Sale transaction total count send by host" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAB67" caption="9FAB67" description="Sale transaction total amount send by host" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAB68" caption="9FAB68" description="Return transaction total count send by host" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAB69" caption="9FAB69" description="Return transaction total amount send by host" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAC22" caption="9FAC22" description="Batch sequence number" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAC42" caption="9FAC42" description="Update authorization amount" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAC43" caption="9FAC43" description="POS entry mode, 12 bytes" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAC49" caption="9FAC49" description="Vantiv prior adjustment" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAC50" caption="9FAC50" description="Vantiv prior adjustment" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAC51" caption="9FAC51" description="Vantiv prior adjustment" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAC61" caption="9FAC61" description="Host retrieval reference number" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAE3F" caption="9FAE3F" description="Terminal application version" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FAF10" caption="9FAF10" description="Last transaction retrieval number" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <!-- SEMI-INTEGRATED ( GENERIC TAGS )-->
+  <!--     TRANSACTION TAGS -->
+  <tag id="T9FB001" caption="9FB001" description="Transaction type" alias="TRAN_TYPE" min="0" max="0" datatype="Ascii" type="SemiIntegrated" >
+    <meaning value="00" description="Acknowledge" />
+    <meaning value="01" description="Sale transaction" />
+    <meaning value="02" description="Void sale transaction" />
+    <meaning value="03" description="Return transaction" />
+    <meaning value="04" description="Void return transaction" />
+    <meaning value="05" description="Voice authorization transaction" />
+    <meaning value="06" description="Account verify transaction" />
+    <meaning value="07" description="Lane closed" />
+    <meaning value="08" description="Heartbeat" />
+    <meaning value="09" description="Download" />
+    <meaning value="10" description="EMV PDL" />
+    <meaning value="11" description="Clear batch" />
+    <meaning value="12" description="Close batch" />
+    <meaning value="13" description="CPCEdit" />
+    <meaning value="14" description="Diagnostics" />
+    <meaning value="15" description="Batch operation transaction" />
+    <meaning value="16" description="Generate key transaction" />
+    <meaning value="17" description="Authorization only transaction" />
+    <meaning value="18" description="Capture transaction" />
+    <meaning value="19" description="Check connection status transaction" />
+  </tag>
+  <tag id="T9FB002" caption="9FB002" description="Transaction reference number provided by POS." alias="TRAN_REFERENCE_NUMBER" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB003" caption="9FB003" description="Retrieval reference number returned by issuer" alias="TRAN_RRN" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB004" caption="9FB004" description="Card expiry date" alias="TRAN_CARD_EXPIRY_DATE" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB005" caption="9FB005" description="Current transaction Date YYMMDD format" alias="TRAN_DATE_YYMMDD" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB006" caption="9FB006" description="Current transaction Time HHMMSS format" alias="TRAN_TIME_HHMMSS" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB007" caption="9FB007" description="Cardholder name present in track1 data and EMV Tag 5F20" alias="TRAN_CUST_NAME" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB008" caption="9FB008" description="Card type" alias="TRAN_CARD_TYPE" min="0" max="0" datatype="Ascii" type="SemiIntegrated" >
+    <meaning value="CC" description="Credit" />
+    <meaning value="CD" description="Debit" />
+    <meaning value="CE" description="EBT" />
+    <meaning value="CU" description="Card undefined" />
+  </tag>
+  <tag id="T9FB009" caption="9FB009" description="Account number in masked format with same length of account number" alias="TRAN_MASKED_PAN" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB00A" caption="9FB00A" description="Last four digits of account number" alias="TRAN_ACCOUNT_LAST4" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB00B" caption="9FB00B" description="Total amount of transaction in cents including tax, surcharge and cashback" alias="TRAN_TOTAL_AMOUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB00C" caption="9FB00C" description="Transaction amount in cents (including tax and surcharge)" alias="TRAN_AMOUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB00D" caption="9FB00D" description="Approved amount in cents" alias="TRAN_AUTHORIZED_AMOUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB00E" caption="9FB00E" description="Tax amount in cents" alias="TRAN_TAX_AMOUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB00F" caption="9FB00F" description="Cashback amount in cents" alias="TRAN_CASHBACK_AMOUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB010" caption="9FB010" description="Tip amount in cents" alias="TRAN_TIP_AMOUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB011" caption="9FB011" description="Transaction fee amount in cents" alias="TRAN_SURCHARGE_FEE" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB012" caption="9FB012" description="Convenient fee apply for cashback, this value includes the base fee and fee apply on amount" alias="TRAN_CASHBACK_CONV_FEE" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB013" caption="9FB013" description="QPS preference from POS" alias="TRAN_QPS_PREFERENCE" min="0" max="0" datatype="Ascii" type="SemiIntegrated" >
+    <meaning value="1" description="PIN bypass (only signature)" />
+    <meaning value="2" description="Signature bypass (only PIN)" />
+    <meaning value="3" description="PIN and signature bypass" />
+  </tag>
+  <tag id="T9FB014" caption="9FB014" description="Flag for POS if signature capture required" alias="TRAN_SIGNATURE_REQUIRED" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB015" caption="9FB015" description="Transaction result provided by the application (based on processor/application response)" alias="TRAN_RESULT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" >
+    <meaning value="AA" description="Approved" />
+    <meaning value="AO" description="Approved offline" />
+    <meaning value="AP" description="Partial approved" />
+    <meaning value="DH" description="Declined by host" />
+    <meaning value="EA" description="App error" />
+    <meaning value="EC" description="Comm error" />
+    <meaning value="UD" description="User declined" />
+    <meaning value="MD" description="Merchant declined" />
+    <meaning value="EE" description="Generic error" />
+    <meaning value="VA" description="Already voided" />
+    <meaning value="ER" description="Reversal error" />
+    <meaning value="CE" description="Card error" />
+    <meaning value="CP" description="Card processing error (card not supported)" />
+    <meaning value="PE" description="Pin try exceeded" />
+    <meaning value="CB" description="Card blocked" />
+    <meaning value="TO" description="Timeout" />
+    <meaning value="UT" description="Timeout" />
+    <meaning value="LE" description="Contacless card transaction limit exceeded" />
+    <meaning value="CI" description="Insert chip" />
+    <meaning value="TF" description="Tap failed" />
+    <meaning value="CD" description="Card declined" />
+    <meaning value="SE" description="System error" />
+    <meaning value="AB" description="Application blocked" />
+    <meaning value="IP" description="Invalid parameter" />
+    <meaning value="MT" description="Mandatory tag missing" />
+    <meaning value="NS" description="Not supported" />
+    <meaning value="NT" description="Transaction not found" />
+    <meaning value="CN" description="Card processing error (AID not supported)" />
+    <meaning value="EX" description="Card expired" />
+    <meaning value="SL" description="Communication error, SaF limit exceeded" />
+    <meaning value="OL" description="Communication error while EMV offline advice, transaction can't be saved in batch" />
+  </tag>
+  <tag id="T9FB016" caption="9FB016" description="Transaction result description provided by the application" alias="TRAN_RESULT_DESC" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB017" caption="9FB017" description="Transaction result code provided by the application" alias="TRAN_RESULT_CODE" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB018" caption="9FB018" description="Transaction result code description provided by the application" alias="TRAN_RESULT_CODE_DESC" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB019" caption="9FB019" description="Transaction custom approval text" alias="TRAN_CUSTOM_APPROVAL_TEXT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB01A" caption="9FB01A" description="Payment mode" alias="TRAN_CARD_ENTRY_MODE" min="0" max="0" datatype="Ascii" type="SemiIntegrated" >
+    <meaning value="CU" description="Unknown" />
+    <meaning value="CM" description="Manual" />
+    <meaning value="CS" description="Card swipe" />
+    <meaning value="CT" description="Card tap" />
+    <meaning value="CI" description="Card insert" />
+    <meaning value="CH" description="Cless card chip" />
+  </tag>
+  <tag id="T9FB01B" caption="9FB01B" description="Card not present (only for manual entry)" alias="TRAN_CARD_PRESENT_INDICATOR" min="0" max="0" datatype="Ascii" type="SemiIntegrated" >
+    <meaning value="Y" description="Card present" />
+    <meaning value="N" description="Card not present" />
+  </tag>
+  <tag id="T9FB01C" caption="9FB01C" description="Token ID for transaction" alias="TRAN_TOKEN" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB021" caption="9FB021" description="Tokenization result" alias="TRAN_TOKEN_RESULT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB022" caption="9FB022" description="Token ID" alias="TRAN_TOKEN_ID" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB023" caption="9FB023" description="Token expiration data ( not used now )" alias="TRAN_TOKEN_EXP_DATE" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB024" caption="9FB024" description="CPC customer code" alias="TRAN_CPC_CUSTOMER_CODE" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB025" caption="9FB025" description="CPC indicator returned by host" alias="TRAN_CPC_INDICATOR" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB026" caption="9FB026" description="CPC tax amount" alias="TRAN_CPC_TAX_AMOUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB027" caption="9FB027" description="CPC tax type" alias="TRAN_CPC_TAX_TYPE" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB028" caption="9FB028" description="Clerk ID" alias="TRAN_CLERK_ID" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB029" caption="9FB029" description="QPS applied" alias="TRAN_QPS_APPLIED" min="0" max="0" datatype="Ascii" type="SemiIntegrated">
+    <meaning value="1" description="PIN bypass (only signature)" />
+    <meaning value="2" description="Signature bypass (only PIN)" />
+    <meaning value="3" description="PIN and signature bypass" />
+  </tag>
+  <tag id="T9FB02A" caption="9FB02A" description="Identifier for a transaction" alias="TRAN_HOST_TRANSACTION_ID" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB02B" caption="9FB02B" description="Original authorization amount in cents" alias="TRAN_ORIG_AUTH_AMOUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB02C" caption="9FB02C" description="Indicates how the data was captured" alias="TRAN_ECOMMERCE_TYPE" min="0" max="0" datatype="Ascii" type="SemiIntegrated">
+    <meaning value="0" description="REGULAR" />
+    <meaning value="1" description="INTERNET" />
+    <meaning value="2" description="MAIL ORDER" />
+    <meaning value="3" description="PHONE ORDER" />
+  </tag>
+  <tag id="T9FB02D" caption="9FB02D" description="Customer discretionary data" alias="TRAN_CUSTOMER_DISCRETIONARY_DATA" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB030" caption="9FB030" description="Stored pending transaction count" alias="TRAN_OFFLINE_PENDING_COUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB031" caption="9FB031" description="Stored declined transaction count" alias="TRAN_OFFLINE_DECLINED_COUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB035" caption="9FB035" description="Commercial card indicator" alias="TRAN_COMMERCIAL_CARD_INDICATOR" min="0" max="0" datatype="Ascii" type="SemiIntegrated" >
+    <meaning value="0" description="Non commercial" />
+    <meaning value="9" description="AMEX commercial card" />
+    <meaning value="10" description="Commercial card" />
+  </tag>
+  <tag id="T9FB036" caption="9FB036" description="Tax amount identifier" alias="TRAN_TAX_AMOUNT_IDENTIFIER" min="0" max="0" datatype="Ascii" type="SemiIntegrated" >
+    <meaning value="0" description="Tax not provided" />
+    <meaning value="1" description="Tax included" />
+    <meaning value="2" description="Tax exempt" />
+    <meaning value="3" description="Tax nontaxable" />
+  </tag>
+  <tag id="T9FB037" caption="9FB037" description="Customer number" alias="TRAN_CUSTOMER_NUMBER" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB038" caption="9FB038" description="Container tag" alias="TRAN_CUSTOM_DATA" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB039" caption="9FB039" description="Card name" alias="TRAN_CARD_NAME" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB040" caption="9FB040" description="Fallback status" alias="TRAN_FALLBACK_TO_MSR" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB041" caption="9FB041" description="VISA validation code" alias="TRAN_VISA_VALIDATION_CODE" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB042" caption="9FB042" description="Lane number" alias="TRAN_LANE_NUMBER" min="1" max="8" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB044" caption="9FB044" description="Transaction host date YYMMDD format" alias="TRAN_HOST_DATE_YYMMDD" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB045" caption="9FB045" description="Transaction host time HHMMSS format" alias="TRAN_HOST_TIME_HHMMSS" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB046" caption="9FB046" description="Merchant transaction key" alias="TRAN_MERCH_GEN_KEY" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB047" caption="9FB047" description="Currency code" alias="TRAN_CURRENCY_CODE" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB048" caption="9FB048" description="The merchant defined transaction invoice number" alias="TRAN_INVOICE_NUMBER" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB049" caption="9FB049" description="Developer identifier" alias="TRAN_VENDOR_NAME" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <!--     MERCHANT CFG TAGS -->
+  <tag id="T9FB201" caption="9FB201" description="Terminal ID" alias="CFG_TERMINAL_ID" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB202" caption="9FB202" description="Merchant ID" alias="CFG_MERCHANT_ID" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB203" caption="9FB203" description="Merchant user ID" alias="CFG_MERCHANT_USER_ID" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB204" caption="9FB204" description="Merchant password" alias="CFG_MERCHANT_PASSWORD" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <!--     HOST TAGS -->
+  <tag id="T9FB301" caption="9FB301" description="Host approval code" alias="HOST_APPROVAL_CODE" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB302" caption="9FB302" description="Host response code" alias="HOST_RESPONSE_CODE" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB303" caption="9FB303" description="Host response text" alias="HOST_RESPONSE_TEXT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB304" caption="9FB304" description="Host response text1" alias="HOST_RESPONSE_TEXT1" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB305" caption="9FB305" description="Host response text2" alias="HOST_RESPONSE_TEXT2" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB306" caption="9FB306" description="Host customer text" alias="HOST_CUSTOMER_TEXT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB307" caption="9FB307" description="Address verification result" alias="HOST_AVS_RESULT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB308" caption="9FB308" description="Address verification result description" alias="HOST_AVS_RESULT_TEXT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB309" caption="9FB309" description="CVV verification result" alias="HOST_CVV_RESULT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB30A" caption="9FB30A" description="CVV verification result description" alias="HOST_CVV_RESULT_TEXT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB30B" caption="9FB30B" description="Available balance in cents" alias="HOST_AVAIL_BALANCE" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB30C" caption="9FB30C" description="Host batch number" alias="HOST_BATCH_NUMBER" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB30D" caption="9FB30D" description="Transaction descriptor" alias="HOST_TRANSACTION_DESCRIPTOR" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB30E" caption="9FB30E" description="Host short description" alias="HOST_SHORT_DESC" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB30F" caption="9FB30F" description="Host detailed description" alias="HOST_DETAILED_DESC" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB310" caption="9FB310" description="Host error code" alias="HOST_ERROR_CODE" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB311" caption="9FB311" description="Host required action" alias="HOST_REQUIRED_ACTION" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB312" caption="9FB312" description="Trace identification number" alias="HOST_TRACE_NUMBER" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB313" caption="9FB313" description="The card holder verification code for the transaction" alias="HOST_CARD_HOLDER_VERIFICATION_RESULT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB314" caption="9FB314" description="The type of card used for the transaction" alias="HOST_BIN_CARD_NAME" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <!--     BATCH TAGS -->
+  <tag id="T9FB401" caption="9FB401" description="Batch sequence number" alias="BATCH_SEQ_NUMBER" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB402" caption="9FB402" description="Batch total count" alias="BATCH_TOTAL_COUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB403" caption="9FB403" description="Batch total amount" alias="BATCH_TOTAL_AMOUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB404" caption="9FB404" description="Return transaction total count" alias="BATCH_RETURN_COUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB405" caption="9FB405" description="Return transaction total amount" alias="BATCH_RETURN_AMOUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB406" caption="9FB406" description="Sale transaction total count" alias="BATCH_SALE_COUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB407" caption="9FB407" description="Sale transaction total amount" alias="BATCH_SALE_AMOUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB408" caption="9FB408" description="Return transaction total count returned by host" alias="BATCH_HOST_RETURN_COUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB409" caption="9FB409" description="Return transaction total amount returned by host" alias="BATCH_HOST_RETURN_AMOUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB40A" caption="9FB40A" description="Sale transaction total count returned by host" alias="BATCH_HOST_SALE_COUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB40B" caption="9FB40B" description="Sale transaction total amount returned by host" alias="BATCH_HOST_SALE_AMOUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB40C" caption="9FB40C" description="Last retrieval reference number use for settlement" alias="BATCH_LAST_RRN" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB40D" caption="9FB40D" description="Last reference number use for settlement" alias="BATCH_LAST_REFERENCE_NUMBER" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB40E" caption="9FB40E" description="Batch operation to be performed" alias="BATCH_OPERATION" min="0" max="0" datatype="Ascii" type="SemiIntegrated">
+    <meaning value="1" description="Authorize pending transactions" />
+    <meaning value="2" description="Delete stored transaction" />
+    <meaning value="3" description="Get all stored transaction info" />
+    <meaning value="4" description="Get stored transaction" />
+    <meaning value="5" description="Get pending reversal transaction" />
+    <meaning value="6" description="Authorize pending reversal transaction" />
+    <meaning value="7" description="Delete pending reversal transaction" />
+  </tag>
+  <tag id="T9FB40F" caption="9FB40F" description="Pending transaction count in batch" alias="BATCH_PENDING_TRAN_COUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB410" caption="9FB410" description="Approved transaction count in batch" alias="BATCH_APPROVED_TRAN_COUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB411" caption="9FB411" description="Declined transaction count in batch" alias="BATCH_DECLINED_TRAN_COUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB412" caption="9FB412" description="Total amount of pending transactions in batch" alias="BATCH_PENDING_AMOUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB413" caption="9FB413" description="Total amount of approved transactions in batch" alias="BATCH_APPROVED_AMOUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB414" caption="9FB414" description="Total amount of declined transactions in batch" alias="BATCH_DECLINED_AMOUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <tag id="T9FB415" caption="9FB415" description="Batch transaction status to be processed" alias="BATCH_TRAN_STATUS_TOBE_PROCESSED" min="0" max="0" datatype="Ascii" type="SemiIntegrated">
+    <meaning value="0" description="No status" />
+    <meaning value="1" description="Pending" />
+    <meaning value="2" description="Approved" />
+    <meaning value="3" description="Declined" />
+    <meaning value="4" description="All" />
+  </tag>
+  <tag id="T9FB416" caption="9FB416" description="Number of transaction remaining in queue for the response of 'Get stored transactins' batch operation" alias="BATCH_REMAINING_TRAN_COUNT" min="0" max="0" datatype="Ascii" type="SemiIntegrated" />
+  <!--     Collis tags -->
+  <tag id="TC0" caption="C0" description="Enciphered PIN block" min="0" max="0" datatype="HexAscii" type="Collis" />
+  <tag id="TC1" caption="C1" description="Unknown Collis tag" min="0" max="0" datatype="HexAscii" type="Collis" />
+  <tag id="TCB" caption="CB" description="Issuer script results" min="0" max="0" datatype="HexAscii" type="Collis" />
+  <tag id="TE3" caption="E3" description="Financial transaction record" min="0" max="0" datatype="HexAscii" type="Collis" />
+  <tag id="TE4" caption="E4" description="Advice record" min="0" max="0" datatype="HexAscii" type="Collis" />
+</Tags>

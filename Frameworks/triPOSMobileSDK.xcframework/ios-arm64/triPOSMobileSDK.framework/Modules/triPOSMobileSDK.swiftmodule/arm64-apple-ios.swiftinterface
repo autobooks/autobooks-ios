@@ -1,0 +1,107 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name triPOSMobileSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import ProximityReader
+import Swift
+import _Concurrency
+import _StringProcessing
+@_exported import triPOSMobileSDK
+import triPOSMobileSDK_Private
+@objc @_inheritsConvenienceInitializers public class Logger : NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol PaymentCardReaderBridgeProtocol : ObjectiveC.NSObjectProtocol {
+  @objc func prepareStatus(description: String, progress: Int)
+}
+@available(iOS 16, *)
+@objc public class PaymentCardReaderToken : NSObject {
+  public enum PaymentCardReaderTokenError : Error, Sendable {
+    case jwtIsNil
+    case tooFewBlocks
+    case errorDecodingBase64(String?)
+    public var errorDescription: String {
+      get
+    }
+    public var errorName: String {
+      get
+    }
+  }
+  @objc public var rawToken: String? {
+    get
+  }
+  @objc public var issuedAtTime: Date? {
+    get
+  }
+  @objc public var expirationTime: Date? {
+    get
+  }
+  @objc public var timeTillExpiration: TimeInterval {
+    @objc get
+  }
+  @objc public var isExpired: Bool {
+    @objc get
+  }
+  @objc public var terminalProfileId: String? {
+    get
+  }
+  @objc public var merchantIdentifier: String? {
+    get
+  }
+  @objc public var merchantBannerName: String? {
+    get
+  }
+  @objc public init(jwt: String?) throws
+  @objc public func parseFromJwt(jwt: String) throws
+  @objc public func base64(fromJwtBase64 jwtBase64: String) -> String
+  @objc public func middleBlock(ofBase64 base64: String) throws -> String
+  @objc public func dictionary(fromBase64 base64: String) throws -> [String : Any]
+  @objc public func date(fromEpoch epoch: Double) -> Date
+  @objc public func logToken()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @available(iOS 16.0, *)
+@objc public class PaymentCardReaderBridge : NSObject {
+  @objc public var statusDelegate: PaymentCardReaderBridgeProtocol?
+  @objc public var readerIdentifier: String {
+    @objc get
+  }
+  @objc override dynamic public init()
+  @objc public var isSupported: Bool {
+    @objc get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  @objc public func linkAccount(paymentCardReaderToken: PaymentCardReaderToken) async throws
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @objc public func prepare(paymentCardReaderToken: PaymentCardReaderToken) async throws -> Bool
+  #endif
+  @objc public var isConnected: Bool {
+    @objc get
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  @objc public func deinitialize() async throws
+  #endif
+  @_hasMissingDesignatedInitializers @objc public class CardData : NSObject {
+    @objc public var id: String?
+    @objc public var generalCardData: String?
+    @objc public var paymentCardData: String?
+    @objc deinit
+  }
+  #if compiler(>=5.3) && $AsyncAwait
+  @objc public func readPaymentCard(for amount: NSDecimalNumber) async throws -> CardData
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  @discardableResult
+  @objc public func reset() async throws -> Bool
+  #endif
+  @objc public var lastErrorName: String? {
+    get
+  }
+  @objc public var lastErrorDescription: String? {
+    get
+  }
+  @objc deinit
+}

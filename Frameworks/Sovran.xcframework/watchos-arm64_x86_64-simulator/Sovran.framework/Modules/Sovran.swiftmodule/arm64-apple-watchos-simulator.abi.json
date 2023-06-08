@@ -1,0 +1,1643 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sovran",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sovran",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Action",
+        "printedName": "Action",
+        "children": [
+          {
+            "kind": "AssociatedType",
+            "name": "StateType",
+            "printedName": "StateType",
+            "declKind": "AssociatedType",
+            "usr": "s:6Sovran6ActionP9StateTypeQa",
+            "mangledName": "$s6Sovran6ActionP9StateTypeQa",
+            "moduleName": "Sovran",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "reduce",
+            "printedName": "reduce(state:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.StateType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.StateType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Sovran6ActionP6reduce5state9StateTypeQzAG_tF",
+            "mangledName": "$s6Sovran6ActionP6reduce5state9StateTypeQzAG_tF",
+            "moduleName": "Sovran",
+            "genericSig": "<τ_0_0 where τ_0_0 : Sovran.Action>",
+            "sugared_genericSig": "<Self where Self : Sovran.Action>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:6Sovran6ActionP",
+        "mangledName": "$s6Sovran6ActionP",
+        "moduleName": "Sovran",
+        "genericSig": "<τ_0_0.StateType : Sovran.State>",
+        "sugared_genericSig": "<Self.StateType : Sovran.State>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AsyncAction",
+        "printedName": "AsyncAction",
+        "children": [
+          {
+            "kind": "AssociatedType",
+            "name": "StateType",
+            "printedName": "StateType",
+            "declKind": "AssociatedType",
+            "usr": "s:6Sovran11AsyncActionP9StateTypeQa",
+            "mangledName": "$s6Sovran11AsyncActionP9StateTypeQa",
+            "moduleName": "Sovran",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "AssociatedType",
+            "name": "ResultType",
+            "printedName": "ResultType",
+            "declKind": "AssociatedType",
+            "usr": "s:6Sovran11AsyncActionP10ResultTypeQa",
+            "mangledName": "$s6Sovran11AsyncActionP10ResultTypeQa",
+            "moduleName": "Sovran",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "operation",
+            "printedName": "operation(state:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.StateType"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0.ResultType?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0.ResultType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.ResultType"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Sovran11AsyncActionP9operation5state10completiony9StateTypeQz_y06ResultH0QzSgctF",
+            "mangledName": "$s6Sovran11AsyncActionP9operation5state10completiony9StateTypeQz_y06ResultH0QzSgctF",
+            "moduleName": "Sovran",
+            "genericSig": "<τ_0_0 where τ_0_0 : Sovran.AsyncAction>",
+            "sugared_genericSig": "<Self where Self : Sovran.AsyncAction>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reduce",
+            "printedName": "reduce(state:operationResult:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.StateType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DependentMember",
+                "printedName": "τ_0_0.StateType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0.ResultType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.ResultType"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Sovran11AsyncActionP6reduce5state15operationResult9StateTypeQzAH_0gI0QzSgtF",
+            "mangledName": "$s6Sovran11AsyncActionP6reduce5state15operationResult9StateTypeQzAH_0gI0QzSgtF",
+            "moduleName": "Sovran",
+            "genericSig": "<τ_0_0 where τ_0_0 : Sovran.AsyncAction>",
+            "sugared_genericSig": "<Self where Self : Sovran.AsyncAction>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:6Sovran11AsyncActionP",
+        "mangledName": "$s6Sovran11AsyncActionP",
+        "moduleName": "Sovran",
+        "genericSig": "<τ_0_0.StateType : Sovran.State>",
+        "sugared_genericSig": "<Self.StateType : Sovran.State>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sovran",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Subscriber",
+        "printedName": "Subscriber",
+        "declKind": "Protocol",
+        "usr": "s:6Sovran10SubscriberP",
+        "mangledName": "$s6Sovran10SubscriberP",
+        "moduleName": "Sovran",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sovran",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Store",
+        "printedName": "Store",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "updateQueue",
+            "printedName": "updateQueue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Sovran5StoreC11updateQueueSo17OS_dispatch_queueCvp",
+            "mangledName": "$s6Sovran5StoreC11updateQueueSo17OS_dispatch_queueCvp",
+            "moduleName": "Sovran",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sovran5StoreC11updateQueueSo17OS_dispatch_queueCvg",
+                "mangledName": "$s6Sovran5StoreC11updateQueueSo17OS_dispatch_queueCvg",
+                "moduleName": "Sovran",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "syncQueue",
+            "printedName": "syncQueue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Sovran5StoreC9syncQueueSo17OS_dispatch_queueCvp",
+            "mangledName": "$s6Sovran5StoreC9syncQueueSo17OS_dispatch_queueCvp",
+            "moduleName": "Sovran",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sovran5StoreC9syncQueueSo17OS_dispatch_queueCvg",
+                "mangledName": "$s6Sovran5StoreC9syncQueueSo17OS_dispatch_queueCvg",
+                "moduleName": "Sovran",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "states",
+            "printedName": "states",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Sovran.Container]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Container",
+                    "printedName": "Sovran.Container",
+                    "usr": "s:6Sovran9ContainerC"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Sovran5StoreC6statesSayAA9ContainerCGvp",
+            "mangledName": "$s6Sovran5StoreC6statesSayAA9ContainerCGvp",
+            "moduleName": "Sovran",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Sovran.Container]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Container",
+                        "printedName": "Sovran.Container",
+                        "usr": "s:6Sovran9ContainerC"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sovran5StoreC6statesSayAA9ContainerCGvg",
+                "mangledName": "$s6Sovran5StoreC6statesSayAA9ContainerCGvg",
+                "moduleName": "Sovran",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Sovran.Container]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Container",
+                        "printedName": "Sovran.Container",
+                        "usr": "s:6Sovran9ContainerC"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sovran5StoreC6statesSayAA9ContainerCGvs",
+                "mangledName": "$s6Sovran5StoreC6statesSayAA9ContainerCGvs",
+                "moduleName": "Sovran",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sovran5StoreC6statesSayAA9ContainerCGvM",
+                "mangledName": "$s6Sovran5StoreC6statesSayAA9ContainerCGvM",
+                "moduleName": "Sovran",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "subscribers",
+            "printedName": "subscribers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Sovran.Subscription]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Subscription",
+                    "printedName": "Sovran.Subscription",
+                    "usr": "s:6Sovran12SubscriptionV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Sovran5StoreC11subscribersSayAA12SubscriptionVGvp",
+            "mangledName": "$s6Sovran5StoreC11subscribersSayAA12SubscriptionVGvp",
+            "moduleName": "Sovran",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Sovran.Subscription]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Subscription",
+                        "printedName": "Sovran.Subscription",
+                        "usr": "s:6Sovran12SubscriptionV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sovran5StoreC11subscribersSayAA12SubscriptionVGvg",
+                "mangledName": "$s6Sovran5StoreC11subscribersSayAA12SubscriptionVGvg",
+                "moduleName": "Sovran",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Sovran.Subscription]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Subscription",
+                        "printedName": "Sovran.Subscription",
+                        "usr": "s:6Sovran12SubscriptionV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sovran5StoreC11subscribersSayAA12SubscriptionVGvs",
+                "mangledName": "$s6Sovran5StoreC11subscribersSayAA12SubscriptionVGvs",
+                "moduleName": "Sovran",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sovran5StoreC11subscribersSayAA12SubscriptionVGvM",
+                "mangledName": "$s6Sovran5StoreC11subscribersSayAA12SubscriptionVGvM",
+                "moduleName": "Sovran",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Store",
+                "printedName": "Sovran.Store",
+                "usr": "s:6Sovran5StoreC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6Sovran5StoreC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s6Sovran5StoreC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Sovran",
+            "declAttributes": [
+              "Required",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Sovran5StoreC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s6Sovran5StoreC6encode2toys7Encoder_p_tKF",
+            "moduleName": "Sovran",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Store",
+                "printedName": "Sovran.Store",
+                "usr": "s:6Sovran5StoreC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6Sovran5StoreCACycfc",
+            "mangledName": "$s6Sovran5StoreCACycfc",
+            "moduleName": "Sovran",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "subscribe",
+            "printedName": "subscribe(_:initialState:queue:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Subscriber",
+                "printedName": "Sovran.Subscriber",
+                "usr": "s:6Sovran10SubscriberP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(τ_0_0) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Sovran5StoreC9subscribe_12initialState5queue7handlerSiAA10Subscriber_p_SbSo012OS_dispatch_F0CyxctAA0E0RzlF",
+            "mangledName": "$s6Sovran5StoreC9subscribe_12initialState5queue7handlerSiAA10Subscriber_p_SbSo012OS_dispatch_F0CyxctAA0E0RzlF",
+            "moduleName": "Sovran",
+            "genericSig": "<τ_0_0 where τ_0_0 : Sovran.State>",
+            "sugared_genericSig": "<T where T : Sovran.State>",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unsubscribe",
+            "printedName": "unsubscribe(identifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Sovran5StoreC11unsubscribe10identifierySi_tF",
+            "mangledName": "$s6Sovran5StoreC11unsubscribe10identifierySi_tF",
+            "moduleName": "Sovran",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "provide",
+            "printedName": "provide(state:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Sovran5StoreC7provide5stateyx_tAA5StateRzlF",
+            "mangledName": "$s6Sovran5StoreC7provide5stateyx_tAA5StateRzlF",
+            "moduleName": "Sovran",
+            "genericSig": "<τ_0_0 where τ_0_0 : Sovran.State>",
+            "sugared_genericSig": "<T where T : Sovran.State>",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dispatch",
+            "printedName": "dispatch(action:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Sovran5StoreC8dispatch6actionyx_tAA6ActionRzlF",
+            "mangledName": "$s6Sovran5StoreC8dispatch6actionyx_tAA6ActionRzlF",
+            "moduleName": "Sovran",
+            "genericSig": "<τ_0_0 where τ_0_0 : Sovran.Action>",
+            "sugared_genericSig": "<T where T : Sovran.Action>",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dispatch",
+            "printedName": "dispatch(action:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Sovran5StoreC8dispatch6actionyx_tAA11AsyncActionRzlF",
+            "mangledName": "$s6Sovran5StoreC8dispatch6actionyx_tAA11AsyncActionRzlF",
+            "moduleName": "Sovran",
+            "genericSig": "<τ_0_0 where τ_0_0 : Sovran.AsyncAction>",
+            "sugared_genericSig": "<T where T : Sovran.AsyncAction>",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "currentState",
+            "printedName": "currentState()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Sovran5StoreC12currentStatexSgyAA0D0RzlF",
+            "mangledName": "$s6Sovran5StoreC12currentStatexSgyAA0D0RzlF",
+            "moduleName": "Sovran",
+            "genericSig": "<τ_0_0 where τ_0_0 : Sovran.State>",
+            "sugared_genericSig": "<T where T : Sovran.State>",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "existing",
+            "printedName": "existing(state:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Sovran.Container]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Container",
+                    "printedName": "Sovran.Container",
+                    "usr": "s:6Sovran9ContainerC"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Sovran5StoreC8existing5stateSayAA9ContainerCGx_tAA5StateRzlF",
+            "mangledName": "$s6Sovran5StoreC8existing5stateSayAA9ContainerCGx_tAA5StateRzlF",
+            "moduleName": "Sovran",
+            "genericSig": "<τ_0_0 where τ_0_0 : Sovran.State>",
+            "sugared_genericSig": "<T where T : Sovran.State>",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "existing",
+            "printedName": "existing(stateType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Sovran.Container]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Container",
+                    "printedName": "Sovran.Container",
+                    "usr": "s:6Sovran9ContainerC"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_0_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Sovran5StoreC8existing9stateTypeSayAA9ContainerCGxm_tAA5StateRzlF",
+            "mangledName": "$s6Sovran5StoreC8existing9stateTypeSayAA9ContainerCGxm_tAA5StateRzlF",
+            "moduleName": "Sovran",
+            "genericSig": "<τ_0_0 where τ_0_0 : Sovran.State>",
+            "sugared_genericSig": "<T where T : Sovran.State>",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "notify",
+            "printedName": "notify(subscribers:state:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Sovran.Subscription]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Subscription",
+                    "printedName": "Sovran.Subscription",
+                    "usr": "s:6Sovran12SubscriptionV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Sovran5StoreC6notify11subscribers5stateySayAA12SubscriptionVG_xtAA5StateRzlF",
+            "mangledName": "$s6Sovran5StoreC6notify11subscribers5stateySayAA12SubscriptionVG_xtAA5StateRzlF",
+            "moduleName": "Sovran",
+            "genericSig": "<τ_0_0 where τ_0_0 : Sovran.State>",
+            "sugared_genericSig": "<T where T : Sovran.State>",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clean",
+            "printedName": "clean()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Sovran5StoreC5cleanyyF",
+            "mangledName": "$s6Sovran5StoreC5cleanyyF",
+            "moduleName": "Sovran",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "existing",
+            "printedName": "existing(handlerType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Sovran.Subscription]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Subscription",
+                    "printedName": "Sovran.Subscription",
+                    "usr": "s:6Sovran12SubscriptionV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Metatype",
+                "printedName": "τ_0_0.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6Sovran5StoreC8existing11handlerTypeSayAA12SubscriptionVGxm_tAA5StateRzlF",
+            "mangledName": "$s6Sovran5StoreC8existing11handlerTypeSayAA12SubscriptionVGxm_tAA5StateRzlF",
+            "moduleName": "Sovran",
+            "genericSig": "<τ_0_0 where τ_0_0 : Sovran.State>",
+            "sugared_genericSig": "<T where T : Sovran.State>",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:6Sovran5StoreC",
+        "mangledName": "$s6Sovran5StoreC",
+        "moduleName": "Sovran",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Subscription",
+        "printedName": "Subscription",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "owner",
+            "printedName": "owner",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "Sovran.Subscriber?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Sovran12SubscriptionV5ownerAA10Subscriber_pSgvp",
+            "mangledName": "$s6Sovran12SubscriptionV5ownerAA10Subscriber_pSgvp",
+            "moduleName": "Sovran",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership"
+            ],
+            "fixedbinaryorder": 0,
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Sovran.Subscriber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Subscriber",
+                        "printedName": "Sovran.Subscriber",
+                        "usr": "s:6Sovran10SubscriberP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sovran12SubscriptionV5ownerAA10Subscriber_pSgvg",
+                "mangledName": "$s6Sovran12SubscriptionV5ownerAA10Subscriber_pSgvg",
+                "moduleName": "Sovran",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Sovran.Subscriber?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Subscriber",
+                        "printedName": "Sovran.Subscriber",
+                        "usr": "s:6Sovran10SubscriberP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sovran12SubscriptionV5ownerAA10Subscriber_pSgvs",
+                "mangledName": "$s6Sovran12SubscriptionV5ownerAA10Subscriber_pSgvs",
+                "moduleName": "Sovran",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sovran12SubscriptionV5ownerAA10Subscriber_pSgvM",
+                "mangledName": "$s6Sovran12SubscriptionV5ownerAA10Subscriber_pSgvM",
+                "moduleName": "Sovran",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "queue",
+            "printedName": "queue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Sovran12SubscriptionV5queueSo012OS_dispatch_C0Cvp",
+            "mangledName": "$s6Sovran12SubscriptionV5queueSo012OS_dispatch_C0Cvp",
+            "moduleName": "Sovran",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 1,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sovran12SubscriptionV5queueSo012OS_dispatch_C0Cvg",
+                "mangledName": "$s6Sovran12SubscriptionV5queueSo012OS_dispatch_C0Cvg",
+                "moduleName": "Sovran",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "handler",
+            "printedName": "handler",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Sovran12SubscriptionV7handlerypvp",
+            "mangledName": "$s6Sovran12SubscriptionV7handlerypvp",
+            "moduleName": "Sovran",
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 2,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sovran12SubscriptionV7handlerypvg",
+                "mangledName": "$s6Sovran12SubscriptionV7handlerypvg",
+                "moduleName": "Sovran",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "subscriptionID",
+            "printedName": "subscriptionID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Sovran12SubscriptionV14subscriptionIDSivp",
+            "mangledName": "$s6Sovran12SubscriptionV14subscriptionIDSivp",
+            "moduleName": "Sovran",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 3,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sovran12SubscriptionV14subscriptionIDSivg",
+                "mangledName": "$s6Sovran12SubscriptionV14subscriptionIDSivg",
+                "moduleName": "Sovran",
+                "implicit": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(owner:queue:handler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Subscription",
+                "printedName": "Sovran.Subscription",
+                "usr": "s:6Sovran12SubscriptionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Sovran.Subscriber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Subscriber",
+                    "printedName": "Sovran.Subscriber",
+                    "usr": "s:6Sovran10SubscriberP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ProtocolComposition",
+                "printedName": "Any"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6Sovran12SubscriptionV5owner5queue7handlerAcA10Subscriber_pSg_So012OS_dispatch_D0Cyptcfc",
+            "mangledName": "$s6Sovran12SubscriptionV5owner5queue7handlerAcA10Subscriber_pSg_So012OS_dispatch_D0Cyptcfc",
+            "moduleName": "Sovran",
+            "implicit": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:6Sovran12SubscriptionV",
+        "mangledName": "$s6Sovran12SubscriptionV",
+        "moduleName": "Sovran",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Container",
+        "printedName": "Container",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "state",
+            "printedName": "state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "State",
+                "printedName": "Sovran.State",
+                "usr": "s:6Sovran5StateP"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6Sovran9ContainerC5stateAA5State_pvp",
+            "mangledName": "$s6Sovran9ContainerC5stateAA5State_pvp",
+            "moduleName": "Sovran",
+            "isOpen": true,
+            "declAttributes": [
+              "HasStorage"
+            ],
+            "fixedbinaryorder": 0,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "Sovran.State",
+                    "usr": "s:6Sovran5StateP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sovran9ContainerC5stateAA5State_pvg",
+                "mangledName": "$s6Sovran9ContainerC5stateAA5State_pvg",
+                "moduleName": "Sovran",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "Sovran.State",
+                    "usr": "s:6Sovran5StateP"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sovran9ContainerC5stateAA5State_pvs",
+                "mangledName": "$s6Sovran9ContainerC5stateAA5State_pvs",
+                "moduleName": "Sovran",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6Sovran9ContainerC5stateAA5State_pvM",
+                "mangledName": "$s6Sovran9ContainerC5stateAA5State_pvM",
+                "moduleName": "Sovran",
+                "implicit": true,
+                "isOpen": true,
+                "declAttributes": [
+                  "Transparent"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(state:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Container",
+                "printedName": "Sovran.Container",
+                "usr": "s:6Sovran9ContainerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "State",
+                "printedName": "Sovran.State",
+                "usr": "s:6Sovran5StateP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6Sovran9ContainerC5stateAcA5State_p_tcfc",
+            "mangledName": "$s6Sovran9ContainerC5stateAcA5State_p_tcfc",
+            "moduleName": "Sovran",
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:6Sovran9ContainerC",
+        "mangledName": "$s6Sovran9ContainerC",
+        "moduleName": "Sovran",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "__sovran_version",
+        "printedName": "__sovran_version",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:6Sovran16__sovran_versionSSvp",
+        "mangledName": "$s6Sovran16__sovran_versionSSvp",
+        "moduleName": "Sovran",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "isLet": true,
+        "hasStorage": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sovran",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "State",
+        "printedName": "State",
+        "declKind": "Protocol",
+        "usr": "s:6Sovran5StateP",
+        "mangledName": "$s6Sovran5StateP",
+        "moduleName": "Sovran",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/brandonsneed\/work\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
+      "kind": "StringLiteral",
+      "offset": 269,
+      "length": 26,
+      "value": "\"state.update.segment.com\""
+    },
+    {
+      "filePath": "\/Users\/brandonsneed\/work\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
+      "kind": "StringLiteral",
+      "offset": 402,
+      "length": 24,
+      "value": "\"state.sync.segment.com\""
+    },
+    {
+      "filePath": "\/Users\/brandonsneed\/work\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1778,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/brandonsneed\/work\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3211,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/brandonsneed\/work\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6955,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/brandonsneed\/work\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7102,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/brandonsneed\/work\/Sovran-Swift\/Sources\/Sovran\/Version.swift",
+      "kind": "StringLiteral",
+      "offset": 320,
+      "length": 7,
+      "value": "\"1.1.0\""
+    }
+  ]
+}

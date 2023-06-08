@@ -1,0 +1,529 @@
+<?xml version="1.0" standalone="yes" ?>
+<tlvtree ver="1.0">
+    <node tag="0x0">
+        <node tag="0x1000">                     <!-- C_TAG_AID -->
+            <node tag="0x1001">
+                <node tag="0x9FFF00"> 56 69 73 61 20 44 65 62 69 74 2F 43 72 65 64 69 74 </node>                   <!-- VSDC (Visa Debit/Credit) -->
+				<node tag="0x9F06"> 07 A0 00 00 00 03 10 10 </node>
+				<node tag="0x9F1A"> 08 40 </node>                           <!-- Country  Code: 0124 for Canada, 0840 for US -->
+				<node tag="0x5F2A"> 08 40 </node>                           <!-- Currency Code: 0124 for Canada, 0840 for US -->
+				<node tag="0x5F36"> 02 </node>                              <!-- Currency Exponent -->
+				<node tag="0x9F812B"> 00 00 00 00 </node>                   <!-- Threshold Value -->
+				<node tag="0x9F8124"> 9F 37 04 </node>                      <!-- Default DDOL -->
+				<node tag="0x9F8125"> 9F 02 06 95 05 5F 2A 02 9A 03 9C 01 9F 37 04 </node> <!-- Default TDOL -->
+				<node tag="0x9F8126"> 00 </node>                            <!-- Max    percentage for biased random selection -->
+				<node tag="0x9F8127"> 00 </node>                            <!-- Target percentage for biased random selection -->
+				<node tag="0x9F8128"> DC 40 00 A8 00 </node>                <!-- TAC Default -->
+				<node tag="0x9F8129"> 00 10 00 00 00 </node>                <!-- TAC Denial -->
+				<node tag="0x9F812A"> DC 40 04 F8 00 </node>                <!-- TAC Online -->
+				<node tag="0x9F09"> 00 96 </node>                           <!-- Version Number -->
+				<node tag="0x9F1B"> 00 00 00 00 </node>                     <!-- Floor Limit -->
+				<node tag="0x9F841D"> 01 </node>                            <!-- ASI -->
+			</node>
+			<node tag="0x1002">
+				<node tag="0x9FFF00"> 56 69 73 61 20 45 6C 65 63 74 72 6F 6E </node>                   <!-- VISA Electron-->
+				<node tag="0x9F06"> 07 A0 00 00 00 03 20 10 </node>
+				<node tag="0x9F1A"> 08 40 </node>                           <!-- Country  Code: 0124 for Canada, 0840 for US -->
+				<node tag="0x5F2A"> 08 40 </node>                           <!-- Currency Code: 0124 for Canada, 0840 for US -->
+				<node tag="0x5F36"> 02 </node>                              <!-- Currency Exponent -->
+				<node tag="0x9F812B"> 00 00 00 00 </node>                   <!-- Threshold Value -->
+				<node tag="0x9F8124"> 9F 37 04 </node>                      <!-- Default DDOL -->
+				<node tag="0x9F8125"> 9F 02 06 95 05 5F 2A 02 9A 03 9C 01 9F 37 04 </node>  <!-- Default TDOL -->
+				<node tag="0x9F8126"> 00 </node>                            <!-- Max    percentage for biased random selection -->
+				<node tag="0x9F8127"> 00 </node>                            <!-- Target percentage for biased random selection -->
+				<node tag="0x9F8128"> DC 40 00 A8 00 </node>                <!-- TAC Default -->
+				<node tag="0x9F8129"> 00 10 00 00 00 </node>                <!-- TAC Denial -->
+				<node tag="0x9F812A"> DC 40 04 F8 00 </node>                <!-- TAC Online -->
+				<node tag="0x9F09"> 00 96 </node>                           <!-- Version Number -->
+				<node tag="0x9F1B"> 00 00 00 00 </node>                     <!-- Floor Limit -->
+				<node tag="0x9F841D"> 01 </node>                            <!-- ASI -->
+			</node>
+			<node tag="0x1003">
+				<node tag="0x9FFF00"> 56 69 73 61 20 49 6E 74 65 72 6C 69 6E 6B </node>          <!-- VISA INTERLINK -->
+				<node tag="0x9F06"> 07 A0 00 00 00 03 30 10 </node>
+				<node tag="0x9F1A"> 08 40 </node>                           <!-- Country  Code: 0124 for Canada, 0840 for US -->
+				<node tag="0x5F2A"> 08 40 </node>                           <!-- Currency Code: 0124 for Canada, 0840 for US -->
+				<node tag="0x5F36"> 02 </node>                              <!-- Currency Exponent -->
+				<node tag="0x9F812B"> 00 00 00 00 </node>                   <!-- Threshold Value -->
+				<node tag="0x9F8124"> 9F 37 04 </node>                      <!-- Default DDOL -->
+				<node tag="0x9F8125"> 9F 02 06 95 05 5F 2A 02 9A 03 9C 01 9F 37 04 </node> <!-- Default TDOL -->
+				<node tag="0x9F8126"> 00 </node>                            <!-- Max    percentage for biased random selection -->
+				<node tag="0x9F8127"> 00 </node>                            <!-- Target percentage for biased random selection -->
+				<node tag="0x9F8128"> DC 40 00 A8 00 </node>                <!-- TAC Default -->
+				<node tag="0x9F8129"> 00 10 00 00 00 </node>                <!-- TAC Denial -->
+				<node tag="0x9F812A"> DC 40 04 F8 00 </node>                <!-- TAC Online -->
+				<node tag="0x9F09"> 00 96 </node>                           <!-- Version Number -->
+				<node tag="0x9F1B"> 00 00 00 00 </node>                     <!-- Floor Limit -->
+				<node tag="0x9F841D"> 01 </node>                            <!-- ASI -->
+			</node>
+			<node tag="0x1004">
+				<node tag="0x9FFF00"> 56 69 73 61 </node>                   <!-- VISA - Common debit -->
+				<node tag="0x9F06"> 07 A0 00 00 00 98 08 40 </node>
+				<node tag="0x9F1A"> 08 40 </node>                           <!-- Country  Code: 0124 for Canada, 0840 for US -->
+				<node tag="0x5F2A"> 08 40 </node>                           <!-- Currency Code: 0124 for Canada, 0840 for US -->
+				<node tag="0x5F36"> 02 </node>                              <!-- Currency Exponent -->
+				<node tag="0x9F812B"> 00 00 00 00 </node>                   <!-- Threshold Value -->
+				<node tag="0x9F8124"> 9F 37 04 </node>                      <!-- Default DDOL -->
+				<node tag="0x9F8125"> 9F 02 06 95 05 5F 2A 02 9A 03 9C 01 9F 37 04 </node> <!-- Default TDOL -->
+				<node tag="0x9F8126"> 00 </node>                            <!-- Max    percentage for biased random selection -->
+				<node tag="0x9F8127"> 00 </node>                            <!-- Target percentage for biased random selection -->
+				<node tag="0x9F8128"> DC 40 00 A8 00 </node>                <!-- TAC Default -->
+				<node tag="0x9F8129"> 00 10 00 00 00 </node>                <!-- TAC Denial -->
+				<node tag="0x9F812A"> DC 40 04 F8 00 </node>                <!-- TAC Online -->
+				<node tag="0x9F09"> 00 96 </node>                           <!-- Version Number -->
+				<node tag="0x9F1B"> 00 00 00 00 </node>                     <!-- Floor Limit -->
+				<node tag="0x9F841D"> 01 </node>                            <!-- ASI -->
+			</node>
+			<node tag="0x1005">
+				<node tag="0x9FFF00"> 4D 61 73 74 65 72 43 61 72 64 </node> <!-- MasterCard -->
+				<node tag="0x9F06"> 07 A0 00 00 00 04 10 10 </node>
+				<node tag="0x9F1A"> 08 40 </node>                           <!-- Country  Code: 0124 for Canada, 0840 for US -->
+				<node tag="0x5F2A"> 08 40 </node>                           <!-- Currency Code: 0124 for Canada, 0840 for US -->
+				<node tag="0x5F36"> 02 </node>                              <!-- Currency Exponent -->
+				<node tag="0x9F812B"> 00 00 00 00 </node>                   <!-- Threshold Value -->
+				<node tag="0x9F8124"> 9F 37 04 </node>                      <!-- Default DDOL -->
+				<node tag="0x9F8125"> 9F 02 06 95 05 5F 2A 02 9A 03 9C 01 9F 37 04 </node> <!-- Default TDOL -->
+				<node tag="0x9F8126"> 00 </node>                            <!-- Max    percentage for biased random selection -->
+				<node tag="0x9F8127"> 00 </node>                            <!-- Target percentage for biased random selection -->
+				<node tag="0x9F8128"> FC 50 A8 A0 00 </node>                <!-- TAC Default -->
+				<node tag="0x9F8129"> 00 00 00 00 00 </node>                <!-- TAC Denial -->
+				<node tag="0x9F812A"> FC 50 A8 F8 00 </node>                <!-- TAC Online -->
+				<node tag="0x9F09"> 00 02 </node>                           <!-- Version Number -->
+				<node tag="0x9F1B"> 00 00 00 00 </node>                     <!-- Floor Limit -->
+				<node tag="0x9F841D"> 01 </node>                            <!-- ASI -->
+			</node>
+			<node tag="0x1006">
+				<node tag="0x9FFF00"> 4D 61 65 73 74 72 6F </node>       <!-- Maestro (Debit)   -->
+				<node tag="0x9F06"> 07 A0 00 00 00 04 30 60 </node>
+				<node tag="0x9F1A"> 08 40 </node>                           <!-- Country  Code: 0124 for Canada, 0840 for US -->
+				<node tag="0x5F2A"> 08 40 </node>                           <!-- Currency Code: 0124 for Canada, 0840 for US -->
+				<node tag="0x5F36"> 02 </node>                              <!-- Currency Exponent -->
+				<node tag="0x9F812B"> 00 00 00 00 </node>                   <!-- Threshold Value -->
+				<node tag="0x9F8124"> 9F 37 04 </node>                      <!-- Default DDOL -->
+				<node tag="0x9F8125"> 9F 02 06 95 05 5F 2A 02 9A 03 9C 01 9F 37 04 </node>  <!-- Default TDOL -->
+				<node tag="0x9F8126"> 00 </node>                            <!-- Max    percentage for biased random selection -->
+				<node tag="0x9F8127"> 00 </node>                            <!-- Target percentage for biased random selection -->
+				<node tag="0x9F8128"> FC 50 A8 A0 00 </node>                <!-- TAC Default -->
+				<node tag="0x9F8129"> 00 00 00 00 00 </node>                <!-- TAC Denial -->
+				<node tag="0x9F812A"> FC 50 A8 F8 00 </node>                <!-- TAC Online -->
+				<node tag="0x9F09"> 00 02 </node>                           <!-- Version Number -->
+				<node tag="0x9F1B"> 00 00 00 00 </node>                     <!-- Floor Limit -->
+				<node tag="0x9F841D"> 01 </node>                            <!-- ASI -->
+			</node>
+			<node tag="0x1007">
+                <node tag="0x9FFF00"> 55 53 20 4D 61 65 73 74 72 6F </node> <!-- MasterCard - Common debit-->
+                <node tag="0x9F06"> 07 A0 00 00 00 04 22 03 </node>
+                <node tag="0x9F1A"> 08 40 </node>                           <!-- Country  Code: 0124 for Canada, 0840 for US -->
+                <node tag="0x5F2A"> 08 40 </node>                           <!-- Currency Code: 0124 for Canada, 0840 for US -->
+                <node tag="0x5F36"> 02 </node>                              <!-- Currency Exponent -->
+                <node tag="0x9F812B"> 00 00 00 00 </node>                   <!-- Threshold Value -->
+                <node tag="0x9F8124"> 9F 37 04 </node>                      <!-- Default DDOL -->
+                <node tag="0x9F8125"> 9F 02 06 95 05 5F 2A 02 9A 03 9C 01 9F 37 04 </node> <!-- Default TDOL -->
+                <node tag="0x9F8126"> 00 </node>                            <!-- Max    percentage for biased random selection -->
+                <node tag="0x9F8127"> 00 </node>                            <!-- Target percentage for biased random selection -->
+                <node tag="0x9F8128"> FC 50 A8 A0 00 </node>                <!-- TAC Default -->
+                <node tag="0x9F8129"> 00 00 00 00 00 </node>                <!-- TAC Denial -->
+                <node tag="0x9F812A"> FC 50 A8 F8 00 </node>                <!-- TAC Online -->
+                <node tag="0x9F09"> 00 02 </node>                           <!-- Version Number -->
+                <node tag="0x9F1B"> 00 00 00 00 </node>                     <!-- Floor Limit -->
+                <node tag="0x9F841D"> 01 </node>                            <!-- ASI -->
+            </node>
+            <node tag="0x1008">
+                <node tag="0x9FFF00"> 41 6D 65 72 69 63 61 6E 20 45 78 70 72 65 73 73 </node>                   <!-- AMEX -->
+                <node tag="0x9F06"> 06 A0 00 00 00 25 01 </node>
+                <node tag="0x9F1A"> 08 40 </node>                           <!-- Country  Code: 0124 for Canada, 0840 for US -->
+                <node tag="0x5F2A"> 08 40 </node>                           <!-- Currency Code: 0124 for Canada, 0840 for US -->
+                <node tag="0x5F36"> 02 </node>                              <!-- Currency Exponent -->
+                <node tag="0x9F812B"> 00 00 00 00 </node>                   <!-- Threshold Value -->
+                <node tag="0x9F8124"> 9F 37 04 </node>                      <!-- Default DDOL -->
+                <node tag="0x9F8125"> 9F 02 06 95 05 5F 2A 02 9A 03 9C 01 9F 37 04 </node>  <!-- Default TDOL -->
+                <node tag="0x9F8126"> 00 </node>                            <!-- Max    percentage for biased random selection -->
+                <node tag="0x9F8127"> 00 </node>                            <!-- Target percentage for biased random selection -->
+                <node tag="0x9F8128"> C8 00 00 00 00 </node>                <!-- TAC Default -->
+                <node tag="0x9F8129"> 00 00 00 00 00 </node>                <!-- TAC Denial -->
+                <node tag="0x9F812A"> C8 00 00 00 00 </node>                <!-- TAC Online -->
+                <node tag="0x9F09"> 00 01 </node>                           <!-- Version Number -->
+                <node tag="0x9F1B"> 00 00 00 00 </node>                     <!-- Floor Limit -->
+                <node tag="0x9F841D"> 01 </node>                            <!-- ASI -->
+            </node>
+            <node tag="0x1009">
+                <node tag="0x9FFF00"> 44 69 73 63 6F 76 65 72 2F 50 75 6C 73 65 </node>       <!-- Discover - Common debit -->
+                <node tag="0x9F06"> 07 A0 00 00 01 52 30 10 </node>
+                <node tag="0x9F1A"> 08 40 </node>                           <!-- Country  Code: 0124 for Canada, 0840 for US -->
+                <node tag="0x5F2A"> 08 40 </node>                           <!-- Currency Code: 0124 for Canada, 0840 for US -->
+                <node tag="0x5F36"> 02 </node>                              <!-- Currency Exponent -->
+                <node tag="0x9F812B"> 00 00 00 00 </node>                   <!-- Threshold Value -->
+                <node tag="0x9F8124"> 9F 37 04 </node>                      <!-- Default DDOL -->
+                <node tag="0x9F8125"> 9F 02 06 95 05 5F 2A 02 9A 03 9C 01 9F 37 04 </node>  <!-- Default TDOL -->
+                <node tag="0x9F8126"> 00 </node>                            <!-- Max    percentage for biased random selection -->
+                <node tag="0x9F8127"> 00 </node>                            <!-- Target percentage for biased random selection -->
+                <node tag="0x9F8128"> DC 00 00 A0 00 </node>                <!-- TAC Default -->
+                <node tag="0x9F8129"> 00 10 00 00 00 </node>                <!-- TAC Denial -->
+                <node tag="0x9F812A"> FC E0 9C F8 00 </node>                <!-- TAC Online -->
+                <node tag="0x9F09"> 00 01 </node>                           <!-- Version Number -->
+                <node tag="0x9F1B"> 00 00 00 00 </node>                     <!-- Floor Limit -->
+                <node tag="0x9F841D"> 01 </node>                            <!-- ASI -->
+            </node>
+            <node tag="0x100A">
+                <node tag="0x9FFF00"> 44 69 6E 65 72 73 2F 44 69 73 63 6F 76 65 72 20 55 53 20 44 65 62 69 74 20 43 6F 6D 6D 6F 6E </node>       <!-- Discover - Common debit -->
+                <node tag="0x9F06"> 07 A0 00 00 01 52 40 10 </node>
+                <node tag="0x9F1A"> 08 40 </node>                           <!-- Country  Code: 0124 for Canada, 0840 for US -->
+                <node tag="0x5F2A"> 08 40 </node>                           <!-- Currency Code: 0124 for Canada, 0840 for US -->
+                <node tag="0x5F36"> 02 </node>                              <!-- Currency Exponent -->
+                <node tag="0x9F812B"> 00 00 00 00 </node>                   <!-- Threshold Value -->
+                <node tag="0x9F8124"> 9F 37 04 </node>                      <!-- Default DDOL -->
+                <node tag="0x9F8125"> 9F 02 06 95 05 5F 2A 02 9A 03 9C 01 9F 37 04 </node>  <!-- Default TDOL -->
+                <node tag="0x9F8126"> 00 </node>                            <!-- Max    percentage for biased random selection -->
+                <node tag="0x9F8127"> 00 </node>                            <!-- Target percentage for biased random selection -->
+                <node tag="0x9F8128"> DC 00 00 A0 00 </node>                <!-- TAC Default -->
+                <node tag="0x9F8129"> 00 10 00 00 00 </node>                <!-- TAC Denial -->
+                <node tag="0x9F812A"> FC E0 9C F8 00 </node>                <!-- TAC Online -->
+                <node tag="0x9F09"> 00 01 </node>                           <!-- Version Number -->
+                <node tag="0x9F1B"> 00 00 00 00 </node>                     <!-- Floor Limit -->
+                <node tag="0x9F841D"> 01 </node>                            <!-- ASI -->
+            </node>
+            <node tag="0x100B">
+                <node tag="0x9FFF00"> 4A 43 42 </node>                      <!-- JCB -->
+                <node tag="0x9F06"> 07 A0 00 00 00 65 10 10 </node>
+                <node tag="0x9F1A"> 08 40 </node>                           <!-- Country  Code: 0124 for Canada, 0840 for US -->
+                <node tag="0x5F2A"> 08 40 </node>                           <!-- Currency Code: 0124 for Canada, 0840 for US -->
+                <node tag="0x5F36"> 02 </node>                              <!-- Currency Exponent -->
+                <node tag="0x9F812B"> 00 00 00 00 </node>                   <!-- Threshold Value -->
+                <node tag="0x9F8124"> 9F 37 04 </node>                      <!-- Default DDOL -->
+                <node tag="0x9F8125"> 9F 02 06 95 05 5F 2A 02 9A 03 9C 01 9F 37 04 </node>  <!-- Default TDOL -->
+                <node tag="0x9F8126"> 00 </node>                            <!-- Max    percentage for biased random selection -->
+                <node tag="0x9F8127"> 00 </node>                            <!-- Target percentage for biased random selection -->
+                <node tag="0x9F8128"> DC 00 00 A0 00 </node>                <!-- TAC Default -->
+                <node tag="0x9F8129"> 00 10 00 00 00 </node>                <!-- TAC Denial -->
+                <node tag="0x9F812A"> FC E0 9C F8 00 </node>                <!-- TAC Online -->
+                <node tag="0x9F09"> 02 00 </node>                           <!-- Version Number -->
+                <node tag="0x9F1B"> 00 00 00 00 </node>                     <!-- Floor Limit -->
+                <node tag="0x9F841D"> 01 </node>                            <!-- ASI -->
+            </node>
+			<node tag="0x100C">
+				<node tag="0x9FFF00"> 55 4E 49 4F 4E 50 41 59 </node>       <!-- UnionPay Credit-->
+				<node tag="0x9F06"> 08 A0 00 00 03 33 01 01 02 </node>
+				<node tag="0x9F1A"> 08 40 </node>                           <!-- Country code: 0124 for Canada, 0840 for US -->
+				<node tag="0x5F2A"> 08 40 </node>                           <!-- Currency Code: 0124 for Canada, 0840 for US  -->
+				<node tag="0x5F36"> 02 </node>                              <!-- Currency Exponent -->
+				<node tag="0x9F812B"> 00 00 00 00 </node>                   <!-- Threshold Value -->
+				<node tag="0x9F8124"> 9F 37 04 </node>                      <!-- Default DDOL -->
+				<node tag="0x9F8125"> 9F 02 06 95 05 5F 2A 02 9A 03 9C 01 9F 37 04 </node>  <!-- Default TDOL -->
+				<node tag="0x9F8126"> 00 </node>                            <!-- Max    percentage for biased random selection -->
+				<node tag="0x9F8127"> 00 </node>                            <!-- Target percentage for biased random selection -->
+				<node tag="0x9F8128"> D8 40 00 A8 00 </node>                <!-- TAC Default -->
+				<node tag="0x9F8129"> 00 10 00 00 00 </node>                <!-- TAC Denial -->
+				<node tag="0x9F812A"> D8 40 04 F8 00 </node>                <!-- TAC Online -->
+				<node tag="0x9F09"> 00 20 </node>                           <!-- Version Number -->
+				<node tag="0x9F1B"> 00 00 00 00 </node>                     <!-- Floor Limit -->
+				<node tag="0x9F841D"> 01 </node>                            <!-- ASI -->
+			</node>
+			<node tag="0x100D">
+				<node tag="0x9FFF00"> 55 4E 49 4F 4E 50 41 59 </node>       <!-- UnionPay Quasi Credit-->
+				<node tag="0x9F06"> 08 A0 00 00 03 33 01 01 03</node>
+				<node tag="0x9F1A"> 08 40 </node>                           <!-- Country code: 0124 for Canada, 0840 for US -->
+				<node tag="0x5F2A"> 08 40 </node>                           <!-- Currency Code: 0124 for Canada, 0840 for US  -->
+				<node tag="0x5F36"> 02 </node>                              <!-- Currency Exponent -->
+				<node tag="0x9F812B"> 00 00 00 00 </node>                   <!-- Threshold Value -->
+				<node tag="0x9F8124"> 9F 37 04 </node>                      <!-- Default DDOL -->
+				<node tag="0x9F8125"> 9F 02 06 95 05 5F 2A 02 9A 03 9C 01 9F 37 04 </node>  <!-- Default TDOL -->
+				<node tag="0x9F8126"> 00 </node>                            <!-- Max    percentage for biased random selection -->
+				<node tag="0x9F8127"> 00 </node>                            <!-- Target percentage for biased random selection -->
+				<node tag="0x9F8128"> D8 40 00 A8 00 </node>                <!-- TAC Default -->
+				<node tag="0x9F8129"> 00 10 00 00 00 </node>                <!-- TAC Denial -->
+				<node tag="0x9F812A"> D8 40 04 F8 00 </node>                <!-- TAC Online -->
+				<node tag="0x9F09"> 00 20 </node>                           <!-- Version Number -->
+				<node tag="0x9F1B"> 00 00 00 00 </node>                     <!-- Floor Limit -->
+				<node tag="0x9F841D"> 01 </node>                            <!-- ASI -->
+			</node>
+			<node tag="0x100E">
+				<node tag="0x9FFF00"> 55 4E 49 4F 4E 50 41 59 </node>       <!-- UnionPay Debit-->
+				<node tag="0x9F06"> 08 A0 00 00 03 33 01 01 01 </node>
+				<node tag="0x9F1A"> 08 40 </node>                           <!-- Country code: 0124 for Canada, 0840 for US -->
+				<node tag="0x5F2A"> 08 40 </node>                           <!-- Currency Code: 0124 for Canada, 0840 for US  -->
+				<node tag="0x5F36"> 02 </node>                              <!-- Currency Exponent -->
+				<node tag="0x9F812B"> 00 00 00 00 </node>                   <!-- Threshold Value -->
+				<node tag="0x9F8124"> 9F 37 04 </node>                      <!-- Default DDOL -->
+				<node tag="0x9F8125"> 9F 02 06 95 05 5F 2A 02 9A 03 9C 01 9F 37 04 </node>  <!-- Default TDOL -->
+				<node tag="0x9F8126"> 00 </node>                            <!-- Max    percentage for biased random selection -->
+				<node tag="0x9F8127"> 00 </node>                            <!-- Target percentage for biased random selection -->
+				<node tag="0x9F8128"> D8 40 00 A8 00 </node>                <!-- TAC Default -->
+				<node tag="0x9F8129"> 00 10 00 00 00 </node>                <!-- TAC Denial -->
+				<node tag="0x9F812A"> D8 40 04 F8 00 </node>                <!-- TAC Online -->
+				<node tag="0x9F09"> 00 20 </node>                           <!-- Version Number -->
+				<node tag="0x9F1B"> 00 00 00 00 </node>                     <!-- Floor Limit -->
+				<node tag="0x9F841D"> 01 </node>                            <!-- ASI -->
+			</node>
+			<node tag="0x100F">
+				<node tag="0x9FFF00"> 55 4E 49 4F 4E 50 41 59 </node>       <!-- U.S. UnionPay Common Debit AID-->
+				<node tag="0x9F06"> 08 A0 00 00 03 33 01 01 08 </node>
+				<node tag="0x9F1A"> 08 40 </node>                           <!-- Country code: 0124 for Canada, 0840 for US -->
+				<node tag="0x5F2A"> 08 40 </node>                           <!-- Currency Code: 0124 for Canada, 0840 for US  -->
+				<node tag="0x5F36"> 02 </node>                              <!-- Currency Exponent -->
+				<node tag="0x9F812B"> 00 00 00 00 </node>                   <!-- Threshold Value -->
+				<node tag="0x9F8124"> 9F 37 04 </node>                      <!-- Default DDOL -->
+				<node tag="0x9F8125"> 9F 02 06 95 05 5F 2A 02 9A 03 9C 01 9F 37 04 </node>  <!-- Default TDOL -->
+				<node tag="0x9F8126"> 00 </node>                            <!-- Max    percentage for biased random selection -->
+				<node tag="0x9F8127"> 00 </node>                            <!-- Target percentage for biased random selection -->
+				<node tag="0x9F8128"> D8 40 00 A8 00 </node>                <!-- TAC Default -->
+				<node tag="0x9F8129"> 00 10 00 00 00 </node>                <!-- TAC Denial -->
+				<node tag="0x9F812A"> D8 40 04 F8 00 </node>                <!-- TAC Online -->
+				<node tag="0x9F09"> 00 20 </node>                           <!-- Version Number -->
+				<node tag="0x9F1B"> 00 00 00 00 </node>                     <!-- Floor Limit -->
+				<node tag="0x9F841D"> 01 </node>                            <!-- ASI -->
+			</node>
+        </node> <!-- End node 1000 -->
+        
+		<node tag="0x1100">
+			<node tag="0x1102">
+				<node tag="0x9F06"> A0 00 00 00 03 </node>
+				<node tag="0x9F22"> 08 </node> <!--Prod -->
+				<node tag="0x9F8123"> D9 FD 6E D7 5D 51 D0 E3 06 64 BD 15 70 23 EA A1 FF A8 71 E4 DA 65 67 2B 86 3D 25 5E 81 E1 37 A5 1D E4 F7 2B CC 9E 44 AC E1 21 27 F8 7E 26 3D 3A F9 DD 9C F3 5C A4 A7 B0 1E 90 70 00 BA 85 D2 49 54 C2 FC A3 07 48 25 DD D4 C0 C8 F1 86 CB 02 0F 68 3E 02 F2 DE AD 39 69 13 3F 06 F7 84 51 66 AC EB 57 CA 0F C2 60 34 45 46 98 11 D2 93 BF EF BA FA B5 76 31 B3 DD 91 E7 96 BF 85 0A 25 01 2F 1A E3 8F 05 AA 5C 4D 6D 03 B1 DC 2E 56 86 12 78 59 38 BB C9 B3 CD 3A 91 0C 1D A5 5A 5A 92 18 AC E0 F7 A2 12 87 75 26 82 F1 58 32 A6 78 D6 E1 ED 0B </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> 20 D2 13 12 69 55 DE 20 5A DC 2F D2 82 2B D2 2D E2 1C F9 A8 </node>
+			</node>
+			<node tag="0x1103">
+				<node tag="0x9F06"> A0 00 00 00 03 </node>
+				<node tag="0x9F22"> 09 </node> <!--Prod -->
+				<node tag="0x9F8123"> 9D 91 22 48 DE 0A 4E 39 C1 A7 DD E3 F6 D2 58 89 92 C1 A4 09 5A FB D1 82 4D 1B A7 48 47 F2 BC 49 26 D2 EF D9 04 B4 B5 49 54 CD 18 9A 54 C5 D1 17 96 54 F8 F9 B0 D2 AB 5F 03 57 EB 64 2F ED A9 5D 39 12 C6 57 69 45 FA B8 97 E7 06 2C AA 44 A4 AA 06 B8 FE 6E 3D BA 18 AF 6A E3 73 8E 30 42 9E E9 BE 03 42 7C 9D 64 F6 95 FA 8C AB 4B FE 37 68 53 EA 34 AD 1D 76 BF CA D1 59 08 C0 77 FF E6 DC 55 21 EC EF 5D 27 8A 96 E2 6F 57 35 9F FA ED A1 94 34 B9 37 F1 AD 99 9D C5 C4 1E B1 19 35 B4 4C 18 10 0E 85 7F 43 1A 4A 5A 6B B6 51 14 F1 74 C2 D7 B5 9F DF 23 7D 6B B1 DD 09 16 E6 44 D7 09 DE D5 64 81 47 7C 75 D9 5C DD 68 25 46 15 F7 74 0E C0 7F 33 0A C5 D6 7B CD 75 BF 23 D2 8A 14 08 26 C0 26 DB DE 97 1A 37 CD 3E F9 B8 DF 64 4A C3 85 01 05 01 EF C6 50 9D 7A 41 </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> 1F F8 0A 40 17 3F 52 D7 D2 7E 0F 26 A1 46 A1 C8 CC B2 90 46 </node>
+			</node>
+			<node tag="0x1105">
+				<node tag="0x9F06"> A0 00 00 00 04 </node>
+				<node tag="0x9F22"> 05 </node> <!-- Prod -->
+				<node tag="0x9F8123"> B8 04 8A BC 30 C9 0D 97 63 36 54 3E 3F D7 09 1C 8F E4 80 0D F8 20 ED 55 E7 E9 48 13 ED 00 55 5B 57 3F EC A3 D8 4A F6 13 1A 65 1D 66 CF F4 28 4F B1 3B 63 5E DD 0E E4 01 76 D8 BF 04 B7 FD 1C 7B AC F9 AC 73 27 DF AA 8A A7 2D 10 DB 3B 8E 70 B2 DD D8 11 CB 41 96 52 5E A3 86 AC C3 3C 0D 9D 45 75 91 64 69 C4 E4 F5 3E 8E 1C 91 2C C6 18 CB 22 DD E7 C3 56 8E 90 02 2E 6B BA 77 02 02 E4 52 2A 2D D6 23 D1 80 E2 15 BD 1D 15 07 FE 3D C9 0C A3 10 D2 7B 3E FC CD 8F 83 DE 30 52 CA D1 E4 89 38 C6 8D 09 5A AC 91 B5 F3 7E 28 BB 49 EC 7E D5 97 </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> EB FA 0D 5D 06 D8 CE 70 2D A3 EA E8 90 70 1D 45 E2 74 C8 45 </node>
+			</node>
+			<node tag="0x1106">
+				<node tag="0x9F06"> A0 00 00 00 04 </node>
+				<node tag="0x9F22"> 06 </node> <!-- Prod -->
+				<node tag="0x9F8123"> CB 26 FC 83 0B 43 78 5B 2B CE 37 C8 1E D3 34 62 2F 96 22 F4 C8 9A AE 64 10 46 B2 35 34 33 88 3F 30 7F B7 C9 74 16 2D A7 2F 7A 4E C7 5D 9D 65 73 36 86 5B 8D 30 23 D3 D6 45 66 76 25 C9 A0 7A 6B 7A 13 7C F0 C6 41 98 AE 38 FC 23 80 06 FB 26 03 F4 1F 4F 3B B9 DA 13 47 27 0F 2F 5D 8C 60 6E 42 09 58 C5 F7 D5 0A 71 DE 30 14 2F 70 DE 46 88 89 B5 E3 A0 86 95 B9 38 A5 0F C9 80 39 3A 9C BC E4 4A D2 D6 4F 63 0B B3 3A D3 F5 F5 FD 49 5D 31 F3 78 18 C1 D9 40 71 34 2E 07 F1 BE C2 19 4F 60 35 BA 5D ED 39 36 50 0E B8 2D FD A6 E8 AF B6 55 B1 EF 3D 0D 7E BF 86 B6 6D D9 F2 9F 6B 1D 32 4F E8 B2 6C E3 8A B2 01 3D D1 3F 61 1E 7A 59 4D 67 5C 44 32 35 0E A2 44 CC 34 F3 87 3C BA 06 59 29 87 A1 D7 E8 52 AD C2 2E F5 A2 EE 28 13 20 31 E4 8F 74 03 7E 3B 34 AB 74 7F </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> F9 10 A1 50 4D 5F FB 79 3D 94 F3 B5 00 76 5E 1A BC AD 72 D9 </node>
+			</node>
+			<node tag="0x1108">
+				<node tag="0x9F06"> A0 00 00 00 25 </node>
+				<node tag="0x9F22"> 0F </node> <!-- Prod -->
+				<node tag="0x9F8123"> C8 D5 AC 27 A5 E1 FB 89 97 8C 7C 64 79 AF 99 3A B3 80 0E B2 43 99 6F BB 2A E2 6B 67 B2 3A C4 82 C4 B7 46 00 5A 51 AF A7 D2 D8 3E 89 4F 59 1A 23 57 B3 0F 85 B8 56 27 FF 15 DA 12 29 0F 70 F0 57 66 55 2B A1 1A D3 4B 71 09 FA 49 DE 29 DC B0 10 96 70 87 5A 17 EA 95 54 9E 92 34 7B 94 8A A1 F0 45 75 6D E5 6B 70 7E 38 63 E5 9A 6C BE 99 C1 27 2E F6 5F B6 6C BB 4C FF 07 0F 36 02 9D D7 62 18 B2 12 42 64 5B 51 CA 75 2A F3 7E 70 BE 1A 84 FF 31 07 9D C0 04 8E 92 88 83 EC 4F AD D4 97 A7 19 38 5C 2B BB EB C5 A6 6A A5 E5 65 5D 18 03 4E C5 </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> A7 34 72 B3 AB 55 74 93 A9 BC 21 79 CC 80 14 05 3B 12 BA B4 </node>
+			</node>
+			<node tag="0x1109">
+				<node tag="0x9F06"> A0 00 00 00 25 </node>
+				<node tag="0x9F22"> 10 </node>  <!-- Prod -->
+				<node tag="0x9F8123"> CF 98 DF ED B3 D3 72 79 65 EE 77 97 72 33 55 E0 75 1C 81 D2 D3 DF 4D 18 EB AB 9F B9 D4 9F 38 C8 C4 A8 26 B9 9D C9 DE A3 F0 10 43 D4 BF 22 AC 35 50 E2 96 2A 59 63 9B 13 32 15 64 22 F7 88 B9 C1 6D 40 13 5E FD 1B A9 41 47 75 05 75 E6 36 B6 EB C6 18 73 4C 91 C1 D1 BF 3E DC 2A 46 A4 39 01 66 8E 0F FC 13 67 74 08 0E 88 80 44 F6 A1 E6 5D C9 AA A8 92 8D AC BE B0 DB 55 EA 35 14 68 6C 6A 73 2C EF 55 EE 27 CF 87 7F 11 06 52 69 4A 0E 34 84 C8 55 D8 82 AE 19 16 74 E2 5C 29 62 05 BB B5 99 45 51 76 FD D7 BB C5 49 F2 7B A5 FE 35 33 6F 7E 29 E6 8D 78 39 73 19 94 36 63 3C 67 EE 5A 68 0F 05 16 0E D1 2D 16 65 EC 83 D1 99 7F 10 FD 05 BB DB F9 43 3E 8F 79 7A EE 3E 9F 02 A3 42 28 AC E9 27 AB E6 2B 8B 92 81 AD 08 D3 DF 5C 73 79 68 50 45 D7 BA 5F CD E5 86 37 </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> C7 29 CF 2F D2 62 39 4A BC 4C C1 73 50 65 02 44 6A A9 B9 FD </node>
+			</node>
+			<node tag="0x110B">
+				<node tag="0x9F06"> A0 00 00 01 52 </node>
+				<node tag="0x9F22"> 04 </node> <!-- Prod -->
+				<node tag="0x9F8123"> 8E EE C0 D6 D3 85 7F D5 58 28 5E 49 B6 23 B1 09 E6 77 4E 06 E9 47 6F E1 B2 FB 27 36 85 B5 A2 35 E9 55 81 0A DD B5 CD CC 2C B6 E1 A9 7A 07 08 9D 7F DE 0A 54 8B DC 62 21 45 CA 2D E3 C7 3D 6B 14 F2 84 B3 DC 1F A0 56 FC 0F B2 81 8B CD 7C 85 2F 0C 97 96 31 69 F0 14 83 CE 1A 63 F0 BF 89 9D 41 2A B6 7C 5B BD C8 B4 F6 FB 9A BB 57 E9 51 25 36 3D BD 8F 5E BA A9 B7 4A DB 93 20 20 50 34 18 33 DE E8 E3 8D 28 BD 17 5C 83 A6 EA 72 0C 26 26 82 BE AB EA 8E 95 5F E6 7B D9 C2 EF F7 CB 9A 9F 45 DD 5B DA 4A 1E EF B1 48 BC 44 FF F6 8D 93 29 FD </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> 17 F9 71 CA F6 B7 08 E5 B9 16 53 31 FB A9 15 93 D0 C0 BF 66 </node>
+			</node>
+			<node tag="0x110C">
+				<node tag="0x9F06"> A0 00 00 01 52 </node>
+				<node tag="0x9F22"> 05 </node> <!-- Prod -->
+				<node tag="0x9F8123"> E1 20 0E 9F 44 28 EB 71 A5 26 D6 BB 44 C9 57 F1 8F 27 B2 0B AC E9 78 06 1C CE F2 35 32 DB EB FA F6 54 A1 49 70 1C 14 E6 A2 A7 C2 EC AC 4C 92 13 5B E3 E9 25 83 31 DD B0 96 7C 3D 1D 37 5B 99 6F 25 B7 78 11 CC CC 06 A1 53 B4 CE 69 90 A5 1A 02 58 EA 84 37 ED BE B7 01 CB 1F 33 59 93 E3 F4 84 58 BC 11 94 BA D2 9B F6 83 D5 F3 EC B9 84 E3 1B 7B 9D 2F 6D 94 7B 39 DE DE 02 79 EE 45 B4 7F 2F 3D 4E EE F9 3F 92 61 F8 F5 A5 71 AF BF B5 69 C1 50 37 0A 78 F6 68 3D 68 7C B6 77 77 7B 2E 7A BE FC FC 8F 5F 93 50 17 36 99 7E 83 10 EE 0F D8 7A FA C5 DA 77 2B A2 77 F8 8B 44 45 9F CA 56 35 55 01 7C D0 D6 67 71 43 7F 8B 66 08 AA 1A 66 5F 88 D8 46 40 3E 4C 41 AF EE DB 97 29 C2 B2 51 1C FE 22 8B 50 C1 B1 52 B2 A6 0B BF 61 D8 91 3E 08 62 10 02 3A 3A A4 99 E4 23 </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> 12 BC D4 07 B6 E6 27 A7 50 FD F6 29 EE 8C 2C 9C C7 BA 63 6A </node>
+			</node>
+			<node tag="0x110E">
+				<node tag="0x9F06"> A0 00 00 00 65 </node>
+				<node tag="0x9F22"> 12 </node> <!--Prod -->
+				<node tag="0x9F8123"> AD F0 5C D4 C5 B4 90 B0 87 C3 46 7B 0F 30 43 75 04 38 84 84 61 28 8B FE FD 61 98 DD 57 6D C3 AD 7A 7C FA 07 DB A1 28 C2 47 A8 EA B3 0D C3 A3 0B 02 FC D7 F1 C8 16 79 65 46 36 26 FE FF 8A B1 AA 61 A4 B9 AE F0 9E E1 2B 00 98 42 A1 AB A0 1A DB 4A 2B 17 06 68 78 1E C9 2B 60 F6 05 FD 12 B2 B2 A6 F1 FE 73 4B E5 10 F6 0D C5 D1 89 E4 01 45 1B 62 B4 E0 68 51 EC 20 EB FF 45 22 AA CC 2E 9C DC 89 BC 5D 8C DE 5D 63 3C FD 77 22 0F F6 BB D4 A9 B4 41 47 3C C3 C6 FE FC 8D 13 E5 7C 3D E9 7E 12 69 FA 19 F6 55 21 5B 23 56 3E D1 D1 86 0D 86 81 </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> 87 4B 37 9B 7F 60 7D C1 CA F8 7A 19 E4 00 B6 A9 E2 51 63 E8 </node>
+			</node>
+			<node tag="0x110F">
+				<node tag="0x9F06"> A0 00 00 00 65 </node>
+				<node tag="0x9F22"> 14 </node> <!--Prod -->
+				<node tag="0x9F8123"> AE ED 55 B9 EE 00 E1 EC EB 04 5F 61 D2 DA 9A 66 AB 63 7B 43 FB 5C DB DB 22 A2 FB B2 5B E0 61 E9 37 E3 82 44 EE 51 32 F5 30 14 4A 3F 26 89 07 D8 FD 64 88 63 F5 A9 6F ED 7E 42 08 9E 93 45 7A DC 0E 1B C8 9C 58 A0 DB 72 67 5F BC 47 FE E9 FF 33 C1 6A DE 6D 34 19 36 B0 6B 6A 6F 5E F6 F6 6A 4E DD 98 1D F7 5D A8 39 9C 30 53 F4 30 EC A3 42 43 7C 23 AF 42 3A 21 1A C9 F5 8E AF 09 B0 F8 37 DE 9D 86 C7 10 9D B1 64 65 61 AA 5A F0 28 9A F5 51 4A C6 4B C2 D9 D3 6A 17 9B B8 A7 97 1E 2B FA 03 A9 E4 B8 47 FD 3D 63 52 4D 43 A0 E8 00 35 47 B9 4A 8A 75 E5 19 DF 31 77 D0 A6 0B C0 B4 BA B1 EA 59 A2 CB B4 D2 D6 23 54 E9 26 E9 C7 D3 BE 41 81 E8 1B A6 0F 82 85 A8 96 D1 7D A8 C3 24 24 81 B6 C4 05 76 9A 39 D5 47 C7 4E D9 FF 95 A7 0A 79 60 46 B5 EF F3 66 82 DC 29 </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> C0 D1 5F 6C D9 57 E4 91 DB 56 DC DD 1C A8 7A 03 EB E0 6B 7B </node>
+			</node>
+			<node tag="0x1111">
+				<node tag="0x9F06"> A0 00 00 00 03 </node>
+				<node tag="0x9F22"> 92 </node> <!-- Test -->
+				<node tag="0x9F8123"> 99 6A F5 6F 56 91 87 D0 92 93 C1 48 10 45 0E D8 EE 33 57 39 7B 18 A2 45 8E FA A9 2D A3 B6 DF 65 14 EC 06 01 95 31 8F D4 3B E9 B8 F0 CC 66 9E 3F 84 40 57 CB DD F8 BD A1 91 BB 64 47 3B C8 DC 9A 73 0D B8 F6 B4 ED E3 92 41 86 FF D9 B8 C7 73 57 89 C2 3A 36 BA 0B 8A F6 53 72 EB 57 EA 5D 89 E7 D1 4E 9C 7B 6B 55 74 60 F1 08 85 DA 16 AC 92 3F 15 AF 37 58 F0 F0 3E BD 3C 5C 2C 94 9C BA 30 6D B4 4E 6A 2C 07 6C 5F 67 E2 81 D7 EF 56 78 5D C4 D7 59 45 E4 91 F0 19 18 80 0A 9E 2D C6 6F 60 08 05 66 CE 0D AF 8D 17 EA D4 6A D8 E3 0A 24 7C 9F </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> 42 9C 95 4A 38 59 CE F9 12 95 F6 63 C9 63 E5 82 ED 6E B2 53 </node>
+			</node>
+			<node tag="0x1112">
+				<node tag="0x9F06"> A0 00 00 00 03 </node>
+				<node tag="0x9F22"> 94 </node>  <!-- Test -->
+				<node tag="0x9F8123"> AC D2 B1 23 02 EE 64 4F 3F 83 5A BD 1F C7 A6 F6 2C CE 48 FF EC 62 2A A8 EF 06 2B EF 6F B8 BA 8B C6 8B BF 6A B5 87 0E ED 57 9B C3 97 3E 12 13 03 D3 48 41 A7 96 D6 DC BC 41 DB F9 E5 2C 46 09 79 5C 0C CF 7E E8 6F A1 D5 CB 04 10 71 ED 2C 51 D2 20 2F 63 F1 15 6C 58 A9 2D 38 BC 60 BD F4 24 E1 77 6E 2B C9 64 80 78 A0 3B 36 FB 55 43 75 FC 53 D5 7C 73 F5 16 0E A5 9F 3A FC 53 98 EC 7B 67 75 8D 65 C9 BF F7 82 8B 6B 82 D4 BE 12 4A 41 6A B7 30 19 14 31 1E A4 62 C1 9F 77 1F 31 B3 B5 73 36 00 0D FF 73 2D 3B 83 DE 07 05 2D 73 03 54 D2 97 BE C7 28 71 DC CF 0E 19 3F 17 1A BA 27 EE 46 4C 6A 97 69 09 43 D5 9B DA BB 2A 27 EB 71 CE EB DA FA 11 76 04 64 78 FD 62 FE C4 52 D5 CA 39 32 96 53 0A A3 F4 19 27 AD FE 43 4A 2D F2 AE 30 54 F8 84 06 57 A2 6E 0F C6 17 </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> C4 A3 C4 3C CF 87 32 7D 13 6B 80 41 60 E4 7D 43 B6 0E 6E 0F </node>
+			</node>
+			<node tag="0x1117">
+				<node tag="0x9F06"> A0 00 00 00 04 </node>
+				<node tag="0x9F22"> FA </node> <!-- Test -->
+				<node tag="0x9F8123"> A9 0F CD 55 AA 2D 5D 99 63 E3 5E D0 F4 40 17 76 99 83 2F 49 C6 BA B1 5C DA E5 79 4B E9 3F 93 4D 44 62 D5 D1 27 62 E4 8C 38 BA 83 D8 44 5D EA A7 41 95 A3 01 A1 02 B2 F1 14 EA DA 0D 18 0E E5 E7 A5 C7 3E 0C 4E 11 F6 7A 43 DD AB 5D 55 68 3B 14 74 CC 06 27 F4 4B 8D 30 88 A4 92 FF AA DA D4 F4 24 22 D0 E7 01 35 36 C3 C4 9A D3 D0 FA E9 64 59 B0 F6 B1 B6 05 65 38 A3 D6 D4 46 40 F9 44 67 B1 08 86 7D EC 40 FA AE CD 74 0C 00 E2 B7 A8 85 2D </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> 5B ED 40 68 D9 6E A1 6D 2D 77 E0 3D 60 36 FC 7A 16 0E A9 9C </node>
+			</node>
+			<node tag="0x1118">
+				<node tag="0x9F06"> A0 00 00 00 04 </node>
+				<node tag="0x9F22"> EF </node> <!-- Test -->
+				<node tag="0x9F8123"> A1 91 CB 87 47 3F 29 34 9B 5D 60 A8 8B 3E AE E0 97 3A A6 F1 A0 82 F3 58 D8 49 FD DF F9 C0 91 F8 99 ED A9 79 2C AF 09 EF 28 F5 D2 24 04 B8 8A 22 93 EE BB C1 94 9C 43 BE A4 D6 0C FD 87 9A 15 39 54 4E 09 E0 F0 9F 60 F0 65 B2 BF 2A 13 EC C7 05 F3 D4 68 B9 D3 3A E7 7A D9 D3 F1 9C A4 0F 23 DC F5 EB 7C 04 DC 8F 69 EB A5 65 B1 EB CB 46 86 CD 27 47 85 53 0F F6 F6 E9 EE 43 AA 43 FD B0 2C E0 0D AE C1 5C 7B 8F D6 A9 B3 94 BA BA 41 9D 3F 6D C8 5E 16 56 9B E8 E7 69 89 68 8E FE A2 DF 22 FF 7D 35 C0 43 33 8D EA A9 82 A0 2B 86 6D E5 32 85 19 EB BC D6 F0 3C DD 68 66 73 84 7F 84 DB 65 1A B8 6C 28 CF 14 62 56 2C 57 7B 85 35 64 A2 90 C8 55 6D 81 85 31 26 8D 25 CC 98 A4 CC 6A 0B DF FF DA 2D CC A3 A9 4C 99 85 59 E3 07 FD DF 91 50 06 D9 A9 87 B0 7D DA EB 3B </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> 21 76 6E BB 0E E1 22 AF B6 5D 78 45 B7 3D B4 6B AB 65 42 7A </node>
+			</node>
+			<node tag="0x1119">
+				<node tag="0x9F06"> A0 00 00 00 04 </node>
+				<node tag="0x9F22"> F1 </node> <!-- Test -->
+				<node tag="0x9F8123"> A0 DC F4 BD E1 9C 35 46 B4 B6 F0 41 4D 17 4D DE 29 4A AB BB 82 8C 5A 83 4D 73 AA E2 7C 99 B0 B0 53 A9 02 78 00 72 39 B6 45 9F F0 BB CD 7B 4B 9C 6C 50 AC 02 CE 91 36 8D A1 BD 21 AA EA DB C6 53 47 33 7D 89 B6 8F 5C 99 A0 9D 05 BE 02 DD 1F 8C 5B A2 0E 2F 13 FB 2A 27 C4 1D 3F 85 CA D5 CF 66 68 E7 58 51 EC 66 ED BF 98 85 1F D4 E4 2C 44 C1 D5 9F 59 84 70 3B 27 D5 B9 F2 1B 8F A0 D9 32 79 FB BF 69 E0 90 64 29 09 C9 EA 27 F8 98 95 95 41 AA 67 57 F5 F6 24 10 4F 6E 1D 3A 95 32 F2 A6 E5 15 15 AE AD 1B 43 B3 D7 83 50 88 A2 FA FA 7B E7 </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> D8 E6 8D A1 67 AB 5A 85 D8 C3 D5 5E CB 9B 05 17 A1 A5 B4 BB </node>
+			</node>
+			<node tag="0x111F">
+				<node tag="0x9F06"> A0 00 00 01 52 </node>
+				<node tag="0x9F22"> 5C </node> <!-- Test -->
+				<node tag="0x9F8123"> 83 3F 27 5F CF 5C A4 CB 6F 1B F8 80 E5 4D CF EB 72 1A 31 66 92 CA FE B2 8B 69 8C AE CA FA 2B 2D 2A D8 51 7B 1E FB 59 DD EF C3 9F 9C 3B 33 DD EE 40 E7 A6 3C 03 E9 0A 4D D2 61 BC 0F 28 B4 2E A6 E7 A1 F3 07 17 8E 2D 63 FA 16 49 15 5C 3A 5F 92 6B 4C 7D 7C 25 8B CA 98 EF 90 C7 F4 11 7C 20 5E 8E 32 C4 5D 10 E3 D4 94 05 9D 2F 29 33 89 1B 97 9C E4 A8 31 B3 01 B0 55 0C DA E9 B6 70 64 B3 1D 8B 48 1B 85 A5 B0 46 BE 8F FA 7B DB 58 DC 0D 70 32 52 52 97 F2 6F F6 19 AF 7F 15 BC EC 0C 92 BC DC BC 4F B2 07 D1 15 AA 65 CD 04 C1 CF 98 21 91 </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> 60 15 40 98 CB BA 35 0F 5F 48 6C A3 10 83 D1 FC 47 4E 31 F8 </node>
+			</node>
+			<node tag="0x1120">
+				<node tag="0x9F06"> A0 00 00 01 52 </node>
+				<node tag="0x9F22"> 5D </node> <!-- Test -->
+				<node tag="0x9F8123"> AD 93 8E A9 88 8E 51 55 F8 CD 27 27 49 17 2B 3A 8C 50 4C 17 46 0E FA 0B ED 7C BC 5F D3 2C 4A 80 FD 81 03 12 28 1B 5A 35 56 28 00 CD C3 25 35 8A 96 39 C5 01 A5 37 B7 AE 43 DF 26 3E 6D 23 2B 81 1A CD B6 DD E9 79 D5 5D 6C 91 11 73 48 39 93 A4 23 A0 A5 B1 E1 A7 02 37 88 5A 24 1B 8E EB B5 57 1E 2D 32 B4 1F 9C C5 51 4D F8 3F 0D 69 27 0E 10 9A F1 42 2F 98 5A 52 CC E0 4F 3D F2 69 B7 95 15 5A 68 AD 2D 6B 66 0D DC D7 59 F0 A5 DA 7B 64 10 4D 22 C2 77 1E CE 7A 5F FD 40 C7 74 E4 41 37 9D 11 32 FA F0 4C DF 55 B9 50 4C 6D CE 9F 61 77 6D 81 C7 C4 5F 19 B9 EF B3 74 9A C7 D4 86 A5 AD 2E 78 1F A9 D0 82 FB 26 77 66 5B 99 FA 5F 15 53 13 5A 1F D2 A2 A9 FB F6 25 CA 84 A7 D7 36 52 14 31 17 8F 13 10 0A 25 16 F9 A4 3C E0 95 B0 32 B8 86 C7 A6 AB 12 6E 20 3B E7 </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> B5 1E C5 F7 DE 9B B6 D8 BC E8 FB 5F 69 BA 57 A0 42 21 F3 9B </node>
+			</node>
+			<node tag="0x1122">
+				<node tag="0x9F06"> A0 00 00 00 25 </node>
+				<node tag="0x9F22"> C9 </node> <!-- Test -->
+				<node tag="0x9F8123"> B3 62 DB 57 33 C1 5B 87 97 B8 EC EE 55 CB 1A 37 1F 76 0E 0B ED D3 71 5B B2 70 42 4F D4 EA 26 06 2C 38 C3 F4 AA A3 73 2A 83 D3 6E A8 E9 60 2F 66 83 EE CC 6B AF F6 3D D2 D4 90 14 BD E4 D6 D6 03 CD 74 42 06 B0 5B 4B AD 0C 64 C6 3A B3 97 6B 5C 8C AA F8 53 95 49 F5 92 1C 0B 70 0D 5B 0F 83 C4 E7 E9 46 06 8B AA AB 54 63 54 4D B1 8C 63 80 11 18 F2 18 2E FC C8 A1 E8 5E 53 C2 A7 AE 83 9A 5C 6A 3C AB E7 37 62 B7 0D 17 0A B6 4A FC 6C A4 82 94 49 02 61 1F B0 06 1E 09 A6 7A CB 77 E4 93 D9 98 A0 CC F9 3D 81 A4 F6 C0 DC 6B 7D F2 2E 62 DB </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> 8E 8D FF 44 3D 78 CD 91 DE 88 82 1D 70 C9 8F 06 38 E5 1E 49 </node>
+			</node>
+			<node tag="0x1123">
+				<node tag="0x9F06"> A0 00 00 00 25 </node>
+				<node tag="0x9F22"> CA </node> <!-- Test -->
+				<node tag="0x9F8123"> C2 3E CB D7 11 9F 47 9C 2E E5 46 C1 23 A5 85 D6 97 A7 D1 0B 55 C2 D2 8B EF 0D 29 9C 01 DC 65 42 0A 03 FE 52 27 EC DE CB 80 25 FB C8 6E EB C1 93 52 98 C1 75 3A B8 49 93 67 49 71 95 91 75 8C 31 5F A1 50 40 07 89 BB 14 FA DD 6E AE 2A D6 17 DA 38 16 31 99 D1 BA D5 D3 F8 F6 A7 A2 0A EF 42 0A DF E2 40 4D 30 B2 19 35 9C 6A 49 52 56 5C CC A6 F1 1E C5 BE 56 4B 49 B0 EA 5B F5 B3 DC 8C 5C 64 01 20 8D 00 29 C3 95 7A 8C 59 22 CB DE 39 D3 A5 64 C6 DE BB 6B D2 AE F9 1F C2 7B B3 D3 89 2B EB 96 46 DC E2 E1 EF 85 81 EF FA 71 21 58 AA EC 54 1C 0B BB 4B 3E 27 9D 7D A5 4E 45 A0 AC C3 57 0E 71 2C 9F 7C DF 98 5C FA FD 38 2A E1 3A 3B 21 4A 9E 8E 1E 71 AB 1E A7 07 89 51 12 AB C3 A9 7D 0F CB 0A E2 EE 5C 85 49 2B 6C FD 54 88 5C DD 63 37 E8 95 CC 70 FB 32 55 E3 </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> 6B DA 32 B1 AA 17 14 44 C7 E8 F8 80 75 A7 4F BF E8 45 76 5F </node>
+			</node>
+			<node tag="0x1124">
+				<node tag="0x9F06"> A0 00 00 00 65 </node>
+				<node tag="0x9F22"> 11 </node> <!-- Test -->
+				<node tag="0x9F8123"> A2 58 3A A4 07 46 E3 A6 3C 22 47 8F 57 6D 1E FC 5F B0 46 13 5A 6F C7 39 E8 2B 55 03 5F 71 B0 9B EB 56 6E DB 99 68 DD 64 9B 94 B6 DE DC 03 38 99 88 4E 90 8C 27 BE 1C D2 91 E5 43 6F 76 25 53 29 77 63 DA A3 B8 90 D7 78 C0 F0 1E 33 44 CE CD FB 3B A7 0D 7E 05 5B 8C 76 0D 01 79 A4 03 D6 B5 5F 2B 3B 08 39 12 B1 83 AD B7 92 74 41 BE D3 39 5A 19 9E EF E0 DE BD 1F 5F C3 26 40 33 DA 85 6F 4A 8B 93 91 68 85 BD 42 F9 C1 F4 56 AA B8 CF A8 3A C5 74 83 3E B5 E8 7B B9 D4 C0 06 A4 B5 34 6B D9 E1 7E 13 9A B6 55 2D 9C 58 BC 04 11 95 33 64 85 </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> D9 FD 62 C9 DD 4E 6D E7 74 1E 9A 17 FB 1F F2 C5 DB 94 8B CB </node>
+			</node>
+			<node tag="0x1125">
+				<node tag="0x9F06"> A0 00 00 00 65 </node>
+				<node tag="0x9F22"> 13 </node> <!-- Test -->
+				<node tag="0x9F8123"> A3 27 08 68 36 7E 6E 29 34 9F C2 74 3E E5 45 AC 53 BD 30 29 78 24 88 99 76 50 10 85 24 FD 05 1E 3B 6E AC A6 A9 A6 C1 44 1D 28 88 9A 5F 46 41 3C 8F 62 F3 64 5A AE B3 0A 15 21 EE F4 1F D4 F3 44 5B FA 1A B2 9F 9A C1 A7 4D 9A 16 B9 32 93 29 6C B0 91 62 B1 49 BA C2 2F 88 AD 8F 32 2D 68 4D 6B 49 A1 24 13 FC 1B 6A C7 0E DE DB 18 EC 15 85 51 9A 89 B5 0B 3D 03 E1 40 63 C2 CA 58 B7 C2 BA 7F B2 27 99 A3 3B CD E6 AF CB EB 4A 7D 64 91 1D 08 D1 8C 47 F9 BD 14 A9 FA D8 80 5A 15 DE 5A 38 94 5A 97 91 9B 7A B8 8E FA 11 A8 8C 0C D9 2C 6E E7 DC 35 2A B0 74 6A BF 13 58 59 13 C8 A4 E0 44 64 B7 79 09 C6 BD 94 34 1A 89 76 C4 76 9E A6 C0 D3 0A 60 F4 EE 8F A1 9E 76 7B 17 0D F4 FA 80 31 2D BA 61 DB 64 5D 5D 15 60 87 3E 26 74 E1 F6 20 08 3F 30 18 0B D9 6C A5 89 </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> 54 CF AE 61 71 50 DF A0 9D 3F 90 1C 91 23 52 45 23 EB ED F3 </node>
+			</node>
+			<node tag="0x1126">
+				<node tag="0x9F06"> A0 00 00 03 33 </node>
+				<node tag="0x9F22"> 08 </node> <!-- Test -->
+				<node tag="0x9F8123"> B6 16 45 ED FD 54 98 FB 24 64 44 03 7A 0F A1 8C 0F 10 1E BD 8E FA 54 57 3C E6 E6 A7 FB F6 3E D2 1D 66 34 08 52 B0 21 1C F5 EE F6 A1 CD 98 9F 66 AF 21 A8 EB 19 DB D8 DB C3 70 6D 13 53 63 A0 D6 83 D0 46 30 4F 5A 83 6B C1 BC 63 28 21 AF E7 A2 F7 5D A3 C5 0A C7 4C 54 5A 75 45 62 20 41 37 16 96 63 CF CC 0B 06 E6 7E 21 09 EB A4 1B C6 7F F2 0C C8 AC 80 D7 B6 EE 1A 95 46 5B 3B 26 57 53 3E A5 6D 92 D5 39 E5 06 43 60 EA 48 50 FE D2 D1 BF </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> EE 23 B6 16 C9 5C 02 65 2A D1 88 60 E4 87 87 C0 79 E8 E8 5A </node>
+			</node>
+			<node tag="0x1127">
+				<node tag="0x9F06"> A0 00 00 03 33 </node>
+				<node tag="0x9F22"> 09 </node> <!-- Test -->
+				<node tag="0x9F8123"> EB 37 4D FC 5A 96 B7 1D 28 63 87 5E DA 2E AF B9 6B 1B 43 9D 3E CE 0B 18 26 A2 67 2E EE FA 79 90 28 67 76 F8 BD 98 9A 15 14 1A 75 C3 84 DF C1 4F EF 92 43 AA B3 27 07 65 9B E9 E4 79 7A 24 7C 2F 0B 6D 99 37 2F 38 4A F6 2F E2 3B C5 4B CD C5 7A 9A CD 1D 55 85 C3 03 F2 01 EF 4E 8B 80 6A FB 80 9D B1 A3 DB 1C D1 12 AC 88 4F 16 4A 67 B9 9C 7D 6E 5A 8A 6D F1 D3 CA E6 D7 ED 3D 5B E7 25 B2 DE 4A DE 23 FA 67 9B F4 EB 15 A9 3D 8A 6E 29 C7 FF A1 A7 0D E2 E5 4F 59 3D 90 8A 3B F9 EB BD 76 0B BF DC 8D B8 B5 44 97 E6 C5 BE 0E 4A 4D AC 29 E5 </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> A0 75 30 6E AB 00 45 BA F7 2C DD 33 B3 B6 78 77 9D E1 F5 27 </node>
+			</node>
+			<node tag="0x1128">
+				<node tag="0x9F06"> A0 00 00 03 33 </node>
+				<node tag="0x9F22"> 0A </node> <!-- Test -->
+				<node tag="0x9F8123"> B2 AB 1B 6E 9A C5 5A 75 AD FD 5B BC 34 49 0E 53 C4 C3 38 1F 34 E6 0E 7F AC 21 CC 2B 26 DD 34 46 2B 64 A6 FA E2 49 5E D1 DD 38 3B 81 38 BE A1 00 FF 9B 7A 11 18 17 E7 B9 86 9A 97 42 B1 9E 5C 9D AC 56 F8 B8 82 7F 11 B0 5A 08 EC CF 9E 8D 5E 85 B0 F7 CF A6 44 EF F3 E9 B7 96 68 8F 38 E0 06 DE B2 1E 10 1C 01 02 89 03 A0 60 23 AC 5A AB 86 35 F8 E3 07 A5 3A C7 42 BD CE 6A 28 3F 58 5F 48 EF </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> C8 8B E6 B2 41 7C 4F 94 1C 93 71 EA 35 A3 77 15 87 67 E4 E3 </node>
+			</node>
+			<node tag="0x1129">
+				<node tag="0x9F06"> A0 00 00 03 33 </node>
+				<node tag="0x9F22"> 0B </node> <!-- Test -->
+				<node tag="0x9F8123"> CF 9F DF 46 B3 56 37 8E 9A F3 11 B0 F9 81 B2 1A 1F 22 F2 50 FB 11 F5 5C 95 87 09 E3 C7 24 19 18 29 34 83 28 9E AE 68 8A 09 4C 02 C3 44 E2 99 9F 31 5A 72 84 1F 48 9E 24 B1 BA 00 56 CF AB 3B 47 9D 0E 82 64 52 37 5D CD BB 67 E9 7E C2 AA 66 F4 60 1D 77 4F EA EF 77 5A CC C6 21 BF EB 65 FB 00 53 FC 5F 39 2A A5 E1 D4 C4 1A 4D E9 FF DF DF 13 27 C4 BB 87 4F 1F 63 A5 99 EE 39 02 FE 95 E7 29 FD 78 D4 23 4D C7 E6 CF 1A BA BA A3 F6 DB 29 B7 F0 5D 1D 90 1D 2E 76 A6 06 A8 CB FF FF EC BD 91 8F A2 D2 78 BD B4 3B 04 34 F5 D4 51 34 BE 1C 27 81 D1 57 D5 01 FF 43 E5 F1 C4 70 96 7C D5 7C E5 3B 64 D8 29 74 C8 27 59 37 C5 D8 50 2A 12 52 A8 A5 D6 08 8A 25 9B 69 4F 98 64 8D 9A F2 CB 0E FD 9D 94 3C 69 F8 96 D4 9F A3 97 02 16 2A CB 5A F2 9B 90 BA DE 00 5B C1 57 </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> BD 33 1F 99 96 A4 90 B3 3C 13 44 10 66 A0 9A D3 FE B5 F6 6C </node>
+			</node>
+			<node tag="0x112A">
+				<node tag="0x9F06"> A0 00 00 03 33 </node>
+				<node tag="0x9F22"> 02 </node> <!-- Prod -->
+				<node tag="0x9F8123"> A3 76 7A BD 1B 6A A6 9D 7F 3F BF 28 C0 92 DE 9E D1 E6 58 BA 5F 09 09 AF 7A 1C CD 90 73 73 B7 21 0F DE B1 62 87 BA 8E 78 E1 52 9F 44 39 76 FD 27 F9 91 EC 67 D9 5E 5F 4E 96 B1 27 CA B2 39 6A 94 D6 E4 5C DA 44 CA 4C 48 67 57 0D 6B 07 54 2F 8D 4B F9 FF 97 97 5D B9 89 15 15 E6 6F 52 5D 2B 3C BE B6 D6 62 BF B6 C3 F3 38 E9 3B 02 14 2B FC 44 17 3A 37 64 C5 6A AD D2 02 07 5B 26 DC 2F 9F 7D 7A E7 4B D7 D0 0F D0 5E E4 30 03 26 63 D2 7A 57 </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> 03 BB 33 5A 85 49 A0 3B 87 AB 08 9D 00 6F 60 85 2E 4B 80 60 </node>
+			</node>
+			<node tag="0x112B">
+				<node tag="0x9F06"> A0 00 00 03 33 </node>
+				<node tag="0x9F22"> 03 </node> <!-- Prod -->
+				<node tag="0x9F8123"> B0 62 7D EE 87 86 4F 9C 18 C1 3B 9A 1F 02 54 48 BF 13 C5 83 80 C9 1F 4C EB A9 F9 BC B2 14 FF 84 14 E9 B5 9D 6A BA 10 F9 41 C7 33 17 68 F4 7B 21 27 90 7D 85 7F A3 9A AF 8C E0 20 45 DD 01 61 9D 68 9E E7 31 C5 51 15 9B E7 EB 2D 51 A3 72 FF 56 B5 56 E5 CB 2F DE 36 E2 30 73 A4 4C A2 15 D6 C2 6C A6 88 47 B3 88 E3 95 20 E0 02 6E 62 29 4B 55 7D 64 70 44 0C A0 AE FC 94 38 C9 23 AE C9 B2 09 8D 6D 3A 1A F5 E8 B1 DE 36 F4 B5 30 40 10 9D 89 B7 7C AF AF 70 C2 6C 60 1A BD F5 9E EC 0F DC 8A 99 08 91 40 CD 2E 81 7E 33 51 75 B0 3B 7A A3 3D </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> 87 F0 CD 7C 0E 86 F3 8F 89 A6 6F 8C 47 07 1A 8B 88 58 6F 26 </node>
+			</node>
+			<node tag="0x112C">
+				<node tag="0x9F06"> A0 00 00 03 33 </node>
+				<node tag="0x9F22"> 04 </node> <!-- Prod -->
+				<node tag="0x9F8123"> BC 85 3E 6B 53 65 E8 9E 7E E9 31 7C 94 B0 2D 0A BB 0D BD 91 C0 5A 22 4A 25 54 AA 29 ED 9F CB 9D 86 EB 9C CB B3 22 A5 78 11 F8 61 88 AA C7 35 1C 72 BD 9E F1 96 C5 A0 1A CE F7 A4 EB 0D 2A D6 3D 9E 6A C2 E7 83 65 47 CB 15 95 C6 8B CB AF D0 F6 72 87 60 F3 A7 CA 7B 97 30 1B 7E 02 20 18 4E FC 4F 65 30 08 D9 3C E0 98 C0 D9 3B 45 20 10 96 D1 AD FF 4C F1 F9 FC 02 AF 75 9D A2 7C D6 DF D6 D7 89 B0 99 F1 6F 37 8B 61 00 33 4E 63 F3 D3 5F 32 51 A5 EC 78 69 37 31 F5 23 35 19 CD B3 80 F5 AB 8C 0F 02 72 8E 91 D4 69 AB D0 EA E0 D9 3B 1C C6 6C E1 27 B2 9C 7D 77 44 1A 49 D0 9F CA 5D 6D 97 62 FC 74 C3 1B B5 06 C8 BA E3 C7 9A D6 C2 57 87 75 B9 59 56 B5 37 0D 1D 05 19 E3 79 06 B3 84 73 62 33 25 1E 8F 09 AD 79 DF BE 2C 6A BF AD AC 8E 4D 86 24 31 8C 27 DA F1 </node>
+				<node tag="0x9F8122"> 03 </node>
+				<node tag="0x9F8121"> F5 27 08 1C F3 71 DD 7E 1F D4 FA 41 4A 66 50 36 E0 F5 E6 E5 </node>
+			</node>
+		</node><!-- End node 1100 -->
+        <node tag="0x1300">                     <!-- C_TAG_ICS -->
+            <node tag="0x1301">
+                <!-- ICS0 values -->
+                <node tag="0x9F8450"> 56 61 6E 74 69 76 2D 54 72 69 70 6F 73 </node> <!-- DEFAULT CONFIG -->
+                <node tag="0x9F1C"> 31 32 33 34 31 32 33 34 </node>
+                <node tag="0x9F35"> 22 </node>
+                <node tag="0x9F33"> E0 F8 C8 </node>                      <!-- Terminal Capabilities: 80 = offline PIN in clear, 40 = online PIN, 20 = sign, 10 = encrypted offline PIN, 8 = no CVM -->
+                <node tag="0x9F1A"> 08 40 </node>                         <!-- Country  Code: 0124 for Canada, 0840 for US -->
+                <node tag="0x5F2A"> 08 40 </node>                         <!-- Currency Code: 0124 for Canada, 0840 for US -->
+                <node tag="0x9F40"> F0 00 F0 F0 01 </node>                <!-- Terminal Additional Capabilities -->
+                <node tag="0x9F8142"> 01 </node>
+                <node tag="0x9F8195"> 00 </node>
+                <node tag="0x9F844B"> 01 </node>
+                <node tag="0x9F8440"> 00 </node>
+                <node tag="0x9F8441"> 01 </node>
+                <node tag="0x9F8442"> 01 </node>
+                <node tag="0x9F840A"> 01 </node>
+                <node tag="0x9F844D"> 01 </node>
+                <node tag="0x9F8443"> 01 </node>
+                <node tag="0x9F8444"> 01 </node>
+                <node tag="0x9F844C"> 01 </node>
+                <node tag="0x9F840E"> 01 </node>
+                <node tag="0x9F840F"> 01 </node>
+                <node tag="0x9F840B"> 00 </node>
+                <node tag="0x9F8445"> 01 </node>
+                <node tag="0x9F8446"> 00 </node>
+                <node tag="0x9F8447"> 00 </node>
+                <node tag="0x9F8448"> 00 </node>
+                <node tag="0x9F844E"> 01 </node>
+                <node tag="0x9F39"> 81 </node>
+                <node tag="0x9F8449"> 00 </node>
+                <node tag="0x9F844A"> 01 </node>
+                <node tag="0x9F8452"> 01 </node>
+                <node tag="0x9F8453"> 01 </node>
+                <node tag="0x9F8454"> 01 </node>
+                <node tag="0x9F8455"> 01 </node>
+                <node tag="0x9f8456"> 01 </node>
+                <node tag="0x9F841E"> 00 </node>
+                <node tag="0x9F845A"> 01 </node>
+                <node tag="0x9F845B"> 01 </node>
+                <node tag="0x9F8458"> 01 </node>
+                <node tag="0x9F8459"> 00 </node>
+                <node tag="0x9F845C"> 01 </node>
+                <node tag="0x9F845D"> 00 </node>
+                <node tag="0x9F845E"> 00 </node>
+                <node tag="0x9F8431"> 65 6E </node>                   <!-- enes (en=65 6e; es=65 73; fr=66 72-->
+                <node tag="0x9F8460"> 01 </node>
+				<node tag="0x9F1C"> 31 32 33 34 </node>
+            </node> <!-- End node -->
+        </node> <!-- End node 1300 -->
+    </node>
+</tlvtree>
+<!-- End -->
+
+

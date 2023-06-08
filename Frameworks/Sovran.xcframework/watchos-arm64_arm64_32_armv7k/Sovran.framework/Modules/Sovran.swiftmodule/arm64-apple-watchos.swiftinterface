@@ -1,0 +1,37 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-module-flags: -target arm64-apple-watchos7.1 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Sovran
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+public protocol Action {
+  associatedtype StateType : Sovran.State
+  func reduce(state: Self.StateType) -> Self.StateType
+}
+public protocol AsyncAction {
+  associatedtype StateType : Sovran.State
+  associatedtype ResultType
+  func operation(state: Self.StateType, completion: @escaping (Self.ResultType?) -> Swift.Void)
+  func reduce(state: Self.StateType, operationResult: Self.ResultType?) -> Self.StateType
+}
+public protocol Subscriber : AnyObject {
+}
+public typealias SubscriptionID = Swift.Int
+public class Store {
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init()
+  @discardableResult
+  public func subscribe<T>(_ subscriber: any Sovran.Subscriber, initialState: Swift.Bool = false, queue: Dispatch.DispatchQueue = .main, handler: @escaping Sovran.Handler<T>) -> Sovran.SubscriptionID where T : Sovran.State
+  public func unsubscribe(identifier: Sovran.SubscriptionID)
+  public func provide<T>(state: T) where T : Sovran.State
+  public func dispatch<T>(action: T) where T : Sovran.Action
+  public func dispatch<T>(action: T) where T : Sovran.AsyncAction
+  public func currentState<T>() -> T? where T : Sovran.State
+  @objc deinit
+}
+public protocol State {
+}
+public typealias Handler<T> = (T) -> Swift.Void where T : Sovran.State
