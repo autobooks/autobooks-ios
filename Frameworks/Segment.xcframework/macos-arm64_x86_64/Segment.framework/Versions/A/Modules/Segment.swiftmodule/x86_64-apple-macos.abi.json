@@ -6496,75 +6496,6 @@
         ]
       },
       {
-        "kind": "Function",
-        "name": "codable",
-        "printedName": "codable(_:)",
-        "children": [
-          {
-            "kind": "TypeNominal",
-            "name": "Optional",
-            "printedName": "[Swift.String : Swift.Decodable & Swift.Encodable]?",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.Decodable & Swift.Encodable]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Swift.Decodable & Swift.Encodable"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "usr": "s:Sq"
-          },
-          {
-            "kind": "TypeNominal",
-            "name": "Optional",
-            "printedName": "[Swift.String : Any]?",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "usr": "s:Sq"
-          }
-        ],
-        "declKind": "Func",
-        "usr": "s:7Segment7codableySDySSSe_SEpGSgSDySSypGSgF",
-        "mangledName": "$s7Segment7codableySDySSSe_SEpGSgSDySSypGSgF",
-        "moduleName": "Segment",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "funcSelfKind": "NonMutating"
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -44164,6 +44095,64 @@
             "mangledName": "$s7Segment16HTTPClientErrorsO10statusCodeyACSi_tcACmF",
             "moduleName": "Segment",
             "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Segment.HTTPClientErrors.Type) -> (Swift.Error) -> Segment.HTTPClientErrors",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Error) -> Segment.HTTPClientErrors",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPClientErrors",
+                        "printedName": "Segment.HTTPClientErrors",
+                        "usr": "s:7Segment16HTTPClientErrorsO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: Swift.Error)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Segment.HTTPClientErrors.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPClientErrors",
+                        "printedName": "Segment.HTTPClientErrors",
+                        "usr": "s:7Segment16HTTPClientErrorsO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:7Segment16HTTPClientErrorsO7unknownyACs5Error_p_tcACmF",
+            "mangledName": "$s7Segment16HTTPClientErrorsO7unknownyACs5Error_p_tcACmF",
+            "moduleName": "Segment",
+            "fixedbinaryorder": 3
           }
         ],
         "declKind": "Enum",
@@ -53646,21 +53635,21 @@
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCAnalytics.swift",
       "kind": "StringLiteral",
-      "offset": 6332,
+      "offset": 6283,
       "length": 57,
       "value": "\"Failed to convert Settings to ObjC dictionary: \""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCAnalytics.swift",
       "kind": "StringLiteral",
-      "offset": 6388,
+      "offset": 6339,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCAnalytics.swift",
       "kind": "Dictionary",
-      "offset": 6519,
+      "offset": 6470,
       "length": 3,
       "value": "[]"
     },
@@ -53750,85 +53739,92 @@
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7493,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "BooleanLiteral",
-      "offset": 7520,
+      "offset": 5419,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "IntegerLiteral",
-      "offset": 7579,
+      "offset": 7588,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "BooleanLiteral",
-      "offset": 7606,
+      "offset": 7615,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "IntegerLiteral",
-      "offset": 7729,
+      "offset": 7674,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "BooleanLiteral",
-      "offset": 7756,
+      "offset": 7701,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7824,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "kind": "BooleanLiteral",
+      "offset": 7851,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "BooleanLiteral",
-      "offset": 7813,
+      "offset": 7908,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "BooleanLiteral",
-      "offset": 8840,
+      "offset": 8935,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "Dictionary",
-      "offset": 10341,
+      "offset": 10436,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 10818,
+      "offset": 10913,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 10879,
+      "offset": 10974,
       "length": 5,
       "value": "\"url\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 10991,
+      "offset": 11086,
       "length": 18,
       "value": "\"Deep Link Opened\""
     },
@@ -54257,7 +54253,7 @@
       "kind": "StringLiteral",
       "offset": 355,
       "length": 7,
-      "value": "\"1.4.3\""
+      "value": "\"1.4.5\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/DeviceToken.swift",
@@ -54513,85 +54509,92 @@
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4255,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "IntegerLiteral",
-      "offset": 4313,
+      "offset": 4427,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
-      "offset": 4380,
+      "offset": 4494,
       "length": 40,
       "value": "\"Uploads in-progress: \""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
-      "offset": 4419,
+      "offset": 4533,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "IntegerLiteral",
-      "offset": 4460,
+      "offset": 4574,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
-      "offset": 4533,
+      "offset": 4647,
       "length": 45,
       "value": "\"Processing Batch:\n\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
-      "offset": 4577,
+      "offset": 4691,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
-      "offset": 5070,
+      "offset": 5184,
       "length": 37,
       "value": "\"Processed: \""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
-      "offset": 5106,
+      "offset": 5220,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
-      "offset": 5674,
+      "offset": 5788,
       "length": 43,
       "value": "\"Skipping processing; Uploads in progress.\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
-      "offset": 6558,
+      "offset": 6672,
       "length": 51,
       "value": "\"Cleaned up \""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
-      "offset": 6587,
+      "offset": 6701,
       "length": 3,
       "value": "\" non-running uploads.\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "IntegerLiteral",
-      "offset": 6698,
+      "offset": 6812,
       "length": 1,
       "value": "0"
     },
@@ -54682,14 +54685,14 @@
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Events.swift",
       "kind": "BooleanLiteral",
-      "offset": 8788,
+      "offset": 8914,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Events.swift",
       "kind": "BooleanLiteral",
-      "offset": 9514,
+      "offset": 9640,
       "length": 4,
       "value": "true"
     },
@@ -54710,266 +54713,266 @@
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 335,
+      "offset": 366,
       "length": 19,
       "value": "\"api.segment.io\/v1\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 395,
+      "offset": 426,
       "length": 29,
       "value": "\"cdn-settings.segment.com\/v1\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 1040,
+      "offset": 1071,
       "length": 24,
       "value": "\"https:\/\/\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 1056,
+      "offset": 1087,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 1063,
+      "offset": 1094,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 1819,
+      "offset": 1850,
       "length": 4,
       "value": "\"\/b\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 2012,
+      "offset": 2127,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 2220,
+      "offset": 2335,
       "length": 56,
       "value": "\"Error uploading request \""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 2274,
+      "offset": 2389,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 2466,
+      "offset": 2705,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 2470,
+      "offset": 2709,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 2515,
+      "offset": 2754,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 2570,
+      "offset": 2809,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 2576,
+      "offset": 2815,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 2827,
+      "offset": 3066,
       "length": 3,
       "value": "429"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 3563,
+      "offset": 3802,
       "length": 32,
       "value": "\"\/projects\/\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 3585,
+      "offset": 3824,
       "length": 1,
       "value": "\"\/settings\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 3627,
+      "offset": 3866,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 3746,
+      "offset": 3985,
       "length": 5,
       "value": "\"GET\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 4014,
+      "offset": 4253,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 4174,
+      "offset": 4413,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 4335,
+      "offset": 4574,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 4563,
+      "offset": 4802,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 4756,
+      "offset": 4995,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 4925,
+      "offset": 5164,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 5292,
+      "offset": 5531,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 5319,
+      "offset": 5558,
       "length": 9,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 5326,
+      "offset": 5565,
       "length": 1,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 5511,
+      "offset": 5750,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 5956,
+      "offset": 6195,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 6021,
+      "offset": 6260,
       "length": 33,
       "value": "\"application\/json; charset=utf-8\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 6076,
+      "offset": 6315,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 6117,
+      "offset": 6356,
       "length": 38,
       "value": "\"analytics-ios\/\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 6154,
+      "offset": 6393,
       "length": 24,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 6177,
+      "offset": 6416,
       "length": 12,
       "value": "\"User-Agent\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 6216,
+      "offset": 6455,
       "length": 6,
       "value": "\"gzip\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
-      "offset": 6244,
+      "offset": 6483,
       "length": 17,
       "value": "\"Accept-Encoding\""
     },
     {
       "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "IntegerLiteral",
-      "offset": 6649,
+      "offset": 6888,
       "length": 1,
       "value": "2"
     },

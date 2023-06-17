@@ -727,18 +727,21 @@ extension Segment.SegmentDestination : Segment.VersionedPlugin {
   public static func version() -> Swift.String
 }
 public protocol RemoteNotifications : Segment.Plugin {
+  func declinedRemoteNotifications()
   func registeredForRemoteNotifications(deviceToken: Foundation.Data)
   func failedToRegisterForRemoteNotification(error: (any Swift.Error)?)
   func receivedRemoteNotification(userInfo: [Swift.AnyHashable : Any])
   func handleAction(identifier: Swift.String, userInfo: [Swift.String : Any])
 }
 extension Segment.RemoteNotifications {
+  public func declinedRemoteNotifications()
   public func registeredForRemoteNotifications(deviceToken: Foundation.Data)
   public func failedToRegisterForRemoteNotification(error: (any Swift.Error)?)
   public func receivedRemoteNotification(userInfo: [Swift.AnyHashable : Any])
   public func handleAction(identifier: Swift.String, userInfo: [Swift.String : Any])
 }
 extension Segment.Analytics {
+  public func declinedRemoteNotifications()
   public func registeredForRemoteNotifications(deviceToken: Foundation.Data)
   public func failedToRegisterForRemoteNotification(error: (any Swift.Error)?)
   public func receivedRemoteNotification(userInfo: [Swift.AnyHashable : Any])

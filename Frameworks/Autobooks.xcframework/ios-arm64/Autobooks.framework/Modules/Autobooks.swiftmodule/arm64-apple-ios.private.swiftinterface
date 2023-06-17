@@ -56,7 +56,12 @@ public enum AB {
     case real(ipAddress: Swift.String)
     public static func == (a: Autobooks.AB.Device, b: Autobooks.AB.Device) -> Swift.Bool
   }
-  public static let version: Swift.String
+  public static var build: Swift.String {
+    get
+  }
+  public static var version: Swift.String {
+    get
+  }
   public static var supportsTapToPay: Swift.Bool {
     get
   }
