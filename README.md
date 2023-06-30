@@ -4,7 +4,7 @@ The Autobooks SDK provides an interface for Apple's ProximityReader framework an
 
 # Integration
 
-The Autobooks SDK requires iOS 14 or above with the Tap to Pay feature requiring iOS 15.4 or later and a supported device (iPhone XS or later). To build it requires Xcode 13.4 or later.
+The Autobooks SDK requires iOS 14 or above with the Tap to Pay feature requiring iOS 16.0 or later and a supported device (iPhone XS or later). To build it requires Xcode 13.4 or later.
 
 ### CocoaPods
 
