@@ -28,14 +28,31 @@ extension Autobooks.Stubs {
 public enum AB {
   public enum LoginCredential {
     case token(Swift.String)
+    case usernameAndPassword(username: Swift.String, password: Swift.String)
+  }
+  public struct Style {
+    public static let `default`: Autobooks.AB.Style
+    public init(primaryColor: UIKit.UIColor, actionButtonColor: UIKit.UIColor? = nil, secondaryButtonColor: UIKit.UIColor? = nil, tertiaryButtonColor: UIKit.UIColor? = nil, navigationBarAppearance: UIKit.UINavigationBarAppearance? = nil)
   }
   public struct Configuration {
     public static let `default`: Autobooks.AB.Configuration
     public let environment: Autobooks.AB.BackendEnvironment
-    public let primaryColor: UIKit.UIColor
+    public let style: Autobooks.AB.Style
     public let responseProvider: Autobooks.AB.ResponseProvider
     public let shouldFallBackToPaymentForm: Swift.Bool
-    public init(environment: Autobooks.AB.BackendEnvironment, primaryColor: UIKit.UIColor, responseProvider: Autobooks.AB.ResponseProvider, shouldFallBackToPaymentForm: Swift.Bool)
+    public let shouldConfirmClose: Swift.Bool
+    public enum CloseButtonStyle {
+      case close
+      case signOut
+      public static func == (a: Autobooks.AB.Configuration.CloseButtonStyle, b: Autobooks.AB.Configuration.CloseButtonStyle) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    public let closeButtonStyle: Autobooks.AB.Configuration.CloseButtonStyle
+    public let webViewsShowControls: Swift.Bool
+    public init(environment: Autobooks.AB.BackendEnvironment, style: Autobooks.AB.Style, responseProvider: Autobooks.AB.ResponseProvider, shouldFallBackToPaymentForm: Swift.Bool, shouldConfirmClose: Swift.Bool, closeButtonStyle: Autobooks.AB.Configuration.CloseButtonStyle, webViewsShowControls: Swift.Bool)
   }
   public enum BackendEnvironment {
     case dev
@@ -69,17 +86,34 @@ public enum AB {
   public static var version: Swift.String {
     get
   }
+  public static var userAgent: Swift.String {
+    get
+  }
   public static var supportsTapToPay: Swift.Bool {
     get
   }
+  public typealias CompletionBlock = (Autobooks.AB.DismissalReason) -> Swift.Void
   #if compiler(>=5.3) && $AsyncAwait && $Sendable
-  public static func startTapToPay(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration = .default, device: Autobooks.AB.Device, useExpressApi: Swift.Bool = false, loginProvider: @escaping @Sendable () async throws -> Autobooks.AB.LoginCredential)
+  public static func startTapToPay(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration = .default, device: Autobooks.AB.Device, useExpressApi: Swift.Bool = false, loginProvider: @escaping @Sendable () async throws -> Autobooks.AB.LoginCredential, completion: Autobooks.AB.CompletionBlock? = nil)
   #endif
   public static func startPaymentForm(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default)
   public static func startInvoicing(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default)
   public static func startFullAutobooks(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default)
   public static func stop()
+  public enum DismissalReason : Swift.Equatable {
+    case userInitiated
+    case notAuthorized
+    case forbidden
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: Autobooks.AB.DismissalReason, b: Autobooks.AB.DismissalReason) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
 }
+extension Autobooks.AB.Configuration.CloseButtonStyle : Swift.Equatable {}
+extension Autobooks.AB.Configuration.CloseButtonStyle : Swift.Hashable {}
 extension Autobooks.AB.BackendEnvironment : Swift.Equatable {}
 extension Autobooks.AB.BackendEnvironment : Swift.Hashable {}
 extension Autobooks.AB.Device : Swift.Hashable {}
+extension Autobooks.AB.DismissalReason : Swift.Hashable {}
