@@ -4,10 +4,12 @@ The Autobooks SDK provides an interface for Apple's ProximityReader framework an
 
 ## Requirements
 
-### General requirements
+### Minimum requirements
 
 * iOS 14+
 * Xcode 13.4
+
+Additionally, a US-based IP address may be required to connect to the Autobooks SDK backend.
 
 ### Tap to Pay requirements
 
@@ -47,17 +49,20 @@ First, import the Autobooks framework:
 import Autobooks
 ```
 
-All of the `AB.start*` methods allow passing an `AB.Configuration` value to control various behaviors within the SDK. This includes a custom `primaryColor` as well as various network settings useful for testing or debugging the Autobooks integration.
+All of the `AB.start*` methods allow passing an `AB.Configuration` value to control various behaviors within the SDK. This includes a custom `AB.Style` as well as various network settings useful for testing or debugging the Autobooks integration.
 
 ```swift
-    let configuration = AB.Configuration(environment: <#T##AB.BackendEnvironment#>,
-                                         primaryColor: <#T##UIColor#>,
-                                         responseProvider: <#T##AB.ResponseProvider#>,
-                                         shouldFallBackToPaymentForm: <#T##Bool#>)
+    let configuration = AB.Configuration(environment: <#T##BackendEnvironment#>,
+                                        style: <#T##Style#>,
+                                        responseProvider: <#T##ResponseProvider#>,
+                                        shouldFallBackToPaymentForm: <#T##Bool#>,
+                                        shouldConfirmClose: <#T##Bool#>,
+                                        closeButtonStyle: <#T##CloseButtonStyle#>,
+                                        webViewsShowControls: <#T##Bool#>)
 ```
 
 * `environment` specifies where API calls are sent. Options are `.dev`, `.staging`, and `.production`.  The default is `.production`.
-* `primaryColor` specifies the control colors, analagous to UIKit's `tintColor` or SwiftUI's `accentColor`.  The default is `.systemBlue`.
+* `style` specifies a structure for display customization.  See the section _Styling_ below for more information.
 * `responseProvider` specifies where responses come from.
 
   | `AB.BackendEnvironment` | Behavior                                                                                            |
@@ -67,7 +72,46 @@ All of the `AB.start*` methods allow passing an `AB.Configuration` value to cont
   | `.backendMocked`        | Use the provided `AB.BackendEnvironment` with mocked login endpoint, normal endpoints for the rest. |
   | `.live`                 | Use the provided `AB.BackendEnvironment` for all API calls.                                         |
 
-* `shouldFallBackToPaymentForm` specifies what happens when a user does not meet the iOS version or physical device requirements for a given feature.  If `true`, the user is directed to a web-based virtual terminal.  If `false`, the user receives an error.  The default is `true`.
+* `shouldFallBackToPaymentForm` controls what happens when a user does not meet the iOS version or physical device requirements for a given feature.  If `true`, the user is directed to a web-based virtual terminal.  If `false`, the user receives an error.  The default is `true`.
+* `shouldConfirmClose` specifies whether a confirmation is presented to the user before dismissing the SDK interface.  The default is `false`.
+* `closeButtonStyle` controls the text displayed to the user to dismiss the SDK. If `.close`, the text is "Close".  If `.signOut`, the text is "Sign Out".  The default is `.close`.
+* `webViewsShowControls` controls whether the web features, outlined below, have a back/forward/share/refresh toolbar below web content, similar to `SFSafariViewController`.
+
+### Styling
+
+The `AB.Style` structure is the primary method for customizing the look of SDK interfaces.
+
+```swift
+    let style = AB.Style(primaryColor: <#T##UIColor#>,
+                         actionButtonColor: <#T##UIColor?#>,
+                         secondaryButtonColor: <#T##UIColor?#>,
+                         tertiaryButtonColor: <#T##UIColor?#>,
+                         navigationBarAppearance: <#T##UINavigationBarAppearance?#>)
+
+```
+
+There is one required argument, the `primaryColor`, which will be used to tint UI controls, analagous to UIKit's `tintColor` or SwiftUI's `accentColor`.  The default is `.systemBlue`.  The remaining arguments are optional but will override the `primaryColor` if supplied:
+
+* `actionButtonColor` applies to action buttons, e.g. 
+
+The `navigationBarAppearance` object is the only non-`UIColor` argument and is used for styling SDK `UINavigationBar`s.  It is passed unmodified to the navigation bar's `standardAppearance` property; if unset, the default is constructed like so:
+
+```swift
+    let customAppearance = UINavigationBarAppearance()
+    customAppearance.configureWithDefaultBackground()
+
+    let barButtonItemAppearance = UIBarButtonItemAppearance(style: .plain)
+    barButtonItemAppearance.normal.titleTextAttributes = [.foregroundColor: style.primaryColor]
+    barButtonItemAppearance.disabled.titleTextAttributes = [.foregroundColor: style.primaryColor]
+    barButtonItemAppearance.highlighted.titleTextAttributes = [.foregroundColor: style.primaryColor]
+    barButtonItemAppearance.focused.titleTextAttributes = [.foregroundColor: style.primaryColor]
+
+    customAppearance.buttonAppearance = barButtonItemAppearance
+    customAppearance.backButtonAppearance = barButtonItemAppearance
+    customAppearance.doneButtonAppearance = barButtonItemAppearance
+
+    navigationBar.standardAppearance = customAppearance
+```
 
 ### Web Features
 
@@ -93,6 +137,8 @@ All of the `AB.start*` methods allow passing an `AB.Configuration` value to cont
 ```
 
 ### Tap to Pay
+
+Check the value of the `AB.supportsTapToPay` property to determine if the device meets the minimum requirements for Tap to Pay, then call:
 
 ```swift
     AB.startTapToPay(subscriptionKey: <#"your-subscription-key"#>,
