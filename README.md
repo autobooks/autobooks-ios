@@ -49,6 +49,8 @@ First, import the Autobooks framework:
 import Autobooks
 ```
 
+### Configuration
+
 All of the `AB.start*` methods allow passing an `AB.Configuration` value to control various behaviors within the SDK. This includes a custom `AB.Style` as well as various network settings useful for testing or debugging the Autobooks integration.
 
 ```swift
@@ -115,6 +117,21 @@ The `navigationBarAppearance` object is the only non-`UIColor` argument and is u
     navigationBar.standardAppearance = customAppearance
 ```
 
+### Notifications
+
+An SDK consumer will often need to know about user activity internal to the SDK to prevent a timeout in the hosting application.  To receive notifications about both web and native activity, subscribe to  `AB.Notifications.userActivity`:
+
+```swift
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(<#preventApplicationTimeout#>),
+                                           name: AB.Notifications.userActivity,
+                                           object: nil)
+
+    @objc func <#preventApplicationTimeout#>(_ sender: Notification) {
+        // Your application should reset its internal idle timer here.
+    }
+```
+
 ### Web Features
 
 #### Invoicing
@@ -149,3 +166,68 @@ Check the value of the `AB.supportsTapToPay` property to determine if the device
         return .token(<#"your-sso-token"#>)
     }
 ```
+
+## App Transport Security
+
+### API
+
+#### Autobooks
+* https://dev-apim.autobooks.co
+* https://staging-apim.autobooks.co
+* https://apim.autobooks.co
+
+#### Processing
+* https://transaction.elementexpress.com
+* https://certtransaction.elementexpress.com
+
+#### Segment
+* https://cdn-settings.segment.com
+* https://api.segment.io
+
+### Web
+
+#### Azure Monitor
+See [this document](https://learn.microsoft.com/en-us/azure/azure-monitor/app/ip-addresses) for a full list of domains.
+
+#### Autobooks
+* https://app.autobooks.co
+* https://dev.autobooks.co
+* https://staging.autobooks.co
+* https://dev-payments.autobooks.co
+* https://stg-payments.autobooks.co
+* https://payments.autobooks.co
+
+#### Autobooks CDN
+* https://preprodcdn.autobooks.co
+* https://dev-cdn.autobooks.co
+* https://stg-cdn.autobooks.co
+* https://prd-cdn.autobooks.co
+
+#### GraphQL
+* https://dev-gql.autobooks.co
+* https://stg-gql.autobooks.co
+* https://gql.autobooks.co
+
+#### Segment
+* https://cdn.segment.com
+* https://api.segment.io
+
+#### Hubspot
+* https://api.hubspot.com
+* https://app.hubspot.com
+* https://track.hubspot.com
+* https://static.hsappstatic.net
+* https://js.hs-analytics.net
+* https://js.hs-banner.com
+* https://js-na1.hs-scripts.com
+* https://js.usemessages.com
+
+#### Google Fonts
+* https://fonts.gstatic.com
+* https://fonts.googleapis.com
+
+#### Fraud monitoring
+* https://tst.kaptcha.com
+
+#### User Experience
+* https://fast.appcues.com

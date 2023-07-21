@@ -110,6 +110,9 @@ public enum AB {
       get
     }
   }
+  public enum Notifications {
+    public static let userActivity: Foundation.Notification.Name
+  }
 }
 extension Autobooks.AB.Configuration.CloseButtonStyle : Swift.Equatable {}
 extension Autobooks.AB.Configuration.CloseButtonStyle : Swift.Hashable {}

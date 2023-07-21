@@ -2677,6 +2677,67 @@
                 "mangledName": "$sSQ"
               }
             ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Notifications",
+            "printedName": "Notifications",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "userActivity",
+                "printedName": "userActivity",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9Autobooks2ABO13NotificationsO12userActivitySo18NSNotificationNameavpZ",
+                "mangledName": "$s9Autobooks2ABO13NotificationsO12userActivitySo18NSNotificationNameavpZ",
+                "moduleName": "Autobooks",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Name",
+                        "printedName": "Foundation.NSNotification.Name",
+                        "usr": "c:@T@NSNotificationName"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9Autobooks2ABO13NotificationsO12userActivitySo18NSNotificationNameavgZ",
+                    "mangledName": "$s9Autobooks2ABO13NotificationsO12userActivitySo18NSNotificationNameavgZ",
+                    "moduleName": "Autobooks",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:9Autobooks2ABO13NotificationsO",
+            "mangledName": "$s9Autobooks2ABO13NotificationsO",
+            "moduleName": "Autobooks",
+            "declAttributes": [
+              "AccessControl"
+            ]
           }
         ],
         "declKind": "Enum",
@@ -6064,154 +6125,154 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "StringLiteral",
-      "offset": 3355,
+      "offset": 3359,
       "length": 18,
       "value": "\" (866) 617-3122 \""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "StringLiteral",
-      "offset": 3470,
+      "offset": 3478,
       "length": 17,
       "value": "\"for assistance.\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3684,
+      "offset": 3700,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3696,
+      "offset": 3712,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3708,
+      "offset": 3724,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3721,
+      "offset": 3737,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4268,
+      "offset": 4284,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5344,
+      "offset": 5360,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "StringLiteral",
-      "offset": 5661,
+      "offset": 5677,
       "length": 21,
       "value": "\"square.and.arrow.up\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "StringLiteral",
-      "offset": 5842,
+      "offset": 5858,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "StringLiteral",
-      "offset": 5936,
+      "offset": 5952,
       "length": 7,
       "value": "\"Close\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6234,
+      "offset": 6250,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6303,
+      "offset": 6319,
       "length": 3,
       "value": "-30"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "StringLiteral",
-      "offset": 6337,
+      "offset": 6353,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 548,
+      "offset": 526,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 778,
+      "offset": 756,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 880,
+      "offset": 858,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 962,
+      "offset": 932,
       "length": 14,
       "value": "\"chevron.left\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 1197,
+      "offset": 1167,
       "length": 15,
       "value": "\"chevron.right\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2623,
+      "offset": 2593,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2909,
+      "offset": 2879,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3330,
+      "offset": 3300,
       "length": 4,
       "value": "true"
     },
@@ -6225,98 +6286,98 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4576,
+      "offset": 5036,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4625,
+      "offset": 5085,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4814,
+      "offset": 5274,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4863,
+      "offset": 5323,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5307,
+      "offset": 5767,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5356,
+      "offset": 5816,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 6783,
+      "offset": 7243,
       "length": 22,
       "value": "\"Something went wrong\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 6846,
+      "offset": 7306,
       "length": 31,
       "value": "\"Try again or check back later\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 7194,
+      "offset": 7654,
       "length": 18,
       "value": "\"tel:\/\/8666173122\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 7434,
+      "offset": 7894,
       "length": 16,
       "value": "\"WebView Screen\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 7817,
+      "offset": 8277,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "FloatLiteral",
-      "offset": 7851,
+      "offset": 8311,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "Array",
-      "offset": 9052,
+      "offset": 9512,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 8886,
+      "offset": 9346,
       "length": 11,
       "value": "\"Autobooks.Coordinator\""
     },
@@ -6508,6 +6569,13 @@
       "offset": 18007,
       "length": 11,
       "value": "\"Autobooks\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
+      "kind": "StringLiteral",
+      "offset": 18278,
+      "length": 31,
+      "value": "\"co.autobooks.sdk.userActivity\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Loadable.swift",
@@ -11034,14 +11102,14 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/WebFeatureFlowController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2179,
+      "offset": 2174,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/WebFeatureFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 2522,
+      "offset": 2517,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
