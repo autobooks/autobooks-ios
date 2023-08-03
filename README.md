@@ -81,24 +81,56 @@ All of the `AB.start*` methods allow passing an `AB.Configuration` value to cont
 
 ### Styling
 
-The `AB.Style` structure is the primary method for customizing the look of SDK interfaces.
+The `AB.Style` structure is the primary method for customizing the look of SDK interfaces.  The simplest initializer is to set only a `primaryColor`, which will be used to tint UI controls, analagous to UIKit's `tintColor` or SwiftUI's `accentColor`, and will use default `UINavigationBar` and `UIToolbar` classes and settings:
 
 ```swift
-    let style = AB.Style(primaryColor: <#T##UIColor#>,
-                         actionButtonColor: <#T##UIColor?#>,
-                         secondaryButtonColor: <#T##UIColor?#>,
-                         tertiaryButtonColor: <#T##UIColor?#>,
-                         navigationBarAppearance: <#T##UINavigationBarAppearance?#>)
-
+    let style = AB.Style(primaryColor: <#T##UIColor#>)
 ```
 
-There is one required argument, the `primaryColor`, which will be used to tint UI controls, analagous to UIKit's `tintColor` or SwiftUI's `accentColor`.  The default is `.systemBlue`.  The remaining arguments are optional but will override the `primaryColor` if supplied:
+You can individually override the color for each class of UI element by creating a `AB.Style.Colors` structure.  The default is `.systemBlue`.
+
+```swift
+    let colors = AB.Style.Colors(primaryColor: <#T##UIColor#>,
+                                 actionButtonColor: <#T##UIColor?#>,
+                                 secondaryButtonColor: <#T##UIColor?#>,
+                                 tertiaryButtonColor: <#T##UIColor?#>,
+                                 linkColor: <#T##UIColor?#>,
+                                 progressColor: <#T##UIColor?#>,
+                                 confettiColor: <#T##UIColor?#>)
+
+    let style = AB.Style(colors: colors)
+```
 
 * `actionButtonColor` applies to action button backgrounds, for example, the Charge button.
 * `secondaryButtonColor` applies to secondary button backgrounds, for example, most Try Again buttons.
 * `tertiaryButtonColor` applies to tertiary button text, for example, the Manual Card Entry and Receipt view Done buttons.  This button type does not have a background.
+* `linkColor` applies to clickable text, for example, the Autobooks "Call us" text prompt which includes our support numnber.  Despite the name, it does not style links in web features.
+* `progressColor` applies to the track tint in linear progress views.
+* `confettiColor` applies to the congratulatory confetti which displays when a user first onboards on to Tap to Pay.
 
-The `navigationBarAppearance` object is the only non-`UIColor` argument and is used for styling SDK `UINavigationBar`s.  It is passed unmodified to the navigation bar's `standardAppearance` property; if unset, the default is constructed like so:
+Because the SDK is almost entirely self-contained, you won't receive a direct reference to the underlying `UINavigationController` that's being presented.  To customize this controller to match your branding, you can use the `CustomNavigationBar` object for advanced styling:
+
+```swift
+    let colors = AB.Style.Colors(primaryColor: <#T##UIColor#>,
+                                 actionButtonColor: <#T##UIColor?#>,
+                                 secondaryButtonColor: <#T##UIColor?#>,
+                                 tertiaryButtonColor: <#T##UIColor?#>,
+                                 linkColor: <#T##UIColor?#>,
+                                 progressColor: <#T##UIColor?#>,
+                                 confettiColor: <#T##UIColor?#>)
+  
+    let customNavigationBar = AB.Style.CustomNavigationBar(standardAppearance: <#T##UINavigationBarAppearance?#>,
+                                                           compactAppearance: <#T##UINavigationBarAppearance?#>,
+                                                           scrollEdgeAppearance: <#T##UINavigationBarAppearance?#>,
+                                                           compactScrollEdgeAppearance: <#T##UINavigationBarAppearance?#>,
+                                                           navigationBarClass: <#T##AnyClass?#>,
+                                                           toolbarClass: <#T##AnyClass?#>)
+ 
+    let style = AB.Style(colors: colors,
+                         customNavigationBar: customNavigationBar)
+```
+
+If the `standardAppearance` is non-`nil`, all four appearance objects (`standardAppearance`, `compactAppearance`, `scrollEdgeAppearance`, and if on iOS 15 or later, `compactScrollEdgeAppearance`) are passed to the constructed `UINavigationBar`; if unset, the default is constructed like so:
 
 ```swift
     let customAppearance = UINavigationBarAppearance()
@@ -117,6 +149,8 @@ The `navigationBarAppearance` object is the only non-`UIColor` argument and is u
     navigationBar.standardAppearance = customAppearance
 ```
 
+For the most complex styling requirements, you may also use the `navigationBarClass` and `toolbarClass` to supply custom `UINavigationBar` and `UIToolbar` subclasses to the `UINavigationController` on instantiation. This is *in addition to* any styling that occurs as part of supplying `UINavigationBarAppearance` objects.
+
 ### Notifications
 
 An SDK consumer will often need to know about user activity internal to the SDK to prevent a timeout in the hosting application.  To receive notifications about both web and native activity, subscribe to  `AB.Notifications.userActivity`:
@@ -131,6 +165,8 @@ An SDK consumer will often need to know about user activity internal to the SDK 
         // Your application should reset its internal idle timer here.
     }
 ```
+
+See the `AB.Notifications` structure for more events.
 
 ### Web Features
 

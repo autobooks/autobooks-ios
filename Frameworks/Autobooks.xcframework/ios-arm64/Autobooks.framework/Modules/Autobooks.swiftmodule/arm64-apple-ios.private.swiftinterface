@@ -31,8 +31,17 @@ public enum AB {
     case usernameAndPassword(username: Swift.String, password: Swift.String)
   }
   public struct Style {
+    public struct Colors {
+      public static let `default`: Autobooks.AB.Style.Colors
+      public init(primaryColor: UIKit.UIColor, actionButtonColor: UIKit.UIColor? = nil, secondaryButtonColor: UIKit.UIColor? = nil, tertiaryButtonColor: UIKit.UIColor? = nil, linkColor: UIKit.UIColor? = nil, progressColor: UIKit.UIColor? = nil, confettiColor: UIKit.UIColor? = nil)
+    }
+    public struct CustomNavigationBar {
+      public static let `default`: Autobooks.AB.Style.CustomNavigationBar
+      public init(standardAppearance: UIKit.UINavigationBarAppearance? = nil, compactAppearance: UIKit.UINavigationBarAppearance? = nil, scrollEdgeAppearance: UIKit.UINavigationBarAppearance? = nil, compactScrollEdgeAppearance: UIKit.UINavigationBarAppearance? = nil, navigationBarClass: Swift.AnyClass? = nil, toolbarClass: Swift.AnyClass? = nil)
+    }
     public static let `default`: Autobooks.AB.Style
-    public init(primaryColor: UIKit.UIColor, actionButtonColor: UIKit.UIColor? = nil, secondaryButtonColor: UIKit.UIColor? = nil, tertiaryButtonColor: UIKit.UIColor? = nil, navigationBarAppearance: UIKit.UINavigationBarAppearance? = nil)
+    public init(primaryColor: UIKit.UIColor)
+    public init(colors: Autobooks.AB.Style.Colors, customNavigationBar: Autobooks.AB.Style.CustomNavigationBar? = nil)
   }
   public struct Configuration {
     public static let `default`: Autobooks.AB.Configuration
@@ -96,9 +105,9 @@ public enum AB {
   #if compiler(>=5.3) && $AsyncAwait && $Sendable
   public static func startTapToPay(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration = .default, device: Autobooks.AB.Device, useExpressApi: Swift.Bool = false, loginProvider: @escaping @Sendable () async throws -> Autobooks.AB.LoginCredential, completion: Autobooks.AB.CompletionBlock? = nil)
   #endif
-  public static func startPaymentForm(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default)
-  public static func startInvoicing(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default)
-  public static func startFullAutobooks(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default)
+  public static func startPaymentForm(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.CompletionBlock? = nil)
+  public static func startInvoicing(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.CompletionBlock? = nil)
+  public static func startFullAutobooks(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.CompletionBlock? = nil)
   public static func stop()
   public enum DismissalReason : Swift.Equatable {
     case userInitiated
@@ -112,6 +121,16 @@ public enum AB {
   }
   public enum Notifications {
     public static let userActivity: Foundation.Notification.Name
+    public static let visitedTransactions: Foundation.Notification.Name
+    public static let tappedCharge: Foundation.Notification.Name
+    public static let tappedManualEntry: Foundation.Notification.Name
+    public static let tappedSendReceipt: Foundation.Notification.Name
+    public static let tappedRefund: Foundation.Notification.Name
+    public static let tappedCancel: Foundation.Notification.Name
+    public static let tappedSkip: Foundation.Notification.Name
+    public static let tappedSendAnotherReceipt: Foundation.Notification.Name
+    public static let somethingWentWrong: Foundation.Notification.Name
+    public static let callUsActionClicked: Foundation.Notification.Name
   }
 }
 extension Autobooks.AB.Configuration.CloseButtonStyle : Swift.Equatable {}

@@ -570,6 +570,368 @@
             "printedName": "Style",
             "children": [
               {
+                "kind": "TypeDecl",
+                "name": "Colors",
+                "printedName": "Colors",
+                "children": [
+                  {
+                    "kind": "Var",
+                    "name": "default",
+                    "printedName": "default",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Colors",
+                        "printedName": "Autobooks.AB.Style.Colors",
+                        "usr": "s:9Autobooks2ABO5StyleV6ColorsV"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:9Autobooks2ABO5StyleV6ColorsV7defaultAGvpZ",
+                    "mangledName": "$s9Autobooks2ABO5StyleV6ColorsV7defaultAGvpZ",
+                    "moduleName": "Autobooks",
+                    "static": true,
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "isLet": true,
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Colors",
+                            "printedName": "Autobooks.AB.Style.Colors",
+                            "usr": "s:9Autobooks2ABO5StyleV6ColorsV"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:9Autobooks2ABO5StyleV6ColorsV7defaultAGvgZ",
+                        "mangledName": "$s9Autobooks2ABO5StyleV6ColorsV7defaultAGvgZ",
+                        "moduleName": "Autobooks",
+                        "static": true,
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Constructor",
+                    "name": "init",
+                    "printedName": "init(primaryColor:actionButtonColor:secondaryButtonColor:tertiaryButtonColor:linkColor:progressColor:confettiColor:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Colors",
+                        "printedName": "Autobooks.AB.Style.Colors",
+                        "usr": "s:9Autobooks2ABO5StyleV6ColorsV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UIColor?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIColor",
+                            "printedName": "UIKit.UIColor",
+                            "usr": "c:objc(cs)UIColor"
+                          }
+                        ],
+                        "hasDefaultArg": true,
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UIColor?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIColor",
+                            "printedName": "UIKit.UIColor",
+                            "usr": "c:objc(cs)UIColor"
+                          }
+                        ],
+                        "hasDefaultArg": true,
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UIColor?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIColor",
+                            "printedName": "UIKit.UIColor",
+                            "usr": "c:objc(cs)UIColor"
+                          }
+                        ],
+                        "hasDefaultArg": true,
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UIColor?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIColor",
+                            "printedName": "UIKit.UIColor",
+                            "usr": "c:objc(cs)UIColor"
+                          }
+                        ],
+                        "hasDefaultArg": true,
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UIColor?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIColor",
+                            "printedName": "UIKit.UIColor",
+                            "usr": "c:objc(cs)UIColor"
+                          }
+                        ],
+                        "hasDefaultArg": true,
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UIColor?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UIColor",
+                            "printedName": "UIKit.UIColor",
+                            "usr": "c:objc(cs)UIColor"
+                          }
+                        ],
+                        "hasDefaultArg": true,
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Constructor",
+                    "usr": "s:9Autobooks2ABO5StyleV6ColorsV12primaryColor012actionButtonF009secondaryhF008tertiaryhF004linkF008progressF008confettiF0AGSo7UIColorC_APSgA5Qtcfc",
+                    "mangledName": "$s9Autobooks2ABO5StyleV6ColorsV12primaryColor012actionButtonF009secondaryhF008tertiaryhF004linkF008progressF008confettiF0AGSo7UIColorC_APSgA5Qtcfc",
+                    "moduleName": "Autobooks",
+                    "declAttributes": [
+                      "AccessControl"
+                    ],
+                    "init_kind": "Designated"
+                  }
+                ],
+                "declKind": "Struct",
+                "usr": "s:9Autobooks2ABO5StyleV6ColorsV",
+                "mangledName": "$s9Autobooks2ABO5StyleV6ColorsV",
+                "moduleName": "Autobooks",
+                "declAttributes": [
+                  "AccessControl"
+                ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "CustomNavigationBar",
+                "printedName": "CustomNavigationBar",
+                "children": [
+                  {
+                    "kind": "Var",
+                    "name": "default",
+                    "printedName": "default",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CustomNavigationBar",
+                        "printedName": "Autobooks.AB.Style.CustomNavigationBar",
+                        "usr": "s:9Autobooks2ABO5StyleV19CustomNavigationBarV"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:9Autobooks2ABO5StyleV19CustomNavigationBarV7defaultAGvpZ",
+                    "mangledName": "$s9Autobooks2ABO5StyleV19CustomNavigationBarV7defaultAGvpZ",
+                    "moduleName": "Autobooks",
+                    "static": true,
+                    "declAttributes": [
+                      "HasInitialValue",
+                      "HasStorage",
+                      "AccessControl"
+                    ],
+                    "isLet": true,
+                    "hasStorage": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CustomNavigationBar",
+                            "printedName": "Autobooks.AB.Style.CustomNavigationBar",
+                            "usr": "s:9Autobooks2ABO5StyleV19CustomNavigationBarV"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:9Autobooks2ABO5StyleV19CustomNavigationBarV7defaultAGvgZ",
+                        "mangledName": "$s9Autobooks2ABO5StyleV19CustomNavigationBarV7defaultAGvgZ",
+                        "moduleName": "Autobooks",
+                        "static": true,
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Constructor",
+                    "name": "init",
+                    "printedName": "init(standardAppearance:compactAppearance:scrollEdgeAppearance:compactScrollEdgeAppearance:navigationBarClass:toolbarClass:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CustomNavigationBar",
+                        "printedName": "Autobooks.AB.Style.CustomNavigationBar",
+                        "usr": "s:9Autobooks2ABO5StyleV19CustomNavigationBarV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UINavigationBarAppearance?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UINavigationBarAppearance",
+                            "printedName": "UIKit.UINavigationBarAppearance",
+                            "usr": "c:objc(cs)UINavigationBarAppearance"
+                          }
+                        ],
+                        "hasDefaultArg": true,
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UINavigationBarAppearance?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UINavigationBarAppearance",
+                            "printedName": "UIKit.UINavigationBarAppearance",
+                            "usr": "c:objc(cs)UINavigationBarAppearance"
+                          }
+                        ],
+                        "hasDefaultArg": true,
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UINavigationBarAppearance?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UINavigationBarAppearance",
+                            "printedName": "UIKit.UINavigationBarAppearance",
+                            "usr": "c:objc(cs)UINavigationBarAppearance"
+                          }
+                        ],
+                        "hasDefaultArg": true,
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "UIKit.UINavigationBarAppearance?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "UINavigationBarAppearance",
+                            "printedName": "UIKit.UINavigationBarAppearance",
+                            "usr": "c:objc(cs)UINavigationBarAppearance"
+                          }
+                        ],
+                        "hasDefaultArg": true,
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "AnyObject.Type?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ExistentialMetatype",
+                            "printedName": "AnyObject.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "AnyObject"
+                              }
+                            ]
+                          }
+                        ],
+                        "hasDefaultArg": true,
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "AnyObject.Type?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ExistentialMetatype",
+                            "printedName": "AnyObject.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "AnyObject"
+                              }
+                            ]
+                          }
+                        ],
+                        "hasDefaultArg": true,
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Constructor",
+                    "usr": "s:9Autobooks2ABO5StyleV19CustomNavigationBarV18standardAppearance07compactH0010scrollEdgeH00i6ScrollkH0010navigationF5Class07toolbarN0AGSo012UINavigationfH0CSg_A3PyXlXpSgAQtcfc",
+                    "mangledName": "$s9Autobooks2ABO5StyleV19CustomNavigationBarV18standardAppearance07compactH0010scrollEdgeH00i6ScrollkH0010navigationF5Class07toolbarN0AGSo012UINavigationfH0CSg_A3PyXlXpSgAQtcfc",
+                    "moduleName": "Autobooks",
+                    "declAttributes": [
+                      "AccessControl"
+                    ],
+                    "init_kind": "Designated"
+                  }
+                ],
+                "declKind": "Struct",
+                "usr": "s:9Autobooks2ABO5StyleV19CustomNavigationBarV",
+                "mangledName": "$s9Autobooks2ABO5StyleV19CustomNavigationBarV",
+                "moduleName": "Autobooks",
+                "declAttributes": [
+                  "AccessControl"
+                ]
+              },
+              {
                 "kind": "Var",
                 "name": "default",
                 "printedName": "default",
@@ -619,7 +981,7 @@
               {
                 "kind": "Constructor",
                 "name": "init",
-                "printedName": "init(primaryColor:actionButtonColor:secondaryButtonColor:tertiaryButtonColor:navigationBarAppearance:)",
+                "printedName": "init(primaryColor:)",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -632,62 +994,44 @@
                     "name": "UIColor",
                     "printedName": "UIKit.UIColor",
                     "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:9Autobooks2ABO5StyleV12primaryColorAESo7UIColorC_tcfc",
+                "mangledName": "$s9Autobooks2ABO5StyleV12primaryColorAESo7UIColorC_tcfc",
+                "moduleName": "Autobooks",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(colors:customNavigationBar:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Style",
+                    "printedName": "Autobooks.AB.Style",
+                    "usr": "s:9Autobooks2ABO5StyleV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Colors",
+                    "printedName": "Autobooks.AB.Style.Colors",
+                    "usr": "s:9Autobooks2ABO5StyleV6ColorsV"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "UIKit.UIColor?",
+                    "printedName": "Autobooks.AB.Style.CustomNavigationBar?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "UIColor",
-                        "printedName": "UIKit.UIColor",
-                        "usr": "c:objc(cs)UIColor"
-                      }
-                    ],
-                    "hasDefaultArg": true,
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIColor?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIColor",
-                        "printedName": "UIKit.UIColor",
-                        "usr": "c:objc(cs)UIColor"
-                      }
-                    ],
-                    "hasDefaultArg": true,
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UIColor?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UIColor",
-                        "printedName": "UIKit.UIColor",
-                        "usr": "c:objc(cs)UIColor"
-                      }
-                    ],
-                    "hasDefaultArg": true,
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "UIKit.UINavigationBarAppearance?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "UINavigationBarAppearance",
-                        "printedName": "UIKit.UINavigationBarAppearance",
-                        "usr": "c:objc(cs)UINavigationBarAppearance"
+                        "name": "CustomNavigationBar",
+                        "printedName": "Autobooks.AB.Style.CustomNavigationBar",
+                        "usr": "s:9Autobooks2ABO5StyleV19CustomNavigationBarV"
                       }
                     ],
                     "hasDefaultArg": true,
@@ -695,8 +1039,8 @@
                   }
                 ],
                 "declKind": "Constructor",
-                "usr": "s:9Autobooks2ABO5StyleV12primaryColor012actionButtonE009secondarygE008tertiarygE023navigationBarAppearanceAESo7UIColorC_ALSgA2MSo012UINavigationkL0CSgtcfc",
-                "mangledName": "$s9Autobooks2ABO5StyleV12primaryColor012actionButtonE009secondarygE008tertiarygE023navigationBarAppearanceAESo7UIColorC_ALSgA2MSo012UINavigationkL0CSgtcfc",
+                "usr": "s:9Autobooks2ABO5StyleV6colors19customNavigationBarA2E6ColorsV_AE06CustomfG0VSgtcfc",
+                "mangledName": "$s9Autobooks2ABO5StyleV6colors19customNavigationBarA2E6ColorsV_AE06CustomfG0VSgtcfc",
                 "moduleName": "Autobooks",
                 "declAttributes": [
                   "AccessControl"
@@ -2299,7 +2643,7 @@
           {
             "kind": "Function",
             "name": "startPaymentForm",
-            "printedName": "startPaymentForm(subscriptionKey:loginCredential:configuration:)",
+            "printedName": "startPaymentForm(subscriptionKey:loginCredential:configuration:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2324,11 +2668,38 @@
                 "printedName": "Autobooks.AB.Configuration",
                 "hasDefaultArg": true,
                 "usr": "s:9Autobooks2ABO13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Autobooks.AB.DismissalReason) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Autobooks.AB.DismissalReason) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DismissalReason",
+                        "printedName": "Autobooks.AB.DismissalReason",
+                        "usr": "s:9Autobooks2ABO15DismissalReasonO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9Autobooks2ABO16startPaymentForm15subscriptionKey15loginCredential13configurationySS_AC05LoginI0OAC13ConfigurationVtFZ",
-            "mangledName": "$s9Autobooks2ABO16startPaymentForm15subscriptionKey15loginCredential13configurationySS_AC05LoginI0OAC13ConfigurationVtFZ",
+            "usr": "s:9Autobooks2ABO16startPaymentForm15subscriptionKey15loginCredential13configuration10completionySS_AC05LoginI0OAC13ConfigurationVyAC15DismissalReasonOcSgtFZ",
+            "mangledName": "$s9Autobooks2ABO16startPaymentForm15subscriptionKey15loginCredential13configuration10completionySS_AC05LoginI0OAC13ConfigurationVyAC15DismissalReasonOcSgtFZ",
             "moduleName": "Autobooks",
             "static": true,
             "declAttributes": [
@@ -2340,7 +2711,7 @@
           {
             "kind": "Function",
             "name": "startInvoicing",
-            "printedName": "startInvoicing(subscriptionKey:loginCredential:configuration:)",
+            "printedName": "startInvoicing(subscriptionKey:loginCredential:configuration:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2365,11 +2736,38 @@
                 "printedName": "Autobooks.AB.Configuration",
                 "hasDefaultArg": true,
                 "usr": "s:9Autobooks2ABO13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Autobooks.AB.DismissalReason) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Autobooks.AB.DismissalReason) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DismissalReason",
+                        "printedName": "Autobooks.AB.DismissalReason",
+                        "usr": "s:9Autobooks2ABO15DismissalReasonO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9Autobooks2ABO14startInvoicing15subscriptionKey15loginCredential13configurationySS_AC05LoginH0OAC13ConfigurationVtFZ",
-            "mangledName": "$s9Autobooks2ABO14startInvoicing15subscriptionKey15loginCredential13configurationySS_AC05LoginH0OAC13ConfigurationVtFZ",
+            "usr": "s:9Autobooks2ABO14startInvoicing15subscriptionKey15loginCredential13configuration10completionySS_AC05LoginH0OAC13ConfigurationVyAC15DismissalReasonOcSgtFZ",
+            "mangledName": "$s9Autobooks2ABO14startInvoicing15subscriptionKey15loginCredential13configuration10completionySS_AC05LoginH0OAC13ConfigurationVyAC15DismissalReasonOcSgtFZ",
             "moduleName": "Autobooks",
             "static": true,
             "declAttributes": [
@@ -2381,7 +2779,7 @@
           {
             "kind": "Function",
             "name": "startFullAutobooks",
-            "printedName": "startFullAutobooks(subscriptionKey:loginCredential:configuration:)",
+            "printedName": "startFullAutobooks(subscriptionKey:loginCredential:configuration:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2406,11 +2804,38 @@
                 "printedName": "Autobooks.AB.Configuration",
                 "hasDefaultArg": true,
                 "usr": "s:9Autobooks2ABO13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Autobooks.AB.DismissalReason) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Autobooks.AB.DismissalReason) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DismissalReason",
+                        "printedName": "Autobooks.AB.DismissalReason",
+                        "usr": "s:9Autobooks2ABO15DismissalReasonO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9Autobooks2ABO09startFullA015subscriptionKey15loginCredential13configurationySS_AC05LoginH0OAC13ConfigurationVtFZ",
-            "mangledName": "$s9Autobooks2ABO09startFullA015subscriptionKey15loginCredential13configurationySS_AC05LoginH0OAC13ConfigurationVtFZ",
+            "usr": "s:9Autobooks2ABO09startFullA015subscriptionKey15loginCredential13configuration10completionySS_AC05LoginH0OAC13ConfigurationVyAC15DismissalReasonOcSgtFZ",
+            "mangledName": "$s9Autobooks2ABO09startFullA015subscriptionKey15loginCredential13configuration10completionySS_AC05LoginH0OAC13ConfigurationVyAC15DismissalReasonOcSgtFZ",
             "moduleName": "Autobooks",
             "static": true,
             "declAttributes": [
@@ -2723,6 +3148,476 @@
                     "declKind": "Accessor",
                     "usr": "s:9Autobooks2ABO13NotificationsO12userActivitySo18NSNotificationNameavgZ",
                     "mangledName": "$s9Autobooks2ABO13NotificationsO12userActivitySo18NSNotificationNameavgZ",
+                    "moduleName": "Autobooks",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "visitedTransactions",
+                "printedName": "visitedTransactions",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9Autobooks2ABO13NotificationsO19visitedTransactionsSo18NSNotificationNameavpZ",
+                "mangledName": "$s9Autobooks2ABO13NotificationsO19visitedTransactionsSo18NSNotificationNameavpZ",
+                "moduleName": "Autobooks",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Name",
+                        "printedName": "Foundation.NSNotification.Name",
+                        "usr": "c:@T@NSNotificationName"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9Autobooks2ABO13NotificationsO19visitedTransactionsSo18NSNotificationNameavgZ",
+                    "mangledName": "$s9Autobooks2ABO13NotificationsO19visitedTransactionsSo18NSNotificationNameavgZ",
+                    "moduleName": "Autobooks",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "tappedCharge",
+                "printedName": "tappedCharge",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9Autobooks2ABO13NotificationsO12tappedChargeSo18NSNotificationNameavpZ",
+                "mangledName": "$s9Autobooks2ABO13NotificationsO12tappedChargeSo18NSNotificationNameavpZ",
+                "moduleName": "Autobooks",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Name",
+                        "printedName": "Foundation.NSNotification.Name",
+                        "usr": "c:@T@NSNotificationName"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9Autobooks2ABO13NotificationsO12tappedChargeSo18NSNotificationNameavgZ",
+                    "mangledName": "$s9Autobooks2ABO13NotificationsO12tappedChargeSo18NSNotificationNameavgZ",
+                    "moduleName": "Autobooks",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "tappedManualEntry",
+                "printedName": "tappedManualEntry",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9Autobooks2ABO13NotificationsO17tappedManualEntrySo18NSNotificationNameavpZ",
+                "mangledName": "$s9Autobooks2ABO13NotificationsO17tappedManualEntrySo18NSNotificationNameavpZ",
+                "moduleName": "Autobooks",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Name",
+                        "printedName": "Foundation.NSNotification.Name",
+                        "usr": "c:@T@NSNotificationName"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9Autobooks2ABO13NotificationsO17tappedManualEntrySo18NSNotificationNameavgZ",
+                    "mangledName": "$s9Autobooks2ABO13NotificationsO17tappedManualEntrySo18NSNotificationNameavgZ",
+                    "moduleName": "Autobooks",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "tappedSendReceipt",
+                "printedName": "tappedSendReceipt",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9Autobooks2ABO13NotificationsO17tappedSendReceiptSo18NSNotificationNameavpZ",
+                "mangledName": "$s9Autobooks2ABO13NotificationsO17tappedSendReceiptSo18NSNotificationNameavpZ",
+                "moduleName": "Autobooks",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Name",
+                        "printedName": "Foundation.NSNotification.Name",
+                        "usr": "c:@T@NSNotificationName"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9Autobooks2ABO13NotificationsO17tappedSendReceiptSo18NSNotificationNameavgZ",
+                    "mangledName": "$s9Autobooks2ABO13NotificationsO17tappedSendReceiptSo18NSNotificationNameavgZ",
+                    "moduleName": "Autobooks",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "tappedRefund",
+                "printedName": "tappedRefund",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9Autobooks2ABO13NotificationsO12tappedRefundSo18NSNotificationNameavpZ",
+                "mangledName": "$s9Autobooks2ABO13NotificationsO12tappedRefundSo18NSNotificationNameavpZ",
+                "moduleName": "Autobooks",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Name",
+                        "printedName": "Foundation.NSNotification.Name",
+                        "usr": "c:@T@NSNotificationName"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9Autobooks2ABO13NotificationsO12tappedRefundSo18NSNotificationNameavgZ",
+                    "mangledName": "$s9Autobooks2ABO13NotificationsO12tappedRefundSo18NSNotificationNameavgZ",
+                    "moduleName": "Autobooks",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "tappedCancel",
+                "printedName": "tappedCancel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9Autobooks2ABO13NotificationsO12tappedCancelSo18NSNotificationNameavpZ",
+                "mangledName": "$s9Autobooks2ABO13NotificationsO12tappedCancelSo18NSNotificationNameavpZ",
+                "moduleName": "Autobooks",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Name",
+                        "printedName": "Foundation.NSNotification.Name",
+                        "usr": "c:@T@NSNotificationName"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9Autobooks2ABO13NotificationsO12tappedCancelSo18NSNotificationNameavgZ",
+                    "mangledName": "$s9Autobooks2ABO13NotificationsO12tappedCancelSo18NSNotificationNameavgZ",
+                    "moduleName": "Autobooks",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "tappedSkip",
+                "printedName": "tappedSkip",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9Autobooks2ABO13NotificationsO10tappedSkipSo18NSNotificationNameavpZ",
+                "mangledName": "$s9Autobooks2ABO13NotificationsO10tappedSkipSo18NSNotificationNameavpZ",
+                "moduleName": "Autobooks",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Name",
+                        "printedName": "Foundation.NSNotification.Name",
+                        "usr": "c:@T@NSNotificationName"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9Autobooks2ABO13NotificationsO10tappedSkipSo18NSNotificationNameavgZ",
+                    "mangledName": "$s9Autobooks2ABO13NotificationsO10tappedSkipSo18NSNotificationNameavgZ",
+                    "moduleName": "Autobooks",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "tappedSendAnotherReceipt",
+                "printedName": "tappedSendAnotherReceipt",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9Autobooks2ABO13NotificationsO24tappedSendAnotherReceiptSo18NSNotificationNameavpZ",
+                "mangledName": "$s9Autobooks2ABO13NotificationsO24tappedSendAnotherReceiptSo18NSNotificationNameavpZ",
+                "moduleName": "Autobooks",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Name",
+                        "printedName": "Foundation.NSNotification.Name",
+                        "usr": "c:@T@NSNotificationName"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9Autobooks2ABO13NotificationsO24tappedSendAnotherReceiptSo18NSNotificationNameavgZ",
+                    "mangledName": "$s9Autobooks2ABO13NotificationsO24tappedSendAnotherReceiptSo18NSNotificationNameavgZ",
+                    "moduleName": "Autobooks",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "somethingWentWrong",
+                "printedName": "somethingWentWrong",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9Autobooks2ABO13NotificationsO18somethingWentWrongSo18NSNotificationNameavpZ",
+                "mangledName": "$s9Autobooks2ABO13NotificationsO18somethingWentWrongSo18NSNotificationNameavpZ",
+                "moduleName": "Autobooks",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Name",
+                        "printedName": "Foundation.NSNotification.Name",
+                        "usr": "c:@T@NSNotificationName"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9Autobooks2ABO13NotificationsO18somethingWentWrongSo18NSNotificationNameavgZ",
+                    "mangledName": "$s9Autobooks2ABO13NotificationsO18somethingWentWrongSo18NSNotificationNameavgZ",
+                    "moduleName": "Autobooks",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "callUsActionClicked",
+                "printedName": "callUsActionClicked",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9Autobooks2ABO13NotificationsO19callUsActionClickedSo18NSNotificationNameavpZ",
+                "mangledName": "$s9Autobooks2ABO13NotificationsO19callUsActionClickedSo18NSNotificationNameavpZ",
+                "moduleName": "Autobooks",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Name",
+                        "printedName": "Foundation.NSNotification.Name",
+                        "usr": "c:@T@NSNotificationName"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9Autobooks2ABO13NotificationsO19callUsActionClickedSo18NSNotificationNameavgZ",
+                    "mangledName": "$s9Autobooks2ABO13NotificationsO19callUsActionClickedSo18NSNotificationNameavgZ",
                     "moduleName": "Autobooks",
                     "static": true,
                     "implicit": true,
@@ -4158,7 +5053,7 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForPaymentEnablementViewController.swift",
       "kind": "StringLiteral",
-      "offset": 635,
+      "offset": 683,
       "length": 50,
       "value": "\"OnboardingWaitForPaymentEnablementViewController\""
     },
@@ -4529,14 +5424,14 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/ProgressViewStyles.swift",
       "kind": "IntegerLiteral",
-      "offset": 1888,
+      "offset": 1925,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/ProgressViewStyles.swift",
       "kind": "BooleanLiteral",
-      "offset": 1902,
+      "offset": 1939,
       "length": 4,
       "value": "true"
     },
@@ -4564,329 +5459,329 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/ActionButtonStyle.swift",
       "kind": "FloatLiteral",
-      "offset": 931,
+      "offset": 945,
       "length": 4,
       "value": "0.75"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/ActionButtonStyle.swift",
       "kind": "IntegerLiteral",
-      "offset": 1791,
+      "offset": 1805,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/ActionButtonStyle.swift",
       "kind": "IntegerLiteral",
-      "offset": 1870,
+      "offset": 1884,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/ActionButtonStyle.swift",
       "kind": "FloatLiteral",
-      "offset": 2322,
+      "offset": 2364,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/ActionButtonStyle.swift",
       "kind": "FloatLiteral",
-      "offset": 2454,
+      "offset": 2496,
       "length": 3,
       "value": "0.3"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/ActionButtonStyle.swift",
       "kind": "FloatLiteral",
-      "offset": 2482,
+      "offset": 2524,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/ActionButtonStyle.swift",
       "kind": "FloatLiteral",
-      "offset": 2561,
+      "offset": 2603,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/ActionButtonStyle.swift",
       "kind": "BooleanLiteral",
-      "offset": 2790,
+      "offset": 2832,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/ActionButtonStyle.swift",
       "kind": "IntegerLiteral",
-      "offset": 3743,
+      "offset": 3785,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/ActionButtonStyle.swift",
       "kind": "IntegerLiteral",
-      "offset": 3807,
+      "offset": 3849,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/ActionButtonStyle.swift",
       "kind": "FloatLiteral",
-      "offset": 4068,
+      "offset": 4110,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 539,
+      "offset": 808,
       "length": 10,
       "value": "\"Confetti\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 566,
+      "offset": 835,
       "length": 5,
       "value": "\"scn\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 587,
+      "offset": 856,
       "length": 22,
       "value": "\"Onboarding.scnassets\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1134,
+      "offset": 1403,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 1264,
+      "offset": 1533,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1270,
+      "offset": 1539,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1273,
+      "offset": 1542,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1276,
+      "offset": 1545,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1442,
+      "offset": 1711,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1527,
+      "offset": 1796,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1533,
+      "offset": 1802,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1539,
+      "offset": 1808,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1752,
+      "offset": 2021,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1758,
+      "offset": 2027,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1765,
+      "offset": 2034,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2190,
+      "offset": 2459,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2234,
+      "offset": 2503,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2474,
+      "offset": 2743,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2532,
+      "offset": 2801,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2588,
+      "offset": 2857,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2725,
+      "offset": 2994,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2910,
+      "offset": 3179,
       "length": 34,
       "value": "\"Tap to Pay for iPhone\nis ready.\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3072,
+      "offset": 3341,
       "length": 9,
       "value": "\"opacity\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3125,
+      "offset": 3394,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3167,
+      "offset": 3436,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 3210,
+      "offset": 3479,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3319,
+      "offset": 3588,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3616,
+      "offset": 3885,
       "length": 9,
       "value": "\"opacity\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3672,
+      "offset": 3941,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3717,
+      "offset": 3986,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 3763,
+      "offset": 4032,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3878,
+      "offset": 4147,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4163,
+      "offset": 4432,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4285,
+      "offset": 4554,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4586,
+      "offset": 4855,
       "length": 12,
       "value": "\"Onboarding\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 4735,
+      "offset": 5043,
       "length": 41,
       "value": "\"OnboardingWaitForTTPSetupViewController\""
     },
@@ -6132,147 +7027,175 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "StringLiteral",
-      "offset": 3478,
+      "offset": 3511,
       "length": 17,
       "value": "\"for assistance.\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3700,
+      "offset": 3733,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3712,
+      "offset": 3745,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3724,
+      "offset": 3757,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 3737,
+      "offset": 3770,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4284,
+      "offset": 4317,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5360,
+      "offset": 5393,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "StringLiteral",
-      "offset": 5677,
+      "offset": 5710,
       "length": 21,
       "value": "\"square.and.arrow.up\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "StringLiteral",
-      "offset": 5858,
+      "offset": 5891,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "StringLiteral",
-      "offset": 5952,
+      "offset": 5985,
       "length": 7,
       "value": "\"Close\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6250,
+      "offset": 6283,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "IntegerLiteral",
-      "offset": 6319,
+      "offset": 6352,
       "length": 3,
       "value": "-30"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/MessageActionView.swift",
       "kind": "StringLiteral",
-      "offset": 6353,
+      "offset": 6386,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 526,
+      "offset": 537,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
+      "kind": "StringLiteral",
+      "offset": 625,
+      "length": 14,
+      "value": "\"userActivity\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
+      "kind": "StringLiteral",
+      "offset": 953,
+      "length": 137,
+      "value": "\"window.addEventListener(\"click\",function(e){window.webkit.messageHandlers.\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
+      "kind": "StringLiteral",
+      "offset": 1069,
+      "length": 1,
+      "value": "\".postMessage({});});\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 756,
+      "offset": 1280,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 858,
+      "offset": 1605,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1707,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 932,
+      "offset": 1781,
       "length": 14,
       "value": "\"chevron.left\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 1167,
+      "offset": 2016,
       "length": 15,
       "value": "\"chevron.right\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2593,
+      "offset": 3442,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2879,
+      "offset": 3728,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3300,
+      "offset": 4149,
       "length": 4,
       "value": "true"
     },
@@ -6286,296 +7209,366 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5036,
+      "offset": 6199,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5085,
+      "offset": 6248,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5274,
+      "offset": 6437,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5323,
+      "offset": 6486,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5767,
+      "offset": 6930,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5816,
+      "offset": 6979,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 7243,
+      "offset": 8406,
       "length": 22,
       "value": "\"Something went wrong\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 7306,
+      "offset": 8469,
       "length": 31,
       "value": "\"Try again or check back later\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 7654,
+      "offset": 8817,
       "length": 18,
       "value": "\"tel:\/\/8666173122\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 7894,
+      "offset": 9057,
       "length": 16,
       "value": "\"WebView Screen\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 8277,
+      "offset": 9440,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "FloatLiteral",
-      "offset": 8311,
+      "offset": 9474,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "Array",
-      "offset": 9512,
+      "offset": 10675,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/WebView.swift",
       "kind": "StringLiteral",
-      "offset": 9346,
+      "offset": 10509,
       "length": 11,
       "value": "\"Autobooks.Coordinator\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 2149,
+      "offset": 4337,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 2227,
+      "offset": 4415,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 2386,
+      "offset": 4574,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 4826,
+      "offset": 7014,
       "length": 38,
       "value": "\"https:\/\/dev-apim.autobooks.co\/ttp\/v1\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 4929,
+      "offset": 7117,
       "length": 42,
       "value": "\"https:\/\/staging-apim.autobooks.co\/ttp\/v1\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 5039,
+      "offset": 7227,
       "length": 34,
       "value": "\"https:\/\/apim.autobooks.co\/ttp\/v1\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 6041,
+      "offset": 8229,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 6154,
+      "offset": 8342,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 6345,
+      "offset": 8533,
       "length": 73,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 6369,
+      "offset": 8557,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 6393,
+      "offset": 8581,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 6417,
+      "offset": 8605,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 6434,
+      "offset": 8622,
       "length": 49,
       "value": "\"AutobooksSDK\/\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 6461,
+      "offset": 8649,
       "length": 3,
       "value": "\" iOS\/\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 6482,
+      "offset": 8670,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 7660,
+      "offset": 9848,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 7874,
+      "offset": 10062,
       "length": 57,
       "value": "\"*** Starting with device: \""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 7930,
+      "offset": 10118,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 12444,
+      "offset": 15064,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 13028,
+      "offset": 15648,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 13801,
+      "offset": 16418,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 14504,
+      "offset": 17121,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 15725,
+      "offset": 18428,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 16983,
+      "offset": 19754,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 17874,
+      "offset": 20645,
       "length": 11,
       "value": "\"Invoicing\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 17940,
+      "offset": 20711,
       "length": 10,
       "value": "\"Payments\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 18007,
+      "offset": 20778,
       "length": 11,
       "value": "\"Autobooks\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 18278,
+      "offset": 21049,
       "length": 31,
       "value": "\"co.autobooks.sdk.userActivity\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
+      "kind": "StringLiteral",
+      "offset": 21149,
+      "length": 38,
+      "value": "\"co.autobooks.sdk.visitedTransactions\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
+      "kind": "StringLiteral",
+      "offset": 21248,
+      "length": 31,
+      "value": "\"co.autobooks.sdk.tappedCharge\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
+      "kind": "StringLiteral",
+      "offset": 21345,
+      "length": 36,
+      "value": "\"co.autobooks.sdk.tappedManualEntry\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
+      "kind": "StringLiteral",
+      "offset": 21447,
+      "length": 36,
+      "value": "\"co.autobooks.sdk.tappedSendReceipt\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
+      "kind": "StringLiteral",
+      "offset": 21544,
+      "length": 31,
+      "value": "\"co.autobooks.sdk.tappedRefund\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
+      "kind": "StringLiteral",
+      "offset": 21636,
+      "length": 31,
+      "value": "\"co.autobooks.sdk.tappedCancel\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
+      "kind": "StringLiteral",
+      "offset": 21726,
+      "length": 29,
+      "value": "\"co.autobooks.sdk.tappedSkip\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
+      "kind": "StringLiteral",
+      "offset": 21828,
+      "length": 43,
+      "value": "\"co.autobooks.sdk.tappedSendAnotherReceipt\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
+      "kind": "StringLiteral",
+      "offset": 21938,
+      "length": 37,
+      "value": "\"co.autobooks.sdk.somethingWentWrong\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
+      "kind": "StringLiteral",
+      "offset": 22043,
+      "length": 38,
+      "value": "\"co.autobooks.sdk.callUsActionClicked\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Loadable.swift",
@@ -6797,140 +7790,140 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 573,
+      "offset": 843,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 619,
+      "offset": 889,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 678,
+      "offset": 948,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 695,
+      "offset": 965,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1022,
+      "offset": 1292,
       "length": 12,
       "value": "\"position.x\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1107,
+      "offset": 1377,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 1217,
+      "offset": 1487,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1462,
+      "offset": 1732,
       "length": 9,
       "value": "\"opacity\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1513,
+      "offset": 1783,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 1553,
+      "offset": 1823,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 1594,
+      "offset": 1864,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1820,
+      "offset": 2090,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2070,
+      "offset": 2340,
       "length": 9,
       "value": "\"opacity\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2130,
+      "offset": 2400,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2179,
+      "offset": 2449,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2229,
+      "offset": 2499,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2347,
+      "offset": 2617,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2485,
+      "offset": 2755,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2697,
+      "offset": 2967,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3076,
+      "offset": 3346,
       "length": 5,
       "value": "false"
     },
@@ -9709,42 +10702,42 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingNotEnabledViewController.swift",
       "kind": "StringLiteral",
-      "offset": 638,
+      "offset": 683,
       "length": 47,
       "value": "\"If you have questions, call us toll-free at\n\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingNotEnabledViewController.swift",
       "kind": "StringLiteral",
-      "offset": 900,
+      "offset": 965,
       "length": 16,
       "value": "\"(866) 617-3122\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingNotEnabledViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1145,
+      "offset": 1256,
       "length": 18,
       "value": "\" for assistance.\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingNotEnabledViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1690,
+      "offset": 1924,
       "length": 18,
       "value": "\"tel:\/\/8666173122\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingNotEnabledViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2028,
+      "offset": 2262,
       "length": 12,
       "value": "\"Onboarding\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingNotEnabledViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2172,
+      "offset": 2440,
       "length": 36,
       "value": "\"OnboardingNotEnabledViewController\""
     },
@@ -9786,84 +10779,84 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 1637,
+      "offset": 1779,
       "length": 37,
       "value": "\"*** Navigation was empty, ignoring.\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2308,
+      "offset": 2450,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2439,
+      "offset": 2581,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2628,
+      "offset": 2770,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 4935,
+      "offset": 5077,
       "length": 14,
       "value": "\"Transactions\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 5481,
+      "offset": 5623,
       "length": 7,
       "value": "\"Close\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 6022,
+      "offset": 6164,
       "length": 6,
       "value": "\"Next\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 6555,
+      "offset": 6697,
       "length": 6,
       "value": "\"Next\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 7445,
+      "offset": 7587,
       "length": 4,
       "value": "\"OK\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 7609,
+      "offset": 7751,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7774,
+      "offset": 7916,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 8252,
+      "offset": 8394,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
@@ -9891,77 +10884,77 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "BooleanLiteral",
-      "offset": 10999,
+      "offset": 11141,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11049,
+      "offset": 11191,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 11511,
+      "offset": 11653,
       "length": 13,
       "value": "\"New Payment\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 11603,
+      "offset": 11745,
       "length": 20,
       "value": "\"Payment Successful\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 11685,
+      "offset": 11827,
       "length": 14,
       "value": "\"Transactions\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 11761,
+      "offset": 11903,
       "length": 17,
       "value": "\"Payment Details\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 14571,
+      "offset": 14713,
       "length": 18,
       "value": "\"Virtual Terminal\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "BooleanLiteral",
-      "offset": 15604,
+      "offset": 15746,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 16195,
+      "offset": 16337,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 15192,
+      "offset": 15334,
       "length": 20,
       "value": "\"Autobooks.ScreenViewController\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 15192,
+      "offset": 15334,
       "length": 20,
       "value": "\"Autobooks.ScreenViewController\""
     },
@@ -10451,7 +11444,7 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/WebFeatureDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 1927,
+      "offset": 2005,
       "length": 4,
       "value": "true"
     },
@@ -10906,84 +11899,84 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TransactionsScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 4947,
+      "offset": 4954,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TransactionsScreen.swift",
       "kind": "StringLiteral",
-      "offset": 6083,
+      "offset": 6090,
       "length": 15,
       "value": "\"chevron.right\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TransactionsScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 6136,
+      "offset": 6143,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TransactionsScreen.swift",
       "kind": "StringLiteral",
-      "offset": 6307,
+      "offset": 6314,
       "length": 67,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TransactionsScreen.swift",
       "kind": "StringLiteral",
-      "offset": 6338,
+      "offset": 6345,
       "length": 2,
       "value": "\" to \""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TransactionsScreen.swift",
       "kind": "StringLiteral",
-      "offset": 6373,
+      "offset": 6380,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TransactionsScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 6663,
+      "offset": 6670,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TransactionsScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 6746,
+      "offset": 6753,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TransactionsScreen.swift",
       "kind": "Array",
-      "offset": 6934,
+      "offset": 6941,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TransactionsScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 6964,
+      "offset": 6971,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TransactionsScreen.swift",
       "kind": "Array",
-      "offset": 7042,
+      "offset": 7049,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TransactionsScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 7306,
+      "offset": 7313,
       "length": 1,
       "value": "1"
     },
@@ -11102,14 +12095,14 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/WebFeatureFlowController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2174,
+      "offset": 2181,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/WebFeatureFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 2517,
+      "offset": 2548,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
@@ -11242,189 +12235,189 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 924,
+      "offset": 1956,
       "length": 40,
       "value": "\"[Tap To Pay] Visited Transactions List\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 1020,
+      "offset": 2052,
       "length": 28,
       "value": "\"[Tap To Pay] Tapped Charge\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 1109,
+      "offset": 2141,
       "length": 34,
       "value": "\"[Tap To Pay] Tapped Manual Entry\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 1204,
+      "offset": 2236,
       "length": 34,
       "value": "\"[Tap To Pay] Tapped Send Receipt\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 1294,
+      "offset": 2326,
       "length": 28,
       "value": "\"[Tap To Pay] Tapped Refund\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 1378,
+      "offset": 2410,
       "length": 28,
       "value": "\"[Tap To Pay] Tapped Cancel\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 1460,
+      "offset": 2492,
       "length": 26,
       "value": "\"[Tap To Pay] Tapped Skip\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 1554,
+      "offset": 2586,
       "length": 42,
       "value": "\"[Tap To Pay] Tapped Send Another Receipt\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 1658,
+      "offset": 2690,
       "length": 35,
       "value": "\"[Tap To Pay] Something Went Wrong\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 1756,
+      "offset": 2788,
       "length": 30,
       "value": "\"[Tap To Pay] Call Us Clicked\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 1913,
+      "offset": 2945,
       "length": 13,
       "value": "\"SDK Version\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 1952,
+      "offset": 2984,
       "length": 11,
       "value": "\"SDK Build\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 2121,
+      "offset": 3119,
       "length": 8,
       "value": "\"Amount\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 2302,
+      "offset": 3457,
       "length": 8,
       "value": "\"Screen\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/LoadingScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 882,
+      "offset": 914,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/LoadingScreen.swift",
       "kind": "StringLiteral",
-      "offset": 996,
+      "offset": 1028,
       "length": 22,
       "value": "\"Something Went Wrong\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/LoadingScreen.swift",
       "kind": "StringLiteral",
-      "offset": 1067,
+      "offset": 1099,
       "length": 18,
       "value": "\"Please try again\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/LoadingScreen.swift",
       "kind": "StringLiteral",
-      "offset": 1330,
+      "offset": 1362,
       "length": 18,
       "value": "\"tel:\/\/8666173122\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/LoadingScreen.swift",
       "kind": "StringLiteral",
-      "offset": 1647,
+      "offset": 1679,
       "length": 15,
       "value": "\"LoadingScreen\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/LoadingScreen.swift",
       "kind": "StringLiteral",
-      "offset": 1780,
+      "offset": 1812,
       "length": 14,
       "value": "\"tapToPayIcon\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/LoadingScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1930,
+      "offset": 1962,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/LoadingScreen.swift",
       "kind": "StringLiteral",
-      "offset": 1983,
+      "offset": 2015,
       "length": 12,
       "value": "\"Loading…\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/LoadingScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 2165,
+      "offset": 2197,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/LoadingScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 2176,
+      "offset": 2208,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/LoadingScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 2330,
+      "offset": 2362,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/LoadingScreen.swift",
       "kind": "IntegerLiteral",
-      "offset": 2718,
+      "offset": 2750,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/LoadingScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 2736,
+      "offset": 2768,
       "length": 4,
       "value": "true"
     },
