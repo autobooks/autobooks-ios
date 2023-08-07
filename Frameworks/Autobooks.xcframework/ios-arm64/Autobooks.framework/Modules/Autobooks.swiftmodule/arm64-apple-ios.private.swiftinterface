@@ -33,7 +33,7 @@ public enum AB {
   public struct Style {
     public struct Colors {
       public static let `default`: Autobooks.AB.Style.Colors
-      public init(primaryColor: UIKit.UIColor, actionButtonColor: UIKit.UIColor? = nil, secondaryButtonColor: UIKit.UIColor? = nil, tertiaryButtonColor: UIKit.UIColor? = nil, linkColor: UIKit.UIColor? = nil, progressColor: UIKit.UIColor? = nil, confettiColor: UIKit.UIColor? = nil)
+      public init(primaryColor: UIKit.UIColor, actionButtonColor: UIKit.UIColor? = nil, secondaryButtonColor: UIKit.UIColor? = nil, tertiaryButtonColor: UIKit.UIColor? = nil, linkColor: UIKit.UIColor? = nil, progressColor: UIKit.UIColor? = nil, progressTrackColor: UIKit.UIColor? = nil, confettiColor: UIKit.UIColor? = nil)
     }
     public struct CustomNavigationBar {
       public static let `default`: Autobooks.AB.Style.CustomNavigationBar
