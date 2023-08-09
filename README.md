@@ -96,6 +96,7 @@ You can individually override the color for each class of UI element by creating
                                  tertiaryButtonColor: <#T##UIColor?#>,
                                  linkColor: <#T##UIColor?#>,
                                  progressColor: <#T##UIColor?#>,
+                                 progressTrackColor: <#T##UIColor?#>,
                                  confettiColor: <#T##UIColor?#>)
 
     let style = AB.Style(colors: colors)
@@ -105,7 +106,8 @@ You can individually override the color for each class of UI element by creating
 * `secondaryButtonColor` applies to secondary button backgrounds, for example, most Try Again buttons.
 * `tertiaryButtonColor` applies to tertiary button text, for example, the Manual Card Entry and Receipt view Done buttons.  This button type does not have a background.
 * `linkColor` applies to clickable text, for example, the Autobooks "Call us" text prompt which includes our support numnber.  Despite the name, it does not style links in web features.
-* `progressColor` applies to the track tint in linear progress views.
+* `progressColor` is the color shown for the portion of the progress bar that’s filled in linear progress views. This corresponds to `progressTintColor` in `UIProgressView`.
+* `progressTrackColor` is the color shown for the portion of the progress bar that _isn’t_ filled in linear progress views. This corresponds to `trackTintColor` in `UIProgressView`.  It may be set to `.clear` if desired.  Be careful about setting this to an opaque background color that does not respect dark mode, for example, `.white` or `.black`.
 * `confettiColor` applies to the congratulatory confetti which displays when a user first onboards on to Tap to Pay.
 
 Because the SDK is almost entirely self-contained, you won't receive a direct reference to the underlying `UINavigationController` that's being presented.  To customize this controller to match your branding, you can use the `CustomNavigationBar` object for advanced styling:
