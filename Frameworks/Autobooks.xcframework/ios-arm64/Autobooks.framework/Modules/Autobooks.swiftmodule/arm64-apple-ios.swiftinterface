@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Autobooks
 // swift-module-flags-ignorable: -enable-bare-slash-regex
+import CallKit
 import Combine
 import Foundation
 import OSLog
@@ -50,6 +51,7 @@ public enum AB {
     public let responseProvider: Autobooks.AB.ResponseProvider
     public let shouldFallBackToPaymentForm: Swift.Bool
     public let shouldConfirmClose: Swift.Bool
+    public let shouldCloseOnAPIError: Swift.Bool
     public enum CloseButtonStyle {
       case close
       case signOut
@@ -61,7 +63,7 @@ public enum AB {
     }
     public let closeButtonStyle: Autobooks.AB.Configuration.CloseButtonStyle
     public let webViewsShowControls: Swift.Bool
-    public init(environment: Autobooks.AB.BackendEnvironment, style: Autobooks.AB.Style, responseProvider: Autobooks.AB.ResponseProvider, shouldFallBackToPaymentForm: Swift.Bool, shouldConfirmClose: Swift.Bool, closeButtonStyle: Autobooks.AB.Configuration.CloseButtonStyle, webViewsShowControls: Swift.Bool)
+    public init(environment: Autobooks.AB.BackendEnvironment, style: Autobooks.AB.Style, responseProvider: Autobooks.AB.ResponseProvider, shouldFallBackToPaymentForm: Swift.Bool, shouldConfirmClose: Swift.Bool, shouldCloseOnAPIError: Swift.Bool, closeButtonStyle: Autobooks.AB.Configuration.CloseButtonStyle, webViewsShowControls: Swift.Bool)
   }
   public enum BackendEnvironment {
     case dev
@@ -125,12 +127,13 @@ public enum AB {
     public static let tappedCharge: Foundation.Notification.Name
     public static let tappedManualEntry: Foundation.Notification.Name
     public static let tappedSendReceipt: Foundation.Notification.Name
-    public static let tappedRefund: Foundation.Notification.Name
-    public static let tappedCancel: Foundation.Notification.Name
-    public static let tappedSkip: Foundation.Notification.Name
+    public static let tappedRefundPayment: Foundation.Notification.Name
+    public static let tappedCancelPayment: Foundation.Notification.Name
+    public static let tappedSkipReceipt: Foundation.Notification.Name
     public static let tappedSendAnotherReceipt: Foundation.Notification.Name
+    public static let tappedCallUs: Foundation.Notification.Name
     public static let somethingWentWrong: Foundation.Notification.Name
-    public static let callUsActionClicked: Foundation.Notification.Name
+    public static let internalError: Foundation.Notification.Name
   }
 }
 extension Autobooks.AB.Configuration.CloseButtonStyle : Swift.Equatable {}
