@@ -136,6 +136,11 @@ public enum AB {
     public static let internalError: Foundation.Notification.Name
   }
 }
+extension Autobooks.AB.BackendEnvironment : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
 extension Autobooks.AB.Configuration.CloseButtonStyle : Swift.Equatable {}
 extension Autobooks.AB.Configuration.CloseButtonStyle : Swift.Hashable {}
 extension Autobooks.AB.BackendEnvironment : Swift.Equatable {}

@@ -77,7 +77,7 @@ All of the `AB.start*` methods allow passing an `AB.Configuration` value to cont
 
 * `shouldFallBackToPaymentForm` controls what happens when a user does not meet the iOS version or physical device requirements for a given feature.  If `true`, the user is directed to a web-based virtual terminal.  If `false`, the user receives an error.  The default is `true`.
 * `shouldConfirmClose` specifies whether a confirmation is presented to the user before dismissing the SDK interface.  The default is `false`.
-* `shouldCloseOnAPIError` dismisses the SDK interface when encountering 401 and 403 HTTP errors; in other words, it treats these as unrecoverable.  These should not happen in normal usage as the token is continually refreshed, but this option can be useful for debugging, or to avoid a "Something Went Wrong" screen and provide your own messaging.  The `AB.DismissalReason` returned will be either `.notAuthorized` or `.forbidden`.
+* `shouldCloseOnAPIError` dismisses the SDK interface when encountering 401 and 403 HTTP errors; in other words, it treats these as unrecoverable.  400-level errors should not happen in normal usage as the token is continually refreshed via the `loginProvider`, but this option can be useful for debugging, or to avoid a "Something Went Wrong" screen and provide your own messaging on failure.  The `AB.DismissalReason` returned will be either `.notAuthorized` or `.forbidden`.
 * `closeButtonStyle` controls the text displayed to the user to dismiss the SDK. If `.close`, the text is "Close".  If `.signOut`, the text is "Sign Out".  The default is `.close`.
 * `webViewsShowControls` controls whether the web features, outlined below, have a back/forward/share/refresh toolbar below web content, similar to `SFSafariViewController`.
 
