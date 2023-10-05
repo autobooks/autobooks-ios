@@ -207,7 +207,9 @@ Check the value of the `AB.supportsTapToPay` property to determine if the device
     }
 ```
 
-## App Transport Security
+## Domain List
+
+These are provided for restricted development environments where domains may need to be whitelisted.
 
 ### API
 
@@ -219,6 +221,10 @@ Check the value of the `AB.supportsTapToPay` property to determine if the device
 #### Processing
 * https://transaction.elementexpress.com
 * https://certtransaction.elementexpress.com
+* https://int.api.fiservapps.com
+* https://cert.api.fiservapps.com
+* https://cat.api.fiservapps.com
+* https://connect.fiservapis.com
 
 #### Segment
 * https://cdn-settings.segment.com
