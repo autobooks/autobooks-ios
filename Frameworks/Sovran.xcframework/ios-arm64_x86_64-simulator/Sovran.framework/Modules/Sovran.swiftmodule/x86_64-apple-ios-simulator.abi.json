@@ -15,16 +15,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Sovran",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "Action",
         "printedName": "Action",
@@ -234,14 +224,12 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "Subscriber",
-        "printedName": "Subscriber",
+        "name": "State",
+        "printedName": "State",
         "declKind": "Protocol",
-        "usr": "s:6Sovran10SubscriberP",
-        "mangledName": "$s6Sovran10SubscriberP",
+        "usr": "s:6Sovran5StateP",
+        "mangledName": "$s6Sovran5StateP",
         "moduleName": "Sovran",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
@@ -1539,6 +1527,41 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sovran",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Subscriber",
+        "printedName": "Subscriber",
+        "declKind": "Protocol",
+        "usr": "s:6Sovran10SubscriberP",
+        "mangledName": "$s6Sovran10SubscriberP",
+        "moduleName": "Sovran",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Sovran",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Var",
         "name": "__sovran_version",
         "printedName": "__sovran_version",
@@ -1562,78 +1585,55 @@
         ],
         "isLet": true,
         "hasStorage": true
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Sovran",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "State",
-        "printedName": "State",
-        "declKind": "Protocol",
-        "usr": "s:6Sovran5StateP",
-        "mangledName": "$s6Sovran5StateP",
-        "moduleName": "Sovran",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/brandonsneed\/work\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
       "kind": "StringLiteral",
       "offset": 269,
       "length": 26,
       "value": "\"state.update.segment.com\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
       "kind": "StringLiteral",
       "offset": 402,
       "length": 24,
       "value": "\"state.sync.segment.com\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
       "kind": "BooleanLiteral",
       "offset": 1778,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
       "kind": "IntegerLiteral",
       "offset": 3211,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
       "kind": "IntegerLiteral",
       "offset": 6955,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
       "kind": "IntegerLiteral",
       "offset": 7102,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/Sovran-Swift\/Sources\/Sovran\/Version.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Version.swift",
       "kind": "StringLiteral",
       "offset": 320,
       "length": 7,

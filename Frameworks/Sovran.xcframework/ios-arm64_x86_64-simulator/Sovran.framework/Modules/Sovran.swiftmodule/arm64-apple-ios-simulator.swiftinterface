@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Sovran
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -16,8 +16,9 @@ public protocol AsyncAction {
   func operation(state: Self.StateType, completion: @escaping (Self.ResultType?) -> Swift.Void)
   func reduce(state: Self.StateType, operationResult: Self.ResultType?) -> Self.StateType
 }
-public protocol Subscriber : AnyObject {
+public protocol State {
 }
+public typealias Handler<T> = (T) -> Swift.Void where T : Sovran.State
 public typealias SubscriptionID = Swift.Int
 public class Store {
   required public init(from decoder: any Swift.Decoder) throws
@@ -32,6 +33,5 @@ public class Store {
   public func currentState<T>() -> T? where T : Sovran.State
   @objc deinit
 }
-public protocol State {
+public protocol Subscriber : AnyObject {
 }
-public typealias Handler<T> = (T) -> Swift.Void where T : Sovran.State

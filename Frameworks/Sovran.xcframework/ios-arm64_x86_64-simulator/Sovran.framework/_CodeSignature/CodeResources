@@ -6,51 +6,51 @@
 	<dict>
 		<key>Headers/Sovran-Swift.h</key>
 		<data>
-		4S/XGlc2ABL1VRbRFyiCzcrm4kI=
+		sJMF4EPUyL1DNptWF1wIuPeFkTc=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5H8Ecg455CjORcCnTTpWtuU+4go=
+		sjelWGF5GKzL3oONK4HndFFGbwo=
 		</data>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		uyejhWLq8nsr1wNV6z8MGmdOAz0=
+		Bbhz+Caq7NNw2T0RTYYtS3nS9ME=
 		</data>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		VH1D8m3dGJiQ6T+Y3nNJi5SrwQ8=
+		CySDq9A8YBf+LH00QdODGmDL7qQ=
 		</data>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		l3hdXNor7LvfFGas0QJaP9sWaiU=
+		fVmkeAUJFCpaUlUB01XuteKxd0E=
 		</data>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		VH1D8m3dGJiQ6T+Y3nNJi5SrwQ8=
+		CySDq9A8YBf+LH00QdODGmDL7qQ=
 		</data>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2jpt6Q8JRmbHagGvObStz+qTunM=
+		7ktlpZ9aC8V4UPj37KrWQi3AGO0=
 		</data>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		uyejhWLq8nsr1wNV6z8MGmdOAz0=
+		Bbhz+Caq7NNw2T0RTYYtS3nS9ME=
 		</data>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		2uc3VXb6UOvrsohT4p7zyMw1SO4=
+		FDQJxaTGjSVqjCI0gR+VK9pwCwY=
 		</data>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		wrW/jv372jwW+dKF9tcG+clXZjU=
+		0WzjdzTu5nevlNRinfRzzmLUpI8=
 		</data>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		2uc3VXb6UOvrsohT4p7zyMw1SO4=
+		FDQJxaTGjSVqjCI0gR+VK9pwCwY=
 		</data>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		mPox1gZBzYxTARu0Yz4RoV2SdZQ=
+		GD3LF2TIJVjbtN/ko1wY0r3xmXI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -59,77 +59,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aXjMYxwEZC9UJSJAk/xSsybQ30ANSD7UigIEKBdF4HE=
+			OMNpSQf6sVAUwnMliveQaBR2atWkd2uvUQCCwAsMxcc=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vKj1zFHx+53AgDmF4J+99m0ux0PR0lrY8UNyuICb+N8=
+			GS8Hvb1q5QkUR8rTcjrP0AN6XrDfF4aC5gXEfGMPXg8=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XLxexPSXxIb1o/Slp8NdULzE87Fm/RP/ZL2IdWwLlgU=
+			lQRUMBVdvzcJVgVaRBnR0fJ/+f9eOBVi8t0iJqzOZEQ=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UNMqt5ruh7QF3anZRqjsKvVgYlBtlNM4qfKViJHfn9A=
+			TPRIYNzrvOSmQYwbzWD+gYsefMJi86L9W60QeZf92Cs=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XLxexPSXxIb1o/Slp8NdULzE87Fm/RP/ZL2IdWwLlgU=
+			lQRUMBVdvzcJVgVaRBnR0fJ/+f9eOBVi8t0iJqzOZEQ=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			023nY1TzHaA0tjJkWkr+UGyFnSzNDEG1yS1Yj6v229U=
+			X6nJ6hGtWu8IviQgIPLgW4a/92H+bpOlcxFa1OlLoRc=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vKj1zFHx+53AgDmF4J+99m0ux0PR0lrY8UNyuICb+N8=
+			GS8Hvb1q5QkUR8rTcjrP0AN6XrDfF4aC5gXEfGMPXg8=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h2Xls6fflvGnwr9rk+TRRDpbyGD5X3N+vpxcTYH/6NQ=
+			LsUi5n56rDqmZQGgX/bu1cDjADd/KJ9CuPUPKRsZ4mY=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dHg5+H36GLkAypSiu16+h/zAqJuPR79lQffu6x3Leps=
+			9JfYaXrFSz2yvprZtQKOUo9qb0ZuiQmjjohe2sTcfqQ=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			h2Xls6fflvGnwr9rk+TRRDpbyGD5X3N+vpxcTYH/6NQ=
+			LsUi5n56rDqmZQGgX/bu1cDjADd/KJ9CuPUPKRsZ4mY=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wRwxgIIIzkZ2vhg/7ug5TkEWnldZZCAY3oNgLiycZMc=
+			KOrt/SBAg8n/iHRmL8q580qDbB8aZ/RYhWAqcx0w+Ko=
 			</data>
 		</dict>
 	</dict>

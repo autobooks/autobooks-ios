@@ -6,35 +6,35 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		0RJijLSSYifKqPZBpMolOCgOzag=
+		9/UaQLzk40GJ/RQuQUy88KFhHek=
 		</data>
 		<key>Headers/Autobooks-Swift.h</key>
 		<data>
-		5nezOn88cIZiZ5LqivxjwoGUbHo=
+		tvWU9c2oE/WFmFI5X9eTDoHmt8U=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		nZ+oqaFg5e3usSd6c8pkuZY3pBw=
+		s92zvNRE8DjAkW0Tay13EedLhio=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		hoMQBXDuQNBVkcBTjtYroTMY9Hc=
+		Zc31/piPR66PX/6ZrlonB7Hmza4=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		+O/NN2s70ijLLuqlG5L1aXrIvJc=
+		aKcr2CM2zN/3qeXrkczYilaSNgw=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		qc4BZ2mMQwQcnIYCaYfnn77tehk=
+		uxBtMwtSQ655U2TNmTCLIWn/SCg=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+O/NN2s70ijLLuqlG5L1aXrIvJc=
+		aKcr2CM2zN/3qeXrkczYilaSNgw=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dsmW3QTSy3DniEJHtMevYHhP5Ug=
+		tuP+EyETM0EOTxlIiqBLNR4Ao4U=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,19 +42,19 @@
 		</data>
 		<key>Onboarding.scnassets/Confetti.scn</key>
 		<data>
-		CypAWaH2wkC0CWKEdIFRj89tXl4=
+		z3WQgkH0sFq5wpVjDsNFtLAe9So=
 		</data>
 		<key>Onboarding.storyboardc/165-Y1-QxF-view-9cn-wg-lEt.nib</key>
 		<data>
-		apOrqRUiNC1YaiHs8OAcPIoUt6U=
+		l1FQimCcCSd928/zXrCeriiGhxM=
 		</data>
 		<key>Onboarding.storyboardc/55D-eH-j4p-view-7Op-nI-lfG.nib</key>
 		<data>
-		0WFPJPA4E8rRZnHFuo7u21brKsI=
+		VbQ4nED5GmT6o1lUQ5LWVi8/umQ=
 		</data>
 		<key>Onboarding.storyboardc/ATU-mp-C6u-view-i1C-nd-jdq.nib</key>
 		<data>
-		4fVSw6Qx93khvBu31X4fhIMWqWA=
+		fW63T8Gg8jpdwypsf5iD81O3228=
 		</data>
 		<key>Onboarding.storyboardc/Fam-qq-a4x-view-XJA-Jw-pWy.nib</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Onboarding.storyboardc/OXM-Ue-gei-view-6Ma-PR-HE0.nib</key>
 		<data>
-		zE8USUFzbV3yx4NWDNXyVDq6J24=
+		FB1QxHEJki4eSPn5HlD1WpbnOE8=
 		</data>
 		<key>Onboarding.storyboardc/OnboardingCardPayEducationViewController.nib</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Onboarding.storyboardc/fTg-Yz-T3N-view-iix-sX-yg0.nib</key>
 		<data>
-		4YHxyvwxNBfsNGjgWYwKQ6KsA80=
+		E7B9JlyugwHxXjA/VvJgRgY3x/s=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -107,49 +107,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wIjoBYObPe9OVY/1Pk0OJyYhDKEvgrAKwru1NWBdOcY=
+			fzeF+VeOtHLbVof516DE0oC0uHdTivsbnzZj738CX/0=
 			</data>
 		</dict>
 		<key>Headers/Autobooks-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U0XphB5WENUZN7DlCkenq18GmAtN0e9WF3fGCOpXJv0=
+			ZgXt+rRvts03UhJ+H8MN4Hpg5i/W1eY89W9STW4tgxc=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+j2OpFV2AZTf2LnucvV3OUHWvWOg+gbn7VXY7jRbpCA=
+			mgEas7T2mwryQ/BPW4/rCXNewWtCA50BLRpXAsgExlg=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+6SjvvDSytDUuSa7iOvxnBQCh+5r1R+hTD95lWBSfC0=
+			Sq7xucMEVSunCSTFn5fanj0CRv3ml47RbD+MmOikhVU=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			In2FYdaAcv1xItnmnqRUbMdQB7zbLpkF/s2pscUqZzI=
+			K5NItePcIAzfp0TyZieIYbJOeDZfN4nk3zwsUHsVpTs=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+6SjvvDSytDUuSa7iOvxnBQCh+5r1R+hTD95lWBSfC0=
+			Sq7xucMEVSunCSTFn5fanj0CRv3ml47RbD+MmOikhVU=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7eGHo4n0yPlLXaUvMQg9LEo22Aq6LknY1FzIiCljXso=
+			PFCqwcui7+0NaazJxihroAkdKKi+0nfCN3ky4x7acV4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -163,28 +163,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dqbho/AUQlzT++1dTcf/+COKV+sE4b563XOamF2ks1g=
+			3ZbGR4/9OPlnHZUIyAJYbJZF71x0diOErv1DRw7UV7E=
 			</data>
 		</dict>
 		<key>Onboarding.storyboardc/165-Y1-QxF-view-9cn-wg-lEt.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NlNSTB2nXHwpPwI3N4gIHy2hLug3kFuzejQCB8CACFc=
+			vEigbfUHdkSUDNA9dIfQtilaug2h7Ed5xD1D6HD9XCE=
 			</data>
 		</dict>
 		<key>Onboarding.storyboardc/55D-eH-j4p-view-7Op-nI-lfG.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1A2Yntjhp2PwaOY9otoviBQHBtfXRui/z5bjv0KeLW4=
+			L+/n1cTMTAGn7tejbm0gzL7P81aKCqvgX8quz+aDJRw=
 			</data>
 		</dict>
 		<key>Onboarding.storyboardc/ATU-mp-C6u-view-i1C-nd-jdq.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qbvlVo5xtZ0iYvUubxmq1B3XTqG54A+nf9wDdqhJJrE=
+			6PNkO9vKURq/G8KJmH7HeKG86cp0ZRBjE53fm/TeCXY=
 			</data>
 		</dict>
 		<key>Onboarding.storyboardc/Fam-qq-a4x-view-XJA-Jw-pWy.nib</key>
@@ -205,7 +205,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sF3qkg7650Mn03ahixTd+5HdMWXiL6ld02fLAkO3sXM=
+			Ln8DOgtU3Km/txMRmz+SsdkSJ3W9N6rHxkNoUuwNfz0=
 			</data>
 		</dict>
 		<key>Onboarding.storyboardc/OnboardingCardPayEducationViewController.nib</key>
@@ -261,7 +261,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7g6LhqIGnxcjn/JVEoWiul6jSZoDnOxGvjeEu0BU4lY=
+			CzhbrhIdEo5c9q7pukI4hVRD5oUDBO5JXnwVe3fcH7A=
 			</data>
 		</dict>
 	</dict>
