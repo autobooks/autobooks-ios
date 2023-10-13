@@ -7,7 +7,6 @@ import Combine
 import CryptoKit
 import DeveloperToolsSupport
 import Foundation
-import OSLog
 import ProximityReader
 import Swift
 import SwiftUI
