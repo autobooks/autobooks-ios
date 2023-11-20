@@ -6,51 +6,51 @@
 	<dict>
 		<key>Headers/Sovran-Swift.h</key>
 		<data>
-		sJMF4EPUyL1DNptWF1wIuPeFkTc=
+		9MKYdDm0hj8Cb8gcGi5Am6yVBTA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Wx/ikHWPD6zdCriK3uwT8kbNIQ8=
+		xUMSvvNc73INSnYJRnxYz37GiYs=
 		</data>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		Bbhz+Caq7NNw2T0RTYYtS3nS9ME=
+		Zc8ZPVYwIOD9d00AzJyMYFJ2lBk=
 		</data>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		tU/e3WYbh1r23Hq5V8fe3DuDBl0=
+		PEnSCwZ5sNXwO3R1e8O38+UVufM=
 		</data>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		Ru782TNSd7NSoabYO9G1AAqFqNg=
+		K2di7ORhlplSH1RT7ySp4tKZ8PI=
 		</data>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		tU/e3WYbh1r23Hq5V8fe3DuDBl0=
+		PEnSCwZ5sNXwO3R1e8O38+UVufM=
 		</data>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		y4/TsFyIQHrjIjNr0dW6+Q8NbDQ=
+		0JPzniOyeMkJdYindghnfOnWreQ=
 		</data>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		Bbhz+Caq7NNw2T0RTYYtS3nS9ME=
+		Zc8ZPVYwIOD9d00AzJyMYFJ2lBk=
 		</data>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		SlWdOwDhUdk8/QhT8fwaulGmd7w=
+		NoXe1s5ICv/QRog/yZVv0cDU04o=
 		</data>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		EQSHNrFrrNNH9kS1nVjjAOaCYYo=
+		sIB/TOoTrJS2K6SUBcDvfnC7A0Q=
 		</data>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		SlWdOwDhUdk8/QhT8fwaulGmd7w=
+		NoXe1s5ICv/QRog/yZVv0cDU04o=
 		</data>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		noqBcSyRNiDc2T7SLM/uRASy9hk=
+		IKTyd7VFA8K3USuShvoVLh6ruas=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -59,77 +59,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OMNpSQf6sVAUwnMliveQaBR2atWkd2uvUQCCwAsMxcc=
+			WuuGS1Ewx16U/RDPw3Y/2GzZ95WDhMZfPhtmoeOKYK0=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GS8Hvb1q5QkUR8rTcjrP0AN6XrDfF4aC5gXEfGMPXg8=
+			pEr5Ekk4dm9rTHXRmwYdoVF6xOzEwkTnqqHQXU1cmmo=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4HFtaUrXzpRKkDiF2GwNPz1y/J9aoA0jSaYq+fBaBzs=
+			w0dg+I43ONjQYkJ0+yKuuJm2ThUFjmUJCT86U8FySu4=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mySa1IghuTSJ9uVrclkVPnp4oeNvrK59dwO3Hc+dm0s=
+			otC6AUIN2nuwnQJcJ9fkjJfRoQdupKah8URKP+8x8mQ=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4HFtaUrXzpRKkDiF2GwNPz1y/J9aoA0jSaYq+fBaBzs=
+			w0dg+I43ONjQYkJ0+yKuuJm2ThUFjmUJCT86U8FySu4=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			syEUkF/dM44WDT4nKuebI93HYj4KZw3j7iDWMZudbRw=
+			95xgLGGYAhKqr9RVY1BLP/J6e9ZE8WJIrCuo6p8sFR8=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GS8Hvb1q5QkUR8rTcjrP0AN6XrDfF4aC5gXEfGMPXg8=
+			pEr5Ekk4dm9rTHXRmwYdoVF6xOzEwkTnqqHQXU1cmmo=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Rh0D0WgwGzGMgwmtr9/ZL0LEUukeIfATp91wrNht/ag=
+			NqQCYHVfhJpOQM4dpRPWh/UCox3NAw5AnhxmOY3jP+A=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z2dOWZcFdVY10HXNkgqaUBKBWzm2B4R10GQ2tsXurHs=
+			vIS44NcJ1sKplQA5PFob0/EIde2+TfocN8/LJH+pZDk=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Rh0D0WgwGzGMgwmtr9/ZL0LEUukeIfATp91wrNht/ag=
+			NqQCYHVfhJpOQM4dpRPWh/UCox3NAw5AnhxmOY3jP+A=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			doDu6fn8XVAL9dvluqsR5QvqkkuOTajUf+ZKb/atZQg=
+			ubMBci8+7+tNSeVh+vw/kfIDu9KB+/JjqikojUhfQxQ=
 			</data>
 		</dict>
 	</dict>

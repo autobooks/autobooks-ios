@@ -6,51 +6,51 @@
 	<dict>
 		<key>Headers/Sovran-Swift.h</key>
 		<data>
-		sJMF4EPUyL1DNptWF1wIuPeFkTc=
+		9MKYdDm0hj8Cb8gcGi5Am6yVBTA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jbwYRIwFHcJRcKPbhXx6XFUdl40=
+		8/sut8d6wrWaLQz1z3RjHIqFCSo=
 		</data>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<data>
-		Bbhz+Caq7NNw2T0RTYYtS3nS9ME=
+		Zc8ZPVYwIOD9d00AzJyMYFJ2lBk=
 		</data>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		bhugwEfA9cN9yYYbinp2bpeRnEQ=
+		FC3ierECLXB0MGRJf6LV4j82UDo=
 		</data>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
 		<data>
-		np4MxgZWjG2iC30qHHlsTwkALBo=
+		gCKe7wuZXLAlR58lPIrn5rX141k=
 		</data>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		bhugwEfA9cN9yYYbinp2bpeRnEQ=
+		FC3ierECLXB0MGRJf6LV4j82UDo=
 		</data>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		A9R7P7Hd/bhhHi7WnkdfzYjb4YM=
+		qTp7AjFNKNXCIx3ZDjflb7Y3qt4=
 		</data>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<data>
-		Bbhz+Caq7NNw2T0RTYYtS3nS9ME=
+		Zc8ZPVYwIOD9d00AzJyMYFJ2lBk=
 		</data>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		USSIxhKPNhEZTkW3G2j8z+ETTHM=
+		AHORUwUZ2/BfAr5oZErhdNF8p74=
 		</data>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
 		<data>
-		c2iWxZ5a0OoQFPEYphll+jRFdck=
+		REN1NJEdigTY28BlcMZeySjw/x4=
 		</data>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		USSIxhKPNhEZTkW3G2j8z+ETTHM=
+		AHORUwUZ2/BfAr5oZErhdNF8p74=
 		</data>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		xNck35df+0aPohxwiQMR5O/7peo=
+		ZT5uKa6USiuuP3uOmOAdopQBgkg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -59,77 +59,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OMNpSQf6sVAUwnMliveQaBR2atWkd2uvUQCCwAsMxcc=
+			WuuGS1Ewx16U/RDPw3Y/2GzZ95WDhMZfPhtmoeOKYK0=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GS8Hvb1q5QkUR8rTcjrP0AN6XrDfF4aC5gXEfGMPXg8=
+			pEr5Ekk4dm9rTHXRmwYdoVF6xOzEwkTnqqHQXU1cmmo=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pKRF/McdHw7hfZtNp0ioNaS17+FrB1lugrZXVU3NSQA=
+			xaHJuMJOBeitAyn4j/h8LIsPTcE8Glg4r0Np2Velv2c=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g7IlMsWDaP7ZSsj+xU0Ef2RVKx6NIIapGDZjA4YzNwM=
+			bl+LFUPHR1q5kY8hikANRO+W5oiobHzIVhSaiEr7dpU=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-watchos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pKRF/McdHw7hfZtNp0ioNaS17+FrB1lugrZXVU3NSQA=
+			xaHJuMJOBeitAyn4j/h8LIsPTcE8Glg4r0Np2Velv2c=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			27BGsvtPYhOuFI7v0TiR9qcgB3jbxGfOA1AaFEYm9Uk=
+			D6yifZuuCuVOOeZWwDf/z6wJeniHl2PVL0R+GjKhlrA=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GS8Hvb1q5QkUR8rTcjrP0AN6XrDfF4aC5gXEfGMPXg8=
+			pEr5Ekk4dm9rTHXRmwYdoVF6xOzEwkTnqqHQXU1cmmo=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8Yc/t1CeHL+xlIH4iAPIm/Mn9opA0dRmEWXe5bauQCg=
+			/7CHVgij/H0BWXeKa08hftRp+9dir8DZIx1sIZK/BAU=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FEuu81hB5J46eilFvUKprQ+w4r8fCoV8860LJE9gd1o=
+			1BBK8aLxQVgjiuIY0u3LbCTNhQ4KimNjJtHMwxOnJZ8=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8Yc/t1CeHL+xlIH4iAPIm/Mn9opA0dRmEWXe5bauQCg=
+			/7CHVgij/H0BWXeKa08hftRp+9dir8DZIx1sIZK/BAU=
 			</data>
 		</dict>
 		<key>Modules/Sovran.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P4zEFuKM4OiVqxFWf1n0eYS5z+vXEeiyNP5RpzzNHgs=
+			WU+vh4IB0BDvIszZu81Ddpr8INXVBvBdvD3CI5xuw+o=
 			</data>
 		</dict>
 	</dict>

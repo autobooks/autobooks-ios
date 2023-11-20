@@ -20419,17 +20419,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Segment.Analytics?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Analytics",
-                    "printedName": "Segment.Analytics",
-                    "usr": "s:7Segment9AnalyticsC"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "WeakStorage",
+                "printedName": "Segment.Analytics?"
               }
             ],
             "declKind": "Var",
@@ -20440,8 +20431,10 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
+              "ReferenceOwnership",
               "AccessControl"
             ],
+            "ownership": 1,
             "hasStorage": true,
             "accessors": [
               {
@@ -28660,6 +28653,226 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "metrics",
+            "printedName": "metrics",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Segment.JSON?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSON",
+                    "printedName": "Segment.JSON",
+                    "usr": "s:7Segment4JSONO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Segment8SettingsV7metricsAA4JSONOSgvp",
+            "mangledName": "$s7Segment8SettingsV7metricsAA4JSONOSgvp",
+            "moduleName": "Segment",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Segment.JSON?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "Segment.JSON",
+                        "usr": "s:7Segment4JSONO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Segment8SettingsV7metricsAA4JSONOSgvg",
+                "mangledName": "$s7Segment8SettingsV7metricsAA4JSONOSgvg",
+                "moduleName": "Segment",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Segment.JSON?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "Segment.JSON",
+                        "usr": "s:7Segment4JSONO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Segment8SettingsV7metricsAA4JSONOSgvs",
+                "mangledName": "$s7Segment8SettingsV7metricsAA4JSONOSgvs",
+                "moduleName": "Segment",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Segment8SettingsV7metricsAA4JSONOSgvM",
+                "mangledName": "$s7Segment8SettingsV7metricsAA4JSONOSgvM",
+                "moduleName": "Segment",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "consentSettings",
+            "printedName": "consentSettings",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Segment.JSON?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "JSON",
+                    "printedName": "Segment.JSON",
+                    "usr": "s:7Segment4JSONO"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:7Segment8SettingsV07consentB0AA4JSONOSgvp",
+            "mangledName": "$s7Segment8SettingsV07consentB0AA4JSONOSgvp",
+            "moduleName": "Segment",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Segment.JSON?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "Segment.JSON",
+                        "usr": "s:7Segment4JSONO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Segment8SettingsV07consentB0AA4JSONOSgvg",
+                "mangledName": "$s7Segment8SettingsV07consentB0AA4JSONOSgvg",
+                "moduleName": "Segment",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Segment.JSON?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "JSON",
+                        "printedName": "Segment.JSON",
+                        "usr": "s:7Segment4JSONO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Segment8SettingsV07consentB0AA4JSONOSgvs",
+                "mangledName": "$s7Segment8SettingsV07consentB0AA4JSONOSgvs",
+                "moduleName": "Segment",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:7Segment8SettingsV07consentB0AA4JSONOSgvM",
+                "mangledName": "$s7Segment8SettingsV07consentB0AA4JSONOSgvM",
+                "moduleName": "Segment",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(writeKey:apiHost:)",
@@ -28990,6 +29203,82 @@
                 "mangledName": "$s7Segment8SettingsV10CodingKeysO010middlewareB0yA2EmF",
                 "moduleName": "Segment",
                 "fixedbinaryorder": 3
+              },
+              {
+                "kind": "Var",
+                "name": "metrics",
+                "printedName": "metrics",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Segment.Settings.CodingKeys.Type) -> Segment.Settings.CodingKeys",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "Segment.Settings.CodingKeys",
+                        "usr": "s:7Segment8SettingsV10CodingKeysO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Segment.Settings.CodingKeys.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "Segment.Settings.CodingKeys",
+                            "usr": "s:7Segment8SettingsV10CodingKeysO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7Segment8SettingsV10CodingKeysO7metricsyA2EmF",
+                "mangledName": "$s7Segment8SettingsV10CodingKeysO7metricsyA2EmF",
+                "moduleName": "Segment",
+                "fixedbinaryorder": 4
+              },
+              {
+                "kind": "Var",
+                "name": "consentSettings",
+                "printedName": "consentSettings",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Segment.Settings.CodingKeys.Type) -> Segment.Settings.CodingKeys",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "Segment.Settings.CodingKeys",
+                        "usr": "s:7Segment8SettingsV10CodingKeysO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Segment.Settings.CodingKeys.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "Segment.Settings.CodingKeys",
+                            "usr": "s:7Segment8SettingsV10CodingKeysO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:7Segment8SettingsV10CodingKeysO07consentB0yA2EmF",
+                "mangledName": "$s7Segment8SettingsV10CodingKeysO07consentB0yA2EmF",
+                "moduleName": "Segment",
+                "fixedbinaryorder": 5
               },
               {
                 "kind": "Constructor",
@@ -46212,6 +46501,9 @@
             "usr": "s:7Segment21CountBasedFlushPolicyCACycfc",
             "mangledName": "$s7Segment21CountBasedFlushPolicyCACycfc",
             "moduleName": "Segment",
+            "declAttributes": [
+              "AccessControl"
+            ],
             "init_kind": "Designated"
           },
           {
@@ -46236,6 +46528,9 @@
             "usr": "s:7Segment21CountBasedFlushPolicyC5countACSi_tcfc",
             "mangledName": "$s7Segment21CountBasedFlushPolicyC5countACSi_tcfc",
             "moduleName": "Segment",
+            "declAttributes": [
+              "AccessControl"
+            ],
             "init_kind": "Designated"
           },
           {
@@ -46344,7 +46639,6 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -46966,6 +47260,9 @@
             "usr": "s:7Segment24IntervalBasedFlushPolicyCACycfc",
             "mangledName": "$s7Segment24IntervalBasedFlushPolicyCACycfc",
             "moduleName": "Segment",
+            "declAttributes": [
+              "AccessControl"
+            ],
             "init_kind": "Designated"
           },
           {
@@ -46990,6 +47287,9 @@
             "usr": "s:7Segment24IntervalBasedFlushPolicyC8intervalACSd_tcfc",
             "mangledName": "$s7Segment24IntervalBasedFlushPolicyC8intervalACSd_tcfc",
             "moduleName": "Segment",
+            "declAttributes": [
+              "AccessControl"
+            ],
             "init_kind": "Designated"
           },
           {
@@ -47186,7 +47486,6 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -49620,33 +49919,19 @@
         "usr": "s:10Foundation4DataV",
         "mangledName": "$s10Foundation4DataV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
         "declAttributes": [
-          "Frozen"
+          "Frozen",
+          "Available",
+          "Available",
+          "Available",
+          "Available"
         ],
         "isExternal": true,
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "ReferenceConvertible",
-            "printedName": "ReferenceConvertible",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ReferenceType",
-                "printedName": "ReferenceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSData",
-                    "printedName": "Foundation.NSData",
-                    "usr": "c:objc(cs)NSData"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation20ReferenceConvertibleP",
-            "mangledName": "$s10Foundation20ReferenceConvertibleP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -50039,24 +50324,25 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomReflectable",
-            "printedName": "CustomReflectable",
-            "usr": "s:s17CustomReflectableP",
-            "mangledName": "$ss17CustomReflectableP"
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSData",
+                    "printedName": "Foundation.NSData",
+                    "usr": "c:objc(cs)NSData"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -50082,6 +50368,27 @@
           },
           {
             "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -50093,6 +50400,41 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Transferable",
+            "printedName": "Transferable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Representation",
+                "printedName": "Representation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some CoreTransferable.TransferRepresentation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransferRepresentation",
+                        "printedName": "CoreTransferable.TransferRepresentation",
+                        "usr": "s:16CoreTransferable22TransferRepresentationP"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Sendable",
+                        "printedName": "Swift.Sendable",
+                        "usr": "s:s8SendableP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16CoreTransferable0B0P",
+            "mangledName": "$s16CoreTransferable0B0P"
           }
         ]
       },
@@ -51669,6 +52011,41 @@
             "printedName": "CVarArg",
             "usr": "s:s7CVarArgP",
             "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Transferable",
+            "printedName": "Transferable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Representation",
+                "printedName": "Representation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some CoreTransferable.TransferRepresentation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransferRepresentation",
+                        "printedName": "CoreTransferable.TransferRepresentation",
+                        "usr": "s:16CoreTransferable22TransferRepresentationP"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Sendable",
+                        "printedName": "Swift.Sendable",
+                        "usr": "s:s8SendableP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:16CoreTransferable0B0P",
+            "mangledName": "$s16CoreTransferable0B0P"
           }
         ]
       },
@@ -52431,36 +52808,31 @@
         "usr": "s:10Foundation4DateV",
         "mangledName": "$s10Foundation4DateV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "ReferenceConvertible",
-            "printedName": "ReferenceConvertible",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ReferenceType",
-                "printedName": "ReferenceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSDate",
-                    "printedName": "Foundation.NSDate",
-                    "usr": "c:objc(cs)NSDate"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation20ReferenceConvertibleP",
-            "mangledName": "$s10Foundation20ReferenceConvertibleP"
-          },
           {
             "kind": "Conformance",
             "name": "Comparable",
             "printedName": "Comparable",
             "usr": "s:SL",
             "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -52475,35 +52847,6 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Strideable",
-            "printedName": "Strideable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Stride",
-                "printedName": "Stride",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:Sx",
-            "mangledName": "$sSx"
           },
           {
             "kind": "Conformance",
@@ -52525,6 +52868,42 @@
             "printedName": "CustomReflectable",
             "usr": "s:s17CustomReflectableP",
             "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDate",
+                    "printedName": "Foundation.NSDate",
+                    "usr": "c:objc(cs)NSDate"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -52557,17 +52936,25 @@
           },
           {
             "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
+            "name": "Strideable",
+            "printedName": "Strideable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Stride",
+                "printedName": "Stride",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sx",
+            "mangledName": "$sSx"
           }
         ]
       }
@@ -52576,3042 +52963,3049 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "BooleanLiteral",
       "offset": 599,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "StringLiteral",
       "offset": 688,
       "length": 14,
       "value": "\"DEADINSTANCE\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "BooleanLiteral",
       "offset": 1345,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "BooleanLiteral",
       "offset": 2463,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "BooleanLiteral",
       "offset": 2818,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "BooleanLiteral",
       "offset": 3196,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "BooleanLiteral",
       "offset": 4050,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "StringLiteral",
       "offset": 4398,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "BooleanLiteral",
       "offset": 6526,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "IntegerLiteral",
       "offset": 8695,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "BooleanLiteral",
       "offset": 8722,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "IntegerLiteral",
       "offset": 8781,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "BooleanLiteral",
       "offset": 8808,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "IntegerLiteral",
       "offset": 8931,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "BooleanLiteral",
       "offset": 8958,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "BooleanLiteral",
       "offset": 9015,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "BooleanLiteral",
       "offset": 10042,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "Dictionary",
       "offset": 11543,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "StringLiteral",
       "offset": 12020,
       "length": 5,
       "value": "\"url\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "StringLiteral",
       "offset": 12081,
       "length": 5,
       "value": "\"url\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Analytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Analytics.swift",
       "kind": "StringLiteral",
       "offset": 12193,
       "length": 18,
       "value": "\"Deep Link Opened\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Configuration.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Configuration.swift",
       "kind": "BooleanLiteral",
       "offset": 374,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Configuration.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Configuration.swift",
       "kind": "IntegerLiteral",
       "offset": 406,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Configuration.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Configuration.swift",
       "kind": "IntegerLiteral",
       "offset": 451,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Configuration.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Configuration.swift",
       "kind": "BooleanLiteral",
       "offset": 545,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Configuration.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Configuration.swift",
       "kind": "StringLiteral",
       "offset": 1320,
       "length": 12,
       "value": "\"Segment.io\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Configuration.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Configuration.swift",
       "kind": "BooleanLiteral",
       "offset": 1334,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Errors.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Errors.swift",
       "kind": "BooleanLiteral",
       "offset": 2025,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Errors.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Errors.swift",
       "kind": "StringLiteral",
       "offset": 2186,
       "length": 48,
       "value": "\"An internal error occurred: \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Errors.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Errors.swift",
       "kind": "StringLiteral",
       "offset": 2233,
       "length": 16,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Errors.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Errors.swift",
       "kind": "StringLiteral",
       "offset": 2298,
       "length": 47,
       "value": "\"A critical error occurred: \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Errors.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Errors.swift",
       "kind": "StringLiteral",
       "offset": 2344,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Errors.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Errors.swift",
       "kind": "BooleanLiteral",
       "offset": 2441,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Errors.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Errors.swift",
       "kind": "StringLiteral",
       "offset": 2692,
       "length": 48,
       "value": "\"An internal error occurred: \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Errors.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Errors.swift",
       "kind": "StringLiteral",
       "offset": 2739,
       "length": 16,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Errors.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Errors.swift",
       "kind": "StringLiteral",
       "offset": 2804,
       "length": 47,
       "value": "\"A critical error occurred: \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Errors.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Errors.swift",
       "kind": "StringLiteral",
       "offset": 2850,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Events.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Events.swift",
       "kind": "BooleanLiteral",
       "offset": 899,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Events.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Events.swift",
       "kind": "BooleanLiteral",
       "offset": 2436,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Events.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Events.swift",
       "kind": "BooleanLiteral",
       "offset": 3026,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Events.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Events.swift",
       "kind": "BooleanLiteral",
       "offset": 4250,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Events.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Events.swift",
       "kind": "BooleanLiteral",
       "offset": 4927,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Events.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Events.swift",
       "kind": "BooleanLiteral",
       "offset": 6314,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Events.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Events.swift",
       "kind": "BooleanLiteral",
       "offset": 7957,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Events.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Events.swift",
       "kind": "BooleanLiteral",
       "offset": 8914,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Events.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Events.swift",
       "kind": "BooleanLiteral",
       "offset": 9640,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCAnalytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCAnalytics.swift",
       "kind": "StringLiteral",
       "offset": 177,
       "length": 13,
       "value": "\"Segment.ObjCAnalytics\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCAnalytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCAnalytics.swift",
       "kind": "StringLiteral",
       "offset": 6283,
       "length": 57,
       "value": "\"Failed to convert Settings to ObjC dictionary: \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCAnalytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCAnalytics.swift",
       "kind": "StringLiteral",
       "offset": 6339,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCAnalytics.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCAnalytics.swift",
       "kind": "Dictionary",
       "offset": 6470,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCConfiguration.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 2732,
       "length": 57,
       "value": "\"Failed to convert Settings to ObjC dictionary: \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCConfiguration.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 2788,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCConfiguration.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 3213,
       "length": 64,
       "value": "\"Failed to convert defaultSettings to Settings object: \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCConfiguration.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 3276,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCConfiguration.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 156,
       "length": 17,
       "value": "\"Segment.ObjCConfiguration\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCEvents.swift",
       "kind": "StringLiteral",
       "offset": 255,
       "length": 23,
       "value": "\"Segment.ObjCDestinationMetadata\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCEvents.swift",
       "kind": "StringLiteral",
       "offset": 2233,
       "length": 14,
       "value": "\"Segment.ObjCTrackEvent\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCEvents.swift",
       "kind": "StringLiteral",
       "offset": 3951,
       "length": 17,
       "value": "\"Segment.ObjCIdentifyEvent\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCEvents.swift",
       "kind": "StringLiteral",
       "offset": 5529,
       "length": 15,
       "value": "\"Segment.ObjCScreenEvent\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCEvents.swift",
       "kind": "StringLiteral",
       "offset": 7412,
       "length": 14,
       "value": "\"Segment.ObjCGroupEvent\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCEvents.swift",
       "kind": "StringLiteral",
       "offset": 9114,
       "length": 14,
       "value": "\"Segment.ObjCAliasEvent\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCPlugin.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/ObjC\/ObjCPlugin.swift",
       "kind": "StringLiteral",
       "offset": 1192,
       "length": 15,
       "value": "\"Segment.ObjCBlockPlugin\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins.swift",
       "kind": "IntegerLiteral",
       "offset": 358,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins.swift",
       "kind": "IntegerLiteral",
       "offset": 440,
       "length": 11,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins.swift",
       "kind": "IntegerLiteral",
       "offset": 573,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins.swift",
       "kind": "IntegerLiteral",
       "offset": 649,
       "length": 7,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins.swift",
       "kind": "IntegerLiteral",
       "offset": 358,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins.swift",
       "kind": "IntegerLiteral",
       "offset": 440,
       "length": 11,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins.swift",
       "kind": "IntegerLiteral",
       "offset": 573,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins.swift",
       "kind": "IntegerLiteral",
       "offset": 649,
       "length": 7,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins.swift",
       "kind": "IntegerLiteral",
       "offset": 358,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins.swift",
       "kind": "IntegerLiteral",
       "offset": 440,
       "length": 11,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins.swift",
       "kind": "IntegerLiteral",
       "offset": 573,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins.swift",
       "kind": "IntegerLiteral",
       "offset": 649,
       "length": 7,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
       "offset": 856,
       "length": 12,
       "value": "\"instanceId\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
       "offset": 1016,
       "length": 10,
       "value": "\"referrer\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
       "offset": 1031,
       "length": 5,
       "value": "\"url\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
       "offset": 1696,
       "length": 9,
       "value": "\"library\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
       "offset": 1762,
       "length": 9,
       "value": "\"version\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "IntegerLiteral",
       "offset": 2200,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
       "offset": 2230,
       "length": 5,
       "value": "\"app\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
       "offset": 2257,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
       "offset": 2269,
       "length": 21,
       "value": "\"CFBundleDisplayName\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 2295,
+      "offset": 2299,
+      "length": 14,
+      "value": "\"CFBundleName\""
+    },
+    {
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "kind": "StringLiteral",
+      "offset": 2318,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 2315,
+      "offset": 2339,
       "length": 9,
       "value": "\"version\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 2330,
+      "offset": 2354,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 2363,
+      "offset": 2387,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 2383,
+      "offset": 2407,
       "length": 7,
       "value": "\"build\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 2396,
+      "offset": 2420,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 2418,
+      "offset": 2442,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 2438,
+      "offset": 2462,
       "length": 11,
       "value": "\"namespace\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 2483,
+      "offset": 2507,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 2846,
+      "offset": 2870,
       "length": 8,
       "value": "\"device\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 2872,
+      "offset": 2896,
       "length": 14,
       "value": "\"manufacturer\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 2921,
+      "offset": 2945,
       "length": 6,
       "value": "\"type\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 2954,
+      "offset": 2978,
       "length": 7,
       "value": "\"model\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 2989,
+      "offset": 3013,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 3022,
+      "offset": 3046,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 3058,
+      "offset": 3082,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 3101,
+      "offset": 3125,
       "length": 4,
       "value": "\"os\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 3123,
+      "offset": 3147,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 3162,
+      "offset": 3186,
       "length": 9,
       "value": "\"version\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 3277,
+      "offset": 3301,
       "length": 8,
       "value": "\"screen\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 3303,
+      "offset": 3327,
       "length": 7,
       "value": "\"width\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 3338,
+      "offset": 3362,
       "length": 8,
       "value": "\"height\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "IntegerLiteral",
-      "offset": 3435,
+      "offset": 3459,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 3459,
+      "offset": 3483,
       "length": 8,
       "value": "\"locale\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "IntegerLiteral",
-      "offset": 3497,
+      "offset": 3521,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 3546,
+      "offset": 3570,
       "length": 10,
       "value": "\"timezone\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "BooleanLiteral",
-      "offset": 3810,
+      "offset": 3834,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "BooleanLiteral",
-      "offset": 3835,
+      "offset": 3859,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "BooleanLiteral",
-      "offset": 3865,
+      "offset": 3889,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "BooleanLiteral",
-      "offset": 3960,
+      "offset": 3984,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "BooleanLiteral",
-      "offset": 4013,
+      "offset": 4037,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "BooleanLiteral",
-      "offset": 4076,
+      "offset": 4100,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 4183,
+      "offset": 4207,
       "length": 9,
       "value": "\"network\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 4210,
+      "offset": 4234,
       "length": 11,
       "value": "\"bluetooth\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 4301,
+      "offset": 4325,
       "length": 10,
       "value": "\"cellular\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 4335,
+      "offset": 4359,
       "length": 6,
       "value": "\"wifi\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Context.swift",
       "kind": "StringLiteral",
-      "offset": 4708,
+      "offset": 4732,
       "length": 11,
       "value": "\"userAgent\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/DestinationMetadataPlugin.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/DestinationMetadataPlugin.swift",
       "kind": "Array",
       "offset": 1065,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/DestinationMetadataPlugin.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/DestinationMetadataPlugin.swift",
       "kind": "Array",
       "offset": 1676,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/DestinationMetadataPlugin.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/DestinationMetadataPlugin.swift",
       "kind": "Dictionary",
       "offset": 1766,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/DestinationMetadataPlugin.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/DestinationMetadataPlugin.swift",
       "kind": "StringLiteral",
       "offset": 1854,
       "length": 12,
       "value": "\"Segment.io\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/DestinationMetadataPlugin.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/DestinationMetadataPlugin.swift",
       "kind": "StringLiteral",
       "offset": 2049,
       "length": 12,
       "value": "\"Segment.io\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/DestinationMetadataPlugin.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/DestinationMetadataPlugin.swift",
       "kind": "StringLiteral",
       "offset": 2112,
       "length": 23,
       "value": "\"unbundledIntegrations\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/DestinationMetadataPlugin.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/DestinationMetadataPlugin.swift",
       "kind": "Array",
       "offset": 2153,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/DestinationMetadataPlugin.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/DestinationMetadataPlugin.swift",
       "kind": "Array",
       "offset": 2451,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/DeviceToken.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/DeviceToken.swift",
       "kind": "StringLiteral",
       "offset": 537,
       "length": 14,
       "value": "\"device.token\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/DeviceToken.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/DeviceToken.swift",
       "kind": "StringLiteral",
       "offset": 1198,
       "length": 10,
       "value": "\"%02.2hhx\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 222,
       "length": 15,
       "value": "\"SEGVersionKey\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 264,
       "length": 15,
       "value": "\"SEGBuildKeyV2\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "BooleanLiteral",
       "offset": 664,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "BooleanLiteral",
       "offset": 924,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "BooleanLiteral",
       "offset": 1016,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 1284,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 1380,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 1488,
       "length": 23,
       "value": "\"Application Installed\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 1543,
       "length": 9,
       "value": "\"version\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 1572,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 1592,
       "length": 7,
       "value": "\"build\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 1617,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 1720,
       "length": 21,
       "value": "\"Application Updated\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 1773,
       "length": 18,
       "value": "\"previous_version\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 1812,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 1832,
       "length": 16,
       "value": "\"previous_build\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 1867,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 1887,
       "length": 9,
       "value": "\"version\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 1916,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 1936,
       "length": 7,
       "value": "\"build\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 1961,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 2029,
       "length": 20,
       "value": "\"Application Opened\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 2077,
       "length": 17,
       "value": "\"from_background\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "BooleanLiteral",
       "offset": 2096,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 2115,
       "length": 9,
       "value": "\"version\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 2144,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 2160,
       "length": 7,
       "value": "\"build\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 2185,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "BooleanLiteral",
       "offset": 2487,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 2590,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 2686,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 2756,
       "length": 22,
       "value": "\"Application Unhidden\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 2806,
       "length": 17,
       "value": "\"from_background\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "BooleanLiteral",
       "offset": 2825,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 2843,
       "length": 9,
       "value": "\"version\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 2872,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 2888,
       "length": 7,
       "value": "\"build\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 2913,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "BooleanLiteral",
       "offset": 3048,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 3125,
       "length": 20,
       "value": "\"Application Hidden\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "BooleanLiteral",
       "offset": 3271,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 3348,
       "length": 26,
       "value": "\"Application Backgrounded\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "BooleanLiteral",
       "offset": 3505,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 3582,
       "length": 26,
       "value": "\"Application Foregrounded\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "BooleanLiteral",
       "offset": 3763,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "BooleanLiteral",
       "offset": 4026,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleEvents.swift",
       "kind": "StringLiteral",
       "offset": 4103,
       "length": 24,
       "value": "\"Application Terminated\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleMonitor.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Mac\/macOSLifecycleMonitor.swift",
       "kind": "StringLiteral",
       "offset": 1432,
       "length": 31,
       "value": "\"Segment_macOSLifecycleMonitor\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "StringLiteral",
       "offset": 5013,
       "length": 7,
       "value": "\"Apple\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "StringLiteral",
       "offset": 5079,
       "length": 7,
       "value": "\"macos\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "StringLiteral",
       "offset": 5425,
       "length": 5,
       "value": "\"en0\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "StringLiteral",
       "offset": 5496,
       "length": 7,
       "value": "\"macOS\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "StringLiteral",
       "offset": 5586,
       "length": 13,
       "value": "\"%ld.%ld.%ld\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 5920,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 5931,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "StringLiteral",
       "offset": 6435,
       "length": 11,
       "value": "\"userAgent\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "StringLiteral",
       "offset": 6969,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 7061,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 7289,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "StringLiteral",
       "offset": 7315,
       "length": 3,
       "value": "\":\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 7350,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 7455,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 7582,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 7659,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 7681,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 7686,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 7855,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 7880,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 7973,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 7999,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 8004,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 8165,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "StringLiteral",
       "offset": 8450,
       "length": 6,
       "value": "\"%02x\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 9707,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/AppleUtils.swift",
       "kind": "Array",
       "offset": 9903,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
       "kind": "StringLiteral",
       "offset": 445,
       "length": 9,
       "value": "\"unknown\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
       "kind": "StringLiteral",
       "offset": 504,
       "length": 9,
       "value": "\"unknown\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
       "kind": "StringLiteral",
       "offset": 564,
       "length": 9,
       "value": "\"unknown\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
       "kind": "StringLiteral",
       "offset": 623,
       "length": 9,
       "value": "\"unknown\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
       "kind": "StringLiteral",
       "offset": 757,
       "length": 9,
       "value": "\"unknown\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
       "kind": "StringLiteral",
       "offset": 825,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
       "kind": "IntegerLiteral",
       "offset": 905,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
       "kind": "IntegerLiteral",
       "offset": 916,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
       "kind": "StringLiteral",
       "offset": 974,
       "length": 9,
       "value": "\"unknown\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/Platforms\/Vendors\/VendorSystem.swift",
       "kind": "Array",
       "offset": 1144,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
       "offset": 522,
       "length": 12,
       "value": "\"Segment.io\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
       "offset": 558,
       "length": 9,
       "value": "\"apiHost\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
       "offset": 590,
       "length": 8,
       "value": "\"apiKey\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
       "offset": 522,
       "length": 12,
       "value": "\"Segment.io\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
       "offset": 558,
       "length": 9,
       "value": "\"apiHost\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
       "offset": 590,
       "length": 8,
       "value": "\"apiKey\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
       "offset": 1260,
       "length": 26,
       "value": "\"uploadsQueue.segment.com\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 1370,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "BooleanLiteral",
       "offset": 3004,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 3942,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "BooleanLiteral",
       "offset": 4255,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 4427,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
       "offset": 4494,
       "length": 40,
       "value": "\"Uploads in-progress: \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
       "offset": 4533,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 4574,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
       "offset": 4647,
       "length": 45,
       "value": "\"Processing Batch:\n\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
       "offset": 4691,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
       "offset": 5184,
       "length": 37,
       "value": "\"Processed: \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
       "offset": 5220,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
       "offset": 5788,
       "length": 43,
       "value": "\"Skipping processing; Uploads in progress.\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
       "offset": 6672,
       "length": 51,
       "value": "\"Cleaned up \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "StringLiteral",
       "offset": 6701,
       "length": 3,
       "value": "\" non-running uploads.\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/SegmentDestination.swift",
       "kind": "IntegerLiteral",
       "offset": 6812,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/StartupQueue.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/StartupQueue.swift",
       "kind": "IntegerLiteral",
       "offset": 191,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/StartupQueue.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/StartupQueue.swift",
       "kind": "BooleanLiteral",
       "offset": 236,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/StartupQueue.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/StartupQueue.swift",
       "kind": "StringLiteral",
       "offset": 565,
       "length": 26,
       "value": "\"startupQueue.segment.com\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Plugins\/StartupQueue.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Plugins\/StartupQueue.swift",
       "kind": "BooleanLiteral",
       "offset": 741,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Settings.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Settings.swift",
       "kind": "BooleanLiteral",
-      "offset": 3451,
+      "offset": 3759,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Settings.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Settings.swift",
       "kind": "BooleanLiteral",
-      "offset": 5561,
+      "offset": 5869,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Settings.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Settings.swift",
       "kind": "BooleanLiteral",
-      "offset": 6221,
+      "offset": 6529,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Startup.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Startup.swift",
       "kind": "IntegerLiteral",
       "offset": 3299,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/State.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/State.swift",
       "kind": "BooleanLiteral",
       "offset": 2053,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/State.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/State.swift",
       "kind": "BooleanLiteral",
       "offset": 4690,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/State.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/State.swift",
       "kind": "BooleanLiteral",
       "offset": 4706,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Timeline.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Timeline.swift",
       "kind": "BooleanLiteral",
       "offset": 4410,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Timeline.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Timeline.swift",
       "kind": "BooleanLiteral",
       "offset": 6615,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Timeline.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Timeline.swift",
       "kind": "BooleanLiteral",
       "offset": 6723,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Timeline.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Timeline.swift",
       "kind": "BooleanLiteral",
       "offset": 6762,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Timeline.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Timeline.swift",
       "kind": "BooleanLiteral",
       "offset": 6812,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Timeline.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Timeline.swift",
       "kind": "BooleanLiteral",
       "offset": 6993,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Timeline.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Timeline.swift",
       "kind": "BooleanLiteral",
       "offset": 7021,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "Array",
       "offset": 217,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "Array",
       "offset": 250,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "Array",
       "offset": 284,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "StringLiteral",
       "offset": 779,
       "length": 7,
       "value": "\"track\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "StringLiteral",
       "offset": 1550,
       "length": 10,
       "value": "\"identify\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "StringLiteral",
       "offset": 2289,
       "length": 8,
       "value": "\"screen\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "StringLiteral",
       "offset": 3184,
       "length": 7,
       "value": "\"group\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "StringLiteral",
       "offset": 3954,
       "length": 7,
       "value": "\"alias\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "StringLiteral",
       "offset": 4753,
       "length": 5,
       "value": "\"All\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "StringLiteral",
       "offset": 5338,
       "length": 71,
       "value": "\"Unable to get what should be a valid list of integrations from event.\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "BooleanLiteral",
       "offset": 5543,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "BooleanLiteral",
       "offset": 5790,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "StringLiteral",
       "offset": 6006,
       "length": 58,
       "value": "\"Unable to convert list of integrations to JSON. \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "StringLiteral",
       "offset": 6063,
       "length": 16,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "BooleanLiteral",
       "offset": 6472,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "BooleanLiteral",
       "offset": 6581,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "StringLiteral",
       "offset": 6780,
       "length": 58,
       "value": "\"Unable to convert list of integrations to JSON. \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "StringLiteral",
       "offset": 6837,
       "length": 16,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "StringLiteral",
       "offset": 7263,
       "length": 71,
       "value": "\"Unable to get what should be a valid list of integrations from event.\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "BooleanLiteral",
       "offset": 7544,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "StringLiteral",
       "offset": 7719,
       "length": 58,
       "value": "\"Unable to convert list of integrations to JSON. \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "StringLiteral",
       "offset": 7776,
       "length": 16,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "StringLiteral",
       "offset": 8199,
       "length": 71,
       "value": "\"Unable to get what should be a valid list of integrations from event.\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "BooleanLiteral",
       "offset": 8700,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "StringLiteral",
       "offset": 8884,
       "length": 58,
       "value": "\"Unable to convert list of integrations to JSON. \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Types.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Types.swift",
       "kind": "StringLiteral",
       "offset": 8941,
       "length": 16,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Atomic.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Atomic.swift",
       "kind": "StringLiteral",
       "offset": 702,
       "length": 41,
       "value": "\"com.segment.atomic.\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Atomic.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Atomic.swift",
       "kind": "StringLiteral",
       "offset": 742,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 366,
       "length": 19,
       "value": "\"api.segment.io\/v1\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 426,
       "length": 29,
       "value": "\"cdn-settings.segment.com\/v1\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 1071,
       "length": 24,
       "value": "\"https:\/\/\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 1087,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 1094,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 1850,
       "length": 4,
       "value": "\"\/b\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 2127,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 2335,
       "length": 56,
       "value": "\"Error uploading request \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 2389,
       "length": 1,
       "value": "\".\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "IntegerLiteral",
       "offset": 2705,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "IntegerLiteral",
       "offset": 2709,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "BooleanLiteral",
       "offset": 2754,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "IntegerLiteral",
       "offset": 2809,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "IntegerLiteral",
       "offset": 2815,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "IntegerLiteral",
       "offset": 3066,
       "length": 3,
       "value": "429"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 3802,
       "length": 32,
       "value": "\"\/projects\/\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 3824,
       "length": 1,
       "value": "\"\/settings\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "BooleanLiteral",
       "offset": 3866,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 3985,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "BooleanLiteral",
       "offset": 4253,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "IntegerLiteral",
       "offset": 4413,
       "length": 3,
       "value": "300"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "BooleanLiteral",
       "offset": 4574,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "BooleanLiteral",
       "offset": 4802,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "BooleanLiteral",
       "offset": 4995,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "BooleanLiteral",
       "offset": 5164,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 5531,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 5558,
       "length": 9,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 5565,
       "length": 1,
       "value": "\":\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "IntegerLiteral",
       "offset": 5750,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "IntegerLiteral",
       "offset": 6195,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 6260,
       "length": 33,
       "value": "\"application\/json; charset=utf-8\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 6315,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 6356,
       "length": 38,
       "value": "\"analytics-ios\/\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 6393,
       "length": 24,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 6416,
       "length": 12,
       "value": "\"User-Agent\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 6455,
       "length": 6,
       "value": "\"gzip\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "StringLiteral",
       "offset": 6483,
       "length": 17,
       "value": "\"Accept-Encoding\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/HTTPClient.swift",
       "kind": "IntegerLiteral",
       "offset": 6888,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
       "kind": "StringLiteral",
       "offset": 2165,
       "length": 15,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
       "kind": "StringLiteral",
       "offset": 2179,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
       "kind": "StringLiteral",
       "offset": 3625,
       "length": 21,
       "value": "\"Invalid JSON value!\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
       "kind": "BooleanLiteral",
       "offset": 3763,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
       "kind": "BooleanLiteral",
       "offset": 3851,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
       "kind": "StringLiteral",
       "offset": 3947,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
       "kind": "StringLiteral",
       "offset": 12359,
       "length": 61,
       "value": "\"Unable to decode object (\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
       "kind": "StringLiteral",
       "offset": 12395,
       "length": 1,
       "value": "\") to a Codable: \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
       "kind": "StringLiteral",
       "offset": 12419,
       "length": 16,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
       "kind": "BooleanLiteral",
       "offset": 16412,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
       "kind": "BooleanLiteral",
       "offset": 16511,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
       "kind": "BooleanLiteral",
       "offset": 16841,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/JSON.swift",
       "kind": "BooleanLiteral",
       "offset": 16871,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "BooleanLiteral",
       "offset": 924,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "StringLiteral",
       "offset": 1086,
       "length": 3,
       "value": "\".\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "StringLiteral",
       "offset": 1186,
       "length": 3,
       "value": "\".\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "IntegerLiteral",
       "offset": 1457,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "StringLiteral",
       "offset": 4000,
       "length": 4,
       "value": "\"$.\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "StringLiteral",
       "offset": 4012,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "BooleanLiteral",
       "offset": 4219,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "StringLiteral",
       "offset": 4244,
       "length": 5,
       "value": "\"@if\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "BooleanLiteral",
       "offset": 4267,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "BooleanLiteral",
       "offset": 4289,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "StringLiteral",
       "offset": 4547,
       "length": 5,
       "value": "\"@if\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "StringLiteral",
       "offset": 4616,
       "length": 7,
       "value": "\"blank\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "StringLiteral",
       "offset": 4668,
       "length": 8,
       "value": "\"exists\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "StringLiteral",
       "offset": 4736,
       "length": 7,
       "value": "\"blank\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "StringLiteral",
       "offset": 4810,
       "length": 8,
       "value": "\"exists\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "StringLiteral",
       "offset": 4883,
       "length": 6,
       "value": "\"then\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "StringLiteral",
       "offset": 4958,
       "length": 6,
       "value": "\"else\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "StringLiteral",
       "offset": 5109,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "BooleanLiteral",
       "offset": 5596,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "StringLiteral",
       "offset": 5621,
       "length": 7,
       "value": "\"@path\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "BooleanLiteral",
       "offset": 5658,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "BooleanLiteral",
       "offset": 5688,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/KeyPath.swift",
       "kind": "StringLiteral",
       "offset": 5940,
       "length": 7,
       "value": "\"@path\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Logging.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Logging.swift",
       "kind": "StringLiteral",
       "offset": 331,
       "length": 13,
       "value": "\"SEG_ERROR: \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Logging.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Logging.swift",
       "kind": "StringLiteral",
       "offset": 395,
       "length": 15,
       "value": "\"SEG_WARNING: \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Logging.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Logging.swift",
       "kind": "StringLiteral",
       "offset": 459,
       "length": 13,
       "value": "\"SEG_DEBUG: \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Logging.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Logging.swift",
       "kind": "StringLiteral",
       "offset": 520,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/OutputFileStream.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/OutputFileStream.swift",
       "kind": "BooleanLiteral",
       "offset": 655,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/OutputFileStream.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/OutputFileStream.swift",
       "kind": "BooleanLiteral",
       "offset": 1075,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/OutputFileStream.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/OutputFileStream.swift",
       "kind": "BooleanLiteral",
       "offset": 1958,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/OutputFileStream.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/OutputFileStream.swift",
       "kind": "BooleanLiteral",
       "offset": 2444,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/CountBasedFlushPolicy.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/CountBasedFlushPolicy.swift",
       "kind": "IntegerLiteral",
       "offset": 272,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/CountBasedFlushPolicy.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/CountBasedFlushPolicy.swift",
       "kind": "BooleanLiteral",
-      "offset": 656,
+      "offset": 670,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/CountBasedFlushPolicy.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/CountBasedFlushPolicy.swift",
       "kind": "IntegerLiteral",
-      "offset": 716,
+      "offset": 730,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/CountBasedFlushPolicy.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/CountBasedFlushPolicy.swift",
       "kind": "BooleanLiteral",
-      "offset": 782,
+      "offset": 796,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/CountBasedFlushPolicy.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/CountBasedFlushPolicy.swift",
       "kind": "BooleanLiteral",
-      "offset": 823,
+      "offset": 837,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/CountBasedFlushPolicy.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/CountBasedFlushPolicy.swift",
       "kind": "IntegerLiteral",
-      "offset": 913,
+      "offset": 927,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/CountBasedFlushPolicy.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/CountBasedFlushPolicy.swift",
       "kind": "IntegerLiteral",
-      "offset": 968,
+      "offset": 982,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/FlushPolicy.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/FlushPolicy.swift",
       "kind": "Array",
       "offset": 1809,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/IntervalBasedFlushPolicy.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/IntervalBasedFlushPolicy.swift",
       "kind": "BooleanLiteral",
-      "offset": 1104,
+      "offset": 1118,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/IntervalBasedFlushPolicy.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Policies\/IntervalBasedFlushPolicy.swift",
       "kind": "BooleanLiteral",
-      "offset": 1558,
+      "offset": 1572,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/QueueTimer.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/QueueTimer.swift",
       "kind": "Array",
       "offset": 908,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/QueueTimer.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/QueueTimer.swift",
       "kind": "IntegerLiteral",
       "offset": 1738,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/QueueTimer.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/QueueTimer.swift",
       "kind": "IntegerLiteral",
       "offset": 1939,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/QueueTimer.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/QueueTimer.swift",
       "kind": "IntegerLiteral",
       "offset": 2044,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/QueueTimer.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/QueueTimer.swift",
       "kind": "IntegerLiteral",
       "offset": 2058,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "IntegerLiteral",
       "offset": 240,
       "length": 6,
       "value": "475000"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 432,
       "length": 18,
       "value": "\"sync.segment.com\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 745,
       "length": 33,
       "value": "\"com.segment.storage.\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 777,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "BooleanLiteral",
       "offset": 1620,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "BooleanLiteral",
       "offset": 2595,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 3559,
       "length": 33,
       "value": "\"com.segment.storage.\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 3591,
       "length": 18,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "BooleanLiteral",
       "offset": 3942,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "BooleanLiteral",
       "offset": 4024,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "BooleanLiteral",
       "offset": 4549,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "BooleanLiteral",
       "offset": 4602,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "BooleanLiteral",
       "offset": 4985,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 5355,
       "length": 6,
       "value": "\"temp\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 5432,
       "length": 16,
       "value": "\"segment.userId\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 5471,
       "length": 16,
       "value": "\"segment.traits\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 5515,
       "length": 21,
       "value": "\"segment.anonymousId\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 5561,
       "length": 18,
       "value": "\"segment.settings\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 5602,
       "length": 16,
       "value": "\"segment.events\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 5432,
       "length": 16,
       "value": "\"segment.userId\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 5471,
       "length": 16,
       "value": "\"segment.traits\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 5515,
       "length": 21,
       "value": "\"segment.anonymousId\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 5561,
       "length": 18,
       "value": "\"segment.settings\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 5602,
       "length": 16,
       "value": "\"segment.events\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "IntegerLiteral",
       "offset": 6235,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "IntegerLiteral",
       "offset": 6309,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "IntegerLiteral",
       "offset": 6861,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 6919,
       "length": 22,
       "value": "\"segment\/\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 6939,
       "length": 1,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "BooleanLiteral",
       "offset": 7151,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 7353,
       "length": 25,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 7362,
       "length": 1,
       "value": "\"-segment-events\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "IntegerLiteral",
       "offset": 7745,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "Array",
       "offset": 7928,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "BooleanLiteral",
       "offset": 8030,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "BooleanLiteral",
       "offset": 8635,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "BooleanLiteral",
       "offset": 8693,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "BooleanLiteral",
       "offset": 8758,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "BooleanLiteral",
       "offset": 9356,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 9518,
       "length": 48,
       "value": "\"Storage: Output stream is nil for \""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 9565,
       "length": 16,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "BooleanLiteral",
       "offset": 9622,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 9716,
       "length": 3,
       "value": "\",\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 9931,
       "length": 16,
       "value": "\"{ \"batch\": [\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 11107,
       "length": 58,
       "value": "\"],\"sentAt\":\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 11132,
       "length": 1,
       "value": "\"\",\"writeKey\":\"\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "StringLiteral",
       "offset": 11161,
       "length": 1,
       "value": "\"\"}\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "IntegerLiteral",
       "offset": 11835,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Storage.swift",
       "kind": "IntegerLiteral",
       "offset": 11840,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Utils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Utils.swift",
       "kind": "StringLiteral",
       "offset": 1032,
       "length": 8,
       "value": "\".appex\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Utils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Utils.swift",
       "kind": "BooleanLiteral",
       "offset": 1059,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Utilities\/Utils.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Utilities\/Utils.swift",
       "kind": "BooleanLiteral",
       "offset": 1081,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/Sources\/Segment\/Version.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/Sources\/Segment\/Version.swift",
       "kind": "StringLiteral",
       "offset": 355,
       "length": 7,
-      "value": "\"1.4.7\""
+      "value": "\"1.4.8\""
     }
   ]
 }

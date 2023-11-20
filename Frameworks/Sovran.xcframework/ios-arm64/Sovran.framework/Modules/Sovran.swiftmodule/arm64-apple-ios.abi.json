@@ -1591,49 +1591,49 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
       "kind": "StringLiteral",
       "offset": 269,
       "length": 26,
       "value": "\"state.update.segment.com\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
       "kind": "StringLiteral",
       "offset": 402,
       "length": 24,
       "value": "\"state.sync.segment.com\""
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
       "kind": "BooleanLiteral",
       "offset": 1778,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
       "kind": "IntegerLiteral",
       "offset": 3211,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
       "kind": "IntegerLiteral",
       "offset": 6955,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Store.swift",
       "kind": "IntegerLiteral",
       "offset": 7102,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/brandonsneed\/work\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Version.swift",
+      "filePath": "\/Users\/brandonsneed\/work\/Segment\/analytics-swift\/.build\/checkouts\/Sovran-Swift\/Sources\/Sovran\/Version.swift",
       "kind": "StringLiteral",
       "offset": 320,
       "length": 7,

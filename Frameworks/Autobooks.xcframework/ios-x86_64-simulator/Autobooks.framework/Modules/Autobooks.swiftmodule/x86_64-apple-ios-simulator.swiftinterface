@@ -136,6 +136,7 @@ public enum AB {
     public static let tappedSendAnotherReceipt: Foundation.Notification.Name
     public static let tappedCallUs: Foundation.Notification.Name
     public static let viewedScreen: Foundation.Notification.Name
+    public static let screenTimerWarning: Foundation.Notification.Name
     public static let somethingWentWrong: Foundation.Notification.Name
     public static let internalError: Foundation.Notification.Name
     public static let transactionDeclined: Foundation.Notification.Name

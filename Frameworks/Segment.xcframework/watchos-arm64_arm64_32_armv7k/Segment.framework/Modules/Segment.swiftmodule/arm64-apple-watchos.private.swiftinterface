@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target arm64-apple-watchos7.1 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Segment
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Darwin.C
@@ -11,6 +11,7 @@ import Swift
 import WatchKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public class Analytics {
   public static var debugLogsEnabled: Swift.Bool
   public var timeline: Segment.Timeline
@@ -511,7 +512,7 @@ public protocol VersionedPlugin {
 public typealias EnrichmentClosure = (_ event: (any Segment.RawEvent)?) -> (any Segment.RawEvent)?
 @_hasMissingDesignatedInitializers public class ClosureEnrichment : Segment.Plugin {
   public var type: Segment.PluginType
-  public var analytics: Segment.Analytics?
+  weak public var analytics: Segment.Analytics?
   public func execute<T>(event: T?) -> T? where T : Segment.RawEvent
   @objc deinit
 }
@@ -636,6 +637,8 @@ public struct Settings : Swift.Codable {
   public var plan: Segment.JSON?
   public var edgeFunction: Segment.JSON?
   public var middlewareSettings: Segment.JSON?
+  public var metrics: Segment.JSON?
+  public var consentSettings: Segment.JSON?
   public init(writeKey: Swift.String, apiHost: Swift.String)
   public init(writeKey: Swift.String)
   public init(from decoder: any Swift.Decoder) throws
@@ -891,8 +894,10 @@ extension Swift.Dictionary where Key : Swift.StringProtocol {
 extension Segment.Analytics {
   public func log(message: Swift.String)
 }
-@_hasMissingDesignatedInitializers public class CountBasedFlushPolicy : Segment.FlushPolicy {
+public class CountBasedFlushPolicy : Segment.FlushPolicy {
   weak public var analytics: Segment.Analytics?
+  public init()
+  public init(count: Swift.Int)
   public func configure(analytics: Segment.Analytics)
   public func shouldFlush() -> Swift.Bool
   public func updateState(event: any Segment.RawEvent)
@@ -913,8 +918,10 @@ extension Segment.Analytics {
   public func removeAllFlushPolicies()
   public func find<T>(flushPolicy: T.Type) -> (any Segment.FlushPolicy)? where T : Segment.FlushPolicy
 }
-@_hasMissingDesignatedInitializers public class IntervalBasedFlushPolicy : Segment.FlushPolicy, Sovran.Subscriber {
+public class IntervalBasedFlushPolicy : Segment.FlushPolicy, Sovran.Subscriber {
   weak public var analytics: Segment.Analytics?
+  public init()
+  public init(interval: Foundation.TimeInterval)
   @objc deinit
   public func configure(analytics: Segment.Analytics)
   public func shouldFlush() -> Swift.Bool
