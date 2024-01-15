@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Autobooks'
-  s.version = '1.6.1'
+  s.version = '1.6.2'
   s.license = 'Apache2'
   s.summary = 'Autobooks SDK for iOS'
   s.homepage = 'https://github.com/autobooks/autobooks-ios'
