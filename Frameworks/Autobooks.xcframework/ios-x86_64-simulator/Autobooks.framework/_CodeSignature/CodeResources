@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		C3pqVRSWgayrmPB46BY0PTmQiIM=
+		C2s8xPT/XGCleFDEYIdeMUREgcA=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		0vAXIkHl9OeNx7vv91D6lDdChrs=
+		Nzb5u+UwqF0XY0h5GSTKF/U8gxg=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		m8mCBtRSvkhFyfACgOwvl+wm3TI=
+		KXP7+bSqPhNwuTowKG43VW0Kr+k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,19 +50,23 @@
 		</data>
 		<key>Onboarding.storyboardc/55D-eH-j4p-view-7Op-nI-lfG.nib</key>
 		<data>
-		JYY9Q/wapP8tYe1TQ2NIt9uA1CY=
+		V+5cYSQqS6J1GGNIdWGuvQy/8ZI=
 		</data>
 		<key>Onboarding.storyboardc/ATU-mp-C6u-view-i1C-nd-jdq.nib</key>
 		<data>
-		ngczenxv5eo3WhoLjcvRO+yu8bw=
+		Dg1uWK7MITC4gh6iZoD6qthaT0I=
 		</data>
 		<key>Onboarding.storyboardc/Fam-qq-a4x-view-XJA-Jw-pWy.nib</key>
 		<data>
 		5FDPthQyS0PPI+qt+oTUdzHxVbc=
 		</data>
+		<key>Onboarding.storyboardc/HhW-ze-OzX-view-0Pe-bT-VV2.nib</key>
+		<data>
+		RXC3+VYWKICFZn5xHUHkI3uv55g=
+		</data>
 		<key>Onboarding.storyboardc/Info.plist</key>
 		<data>
-		Uty5my/iyG1x4NeF8H2QQXczDBc=
+		3oGg0MBUInLoy0/yKAMsxK2wHzw=
 		</data>
 		<key>Onboarding.storyboardc/OXM-Ue-gei-view-6Ma-PR-HE0.nib</key>
 		<data>
@@ -79,6 +83,10 @@
 		<key>Onboarding.storyboardc/OnboardingPhonePayEducationViewController.nib</key>
 		<data>
 		OwqGIEsJhl0DnDYh/cbSGWDPf2M=
+		</data>
+		<key>Onboarding.storyboardc/OnboardingWaitForApprovalForTapToPayViewController.nib</key>
+		<data>
+		uibizdTHt1ESsuAEqS/fZTKRtwk=
 		</data>
 		<key>Onboarding.storyboardc/OnboardingWaitForPaymentEnablementViewController.nib</key>
 		<data>
@@ -121,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FMZnpCBqLjUqhO4fquNbzrE9TNwCZzOZogEGc0WO99k=
+			u+9+HOhU10NcUb38lY1dO82mgdC1X6DH2VcrXLLzh9U=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -149,7 +157,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ecZYsL/xPsi1nMaznqfVcpKUWSBh8s4tBsSRRXOXWrQ=
+			OuV0Ub265fm1Oxq/0kPxyqM/eMsfyOkPw5cExuWk590=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -177,14 +185,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IGpUq3sRa2nrwzFk7yrhEQLP1AXK5oME17iMhCEjRdM=
+			qG65dkPZp99HCFEoGPUEyn+gJsWDfurg11BxpBZfk1I=
 			</data>
 		</dict>
 		<key>Onboarding.storyboardc/ATU-mp-C6u-view-i1C-nd-jdq.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UvBf7ttBe+TWpZXgr3O1Guf5blxhwoT53Y8qNFGo1IM=
+			PZN0nr1aSXAwoQHZCU1UKntnNA92N0dEwedrNUs1UIY=
 			</data>
 		</dict>
 		<key>Onboarding.storyboardc/Fam-qq-a4x-view-XJA-Jw-pWy.nib</key>
@@ -194,11 +202,18 @@
 			IkqUgsuEeDQ/fLz9PXmSZjLA3WZOEJQGWnrTkGeYPmU=
 			</data>
 		</dict>
+		<key>Onboarding.storyboardc/HhW-ze-OzX-view-0Pe-bT-VV2.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0SYm++3pDq1zraJzX3mbZXCI7flhhz/4mgi1a45FXE4=
+			</data>
+		</dict>
 		<key>Onboarding.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nNSLmEiDJyEbO9dRdtxnk5cxDusl2CqdR0o4YolhJfw=
+			HMHKaWOqdopYzfRUN/DnzRRik0pnE16/Qp2asZko0ps=
 			</data>
 		</dict>
 		<key>Onboarding.storyboardc/OXM-Ue-gei-view-6Ma-PR-HE0.nib</key>
@@ -227,6 +242,13 @@
 			<key>hash2</key>
 			<data>
 			7xYje0v0q4Hffx5EwZa4HveP1Bva9bMZRkuMYQ68jpU=
+			</data>
+		</dict>
+		<key>Onboarding.storyboardc/OnboardingWaitForApprovalForTapToPayViewController.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5kAyOTHzRw4xFFjOJCUG/PJ6pmgahpWVI97lO7aFXXk=
 			</data>
 		</dict>
 		<key>Onboarding.storyboardc/OnboardingWaitForPaymentEnablementViewController.nib</key>

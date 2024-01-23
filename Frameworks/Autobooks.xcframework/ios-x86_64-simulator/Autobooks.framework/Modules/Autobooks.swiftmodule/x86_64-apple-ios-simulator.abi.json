@@ -6598,6 +6598,20 @@
       "value": "\"OnboardingWaitForPaymentEnablementViewController\""
     },
     {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForPaymentEnablementViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2232,
+      "length": 12,
+      "value": "\"Onboarding\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForPaymentEnablementViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 2442,
+      "length": 52,
+      "value": "\"OnboardingWaitForApprovalForTapToPayViewController\""
+    },
+    {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Requests.swift",
       "kind": "BooleanLiteral",
       "offset": 1720,
@@ -7265,63 +7279,63 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3931,
+      "offset": 3932,
       "length": 9,
       "value": "\"opacity\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3987,
+      "offset": 3988,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4032,
+      "offset": 4033,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 4078,
+      "offset": 4079,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4193,
+      "offset": 4194,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4486,
+      "offset": 4487,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4608,
+      "offset": 4609,
       "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5229,
+      "offset": 5230,
       "length": 12,
       "value": "\"Onboarding\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitForTTPSetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 5417,
+      "offset": 5418,
       "length": 41,
       "value": "\"OnboardingWaitForTTPSetupViewController\""
     },
@@ -11768,21 +11782,21 @@
       "kind": "StringLiteral",
       "offset": 7759,
       "length": 38,
-      "value": "\"https:\/\/dev-apim.autobooks.co\/ttp\/v1\""
+      "value": "\"https:\/\/dev-apim.autobooks.co\/ttp\/v2\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
       "offset": 7862,
       "length": 42,
-      "value": "\"https:\/\/staging-apim.autobooks.co\/ttp\/v1\""
+      "value": "\"https:\/\/staging-apim.autobooks.co\/ttp\/v2\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
       "offset": 7972,
       "length": 34,
-      "value": "\"https:\/\/apim.autobooks.co\/ttp\/v1\""
+      "value": "\"https:\/\/apim.autobooks.co\/ttp\/v2\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
@@ -11871,189 +11885,203 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 17296,
+      "offset": 16711,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 19375,
+      "offset": 17353,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 20701,
+      "offset": 17424,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
+      "kind": "BooleanLiteral",
+      "offset": 19501,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
+      "kind": "BooleanLiteral",
+      "offset": 20827,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 21592,
+      "offset": 21718,
       "length": 11,
       "value": "\"Invoicing\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 21658,
+      "offset": 21784,
       "length": 14,
       "value": "\"Payment Link\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 21729,
+      "offset": 21855,
       "length": 11,
       "value": "\"Autobooks\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 22000,
+      "offset": 22126,
       "length": 31,
       "value": "\"co.autobooks.sdk.userActivity\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 22100,
+      "offset": 22226,
       "length": 38,
       "value": "\"co.autobooks.sdk.visitedTransactions\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 22199,
+      "offset": 22325,
       "length": 31,
       "value": "\"co.autobooks.sdk.tappedCharge\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 22296,
+      "offset": 22422,
       "length": 36,
       "value": "\"co.autobooks.sdk.tappedManualEntry\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 22398,
+      "offset": 22524,
       "length": 36,
       "value": "\"co.autobooks.sdk.tappedSendReceipt\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 22502,
+      "offset": 22628,
       "length": 31,
       "value": "\"co.autobooks.sdk.tappedRefund\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 22601,
+      "offset": 22727,
       "length": 31,
       "value": "\"co.autobooks.sdk.tappedCancel\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 22698,
+      "offset": 22824,
       "length": 29,
       "value": "\"co.autobooks.sdk.tappedSkip\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 22800,
+      "offset": 22926,
       "length": 43,
       "value": "\"co.autobooks.sdk.tappedSendAnotherReceipt\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 22904,
+      "offset": 23030,
       "length": 38,
       "value": "\"co.autobooks.sdk.callUsActionClicked\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23003,
+      "offset": 23129,
       "length": 31,
       "value": "\"co.autobooks.sdk.viewedScreen\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23101,
+      "offset": 23227,
       "length": 37,
       "value": "\"co.autobooks.sdk.screenTimerWarning\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23206,
+      "offset": 23332,
       "length": 37,
       "value": "\"co.autobooks.sdk.somethingWentWrong\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23305,
+      "offset": 23431,
       "length": 32,
       "value": "\"co.autobooks.sdk.internalError\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23405,
+      "offset": 23531,
       "length": 38,
       "value": "\"co.autobooks.sdk.transactionDeclined\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Loadable.swift",
       "kind": "BooleanLiteral",
-      "offset": 509,
+      "offset": 553,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Loadable.swift",
       "kind": "BooleanLiteral",
-      "offset": 541,
+      "offset": 585,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Loadable.swift",
       "kind": "BooleanLiteral",
-      "offset": 660,
+      "offset": 704,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Loadable.swift",
       "kind": "BooleanLiteral",
-      "offset": 754,
+      "offset": 798,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Loadable.swift",
       "kind": "BooleanLiteral",
-      "offset": 2935,
+      "offset": 2979,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Loadable.swift",
       "kind": "BooleanLiteral",
-      "offset": 2967,
+      "offset": 3011,
       "length": 4,
       "value": "true"
     },
@@ -12249,161 +12277,161 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1555,
+      "offset": 1549,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1601,
+      "offset": 1595,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1660,
+      "offset": 1654,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1677,
+      "offset": 1671,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2004,
+      "offset": 1998,
       "length": 12,
       "value": "\"position.x\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2089,
+      "offset": 2083,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2199,
+      "offset": 2193,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "StringLiteral",
-      "offset": 2444,
+      "offset": 2438,
       "length": 9,
       "value": "\"opacity\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2495,
+      "offset": 2489,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2535,
+      "offset": 2529,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 2576,
+      "offset": 2570,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2802,
+      "offset": 2796,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "StringLiteral",
-      "offset": 3052,
+      "offset": 3046,
       "length": 9,
       "value": "\"opacity\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3112,
+      "offset": 3106,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3161,
+      "offset": 3155,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 3211,
+      "offset": 3205,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 3329,
+      "offset": 3323,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 3467,
+      "offset": 3461,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3679,
+      "offset": 3673,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 3921,
+      "offset": 3963,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4009,
+      "offset": 4051,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4067,
+      "offset": 4109,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingWaitViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 4372,
+      "offset": 4415,
       "length": 5,
       "value": "false"
     },
@@ -15455,84 +15483,84 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11177,
+      "offset": 11240,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "BooleanLiteral",
-      "offset": 11227,
+      "offset": 11290,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 11689,
+      "offset": 11821,
       "length": 13,
       "value": "\"New Payment\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 11781,
+      "offset": 11913,
       "length": 20,
       "value": "\"Payment Successful\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 11863,
+      "offset": 11995,
       "length": 14,
       "value": "\"Transactions\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 11939,
+      "offset": 12071,
       "length": 17,
       "value": "\"Payment Details\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 12019,
+      "offset": 12151,
       "length": 10,
       "value": "\"Declined\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 14873,
+      "offset": 15074,
       "length": 18,
       "value": "\"Virtual Terminal\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16018,
+      "offset": 16375,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 16609,
+      "offset": 16966,
       "length": 39,
       "value": "\"init(coder:) has not been implemented\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 15606,
+      "offset": 15963,
       "length": 20,
       "value": "\"Autobooks.ScreenViewController\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 15606,
+      "offset": 15963,
       "length": 20,
       "value": "\"Autobooks.ScreenViewController\""
     },
@@ -16847,8 +16875,15 @@
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/PresaleScreen.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3957,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/PresaleScreen.swift",
       "kind": "StringLiteral",
-      "offset": 3951,
+      "offset": 4033,
       "length": 26,
       "value": "\"wave.3.right.circle.fill\""
     },
@@ -16904,427 +16939,434 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 1888,
+      "offset": 1932,
       "length": 20,
       "value": "\"Wait for TTP Setup\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 1984,
+      "offset": 2028,
       "length": 29,
       "value": "\"Wait for Payment Enablement\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 2085,
+      "offset": 2135,
+      "length": 34,
+      "value": "\"Wait for Approval for Tap to Pay\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
+      "kind": "StringLiteral",
+      "offset": 2241,
       "length": 23,
       "value": "\"Support Video (\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 2106,
+      "offset": 2262,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 2182,
+      "offset": 2338,
       "length": 25,
       "value": "\"Support Article (\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 2205,
+      "offset": 2361,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 3772,
+      "offset": 3928,
       "length": 40,
       "value": "\"[Tap To Pay] Visited Transactions List\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 3868,
+      "offset": 4024,
       "length": 28,
       "value": "\"[Tap To Pay] Tapped Charge\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 3957,
+      "offset": 4113,
       "length": 34,
       "value": "\"[Tap To Pay] Tapped Manual Entry\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 4052,
+      "offset": 4208,
       "length": 34,
       "value": "\"[Tap To Pay] Tapped Send Receipt\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 4142,
+      "offset": 4298,
       "length": 28,
       "value": "\"[Tap To Pay] Tapped Refund\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 4226,
+      "offset": 4382,
       "length": 28,
       "value": "\"[Tap To Pay] Tapped Cancel\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 4308,
+      "offset": 4464,
       "length": 26,
       "value": "\"[Tap To Pay] Tapped Skip\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 4402,
+      "offset": 4558,
       "length": 42,
       "value": "\"[Tap To Pay] Tapped Send Another Receipt\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 4500,
+      "offset": 4656,
       "length": 30,
       "value": "\"[Tap To Pay] Call Us Clicked\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 4592,
+      "offset": 4748,
       "length": 35,
       "value": "\"[Tap To Pay] Something Went Wrong\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 4684,
+      "offset": 4840,
       "length": 34,
       "value": "\"[Tap To Pay] Unhandled SDK Error\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 4781,
+      "offset": 4937,
       "length": 35,
       "value": "\"[Tap To Pay] Transaction Declined\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 4872,
+      "offset": 5028,
       "length": 28,
       "value": "\"[Tap To Pay] Viewed Screen\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 4962,
+      "offset": 5118,
       "length": 35,
       "value": "\"[Tap to Pay] Screen Timer Warning\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 5529,
+      "offset": 5685,
       "length": 8,
       "value": "\"userId\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 5572,
+      "offset": 5728,
       "length": 7,
       "value": "\"email\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 5624,
+      "offset": 5780,
       "length": 13,
       "value": "\"environment\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "IntegerLiteral",
-      "offset": 5856,
+      "offset": 6012,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 5897,
+      "offset": 6053,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 5966,
+      "offset": 6122,
       "length": 9,
       "value": "\"version\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 6001,
+      "offset": 6157,
       "length": 7,
       "value": "\"build\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 6032,
+      "offset": 6188,
       "length": 14,
       "value": "\"connectivity\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 6066,
+      "offset": 6222,
       "length": 6,
       "value": "\"wifi\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 6125,
+      "offset": 6281,
       "length": 10,
       "value": "\"cellular\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 6192,
+      "offset": 6348,
       "length": 14,
       "value": "\"reachability\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 6237,
+      "offset": 6393,
       "length": 19,
       "value": "\"flags unavailable\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 6341,
+      "offset": 6497,
       "length": 8,
       "value": "\"userId\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 6388,
+      "offset": 6544,
       "length": 7,
       "value": "\"email\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 6437,
+      "offset": 6593,
       "length": 13,
       "value": "\"environment\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 6600,
+      "offset": 6756,
       "length": 7,
       "value": "\"empty\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 6881,
+      "offset": 7037,
       "length": 8,
       "value": "\"amount\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 7161,
+      "offset": 7317,
       "length": 8,
       "value": "\"screen\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 7457,
+      "offset": 7613,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 7518,
+      "offset": 7674,
       "length": 13,
       "value": "\"description\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 7584,
+      "offset": 7740,
       "length": 10,
       "value": "\"location\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 7598,
+      "offset": 7754,
       "length": 21,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 7610,
+      "offset": 7766,
       "length": 1,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 7618,
+      "offset": 7774,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 7643,
+      "offset": 7799,
       "length": 6,
       "value": "\"logs\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 8025,
+      "offset": 8181,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 8064,
+      "offset": 8220,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 8094,
+      "offset": 8250,
       "length": 6,
       "value": "\"code\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 8160,
+      "offset": 8316,
       "length": 11,
       "value": "\"processor\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 8175,
+      "offset": 8331,
       "length": 10,
       "value": "\"worldpay\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 8286,
+      "offset": 8442,
       "length": 9,
       "value": "\"message\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 8324,
+      "offset": 8480,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 8354,
+      "offset": 8510,
       "length": 6,
       "value": "\"code\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 8419,
+      "offset": 8575,
       "length": 11,
       "value": "\"processor\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 8434,
+      "offset": 8590,
       "length": 8,
       "value": "\"fiserv\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 8481,
+      "offset": 8637,
       "length": 6,
       "value": "\"logs\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 8768,
+      "offset": 8924,
       "length": 8,
       "value": "\"screen\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 8822,
+      "offset": 8978,
       "length": 10,
       "value": "\"duration\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 9116,
+      "offset": 9272,
       "length": 8,
       "value": "\"screen\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 9170,
+      "offset": 9326,
       "length": 10,
       "value": "\"duration\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 9216,
+      "offset": 9372,
       "length": 6,
       "value": "\"logs\""
     },
@@ -17583,224 +17625,224 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "BooleanLiteral",
-      "offset": 695,
+      "offset": 715,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 733,
+      "offset": 753,
       "length": 20,
       "value": "\"Loading Tap to Pay\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 790,
+      "offset": 810,
       "length": 14,
       "value": "\"tapToPayIcon\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 867,
+      "offset": 887,
       "length": 15,
       "value": "\"Logging in...\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "BooleanLiteral",
-      "offset": 1047,
+      "offset": 1067,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 1085,
+      "offset": 1105,
       "length": 20,
       "value": "\"Loading Tap to Pay\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 1142,
+      "offset": 1162,
       "length": 14,
       "value": "\"tapToPayIcon\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 1219,
+      "offset": 1239,
       "length": 20,
       "value": "\"Fetching status...\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "BooleanLiteral",
-      "offset": 1419,
+      "offset": 1439,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 1457,
+      "offset": 1477,
       "length": 23,
       "value": "\"Loading Tap to Pay...\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 1517,
+      "offset": 1537,
       "length": 14,
       "value": "\"tapToPayIcon\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 1594,
+      "offset": 1614,
       "length": 41,
       "value": "\"Preparing card reader... \n\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 1633,
+      "offset": 1653,
       "length": 1,
       "value": "\"%\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "BooleanLiteral",
-      "offset": 1808,
+      "offset": 1828,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 1846,
+      "offset": 1866,
       "length": 23,
       "value": "\"Loading Tap to Pay...\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 1906,
+      "offset": 1926,
       "length": 14,
       "value": "\"tapToPayIcon\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 1983,
+      "offset": 2003,
       "length": 15,
       "value": "\"Setting up...\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "BooleanLiteral",
-      "offset": 2253,
+      "offset": 2278,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 2291,
+      "offset": 2316,
       "length": 12,
       "value": "\"Loading...\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 2353,
+      "offset": 2378,
       "length": 15,
       "value": "\"Logging in...\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "BooleanLiteral",
-      "offset": 2530,
+      "offset": 2555,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 2568,
+      "offset": 2593,
       "length": 22,
       "value": "\"Loading Payment Link\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 2627,
+      "offset": 2652,
       "length": 14,
       "value": "\"paymentsIcon\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 2704,
+      "offset": 2729,
       "length": 22,
       "value": "\"Loading Payment Link\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "BooleanLiteral",
-      "offset": 2890,
+      "offset": 2915,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 2928,
+      "offset": 2953,
       "length": 25,
       "value": "\"Loading Send an Invoice\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 2990,
+      "offset": 3015,
       "length": 15,
       "value": "\"invoicingIcon\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 3068,
+      "offset": 3093,
       "length": 25,
       "value": "\"Loading Send an Invoice\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "BooleanLiteral",
-      "offset": 3261,
+      "offset": 3286,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 3299,
+      "offset": 3324,
       "length": 28,
       "value": "\"Loading Digital Accounting\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 3364,
+      "offset": 3389,
       "length": 19,
       "value": "\"fullAutobooksIcon\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "StringLiteral",
-      "offset": 3446,
+      "offset": 3471,
       "length": 28,
       "value": "\"Loading Digital Accounting\""
     },
@@ -19375,147 +19417,154 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "IntegerLiteral",
-      "offset": 8506,
+      "offset": 8460,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8924,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 9308,
+      "offset": 9726,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 11157,
+      "offset": 11575,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "StringLiteral",
-      "offset": 11857,
+      "offset": 12275,
       "length": 18,
       "value": "\"Has Missing Info\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 13328,
+      "offset": 13889,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 15621,
+      "offset": 16182,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 16032,
+      "offset": 16593,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "IntegerLiteral",
-      "offset": 16145,
+      "offset": 16706,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "IntegerLiteral",
-      "offset": 16520,
+      "offset": 17081,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 16534,
+      "offset": 17095,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "StringLiteral",
-      "offset": 16629,
+      "offset": 17190,
       "length": 28,
       "value": "\"Refreshing token via timer\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "StringLiteral",
-      "offset": 20443,
+      "offset": 21004,
       "length": 15,
       "value": "\"*** \""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "StringLiteral",
-      "offset": 20456,
+      "offset": 21017,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 22463,
+      "offset": 23024,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "StringLiteral",
-      "offset": 22622,
+      "offset": 23183,
       "length": 15,
       "value": "\"transactionID\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "StringLiteral",
-      "offset": 22825,
+      "offset": 23386,
       "length": 15,
       "value": "\"*** \""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "StringLiteral",
-      "offset": 22838,
+      "offset": 23399,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 23840,
+      "offset": 24401,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "StringLiteral",
-      "offset": 25952,
+      "offset": 26513,
       "length": 34,
       "value": "\"*** \""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "StringLiteral",
-      "offset": 25985,
+      "offset": 26546,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 28363,
+      "offset": 28924,
       "length": 4,
       "value": "true"
     },
