@@ -113,11 +113,12 @@ public enum AB {
   public static func startPaymentForm(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.CompletionBlock? = nil)
   public static func startInvoicing(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.CompletionBlock? = nil)
   public static func startFullAutobooks(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.CompletionBlock? = nil)
-  public static func stop()
+  @_Concurrency.MainActor public static func stop()
   public enum DismissalReason : Swift.Equatable {
     case userInitiated
     case notAuthorized
     case forbidden
+    case stopped
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: Autobooks.AB.DismissalReason, b: Autobooks.AB.DismissalReason) -> Swift.Bool
     public var hashValue: Swift.Int {

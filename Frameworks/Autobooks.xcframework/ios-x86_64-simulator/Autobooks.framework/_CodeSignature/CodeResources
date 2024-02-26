@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		C2s8xPT/XGCleFDEYIdeMUREgcA=
+		onozQSa8/YZ2Cu0RkchYPMYGp1o=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Nzb5u+UwqF0XY0h5GSTKF/U8gxg=
+		W29VCTorsMIZUaG80BnWICmB5Is=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		4O7Qf+bmtkYYKlB70uKrS0DwIsQ=
+		cETSshOzeJA1UUAyTDYPH6buD2w=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		4O7Qf+bmtkYYKlB70uKrS0DwIsQ=
+		cETSshOzeJA1UUAyTDYPH6buD2w=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KXP7+bSqPhNwuTowKG43VW0Kr+k=
+		cHXYi4vNruCMhA2Kkg/0fbDyHo0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -129,14 +129,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u+9+HOhU10NcUb38lY1dO82mgdC1X6DH2VcrXLLzh9U=
+			wTdQsTVuFliX4iWYr0+UjZnvLzgeq2fWu8x1mwrmv20=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			X7bGsKf9e/GzjccStG4tBuOaiZ0EEy+VRMdXSCkmGQs=
+			1g3WnvxTlY+7mpVyrKPvhIYW7flksuhKddirkS9UHZs=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -150,14 +150,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			X7bGsKf9e/GzjccStG4tBuOaiZ0EEy+VRMdXSCkmGQs=
+			1g3WnvxTlY+7mpVyrKPvhIYW7flksuhKddirkS9UHZs=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OuV0Ub265fm1Oxq/0kPxyqM/eMsfyOkPw5cExuWk590=
+			HomXTaCWWfkUJpggFiHnQOx/MnrGCOELvaI0NsbGLM8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
