@@ -9,7 +9,7 @@ import _Concurrency
 import _StringProcessing
 @_exported import triPOSMobileSDK
 import triPOSMobileSDK_Private
-@objc @_inheritsConvenienceInitializers public class Logger : NSObject {
+@objc @_inheritsConvenienceInitializers public class TPLogger : NSObject {
   @objc override dynamic public init()
   @objc deinit
 }

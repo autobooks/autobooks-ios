@@ -86,6 +86,13 @@
 ///
 @property (retain, nonatomic) NSDate *transactionDateTime;
 
+///
+/// \brief Gets the merchant supplied transaction ID of the transaction
+///
+/// This property gets the merchant supplied transaction ID of the transaction.
+///
+@property (retain, nonatomic) NSString *merchantSuppliedTransactionID;
+
 @end
 
 #endif /* VTPFinancialResponseBase_h */

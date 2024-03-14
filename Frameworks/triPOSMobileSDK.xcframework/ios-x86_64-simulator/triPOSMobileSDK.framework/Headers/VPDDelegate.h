@@ -8,6 +8,7 @@
 #import "VPDDevice.h"
 #import "VPDTokenType.h"
 #import "VTPBluetoothDevice.h"
+#import "VPDPairingConfirmationCallback.h"
 #import "VTPInitializationStatus.h"
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
@@ -117,6 +118,15 @@
 -(void) deviceInitializationInProgress:(double) currentProgress description:(NSString *)description model:(NSString *)model serialNumber:(NSString *)serialNumber initializationStatus:(VTPInitializationStatus) initializationStatus;
 
 
+///
+/// \brief Heartbeat failed to connect to the device after 10 attempts.
+///
+/// Informs the device that the heartbeat failed to connect after 10 attempts.
+///
+/// \param description Description
+///
+-(void) heartbeatDidTimeout:(NSString*)description;
+
 //
 ///
 /// \brief Block definition for the token request completion handler.
@@ -163,12 +173,20 @@ typedef void (^VPDTokenErrorHandler)(NSError *error);
 -(void) onReturnBluetoothScanResults:(NSArray<VTPBluetoothDevice*>*) devices;
 
 ///
+/// \brief Moby device pairing confiramtion
+///
+/// This method returns device pairing confirmation callback
+///
+///
+-(void) onReturnPairingConfirmation:(NSArray*) ledSequence deviceName:(NSString*) deviceName callback:(id<VPDPairingConfirmationCallback>) pairingCallBack;
+
 /// \brief Device generated a warning
 ///
 /// Tells the delegate the device generated a warning.
 ///
 /// \param warning  The warning
 -(void) sendWarning: (NSString *) warning;
+
 @end
 
 #endif /* !DOXYGEN_SHOULD_SKIP_THIS */

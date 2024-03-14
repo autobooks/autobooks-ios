@@ -1,6 +1,52 @@
 triPOS Mobile SDK Change Log
 Worldpay Integrated Payments
 
+v4.0.1, Release Date February 2024
+- Implemented support for the Apple M1 processor.
+- Support for new Ingenico Moby 5500/5500M firmware.
+- Updated log file retention settings. Each log file can be up to 20 MB in size and retain a maximum of 10 log files.
+- Recommend setting screen lock to ‘Never’ or for more than 10 minutes or device firmware updates can be disrupted.
+
+v4.0.0, Release Date December 2023
+- Added support for the Ingenico Lane3600 with TCP/IP connectivity.
+- Added support for the Ingenico Moby5500 and Moby5500M devices with Bluetooth connection.
+- Updated to UPP 7.83.38 TKI for Ingenico Tetra devices (Lane3000, Lane3600 and Link2500).
+- Updated CAPKs for Ingenico Tetra devices (Lane3000, Lane3600 and Link2500).
+- Added support for Express Hosted Payments as a way of processing PCI certified transactions with keyed card entry.
+- Introduced a reduced sized SDK that supports only Apple Tap to Pay transactions.
+- Payment type selection options of swipe transactions now determined by the Express Enhanced BIN query (see integration guide for more details).
+- Added a configurable prompt to confirm a surcharge amount for credit transactions.
+- Added a configurable prompt to confirm a convenience fee amount for transactions.
+- Implemented a configurable timeout response when reaching out to Express during transactions.
+- Implemented in-transaction dynamic currency conversion with Express.
+- Implemented the Express MerchantSuppliedTransactionID response field for transactions.
+- Improved Store and Forward error handling in the case of an offline recovery failure.
+- US1719167: Fixed SDK crash issue after auth failure.
+- US1741457: Fixed wrong version (3.0.2) is logged by SDK in 3.0.3.
+- US1750625: Fixed transaction response was not getting sent back for declined offline case.
+
+v3.0.4, Release Date October 2023
+ - US1743451: Fixed an issue with store and forward where auto forwarder was creating a duplicate stored transaction entry on an unsuccessful attempt to forward a stored transaction.
+ - Corrected the version number logged during initialization in the SDK logs.
+ 
+v3.0.3, Release Date September 2023
+- Added checks to prevent deinitialize if a deinitialize is already in progress.
+- US1618653/US1329933: Fixed initialization failures due to VPD Error 103 on the Lane3000 and Link2500.
+- US1610109: Fixed Logger class name conflicts.
+- US1674310/US1610098: Made improvements to device disconnects and reconnects by ensuring device deinitialization was complete before any further communications with the device.
+- US1684815/US1684820: Made improvements to device memory management by ensuring the reference to a previous device was not deallocated before deintialization was completed.
+- US1587617: Fixed an issue with VTP stopCurrentFlow during card input for Telium and Tetra devices. While initializing card input, a stopCurrentFlow call can occur before initialization was complete, resulting in competing threads to run in parallel. Both threads would complete and return a response back instead of a single response.
+
+v3.0.2, Release date June 2023
+- Added support to search and connect to the configured device every 10 seconds for initial connectivity and if an established connection is dropped.
+  If the SDK has not connected to the device in 10 consecutive attempts (around one minute and forty seconds from the completion of initialization or dropped connection), then the SDK will throw a DeviceError and deinitialize the SDK.
+- Added support to throw VTPErrorCodeHeartbeatTimedOut if the SDK fails consecutively 10 times to establish a connection to the device upon initialization or a dropped connection.
+- Added support to throw VTPErrorCodeSDKDeinitializeNotComplete if initialize is called while the device is still deinitializing.
+- US1574236: Fixed an issue applicationn UI freeze and main thread is blocked when device is not connected.
+- US1578612: Fixed an issue application crash on initialization.
+- US1586755: Fixed an issue application crash on SDK-reinitialization.
+- US1454606: Added support to delete OGZ/TGZ files from previous firware updates.
+
 v3.0.1, Release date April 2023
 - Fixed an issue that prevented from turning on production mode through application configuration.
 
@@ -47,7 +93,7 @@ v2.3.1, Release date September 2022
 
 v2.3.0, Release date May 2022
 - Updated Ingenico RBA SDK library to 5.30.3
-- Updated to UPP 6.81.20 for Ingenico Tetra devices (Lane 3000 and Link2500)
+- Updated to UPP 6.81.20 for Ingenico Tetra devices (Lane3000 and Link2500)
 - Enabled support for PINless debit transactions.
 - Updated to RBA 23.50.16 for Ingenico Telium iSMP4 and iSMP4n (non barcode) devices.
 - Updated to Ingenico PCL Library-v3 to establish PCL bluetooth connections with Link 2500 device.

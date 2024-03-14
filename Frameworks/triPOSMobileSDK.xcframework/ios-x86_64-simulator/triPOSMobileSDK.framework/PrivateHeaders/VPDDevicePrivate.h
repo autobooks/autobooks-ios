@@ -13,6 +13,7 @@
 #import "VPDDelegate.h"
 #import "VPDType.h"
 #import "VTPBluetoothDevice.h"
+#import "VPDPairingConfirmationCallback.h"
 #import "VTPInitializationStatus.h"
 
 extern const NSTimeInterval VPDUserInputTimeout;
@@ -109,6 +110,12 @@ extern const NSTimeInterval VPDUserInputQuickChipTimeout;
 -(BOOL)startTcpIpConnection:(NSString *)ipAddress port:(NSUInteger)port error:(NSError **)error;
 
 ///
+/// \brief Start USB connection to device specified by serial number.
+///
+/// Starts the device connection process. This process automatically detects when devices are connected and disconnected.
+///
+-(BOOL)startUSBConnection:(NSString *)serialNumber error:(NSError **)error;
+///
 /// \brief Start connection to device specified by serial number.
 ///
 /// Starts the device connection process. This process automatically detects when devices are connected and disconnected.
@@ -154,6 +161,15 @@ extern const NSTimeInterval VPDUserInputQuickChipTimeout;
 /// \param serialNumber The serial number of the connected device.
 ///
 -(void)sendDeviceDidConnectToDelegates:(NSString *)description model:(NSString *)model serialNumber:(NSString *)serialNumber;
+
+///
+/// \brief Sends a notification when the heartbeat fails to connect to the device after 10 attempts.
+///
+/// This method sends a notification when the heartbeat fails to connect to the device after 10 attempts.
+///
+/// \param description The description informing the heartbeat failed to connect after 10 attempts.
+///
+-(void)sendHeartbeatDidTimeoutToDelegates:(NSString *)description;
 
 ///
 /// \brief Sends a device connection notification to all registered delegates
@@ -240,6 +256,13 @@ extern const NSTimeInterval VPDUserInputQuickChipTimeout;
 -(void)sendDiscoveredBluetoothDeviceListToDelegates:(NSArray<VTPBluetoothDevice*>*)bluetoothDeviceList;
 
 ///
+/// \brief Moby device pairing confiramtion
+///
+/// This method returns device pairing confirmation callback
+///
+-(void)sendDevicePairConfirmationToDelegates:(NSArray*) ledSequence deviceName:(NSString*) deviceName callback:(id<VPDPairingConfirmationCallback>) pairingCallBack;
+
+///
 /// \brief Get the current device as a beep device
 ///
 /// This method attempts to get the current beep as a display device.
@@ -319,6 +342,16 @@ extern const NSTimeInterval VPDUserInputQuickChipTimeout;
 /// \return A VPDBarcodeInputDevice object if the device supports barcode input, otherwise nil.
 ///
 -(NSObject<VPDBarcodeInput> *)getAsBarcodeInputDevice;
+
+///
+/// \brief Get the current device as a DCC capable device
+///
+/// This method attempts to get the current device as a DCC display device.
+///
+/// \return A VPDDccInputDevice object if the device supports DCC, otherwise nil.
+///
+-(VPDDccInputDevice)getAsDccInputDevice;
+
 
 @end
 

@@ -16,6 +16,8 @@ typedef enum _VTPDeviceType
     
     /// Null device
     VTPDeviceTypeNull = _VTPDeviceTypeMinimum,
+
+#if !TRIPOS_TTP_SDK
     
     /// Ingenico RBA
     VTPDeviceTypeIngenicoRba,
@@ -32,6 +34,13 @@ typedef enum _VTPDeviceType
     /// Ingenico UPP TCP/IP
     VTPDeviceTypeIngenicoUppTcpIp,
     
+    /// Ingenico Moby Bluetooth
+    VTPDeviceTypeIngenicoMobyBluetooth,
+    
+    /// Ingenico Moby USB
+    VTPDeviceTypeIngenicoMobyUSB,
+
+#endif
     /// Apple Tap to Pay on iPhone
     VTPDeviceTypeAppleTapToPay,
     

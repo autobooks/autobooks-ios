@@ -19,6 +19,7 @@
 #import "VXPResponseCode.h"
 #import "VXPResponseType.h"
 #import "VXPToken.h"
+#import "VXPEnhancedBIN.h"
 
 ///
 /// \class VXPResponse
@@ -71,6 +72,13 @@
 /// An instance of the BIN class. NOTE: This property is only present if the BIN class is present in the Express response.
 ///
 @property (retain, nonatomic) VXPBIN *BIN;
+
+///
+/// \brief EnhancedBIN class
+///
+/// An instance of the Enhanced BIN class. NOTE: This property is only present if the Enhanced BIN class is present in the Express response.
+///
+@property (retain, nonatomic) VXPEnhancedBIN *enhancedBIN;
 
 ///
 /// \brief TransactionSetup class

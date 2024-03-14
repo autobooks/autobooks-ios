@@ -1,0 +1,11 @@
+framework module triPOSMobileSDK {
+  umbrella header "triPOSMobileSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module triPOSMobileSDK.Swift {
+  header "triPOSMobileSDK-Swift.h"
+  requires objc
+}

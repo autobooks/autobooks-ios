@@ -18,6 +18,8 @@ typedef enum _VXPResponseCode
     VXPResponseCodePartialApproval = 5,
     /// Purchase amount approved, cashback amount declined
     VXPResponseCodeApprovedExceptCashback = 6,
+    /// Dynamic currency code requested
+    VXPResponseCodeDccRequested = 7,
     /// Declined
     VXPResponseCodeDecline = 20,
     /// Expired card

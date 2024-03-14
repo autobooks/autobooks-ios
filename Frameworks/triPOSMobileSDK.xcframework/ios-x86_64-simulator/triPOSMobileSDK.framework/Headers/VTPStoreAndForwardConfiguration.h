@@ -20,7 +20,8 @@
 /// \brief Gets or sets if store and forward is enabled
 ///
 /// This property gets or sets whether store and foward is enabled or not.
-/// NOTE: This flag has been deprecated.
+///
+/// @deprecated Does some thing in old style, use transactionStoringMode instead.
 
 @property (nonatomic) BOOL isStoringTransactionsAllowed __deprecated;
 

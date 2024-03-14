@@ -252,12 +252,6 @@ using UInt = size_t;
 #endif
 
 #if defined(__OBJC__)
-
-SWIFT_CLASS("_TtC15triPOSMobileSDK6Logger")
-@interface Logger : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @protocol PaymentCardReaderBridgeProtocol;
 @class NSString;
 @class PaymentCardReaderToken;
@@ -317,6 +311,12 @@ SWIFT_CLASS("_TtC15triPOSMobileSDK22PaymentCardReaderToken") SWIFT_AVAILABILITY(
 - (void)logToken;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC15triPOSMobileSDK8TPLogger")
+@interface TPLogger : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #endif

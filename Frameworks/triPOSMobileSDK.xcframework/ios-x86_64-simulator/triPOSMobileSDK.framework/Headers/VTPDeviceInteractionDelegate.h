@@ -100,6 +100,24 @@
 -(void) onAmountConfirmationWithPrompt:(NSString*)prompt completionHandler:(VPDYesNoInputCompletionHandler)completionHandler;
 
 
+///
+/// \brief Requests the delegate to confirm or reject the DCC offer
+///
+/// This protocol method is called to provide the delegate with the details to prompt for DCC confirmation.
+///
+/// \param foreignTransactionAmount The foreign transaction amount for the DCC offer
+///
+/// \param foreignCurrencyCode the foreign currency code for the DCC offer
+///
+/// \param conversionRate The conversation rate for the DCC offer
+///
+/// \param transactionCurrencyCode The transaction currency code
+///
+/// \param completionHandler The completion handler the delegate should call with the index of the selected DCC choice.
+
+-(void)onDisplayDccConfirmationFor:(NSString *)foreignTransactionAmount foreignCurrencyCode: (NSString *)foreignCurrencyCode conversionRate: (NSString *) conversionRate transactionCurrencyCode: (NSString *)transactionCurrencyCode completionHandlder: (VPDDccInputCompletionHandler)completionHandler errorHandler:(VPDErrorHandler)errorHandler;
+
+
 @end
 
 #endif /* VTPDeviceInteractionDelegate_h */

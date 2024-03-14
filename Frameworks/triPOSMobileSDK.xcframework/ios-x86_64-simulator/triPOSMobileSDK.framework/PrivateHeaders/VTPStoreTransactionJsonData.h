@@ -80,6 +80,8 @@
 
 @property (nonatomic) VPDCardInputCapability cardInputCapability;
 
+@property (retain, nonatomic) NSString *merchantSuppliedTransactionID;
+
 -(instancetype)initWithJsonString:(NSString *)jsonString;
 
 -(instancetype)initWithFlowData:(NSObject<VTPFlowData> *)flowData;

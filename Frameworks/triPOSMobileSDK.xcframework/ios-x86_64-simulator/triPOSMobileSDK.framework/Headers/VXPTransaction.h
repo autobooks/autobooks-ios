@@ -28,6 +28,14 @@
 @property (retain, nonatomic) NSString *TransactionID;
 
 ///
+/// \brief Gets or sets the merchant supplied transaction ID
+///
+/// This property gets or sets the merchant supplied transaction ID from the host/processor.
+///
+@property (retain, nonatomic) NSString *MerchantSuppliedTransactionID;
+
+
+///
 /// \brief Gets or sets the clerk number
 ///
 /// The property gets or sets the dentifier for the clerk performing the transaction.
@@ -82,6 +90,13 @@
 /// This propety gets or sets the convenience fee dollar amount (Worldpay only).
 ///
 @property (retain, nonatomic) NSDecimalNumber *ConvenienceFeeAmount;
+
+///
+/// \brief Gets or sets the surcharge fee amount
+///
+/// This propety gets or sets the surcharge fee dollar amount.
+///
+@property (retain, nonatomic) NSDecimalNumber *SurchargeAmount;
 
 ///
 /// \brief Gets or sets the approval approval number
@@ -292,6 +307,34 @@
 /// This property gets or sets the PINless POS conversion indicator
 ///
 @property (retain, nonatomic) NSString *PINlessPOSConversionIndicator;
+
+///
+/// \brief Gets or sets the foreign transaction amount.
+///
+/// This property gets or sets the foreign transaction amount
+///
+@property (retain, nonatomic) NSString *ForeignTransactionAmount;
+
+///
+/// \brief Gets or sets the foreign currency code.
+///
+/// This property gets or sets the foreign currency code
+///
+@property (retain, nonatomic) NSString *ForeignCurrencyCode;
+
+///
+/// \brief Gets or sets the conversion rate.
+///
+/// This property gets or sets the conversion rate
+///
+@property (retain, nonatomic) NSString *ConversionRate;
+
+///
+/// \brief Gets or sets the dcc requested confirmation.
+///
+/// This property gets or sets the dcc requested confirmation
+///
+@property (assign) NSNumber *DCCRequested;
 
 @end
 

@@ -248,6 +248,26 @@
 ///
 @property (nonatomic) BOOL isHealthcareSupported;
 
+///
+/// \brief Gets or sets if Dcc is enabled.
+///
+/// This property gets or sets if Dcc is enabled.
+///
+@property (nonatomic) BOOL isDccEnabled;
+
+///
+/// \brief Gets or sets if the surcharge fees amount should be confirmed.
+///
+/// This property indicates whether or not the card holder is prompted to confirm the surcharge fee amount.
+///
+@property (nonatomic) BOOL shouldConfirmSurchargeAmount;
+
+/// \brief Gets or sets if the convenience fee amount should be confirmed.
+///
+/// This property indicates whether or not the card holder is prompted to confirm the convenience fee amount.
+///
+@property (nonatomic) BOOL shouldConfirmConvenienceAmount;
+
 @end
 
 #endif /* VTPTransactionConfiguration_h */

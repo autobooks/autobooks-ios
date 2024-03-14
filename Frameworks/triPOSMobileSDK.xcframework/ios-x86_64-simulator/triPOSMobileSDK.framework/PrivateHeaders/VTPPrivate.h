@@ -27,6 +27,7 @@
 #import "VTPGiftCardUnloadFlowData.h"
 #import "VTPGiftCardCloseFlowData.h"
 #import "VTPGiftCardBalanceTransferFlowData.h"
+#import "VTPDccFlowData.h"
 
 @interface VTP()
 
@@ -42,15 +43,19 @@
 
 @property (atomic, assign) BOOL isPrereadInProgress;
 
+@property (nonatomic, strong) NSTimer * amountConfirmationTimer;
+
 -(void)sendStatusChange:(VTPStatus)status;
 
 -(void)sendSelectionWith:(NSArray *) choices for:(VTPSelectionType) selectionType completionHandler:(VPDChoiceInputCompletionHandler)completionHandler;
 
--(void)sendAmountConfirmation:(NSDecimalNumber *) amount withPrompt:(NSString*) prompt andCompletionHandler:(VPDYesNoInputCompletionHandler)completionHandler;
+-(void)sendAmountConfirmation:(NSDecimalNumber *) amount withPrompt:(NSString*) prompt andCompletionHandler:(VPDYesNoInputCompletionHandler)completionHandler errorHandler:(VPDErrorHandler)errorHandler;
 
 -(void)sendNumericInput:(VTPNumericInputType) numericInputType completionHandler:(VPDKeyboardNumericInputCompletionHandler) completionHandler;
 
 -(void)sendDisplayText:(NSString *) text;
+
+-(void)onDisplayDccConfirmationFor:(NSString *)foreignTransactionAmount foreignCurrencyCode: (NSString *)foreignCurrencyCode conversionRate: (NSString *) conversionRate transactionCurrencyCode: (NSString *)transactionCurrencyCode completionHandlder: (VPDDccInputCompletionHandler)completionHandler errorHandler:(VPDErrorHandler)errorHandler;
 
 -(void)sendSelectionApplication:(NSArray *) applications completionHandler:(VPDChoiceInputCompletionHandler)completionHandler;
 

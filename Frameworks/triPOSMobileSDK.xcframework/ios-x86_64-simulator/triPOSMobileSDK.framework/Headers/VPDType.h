@@ -15,6 +15,8 @@ typedef enum _VPDType
     
     /// Null
     VPDTypeNull = _VPDTypeMinimum,
+
+#if !TRIPOS_TTP_SDK
     
     /// Ingenico RBA
     VPDTypeIngenicoRba,
@@ -29,7 +31,15 @@ typedef enum _VPDType
     VPDTypeIngenicoUpp,
     
     /// Ingenico UPP, TCP/IP
-    VPDTypeIngenicoUppTcpIp,
+    VPDTypeIngenicoUppTcpIp,    
+    
+    /// Ingenico Moby Bluetooth
+    VPDTypeIngenicoMobyBluetooth,
+    
+    /// Ingenico Moby USB
+    VPDTypeIngenicoMobyUSB,
+
+#endif
     
     /// Apple Tap to Pay on iPhone
     VPDTypeAppleTapToPay,

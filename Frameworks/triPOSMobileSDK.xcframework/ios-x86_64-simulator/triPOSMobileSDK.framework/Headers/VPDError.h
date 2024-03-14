@@ -54,6 +54,10 @@ typedef enum _VPDErrorCode
     VPDErrorCodeCardInputTypeNotAccepted,
     ///Card read error
     VPDErrorCodeCardReadError,
+    ///Swipe card read error. Situation where card return fallback chip when chip card swipe first time
+    VPDErrorWaitingforFallbackChip,
+    VPDErrorPleaseSeePhoneForDetails,
+    
     /// Unknown choice input error
     VPDErrorCodeChoiceInputUnknown = 40,
     /// Input choices is nil
@@ -85,7 +89,10 @@ typedef enum _VPDErrorCode
     VPDErrorCodeEmvCardRemoved,
     /// EMV, card declined with error. Situation where card is declined even though we received ARQC.  Most likely due to CDA failing
     VPDErrorCodeEmvCardDeclinedOfflineWithError,
-    
+    /// EMV, chip reader error fallback. Situation where card return fallback when first time card inserted.
+    VPDErrorCodeEmvChipReaderErrorFallback,
+    /// EMV, MSD contactless card read error. Situation where MSD contactless card not supported.
+    VPDErrorCodeEMVUnacceptedContactlessMsdDetected,
     /// Unknown barcode error
     VPDErrorCodeBarcodeUnknown = 80,
     /// Barcode set error

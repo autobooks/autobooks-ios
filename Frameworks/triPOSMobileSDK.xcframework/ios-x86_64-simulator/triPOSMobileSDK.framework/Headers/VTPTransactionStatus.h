@@ -26,6 +26,8 @@ typedef enum _VTPTransactionStatus
     VTPTransactionStatusDeclined,
     /// Needs to be reversed
     VTPTransactionStatusNeedsToBeReversed,
+    /// Needs to show currency information
+    VTPDccRequested,
 }   VTPTransactionStatus;
 
 @interface VTPTransactionStatusUtility : NSObject

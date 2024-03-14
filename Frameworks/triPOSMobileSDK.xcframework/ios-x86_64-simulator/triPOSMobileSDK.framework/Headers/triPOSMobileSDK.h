@@ -33,37 +33,13 @@
 ///
 /// <ul>
 ///
-/// <li>iOS 14</li>
-///
 /// <li>iOS 15</li>
 ///
 /// <li>iOS 16</li>
 ///
-/// </ul>
-///
-/// It is also compatible with, although not tested, with:
-///
-/// <ul>
-///
-/// <li>iOS 11</li>
+/// <li>iOS 17</li>
 ///
 /// </ul>
-///
-/// \subsection requirementsiOSDevices iOS devices
-///
-/// The Worldpay triPOS® Mobile SDK Framework has been tested for use with the following devices:
-///
-/// <ul>
-///
-/// <li>iPod touch (6th generation)</li>
-///
-/// <li>iPad Air 2</li>
-///
-/// <li>iPad (8th gen)</li>
-///
-/// </ul>
-///
-/// If a particular device is not in the list above, it does not mean the framework will not work with the device. However, Worldpay Integrated Payments has not tested non-listed devices and makes no guarantees they will operate in the desired manner.
 ///
 /// \subsection requirementsFramework Framework
 ///
@@ -71,7 +47,7 @@
 ///
 /// <li>The iOS device being used requires a data connection. The data connection does not have to be always available, but it does have to be available at the time a transaction is processed. This connection may be Wi-Fi, mobile data, or any other data connection available that allows an HTTPS connection to the Express host.</li>
 ///
-/// <li>You must have credentials assigned by Worldpay Integrated Payments to use this framework. For development and certification, you may sign up for a free test account by <a href='http://www.elementps.com/Create-a-Test-Account'>clicking here</a> or visiting <a href='https://developer.vantiv.com'>www.vantivintegratedpayments.com</a>. For production use, contact your Worldpay Integrated Payments sales representative.</li>
+/// <li>You must have credentials assigned by Worldpay Integrated Payments to use this framework. For development and certification, you may sign up for a free test account by <a href='https://developerengine.fisglobal.com/apis/tripos/tripos-mobile'>clicking here</a> or visiting <a href='https://developerengine.fisglobal.com/'>www.developerengine.fisglobal.com</a>. For production use, contact your Worldpay Integrated Payments sales representative.</li>
 ///
 /// </ul>
 ///
@@ -128,6 +104,7 @@
 /// <li>com.ingenico.easypayemv.spm-sppchannel</li>
 /// <li>com.ingenico.easypayemv.spm-pppchannel</li>
 /// <li>com.ingenico.easypayemv.spm-configuration</li>
+/// <li>com.landicorp.USBdatapath</li>
 /// </ul>
 ///
 /// </ul>
@@ -151,6 +128,25 @@
 ///
 /// When a user first attemps to connect to a BBPos Chipper 3X BT device via the triPOS® Mobile SDK Framework, they will be prompted to enter a 6 digit code.  This code is located on the back of the BBPPos Chipper 3X BT device and is labeled BT Passkey.  After the code is correctly entered, the BBPos Chipper 3X BT device will be paired to the iOS device.
 ///
+/// \subsection Ingenico Moby/5500 Pairing
+/// <ul>
+///
+/// <li>Bluetooth Pairing</li>
+/// <ul>
+/// <li>During the first attempt to connect a Moby/5500 to the triPOS® Mobile SDK Framework, when prompted for Bluetooth pairing, select Pair. When prompted to confirm pairing, select Ok. The Moby/5500 is now paired with the iOS device.</li>
+/// </ul>
+///
+/// </ul>
+///
+/// <ul>
+/// 
+/// <li>USB Pairing</li>
+/// <ul>
+/// <li>To connect a Moby/5500 to the triPOS® Mobile SDK Framework using USB, an Ingenico Moby USB to Lightning cable must be used. No pairing is required, simply connect the appropriate ends of the cable to each device and initialize the SDK.</li>
+/// </ul>
+///
+/// </ul>
+///
 /// \subsection useFramework Using the framework
 ///
 /// The Worldpay triPOS® Mobile SDK Framework is used by importing it (@import triPOSMobileSDK;) then accessing the SDK functionality through the sharedVtp singleton. The SDK must be initialized before performing any functions and if those functions require the device, the application must wait for the device to become connected.<br /><br /><strong style="color:red;">NOTE: If necessary, the triPOS® Mobile SDK will update device firmware and settings. If a firmware update is required, the first initialization may take 10 or more minutes depending on the connection type.</strong>
@@ -172,16 +168,17 @@
 /// For each payment device supported in the application, Worldpay triPOS® Mobile SDK Framework must be certified for use with the selected payment processor.
 ///
 /// <ul>
-///     <li>Igenico RBA and Ingenico RBA TCP/IP
+///     <li>Ingenico RBA and Ingenico RBA TCP/IP
 ///         <ul>
 ///             <li>FIS/Worldpay</li>
 ///             <li>Fiserv/First Data - QuickChip only</li>
 ///        </ul>
 ///     </li>
-///     <li>Igenico UPP and Ingenico UPP TCP/IP
+///     <li>Ingenico UPP and Ingenico UPP TCP/IP
 ///         <ul>
 ///             <li>FIS/Worldpay</li>
 ///             <li>Fiserv/First Data </li>
+///             <li>TSYS</li>
 ///         </ul>
 ///     </li>
 ///     <li>BBPos
@@ -189,15 +186,23 @@
 ///             <li>FIS/Worldpay - QuickChip only</li>
 ///         </ul>
 ///     </li>
+///       <li>Ingenico Moby Bluetooth and Ingenico Moby USB
+///         <ul>
+///             <li>FIS/Worldpay</li>
+///         </ul>
+///     </li>
 /// </ul>
 ///
 /// \section support Support
 ///
-/// Please contact <a href="mailto:MobilePOSSDKSupport@vantiv.com?body=Please complete the following:%0D%0A%0D%0AYour name:%20%0D%0ACompany name:%20%0D%0APhone number:%20%0D%0AE-mail if different from sending e-mail:%20%0D%0A%0D%0ADescription of the problem:%20">triPOS® Mobile SDK support</a>.
+/// Please contact <a href="mailto:dldipartnersupport@fisglobal.com?body=Please complete the following:%0D%0A%0D%0AYour name:%20%0D%0ACompany name:%20%0D%0APhone number:%20%0D%0AE-mail if different from sending e-mail:%20%0D%0A%0D%0ADescription of the problem:%20">triPOS® Mobile SDK support</a>.
 ///
 /// \section license SDK License Agreement
 ///
 /// <a href="triPOS%C2%AE%20Interface%20Software%20License%20-%20v1.2022.pdf">triPOS® Interface Software License - v1.2022.pdf</a>.
+///
+/// \section triPOS® Mobile SDK Integration Guide
+/// <a href="triPOS%C2%AE%20Mobile%20iOS%20SDK%20Integration%20Guide.pdf">triPOS® Mobile iOS SDK Integration Guide.pdf</a>.
 ///
 /// \section releaseNotes Release Notes
 ///
@@ -212,6 +217,7 @@ FOUNDATION_EXPORT double triPOSMobileSDKVersionNumber;
 //! Project version string for triPOSMobileSDK.
 FOUNDATION_EXPORT const unsigned char triPOSMobileSDKVersionString[];
 
+#import "triPOSMobileSDK+Ttp.h"
 #import "VTP.h"
 #import "VTP+Sale.h"
 #import "VTP+Refund.h"
@@ -228,6 +234,9 @@ FOUNDATION_EXPORT const unsigned char triPOSMobileSDKVersionString[];
 #import "VXP.h"
 #import "VTP+GiftCardClose.h"
 #import "VTP+GiftCardBalanceTransfer.h"
+#import "VTP+HostedPaymentsSale.h"
+#import "VTP+HostedPaymentsAuthorization.h"
+
 
 @interface triPOSMobileSDK : NSObject
 

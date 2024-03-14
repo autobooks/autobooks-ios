@@ -106,6 +106,13 @@
 ///
 -(BOOL)validateConfiguration:(NSError **)error;
 
+///
+/// \brief The time duration after which the transaction would timeout.
+///
+/// This property gets or sets the timeout duration.
+///
+@property (nonatomic) NSUInteger expressRequestTimeout;
+
 @end
 
 #endif /* VTPHostConfiguration_h */

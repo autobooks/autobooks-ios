@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
-// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Autobooks
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Autobooks
 import CallKit
 import Combine
 import CryptoKit
@@ -108,7 +107,7 @@ public enum AB {
   }
   public typealias CompletionBlock = (Autobooks.AB.DismissalReason) -> Swift.Void
   #if compiler(>=5.3) && $AsyncAwait && $Sendable
-  public static func startTapToPay(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration = .default, device: Autobooks.AB.Device, loginProvider: @escaping @Sendable () async throws -> Autobooks.AB.LoginCredential, completion: Autobooks.AB.CompletionBlock? = nil)
+  public static func startTapToPay(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration = .default, device: Autobooks.AB.Device, loginProvider: @escaping @_Concurrency.MainActor @Sendable () async throws -> Autobooks.AB.LoginCredential, completion: Autobooks.AB.CompletionBlock? = nil)
   #endif
   public static func startPaymentForm(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.CompletionBlock? = nil)
   public static func startInvoicing(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.CompletionBlock? = nil)
@@ -138,6 +137,9 @@ public enum AB {
     public static let tappedCallUs: Foundation.Notification.Name
     public static let viewedScreen: Foundation.Notification.Name
     public static let screenTimerWarning: Foundation.Notification.Name
+    public static let addedTip: Foundation.Notification.Name
+    public static let toggledTip: Foundation.Notification.Name
+    public static let readCancelled: Foundation.Notification.Name
     public static let somethingWentWrong: Foundation.Notification.Name
     public static let internalError: Foundation.Notification.Name
     public static let transactionDeclined: Foundation.Notification.Name

@@ -7,6 +7,7 @@
 
 #import "VTPStatus.h"
 #import "VTPBluetoothDevice.h"
+#import "VPDPairingConfirmationCallback.h"
 
 ///
 /// \protocol VTPDelegate
@@ -149,6 +150,14 @@
 /// \param warning The text of the warning.
 ///
 -(void)onWarning:(NSString *)warning;
+
+///
+/// \brief Moby device pairing confiramtion
+///
+/// This method returns device pairing confirmation callback
+///
+
+-(void) onReturnPairingConfirmation:(NSArray*) ledSequence deviceName:(NSString*) deviceName callback:(id<VPDPairingConfirmationCallback>) callback;
 @end
 
 #endif /* VTPDelegate_h */

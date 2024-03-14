@@ -111,6 +111,21 @@ typedef enum _VTPErrorCode
     ///  Error retrieving device token from host
     VTPErrorCodeGettingHostDeviceToken,
     
+    /// SDK is still deinitializing
+    VTPErrorCodeSDKDeinitializeNotComplete,
+    
+    /// Heartbeat failed to connect to the device after 10 attempts
+    VTPErrorCodeHeartbeatTimedOut,
+    
+    /// Invalid tip amount. Tip amount cannot be less than 0.
+    VTPErrorCodeInvalidTipAmount,
+    
+    /// Invalid convenience fee amount. Convenience fee amount cannot be less than 0.
+    VTPErrorCodeInvalidConvenienceFeeAmount,
+    
+    /// Invalid surcharge fee amount. Surcharge amount cannot be less than 0.
+    VTPErrorCodeInvalidSurchargeAmount,
+    
     /// Unknown error
     VTPErrorCodeUnknown = INT_MAX
 }   VTPErrorCode;

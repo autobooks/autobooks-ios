@@ -23,8 +23,10 @@
 #import "VPDYesNoInput.h"
 #import "VPDBarcodeInput.h"
 
+#import "VPDDccInput.h"
 
-///
+
+///Ø
 /// \class VPD
 ///
 /// \brief The device class

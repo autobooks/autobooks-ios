@@ -42,8 +42,13 @@ typedef enum _VTPStatus
     /// SDK is running an EBT card balance inquiry
     VTPStatusRunningEbtCardBalanceInquiry,
     
+    /// SDK is running a Dcc Confirmation
+    VTPStatusRunningDccConfirmation,
+    
     /// Card input is being requested
     VTPStatusGettingCardInput,
+    /// Running BIN lookup
+    VTPStatusRunningBINLookup,
     /// Card input is being processed
     VTPStatusProcessingCardInput,
     /// Payment type is being requested
@@ -64,6 +69,8 @@ typedef enum _VTPStatus
     VTPStatusGettingCashbackEntry,
     /// Postal code is being requested
     VTPStatusGettingPostalCode,
+    /// Surcharge amount confirmation
+    VTPStatusGettingSurchargeAmountConfirmation,
     /// Total amount confirmation is being requested
     VTPStatusGettingTotalAmountConfirmation,
     /// PIN is being requested

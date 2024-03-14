@@ -4,53 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>BBPosEMVConfiguration.plist</key>
-		<data>
-		IhXSgVUU2ejQzBmujQyq6cnJaFI=
-		</data>
-		<key>CB5BSECBIN_OFF.PGZ</key>
-		<data>
-		EDK0Xj6UwQD1j6vT4zkMQhLbtpo=
-		</data>
-		<key>CB5BTCUSTPROMPT.PGZ.0001</key>
-		<data>
-		YkKC2pfiLwZ9F58vcOzW+89ikrM=
-		</data>
-		<key>CB5BTRCCSEC.PGZ</key>
-		<data>
-		Lzd7UmsViFnBI75rELf2KUiMAaM=
-		</data>
-		<key>CB5BTTDES_Slot4_UPDATE_1.PGZ</key>
-		<data>
-		ZKS1ht5loRuaZqrbDzDuFzyKuE8=
-		</data>
-		<key>CUSTPROMPT.PGZ.0001</key>
-		<data>
-		P7d6fLSzFyUw7vRInyG9ewe53ks=
-		</data>
 		<key>DevicePaymentProcessorMapping.plist</key>
 		<data>
-		pJ8ypAMlwJpSdQR5z4gxi6Pmhz0=
-		</data>
-		<key>EMVCLESS2.XML</key>
-		<data>
-		GRdu+mJOuuB2YZqR1hZ/0uNa/Uc=
-		</data>
-		<key>EMVCLESS_UPP.XML</key>
-		<data>
-		J8A3cD8tueK2tt8Nt56LaeHNVyA=
-		</data>
-		<key>EMVCONTACT2.XML</key>
-		<data>
-		fxhaYPjIpG1CkMVS44o1V59nsT4=
+		uunL4oipyiMlFxgEwp+eUMlJGO0=
 		</data>
 		<key>EMVConfiguration.plist</key>
 		<data>
-		RrXdJv0feoqV4AXPahEKd5dm5ZQ=
+		qVYhsYgSZqTBSVqY05i2Nzj46Xo=
 		</data>
 		<key>Headers/VPD.h</key>
 		<data>
-		nOHr954PLZiab1zzcWR0EENVKnQ=
+		ePAfaTQbId8yePHAQllsKeC6KXI=
 		</data>
 		<key>Headers/VPDBarcodeImageMode.h</key>
 		<data>
@@ -84,13 +48,17 @@
 		<data>
 		/CYj75f7lVikIL1qCnipSIlwGgk=
 		</data>
+		<key>Headers/VPDDccInput.h</key>
+		<data>
+		mHS3b9SJa4i6LY4J1xWP9IQ7NJ8=
+		</data>
 		<key>Headers/VPDDelegate.h</key>
 		<data>
-		lTnGZYXJFM7DtRsqrBAMER7mMuA=
+		qnhg0e5swHXpMvQp8W37/6OzzDw=
 		</data>
 		<key>Headers/VPDDevice.h</key>
 		<data>
-		Kv/7W23aWBpNWMbQxrg4LMb5lLM=
+		jGsW2v7a3P85S89lNMimPBVFqy0=
 		</data>
 		<key>Headers/VPDDisplay.h</key>
 		<data>
@@ -98,7 +66,7 @@
 		</data>
 		<key>Headers/VPDError.h</key>
 		<data>
-		YLBcqFziZ5ke4tIc5Oy0B2N0d0g=
+		vYIY22XjalpJg+GENXNgyl/Vn5Y=
 		</data>
 		<key>Headers/VPDKeyboardNumericInput.h</key>
 		<data>
@@ -107,6 +75,10 @@
 		<key>Headers/VPDKeyboardNumericInputPromptId.h</key>
 		<data>
 		djNA1uo9t59bKhk76dCyZf+RHFQ=
+		</data>
+		<key>Headers/VPDPairingConfirmationCallback.h</key>
+		<data>
+		l6y08cgLlG0TegdzVj0ZoKP6qoU=
 		</data>
 		<key>Headers/VPDPinInput.h</key>
 		<data>
@@ -122,7 +94,7 @@
 		</data>
 		<key>Headers/VPDType.h</key>
 		<data>
-		o5fyq0Q3Kw8VudH/+OyoBNe7Nvg=
+		hfya8a3HYIVcQlLUXBG1FQMPnFg=
 		</data>
 		<key>Headers/VPDYesNoInput.h</key>
 		<data>
@@ -172,6 +144,14 @@
 		<data>
 		mkcfUZJblb/6hFlZ8/evKY0LNSc=
 		</data>
+		<key>Headers/VTP+HostedPaymentsAuthorization.h</key>
+		<data>
+		bGwNUApzoZHSR0oph9sjUDfl0J8=
+		</data>
+		<key>Headers/VTP+HostedPaymentsSale.h</key>
+		<data>
+		29S5e4FbdJOw5uo5Ml7FUBH9nyg=
+		</data>
 		<key>Headers/VTP+ManuallyForward.h</key>
 		<data>
 		f3BFQTNS4Hm7eNGHFLtGiEA8y4g=
@@ -190,7 +170,7 @@
 		</data>
 		<key>Headers/VTP.h</key>
 		<data>
-		UurP9dngtH480UPzlNH0mca4CVU=
+		xh2hIHYbHLydnXVvlRXpkun1m/4=
 		</data>
 		<key>Headers/VTPAddressRequest.h</key>
 		<data>
@@ -214,11 +194,11 @@
 		</data>
 		<key>Headers/VTPAuthorizationRequest.h</key>
 		<data>
-		QLjD+RgAz9uvZ+DaKazA3w+02FU=
+		JohD1DVUF9d9VWt+Dau98D+SpCY=
 		</data>
 		<key>Headers/VTPAuthorizationResponse.h</key>
 		<data>
-		n+cJ6eJu21udfTaTrAnABLTfg/8=
+		cXrYkeled3bOzq3ewzGQ9PeKZok=
 		</data>
 		<key>Headers/VTPBluetoothDevice.h</key>
 		<data>
@@ -262,11 +242,15 @@
 		</data>
 		<key>Headers/VTPCurrencyCode.h</key>
 		<data>
-		sSgjrbSQqInEYj6/gAfFk/+yzdY=
+		N+CSVM+Te2IhpFXFC5ccRkjFLA4=
+		</data>
+		<key>Headers/VTPDccResponse.h</key>
+		<data>
+		xl0H8sxeuhIgCPaAIAL3FGfjEBE=
 		</data>
 		<key>Headers/VTPDelegate.h</key>
 		<data>
-		lGGoDZkFXiSfX0b83EKBlXf/riI=
+		rSWCSxFRoQdB19Eu/ggvnNspGP4=
 		</data>
 		<key>Headers/VTPDeviceConfiguration.h</key>
 		<data>
@@ -274,7 +258,7 @@
 		</data>
 		<key>Headers/VTPDeviceInteractionDelegate.h</key>
 		<data>
-		LBV3Az6AsO49LTs0yVkmKENaMic=
+		jXO3C4GzSt0siWpefRGm/73t1F4=
 		</data>
 		<key>Headers/VTPDeviceTcpIpConfiguration.h</key>
 		<data>
@@ -282,7 +266,7 @@
 		</data>
 		<key>Headers/VTPDeviceType.h</key>
 		<data>
-		SJiPCziDpYlACNpxMH2p/j/1PHA=
+		3HOTxhWTbu14Am/PfCiRfcFubCI=
 		</data>
 		<key>Headers/VTPEBTCardBalanceInquiryRequest.h</key>
 		<data>
@@ -350,7 +334,7 @@
 		</data>
 		<key>Headers/VTPError.h</key>
 		<data>
-		Z0lodcE56Ah0gOJk3XK8n9Mk07o=
+		qNMRQzPDsFqXkwwFFpwTfxasY8I=
 		</data>
 		<key>Headers/VTPFinancialCardData.h</key>
 		<data>
@@ -372,6 +356,10 @@
 		<data>
 		eVY8KiFIXkxqRxA8pm9en4N/7vY=
 		</data>
+		<key>Headers/VTPFinancialRequestSurchargeAmount.h</key>
+		<data>
+		Y/XWj6mggQqexGKas0YR5aQoMTo=
+		</data>
 		<key>Headers/VTPFinancialRequestTipAmount.h</key>
 		<data>
 		ppfwIMWtRiTqYmD+z8PdWFBnZjo=
@@ -382,7 +370,7 @@
 		</data>
 		<key>Headers/VTPFinancialResponseBase.h</key>
 		<data>
-		2JlG6TZ9H7tSiKrs3ajMIHcP+OU=
+		W9G2+W6++YAXGHclsDbAe1tLvzI=
 		</data>
 		<key>Headers/VTPFinancialResponseCard.h</key>
 		<data>
@@ -403,6 +391,10 @@
 		<key>Headers/VTPFinancialResponseHost.h</key>
 		<data>
 		fD++AyF/Ecvqfbh7c5RCaUYpE9U=
+		</data>
+		<key>Headers/VTPFinancialResponseSurchargeAmount.h</key>
+		<data>
+		qeO6bJP5QZWLBbxOCNShduE/xso=
 		</data>
 		<key>Headers/VTPFinancialResponseTipAmount.h</key>
 		<data>
@@ -474,11 +466,19 @@
 		</data>
 		<key>Headers/VTPHostConfiguration.h</key>
 		<data>
-		x0tWle8dW7OuPS38goyKurLbHVM=
+		I7/hlUW0QWYNWJIMPKZhouzjM6g=
 		</data>
 		<key>Headers/VTPHostResponseData.h</key>
 		<data>
 		e80EuhyP8PaMsLHf8HltG0xG2kM=
+		</data>
+		<key>Headers/VTPHostedPaymentsAuthorizationResponse.h</key>
+		<data>
+		qe714gpBvALDY75ZnRDsWxFNQro=
+		</data>
+		<key>Headers/VTPHostedPaymentsSaleResponse.h</key>
+		<data>
+		nRNBKyLl2v0MPcxd502VSXBiMq4=
 		</data>
 		<key>Headers/VTPIccCardData.h</key>
 		<data>
@@ -522,7 +522,7 @@
 		</data>
 		<key>Headers/VTPPaymentType.h</key>
 		<data>
-		z1TputyqnP3yJnu9WAzvi5sbrQM=
+		lbLdOm27KRfagOUaxSm0Wzxg4+s=
 		</data>
 		<key>Headers/VTPRefundRequest.h</key>
 		<data>
@@ -534,11 +534,11 @@
 		</data>
 		<key>Headers/VTPSaleRequest.h</key>
 		<data>
-		JFZAoO997lXvx7bRPdzfERv3GC8=
+		7jUors2hd5jUgC1CY0zSteJoNz0=
 		</data>
 		<key>Headers/VTPSaleResponse.h</key>
 		<data>
-		t1gUNaC9kxWV3n2wwO4FqVKpPAE=
+		D+IYEcjJSD6c4oRLOjCGDBb9cys=
 		</data>
 		<key>Headers/VTPSecurityCodeStatus.h</key>
 		<data>
@@ -546,15 +546,15 @@
 		</data>
 		<key>Headers/VTPSelectionType.h</key>
 		<data>
-		Q83CMGufhjVYeSSjMWONe5NuGdk=
+		BK307km+zqB4BPGDFxUgOckeUJA=
 		</data>
 		<key>Headers/VTPStatus.h</key>
 		<data>
-		mM28A93xjDomo2nwycXLSVa888E=
+		kAt0vTOujLLa3IvBkk5aYwaol+M=
 		</data>
 		<key>Headers/VTPStoreAndForwardConfiguration.h</key>
 		<data>
-		1m8Pnr16Y0DSFH4N1epyiGzhcag=
+		pm9JS5ItY5t8ErXydZFcKqPeeik=
 		</data>
 		<key>Headers/VTPStoreAndForwardResponse.h</key>
 		<data>
@@ -578,11 +578,11 @@
 		</data>
 		<key>Headers/VTPTransactionConfiguration.h</key>
 		<data>
-		blKFMiKmqQSbWGJsKpyzAyRy5w8=
+		lHdr85kqbF3Vbd9G/0cqvY0czU4=
 		</data>
 		<key>Headers/VTPTransactionStatus.h</key>
 		<data>
-		3PHXMZu7VJNjBFFTJyVgD2YLkU4=
+		hKI18ueJX4awrFhJ6uj4AsicKXk=
 		</data>
 		<key>Headers/VTPTransactionStoringMode.h</key>
 		<data>
@@ -696,6 +696,10 @@
 		<data>
 		rg0R7GMSWlG4zgjrcoWydi1Ajts=
 		</data>
+		<key>Headers/VXPEnhancedBIN.h</key>
+		<data>
+		3YBMgSHD17mlP8LFRebcHFVDU9Y=
+		</data>
 		<key>Headers/VXPError.h</key>
 		<data>
 		RD5hk/Z542sO30nRHpEoofAjDwI=
@@ -782,11 +786,11 @@
 		</data>
 		<key>Headers/VXPResponse.h</key>
 		<data>
-		6Rz47qhKR9x9JVF19gWGEmRh1fk=
+		eNhg0YlKp243wO5Se9uQUmrAt7c=
 		</data>
 		<key>Headers/VXPResponseCode.h</key>
 		<data>
-		ijTTNI60BdpBGOQR/TP4t6f8FGw=
+		2WLDzcmhGf+P/tOj2vEsorS+CX4=
 		</data>
 		<key>Headers/VXPResponseType.h</key>
 		<data>
@@ -834,7 +838,7 @@
 		</data>
 		<key>Headers/VXPTransaction.h</key>
 		<data>
-		KpCtmuVEVlBJdxfs8By63PBlGYs=
+		JGVKuSC8esSasnlJ1tiBN3Pbb4A=
 		</data>
 		<key>Headers/VXPTransactionSetup.h</key>
 		<data>
@@ -852,29 +856,21 @@
 		<data>
 		JxN0Zi/jS022NZqA8clfV9EOzxA=
 		</data>
+		<key>Headers/triPOSMobileSDK+Ttp.h</key>
+		<data>
+		/xgwGYBSSdA98yyeIs54T6VIjHU=
+		</data>
 		<key>Headers/triPOSMobileSDK-Swift.h</key>
 		<data>
-		y+YWeajAHrrLlfHuAICrWTzTarY=
+		Wz+eKhLxFJvmBuXZNz7JX0tDE74=
 		</data>
 		<key>Headers/triPOSMobileSDK.h</key>
 		<data>
-		05q38kZPoPK3wTu/vD/fHVc0rEI=
+		jPC5/u2WnEuv5YFj3Vi7tPC9cYA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cGG/gFzE11M7HylaVIqtFBqy6JA=
-		</data>
-		<key>IngenicoFirmwareFileMapping.plist</key>
-		<data>
-		Or0ihLbO/JI2uKW8rJOYHS++24M=
-		</data>
-		<key>LANE3000.TGZ.0004</key>
-		<data>
-		hzdivx752WVNYgj81AfwwFKMOK8=
-		</data>
-		<key>LINK2500.TGZ.0004</key>
-		<data>
-		boyZeDseKCoiaIpI+3fjf6YSPXY=
+		pgo+gf+6iAPEghAy0vBGdjO+Jdo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -886,11 +882,11 @@
 		</data>
 		<key>Modules/triPOSMobileSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		1ENOq1O1UNERnaTePED9eCn+bvc=
+		CEA+Xv3h6XcUfeC6NUUvY5fObqY=
 		</data>
 		<key>Modules/triPOSMobileSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/md27rW119QXf/jiK/SoarhpN4Y=
+		OakvAT6xRW3XppphTMqxa0lZb8Q=
 		</data>
 		<key>Modules/triPOSMobileSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -898,11 +894,11 @@
 		</data>
 		<key>Modules/triPOSMobileSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/md27rW119QXf/jiK/SoarhpN4Y=
+		OakvAT6xRW3XppphTMqxa0lZb8Q=
 		</data>
 		<key>Modules/triPOSMobileSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		g3gmpeiR2IAvgfej11aIjzAEOac=
+		E+1wPVgwWyHKG1dfyCNH/ptTjH0=
 		</data>
 		<key>PrivateHeaders/NSData+BcdToUInt.h</key>
 		<data>
@@ -996,69 +992,13 @@
 		<data>
 		DuKM8zpWOIERxv5bl50WgYbyKqA=
 		</data>
-		<key>PrivateHeaders/VPDBarcodeImageModeEnum.h</key>
-		<data>
-		gP5vw1cUKnnG5Syc6KKW2Bfx3F0=
-		</data>
-		<key>PrivateHeaders/VPDBarcodeLightingModeEnum.h</key>
-		<data>
-		Nio39lb7fviDFoMURdHk90hdfgc=
-		</data>
-		<key>PrivateHeaders/VPDBarcodeTypeEnum.h</key>
-		<data>
-		o13KZRONuy6jCsY89T/MAA7+4n0=
-		</data>
 		<key>PrivateHeaders/VPDDevicePrivate.h</key>
 		<data>
-		2mpV11mczZ+czNXhXilXklXRF60=
+		U4cyRuQesd5JlWTBiXVGVnX1Jzs=
 		</data>
 		<key>PrivateHeaders/VPDFactory.h</key>
 		<data>
 		MznrDqf5qTgaDRPJ2yOG8/PweB4=
-		</data>
-		<key>PrivateHeaders/VPDIngenicoRba+Barcode.h</key>
-		<data>
-		P7jHlGb9QD19BiIhD5q3I4qEhJ0=
-		</data>
-		<key>PrivateHeaders/VPDIngenicoRba+Beep.h</key>
-		<data>
-		9BkgyQB0UbiOfALy6BPxeela1Qk=
-		</data>
-		<key>PrivateHeaders/VPDIngenicoRba+CardInput.h</key>
-		<data>
-		E+GDL+5mgpaLQ8G4MB0dkouR3+I=
-		</data>
-		<key>PrivateHeaders/VPDIngenicoRba+ChoiceInput.h</key>
-		<data>
-		51TcHNiaYCByUUZ0ANYcfsvmAvQ=
-		</data>
-		<key>PrivateHeaders/VPDIngenicoRba+Configuration.h</key>
-		<data>
-		2mOFNSIvjSSpDBuHI6Ubgo2Veyw=
-		</data>
-		<key>PrivateHeaders/VPDIngenicoRba+Display.h</key>
-		<data>
-		KPb2PBmCg640xF1ULZL5gqh4GCc=
-		</data>
-		<key>PrivateHeaders/VPDIngenicoRba+Emv.h</key>
-		<data>
-		fatwS4egjfCeprMs5CNDIXLNTU8=
-		</data>
-		<key>PrivateHeaders/VPDIngenicoRba+KeyboardNumericInput.h</key>
-		<data>
-		2XMe+5GIb9OqpO+ynQ1nAvkKF0o=
-		</data>
-		<key>PrivateHeaders/VPDIngenicoRba+PinInput.h</key>
-		<data>
-		r8pelONsjdOei8dq2wNzSJpikag=
-		</data>
-		<key>PrivateHeaders/VPDIngenicoRba+YesNoInput.h</key>
-		<data>
-		YrQjZfKh/1mJA5hKsJl454Q4WS8=
-		</data>
-		<key>PrivateHeaders/VPDIngenicoRba.h</key>
-		<data>
-		XUQ9hifOOwx/8H0FPGy77ynnhCg=
 		</data>
 		<key>PrivateHeaders/VPDInitializationParameters.h</key>
 		<data>
@@ -1166,7 +1106,7 @@
 		</data>
 		<key>PrivateHeaders/VTP+Common.h</key>
 		<data>
-		i21aaQuaslpWr3xWbPeB+fFFJvQ=
+		cMFh/dSEPa41vXf+F+5+Gewlz48=
 		</data>
 		<key>PrivateHeaders/VTP+DeviceToken.h</key>
 		<data>
@@ -1226,7 +1166,7 @@
 		</data>
 		<key>PrivateHeaders/VTPPrivate.h</key>
 		<data>
-		7b2WOogCgfrkrnMs5wSuqXOadtg=
+		T+Tw3BKlrACBNLS8jcMoYbsS/K4=
 		</data>
 		<key>PrivateHeaders/VTPStatusEnum.h</key>
 		<data>
@@ -1242,7 +1182,7 @@
 		</data>
 		<key>PrivateHeaders/VTPStoreTransactionJsonData.h</key>
 		<data>
-		CfN9uDsWSLC9YxOZ+F/SH0IqasY=
+		DtMQ8w8z/vnhHQrwnQvfbjobarw=
 		</data>
 		<key>PrivateHeaders/VTPStoreTransactionStateEnum.h</key>
 		<data>
@@ -1368,127 +1308,40 @@
 		<data>
 		y4zOTT8SjcATkBAQtGLYUrTU2AQ=
 		</data>
-		<key>SEC235006.PGZ</key>
-		<data>
-		Qk3S0+bZWDYA9HCWqFxqt9YBf0k=
-		</data>
-		<key>SECBIN_OFF.PGZ</key>
-		<data>
-		7tgxiTIz4wHDwAOFRcAnyCC7yRY=
-		</data>
-		<key>SECURITY.PGZ</key>
-		<data>
-		vNSMpvRJa2CZbxhwfvKeEcuW70U=
-		</data>
-		<key>SEC_ICMP.PGZ</key>
-		<data>
-		9QwN2UXRU86YJTgrrSz+bbo2afM=
-		</data>
-		<key>TAGS.XML.0001</key>
-		<data>
-		FICqq4/7o3ZW1ThdJ+d57lQnB3s=
-		</data>
 		<key>changelog.txt</key>
 		<data>
-		7PsEjjYf0dCIVDRGEtabKCKq5qY=
+		oewk7UaKeUSbA/zTrxQgui6njNY=
 		</data>
-		<key>iCM122.TGZ.0010</key>
+		<key>createXCFrameworkTTP.sh</key>
 		<data>
-		rHnW2qByJiB/m9FqSV6nlRQDe0Y=
+		K8hsUi6Ni6/A+pOe3V5ewyB9Yzg=
 		</data>
-		<key>iPP350.TGZ.0032</key>
+		<key>packageTTP.sh</key>
 		<data>
-		S2iAfgR11srI+6lXmZ9iMpEAeBM=
-		</data>
-		<key>iSMP4.TGZ.0031</key>
-		<data>
-		mwFCjmOSIryu97m/MT+mhkG/e2c=
+		uTBjkPE4v0EvxnuQvQU4oedYrgE=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>BBPosEMVConfiguration.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			94X5PhxgNSXufsT8DrvzYf15pTrFwU5xfaNUNojo1vI=
-			</data>
-		</dict>
-		<key>CB5BSECBIN_OFF.PGZ</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6JlcbqFwMh4DozAZ/ovGMllF41/MpN6qpgamR+x5rK8=
-			</data>
-		</dict>
-		<key>CB5BTCUSTPROMPT.PGZ.0001</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			QM5fSsgZfrF5xSqs//ljcUM+IeOVV38GCgTPVkJwPOI=
-			</data>
-		</dict>
-		<key>CB5BTRCCSEC.PGZ</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			MuwOMnbxPPVLKZP6/QqU9vrD5eK7kzFWwfKHYL45naY=
-			</data>
-		</dict>
-		<key>CB5BTTDES_Slot4_UPDATE_1.PGZ</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mW1zAqYevVgt4RJclRxO3CiWAb2OBgWpommnvDvP4U4=
-			</data>
-		</dict>
-		<key>CUSTPROMPT.PGZ.0001</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CEVij2fgajga+VtMNHvk0EE8rtzhM+OSMKSfRK5o5kQ=
-			</data>
-		</dict>
 		<key>DevicePaymentProcessorMapping.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XMB7onQqi12/jZ4Z/maY7hDFSO53iSYMx2+9CymjOik=
-			</data>
-		</dict>
-		<key>EMVCLESS2.XML</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			GdVEBH9wFOT2MAcXOvOE/LWhiZcNeKIkcRBOp8KyD9o=
-			</data>
-		</dict>
-		<key>EMVCLESS_UPP.XML</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			BLzvKUTysuIc9k8N0SPdE3P46FpagLPTYZGReurT3jI=
-			</data>
-		</dict>
-		<key>EMVCONTACT2.XML</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XjDmdvM1QPmi5eGAwWBjeqTqWLv92ajK6auG5QeNMI4=
+			5gTGrXsDeZGgnGy8/OSdTPqedxDvK9R9uH+Hlp2Tc/s=
 			</data>
 		</dict>
 		<key>EMVConfiguration.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MZtx6cN8GfZYqos3eaGbnEBMRswmDJla4x9oXAzZZ8Q=
+			MepP3kyhqJ1Urb6AuwuushgUtBJBfB9E3m/ZMPwatIg=
 			</data>
 		</dict>
 		<key>Headers/VPD.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ma/g0tkrlUSKebGEedXd5Pb7v96gyzMPfjz0Z+KrdDw=
+			sLn7jD7AE8HwyHliwcAYyhBVly3c56Fkn25b9WFnwDM=
 			</data>
 		</dict>
 		<key>Headers/VPDBarcodeImageMode.h</key>
@@ -1547,18 +1400,25 @@
 			QIGr9WCsSA7vvEyKplemi2Z6y0mh7SaI6yJxQik2UUs=
 			</data>
 		</dict>
+		<key>Headers/VPDDccInput.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7GuLXW9fR8pd8VYMr0KyT4k2iaBHIYuVHLbVS/PbYN4=
+			</data>
+		</dict>
 		<key>Headers/VPDDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oSC5AcXODsvsOcc3tVJ4ZRVC1MnMOqrESown+rQ6yHg=
+			V5/Fek2hlmmgFTHx9h0rpbXNBxykyW856uRM9JaKmis=
 			</data>
 		</dict>
 		<key>Headers/VPDDevice.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			K0CS5C0wLQygMKXC1wbmfIL3+ES2RUV/osXoR40ZQzo=
+			CRjnHwJdc7O1A/9jKKX114qOZeXkAMNLKvUdTB7vWIw=
 			</data>
 		</dict>
 		<key>Headers/VPDDisplay.h</key>
@@ -1572,7 +1432,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w2BnB4QrCWVj3AM1B2AkKtIcHUhVWoDwDDEC0m6LDqI=
+			YhqoWZGFLK1G0BndrBTqCthxaIdDkxy7uD+5qsG9P5U=
 			</data>
 		</dict>
 		<key>Headers/VPDKeyboardNumericInput.h</key>
@@ -1587,6 +1447,13 @@
 			<key>hash2</key>
 			<data>
 			w9PM2GTSGTjmO3G807AqhiBHTZEWjfQU8h3DkVqnGEg=
+			</data>
+		</dict>
+		<key>Headers/VPDPairingConfirmationCallback.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uu8FX9mT51/WBKz2xNUfUbnRaqN3LFqXsn0Rs5ety2A=
 			</data>
 		</dict>
 		<key>Headers/VPDPinInput.h</key>
@@ -1614,7 +1481,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NUDPMUsbAmghjl1R5fa+POPki3CgFfRJmD5cmPG3a90=
+			lWtJEFu3WmUTfrapcEFiL/lbxoxTZ2oIXRnH2+kMqKc=
 			</data>
 		</dict>
 		<key>Headers/VPDYesNoInput.h</key>
@@ -1701,6 +1568,20 @@
 			qgS+/OfCIc/eD9ViGRRvrD7meset1wexHBQkI8b9l+0=
 			</data>
 		</dict>
+		<key>Headers/VTP+HostedPaymentsAuthorization.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LYIPc0Vk/wVUNauGbf7/HsGTb87Myxap76lqYQO2fuE=
+			</data>
+		</dict>
+		<key>Headers/VTP+HostedPaymentsSale.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EbeVRW6Julf1yeZEYSrL4Kjw6g2SWtcCox3erGQ2A5E=
+			</data>
+		</dict>
 		<key>Headers/VTP+ManuallyForward.h</key>
 		<dict>
 			<key>hash2</key>
@@ -1733,7 +1614,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7K+9uRVr9XFCP+bKS2lBnmOtA515QB+Iy5WoGUdcNqM=
+			/vqV3qlrPAMZGsXmeQ8WcL/JAN1PrObAbWgW4FwxIOo=
 			</data>
 		</dict>
 		<key>Headers/VTPAddressRequest.h</key>
@@ -1775,14 +1656,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sz4pX0fawTUfH08BxcQQzV7L5dHCfY2xurcwW3V9kY4=
+			tvkQ+fNhYFAKslEhLLPX0S8OzUg3zMox6R7PEy0Xjic=
 			</data>
 		</dict>
 		<key>Headers/VTPAuthorizationResponse.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			60HL0+9oLZAPAVhb7jtfdWi8H6VKhOMGk97ogRf5oC4=
+			6NoTd1BG84JL2kI59TT9zxCLjTlEnpoEh6vpvd75ge4=
 			</data>
 		</dict>
 		<key>Headers/VTPBluetoothDevice.h</key>
@@ -1859,14 +1740,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u7JGZlcEcspXWLx4B0dNAIe6CcgSHs+LQyq+MXAKoI8=
+			p7e3i9Aaz0spt1SYZ6hmP9J7SXq8eIMRIfd0hPL3gKw=
+			</data>
+		</dict>
+		<key>Headers/VTPDccResponse.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0E6gktoegRhJbu/Vh1F5OE+5z02/hc7ZzH9p3tqg3FI=
 			</data>
 		</dict>
 		<key>Headers/VTPDelegate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Dnaw2s2iBNSRXVmqSntiTVJR3upgJc6H/1oShJ/bSkc=
+			8+27RcIUBNjZ6vofwUZp6ByWiJrfz115VMufdjKPIZ0=
 			</data>
 		</dict>
 		<key>Headers/VTPDeviceConfiguration.h</key>
@@ -1880,7 +1768,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QRT+4naVsV6wvcFAZGIz1QfcvOIKu0wlYt2cLLUz/8w=
+			xJ1wwwWhsm3r5Hmk10IFPFGTQ05GKmCw+XFh1p54i4w=
 			</data>
 		</dict>
 		<key>Headers/VTPDeviceTcpIpConfiguration.h</key>
@@ -1894,7 +1782,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XqTz83Svwb9YW8gQosKxzQEtRfUzofnLPS9HbIOY3e0=
+			HwfpaUQIeAUaIbLG2crs7XPXfFIYK8aB2wc7SR+ymzQ=
 			</data>
 		</dict>
 		<key>Headers/VTPEBTCardBalanceInquiryRequest.h</key>
@@ -2013,7 +1901,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			46Wf+9wQhe1ZFEzDBtuGo8QilYsMWkQvm1Q15ELEcFo=
+			a5V6dJzWgmw8plVEfPLDPPAGHZYPqw4gABEfkIDi364=
 			</data>
 		</dict>
 		<key>Headers/VTPFinancialCardData.h</key>
@@ -2051,6 +1939,13 @@
 			d0pJR6soJdL/ql0abPAvUeNoEhY1ZpaXMvX5i0IyCbs=
 			</data>
 		</dict>
+		<key>Headers/VTPFinancialRequestSurchargeAmount.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			micbuVO/NNR+4eXlsZ+fxFXsxwq+hpfucxWf8l7pwl4=
+			</data>
+		</dict>
 		<key>Headers/VTPFinancialRequestTipAmount.h</key>
 		<dict>
 			<key>hash2</key>
@@ -2069,7 +1964,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iLst7AZOhDtyC3gB0s1njyw/BrxizQYU1znBqLcbSvk=
+			EQvrqRCG2WiTU9kNfeigIvA2N7VJuXqGhQDVxwCdffw=
 			</data>
 		</dict>
 		<key>Headers/VTPFinancialResponseCard.h</key>
@@ -2105,6 +2000,13 @@
 			<key>hash2</key>
 			<data>
 			rqRUWa0nVfuHZefBLEZduwC55vebsbaZSuwsfP4zYDY=
+			</data>
+		</dict>
+		<key>Headers/VTPFinancialResponseSurchargeAmount.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			o6HJ0Rt5jFsQJnoyJf3Md/wlBhw4nxYkNwO5lkBQX+8=
 			</data>
 		</dict>
 		<key>Headers/VTPFinancialResponseTipAmount.h</key>
@@ -2230,7 +2132,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I+SL0n0BWCdf42jzrHFmShIGctLa51NbG1/jnAUuJZM=
+			YNyocoNBy4azpHfLWVGA69OQLpkye10eNZTQK2Lq5PE=
 			</data>
 		</dict>
 		<key>Headers/VTPHostResponseData.h</key>
@@ -2238,6 +2140,20 @@
 			<key>hash2</key>
 			<data>
 			g61lxoJ3jKuaBviMj3JcNiB365mCh63ftxPTmvaPJMk=
+			</data>
+		</dict>
+		<key>Headers/VTPHostedPaymentsAuthorizationResponse.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QuZO7mcrhD4dBX6d5E/VvbQEgvf4csR9ophGL16ZGRQ=
+			</data>
+		</dict>
+		<key>Headers/VTPHostedPaymentsSaleResponse.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			igQ9M7Pmn/EjQfQSU9AYd+dUGrn1EFxqpYd8IdkiLqk=
 			</data>
 		</dict>
 		<key>Headers/VTPIccCardData.h</key>
@@ -2314,7 +2230,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/FJZbMoMcwOn3rDb/E4h4V7sLY6Hm1nea4YYQs9gQa4=
+			UnaN5aH3h9flpSjeuhXea5Ti0yviqgiiBjR02W9ng5Y=
 			</data>
 		</dict>
 		<key>Headers/VTPRefundRequest.h</key>
@@ -2335,14 +2251,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k+vtcVSfg3cefZM30/7Y+0GOZ9Xj609pYMHToT3CHyI=
+			JiXIyVwD1y0uvsmHpYloMwR6XhBwX16zfMl1j9ts/4E=
 			</data>
 		</dict>
 		<key>Headers/VTPSaleResponse.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BdL+22gQf1Lw2jMOpL33R6+nEnT41N4N3Lb8HZ3J5OM=
+			s7UZj+cBW+e7ARlN6WJelo6a3mbT7ayCPIKo/Qw3BYk=
 			</data>
 		</dict>
 		<key>Headers/VTPSecurityCodeStatus.h</key>
@@ -2356,21 +2272,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lGZq6ZnAtl/OnkPt+6PFkth86DlaamvuDnNqFzRPQd4=
+			/YM63mARMOZN75CaGihll1xKE8suRf8qj2NDteQcqfs=
 			</data>
 		</dict>
 		<key>Headers/VTPStatus.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ek2wyxyJKs/Z2CESQ5XQiLG1HY7cXbIN84g41rGj/pk=
+			HiQZPJncPfQj4Lvf/ncZAYv8wQBrHKLrT9Or2SjbF9c=
 			</data>
 		</dict>
 		<key>Headers/VTPStoreAndForwardConfiguration.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jXVNhiWWqc5lHqKvcqRadGqg9Z+DwQpuZj8krDTeDNA=
+			LpamWdgRPe4omXyCRxMJ0MsP5C2dbPeuuotiIUDQ0xU=
 			</data>
 		</dict>
 		<key>Headers/VTPStoreAndForwardResponse.h</key>
@@ -2412,14 +2328,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HteM8uqIoi+IW1695cMSkt54HkCrxB0DqbrL0xcSats=
+			4xaJ8ujXPquq9nueSYP9w/TnStfOhBdWSoYfcHsregQ=
 			</data>
 		</dict>
 		<key>Headers/VTPTransactionStatus.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TYIpCWmcSe23HbRI+CoInDLisckxBZ3vIogXnLkT2tw=
+			N/ovbZ/BdJZG6IAHfcZ7LrIV+bv3sCKwQ2Y9B7ZxF84=
 			</data>
 		</dict>
 		<key>Headers/VTPTransactionStoringMode.h</key>
@@ -2618,6 +2534,13 @@
 			8zX+PpjFozYwTMmc0VtMBAs2bLXqVtg8kOSDOnKLsz8=
 			</data>
 		</dict>
+		<key>Headers/VXPEnhancedBIN.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			udqGGlitDVXXXA4XIfJJpkJ4E0/CWQxZSkYyOMe19ug=
+			</data>
+		</dict>
 		<key>Headers/VXPError.h</key>
 		<dict>
 			<key>hash2</key>
@@ -2769,14 +2692,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+gTejNAVzzhhCElKMwJBqf86xqvOTd2TtdhnUyVbPO8=
+			WA954Sh3mw83MWmsMdU5rrP9xMS91O9VX09jo8JLtfM=
 			</data>
 		</dict>
 		<key>Headers/VXPResponseCode.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SylF7Jo2yamyzjWvDooe0w4YnLGuAV7O5FKjrijVRpg=
+			Ly3A48R5Vv1MIOTfJ95AmTmscsoe03cXvvs+0+5SZtI=
 			</data>
 		</dict>
 		<key>Headers/VXPResponseType.h</key>
@@ -2860,7 +2783,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YS/5EW/Uv1zShATWYdmW1NXxQy/vWwortcGgP5f7HiA=
+			L5aPFEVNNPu1jv6C6bkYwIzT/1hYoSh39zew9eI56HA=
 			</data>
 		</dict>
 		<key>Headers/VXPTransactionSetup.h</key>
@@ -2891,39 +2814,25 @@
 			hsroNxIrkY8PuQuvmH0ZzrLKl1oE7D9A8q4fu5n0UkM=
 			</data>
 		</dict>
+		<key>Headers/triPOSMobileSDK+Ttp.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qAn9cAGSyAB9QGBIXVV4M9n+1FSBP20tXZlOucdlOJY=
+			</data>
+		</dict>
 		<key>Headers/triPOSMobileSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1c/hEpCvgLY0PiyZH4U1aQ3e24LMaQvUcGLT/fs84Rc=
+			JE4nnYhH1adU8nzqtDSOVSnPnE8U6P5K4X4cz2cwN7E=
 			</data>
 		</dict>
 		<key>Headers/triPOSMobileSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ypwpzvrBBsCIAjVYWuE+x+yD0bnFH0x2wi2Ph+ah600=
-			</data>
-		</dict>
-		<key>IngenicoFirmwareFileMapping.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XvzPf74mDdCjvxRpzMgSgVGCmgxsNZ4hXz3at5IrCaM=
-			</data>
-		</dict>
-		<key>LANE3000.TGZ.0004</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			FRq6id4/tx+XCHKUxfumUQCjVsVq7sFfEA6s/pPPrlo=
-			</data>
-		</dict>
-		<key>LINK2500.TGZ.0004</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ultw552ZFFN6a3zXQ5P1lDOMvAyqctbdRjVIQg0ZOkw=
+			CY0FdWA9eE7g3qvuCJ5C7hOycrrfoSZJ5p1mBvdl4Es=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -2944,14 +2853,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cMqqkWodhRFooEhzX+SC7Alfhmbz6aCRQKCxh8gSXFg=
+			qVq6AUIzhxyyi2enU4A12Sgc6P/212sbw3UZZgNPCfQ=
 			</data>
 		</dict>
 		<key>Modules/triPOSMobileSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LhISAlaqaluVOCYWVqj+dTDHx19VHwsUVYB/r4X8Q/8=
+			v4lb6w1y++sKJQNJ/33OJrWCyrdu4pYboO1Xopvm3Cs=
 			</data>
 		</dict>
 		<key>Modules/triPOSMobileSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -2965,14 +2874,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LhISAlaqaluVOCYWVqj+dTDHx19VHwsUVYB/r4X8Q/8=
+			v4lb6w1y++sKJQNJ/33OJrWCyrdu4pYboO1Xopvm3Cs=
 			</data>
 		</dict>
 		<key>Modules/triPOSMobileSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YvygGjFE0Y238eBFDrtcEEnL9nKi3jKYJJyGDJYNr+g=
+			bwr7uoLb+qV2tZKz8deq8I6ldc7eJfKS2l+K/da3pO4=
 			</data>
 		</dict>
 		<key>PrivateHeaders/NSData+BcdToUInt.h</key>
@@ -3136,32 +3045,11 @@
 			jeQzAQHHQyXLMqDztjQdhMdRE1oX8UD6dJ3ZUNqCYG0=
 			</data>
 		</dict>
-		<key>PrivateHeaders/VPDBarcodeImageModeEnum.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			qDciNvV0twYiHUMoNLbjvqqKYUwlv3DwxGlI2n9+i6A=
-			</data>
-		</dict>
-		<key>PrivateHeaders/VPDBarcodeLightingModeEnum.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			NV/0MH0/NLusBbgrOP6CWYGIAr4TGDPA8u1v1otjlsw=
-			</data>
-		</dict>
-		<key>PrivateHeaders/VPDBarcodeTypeEnum.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DoViC0RKzoQrivWJY/tD2G+Oqc5AlRu40k6HPeeZmb4=
-			</data>
-		</dict>
 		<key>PrivateHeaders/VPDDevicePrivate.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qujf4u2N4UnFSru1bPl/fqp14uPeuaF5lafl8v17G4M=
+			EEL0P8PwIA+oiVjQ2HlHe1eyZZa/aZKJxIgbSZfLmtM=
 			</data>
 		</dict>
 		<key>PrivateHeaders/VPDFactory.h</key>
@@ -3169,83 +3057,6 @@
 			<key>hash2</key>
 			<data>
 			DtmBkyK2nWZ5eswA5d8GKCZaJyHCRCZ5cMwItuC55Vo=
-			</data>
-		</dict>
-		<key>PrivateHeaders/VPDIngenicoRba+Barcode.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1DJlKIoxYBy0TV5EcORUw7xes0oBDddfY8GtPAZkMW0=
-			</data>
-		</dict>
-		<key>PrivateHeaders/VPDIngenicoRba+Beep.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Mrgz5rHiwwuLvuwIAQ0IUjEqOsj9YDBuHCAzQEy3JOk=
-			</data>
-		</dict>
-		<key>PrivateHeaders/VPDIngenicoRba+CardInput.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			6/bvj/07UqPfNNVe5PnNY5dtX5YNcMITN9dim7Gy5cw=
-			</data>
-		</dict>
-		<key>PrivateHeaders/VPDIngenicoRba+ChoiceInput.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			GXCjwSHyM1JfARrPCVSKrCNJs9KljIuF0nQCHiigOZw=
-			</data>
-		</dict>
-		<key>PrivateHeaders/VPDIngenicoRba+Configuration.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			mzfEf5ZQueHFThn632ro2NrCdzk+cpB1KUvm+lA/Vbg=
-			</data>
-		</dict>
-		<key>PrivateHeaders/VPDIngenicoRba+Display.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			im1b7caW7tOSR+wcIS8aN+RbHpIfOZyr17UfXIIdhT8=
-			</data>
-		</dict>
-		<key>PrivateHeaders/VPDIngenicoRba+Emv.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			A3siCYIpC2jor1Bp1jmRAgQ3p/2SdMZQLeFK9iIKLwI=
-			</data>
-		</dict>
-		<key>PrivateHeaders/VPDIngenicoRba+KeyboardNumericInput.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			aI1vBHUmaFeNaDizvrTB1/f0arakppnO5BNNmunu1/g=
-			</data>
-		</dict>
-		<key>PrivateHeaders/VPDIngenicoRba+PinInput.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			EwZRRRxOWgywGpC6nTWUBI8XVE3TF98tu1FKQ1NAv1M=
-			</data>
-		</dict>
-		<key>PrivateHeaders/VPDIngenicoRba+YesNoInput.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			X1T+HXsvzk69sFexFGE/fyU8ij71CVd69F6jmJVJ7Gw=
-			</data>
-		</dict>
-		<key>PrivateHeaders/VPDIngenicoRba.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			rId61apTMed2G79czzmO9/m+Lq/KYAw8WEQFob37yCM=
 			</data>
 		</dict>
 		<key>PrivateHeaders/VPDInitializationParameters.h</key>
@@ -3434,7 +3245,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SGUpn/KLxGpwiSoh1L1hgsr7tohVl8JnWpWNspmUfCk=
+			d1HHTDbqVeksM/Kyla1LjJYjoyE33qvrIqvgnB87MGM=
 			</data>
 		</dict>
 		<key>PrivateHeaders/VTP+DeviceToken.h</key>
@@ -3539,7 +3350,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tik4srh4C7pcdA3MwrpxPrBM/ldUcrZ7tsWvyyUpQIM=
+			tyRM63FS5ZMCtSHXCxBxhpngEo9zoaLJqp5dGAptkrg=
 			</data>
 		</dict>
 		<key>PrivateHeaders/VTPStatusEnum.h</key>
@@ -3567,7 +3378,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4mDzA9LjJKrKmT6HaS1fYQzZteNnDyYT7zL8qlp2QmE=
+			bYCoZiipilw5f/fK5l3ceBm7HWExnew1ttCHa8Eh5+s=
 			</data>
 		</dict>
 		<key>PrivateHeaders/VTPStoreTransactionStateEnum.h</key>
@@ -3787,67 +3598,25 @@
 			V3FJv3NyrWLorT42uoJobJDvrAtpShknDHtyiZmvejk=
 			</data>
 		</dict>
-		<key>SEC235006.PGZ</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			BujOVsdIZERn1qCv341OnqctJ6b2wAJgKtpXjwErH2g=
-			</data>
-		</dict>
-		<key>SECBIN_OFF.PGZ</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XBdbOkicD3QhAqtbKfShhkKmhMSC0sfwzfC1ZBZhNUE=
-			</data>
-		</dict>
-		<key>SECURITY.PGZ</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			nURsnQUSR+gvAB14UfzaazSQLfdMoK5TyI4HTtRFrNw=
-			</data>
-		</dict>
-		<key>SEC_ICMP.PGZ</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sjLGwWMlYT+RIN9is2hc5Q1enuZT99NP3Nn3LTmxWT0=
-			</data>
-		</dict>
-		<key>TAGS.XML.0001</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			w4GL8r/OnHAjWGN15sFYJKMDxZ0AKWhUY7VhjhO0LB4=
-			</data>
-		</dict>
 		<key>changelog.txt</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HIZ/X+aZEXVSn8AOyNuQaV+0vx8jZh5hDaKtAlCmF78=
+			jnYVyw5Q0Z30RfPyYVjhomv+tMeTmB6hYVT4nZJ51Ac=
 			</data>
 		</dict>
-		<key>iCM122.TGZ.0010</key>
+		<key>createXCFrameworkTTP.sh</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6NHHeCgrDizUp6MtxnUvoXMQN2r54gPvACSUCRsgWno=
+			oWJHKDFMUMXrqt28n1dyLWMHQp+GSkl+toBGMbi0vwo=
 			</data>
 		</dict>
-		<key>iPP350.TGZ.0032</key>
+		<key>packageTTP.sh</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XJdLyRLNF7Z4+iWozcaftE67gCzg/z5K+TxSufx7eeE=
-			</data>
-		</dict>
-		<key>iSMP4.TGZ.0031</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			fqSpjfhYMIwHplb4kNL7RTsI3Ivt1fcUv5+x/TxeJVw=
+			O85DzYExyWdmBBr06Okz9z1DmNxnkNk1mAoUZSx1eKg=
 			</data>
 		</dict>
 	</dict>

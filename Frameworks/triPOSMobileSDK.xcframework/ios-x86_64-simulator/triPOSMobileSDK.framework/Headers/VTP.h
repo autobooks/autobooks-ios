@@ -8,7 +8,7 @@
 #import "VTPError.h"
 #import "VTPDeviceInteractionDelegate.h"
 #import "VTPBluetoothDevice.h"
-
+#import "VPDPairingConfirmationCallback.h"
 ///
 /// \class VTP
 ///
@@ -191,6 +191,13 @@ typedef void (^VTPCardReadCompletionHandler)(BOOL readSuccesful);
 /// \param delegate The receiver's delegate.
 ///
 -(void)setDeviceInteractionDelegate:(id <VTPDeviceInteractionDelegate>)delegate;
+///
+/// \brief Moby device pairing confiramtion
+///
+/// This method returns device pairing confirmation callback
+///
+-(void) onReturnPairingConfirmation:(NSArray*) ledSequence deviceName:(NSString*) deviceName callback:(id<VPDPairingConfirmationCallback>) pairingCallBack;
+
 -(void)validateToRestrictStoringOfHealthcareTransactions:(BOOL)isStoringAllowed andIsHealthcareSupported:(BOOL)isHealthcareSupported;
 
 ///
@@ -205,3 +212,4 @@ typedef void (^VTPCardReadCompletionHandler)(BOOL readSuccesful);
 -(void)enableEnhancedDeviceLogs:(BOOL)enable;
 
 @end
+

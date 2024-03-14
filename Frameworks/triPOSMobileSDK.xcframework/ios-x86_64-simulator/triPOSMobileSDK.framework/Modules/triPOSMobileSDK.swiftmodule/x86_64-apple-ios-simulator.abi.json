@@ -23,8 +23,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "Logger",
-        "printedName": "Logger",
+        "name": "TPLogger",
+        "printedName": "TPLogger",
         "children": [
           {
             "kind": "Constructor",
@@ -33,14 +33,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Logger",
-                "printedName": "triPOSMobileSDK.Logger",
-                "usr": "c:@M@triPOSMobileSDK@objc(cs)Logger"
+                "name": "TPLogger",
+                "printedName": "triPOSMobileSDK.TPLogger",
+                "usr": "c:@M@triPOSMobileSDK@objc(cs)TPLogger"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@triPOSMobileSDK@objc(cs)Logger(im)init",
-            "mangledName": "$s15triPOSMobileSDK6LoggerCACycfc",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)TPLogger(im)init",
+            "mangledName": "$s15triPOSMobileSDK8TPLoggerCACycfc",
             "moduleName": "triPOSMobileSDK",
             "overriding": true,
             "objc_name": "init",
@@ -54,8 +54,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@triPOSMobileSDK@objc(cs)Logger",
-        "mangledName": "$s15triPOSMobileSDK6LoggerC",
+        "usr": "c:@M@triPOSMobileSDK@objc(cs)TPLogger",
+        "mangledName": "$s15triPOSMobileSDK8TPLoggerC",
         "moduleName": "triPOSMobileSDK",
         "declAttributes": [
           "AccessControl",
@@ -2328,16 +2328,16 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ec2-user\/Documents\/_work\/3\/s\/triPOSMobileSDK\/PoiDevice\/PoiDevice\/AppleTapToPay\/PaymentCardReaderToken.swift",
+      "filePath": "\/Users\/ec2-user\/Documents\/_work\/32\/s\/triPOSMobileSDK\/PoiDevice\/PoiDevice\/AppleTapToPay\/PaymentCardReaderToken.swift",
       "kind": "StringLiteral",
       "offset": 120,
       "length": 22,
       "value": "\"triPOSMobileSDK.PaymentCardReaderToken\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Documents\/_work\/3\/s\/triPOSMobileSDK\/PoiDevice\/PoiDevice\/AppleTapToPay\/PaymentCardReaderBridge.swift",
+      "filePath": "\/Users\/ec2-user\/Documents\/_work\/32\/s\/triPOSMobileSDK\/PoiDevice\/PoiDevice\/AppleTapToPay\/PaymentCardReaderBridge.swift",
       "kind": "StringLiteral",
-      "offset": 5433,
+      "offset": 5447,
       "length": 8,
       "value": "\"triPOSMobileSDK.CardData\""
     }

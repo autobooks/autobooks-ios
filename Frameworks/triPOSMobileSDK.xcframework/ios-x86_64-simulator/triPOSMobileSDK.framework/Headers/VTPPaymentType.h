@@ -20,6 +20,8 @@ typedef enum _VTPPaymentType
     VTPPaymentTypeGiftCard,
     //EBT
     VTPPaymentTypeEbt,
+    /// HostedPayments
+    VTPPaymentTypeHostedPayments,
 }   VTPPaymentType;
 
 #endif /* VTPPaymentType_h */

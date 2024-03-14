@@ -22,6 +22,7 @@
 @protocol VPDPinInput;
 @protocol VPDYesNoInput;
 @protocol VPDBarcodeInput;
+@protocol VPDDccInput;
 
 #endif
 
@@ -55,6 +56,13 @@
 /// Gets the serial number of the connected device. This property may be nil if the connected device does not supply its serial number. This property is not set if a device is not connected.
 ///
 @property (retain, atomic, readonly) NSString *deviceSerialNumber;
+
+@optional
+/// \brief Gets the device hardware type
+///
+/// Gets the hardware type of the connected device.  This is an optional property
+///
+@property (retain, atomic, readonly) NSString *deviceHardwareType;
 
 @optional
 /// \brief Gets the device firmware version
@@ -222,7 +230,21 @@ typedef NSObject<VPDEmv> * VPDEmvDevice;
 ///
 -(VPDEmvDevice)getAsEmvDevice;
 
+///
+/// \brief Definition for a device capable of displaying DCC confirmation prompt
+///
+/// Definition for a device capable of displaying DCC confirmation message.
+///
+typedef NSObject<VPDDccInput> * VPDDccInputDevice;
 
+///
+/// \brief Get the current device as a DCC capable device
+///
+/// This method attempts to get the current device as a DCC capable device.
+///
+/// \return A VPDDccInputDevice object if the device supports DCC prompt, otherwise nil.
+///
+-(VPDDccInputDevice)getAsDccInputDevice;
 
 
 #endif /* !DOXYGEN_SHOULD_SKIP_THIS */
@@ -290,6 +312,8 @@ typedef NSObject<VPDBarcodeInput> *VPDBarcodeInputDevice;
 /// \return A VPDBarcodeInputDevice object if the device supports barcode input, otherwise nil.
 ///
 -(VPDBarcodeInputDevice)getAsBarcodeInputDevice;
+
+
 
 @end
 

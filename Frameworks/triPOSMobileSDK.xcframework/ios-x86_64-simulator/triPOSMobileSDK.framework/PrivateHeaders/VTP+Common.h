@@ -57,6 +57,19 @@
 
 -(void) setPinlessPosConversionIndicatorToResponse:(NSObject <VTPFinancialResponseBase> *)response flowData:(NSObject<VTPFlowData, VTPFinancialFlowData> *)flowData;
 
+-(void) setResponseDcc:(NSObject <VTPFinancialResponseBase> *)response flowData:(NSObject<VTPFlowData, VTPFinancialFlowData> *)flowData;
+
+-(void) setResponseSurcharge:(NSObject <VTPFinancialResponseBase> *)response flowData:(NSObject<VTPFlowData, VTPFinancialFlowData> *)flowData;
+
+-(BOOL) isTipAmountValid:(VTPErrorHandler)errorHandler
+               tipAmount:(NSDecimalNumber *)tipAmount;
+
+-(BOOL) isConvenienceFeeAmountValid:(VTPErrorHandler)errorHandler
+               convenienceFeeAmount:(NSDecimalNumber *)convenienceFeeAmount;
+
+-(BOOL) isSurchargeFeeAmountValid:(VTPErrorHandler)errorHandler
+               surchargeFeeAmount:(NSDecimalNumber *)surchargeFeeAmount;
+
 -(BOOL) isHealthCareAmountValid:(VTPErrorHandler)errorHandler
                    visionAmount:(NSDecimalNumber *)visionAmount
              prescriptionAmount:(NSDecimalNumber *)prescriptionAmount
@@ -67,6 +80,10 @@
 -(BOOL) isTransactionAmountGreaterThanFoodStampsAmount:(VTPErrorHandler)errorHandler
                                      transactionAmount:(NSDecimalNumber *) transactionAmount
                                       foodStampsAmount:(NSDecimalNumber *) foodStampsAmount;
+
++(NSString *)formatCurrencyCode: (NSString *) currencyCode;
++(NSString *)formatConversionRate: (NSString *) conversionRate;
+
 @end
 
 #endif /* !DOXYGEN_SHOULD_SKIP_THIS */

@@ -13,13 +13,16 @@
 #import "VTPFinancialResponseEmv.h"
 #import "VTPFinancialResponseHost.h"
 #import "VTPStoreAndForwardResponse.h"
+#import "VTPDccResponse.h"
+#import "VTPFinancialResponseSurchargeAmount.h"
+
 
 ///
 /// \class VTPAuthorizationResponse
 ///
 /// \brief The definition of the authorization response
 ///
-@interface VTPAuthorizationResponse : NSObject <VTPFinancialResponseBase, VTPFinancialResponseAmounts, VTPFinancialResponseTipAmount, VTPFinancialResponseCard, VTPFinancialResponseCardVerification, VTPFinancialResponseEmv, VTPFinancialResponseHost, VTPStoreAndForwardResponse>
+@interface VTPAuthorizationResponse : NSObject <VTPFinancialResponseBase, VTPFinancialResponseAmounts, VTPFinancialResponseTipAmount, VTPFinancialResponseCard, VTPFinancialResponseCardVerification, VTPFinancialResponseEmv, VTPFinancialResponseHost, VTPStoreAndForwardResponse, VTPDccResponse, VTPFinancialResponseSurchargeAmount>
 
 @end
 

@@ -16,7 +16,8 @@ typedef enum _SelectionType
     VTPSelectionTypeTipConfirm,
     VTPSelectionTypeTipAmount,
     VTPSelectionTypeCashbackConfirm,
-    VTPSelectionTypeCashbackAmount
+    VTPSelectionTypeCashbackAmount,
+    VTPSelectionTypeDccConfirmation
     
 }   VTPSelectionType;
 
