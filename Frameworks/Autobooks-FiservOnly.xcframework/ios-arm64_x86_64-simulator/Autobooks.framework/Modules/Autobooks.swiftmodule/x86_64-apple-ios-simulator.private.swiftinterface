@@ -1,0 +1,159 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Autobooks
+import CallKit
+import Combine
+import CryptoKit
+import DeveloperToolsSupport
+import Foundation
+import ProximityReader
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _AVKit_SwiftUI
+import _Concurrency
+import _SceneKit_SwiftUI
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct Stubs : Swift.Equatable {
+  public static func == (a: Autobooks.Stubs, b: Autobooks.Stubs) -> Swift.Bool
+}
+extension Autobooks.Stubs {
+  public static var successes: Autobooks.Stubs {
+    get
+  }
+  public static var failures: Autobooks.Stubs {
+    get
+  }
+  public static func webPrompts(loadedWebURL: Foundation.URL, needsEnrollmentCallback: Foundation.URL, hasMissingInfoCallback: Foundation.URL) -> Autobooks.Stubs
+}
+#warning("ENABLE_TRIPOS=0, Using no-op triPOS shims")
+public enum AB {
+  public enum LoginCredential {
+    case token(Swift.String)
+    case usernameAndPassword(username: Swift.String, password: Swift.String)
+  }
+  public struct Style {
+    public struct Colors {
+      public static let `default`: Autobooks.AB.Style.Colors
+      public init(primaryColor: UIKit.UIColor, actionButtonColor: UIKit.UIColor? = nil, secondaryButtonColor: UIKit.UIColor? = nil, tertiaryButtonColor: UIKit.UIColor? = nil, linkColor: UIKit.UIColor? = nil, progressColor: UIKit.UIColor? = nil, progressTrackColor: UIKit.UIColor? = nil, confettiColor: UIKit.UIColor? = nil)
+    }
+    public struct CustomNavigationBar {
+      public static let `default`: Autobooks.AB.Style.CustomNavigationBar
+      public init(standardAppearance: UIKit.UINavigationBarAppearance? = nil, compactAppearance: UIKit.UINavigationBarAppearance? = nil, scrollEdgeAppearance: UIKit.UINavigationBarAppearance? = nil, compactScrollEdgeAppearance: UIKit.UINavigationBarAppearance? = nil, navigationBarClass: Swift.AnyClass? = nil, toolbarClass: Swift.AnyClass? = nil)
+    }
+    public static let `default`: Autobooks.AB.Style
+    public init(primaryColor: UIKit.UIColor)
+    public init(colors: Autobooks.AB.Style.Colors, customNavigationBar: Autobooks.AB.Style.CustomNavigationBar? = nil)
+  }
+  public struct Configuration {
+    public static let `default`: Autobooks.AB.Configuration
+    public let environment: Autobooks.AB.BackendEnvironment
+    public let style: Autobooks.AB.Style
+    public let responseProvider: Autobooks.AB.ResponseProvider
+    public let shouldFallBackToPaymentForm: Swift.Bool
+    public let shouldConfirmClose: Swift.Bool
+    public let shouldCloseOnAPIError: Swift.Bool
+    public enum CloseButtonStyle {
+      case close
+      case signOut
+      public static func == (a: Autobooks.AB.Configuration.CloseButtonStyle, b: Autobooks.AB.Configuration.CloseButtonStyle) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    public let closeButtonStyle: Autobooks.AB.Configuration.CloseButtonStyle
+    public let webViewsShowControls: Swift.Bool
+    public init(environment: Autobooks.AB.BackendEnvironment, style: Autobooks.AB.Style, responseProvider: Autobooks.AB.ResponseProvider, shouldFallBackToPaymentForm: Swift.Bool, shouldConfirmClose: Swift.Bool, shouldCloseOnAPIError: Swift.Bool, closeButtonStyle: Autobooks.AB.Configuration.CloseButtonStyle, webViewsShowControls: Swift.Bool)
+  }
+  public enum BackendEnvironment {
+    case dev
+    case staging
+    case production
+    public static func == (a: Autobooks.AB.BackendEnvironment, b: Autobooks.AB.BackendEnvironment) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum ResponseProvider : Swift.Equatable {
+    case backendMocked
+    case hybrid(Autobooks.Stubs)
+    case live
+    case stubs(Autobooks.Stubs)
+    public static func == (a: Autobooks.AB.ResponseProvider, b: Autobooks.AB.ResponseProvider) -> Swift.Bool
+  }
+  public enum Device : Swift.Equatable {
+    case simulated
+    case real
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: Autobooks.AB.Device, b: Autobooks.AB.Device) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public static var build: Swift.String {
+    get
+  }
+  public static var version: Swift.String {
+    get
+  }
+  public static var userAgent: Swift.String {
+    get
+  }
+  public static var supportsTapToPay: Swift.Bool {
+    get
+  }
+  public typealias CompletionBlock = (Autobooks.AB.DismissalReason) -> Swift.Void
+  #if compiler(>=5.3) && $AsyncAwait && $Sendable
+  public static func startTapToPay(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration = .default, device: Autobooks.AB.Device, loginProvider: @escaping @_Concurrency.MainActor @Sendable () async throws -> Autobooks.AB.LoginCredential, completion: Autobooks.AB.CompletionBlock? = nil)
+  #endif
+  public static func startPaymentForm(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.CompletionBlock? = nil)
+  public static func startInvoicing(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.CompletionBlock? = nil)
+  public static func startFullAutobooks(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.CompletionBlock? = nil)
+  @_Concurrency.MainActor public static func stop()
+  public enum DismissalReason : Swift.Equatable {
+    case userInitiated
+    case notAuthorized
+    case forbidden
+    case stopped
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: Autobooks.AB.DismissalReason, b: Autobooks.AB.DismissalReason) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Notifications {
+    public static let userActivity: Foundation.Notification.Name
+    public static let visitedTransactions: Foundation.Notification.Name
+    public static let tappedCharge: Foundation.Notification.Name
+    public static let tappedManualEntry: Foundation.Notification.Name
+    public static let tappedSendReceipt: Foundation.Notification.Name
+    public static let tappedRefundPayment: Foundation.Notification.Name
+    public static let tappedCancelPayment: Foundation.Notification.Name
+    public static let tappedSkipReceipt: Foundation.Notification.Name
+    public static let tappedSendAnotherReceipt: Foundation.Notification.Name
+    public static let tappedCallUs: Foundation.Notification.Name
+    public static let viewedScreen: Foundation.Notification.Name
+    public static let screenTimerWarning: Foundation.Notification.Name
+    public static let addedTip: Foundation.Notification.Name
+    public static let toggledTip: Foundation.Notification.Name
+    public static let readCancelled: Foundation.Notification.Name
+    public static let somethingWentWrong: Foundation.Notification.Name
+    public static let internalError: Foundation.Notification.Name
+    public static let transactionDeclined: Foundation.Notification.Name
+  }
+}
+extension Autobooks.AB.BackendEnvironment : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+extension Autobooks.AB.Configuration.CloseButtonStyle : Swift.Equatable {}
+extension Autobooks.AB.Configuration.CloseButtonStyle : Swift.Hashable {}
+extension Autobooks.AB.BackendEnvironment : Swift.Equatable {}
+extension Autobooks.AB.BackendEnvironment : Swift.Hashable {}
+extension Autobooks.AB.Device : Swift.Hashable {}
+extension Autobooks.AB.DismissalReason : Swift.Hashable {}

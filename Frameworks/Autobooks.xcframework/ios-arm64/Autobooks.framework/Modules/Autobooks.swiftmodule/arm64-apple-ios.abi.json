@@ -371,6 +371,20 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -406,39 +420,8 @@
       },
       {
         "kind": "Import",
-        "name": "CallKit",
-        "printedName": "CallKit",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "Combine",
-        "printedName": "Combine",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
         "name": "triPOSMobileSDK",
         "printedName": "triPOSMobileSDK",
-        "declKind": "Import",
-        "moduleName": "Autobooks",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "Reachability",
-        "printedName": "Reachability",
         "declKind": "Import",
         "moduleName": "Autobooks",
         "declAttributes": [
@@ -4453,6 +4436,40 @@
       },
       {
         "kind": "Import",
+        "name": "CallKit",
+        "printedName": "CallKit",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "Reachability",
+        "printedName": "Reachability",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "triPOSMobileSDK",
+        "printedName": "triPOSMobileSDK",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -4783,175 +4800,175 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 21657,
+      "offset": 21683,
       "length": 74,
       "value": "\"079701FC1CBBEACDC0353ADFD246B965965C19C69BE2BC2B102DBCD524A78301A2AC6D01\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 21798,
+      "offset": 21824,
       "length": 9,
       "value": "\"1045826\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 21875,
+      "offset": 21901,
       "length": 11,
       "value": "\"364801436\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 21957,
+      "offset": 21983,
       "length": 7,
       "value": "\"14643\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 22040,
+      "offset": 22066,
       "length": 7,
       "value": "\"1.0.0\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 22120,
+      "offset": 22146,
       "length": 11,
       "value": "\"Autobooks\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "IntegerLiteral",
-      "offset": 22170,
+      "offset": 22196,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 22187,
+      "offset": 22213,
       "length": 22,
       "value": "\"example@autobooks.co\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "BooleanLiteral",
-      "offset": 22220,
+      "offset": 22246,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 22300,
+      "offset": 22326,
       "length": 38,
       "value": "\"3c00c000-a005-ea4c-5f64-02525e000001\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 22855,
+      "offset": 23804,
       "length": 13,
       "value": "\"accessToken\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "BooleanLiteral",
-      "offset": 23047,
+      "offset": 23996,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "BooleanLiteral",
-      "offset": 23184,
+      "offset": 24133,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "FloatLiteral",
-      "offset": 23495,
+      "offset": 24444,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 23668,
+      "offset": 24617,
       "length": 5,
       "value": "\"15%\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "FloatLiteral",
-      "offset": 23849,
+      "offset": 24798,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 24021,
+      "offset": 24970,
       "length": 5,
       "value": "\"20%\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "FloatLiteral",
-      "offset": 24202,
+      "offset": 25151,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 24375,
+      "offset": 25324,
       "length": 5,
       "value": "\"25%\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "FloatLiteral",
-      "offset": 24773,
+      "offset": 25722,
       "length": 6,
       "value": "0.0275"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "FloatLiteral",
-      "offset": 24810,
+      "offset": 25759,
       "length": 6,
       "value": "0.0289"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 24894,
+      "offset": 25843,
       "length": 91,
       "value": "\"https:\/\/app.autobooks.co\/payment-form\/default?launchmode=PaymentForm&viewmode=PaymentForm\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 25027,
+      "offset": 25976,
       "length": 89,
       "value": "\"https:\/\/app.autobooks.co\/invoicing\/invoices?launchmode=CreateInvoice&viewmode=Invoicing\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 25164,
+      "offset": 26113,
       "length": 44,
       "value": "\"https:\/\/app.autobooks.co\/virtual-terminal\/\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 25254,
+      "offset": 26203,
       "length": 88,
       "value": "\"https:\/\/app.autobooks.co\/login\/init?launchmode=CreateInvoice&viewmode=InvoicesPayments\""
     },
@@ -5110,6 +5127,41 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Processor.swift",
+      "kind": "StringLiteral",
+      "offset": 270,
+      "length": 31,
+      "value": "\"The transaction was approved.\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Processor.swift",
+      "kind": "StringLiteral",
+      "offset": 341,
+      "length": 63,
+      "value": "\"Expired Card. Please try an alternate card or digital wallet.\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Processor.swift",
+      "kind": "StringLiteral",
+      "offset": 446,
+      "length": 124,
+      "value": "\"Duplicate transaction detected. Please wait three minutes before resubmitting, or try an alternate card or digital wallet.\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Processor.swift",
+      "kind": "StringLiteral",
+      "offset": 610,
+      "length": 94,
+      "value": "\"The transaction failed. Please try manual card entry or an alternate card or digital wallet.\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Processor.swift",
+      "kind": "StringLiteral",
+      "offset": 730,
+      "length": 73,
+      "value": "\"The transaction failed. Please try an alternate card or digital wallet.\""
+    },
+    {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Requests.swift",
       "kind": "StringLiteral",
       "offset": 5362,
@@ -5131,1735 +5183,1651 @@
       "value": "\"GMT\""
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
-      "kind": "IntegerLiteral",
-      "offset": 964,
-      "length": 1,
-      "value": "1"
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
+      "kind": "BooleanLiteral",
+      "offset": 241,
+      "length": 5,
+      "value": "false"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
-      "kind": "IntegerLiteral",
-      "offset": 969,
-      "length": 1,
-      "value": "0"
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
+      "kind": "BooleanLiteral",
+      "offset": 280,
+      "length": 5,
+      "value": "false"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1040,
-      "length": 1,
-      "value": "1"
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
+      "kind": "BooleanLiteral",
+      "offset": 324,
+      "length": 5,
+      "value": "false"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1045,
-      "length": 1,
-      "value": "1"
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
+      "kind": "BooleanLiteral",
+      "offset": 371,
+      "length": 5,
+      "value": "false"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1122,
-      "length": 1,
-      "value": "1"
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
+      "kind": "BooleanLiteral",
+      "offset": 418,
+      "length": 5,
+      "value": "false"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1127,
-      "length": 1,
-      "value": "2"
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
+      "kind": "BooleanLiteral",
+      "offset": 473,
+      "length": 5,
+      "value": "false"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
-      "kind": "Array",
-      "offset": 1186,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3608,
+      "offset": 7617,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3636,
+      "offset": 7645,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3665,
+      "offset": 7674,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3703,
+      "offset": 7712,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3739,
+      "offset": 7748,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3773,
+      "offset": 7782,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3795,
+      "offset": 7804,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3827,
+      "offset": 7836,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3866,
+      "offset": 7875,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3908,
+      "offset": 7917,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3950,
+      "offset": 7959,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3993,
+      "offset": 8002,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4035,
+      "offset": 8044,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4075,
+      "offset": 8084,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4112,
+      "offset": 8121,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4147,
+      "offset": 8156,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4190,
+      "offset": 8199,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4217,
+      "offset": 8226,
       "length": 2,
       "value": "17"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4246,
+      "offset": 8255,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4286,
+      "offset": 8295,
       "length": 2,
       "value": "19"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4325,
+      "offset": 8334,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4351,
+      "offset": 8360,
       "length": 2,
       "value": "21"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4386,
+      "offset": 8395,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4411,
+      "offset": 8420,
       "length": 2,
       "value": "23"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4438,
+      "offset": 8447,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4469,
+      "offset": 8478,
       "length": 2,
       "value": "25"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4510,
+      "offset": 8519,
       "length": 2,
       "value": "26"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4543,
+      "offset": 8552,
       "length": 2,
       "value": "27"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4590,
+      "offset": 8599,
       "length": 2,
       "value": "28"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4620,
+      "offset": 8629,
       "length": 2,
       "value": "29"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4648,
+      "offset": 8657,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4685,
+      "offset": 8694,
       "length": 2,
       "value": "31"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4729,
+      "offset": 8738,
       "length": 2,
       "value": "32"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4766,
+      "offset": 8775,
       "length": 2,
       "value": "33"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4815,
+      "offset": 8824,
       "length": 2,
       "value": "34"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4861,
+      "offset": 8870,
       "length": 2,
       "value": "35"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4914,
+      "offset": 8923,
       "length": 2,
       "value": "36"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4946,
+      "offset": 8955,
       "length": 2,
       "value": "37"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4987,
+      "offset": 8996,
       "length": 2,
       "value": "38"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5015,
+      "offset": 9024,
       "length": 2,
       "value": "39"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5051,
+      "offset": 9060,
       "length": 2,
       "value": "40"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5083,
+      "offset": 9092,
       "length": 2,
       "value": "41"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5110,
+      "offset": 9119,
       "length": 2,
       "value": "42"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5169,
+      "offset": 9178,
       "length": 2,
       "value": "43"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5216,
+      "offset": 9225,
       "length": 2,
       "value": "44"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5241,
+      "offset": 9250,
       "length": 2,
       "value": "45"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5285,
+      "offset": 9294,
       "length": 2,
       "value": "46"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5332,
+      "offset": 9341,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5359,
+      "offset": 9368,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5399,
+      "offset": 9408,
       "length": 2,
       "value": "51"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5456,
+      "offset": 9465,
       "length": 2,
       "value": "52"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5494,
+      "offset": 9503,
       "length": 2,
       "value": "53"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5538,
+      "offset": 9547,
       "length": 2,
       "value": "54"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5577,
+      "offset": 9586,
       "length": 2,
       "value": "58"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3608,
+      "offset": 7617,
       "length": 1,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3636,
+      "offset": 7645,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3665,
+      "offset": 7674,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3703,
+      "offset": 7712,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3739,
+      "offset": 7748,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3773,
+      "offset": 7782,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3795,
+      "offset": 7804,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3827,
+      "offset": 7836,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3866,
+      "offset": 7875,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3908,
+      "offset": 7917,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3950,
+      "offset": 7959,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3993,
+      "offset": 8002,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4035,
+      "offset": 8044,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4075,
+      "offset": 8084,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4112,
+      "offset": 8121,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4147,
+      "offset": 8156,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4190,
+      "offset": 8199,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4217,
+      "offset": 8226,
       "length": 2,
       "value": "17"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4246,
+      "offset": 8255,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4286,
+      "offset": 8295,
       "length": 2,
       "value": "19"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4325,
+      "offset": 8334,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4351,
+      "offset": 8360,
       "length": 2,
       "value": "21"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4386,
+      "offset": 8395,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4411,
+      "offset": 8420,
       "length": 2,
       "value": "23"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4438,
+      "offset": 8447,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4469,
+      "offset": 8478,
       "length": 2,
       "value": "25"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4510,
+      "offset": 8519,
       "length": 2,
       "value": "26"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4543,
+      "offset": 8552,
       "length": 2,
       "value": "27"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4590,
+      "offset": 8599,
       "length": 2,
       "value": "28"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4620,
+      "offset": 8629,
       "length": 2,
       "value": "29"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4648,
+      "offset": 8657,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4685,
+      "offset": 8694,
       "length": 2,
       "value": "31"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4729,
+      "offset": 8738,
       "length": 2,
       "value": "32"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4766,
+      "offset": 8775,
       "length": 2,
       "value": "33"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4815,
+      "offset": 8824,
       "length": 2,
       "value": "34"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4861,
+      "offset": 8870,
       "length": 2,
       "value": "35"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4914,
+      "offset": 8923,
       "length": 2,
       "value": "36"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4946,
+      "offset": 8955,
       "length": 2,
       "value": "37"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4987,
+      "offset": 8996,
       "length": 2,
       "value": "38"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5015,
+      "offset": 9024,
       "length": 2,
       "value": "39"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5051,
+      "offset": 9060,
       "length": 2,
       "value": "40"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5083,
+      "offset": 9092,
       "length": 2,
       "value": "41"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5110,
+      "offset": 9119,
       "length": 2,
       "value": "42"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5169,
+      "offset": 9178,
       "length": 2,
       "value": "43"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5216,
+      "offset": 9225,
       "length": 2,
       "value": "44"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5241,
+      "offset": 9250,
       "length": 2,
       "value": "45"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5285,
+      "offset": 9294,
       "length": 2,
       "value": "46"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5332,
+      "offset": 9341,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5359,
+      "offset": 9368,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5399,
+      "offset": 9408,
       "length": 2,
       "value": "51"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5456,
+      "offset": 9465,
       "length": 2,
       "value": "52"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5494,
+      "offset": 9503,
       "length": 2,
       "value": "53"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5538,
+      "offset": 9547,
       "length": 2,
       "value": "54"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5577,
+      "offset": 9586,
       "length": 2,
       "value": "58"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3608,
+      "offset": 7617,
       "length": 1,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3636,
+      "offset": 7645,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3665,
+      "offset": 7674,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3703,
+      "offset": 7712,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3739,
+      "offset": 7748,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3773,
+      "offset": 7782,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3795,
+      "offset": 7804,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3827,
+      "offset": 7836,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3866,
+      "offset": 7875,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3908,
+      "offset": 7917,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3950,
+      "offset": 7959,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 3993,
+      "offset": 8002,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4035,
+      "offset": 8044,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4075,
+      "offset": 8084,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4112,
+      "offset": 8121,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4147,
+      "offset": 8156,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4190,
+      "offset": 8199,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4217,
+      "offset": 8226,
       "length": 2,
       "value": "17"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4246,
+      "offset": 8255,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4286,
+      "offset": 8295,
       "length": 2,
       "value": "19"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4325,
+      "offset": 8334,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4351,
+      "offset": 8360,
       "length": 2,
       "value": "21"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4386,
+      "offset": 8395,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4411,
+      "offset": 8420,
       "length": 2,
       "value": "23"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4438,
+      "offset": 8447,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4469,
+      "offset": 8478,
       "length": 2,
       "value": "25"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4510,
+      "offset": 8519,
       "length": 2,
       "value": "26"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4543,
+      "offset": 8552,
       "length": 2,
       "value": "27"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4590,
+      "offset": 8599,
       "length": 2,
       "value": "28"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4620,
+      "offset": 8629,
       "length": 2,
       "value": "29"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4648,
+      "offset": 8657,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4685,
+      "offset": 8694,
       "length": 2,
       "value": "31"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4729,
+      "offset": 8738,
       "length": 2,
       "value": "32"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4766,
+      "offset": 8775,
       "length": 2,
       "value": "33"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4815,
+      "offset": 8824,
       "length": 2,
       "value": "34"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4861,
+      "offset": 8870,
       "length": 2,
       "value": "35"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4914,
+      "offset": 8923,
       "length": 2,
       "value": "36"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4946,
+      "offset": 8955,
       "length": 2,
       "value": "37"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 4987,
+      "offset": 8996,
       "length": 2,
       "value": "38"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5015,
+      "offset": 9024,
       "length": 2,
       "value": "39"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5051,
+      "offset": 9060,
       "length": 2,
       "value": "40"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5083,
+      "offset": 9092,
       "length": 2,
       "value": "41"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5110,
+      "offset": 9119,
       "length": 2,
       "value": "42"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5169,
+      "offset": 9178,
       "length": 2,
       "value": "43"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5216,
+      "offset": 9225,
       "length": 2,
       "value": "44"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5241,
+      "offset": 9250,
       "length": 2,
       "value": "45"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5285,
+      "offset": 9294,
       "length": 2,
       "value": "46"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5332,
+      "offset": 9341,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5359,
+      "offset": 9368,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5399,
+      "offset": 9408,
       "length": 2,
       "value": "51"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5456,
+      "offset": 9465,
       "length": 2,
       "value": "52"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5494,
+      "offset": 9503,
       "length": 2,
       "value": "53"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5538,
+      "offset": 9547,
       "length": 2,
       "value": "54"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
       "kind": "IntegerLiteral",
-      "offset": 5577,
+      "offset": 9586,
       "length": 2,
       "value": "58"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
-      "kind": "StringLiteral",
-      "offset": 10259,
-      "length": 31,
-      "value": "\"The transaction was approved.\""
-    },
-    {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
-      "kind": "StringLiteral",
-      "offset": 10330,
-      "length": 63,
-      "value": "\"Expired Card. Please try an alternate card or digital wallet.\""
-    },
-    {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
-      "kind": "StringLiteral",
-      "offset": 10435,
-      "length": 124,
-      "value": "\"Duplicate transaction detected. Please wait three minutes before resubmitting, or try an alternate card or digital wallet.\""
-    },
-    {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
-      "kind": "StringLiteral",
-      "offset": 10599,
-      "length": 94,
-      "value": "\"The transaction failed. Please try manual card entry or an alternate card or digital wallet.\""
-    },
-    {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
-      "kind": "StringLiteral",
-      "offset": 10719,
-      "length": 73,
-      "value": "\"The transaction failed. Please try an alternate card or digital wallet.\""
-    },
-    {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 10900,
+      "offset": 104,
       "length": 2,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 10979,
+      "offset": 183,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11040,
+      "offset": 244,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11174,
+      "offset": 378,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11274,
+      "offset": 478,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11317,
+      "offset": 521,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11402,
+      "offset": 606,
       "length": 2,
       "value": "21"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11517,
+      "offset": 721,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11649,
+      "offset": 853,
       "length": 2,
       "value": "23"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11924,
+      "offset": 1128,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12112,
+      "offset": 1316,
       "length": 2,
       "value": "25"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12184,
+      "offset": 1388,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12234,
+      "offset": 1438,
       "length": 2,
       "value": "90"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12358,
+      "offset": 1562,
       "length": 3,
       "value": "101"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12529,
+      "offset": 1733,
       "length": 3,
       "value": "102"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12641,
+      "offset": 1845,
       "length": 3,
       "value": "103"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12710,
+      "offset": 1914,
       "length": 3,
       "value": "104"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12851,
+      "offset": 2055,
       "length": 3,
       "value": "105"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12937,
+      "offset": 2141,
       "length": 3,
       "value": "120"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 13035,
+      "offset": 2239,
       "length": 4,
       "value": "1001"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 13116,
+      "offset": 2320,
       "length": 4,
       "value": "1002"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 13157,
+      "offset": 2361,
       "length": 4,
       "value": "1009"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 10900,
+      "offset": 104,
       "length": 1,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 10979,
+      "offset": 183,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11040,
+      "offset": 244,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11174,
+      "offset": 378,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11274,
+      "offset": 478,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11317,
+      "offset": 521,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11402,
+      "offset": 606,
       "length": 2,
       "value": "21"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11517,
+      "offset": 721,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11649,
+      "offset": 853,
       "length": 2,
       "value": "23"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11924,
+      "offset": 1128,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12112,
+      "offset": 1316,
       "length": 2,
       "value": "25"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12184,
+      "offset": 1388,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12234,
+      "offset": 1438,
       "length": 2,
       "value": "90"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12358,
+      "offset": 1562,
       "length": 3,
       "value": "101"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12529,
+      "offset": 1733,
       "length": 3,
       "value": "102"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12641,
+      "offset": 1845,
       "length": 3,
       "value": "103"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12710,
+      "offset": 1914,
       "length": 3,
       "value": "104"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12851,
+      "offset": 2055,
       "length": 3,
       "value": "105"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12937,
+      "offset": 2141,
       "length": 3,
       "value": "120"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 13035,
+      "offset": 2239,
       "length": 4,
       "value": "1001"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 13116,
+      "offset": 2320,
       "length": 4,
       "value": "1002"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 13157,
+      "offset": 2361,
       "length": 4,
       "value": "1009"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 10900,
+      "offset": 104,
       "length": 1,
       "value": "-1"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 10979,
+      "offset": 183,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11040,
+      "offset": 244,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11174,
+      "offset": 378,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11274,
+      "offset": 478,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11317,
+      "offset": 521,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11402,
+      "offset": 606,
       "length": 2,
       "value": "21"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11517,
+      "offset": 721,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11649,
+      "offset": 853,
       "length": 2,
       "value": "23"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 11924,
+      "offset": 1128,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12112,
+      "offset": 1316,
       "length": 2,
       "value": "25"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12184,
+      "offset": 1388,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12234,
+      "offset": 1438,
       "length": 2,
       "value": "90"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12358,
+      "offset": 1562,
       "length": 3,
       "value": "101"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12529,
+      "offset": 1733,
       "length": 3,
       "value": "102"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12641,
+      "offset": 1845,
       "length": 3,
       "value": "103"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12710,
+      "offset": 1914,
       "length": 3,
       "value": "104"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12851,
+      "offset": 2055,
       "length": 3,
       "value": "105"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 12937,
+      "offset": 2141,
       "length": 3,
       "value": "120"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 13035,
+      "offset": 2239,
       "length": 4,
       "value": "1001"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 13116,
+      "offset": 2320,
       "length": 4,
       "value": "1002"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
-      "offset": 13157,
+      "offset": 2361,
       "length": 4,
       "value": "1009"
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "StringLiteral",
-      "offset": 19430,
+      "offset": 8870,
       "length": 11,
       "value": "\"Autobooks.Initializer\""
     },
     {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
-      "kind": "BooleanLiteral",
-      "offset": 28399,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
-      "kind": "BooleanLiteral",
-      "offset": 28438,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
-      "kind": "BooleanLiteral",
-      "offset": 28482,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
-      "kind": "BooleanLiteral",
-      "offset": 28529,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
-      "kind": "BooleanLiteral",
-      "offset": 28576,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/TriPOS\/TriPOS.swift",
-      "kind": "BooleanLiteral",
-      "offset": 28631,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
       "offset": 445,
@@ -7100,364 +7068,364 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 11756,
+      "offset": 11967,
       "length": 16,
       "value": "\"HasMissingInfo\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 11815,
+      "offset": 12026,
       "length": 28,
       "value": "\"PaymentEnablementRequested\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 11894,
+      "offset": 12105,
       "length": 36,
       "value": "\"MerchantPendingApprovalForTapToPay\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 11957,
+      "offset": 12168,
       "length": 12,
       "value": "\"NotEnabled\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 11993,
+      "offset": 12204,
       "length": 9,
       "value": "\"Enabled\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 11756,
+      "offset": 11967,
       "length": 16,
       "value": "\"HasMissingInfo\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 11815,
+      "offset": 12026,
       "length": 28,
       "value": "\"PaymentEnablementRequested\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 11894,
+      "offset": 12105,
       "length": 36,
       "value": "\"MerchantPendingApprovalForTapToPay\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 11957,
+      "offset": 12168,
       "length": 12,
       "value": "\"NotEnabled\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 11993,
+      "offset": 12204,
       "length": 9,
       "value": "\"Enabled\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 15431,
+      "offset": 15642,
       "length": 15,
       "value": "\"transactionId\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 15431,
+      "offset": 15642,
       "length": 15,
       "value": "\"transactionId\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16538,
+      "offset": 16749,
       "length": 12,
       "value": "\"Cancelable\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16577,
+      "offset": 16788,
       "length": 12,
       "value": "\"Refundable\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16611,
+      "offset": 16822,
       "length": 7,
       "value": "\"Final\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16643,
+      "offset": 16854,
       "length": 10,
       "value": "\"Canceled\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16678,
+      "offset": 16889,
       "length": 10,
       "value": "\"Refunded\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16713,
+      "offset": 16924,
       "length": 10,
       "value": "\"Declined\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16747,
+      "offset": 16958,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16538,
+      "offset": 16749,
       "length": 12,
       "value": "\"Cancelable\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16577,
+      "offset": 16788,
       "length": 12,
       "value": "\"Refundable\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16611,
+      "offset": 16822,
       "length": 7,
       "value": "\"Final\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16643,
+      "offset": 16854,
       "length": 10,
       "value": "\"Canceled\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16678,
+      "offset": 16889,
       "length": 10,
       "value": "\"Refunded\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16713,
+      "offset": 16924,
       "length": 10,
       "value": "\"Declined\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16747,
+      "offset": 16958,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16841,
+      "offset": 17052,
       "length": 8,
       "value": "\"Refund\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16870,
+      "offset": 17081,
       "length": 6,
       "value": "\"Sale\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16899,
+      "offset": 17110,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16936,
+      "offset": 17147,
       "length": 14,
       "value": "\"FallbackSale\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16841,
+      "offset": 17052,
       "length": 8,
       "value": "\"Refund\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16870,
+      "offset": 17081,
       "length": 6,
       "value": "\"Sale\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16899,
+      "offset": 17110,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 16936,
+      "offset": 17147,
       "length": 14,
       "value": "\"FallbackSale\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 21815,
+      "offset": 22026,
       "length": 14,
       "value": "\"EmailAddress\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 21815,
+      "offset": 22026,
       "length": 14,
       "value": "\"EmailAddress\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 22019,
+      "offset": 22230,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 22063,
+      "offset": 22274,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 22107,
+      "offset": 22318,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 22164,
+      "offset": 22375,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 22200,
+      "offset": 22411,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 22237,
+      "offset": 22448,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 22272,
+      "offset": 22483,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 22308,
+      "offset": 22519,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 22350,
+      "offset": 22561,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 22396,
+      "offset": 22607,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 22440,
+      "offset": 22651,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 22494,
+      "offset": 22705,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 22530,
+      "offset": 22741,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 22560,
+      "offset": 22771,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 22598,
+      "offset": 22809,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 22623,
+      "offset": 22834,
       "length": 2,
       "value": "\"\""
     },
@@ -7548,154 +7516,154 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 4602,
+      "offset": 4619,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 4680,
+      "offset": 4697,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 4762,
+      "offset": 4779,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 4921,
+      "offset": 4938,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 22769,
+      "offset": 22786,
       "length": 31,
       "value": "\"co.autobooks.sdk.userActivity\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 22869,
+      "offset": 22886,
       "length": 38,
       "value": "\"co.autobooks.sdk.visitedTransactions\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 22968,
+      "offset": 22985,
       "length": 31,
       "value": "\"co.autobooks.sdk.tappedCharge\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23065,
+      "offset": 23082,
       "length": 36,
       "value": "\"co.autobooks.sdk.tappedManualEntry\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23167,
+      "offset": 23184,
       "length": 36,
       "value": "\"co.autobooks.sdk.tappedSendReceipt\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23271,
+      "offset": 23288,
       "length": 31,
       "value": "\"co.autobooks.sdk.tappedRefund\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23370,
+      "offset": 23387,
       "length": 31,
       "value": "\"co.autobooks.sdk.tappedCancel\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23467,
+      "offset": 23484,
       "length": 29,
       "value": "\"co.autobooks.sdk.tappedSkip\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23569,
+      "offset": 23586,
       "length": 43,
       "value": "\"co.autobooks.sdk.tappedSendAnotherReceipt\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23673,
+      "offset": 23690,
       "length": 38,
       "value": "\"co.autobooks.sdk.callUsActionClicked\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23772,
+      "offset": 23789,
       "length": 31,
       "value": "\"co.autobooks.sdk.viewedScreen\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23870,
+      "offset": 23887,
       "length": 37,
       "value": "\"co.autobooks.sdk.screenTimerWarning\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23964,
+      "offset": 23981,
       "length": 27,
       "value": "\"co.autobooks.sdk.addedTip\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 24050,
+      "offset": 24067,
       "length": 29,
       "value": "\"co.autobooks.sdk.toggledTip\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 24141,
+      "offset": 24158,
       "length": 32,
       "value": "\"co.autobooks.sdk.readCancelled\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 24241,
+      "offset": 24258,
       "length": 37,
       "value": "\"co.autobooks.sdk.somethingWentWrong\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 24340,
+      "offset": 24357,
       "length": 32,
       "value": "\"co.autobooks.sdk.internalError\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 24440,
+      "offset": 24457,
       "length": 38,
       "value": "\"co.autobooks.sdk.transactionDeclined\""
     },
@@ -9585,7 +9553,7 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Device.swift",
       "kind": "StringLiteral",
-      "offset": 34232,
+      "offset": 34200,
       "length": 49,
       "value": "\"\\A(iPhone|iPad|iPod)(\\d{1,2})\\,(\\d{1,2})\\z\""
     },
@@ -9805,6 +9773,55 @@
       "offset": 94,
       "length": 24,
       "value": "\"Autobooks.WebFeatureFlowController\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/DeviceStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 865,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/DeviceStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 870,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/DeviceStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 941,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/DeviceStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 946,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/DeviceStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1023,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/DeviceStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1028,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/DeviceStatus.swift",
+      "kind": "Array",
+      "offset": 1087,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/PresaleScreen.swift",
@@ -10180,70 +10197,70 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 8971,
+      "offset": 9636,
       "length": 8,
       "value": "\"Accept\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9005,
+      "offset": 9670,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9044,
+      "offset": 9709,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9086,
+      "offset": 9751,
       "length": 27,
       "value": "\"Ocp-Apim-Subscription-Key\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9135,
+      "offset": 9800,
       "length": 12,
       "value": "\"User-Agent\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 8971,
+      "offset": 9636,
       "length": 8,
       "value": "\"Accept\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9005,
+      "offset": 9670,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9044,
+      "offset": 9709,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9086,
+      "offset": 9751,
       "length": 27,
       "value": "\"Ocp-Apim-Subscription-Key\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9135,
+      "offset": 9800,
       "length": 12,
       "value": "\"User-Agent\""
     },

@@ -28,6 +28,7 @@ extension Autobooks.Stubs {
   }
   public static func webPrompts(loadedWebURL: Foundation.URL, needsEnrollmentCallback: Foundation.URL, hasMissingInfoCallback: Foundation.URL) -> Autobooks.Stubs
 }
+#warning("ENABLE_TRIPOS=1, Linked with triPOSMobileSDK")
 public enum AB {
   public enum LoginCredential {
     case token(Swift.String)

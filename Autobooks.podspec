@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Autobooks'
-  s.version = '1.7.0'
+  s.version = '1.7.1'
   s.license = 'Apache2'
   s.summary = 'Autobooks SDK for iOS'
   s.homepage = 'https://github.com/autobooks/autobooks-ios'
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.swift_versions = ['5']
   
-  s.vendored_frameworks = 'Frameworks/*.xcframework'
+  s.vendored_frameworks = ['Frameworks/Autobooks.xcframework', 'Frameworks/triPOSMobileSDK.xcframework']
 
   s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
