@@ -2783,7 +2783,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "() async throws -> Autobooks.AB.LoginCredential",
+                "printedName": "(Autobooks.AB.LoginReason) async throws -> Autobooks.AB.LoginCredential",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -2793,8 +2793,9 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
+                    "name": "LoginReason",
+                    "printedName": "Autobooks.AB.LoginReason",
+                    "usr": "s:9Autobooks2ABO11LoginReasonO"
                   }
                 ]
               },
@@ -2827,8 +2828,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9Autobooks2ABO13startTapToPay15subscriptionKey13configuration6device13loginProvider10completionySS_AC13ConfigurationVAC6DeviceOAC15LoginCredentialOyYaYbKScMYccyAC15DismissalReasonOcSgtFZ",
-            "mangledName": "$s9Autobooks2ABO13startTapToPay15subscriptionKey13configuration6device13loginProvider10completionySS_AC13ConfigurationVAC6DeviceOAC15LoginCredentialOyYaYbKScMYccyAC15DismissalReasonOcSgtFZ",
+            "usr": "s:9Autobooks2ABO13startTapToPay15subscriptionKey13configuration6device13loginProvider10completionySS_AC13ConfigurationVAC6DeviceOAC15LoginCredentialOAC0P6ReasonOYaYbKScMYccyAC09DismissalR0OcSgtFZ",
+            "mangledName": "$s9Autobooks2ABO13startTapToPay15subscriptionKey13configuration6device13loginProvider10completionySS_AC13ConfigurationVAC6DeviceOAC15LoginCredentialOAC0P6ReasonOYaYbKScMYccyAC09DismissalR0OcSgtFZ",
             "moduleName": "Autobooks",
             "static": true,
             "declAttributes": [
@@ -3317,6 +3318,280 @@
             "declKind": "Enum",
             "usr": "s:9Autobooks2ABO15DismissalReasonO",
             "mangledName": "$s9Autobooks2ABO15DismissalReasonO",
+            "moduleName": "Autobooks",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "LoginReason",
+            "printedName": "LoginReason",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "first",
+                "printedName": "first",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Autobooks.AB.LoginReason.Type) -> Autobooks.AB.LoginReason",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoginReason",
+                        "printedName": "Autobooks.AB.LoginReason",
+                        "usr": "s:9Autobooks2ABO11LoginReasonO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Autobooks.AB.LoginReason.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LoginReason",
+                            "printedName": "Autobooks.AB.LoginReason",
+                            "usr": "s:9Autobooks2ABO11LoginReasonO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9Autobooks2ABO11LoginReasonO5firstyA2EmF",
+                "mangledName": "$s9Autobooks2ABO11LoginReasonO5firstyA2EmF",
+                "moduleName": "Autobooks"
+              },
+              {
+                "kind": "Var",
+                "name": "retry",
+                "printedName": "retry",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Autobooks.AB.LoginReason.Type) -> Autobooks.AB.LoginReason",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoginReason",
+                        "printedName": "Autobooks.AB.LoginReason",
+                        "usr": "s:9Autobooks2ABO11LoginReasonO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Autobooks.AB.LoginReason.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LoginReason",
+                            "printedName": "Autobooks.AB.LoginReason",
+                            "usr": "s:9Autobooks2ABO11LoginReasonO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9Autobooks2ABO11LoginReasonO5retryyA2EmF",
+                "mangledName": "$s9Autobooks2ABO11LoginReasonO5retryyA2EmF",
+                "moduleName": "Autobooks"
+              },
+              {
+                "kind": "Var",
+                "name": "timer",
+                "printedName": "timer",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Autobooks.AB.LoginReason.Type) -> Autobooks.AB.LoginReason",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoginReason",
+                        "printedName": "Autobooks.AB.LoginReason",
+                        "usr": "s:9Autobooks2ABO11LoginReasonO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Autobooks.AB.LoginReason.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LoginReason",
+                            "printedName": "Autobooks.AB.LoginReason",
+                            "usr": "s:9Autobooks2ABO11LoginReasonO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9Autobooks2ABO11LoginReasonO5timeryA2EmF",
+                "mangledName": "$s9Autobooks2ABO11LoginReasonO5timeryA2EmF",
+                "moduleName": "Autobooks"
+              },
+              {
+                "kind": "Var",
+                "name": "polling",
+                "printedName": "polling",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Autobooks.AB.LoginReason.Type) -> Autobooks.AB.LoginReason",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoginReason",
+                        "printedName": "Autobooks.AB.LoginReason",
+                        "usr": "s:9Autobooks2ABO11LoginReasonO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "Autobooks.AB.LoginReason.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "LoginReason",
+                            "printedName": "Autobooks.AB.LoginReason",
+                            "usr": "s:9Autobooks2ABO11LoginReasonO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:9Autobooks2ABO11LoginReasonO7pollingyA2EmF",
+                "mangledName": "$s9Autobooks2ABO11LoginReasonO7pollingyA2EmF",
+                "moduleName": "Autobooks"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9Autobooks2ABO11LoginReasonO9hashValueSivp",
+                "mangledName": "$s9Autobooks2ABO11LoginReasonO9hashValueSivp",
+                "moduleName": "Autobooks",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9Autobooks2ABO11LoginReasonO9hashValueSivg",
+                    "mangledName": "$s9Autobooks2ABO11LoginReasonO9hashValueSivg",
+                    "moduleName": "Autobooks",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9Autobooks2ABO11LoginReasonO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s9Autobooks2ABO11LoginReasonO4hash4intoys6HasherVz_tF",
+                "moduleName": "Autobooks",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoginReason",
+                    "printedName": "Autobooks.AB.LoginReason",
+                    "usr": "s:9Autobooks2ABO11LoginReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoginReason",
+                    "printedName": "Autobooks.AB.LoginReason",
+                    "usr": "s:9Autobooks2ABO11LoginReasonO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9Autobooks2ABO11LoginReasonO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s9Autobooks2ABO11LoginReasonO2eeoiySbAE_AEtFZ",
+                "moduleName": "Autobooks",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:9Autobooks2ABO11LoginReasonO",
+            "mangledName": "$s9Autobooks2ABO11LoginReasonO",
             "moduleName": "Autobooks",
             "declAttributes": [
               "AccessControl"
@@ -4466,6 +4741,16 @@
         "moduleName": "Autobooks",
         "declAttributes": [
           "ImplementationOnly"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -6823,7 +7108,42 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "StringLiteral",
-      "offset": 8870,
+      "offset": 8295,
+      "length": 6,
+      "value": "\"2342\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 8390,
+      "length": 11,
+      "value": "\"364802200\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 8488,
+      "length": 9,
+      "value": "\"1234052\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 8590,
+      "length": 74,
+      "value": "\"7341786DC28710A1C8DA10871C74E27D5F857EAC594C29F2F9EA9788B88B0DD79272C001\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 8742,
+      "length": 19,
+      "value": "\"terminalProfileId\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 8784,
       "length": 11,
       "value": "\"Autobooks.Initializer\""
     },
@@ -7544,126 +7864,126 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 22786,
+      "offset": 22968,
       "length": 31,
       "value": "\"co.autobooks.sdk.userActivity\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 22886,
+      "offset": 23068,
       "length": 38,
       "value": "\"co.autobooks.sdk.visitedTransactions\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 22985,
+      "offset": 23167,
       "length": 31,
       "value": "\"co.autobooks.sdk.tappedCharge\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23082,
+      "offset": 23264,
       "length": 36,
       "value": "\"co.autobooks.sdk.tappedManualEntry\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23184,
+      "offset": 23366,
       "length": 36,
       "value": "\"co.autobooks.sdk.tappedSendReceipt\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23288,
+      "offset": 23470,
       "length": 31,
       "value": "\"co.autobooks.sdk.tappedRefund\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23387,
+      "offset": 23569,
       "length": 31,
       "value": "\"co.autobooks.sdk.tappedCancel\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23484,
+      "offset": 23666,
       "length": 29,
       "value": "\"co.autobooks.sdk.tappedSkip\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23586,
+      "offset": 23768,
       "length": 43,
       "value": "\"co.autobooks.sdk.tappedSendAnotherReceipt\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23690,
+      "offset": 23872,
       "length": 38,
       "value": "\"co.autobooks.sdk.callUsActionClicked\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23789,
+      "offset": 23971,
       "length": 31,
       "value": "\"co.autobooks.sdk.viewedScreen\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23887,
+      "offset": 24069,
       "length": 37,
       "value": "\"co.autobooks.sdk.screenTimerWarning\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 23981,
+      "offset": 24163,
       "length": 27,
       "value": "\"co.autobooks.sdk.addedTip\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 24067,
+      "offset": 24249,
       "length": 29,
       "value": "\"co.autobooks.sdk.toggledTip\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 24158,
+      "offset": 24340,
       "length": 32,
       "value": "\"co.autobooks.sdk.readCancelled\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 24258,
+      "offset": 24440,
       "length": 37,
       "value": "\"co.autobooks.sdk.somethingWentWrong\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 24357,
+      "offset": 24539,
       "length": 32,
       "value": "\"co.autobooks.sdk.internalError\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 24457,
+      "offset": 24639,
       "length": 38,
       "value": "\"co.autobooks.sdk.transactionDeclined\""
     },
@@ -9889,49 +10209,49 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "BooleanLiteral",
-      "offset": 1067,
+      "offset": 1075,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "BooleanLiteral",
-      "offset": 1439,
+      "offset": 1447,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "BooleanLiteral",
-      "offset": 1828,
+      "offset": 1836,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "BooleanLiteral",
-      "offset": 2278,
+      "offset": 2286,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "BooleanLiteral",
-      "offset": 2555,
+      "offset": 2563,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "BooleanLiteral",
-      "offset": 2915,
+      "offset": 2923,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "BooleanLiteral",
-      "offset": 3286,
+      "offset": 3294,
       "length": 5,
       "value": "false"
     },
@@ -10162,105 +10482,105 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 1736,
+      "offset": 1758,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 1770,
+      "offset": 1792,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 1811,
+      "offset": 1833,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "BooleanLiteral",
-      "offset": 436,
+      "offset": 399,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "BooleanLiteral",
-      "offset": 631,
+      "offset": 594,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9636,
+      "offset": 8971,
       "length": 8,
       "value": "\"Accept\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9670,
+      "offset": 9005,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9709,
+      "offset": 9044,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9751,
+      "offset": 9086,
       "length": 27,
       "value": "\"Ocp-Apim-Subscription-Key\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9800,
+      "offset": 9135,
       "length": 12,
       "value": "\"User-Agent\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9636,
+      "offset": 8971,
       "length": 8,
       "value": "\"Accept\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9670,
+      "offset": 9005,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9709,
+      "offset": 9044,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9751,
+      "offset": 9086,
       "length": 27,
       "value": "\"Ocp-Apim-Subscription-Key\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9800,
+      "offset": 9135,
       "length": 12,
       "value": "\"User-Agent\""
     },

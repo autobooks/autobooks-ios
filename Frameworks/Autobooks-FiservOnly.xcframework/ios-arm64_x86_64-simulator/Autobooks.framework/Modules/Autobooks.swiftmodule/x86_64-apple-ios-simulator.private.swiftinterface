@@ -106,13 +106,16 @@ public enum AB {
   public static var supportsTapToPay: Swift.Bool {
     get
   }
-  public typealias CompletionBlock = (Autobooks.AB.DismissalReason) -> Swift.Void
+  public typealias DismissalBlock = (Autobooks.AB.DismissalReason) -> Swift.Void
   #if compiler(>=5.3) && $AsyncAwait && $Sendable
-  public static func startTapToPay(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration = .default, device: Autobooks.AB.Device, loginProvider: @escaping @_Concurrency.MainActor @Sendable () async throws -> Autobooks.AB.LoginCredential, completion: Autobooks.AB.CompletionBlock? = nil)
+  public typealias LoginProviderBlock = @_Concurrency.MainActor @Sendable (Autobooks.AB.LoginReason) async throws -> Autobooks.AB.LoginCredential
   #endif
-  public static func startPaymentForm(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.CompletionBlock? = nil)
-  public static func startInvoicing(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.CompletionBlock? = nil)
-  public static func startFullAutobooks(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.CompletionBlock? = nil)
+  #if compiler(>=5.3) && $AsyncAwait && $Sendable
+  public static func startTapToPay(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration = .default, device: Autobooks.AB.Device, loginProvider: @escaping Autobooks.AB.LoginProviderBlock, completion: Autobooks.AB.DismissalBlock? = nil)
+  #endif
+  public static func startPaymentForm(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil)
+  public static func startInvoicing(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil)
+  public static func startFullAutobooks(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil)
   @_Concurrency.MainActor public static func stop()
   public enum DismissalReason : Swift.Equatable {
     case userInitiated
@@ -121,6 +124,17 @@ public enum AB {
     case stopped
     public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: Autobooks.AB.DismissalReason, b: Autobooks.AB.DismissalReason) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum LoginReason : Swift.Equatable {
+    case first
+    case retry
+    case timer
+    case polling
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: Autobooks.AB.LoginReason, b: Autobooks.AB.LoginReason) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
@@ -157,3 +171,4 @@ extension Autobooks.AB.BackendEnvironment : Swift.Equatable {}
 extension Autobooks.AB.BackendEnvironment : Swift.Hashable {}
 extension Autobooks.AB.Device : Swift.Hashable {}
 extension Autobooks.AB.DismissalReason : Swift.Hashable {}
+extension Autobooks.AB.LoginReason : Swift.Hashable {}
