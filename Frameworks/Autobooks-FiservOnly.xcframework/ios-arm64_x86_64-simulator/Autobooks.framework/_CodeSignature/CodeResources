@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/Autobooks-Swift.h</key>
 		<data>
-		h71LPrVHxthJiQoi0hQzxXM6WPY=
+		LXwsDeY3CFU0y9NVgcoFZRHlvTw=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		3+UoDOzRzs9poTngdicZyogHaIQ=
+		2IfAJo8YyAoyKt5j3qO8uQsU98E=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		4i9IZBMW0UOrUalFhBBdIN+wzvo=
+		8WicJeyOhB6tZp0i7Z515KoDHTI=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		4i9IZBMW0UOrUalFhBBdIN+wzvo=
+		8WicJeyOhB6tZp0i7Z515KoDHTI=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PaZMRbknUcX6CoiiMF4ik8HnRhk=
+		96WVnetZykxlNAfSS8yxn1MwES4=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		3+UoDOzRzs9poTngdicZyogHaIQ=
+		2IfAJo8YyAoyKt5j3qO8uQsU98E=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		WMfVp1GohBbblz3S9ad6CkimBJc=
+		8Iaae4x4Qz7MOPOVCjeU39GeRWI=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		WMfVp1GohBbblz3S9ad6CkimBJc=
+		8Iaae4x4Qz7MOPOVCjeU39GeRWI=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		iAli5d6VbvG+7SMhWKKfCHpL27A=
+		Xrjed60WCwrg8GrfRinkXtNEnEw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -146,21 +146,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mNmYjCuo22M2PDziqi4nngT/eQ4RSLPnfiAatah0GZk=
+			QAGdnvDAtw14nI026MRratGb4RzIxIpDBufihsGyydg=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b+wZry+oINmCy9uNClIBK1Y8cKP+n20lCdkHf05yHuw=
+			RFDUKp0aB8sFnbRNSGrswtoySBDVJEPSRJcw2ZPXGAA=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KF//8o59D+vel8DdYLayUjYObNzFOAv/N+HVgzAwbGE=
+			4uMEH4oTYnfCJ0kRfbm1mlBpwuoODJl2RssZq8/VnFo=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -174,28 +174,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KF//8o59D+vel8DdYLayUjYObNzFOAv/N+HVgzAwbGE=
+			4uMEH4oTYnfCJ0kRfbm1mlBpwuoODJl2RssZq8/VnFo=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			B2MKMhXhtD6xAQ3VSzyqlwP99yGvEut0xDVWD2jzeOo=
+			T5Knc1J3LmitVR+VTDGhRgJvoma4cgvaWScVdkpgjWA=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b+wZry+oINmCy9uNClIBK1Y8cKP+n20lCdkHf05yHuw=
+			RFDUKp0aB8sFnbRNSGrswtoySBDVJEPSRJcw2ZPXGAA=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TBV3mbzAPEnho8Zezbl4FQWLc/3o0v0SYgWlM9C8acc=
+			lmGIvF68P4o/0JyE5ClEsE8uj3yhiL8IUiPu3CtoBbk=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -209,14 +209,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TBV3mbzAPEnho8Zezbl4FQWLc/3o0v0SYgWlM9C8acc=
+			lmGIvF68P4o/0JyE5ClEsE8uj3yhiL8IUiPu3CtoBbk=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0rBM+HamIHFZtjFEUhpiAlocfIkOXi64TIHXt7vAfJg=
+			wGlpvdNNTW1dhPrwVTd9nVd56ortTBttyjL+s++zcFE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

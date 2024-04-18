@@ -154,6 +154,8 @@ public enum AB {
     public static let screenTimerWarning: Foundation.Notification.Name
     public static let addedTip: Foundation.Notification.Name
     public static let toggledTip: Foundation.Notification.Name
+    public static let toggledSalesTax: Foundation.Notification.Name
+    public static let toggledSalesTaxForThisTransaction: Foundation.Notification.Name
     public static let readCancelled: Foundation.Notification.Name
     public static let somethingWentWrong: Foundation.Notification.Name
     public static let internalError: Foundation.Notification.Name
