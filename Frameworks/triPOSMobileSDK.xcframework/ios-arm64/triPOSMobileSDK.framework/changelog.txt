@@ -1,6 +1,14 @@
 triPOS Mobile SDK Change Log
 Worldpay Integrated Payments
 
+v4.0.2, Release Date April 2024
+- Updated Ingenico RBA SDK library to 5.33.4
+- Updated Ingenico RUA SDK (Moby) library to 2.4.9.1
+- Updated Realm library to 10.49.1
+- Updated CocoaLumberjack library to 3.8.5
+- Added privacy manifest
+- Removed support for BBPos Chipper 2X BT and 3X BT devices
+
 v4.0.1, Release Date February 2024
 - Implemented support for the Apple M1 processor.
 - Support for new Ingenico Moby 5500/5500M firmware.

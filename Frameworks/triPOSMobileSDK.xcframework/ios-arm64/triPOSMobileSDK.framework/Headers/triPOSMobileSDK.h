@@ -124,10 +124,6 @@
 ///
 ///  A optional BIN whitelisting file can be included with the target iOS App. The file name needs to be specified in the application configuration during initialization.
 ///
-/// \subsection BBPosChipper3XBTPairing  BBPos Chipper 3X BT Pairing
-///
-/// When a user first attemps to connect to a BBPos Chipper 3X BT device via the triPOS® Mobile SDK Framework, they will be prompted to enter a 6 digit code.  This code is located on the back of the BBPPos Chipper 3X BT device and is labeled BT Passkey.  After the code is correctly entered, the BBPos Chipper 3X BT device will be paired to the iOS device.
-///
 /// \subsection Ingenico Moby/5500 Pairing
 /// <ul>
 ///
@@ -179,11 +175,6 @@
 ///             <li>FIS/Worldpay</li>
 ///             <li>Fiserv/First Data </li>
 ///             <li>TSYS</li>
-///         </ul>
-///     </li>
-///     <li>BBPos
-///         <ul>
-///             <li>FIS/Worldpay - QuickChip only</li>
 ///         </ul>
 ///     </li>
 ///       <li>Ingenico Moby Bluetooth and Ingenico Moby USB

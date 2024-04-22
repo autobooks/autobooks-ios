@@ -5,7 +5,7 @@
 #ifndef VTPStoreTransactionData_h
 #define VTPStoreTransactionData_h
 
-#import <Realm/Realm.h>
+#import "Realm/Realm.h"
 
 #import "VTPStoreTransactionState.h"
 #import "VTPTransactionType.h"

@@ -63,7 +63,7 @@ typedef void (^VTPCardReadCompletionHandler)(BOOL readSuccesful);
 /// Scans for available Bluetooth devices of the selected type.
 /// Results will be returned in the onReturnBluetoothScanResults VTPDelegate protocol method.
 ///
-/// <br /><br /><strong>NOTE:</strong> Some device types (for example Ingenico RBA) are Bluetooth classic and others (BBPos) are BLE.
+/// <br /><br /><strong>NOTE:</strong> Some device types (for example Ingenico RBA) are Bluetooth classic and others (Moby) are BLE.
 ///       For Bluetooth classic devices, onReturnBluetoothScanResults only returns those devices already paired
 ///       and connected to the iOS device.  For BLE, since it does not require
 ///       pairing, onReturnBluetoothScanResults returns all available devices of the configured type.

@@ -6,7 +6,7 @@
 	<dict>
 		<key>DevicePaymentProcessorMapping.plist</key>
 		<data>
-		uunL4oipyiMlFxgEwp+eUMlJGO0=
+		FpDw4yRvgz6p46R9VDZ4YkwQKjs=
 		</data>
 		<key>EMVConfiguration.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Headers/VPDType.h</key>
 		<data>
-		hfya8a3HYIVcQlLUXBG1FQMPnFg=
+		nMLD/FdQ4UrtMl/WB9NZSp1lc5M=
 		</data>
 		<key>Headers/VPDYesNoInput.h</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>Headers/VTP.h</key>
 		<data>
-		xh2hIHYbHLydnXVvlRXpkun1m/4=
+		Mytqnm9IVpLfbv1KTazSalAc+ww=
 		</data>
 		<key>Headers/VTPAddressRequest.h</key>
 		<data>
@@ -266,7 +266,7 @@
 		</data>
 		<key>Headers/VTPDeviceType.h</key>
 		<data>
-		3HOTxhWTbu14Am/PfCiRfcFubCI=
+		Q7+eGgGcwcu6fheAgLVmCfa7KUk=
 		</data>
 		<key>Headers/VTPEBTCardBalanceInquiryRequest.h</key>
 		<data>
@@ -862,19 +862,19 @@
 		</data>
 		<key>Headers/triPOSMobileSDK-Swift.h</key>
 		<data>
-		Wz+eKhLxFJvmBuXZNz7JX0tDE74=
+		P8pPxEsd2ZgT6W2o67LZq6hstMk=
 		</data>
 		<key>Headers/triPOSMobileSDK.h</key>
 		<data>
-		jPC5/u2WnEuv5YFj3Vi7tPC9cYA=
+		6cdJmsVbdgbB8Jeh/LD1Od8T1f0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pgo+gf+6iAPEghAy0vBGdjO+Jdo=
+		WGYxWSx39t5WIHrveiZmphifyTk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		+SqGpa8DzMzyLfz+A95QKNiD1us=
+		pfOm0fhaXA27MSJTVacPLkAp530=
 		</data>
 		<key>Modules/module.private.modulemap</key>
 		<data>
@@ -882,23 +882,27 @@
 		</data>
 		<key>Modules/triPOSMobileSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		CEA+Xv3h6XcUfeC6NUUvY5fObqY=
+		KhhYP7uD3NQSbxyIvBVEg3BehWk=
 		</data>
 		<key>Modules/triPOSMobileSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		OakvAT6xRW3XppphTMqxa0lZb8Q=
+		1JA8WVMV84hz4Weg7iCiUoPn/Bg=
 		</data>
 		<key>Modules/triPOSMobileSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		KRpu+LW9ksKw2v0zo7Mk+KSAql8=
+		gOZqPsehGSnPNWdcXQMpBnOYII4=
 		</data>
 		<key>Modules/triPOSMobileSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		OakvAT6xRW3XppphTMqxa0lZb8Q=
+		1JA8WVMV84hz4Weg7iCiUoPn/Bg=
 		</data>
 		<key>Modules/triPOSMobileSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		E+1wPVgwWyHKG1dfyCNH/ptTjH0=
+		879wWBTq3ckIJhHmAALhrWhbKWc=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		oudpu0ejz9UlR6pnOfIPQ5XLF/o=
 		</data>
 		<key>PrivateHeaders/NSData+BcdToUInt.h</key>
 		<data>
@@ -1178,7 +1182,7 @@
 		</data>
 		<key>PrivateHeaders/VTPStoreTransactionData.h</key>
 		<data>
-		pEAbn6WGPTwvL2N5dbL7hZBA6Yc=
+		7GT2fC1IIBWTQu4SPsCObPEQq1E=
 		</data>
 		<key>PrivateHeaders/VTPStoreTransactionJsonData.h</key>
 		<data>
@@ -1310,7 +1314,7 @@
 		</data>
 		<key>changelog.txt</key>
 		<data>
-		oewk7UaKeUSbA/zTrxQgui6njNY=
+		vo6EfDEGfGy1CZMCCvmf6T6wfs0=
 		</data>
 		<key>createXCFrameworkTTP.sh</key>
 		<data>
@@ -1327,7 +1331,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5gTGrXsDeZGgnGy8/OSdTPqedxDvK9R9uH+Hlp2Tc/s=
+			/eeLfhYYQ+5Ob1Lo1YE8dFPiRI/hwzPxsVQ+1efuyqc=
 			</data>
 		</dict>
 		<key>EMVConfiguration.plist</key>
@@ -1481,7 +1485,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lWtJEFu3WmUTfrapcEFiL/lbxoxTZ2oIXRnH2+kMqKc=
+			fVkoN1j7W7ino56H/HQqv6F6jIvrARRzQIfD5ZcEfo4=
 			</data>
 		</dict>
 		<key>Headers/VPDYesNoInput.h</key>
@@ -1614,7 +1618,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/vqV3qlrPAMZGsXmeQ8WcL/JAN1PrObAbWgW4FwxIOo=
+			fYFbomqNRLHT0PebcR9fhuPmDg2uFOXaNoey9kcZkY8=
 			</data>
 		</dict>
 		<key>Headers/VTPAddressRequest.h</key>
@@ -1782,7 +1786,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HwfpaUQIeAUaIbLG2crs7XPXfFIYK8aB2wc7SR+ymzQ=
+			IR1ClDgsZUEA2IidRO+lfT54ipOSxmeAIRKdxzXeHYo=
 			</data>
 		</dict>
 		<key>Headers/VTPEBTCardBalanceInquiryRequest.h</key>
@@ -2825,21 +2829,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JE4nnYhH1adU8nzqtDSOVSnPnE8U6P5K4X4cz2cwN7E=
+			JbjhneCUNJL01gttIAExg0bJszWiKAfR8G0I2fmq5P8=
 			</data>
 		</dict>
 		<key>Headers/triPOSMobileSDK.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CY0FdWA9eE7g3qvuCJ5C7hOycrrfoSZJ5p1mBvdl4Es=
+			I/wEQtuBXkL8gmwH++7xE7vKlmL+wG3fQv3ftE48LsA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6iDuwryKc8epN3LAhVgdQlGZcTMNBN4jBFsM7AcBR2s=
+			AnL1pE9QU3buEBZDnipjYlOWWs3Tqk0MwHGDr0/vbEk=
 			</data>
 		</dict>
 		<key>Modules/module.private.modulemap</key>
@@ -2853,35 +2857,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qVq6AUIzhxyyi2enU4A12Sgc6P/212sbw3UZZgNPCfQ=
+			ThdaYt9lbn/6Kz5DjwVK7cf+dVpmU3ckjuPzqVVCNT4=
 			</data>
 		</dict>
 		<key>Modules/triPOSMobileSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v4lb6w1y++sKJQNJ/33OJrWCyrdu4pYboO1Xopvm3Cs=
+			K+REGdFGojdP49G0TWaCMm6gGxpxROZlKhFbTBUftkc=
 			</data>
 		</dict>
 		<key>Modules/triPOSMobileSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iuMjyS0naaiSaq0fUJ6N4SeLJTlmBvM+GfkKwSwHpag=
+			U8+4CIO1OolhQYVIMwmhNWzItjnn35VMJiOpkw9jnHI=
 			</data>
 		</dict>
 		<key>Modules/triPOSMobileSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v4lb6w1y++sKJQNJ/33OJrWCyrdu4pYboO1Xopvm3Cs=
+			K+REGdFGojdP49G0TWaCMm6gGxpxROZlKhFbTBUftkc=
 			</data>
 		</dict>
 		<key>Modules/triPOSMobileSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bwr7uoLb+qV2tZKz8deq8I6ldc7eJfKS2l+K/da3pO4=
+			dolO+d4JxwWDktdYSryD37xR13Qj5ufGpcO74rwHm+A=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			bld7K8td2pkfQNJ4Q6RG3BQZ/gGVODJ47ylDR1KCSbA=
 			</data>
 		</dict>
 		<key>PrivateHeaders/NSData+BcdToUInt.h</key>
@@ -3371,7 +3382,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QzxA23GW6YHnpKjuRNUBd0GQGdoTLTmGycboDKGmSOU=
+			Uqmh/9ke/YFCMuTPVIE10HtcfmbAFXQndQK/zfLQoQc=
 			</data>
 		</dict>
 		<key>PrivateHeaders/VTPStoreTransactionJsonData.h</key>
@@ -3602,7 +3613,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jnYVyw5Q0Z30RfPyYVjhomv+tMeTmB6hYVT4nZJ51Ac=
+			rtBKgbpW/DGcZ3o5v3XL3F48U5RjXSpoa/NNNC+E7nE=
 			</data>
 		</dict>
 		<key>createXCFrameworkTTP.sh</key>

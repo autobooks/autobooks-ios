@@ -1271,12 +1271,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "triPOSMobileSDK.PaymentCardReaderBridgeProtocol?",
+                "printedName": "(any triPOSMobileSDK.PaymentCardReaderBridgeProtocol)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "PaymentCardReaderBridgeProtocol",
-                    "printedName": "triPOSMobileSDK.PaymentCardReaderBridgeProtocol",
+                    "printedName": "any triPOSMobileSDK.PaymentCardReaderBridgeProtocol",
                     "usr": "c:@M@triPOSMobileSDK@objc(pl)PaymentCardReaderBridgeProtocol"
                   }
                 ],
@@ -1304,12 +1304,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "triPOSMobileSDK.PaymentCardReaderBridgeProtocol?",
+                    "printedName": "(any triPOSMobileSDK.PaymentCardReaderBridgeProtocol)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "PaymentCardReaderBridgeProtocol",
-                        "printedName": "triPOSMobileSDK.PaymentCardReaderBridgeProtocol",
+                        "printedName": "any triPOSMobileSDK.PaymentCardReaderBridgeProtocol",
                         "usr": "c:@M@triPOSMobileSDK@objc(pl)PaymentCardReaderBridgeProtocol"
                       }
                     ],
@@ -1339,12 +1339,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "triPOSMobileSDK.PaymentCardReaderBridgeProtocol?",
+                    "printedName": "(any triPOSMobileSDK.PaymentCardReaderBridgeProtocol)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "PaymentCardReaderBridgeProtocol",
-                        "printedName": "triPOSMobileSDK.PaymentCardReaderBridgeProtocol",
+                        "printedName": "any triPOSMobileSDK.PaymentCardReaderBridgeProtocol",
                         "usr": "c:@M@triPOSMobileSDK@objc(pl)PaymentCardReaderBridgeProtocol"
                       }
                     ],
@@ -1377,6 +1377,10 @@
                 "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC14statusDelegateAA0defG8Protocol_pSgvM",
                 "moduleName": "triPOSMobileSDK",
                 "implicit": true,
+                "intro_iOS": "16.0",
+                "declAttributes": [
+                  "Available"
+                ],
                 "accessorKind": "_modify"
               }
             ]
@@ -1739,6 +1743,10 @@
                     "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC2idSSSgvM",
                     "moduleName": "triPOSMobileSDK",
                     "implicit": true,
+                    "intro_iOS": "16.0",
+                    "declAttributes": [
+                      "Available"
+                    ],
                     "accessorKind": "_modify"
                   }
                 ]
@@ -1856,6 +1864,10 @@
                     "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC07generaleH0SSSgvM",
                     "moduleName": "triPOSMobileSDK",
                     "implicit": true,
+                    "intro_iOS": "16.0",
+                    "declAttributes": [
+                      "Available"
+                    ],
                     "accessorKind": "_modify"
                   }
                 ]
@@ -1973,6 +1985,10 @@
                     "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC0E4DataC07paymenteH0SSSgvM",
                     "moduleName": "triPOSMobileSDK",
                     "implicit": true,
+                    "intro_iOS": "16.0",
+                    "declAttributes": [
+                      "Available"
+                    ],
                     "accessorKind": "_modify"
                   }
                 ]
@@ -2328,14 +2344,14 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ec2-user\/Documents\/_work\/32\/s\/triPOSMobileSDK\/PoiDevice\/PoiDevice\/AppleTapToPay\/PaymentCardReaderToken.swift",
+      "filePath": "\/Users\/ec2-user\/Documents\/_work\/44\/s\/triPOSMobileSDK\/PoiDevice\/PoiDevice\/AppleTapToPay\/PaymentCardReaderToken.swift",
       "kind": "StringLiteral",
       "offset": 120,
       "length": 22,
       "value": "\"triPOSMobileSDK.PaymentCardReaderToken\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Documents\/_work\/32\/s\/triPOSMobileSDK\/PoiDevice\/PoiDevice\/AppleTapToPay\/PaymentCardReaderBridge.swift",
+      "filePath": "\/Users\/ec2-user\/Documents\/_work\/44\/s\/triPOSMobileSDK\/PoiDevice\/PoiDevice\/AppleTapToPay\/PaymentCardReaderBridge.swift",
       "kind": "StringLiteral",
       "offset": 5447,
       "length": 8,
