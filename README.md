@@ -19,7 +19,7 @@ Additionally, a US-based IP address may be required to connect to the Autobooks 
 
 ## 1. Install the Autobooks SDK
 
-Currently both CocoaPods and manual installs are supported.  Swift Package Manager (SPM) support is coming soon.
+Currently both CocoaPods and manual installs are supported.
 
 ### CocoaPods
 
@@ -32,10 +32,22 @@ pod 'Autobooks'
 ### Manual install
 
 1. Download the Autobooks SDK repository.
-2. Drag the xcframeworks contained within the `Frameworks` directory into your project, making sure _Copy items if needed_ is checked when Xcode prompts.
-3. Drag the xcframeworks that now appear in the Project Navigator into your target's _Frameworks, Libraries, and Embedded Content_ section if necessary.
-4. Set the _Embed_ setting to _Embed & Sign_ for each library.
+2. Open the `Frameworks` folder.
+3. Drag *either* `Autobooks.xcframework` *or* `Autobooks-FiservOnly.xcframework` into your project (see _Alternate framework flavors_ for more information), making sure _Copy items if needed_ is checked when Xcode prompts.
+4. Drag the xcframeworks that now appear in the Project Navigator into your target's _Frameworks, Libraries, and Embedded Content_ section if necessary.
+5. Set the _Embed_ setting to _Embed & Sign_ for each library.
 
+### Alternate framework flavors
+
+As of 1.7.2, a smaller alternate framework without Worldpay support is provided via `Autobooks-FiservOnly.xcframework`; if you don't know if you want this, you probably don't.  This is a drop-in replacement for the combination framework, but is only supported via the manual install method.  Importantly, the slices provided by each framework are a little different:
+
+#### `Autobooks.xcframework`
+* `ios-arm64`
+* `ios-x86_64-simulator`
+
+#### `Autobooks-FiservOnly.xcframework`
+* `ios-arm64`
+* `ios-arm64_x86_64-simulator`
 
 ## 2. Set up the entitlement for Tap to Pay on iPhone
 
@@ -202,10 +214,12 @@ Check the value of the `AB.supportsTapToPay` property to determine if the device
 ```swift
     AB.startTapToPay(subscriptionKey: <#"your-subscription-key"#>,
                      configuration: <#configuration#>,
-                     device: <#.real#>) {
+                     device: <#.real#>) { reason in
         return .token(<#"your-sso-token"#>)
     }
 ```
+
+The trailing closure (the `loginProvider`) will be called regularly to obtain the most recent token to access the Autobooks API.  As of 1.8, this closure has a `reason` parameter that will specify why the `loginProvider` is being called.
 
 ## Domain List
 
