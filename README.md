@@ -61,22 +61,28 @@ First, import the Autobooks framework:
 import Autobooks
 ```
 
+### Tap to Pay Quick Start
+
+If you're here for Tap to Pay, you want the following code:
+
 ### Configuration
 
 All of the `AB.start*` methods allow passing an `AB.Configuration` value to control various behaviors within the SDK. This includes a custom `AB.Style` as well as various network settings useful for testing or debugging the Autobooks integration.
 
 ```swift
-    let configuration = AB.Configuration(environment: <#T##BackendEnvironment#>,
-                                        style: <#T##Style#>,
-                                        responseProvider: <#T##ResponseProvider#>,
-                                        shouldFallBackToPaymentForm: <#T##Bool#>,
-                                        shouldConfirmClose: <#T##Bool#>,
-                                        shouldCloseOnAPIError: <#T##Bool#>,
-                                        closeButtonStyle: <#T##CloseButtonStyle#>,
-                                        webViewsShowControls: <#T##Bool#>)
+    let configuration = AB.Configuration(mode: <#T##AB.Mode#>,
+                                         style: <#T##AB.Style#>,
+                                         responseProvider: <#T##AB.ResponseProvider#>,
+                                         shouldFallBackToPaymentForm: <#T##Bool#>,
+                                         shouldConfirmClose: <#T##Bool#>,
+                                         shouldCloseOnAPIError: <#T##Bool#>,
+                                         closeButtonStyle: <#T##AB.Configuration.CloseButtonStyle#>,
+                                         webViewsShowControls: <#T##Bool#>,
+                                         textReceiptRegion: <#T##AB.Configuration.TextReceiptRegion#>,
+                                         textReceiptPrefixRequirement: <#T##AB.Configuration.TextReceiptPrefixRequirement#>)
 ```
 
-* `environment` specifies where API calls are sent. Options are `.dev`, `.staging`, and `.production`.  The default is `.production`.
+* `mode` specifies an SDK mode which bundles all options about environment, including API endpoints.  Options are `.prerelease(.development)`, `.prerelease(.staging)`, and `.release`.  The default is `.release`.  Simulator and ad-hoc builds may only run in `.prerelease`.  TestFlight and App Store builds may only run in `.release`.  You may use `.detect` to return `.prerelease(.staging)` for ad-hoc and simulator builds, and `.release` for all others.
 * `style` specifies a structure for display customization.  See the section _Styling_ below for more information.
 * `responseProvider` specifies where responses come from.
 
@@ -92,6 +98,10 @@ All of the `AB.start*` methods allow passing an `AB.Configuration` value to cont
 * `shouldCloseOnAPIError` dismisses the SDK interface when encountering 401 and 403 HTTP errors; in other words, it treats these as unrecoverable.  400-level errors should not happen in normal usage as the token is continually refreshed via the `loginProvider`, but this option can be useful for debugging, or to avoid a "Something Went Wrong" screen and provide your own messaging on failure.  The `AB.DismissalReason` returned will be either `.notAuthorized` or `.forbidden`.
 * `closeButtonStyle` controls the text displayed to the user to dismiss the SDK. If `.close`, the text is "Close".  If `.signOut`, the text is "Sign Out".  The default is `.close`.
 * `webViewsShowControls` controls whether the web features, outlined below, have a back/forward/share/refresh toolbar below web content, similar to `SFSafariViewController`.
+* `textReceiptRegion` controls the region code used for the Text a Receipt feature.  Options are `.current` (the user's current locale) and `.region(String)` to specify.  The default is `.region("US")`.
+* `textReceiptPrefixRequirement` controls if a country code is required when entering phone numbers.  Options are `.omitted` and `.required`.  The default is `.omitted`.
+
+All parameters have sane defaults.
 
 ### Styling
 
@@ -220,6 +230,10 @@ Check the value of the `AB.supportsTapToPay` property to determine if the device
 ```
 
 The trailing closure (the `loginProvider`) will be called regularly to obtain the most recent token to access the Autobooks API.  As of 1.8, this closure has a `reason` parameter that will specify why the `loginProvider` is being called.
+
+### Double invocation protection
+
+Only one instance of the Autobooks SDK may be active at a time.  This is an error in `.prerelease`, and *will* become an error in `.release` in a future version.
 
 ## Domain List
 

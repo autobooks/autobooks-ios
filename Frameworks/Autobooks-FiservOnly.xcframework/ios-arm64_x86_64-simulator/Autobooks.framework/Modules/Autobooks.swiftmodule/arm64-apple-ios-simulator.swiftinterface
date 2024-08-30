@@ -49,12 +49,28 @@ public enum AB {
   }
   public struct Configuration {
     public static let `default`: Autobooks.AB.Configuration
-    public let environment: Autobooks.AB.BackendEnvironment
+    public let mode: Autobooks.AB.Mode
     public let style: Autobooks.AB.Style
     public let responseProvider: Autobooks.AB.ResponseProvider
     public let shouldFallBackToPaymentForm: Swift.Bool
     public let shouldConfirmClose: Swift.Bool
     public let shouldCloseOnAPIError: Swift.Bool
+    public enum TextReceiptRegion : Swift.Equatable {
+      case current
+      case region(Swift.String)
+      public static func == (a: Autobooks.AB.Configuration.TextReceiptRegion, b: Autobooks.AB.Configuration.TextReceiptRegion) -> Swift.Bool
+    }
+    public let textReceiptRegion: Autobooks.AB.Configuration.TextReceiptRegion
+    public enum TextReceiptPrefixRequirement : Swift.Equatable {
+      case required
+      case omitted
+      public func hash(into hasher: inout Swift.Hasher)
+      public static func == (a: Autobooks.AB.Configuration.TextReceiptPrefixRequirement, b: Autobooks.AB.Configuration.TextReceiptPrefixRequirement) -> Swift.Bool
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    public let textReceiptPrefixRequirement: Autobooks.AB.Configuration.TextReceiptPrefixRequirement
     public enum CloseButtonStyle {
       case close
       case signOut
@@ -66,14 +82,27 @@ public enum AB {
     }
     public let closeButtonStyle: Autobooks.AB.Configuration.CloseButtonStyle
     public let webViewsShowControls: Swift.Bool
-    public init(environment: Autobooks.AB.BackendEnvironment, style: Autobooks.AB.Style, responseProvider: Autobooks.AB.ResponseProvider, shouldFallBackToPaymentForm: Swift.Bool, shouldConfirmClose: Swift.Bool, shouldCloseOnAPIError: Swift.Bool, closeButtonStyle: Autobooks.AB.Configuration.CloseButtonStyle, webViewsShowControls: Swift.Bool)
+    public init(mode: Autobooks.AB.Mode = AB.Configuration.default.mode, style: Autobooks.AB.Style = AB.Configuration.default.style, responseProvider: Autobooks.AB.ResponseProvider = AB.Configuration.default.responseProvider, shouldFallBackToPaymentForm: Swift.Bool = AB.Configuration.default.shouldFallBackToPaymentForm, shouldConfirmClose: Swift.Bool = AB.Configuration.default.shouldConfirmClose, shouldCloseOnAPIError: Swift.Bool = AB.Configuration.default.shouldCloseOnAPIError, closeButtonStyle: Autobooks.AB.Configuration.CloseButtonStyle = AB.Configuration.default.closeButtonStyle, webViewsShowControls: Swift.Bool = AB.Configuration.default.webViewsShowControls, textReceiptRegion: Autobooks.AB.Configuration.TextReceiptRegion = AB.Configuration.default.textReceiptRegion, textReceiptPrefixRequirement: Autobooks.AB.Configuration.TextReceiptPrefixRequirement = AB.Configuration.default.textReceiptPrefixRequirement)
   }
-  public enum BackendEnvironment {
-    case dev
-    case staging
-    case production
-    public static func == (a: Autobooks.AB.BackendEnvironment, b: Autobooks.AB.BackendEnvironment) -> Swift.Bool
+  public enum Mode : Swift.Equatable, Swift.Hashable, Swift.CaseIterable {
+    public static let allCases: [Autobooks.AB.Mode]
+    public enum PrereleaseEnvironment : Swift.Equatable {
+      case development
+      case staging
+      public func hash(into hasher: inout Swift.Hasher)
+      public static func == (a: Autobooks.AB.Mode.PrereleaseEnvironment, b: Autobooks.AB.Mode.PrereleaseEnvironment) -> Swift.Bool
+      public var hashValue: Swift.Int {
+        get
+      }
+    }
+    case prerelease(Autobooks.AB.Mode.PrereleaseEnvironment)
+    case release
+    public static var detect: Autobooks.AB.Mode {
+      get
+    }
+    public static func == (a: Autobooks.AB.Mode, b: Autobooks.AB.Mode) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
+    public typealias AllCases = [Autobooks.AB.Mode]
     public var hashValue: Swift.Int {
       get
     }
@@ -84,15 +113,6 @@ public enum AB {
     case live
     case stubs(Autobooks.Stubs)
     public static func == (a: Autobooks.AB.ResponseProvider, b: Autobooks.AB.ResponseProvider) -> Swift.Bool
-  }
-  public enum Device : Swift.Equatable {
-    case simulated
-    case real
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: Autobooks.AB.Device, b: Autobooks.AB.Device) -> Swift.Bool
-    public var hashValue: Swift.Int {
-      get
-    }
   }
   public static var build: Swift.String {
     get
@@ -106,16 +126,24 @@ public enum AB {
   public static var supportsTapToPay: Swift.Bool {
     get
   }
-  public typealias DismissalBlock = (Autobooks.AB.DismissalReason) -> Swift.Void
+  #if compiler(>=5.3) && $Sendable
+  public typealias DismissalBlock = @_Concurrency.MainActor @Sendable (Autobooks.AB.DismissalReason) -> Swift.Void
+  #endif
   #if compiler(>=5.3) && $AsyncAwait && $Sendable
   public typealias LoginProviderBlock = @_Concurrency.MainActor @Sendable (Autobooks.AB.LoginReason) async throws -> Autobooks.AB.LoginCredential
   #endif
   #if compiler(>=5.3) && $AsyncAwait && $Sendable
-  public static func startTapToPay(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration = .default, device: Autobooks.AB.Device, loginProvider: @escaping Autobooks.AB.LoginProviderBlock, completion: Autobooks.AB.DismissalBlock? = nil)
+  public static func startTapToPay(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration = .default, loginProvider: @escaping Autobooks.AB.LoginProviderBlock, completion: Autobooks.AB.DismissalBlock? = nil)
   #endif
+  #if compiler(>=5.3) && $Sendable
   public static func startPaymentForm(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil)
+  #endif
+  #if compiler(>=5.3) && $Sendable
   public static func startInvoicing(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil)
+  #endif
+  #if compiler(>=5.3) && $Sendable
   public static func startFullAutobooks(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil)
+  #endif
   @_Concurrency.MainActor public static func stop()
   public enum DismissalReason : Swift.Equatable {
     case userInitiated
@@ -157,20 +185,22 @@ public enum AB {
     public static let toggledSalesTax: Foundation.Notification.Name
     public static let toggledSalesTaxForThisTransaction: Foundation.Notification.Name
     public static let readCancelled: Foundation.Notification.Name
+    public static let cancellationSupportDismissal: Foundation.Notification.Name
+    public static let cancellationSupportTryAgain: Foundation.Notification.Name
+    public static let cancellationSupportOpenVirtualTerminal: Foundation.Notification.Name
     public static let somethingWentWrong: Foundation.Notification.Name
     public static let internalError: Foundation.Notification.Name
     public static let transactionDeclined: Foundation.Notification.Name
   }
 }
-extension Autobooks.AB.BackendEnvironment : Swift.CustomStringConvertible {
+extension Autobooks.AB.Mode : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
 }
+extension Autobooks.AB.Configuration.TextReceiptPrefixRequirement : Swift.Hashable {}
 extension Autobooks.AB.Configuration.CloseButtonStyle : Swift.Equatable {}
 extension Autobooks.AB.Configuration.CloseButtonStyle : Swift.Hashable {}
-extension Autobooks.AB.BackendEnvironment : Swift.Equatable {}
-extension Autobooks.AB.BackendEnvironment : Swift.Hashable {}
-extension Autobooks.AB.Device : Swift.Hashable {}
+extension Autobooks.AB.Mode.PrereleaseEnvironment : Swift.Hashable {}
 extension Autobooks.AB.DismissalReason : Swift.Hashable {}
 extension Autobooks.AB.LoginReason : Swift.Hashable {}
