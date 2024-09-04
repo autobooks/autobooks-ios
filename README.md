@@ -13,9 +13,11 @@ Additionally, a US-based IP address may be required to connect to the Autobooks 
 
 ### Tap to Pay requirements
 
-* iOS 16+
+* iOS 16.7+
 * Tap to Pay on iPhone entitlement
 * A _physical_ iPhone XS or later
+
+On July 8th 2024, Apple changed the iOS version requirement for Tap to Pay from iOS 16 to 16.7.  This affects all current and future installations of the Autobooks SDK.  Notably, versions below 1.9.0 will return `true` for `AB.supportsTapToPay` but `AB.startTapToPay` will always fail with `osVersionNotSupported`.
 
 ## 1. Install the Autobooks SDK
 
