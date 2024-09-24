@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		7jtz1Ko3cVbPnbKM8wxu5I+YmPw=
+		SHQZYE3bcP/qvzaX+xIBwqjcbiU=
 		</data>
 		<key>Headers/Autobooks-Swift.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		/lC13DmCt5FgYpkZrUzW+HsSDYw=
+		m5FTy/LME/yx5yJ8J795iXCpE0I=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vK27fvodYXwKSoGE9oW/GZDWkLY=
+		OFpf3/EZeSWfRLg4KIpLJAubu7A=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		taPyK9PIFrI31dMe3Qvh+P96t2s=
+		MnZxOQhSkrDyXgj3/sgEqVXkiHc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -143,7 +143,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f+JHpx+vAaGTzyXSQSJ3xuW0hmlSFPdcnb1+7bEQrmo=
+			Qr6+1rz6QIm+Nc4BhPtg4UkXhcjYKy2a3+Mqi2UUodk=
 			</data>
 		</dict>
 		<key>Headers/Autobooks-Swift.h</key>
@@ -185,7 +185,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5qec3V5DYaa/NmHbEnsTzg7+Up2UvQPqNiz39hDKa2Y=
+			yC5xsOdaYzB3s+V1CUNdDvv6mMdfWDhTix6jWFjzYlo=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -220,7 +220,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Z0QnO+Pe/JzG28EL+TA0MCejSLp29kLxct5v8fUeQ4=
+			kgey6RYwvJFKMbJp03VwPQw/okPr3GJSYxIFezhCnKQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
