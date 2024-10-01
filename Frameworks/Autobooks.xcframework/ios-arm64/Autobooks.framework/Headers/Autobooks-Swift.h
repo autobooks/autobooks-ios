@@ -280,6 +280,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 #endif
 
 #endif
@@ -305,6 +306,26 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 
 
+
+
+
+
+@class NSCoder;
+
+SWIFT_CLASS("_TtC9Autobooks20PhoneNumberFormatter")
+@interface PhoneNumberFormatter : NSFormatter
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class NSString;
+
+@interface PhoneNumberFormatter (SWIFT_EXTENSION(Autobooks))
+- (NSString * _Nullable)stringForObjectValue:(id _Nullable)obj SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)getObjectValue:(id _Nullable * _Nullable)obj forString:(NSString * _Nonnull)string errorDescription:(NSString * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isPartialStringValid:(NSString * _Nonnull * _Nonnull)partialStringPtr proposedSelectedRange:(NSRangePointer _Nullable)proposedSelRangePtr originalString:(NSString * _Nonnull)origString originalSelectedRange:(NSRange)origSelRange errorDescription:(NSString * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+@end
 
 
 

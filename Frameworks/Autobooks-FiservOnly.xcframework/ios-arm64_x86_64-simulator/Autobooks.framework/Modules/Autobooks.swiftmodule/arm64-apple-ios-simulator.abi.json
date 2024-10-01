@@ -16,6 +16,583 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PhoneNumberFormatter",
+        "printedName": "PhoneNumberFormatter",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Autobooks.PhoneNumberFormatter?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PhoneNumberFormatter",
+                    "printedName": "Autobooks.PhoneNumberFormatter",
+                    "usr": "c:@M@Autobooks@objc(cs)PhoneNumberFormatter"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Autobooks@objc(cs)PhoneNumberFormatter(im)initWithCoder:",
+            "mangledName": "$s9Autobooks20PhoneNumberFormatterC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "Autobooks",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PhoneNumberFormatter",
+                "printedName": "Autobooks.PhoneNumberFormatter",
+                "usr": "c:@M@Autobooks@objc(cs)PhoneNumberFormatter"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Autobooks@objc(cs)PhoneNumberFormatter(im)init",
+            "mangledName": "$s9Autobooks20PhoneNumberFormatterCACycfc",
+            "moduleName": "Autobooks",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "string",
+            "printedName": "string(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Autobooks@objc(cs)PhoneNumberFormatter(im)stringForObjectValue:",
+            "mangledName": "$s9Autobooks20PhoneNumberFormatterC6string3forSSSgypSg_tF",
+            "moduleName": "Autobooks",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "stringForObjectValue:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Override"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getObjectValue",
+            "printedName": "getObjectValue(_:for:errorDescription:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.AutoreleasingUnsafeMutablePointer<AnyObject?>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AutoreleasingUnsafeMutablePointer",
+                    "printedName": "Swift.AutoreleasingUnsafeMutablePointer<AnyObject?>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "AnyObject?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "AnyObject"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SA"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString?>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AutoreleasingUnsafeMutablePointer",
+                    "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString?>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSString?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSString",
+                            "printedName": "Foundation.NSString",
+                            "usr": "c:objc(cs)NSString"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SA"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Autobooks@objc(cs)PhoneNumberFormatter(im)getObjectValue:forString:errorDescription:",
+            "mangledName": "$s9Autobooks20PhoneNumberFormatterC14getObjectValue_3for16errorDescriptionSbSAyyXlSgGSg_SSSAySo8NSStringCSgGSgtF",
+            "moduleName": "Autobooks",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "getObjectValue:forString:errorDescription:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Override"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isPartialStringValid",
+            "printedName": "isPartialStringValid(_:proposedSelectedRange:originalString:originalSelectedRange:errorDescription:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AutoreleasingUnsafeMutablePointer",
+                "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSString",
+                    "printedName": "Foundation.NSString",
+                    "usr": "c:objc(cs)NSString"
+                  }
+                ],
+                "usr": "s:SA"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.UnsafeMutablePointer<Foundation._NSRange>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnsafeMutablePointer",
+                    "printedName": "Swift.UnsafeMutablePointer<Foundation._NSRange>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "_NSRange",
+                        "printedName": "Foundation._NSRange",
+                        "usr": "c:@S@_NSRange"
+                      }
+                    ],
+                    "usr": "s:Sp"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "_NSRange",
+                "printedName": "Foundation._NSRange",
+                "usr": "c:@S@_NSRange"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString?>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AutoreleasingUnsafeMutablePointer",
+                    "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString?>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSString?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSString",
+                            "printedName": "Foundation.NSString",
+                            "usr": "c:objc(cs)NSString"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SA"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@Autobooks@objc(cs)PhoneNumberFormatter(im)isPartialStringValid:proposedSelectedRange:originalString:originalSelectedRange:errorDescription:",
+            "mangledName": "$s9Autobooks20PhoneNumberFormatterC20isPartialStringValid_21proposedSelectedRange08originalG00ljK016errorDescriptionSbSAySo8NSStringCG_SpySo8_NSRangeVGSgSSAMSAyAJSgGSgtF",
+            "moduleName": "Autobooks",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "isPartialStringValid:proposedSelectedRange:originalString:originalSelectedRange:errorDescription:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Override"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Autobooks@objc(cs)PhoneNumberFormatter",
+        "mangledName": "$s9Autobooks20PhoneNumberFormatterC",
+        "moduleName": "Autobooks",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSFormatter",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "Foundation.Formatter",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Contacts",
+        "printedName": "Contacts",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "Autobooks"
       },
       {
@@ -313,16 +890,6 @@
       },
       {
         "kind": "Import",
-        "name": "PhoneNumberKit",
-        "printedName": "PhoneNumberKit",
-        "declKind": "Import",
-        "moduleName": "Autobooks",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "CryptoKit",
         "printedName": "CryptoKit",
         "declKind": "Import",
@@ -448,16 +1015,6 @@
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "PhoneNumberKit",
-        "printedName": "PhoneNumberKit",
-        "declKind": "Import",
-        "moduleName": "Autobooks",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
       },
       {
         "kind": "Import",
@@ -5579,16 +6136,6 @@
       },
       {
         "kind": "Import",
-        "name": "PhoneNumberKit",
-        "printedName": "PhoneNumberKit",
-        "declKind": "Import",
-        "moduleName": "Autobooks",
-        "declAttributes": [
-          "ImplementationOnly"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -5653,7 +6200,7 @@
         "declKind": "Import",
         "moduleName": "Autobooks",
         "declAttributes": [
-          "ImplementationOnly"
+          "AccessControl"
         ]
       },
       {
@@ -5785,7 +6332,7 @@
         "declKind": "Import",
         "moduleName": "Autobooks",
         "declAttributes": [
-          "ImplementationOnly"
+          "AccessControl"
         ]
       },
       {
@@ -5826,7 +6373,7 @@
         "declKind": "Import",
         "moduleName": "Autobooks",
         "declAttributes": [
-          "ImplementationOnly"
+          "AccessControl"
         ]
       },
       {
@@ -5836,7 +6383,7 @@
         "declKind": "Import",
         "moduleName": "Autobooks",
         "declAttributes": [
-          "ImplementationOnly"
+          "AccessControl"
         ]
       },
       {
@@ -5922,7 +6469,7 @@
         "declKind": "Import",
         "moduleName": "Autobooks",
         "declAttributes": [
-          "ImplementationOnly"
+          "AccessControl"
         ]
       },
       {
@@ -5932,7 +6479,7 @@
         "declKind": "Import",
         "moduleName": "Autobooks",
         "declAttributes": [
-          "ImplementationOnly"
+          "AccessControl"
         ]
       },
       {
@@ -5942,7 +6489,7 @@
         "declKind": "Import",
         "moduleName": "Autobooks",
         "declAttributes": [
-          "ImplementationOnly"
+          "AccessControl"
         ]
       },
       {
@@ -6053,6 +6600,678 @@
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/ParseManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5387,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PhoneNumberFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 485,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PhoneNumberFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 811,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PhoneNumberFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1190,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PhoneNumberParser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4617,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/MetadataParsing.swift",
+      "kind": "StringLiteral",
+      "offset": 303,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/MetadataParsing.swift",
+      "kind": "StringLiteral",
+      "offset": 876,
+      "length": 14,
+      "value": "\"numberFormat\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/MetadataParsing.swift",
+      "kind": "StringLiteral",
+      "offset": 4192,
+      "length": 15,
+      "value": "\"leadingDigits\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/MetadataParsing.swift",
+      "kind": "StringLiteral",
+      "offset": 4349,
+      "length": 27,
+      "value": "\"carrierCodeFormattingRule\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 462,
+      "length": 55,
+      "value": "\"PhoneNumberKit.CountryCodePicker.SearchBarPlaceholder\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 538,
+      "length": 22,
+      "value": "\"Search Country Codes\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 583,
+      "length": 43,
+      "value": "\"Placeholder for country code search field\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 836,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 864,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 889,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1724,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "Array",
+      "offset": 2011,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "Array",
+      "offset": 2450,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 11101,
+      "length": 6,
+      "value": "\"Cell\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/NSRegularExpression+Swift.swift",
+      "kind": "Array",
+      "offset": 1222,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/NSRegularExpression+Swift.swift",
+      "kind": "Array",
+      "offset": 2213,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/NSRegularExpression+Swift.swift",
+      "kind": "Array",
+      "offset": 2568,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/NSRegularExpression+Swift.swift",
+      "kind": "Array",
+      "offset": 2907,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/NSRegularExpression+Swift.swift",
+      "kind": "Array",
+      "offset": 3266,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/NSRegularExpression+Swift.swift",
+      "kind": "Array",
+      "offset": 3685,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PhoneNumber+Codable.swift",
+      "kind": "StringLiteral",
+      "offset": 5522,
+      "length": 53,
+      "value": "\"com.roymarmelstein.PhoneNumberKit.decoding-strategy\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PhoneNumber+Codable.swift",
+      "kind": "StringLiteral",
+      "offset": 5638,
+      "length": 53,
+      "value": "\"com.roymarmelstein.PhoneNumberKit.encoding-strategy\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PhoneNumber+Codable.swift",
+      "kind": "StringLiteral",
+      "offset": 5742,
+      "length": 44,
+      "value": "\"com.roymarmelstein.PhoneNumberKit.instance\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/RegexManager.swift",
+      "kind": "StringLiteral",
+      "offset": 583,
+      "length": 30,
+      "value": "\"com.phonenumberkit.regexpool\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/RegexManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3652,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/RegexManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5219,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 644,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 755,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1405,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1478,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2550,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2577,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2610,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1890,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1769,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2177,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2208,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2440,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2896,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2906,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "FloatLiteral",
+      "offset": 2915,
+      "length": 9,
+      "value": "0.0980392"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "FloatLiteral",
+      "offset": 2933,
+      "length": 4,
+      "value": "0.22"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3249,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3259,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "FloatLiteral",
+      "offset": 3268,
+      "length": 9,
+      "value": "0.0980392"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "FloatLiteral",
+      "offset": 3286,
+      "length": 4,
+      "value": "0.22"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3439,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3986,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4320,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PhoneNumberKit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1233,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PhoneNumberKit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1921,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PhoneNumberKit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1967,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PhoneNumberKit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2623,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PhoneNumberKit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3189,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PhoneNumberKit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8713,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PhoneNumberKit.swift",
+      "kind": "Array",
+      "offset": 15691,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PhoneNumberKit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15825,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/PhoneNumberKit.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15943,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3214,
+      "length": 4,
+      "value": "\"US\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3254,
+      "length": 8,
+      "value": "\" ext. \""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3296,
+      "length": 17,
+      "value": "\"999999999999999\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3347,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3387,
+      "length": 3,
+      "value": "250"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3429,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3464,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3501,
+      "length": 10,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3539,
+      "length": 6,
+      "value": "\"+＋\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3583,
+      "length": 4,
+      "value": "\",;\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3619,
+      "length": 4,
+      "value": "\"*#\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3659,
+      "length": 22,
+      "value": "\"0-9０-９٠-٩۰-۹\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3716,
+      "length": 10,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3774,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3866,
+      "length": 10,
+      "value": "\"(\\$\\d)\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3904,
+      "length": 7,
+      "value": "\"\\$FG\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3939,
+      "length": 7,
+      "value": "\"\\$NP\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "Dictionary",
+      "offset": 3990,
+      "length": 360,
+      "value": "[(\"0\", \"0\"), (\"1\", \"1\"), (\"2\", \"2\"), (\"3\", \"3\"), (\"4\", \"4\"), (\"5\", \"5\"), (\"6\", \"6\"), (\"7\", \"7\"), (\"8\", \"8\"), (\"9\", \"9\"), (\"٠\", \"0\"), (\"١\", \"1\"), (\"٢\", \"2\"), (\"٣\", \"3\"), (\"٤\", \"4\"), (\"٥\", \"5\"), (\"٦\", \"6\"), (\"٧\", \"7\"), (\"٨\", \"8\"), (\"٩\", \"9\"), (\"۰\", \"0\"), (\"۱\", \"1\"), (\"۲\", \"2\"), (\"۳\", \"3\"), (\"۴\", \"4\"), (\"۵\", \"5\"), (\"۶\", \"6\"), (\"۷\", \"7\"), (\"۸\", \"8\"), (\"۹\", \"9\"), (\"*\", \"*\"), (\"#\", \"#\"), (\",\", \",\"), (\";\", \";\")]"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4390,
+      "length": 26,
+      "value": "\"([0-9０-９٠-٩۰-۹])\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4447,
+      "length": 221,
+      "value": "\"(?:;ext=([0-9０-９٠-٩۰-۹]{1,7})|[  \\t,]*(?:e?xt(?:ensi(?:ó?|ó))?n?|ｅ?ｘｔｎ?|[,xｘX#＃~～;]|int|anexo|ｉｎｔ)[:\\.．]?[  \\t,-]*([0-9０-９٠-٩۰-۹]{1,7})#?|[- ]+([0-9０-９٠-٩۰-۹]{1,5})#)$\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4698,
+      "length": 13,
+      "value": "\"^(?:\\+|%@)\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4744,
+      "length": 10,
+      "value": "\"^(?:%@)$\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4795,
+      "length": 20,
+      "value": "\"\\[([^\\[\\]])*\\]\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4857,
+      "length": 19,
+      "value": "\"\\d(?=[^,}][^,}])\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4924,
+      "length": 9,
+      "value": "\"^(?:%@)\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4975,
+      "length": 6,
+      "value": "\"[- ]\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5025,
+      "length": 151,
+      "value": "\"^[-x‐-―−ー－-／ ­​⁠　()（）［］.\\[\\]\/~⁓∼～]*(\\$\\d[-x‐-―−ー－-／ ­​⁠　()（）［］.\\[\\]\/~⁓∼～]*)+$\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5219,
+      "length": 10,
+      "value": "\"^[+＋]+\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5273,
+      "length": 14,
+      "value": "\"[\\\\\\\/] *x\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5325,
+      "length": 34,
+      "value": "\"[^0-9０-９٠-٩۰-۹A-Za-z#]+$\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5396,
+      "length": 28,
+      "value": "\"[+＋0-9０-９٠-٩۰-۹]\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5467,
+      "length": 721,
+      "value": "\"^[0-9０-９٠-٩۰-۹]{2}$|^[+＋]*(?:[-x‐-―−ー－-／  ­​⁠　()（）［］.\\[\\]\/~⁓∼～*]*[0-9０-９٠-٩۰-۹]){3,}[-x‐-―−ー－-／  ­​⁠　()（）［］.\\[\\]\/~⁓∼～*A-Za-z0-9０-９٠-٩۰-۹]*(?:(?:;ext=([0-9０-９٠-٩۰-۹]{1,7})|[  \\t,]*(?:e?xt(?:ensi(?:ó?|ó))?n?|ｅ?ｘｔｎ?|[,xｘX#＃~～;]|int|anexo|ｉｎｔ)[:\\.．]?[  \\t,-]*([0-9０-９٠-٩۰-۹]{1,7})#?|[- ]+([0-9０-９٠-٩۰-۹]{1,5})#)?$)?[,;]*$\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6226,
+      "length": 15,
+      "value": "\"^[a-zA-Z]{2}$\""
+    },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
@@ -7036,275 +8255,282 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 489,
+      "offset": 445,
       "length": 9,
       "value": "\"Success\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 522,
+      "offset": 478,
       "length": 8,
       "value": "\"Failed\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 2273,
+      "offset": 2229,
       "length": 12,
       "value": "\"Tap to Pay\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 2307,
+      "offset": 2263,
       "length": 11,
       "value": "\"Invoicing\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 2342,
+      "offset": 2298,
       "length": 14,
       "value": "\"Payment Link\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 2382,
+      "offset": 2338,
       "length": 16,
       "value": "\"Full Autobooks\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3084,
+      "offset": 3040,
       "length": 20,
       "value": "\"invoicingModuleUrl\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3136,
+      "offset": 3092,
       "length": 22,
       "value": "\"paymentFormModuleUrl\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3194,
+      "offset": 3150,
       "length": 20,
       "value": "\"virtualTerminalUrl\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3248,
+      "offset": 3204,
       "length": 18,
       "value": "\"fullAutoBooksUrl\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 4860,
+      "offset": 4816,
       "length": 12,
       "value": "\"webViewUrl\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 6265,
+      "offset": 6221,
       "length": 12,
       "value": "\"moduleUrls\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 7473,
+      "offset": 7429,
       "length": 14,
       "value": "\"LoginSuccess\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 7519,
+      "offset": 7475,
       "length": 17,
       "value": "\"NeedsEnrollment\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 9701,
+      "offset": 9657,
       "length": 12,
       "value": "\"webViewUrl\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 9909,
+      "offset": 9865,
       "length": 17,
       "value": "\"WorldPayExpress\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 9957,
+      "offset": 9913,
       "length": 8,
       "value": "\"FiServ\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 14435,
+      "offset": 14391,
       "length": 16,
       "value": "\"HasMissingInfo\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 14494,
+      "offset": 14450,
       "length": 28,
       "value": "\"PaymentEnablementRequested\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 14573,
+      "offset": 14529,
       "length": 36,
       "value": "\"MerchantPendingApprovalForTapToPay\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 14636,
+      "offset": 14592,
       "length": 12,
       "value": "\"NotEnabled\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 14672,
+      "offset": 14628,
       "length": 9,
       "value": "\"Enabled\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 18143,
+      "offset": 18099,
       "length": 15,
       "value": "\"transactionId\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19370,
+      "offset": 19326,
       "length": 12,
       "value": "\"Cancelable\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19409,
+      "offset": 19365,
       "length": 12,
       "value": "\"Refundable\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19443,
+      "offset": 19399,
       "length": 7,
       "value": "\"Final\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19475,
+      "offset": 19431,
       "length": 10,
       "value": "\"Canceled\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19510,
+      "offset": 19466,
       "length": 10,
       "value": "\"Refunded\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19545,
+      "offset": 19501,
       "length": 10,
       "value": "\"Declined\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19579,
+      "offset": 19535,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19673,
+      "offset": 19629,
       "length": 8,
       "value": "\"Refund\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19702,
+      "offset": 19658,
       "length": 6,
       "value": "\"Sale\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19731,
+      "offset": 19687,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19768,
+      "offset": 19724,
       "length": 14,
       "value": "\"FallbackSale\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 23917,
+      "offset": 23873,
       "length": 7,
       "value": "\"Email\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 23944,
+      "offset": 23900,
       "length": 5,
       "value": "\"SMS\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 26689,
+      "offset": 26645,
       "length": 6,
       "value": "\"UUID\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 26717,
+      "offset": 26673,
       "length": 14,
       "value": "\"EmailAddress\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 26759,
+      "offset": 26715,
       "length": 13,
       "value": "\"PhoneNumber\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 27510,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
@@ -7323,49 +8549,49 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27642,
+      "offset": 27655,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27699,
+      "offset": 27691,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27735,
+      "offset": 27728,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27772,
+      "offset": 27763,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27807,
+      "offset": 27799,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27843,
+      "offset": 27841,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27885,
+      "offset": 27887,
       "length": 2,
       "value": "\"\""
     },
@@ -7379,42 +8605,35 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27975,
+      "offset": 27985,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 28029,
+      "offset": 28021,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 28065,
+      "offset": 28051,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 28095,
+      "offset": 28089,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 28133,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
-      "kind": "StringLiteral",
-      "offset": 28158,
+      "offset": 28114,
       "length": 2,
       "value": "\"\""
     },
@@ -7470,196 +8689,196 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 4756,
+      "offset": 4744,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 4834,
+      "offset": 4822,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 4916,
+      "offset": 4904,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 5093,
+      "offset": 5081,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 6634,
+      "offset": 6622,
       "length": 4,
       "value": "\"US\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 25800,
+      "offset": 25788,
       "length": 31,
       "value": "\"co.autobooks.sdk.userActivity\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 25900,
+      "offset": 25888,
       "length": 38,
       "value": "\"co.autobooks.sdk.visitedTransactions\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 25999,
+      "offset": 25987,
       "length": 31,
       "value": "\"co.autobooks.sdk.tappedCharge\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26096,
+      "offset": 26084,
       "length": 36,
       "value": "\"co.autobooks.sdk.tappedManualEntry\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26198,
+      "offset": 26186,
       "length": 36,
       "value": "\"co.autobooks.sdk.tappedSendReceipt\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26302,
+      "offset": 26290,
       "length": 31,
       "value": "\"co.autobooks.sdk.tappedRefund\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26401,
+      "offset": 26389,
       "length": 31,
       "value": "\"co.autobooks.sdk.tappedCancel\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26498,
+      "offset": 26486,
       "length": 29,
       "value": "\"co.autobooks.sdk.tappedSkip\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26600,
+      "offset": 26588,
       "length": 43,
       "value": "\"co.autobooks.sdk.tappedSendAnotherReceipt\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26704,
+      "offset": 26692,
       "length": 38,
       "value": "\"co.autobooks.sdk.callUsActionClicked\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26803,
+      "offset": 26791,
       "length": 31,
       "value": "\"co.autobooks.sdk.viewedScreen\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26901,
+      "offset": 26889,
       "length": 37,
       "value": "\"co.autobooks.sdk.screenTimerWarning\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26995,
+      "offset": 26983,
       "length": 27,
       "value": "\"co.autobooks.sdk.addedTip\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 27081,
+      "offset": 27069,
       "length": 29,
       "value": "\"co.autobooks.sdk.toggledTip\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 27174,
+      "offset": 27162,
       "length": 34,
       "value": "\"co.autobooks.sdk.toggledSalesTax\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 27290,
+      "offset": 27278,
       "length": 46,
       "value": "\"co.autobooks.sdk.toggledSalesTax.transaction\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 27398,
+      "offset": 27386,
       "length": 32,
       "value": "\"co.autobooks.sdk.readCancelled\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 27507,
+      "offset": 27495,
       "length": 55,
       "value": "\"co.autobooks.sdk.cancellationSupport.supportDismissal\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 27638,
+      "offset": 27626,
       "length": 47,
       "value": "\"co.autobooks.sdk.cancellationSupport.tryAgain\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 27772,
+      "offset": 27760,
       "length": 58,
       "value": "\"co.autobooks.sdk.cancellationSupport.openVirtualTerminal\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 27898,
+      "offset": 27886,
       "length": 37,
       "value": "\"co.autobooks.sdk.somethingWentWrong\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 27997,
+      "offset": 27985,
       "length": 32,
       "value": "\"co.autobooks.sdk.internalError\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 28097,
+      "offset": 28085,
       "length": 38,
       "value": "\"co.autobooks.sdk.transactionDeclined\""
     },
@@ -7715,21 +8934,21 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/TransactionSummary.swift",
       "kind": "BooleanLiteral",
-      "offset": 8177,
+      "offset": 8133,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/TransactionSummary.swift",
       "kind": "BooleanLiteral",
-      "offset": 11288,
+      "offset": 11244,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/Views\/TransactionSummary.swift",
       "kind": "BooleanLiteral",
-      "offset": 11343,
+      "offset": 11299,
       "length": 5,
       "value": "false"
     },
@@ -9640,35 +10859,35 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 1059,
+      "offset": 1047,
       "length": 49,
       "value": "\"co.autobooks.sdk.showCustomTipEntryNotification\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 1186,
+      "offset": 1174,
       "length": 49,
       "value": "\"co.autobooks.sdk.hideCustomTipEntryNotification\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "BooleanLiteral",
-      "offset": 1280,
+      "offset": 1268,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "StringLiteral",
-      "offset": 1507,
+      "offset": 1495,
       "length": 287,
       "value": "\"Only one instance of the Autobooks SDK may be active at a time.\nThis is an error in .prerelease, and *will* become an error in .release in a future version.  If this is not the first time you have instantiated the SDK this run, you probably have a retain cycle.\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "BooleanLiteral",
-      "offset": 24835,
+      "offset": 24823,
       "length": 4,
       "value": "true"
     },
@@ -9822,49 +11041,49 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/DeviceStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 865,
+      "offset": 853,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/DeviceStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 870,
+      "offset": 858,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/DeviceStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 941,
+      "offset": 929,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/DeviceStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 946,
+      "offset": 934,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/DeviceStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 1023,
+      "offset": 1011,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/DeviceStatus.swift",
       "kind": "IntegerLiteral",
-      "offset": 1028,
+      "offset": 1016,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/DeviceStatus.swift",
       "kind": "Array",
-      "offset": 1087,
+      "offset": 1075,
       "length": 2,
       "value": "[]"
     },
@@ -10011,238 +11230,238 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "Dictionary",
-      "offset": 396,
+      "offset": 360,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 1056,
+      "offset": 1020,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 2982,
+      "offset": 2946,
       "length": 12,
       "value": "\"Loading...\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 3037,
+      "offset": 3001,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "FloatLiteral",
-      "offset": 5487,
+      "offset": 5451,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "FloatLiteral",
-      "offset": 5945,
+      "offset": 5909,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "FloatLiteral",
-      "offset": 5969,
+      "offset": 5933,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 7787,
+      "offset": 7751,
       "length": 35,
       "value": "\"https:\/\/prd-cdn.autobooks.co\/ttp\/\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 7928,
+      "offset": 7892,
       "length": 3,
       "value": "\"+\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 7959,
+      "offset": 7923,
       "length": 3,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 12438,
+      "offset": 12402,
       "length": 10,
       "value": "\"category\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 12521,
+      "offset": 12485,
       "length": 12,
       "value": "\"poster_url\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 12569,
+      "offset": 12533,
       "length": 16,
       "value": "\"related_videos\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 12876,
+      "offset": 12840,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 17762,
+      "offset": 17726,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 21695,
+      "offset": 21659,
       "length": 10,
       "value": "\"category\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 21756,
+      "offset": 21720,
       "length": 12,
       "value": "\"poster_url\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 21806,
+      "offset": 21770,
       "length": 18,
       "value": "\"related_articles\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 21996,
+      "offset": 21960,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 29835,
+      "offset": 29799,
       "length": 11,
       "value": "\"image_url\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 30268,
+      "offset": 30232,
       "length": 16,
       "value": "\"order_randomly\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 30319,
+      "offset": 30283,
       "length": 17,
       "value": "\"offset_randomly\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 31896,
+      "offset": 31860,
       "length": 5,
       "value": "\"ttp\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 31968,
+      "offset": 31932,
       "length": 14,
       "value": "\"payment_form\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 32020,
+      "offset": 31984,
       "length": 16,
       "value": "\"full_autobooks\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 32200,
+      "offset": 32164,
       "length": 19,
       "value": "\"minimum_durations\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "Array",
-      "offset": 40622,
+      "offset": 40586,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "Array",
-      "offset": 40656,
+      "offset": 40620,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "Array",
-      "offset": 40686,
+      "offset": 40650,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "Array",
-      "offset": 40714,
+      "offset": 40678,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "Array",
-      "offset": 40748,
+      "offset": 40712,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 41198,
+      "offset": 41162,
       "length": 11,
       "value": "\"page_sets\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 44495,
+      "offset": 44459,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 57335,
+      "offset": 57299,
       "length": 5,
       "value": "false"
     },

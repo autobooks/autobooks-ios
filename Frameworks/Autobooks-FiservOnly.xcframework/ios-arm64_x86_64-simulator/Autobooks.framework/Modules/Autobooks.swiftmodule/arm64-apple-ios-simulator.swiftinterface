@@ -5,6 +5,7 @@
 import AVKit
 import CallKit
 import Combine
+import Contacts
 import CryptoKit
 import DeveloperToolsSupport
 import Foundation
@@ -19,6 +20,15 @@ import _Concurrency
 import _SceneKit_SwiftUI
 import _StringProcessing
 import _SwiftConcurrencyShims
+@objc @_hasMissingDesignatedInitializers open class PhoneNumberFormatter : Foundation.Formatter {
+  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension Autobooks.PhoneNumberFormatter {
+  @objc override dynamic open func string(for obj: Any?) -> Swift.String?
+  @objc override dynamic open func getObjectValue(_ obj: Swift.AutoreleasingUnsafeMutablePointer<Swift.AnyObject?>?, for string: Swift.String, errorDescription error: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString?>?) -> Swift.Bool
+  @objc override dynamic open func isPartialStringValid(_ partialStringPtr: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString>, proposedSelectedRange proposedSelRangePtr: Foundation.NSRangePointer?, originalString origString: Swift.String, originalSelectedRange origSelRange: Foundation.NSRange, errorDescription error: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString?>?) -> Swift.Bool
+}
 public struct Stubs : Swift.Equatable {
   public static func == (a: Autobooks.Stubs, b: Autobooks.Stubs) -> Swift.Bool
 }

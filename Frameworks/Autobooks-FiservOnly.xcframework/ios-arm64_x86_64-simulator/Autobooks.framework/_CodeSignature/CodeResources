@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/Autobooks-Swift.h</key>
 		<data>
-		JueGO6Guu3Hd7fMmeHM6Uq6+Qz0=
+		vrU/zPUyIhZrCK3x7TNQpdIcZ5c=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		JiaIoWiZvdKwOaQQiqPkToHK/B4=
+		h5sDyRKMMYcvVvtmzf3mAEqCEqk=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		WZjSAZA79ClN7t4ThnsG7RH+5SQ=
+		A4MXIYLQ+kpUQtDpuuh00AqDOBE=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		WZjSAZA79ClN7t4ThnsG7RH+5SQ=
+		A4MXIYLQ+kpUQtDpuuh00AqDOBE=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OFpf3/EZeSWfRLg4KIpLJAubu7A=
+		PONmvgIxWgULPZwvJQB6FoFrNOA=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		JiaIoWiZvdKwOaQQiqPkToHK/B4=
+		h5sDyRKMMYcvVvtmzf3mAEqCEqk=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		K115nuATGZJ75bcit2LQv5KcsRM=
+		5fkqPQ7HhmSWVKkRD8fsiWNfUeI=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		K115nuATGZJ75bcit2LQv5KcsRM=
+		5fkqPQ7HhmSWVKkRD8fsiWNfUeI=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		MnZxOQhSkrDyXgj3/sgEqVXkiHc=
+		qNlk2dT7juSeyyGYzC2SEkHO7io=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -128,6 +128,10 @@
 		<data>
 		E7B9JlyugwHxXjA/VvJgRgY3x/s=
 		</data>
+		<key>PhoneNumberMetadata.json</key>
+		<data>
+		ZCx++vwKnMnW1iYTW1/5V4+vq5g=
+		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
 		/1KHBrb+qFC6DuAB8IHv+31D4N4=
@@ -150,21 +154,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SiEb3s2lO1BvDSVEKQmfCy1ON50/V82YpjQuOdEdaHQ=
+			sxPbbMu/6gxEorak0AAMKSFa41HTHkueB8ZLFHxm2WA=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QWe7fqID1nJxFajLHToAWQQXlgw+cofSUIJh8aFilhM=
+			OPIZ/nEc0MilxGFv1C37Dn9Smz7n+RO6/eURVS71aXA=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ABm+T7KKlvKYTpJLsiKHDk2XY7TC4n2erpLOHZD/n08=
+			6WkJKPg1cYMXtfO142eDI9eSbuhCNeXS+uQHI8a/1hM=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -178,28 +182,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ABm+T7KKlvKYTpJLsiKHDk2XY7TC4n2erpLOHZD/n08=
+			6WkJKPg1cYMXtfO142eDI9eSbuhCNeXS+uQHI8a/1hM=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yC5xsOdaYzB3s+V1CUNdDvv6mMdfWDhTix6jWFjzYlo=
+			Wk3J/41XJWtP26dtQX8tzxXvtuDp9wMbfuzrnki/0u4=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QWe7fqID1nJxFajLHToAWQQXlgw+cofSUIJh8aFilhM=
+			OPIZ/nEc0MilxGFv1C37Dn9Smz7n+RO6/eURVS71aXA=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			e4oyPW+0gE3POXXu14WWoqsYJ3/Lf6GNsM6LS8aEZ3E=
+			Vtxa0W4ijcQG0IzfcTdfH9aiRS8iZtLE52cuMZW0XkI=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -213,14 +217,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			e4oyPW+0gE3POXXu14WWoqsYJ3/Lf6GNsM6LS8aEZ3E=
+			Vtxa0W4ijcQG0IzfcTdfH9aiRS8iZtLE52cuMZW0XkI=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kgey6RYwvJFKMbJp03VwPQw/okPr3GJSYxIFezhCnKQ=
+			PLhRbl4hlsJWlfLZjmdcwSCbMl1syifS3tuof8eiWMg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -347,6 +351,13 @@
 			<key>hash2</key>
 			<data>
 			CzhbrhIdEo5c9q7pukI4hVRD5oUDBO5JXnwVe3fcH7A=
+			</data>
+		</dict>
+		<key>PhoneNumberMetadata.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EMf01WkCoKmvlfENExaCHA+syLqja5CTOK0oOFHmIs4=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>

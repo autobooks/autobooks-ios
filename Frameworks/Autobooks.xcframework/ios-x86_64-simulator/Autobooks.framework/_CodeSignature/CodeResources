@@ -10,7 +10,7 @@
 		</data>
 		<key>Headers/Autobooks-Swift.h</key>
 		<data>
-		Uywbxk5b4S5Zu9K38x/g9/5+Bsg=
+		qEB8LDZPsdDP9gPp/fjS7P71f+k=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		bxVL7TncwmqEUPTQcLTM2dlkvLE=
+		clLMni9ghj2qLmVtzY6FFTXLFEs=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ty7XxPoPDnBbqbbXAVtTUQQ1Jhw=
+		MlEbZtHL7dxspJWF0IovT+HghnE=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ty7XxPoPDnBbqbbXAVtTUQQ1Jhw=
+		MlEbZtHL7dxspJWF0IovT+HghnE=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		MXsWmFnrhV+wRO8XL9xr6lv3TZw=
+		IKqwe93GgOc6ByWFP7Ku9u5ngXQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -108,6 +108,10 @@
 		<data>
 		E7B9JlyugwHxXjA/VvJgRgY3x/s=
 		</data>
+		<key>PhoneNumberMetadata.json</key>
+		<data>
+		ZCx++vwKnMnW1iYTW1/5V4+vq5g=
+		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
 		/1KHBrb+qFC6DuAB8IHv+31D4N4=
@@ -130,21 +134,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z0mbB+wvc3YeAoernRG5FdoBJEbKvmX4vubFbTgZN8g=
+			re5mrH+V432aowri1XHUGoTrYTpIGm9EACmN3QARYCY=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jRPe5TIaYTKwbBVUIhWi1lZLaalVZZuBaSJtaFVhQh8=
+			UxirxjJ88BmCT/W64RocVefoWZ6wgDVrCe3fzBakWas=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v0p+tiqDyS7u2c+r68Q6ogvoyBqGB0NEXMHB2o6dKcM=
+			oV7LC+Z0zdU3xHrcZCa+c1AsC31bLEPJB5aSTwTn91o=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -158,14 +162,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			v0p+tiqDyS7u2c+r68Q6ogvoyBqGB0NEXMHB2o6dKcM=
+			oV7LC+Z0zdU3xHrcZCa+c1AsC31bLEPJB5aSTwTn91o=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p6ZNDn9S6/BDKo46EcbtmcGbqWOfXo1yduYb/t8vUv4=
+			r3C4lYR+fNQNs06e4C1RAiwG0It5RMA6HB10qcTLSoQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -292,6 +296,13 @@
 			<key>hash2</key>
 			<data>
 			CzhbrhIdEo5c9q7pukI4hVRD5oUDBO5JXnwVe3fcH7A=
+			</data>
+		</dict>
+		<key>PhoneNumberMetadata.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EMf01WkCoKmvlfENExaCHA+syLqja5CTOK0oOFHmIs4=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
