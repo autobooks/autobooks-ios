@@ -593,6 +593,16 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "Autobooks"
       },
       {
@@ -990,6 +1000,159 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "VisionKit",
+        "printedName": "VisionKit",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "VisionKit",
+        "printedName": "VisionKit",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "KountDataCollector",
+        "printedName": "KountDataCollector",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
         "name": "SceneKit",
         "printedName": "SceneKit",
         "declKind": "Import",
@@ -1150,69 +1313,6 @@
                 "declKind": "EnumElement",
                 "usr": "s:9Autobooks2ABO15LoginCredentialO5tokenyAESScAEmF",
                 "mangledName": "$s9Autobooks2ABO15LoginCredentialO5tokenyAESScAEmF",
-                "moduleName": "Autobooks"
-              },
-              {
-                "kind": "Var",
-                "name": "usernameAndPassword",
-                "printedName": "usernameAndPassword",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Autobooks.AB.LoginCredential.Type) -> (Swift.String, Swift.String) -> Autobooks.AB.LoginCredential",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.String, Swift.String) -> Autobooks.AB.LoginCredential",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "LoginCredential",
-                            "printedName": "Autobooks.AB.LoginCredential",
-                            "usr": "s:9Autobooks2ABO15LoginCredentialO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Tuple",
-                            "printedName": "(username: Swift.String, password: Swift.String)",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "String",
-                                "printedName": "Swift.String",
-                                "usr": "s:SS"
-                              },
-                              {
-                                "kind": "TypeNominal",
-                                "name": "String",
-                                "printedName": "Swift.String",
-                                "usr": "s:SS"
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "Autobooks.AB.LoginCredential.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "LoginCredential",
-                            "printedName": "Autobooks.AB.LoginCredential",
-                            "usr": "s:9Autobooks2ABO15LoginCredentialO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:9Autobooks2ABO15LoginCredentialO19usernameAndPasswordyAESS_SStcAEmF",
-                "mangledName": "$s9Autobooks2ABO15LoginCredentialO19usernameAndPasswordyAESS_SStcAEmF",
                 "moduleName": "Autobooks"
               }
             ],
@@ -4127,6 +4227,7 @@
             "static": true,
             "declAttributes": [
               "AccessControl",
+              "Custom",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -4195,7 +4296,77 @@
             "static": true,
             "declAttributes": [
               "AccessControl",
+              "Custom",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makePaymentFormViewController",
+            "printedName": "makePaymentFormViewController(subscriptionKey:loginCredential:configuration:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LoginCredential",
+                "printedName": "Autobooks.AB.LoginCredential",
+                "usr": "s:9Autobooks2ABO15LoginCredentialO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Configuration",
+                "printedName": "Autobooks.AB.Configuration",
+                "hasDefaultArg": true,
+                "usr": "s:9Autobooks2ABO13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Autobooks.AB.DismissalReason) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Autobooks.AB.DismissalReason) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DismissalReason",
+                        "printedName": "Autobooks.AB.DismissalReason",
+                        "usr": "s:9Autobooks2ABO15DismissalReasonO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Autobooks2ABO29makePaymentFormViewController15subscriptionKey15loginCredential13configuration10completionSo06UIViewG0CSS_AC05LoginK0OAC13ConfigurationVyAC15DismissalReasonOYbScMYccSgtFZ",
+            "mangledName": "$s9Autobooks2ABO29makePaymentFormViewController15subscriptionKey15loginCredential13configuration10completionSo06UIViewG0CSS_AC05LoginK0OAC13ConfigurationVyAC15DismissalReasonOYbScMYccSgtFZ",
+            "moduleName": "Autobooks",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4263,7 +4434,215 @@
             "static": true,
             "declAttributes": [
               "AccessControl",
+              "Custom",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeInvoicingViewController",
+            "printedName": "makeInvoicingViewController(subscriptionKey:loginCredential:configuration:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LoginCredential",
+                "printedName": "Autobooks.AB.LoginCredential",
+                "usr": "s:9Autobooks2ABO15LoginCredentialO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Configuration",
+                "printedName": "Autobooks.AB.Configuration",
+                "hasDefaultArg": true,
+                "usr": "s:9Autobooks2ABO13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Autobooks.AB.DismissalReason) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Autobooks.AB.DismissalReason) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DismissalReason",
+                        "printedName": "Autobooks.AB.DismissalReason",
+                        "usr": "s:9Autobooks2ABO15DismissalReasonO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Autobooks2ABO27makeInvoicingViewController15subscriptionKey15loginCredential13configuration10completionSo06UIViewF0CSS_AC05LoginJ0OAC13ConfigurationVyAC15DismissalReasonOYbScMYccSgtFZ",
+            "mangledName": "$s9Autobooks2ABO27makeInvoicingViewController15subscriptionKey15loginCredential13configuration10completionSo06UIViewF0CSS_AC05LoginJ0OAC13ConfigurationVyAC15DismissalReasonOYbScMYccSgtFZ",
+            "moduleName": "Autobooks",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startCheckoutPages",
+            "printedName": "startCheckoutPages(subscriptionKey:loginCredential:configuration:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LoginCredential",
+                "printedName": "Autobooks.AB.LoginCredential",
+                "usr": "s:9Autobooks2ABO15LoginCredentialO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Configuration",
+                "printedName": "Autobooks.AB.Configuration",
+                "hasDefaultArg": true,
+                "usr": "s:9Autobooks2ABO13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Autobooks.AB.DismissalReason) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Autobooks.AB.DismissalReason) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DismissalReason",
+                        "printedName": "Autobooks.AB.DismissalReason",
+                        "usr": "s:9Autobooks2ABO15DismissalReasonO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Autobooks2ABO18startCheckoutPages15subscriptionKey15loginCredential13configuration10completionySS_AC05LoginI0OAC13ConfigurationVyAC15DismissalReasonOYbScMYccSgtFZ",
+            "mangledName": "$s9Autobooks2ABO18startCheckoutPages15subscriptionKey15loginCredential13configuration10completionySS_AC05LoginI0OAC13ConfigurationVyAC15DismissalReasonOYbScMYccSgtFZ",
+            "moduleName": "Autobooks",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeCheckoutPagesViewController",
+            "printedName": "makeCheckoutPagesViewController(subscriptionKey:loginCredential:configuration:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LoginCredential",
+                "printedName": "Autobooks.AB.LoginCredential",
+                "usr": "s:9Autobooks2ABO15LoginCredentialO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Configuration",
+                "printedName": "Autobooks.AB.Configuration",
+                "hasDefaultArg": true,
+                "usr": "s:9Autobooks2ABO13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Autobooks.AB.DismissalReason) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Autobooks.AB.DismissalReason) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DismissalReason",
+                        "printedName": "Autobooks.AB.DismissalReason",
+                        "usr": "s:9Autobooks2ABO15DismissalReasonO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Autobooks2ABO31makeCheckoutPagesViewController15subscriptionKey15loginCredential13configuration10completionSo06UIViewG0CSS_AC05LoginK0OAC13ConfigurationVyAC15DismissalReasonOYbScMYccSgtFZ",
+            "mangledName": "$s9Autobooks2ABO31makeCheckoutPagesViewController15subscriptionKey15loginCredential13configuration10completionSo06UIViewG0CSS_AC05LoginK0OAC13ConfigurationVyAC15DismissalReasonOYbScMYccSgtFZ",
+            "moduleName": "Autobooks",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4331,7 +4710,77 @@
             "static": true,
             "declAttributes": [
               "AccessControl",
+              "Custom",
               "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeFullAutobooksViewController",
+            "printedName": "makeFullAutobooksViewController(subscriptionKey:loginCredential:configuration:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LoginCredential",
+                "printedName": "Autobooks.AB.LoginCredential",
+                "usr": "s:9Autobooks2ABO15LoginCredentialO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Configuration",
+                "printedName": "Autobooks.AB.Configuration",
+                "hasDefaultArg": true,
+                "usr": "s:9Autobooks2ABO13ConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Autobooks.AB.DismissalReason) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Autobooks.AB.DismissalReason) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DismissalReason",
+                        "printedName": "Autobooks.AB.DismissalReason",
+                        "usr": "s:9Autobooks2ABO15DismissalReasonO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Autobooks2ABO08makeFullA14ViewController15subscriptionKey15loginCredential13configuration10completionSo06UIViewF0CSS_AC05LoginJ0OAC13ConfigurationVyAC15DismissalReasonOYbScMYccSgtFZ",
+            "mangledName": "$s9Autobooks2ABO08makeFullA14ViewController15subscriptionKey15loginCredential13configuration10completionSo06UIViewF0CSS_AC05LoginJ0OAC13ConfigurationVyAC15DismissalReasonOYbScMYccSgtFZ",
+            "moduleName": "Autobooks",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -4351,10 +4800,110 @@
             "mangledName": "$s9Autobooks2ABO4stopyyFZ",
             "moduleName": "Autobooks",
             "static": true,
+            "deprecated": true,
+            "declAttributes": [
+              "AccessControl",
+              "Available",
+              "Custom",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeTapToPayController",
+            "printedName": "makeTapToPayController(subscriptionKey:configuration:loginProvider:bearerToken:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UINavigationController",
+                "printedName": "UIKit.UINavigationController",
+                "usr": "c:objc(cs)UINavigationController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Configuration",
+                "printedName": "Autobooks.AB.Configuration",
+                "usr": "s:9Autobooks2ABO13ConfigurationV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Autobooks.AB.LoginReason) async throws -> Autobooks.AB.LoginCredential",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoginCredential",
+                    "printedName": "Autobooks.AB.LoginCredential",
+                    "usr": "s:9Autobooks2ABO15LoginCredentialO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoginReason",
+                    "printedName": "Autobooks.AB.LoginReason",
+                    "usr": "s:9Autobooks2ABO11LoginReasonO"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Autobooks.AB.DismissalReason) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Autobooks.AB.DismissalReason) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DismissalReason",
+                        "printedName": "Autobooks.AB.DismissalReason",
+                        "usr": "s:9Autobooks2ABO15DismissalReasonO"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9Autobooks2ABO22makeTapToPayController15subscriptionKey13configuration13loginProvider11bearerToken10completionSo012UINavigationG0CSS_AC13ConfigurationVAC15LoginCredentialOAC0R6ReasonOYaYbKScMYccSSSgyAC09DismissalT0OYbScMYccSgtFZ",
+            "mangledName": "$s9Autobooks2ABO22makeTapToPayController15subscriptionKey13configuration13loginProvider11bearerToken10completionSo012UINavigationG0CSS_AC13ConfigurationVAC15LoginCredentialOAC0R6ReasonOYaYbKScMYccSSSgyAC09DismissalT0OYbScMYccSgtFZ",
+            "moduleName": "Autobooks",
+            "static": true,
+            "intro_iOS": "16.7",
             "declAttributes": [
               "AccessControl",
               "Custom",
-              "RawDocComment"
+              "Available"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -5881,6 +6430,100 @@
               },
               {
                 "kind": "Var",
+                "name": "manualCardEntryError",
+                "printedName": "manualCardEntryError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9Autobooks2ABO13NotificationsO20manualCardEntryErrorSo18NSNotificationNameavpZ",
+                "mangledName": "$s9Autobooks2ABO13NotificationsO20manualCardEntryErrorSo18NSNotificationNameavpZ",
+                "moduleName": "Autobooks",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Name",
+                        "printedName": "Foundation.NSNotification.Name",
+                        "usr": "c:@T@NSNotificationName"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9Autobooks2ABO13NotificationsO20manualCardEntryErrorSo18NSNotificationNameavgZ",
+                    "mangledName": "$s9Autobooks2ABO13NotificationsO20manualCardEntryErrorSo18NSNotificationNameavgZ",
+                    "moduleName": "Autobooks",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "manualCardEntryScanner",
+                "printedName": "manualCardEntryScanner",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:9Autobooks2ABO13NotificationsO22manualCardEntryScannerSo18NSNotificationNameavpZ",
+                "mangledName": "$s9Autobooks2ABO13NotificationsO22manualCardEntryScannerSo18NSNotificationNameavpZ",
+                "moduleName": "Autobooks",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Name",
+                        "printedName": "Foundation.NSNotification.Name",
+                        "usr": "c:@T@NSNotificationName"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:9Autobooks2ABO13NotificationsO22manualCardEntryScannerSo18NSNotificationNameavgZ",
+                    "mangledName": "$s9Autobooks2ABO13NotificationsO22manualCardEntryScannerSo18NSNotificationNameavgZ",
+                    "moduleName": "Autobooks",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
                 "name": "somethingWentWrong",
                 "printedName": "somethingWentWrong",
                 "children": [
@@ -6164,6 +6807,16 @@
         "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -7359,177 +8012,205 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 24503,
+      "offset": 24741,
       "length": 5,
       "value": "\"abc\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 24571,
+      "offset": 24809,
       "length": 5,
       "value": "\"123\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 24640,
+      "offset": 24878,
       "length": 5,
       "value": "\"def\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 24709,
+      "offset": 24947,
       "length": 9,
       "value": "\"abc-def\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "IntegerLiteral",
-      "offset": 24757,
+      "offset": 24995,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
+      "kind": "IntegerLiteral",
+      "offset": 25007,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 24774,
+      "offset": 25024,
       "length": 22,
       "value": "\"example@autobooks.co\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "BooleanLiteral",
-      "offset": 24807,
+      "offset": 25057,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 24887,
+      "offset": 25137,
       "length": 38,
       "value": "\"3c00c000-a005-ea4c-5f64-02525e000001\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 25451,
+      "offset": 25600,
+      "length": 12,
+      "value": "\"##SECRET##\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
+      "kind": "StringLiteral",
+      "offset": 25657,
+      "length": 5,
+      "value": "\"abc\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
+      "kind": "StringLiteral",
+      "offset": 25797,
       "length": 13,
       "value": "\"accessToken\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "BooleanLiteral",
-      "offset": 25643,
+      "offset": 25989,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "BooleanLiteral",
-      "offset": 25780,
+      "offset": 26126,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "FloatLiteral",
-      "offset": 26091,
+      "offset": 26437,
       "length": 4,
       "value": "0.15"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 26264,
+      "offset": 26610,
       "length": 5,
       "value": "\"15%\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "FloatLiteral",
-      "offset": 26445,
+      "offset": 26791,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 26617,
+      "offset": 26963,
       "length": 5,
       "value": "\"20%\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "FloatLiteral",
-      "offset": 26798,
+      "offset": 27144,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 26971,
+      "offset": 27317,
       "length": 5,
       "value": "\"25%\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "BooleanLiteral",
-      "offset": 27193,
+      "offset": 27539,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "FloatLiteral",
-      "offset": 27417,
+      "offset": 27763,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "FloatLiteral",
-      "offset": 27695,
+      "offset": 28083,
       "length": 6,
       "value": "0.0275"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "FloatLiteral",
-      "offset": 27732,
+      "offset": 28120,
       "length": 6,
       "value": "0.0289"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 27816,
+      "offset": 28204,
       "length": 91,
       "value": "\"https:\/\/app.autobooks.co\/payment-form\/default?launchmode=PaymentForm&viewmode=PaymentForm\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 27949,
+      "offset": 28337,
       "length": 89,
       "value": "\"https:\/\/app.autobooks.co\/invoicing\/invoices?launchmode=CreateInvoice&viewmode=Invoicing\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 28086,
+      "offset": 28474,
       "length": 44,
       "value": "\"https:\/\/app.autobooks.co\/virtual-terminal\/\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 28176,
+      "offset": 28564,
       "length": 88,
       "value": "\"https:\/\/app.autobooks.co\/login\/init?launchmode=CreateInvoice&viewmode=InvoicesPayments\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
+      "kind": "StringLiteral",
+      "offset": 28698,
+      "length": 85,
+      "value": "\"https:\/\/app.autobooks.co\/login\/init?launchmode=CheckoutPages&viewmode=CheckoutPages\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Defaults.swift",
@@ -7660,21 +8341,21 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 5471,
+      "offset": 6882,
       "length": 31,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSSSSSS\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 5549,
+      "offset": 6960,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Requests.swift",
       "kind": "StringLiteral",
-      "offset": 5735,
+      "offset": 7146,
       "length": 5,
       "value": "\"GMT\""
     },
@@ -8099,6 +8780,524 @@
       "value": "58"
     },
     {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 553,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 581,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1044,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 1083,
+      "length": 12,
+      "value": "\"[0-9]{3,4}\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1173,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1193,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1853,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 1884,
+      "length": 10,
+      "value": "\"[0-9]{5}\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1972,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1992,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2652,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2657,
+      "length": 2,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 2689,
+      "length": 150,
+      "value": "\"4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\\d{3})\\d{11}\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2914,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2935,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3019,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3039,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5362,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5366,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "StringLiteral",
+      "offset": 5397,
+      "length": 38,
+      "value": "\"0?[1-9]|1[0-2])\/(?:[0-9]{4}|[0-9]{2}\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5510,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5531,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5615,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5635,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9161,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9233,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9273,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardScannerView.swift",
+      "kind": "FloatLiteral",
+      "offset": 9770,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 191,
+      "length": 6,
+      "value": "\"VISA\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 228,
+      "length": 12,
+      "value": "\"MASTERCARD\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 276,
+      "length": 6,
+      "value": "\"AMEX\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 311,
+      "length": 10,
+      "value": "\"DISCOVER\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 699,
+      "length": 8,
+      "value": "\"UserId\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 735,
+      "length": 9,
+      "value": "\"GroupId\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 773,
+      "length": 10,
+      "value": "\"Location\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 816,
+      "length": 14,
+      "value": "\"CurrencyCode\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 859,
+      "length": 10,
+      "value": "\"CardType\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 900,
+      "length": 12,
+      "value": "\"CardNumber\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 948,
+      "length": 17,
+      "value": "\"ExpirationMonth\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 1000,
+      "length": 16,
+      "value": "\"ExpirationYear\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 1050,
+      "length": 15,
+      "value": "\"ValidationNum\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 1423,
+      "length": 9,
+      "value": "\"CardRef\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 1461,
+      "length": 10,
+      "value": "\"CardType\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 1501,
+      "length": 11,
+      "value": "\"ErrorCode\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 1540,
+      "length": 9,
+      "value": "\"Message\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 1582,
+      "length": 13,
+      "value": "\"IsDuplicate\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 1628,
+      "length": 14,
+      "value": "\"IsSuccessful\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryCardRef.swift",
+      "kind": "StringLiteral",
+      "offset": 1670,
+      "length": 9,
+      "value": "\"IsError\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardProcessingViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1240,
+      "length": 23,
+      "value": "\"turnstileTokenHandler\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardProcessingViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 1307,
+      "length": 23,
+      "value": "\"turnstileErrorHandler\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/PopularNames.swift",
+      "kind": "Array",
+      "offset": 74,
+      "length": 56887,
+      "value": "[\"AARON\", \"ABBOTT\", \"ABEL\", \"ABERNATHY\", \"ABIGAIL\", \"ABRAHAM\", \"ABRAMS\", \"ABREU\", \"ACEVEDO\", \"ACKERMAN\", \"ACOSTA\", \"ACUNA\", \"ADAIR\", \"ADAM\", \"ADAME\", \"ADAMS\", \"ADAMSON\", \"ADCOCK\", \"ADDISON\", \"ADKINS\", \"ADLER\", \"AGUAYO\", \"AGUILAR\", \"AGUILERA\", \"AGUIRRE\", \"AHMAD\", \"AHMED\", \"AIKEN\", \"AKERS\", \"AKINS\", \"ALAN\", \"ALANIZ\", \"ALARCON\", \"ALBA\", \"ALBERT\", \"ALBRECHT\", \"ALBRIGHT\", \"ALCALA\", \"ALCANTAR\", \"ALCANTARA\", \"ALDRICH\", \"ALDRIDGE\", \"ALEMAN\", \"ALEXANDER\", \"ALEXIS\", \"ALFARO\", \"ALFONSO\", \"ALFORD\", \"ALI\", \"ALICE\", \"ALICEA\", \"ALLEN\", \"ALLEY\", \"ALLISON\", \"ALLRED\", \"ALMANZA\", \"ALMEIDA\", \"ALMONTE\", \"ALONSO\", \"ALONZO\", \"ALSTON\", \"ALTAMIRANO\", \"ALTMAN\", \"ALVARADO\", \"ALVAREZ\", \"ALVES\", \"AMADOR\", \"AMANDA\", \"AMATO\", \"AMAYA\", \"AMBER\", \"AMBROSE\", \"AMES\", \"AMOS\", \"AMY\", \"ANAYA\", \"ANDERS\", \"ANDERSEN\", \"ANDERSON\", \"ANDRADE\", \"ANDREA\", \"ANDRES\", \"ANDREW\", \"ANDREWS\", \"ANGEL\", \"ANGELA\", \"ANGELES\", \"ANGUIANO\", \"ANGULO\", \"ANN\", \"ANNA\", \"ANTHONY\", \"ANTONIO\", \"APARICIO\", \"APONTE\", \"AQUINO\", \"ARAGON\", \"ARANDA\", \"ARAUJO\", \"ARCE\", \"ARCHER\", \"ARCHULETA\", \"ARELLANO\", \"AREVALO\", \"ARGUETA\", \"ARIAS\", \"ARMENDARIZ\", \"ARMENTA\", \"ARMSTRONG\", \"ARNDT\", \"ARNETT\", \"ARNOLD\", \"ARREDONDO\", \"ARREOLA\", \"ARRIAGA\", \"ARRINGTON\", \"ARROYO\", \"ARTEAGA\", \"ARTHUR\", \"ASH\", \"ASHBY\", \"ASHER\", \"ASHLEY\", \"ASHTON\", \"ASKEW\", \"ATKINS\", \"ATKINSON\", \"ATWOOD\", \"AUGUSTINE\", \"AUSTIN\", \"AVALOS\", \"AVERY\", \"AVILA\", \"AVILES\", \"AYALA\", \"AYERS\", \"BABB\", \"BABCOCK\", \"BACA\", \"BACH\", \"BACHMAN\", \"BACON\", \"BAER\", \"BAEZ\", \"BAGGETT\", \"BAGLEY\", \"BAIL\", \"BAILEY\", \"BAIN\", \"BAIRD\", \"BAKER\", \"BALDERAS\", \"BALDWIN\", \"BALES\", \"BALL\", \"BALLARD\", \"BALTAZAR\", \"BANDA\", \"BANKS\", \"BANUELOS\", \"BARAJAS\", \"BARBARA\", \"BARBER\", \"BARBOSA\", \"BARBOUR\", \"BARFIELD\", \"BARGER\", \"BARKER\", \"BARKLEY\", \"BARLOW\", \"BARNARD\", \"BARNES\", \"BARNETT\", \"BARNEY\", \"BARNHART\", \"BARON\", \"BARONE\", \"BARR\", \"BARRAGAN\", \"BARRAZA\", \"BARRERA\", \"BARRETT\", \"BARRIENTOS\", \"BARRIOS\", \"BARRON\", \"BARROW\", \"BARRY\", \"BARTH\", \"BARTHOLOMEW\", \"BARTLETT\", \"BARTLEY\", \"BARTON\", \"BASS\", \"BASSETT\", \"BATEMAN\", \"BATES\", \"BATISTA\", \"BATTLE\", \"BAUER\", \"BAUGH\", \"BAUGHMAN\", \"BAUM\", \"BAUMAN\", \"BAUMANN\", \"BAUTISTA\", \"BAXTER\", \"BEACH\", \"BEAL\", \"BEAM\", \"BEAN\", \"BEARD\", \"BEARDEN\", \"BEASLEY\", \"BEATTY\", \"BEATY\", \"BEAVER\", \"BEAVERS\", \"BECERRA\", \"BECK\", \"BECKER\", \"BECKMAN\", \"BEEBE\", \"BEGAY\", \"BEGUM\", \"BEIL\", \"BELANGER\", \"BELCHER\", \"BELL\", \"BELLAMY\", \"BELLO\", \"BELTRAN\", \"BENAVIDES\", \"BENAVIDEZ\", \"BENDER\", \"BENEDICT\", \"BENITEZ\", \"BENJAMIN\", \"BENNETT\", \"BENOIT\", \"BENSON\", \"BENTLEY\", \"BENTON\", \"BERG\", \"BERGER\", \"BERGERON\", \"BERGMAN\", \"BERMAN\", \"BERMUDEZ\", \"BERNAL\", \"BERNARD\", \"BERNSTEIN\", \"BERRIOS\", \"BERRY\", \"BERTRAND\", \"BEST\", \"BETANCOURT\", \"BETHEA\", \"BETTS\", \"BETTY\", \"BEVERLY\", \"BEYER\", \"BIANCO\", \"BIGGS\", \"BILLINGS\", \"BILLINGSLEY\", \"BILLY\", \"BINGHAM\", \"BIRCH\", \"BIRD\", \"BISHOP\", \"BLACK\", \"BLACKBURN\", \"BLACKMAN\", \"BLACKMON\", \"BLACKWELL\", \"BLAIR\", \"BLAKE\", \"BLANCHARD\", \"BLANCO\", \"BLAND\", \"BLANK\", \"BLANKENSHIP\", \"BLANTON\", \"BLEDSOE\", \"BLEVINS\", \"BLISS\", \"BLOCK\", \"BLOOM\", \"BLOUNT\", \"BLUE\", \"BLUM\", \"BOBBY\", \"BOCK\", \"BOGGS\", \"BOLDEN\", \"BOLES\", \"BOLIN\", \"BOLLINGER\", \"BOLTON\", \"BOND\", \"BONDS\", \"BONILLA\", \"BONNER\", \"BOOKER\", \"BOONE\", \"BOOTH\", \"BORDEN\", \"BORGES\", \"BOSTON\", \"BOSWELL\", \"BOUCHARD\", \"BOUCHER\", \"BOUDREAUX\", \"BOURGEOIS\", \"BOWDEN\", \"BOWEN\", \"BOWER\", \"BOWERS\", \"BOWLES\", \"BOWLING\", \"BOWMAN\", \"BOWSER\", \"BOYCE\", \"BOYD\", \"BOYER\", \"BOYKIN\", \"BOYLE\", \"BRADEN\", \"BRADFORD\", \"BRADLEY\", \"BRADSHAW\", \"BRADY\", \"BRAGG\", \"BRANCH\", \"BRAND\", \"BRANDON\", \"BRANDT\", \"BRANHAM\", \"BRANNON\", \"BRANTLEY\", \"BRASWELL\", \"BRAUN\", \"BRAVO\", \"BRAXTON\", \"BRAY\", \"BREAUX\", \"BREEN\", \"BRENDA\", \"BRENNAN\", \"BRENNER\", \"BREWER\", \"BREWSTER\", \"BRIAN\", \"BRIDGES\", \"BRIGGS\", \"BRIGHT\", \"BRINK\", \"BRINKLEY\", \"BRINSON\", \"BRIONES\", \"BRISCOE\", \"BRITO\", \"BRITT\", \"BRITTANY\", \"BRITTON\", \"BROCK\", \"BROOKS\", \"BROUGHTON\", \"BROUSSARD\", \"BROWER\", \"BROWN\", \"BROWNE\", \"BROWNING\", \"BRUBAKER\", \"BRUCE\", \"BRUNER\", \"BRUNNER\", \"BRUNO\", \"BRUNSON\", \"BRYAN\", \"BRYANT\", \"BRYSON\", \"BUCHANAN\", \"BUCK\", \"BUCKLEY\", \"BUCKNER\", \"BUENO\", \"BUI\", \"BULLARD\", \"BULLOCK\", \"BUNCH\", \"BUNDY\", \"BURCH\", \"BURDEN\", \"BURDICK\", \"BURGER\", \"BURGESS\", \"BURGOS\", \"BURK\", \"BURKE\", \"BURKETT\", \"BURKHART\", \"BURKS\", \"BURLESON\", \"BURNETT\", \"BURNETTE\", \"BURNHAM\", \"BURNS\", \"BURR\", \"BURRELL\", \"BURRIS\", \"BURROUGHS\", \"BURROWS\", \"BURT\", \"BURTON\", \"BUSBY\", \"BUSCH\", \"BUSH\", \"BUSTAMANTE\", \"BUSTOS\", \"BUTCHER\", \"BUTLER\", \"BUTTS\", \"BYERS\", \"BYLER\", \"BYNUM\", \"BYRD\", \"BYRNE\", \"CABALLERO\", \"CABRAL\", \"CABRERA\", \"CACERES\", \"CAGLE\", \"CAHILL\", \"CAIN\", \"CALDERON\", \"CALDWELL\", \"CALEB\", \"CALHOUN\", \"CALL\", \"CALLAHAN\", \"CALLAWAY\", \"CALLOWAY\", \"CALVERT\", \"CAMACHO\", \"CAMERON\", \"CAMP\", \"CAMPBELL\", \"CAMPOS\", \"CANALES\", \"CANNON\", \"CANO\", \"CANTRELL\", \"CANTU\", \"CAO\", \"CAPPS\", \"CARABALLO\", \"CARBAJAL\", \"CARDENAS\", \"CARDONA\", \"CARDOZA\", \"CAREY\", \"CARL\", \"CARLIN\", \"CARLISLE\", \"CARLOS\", \"CARLSON\", \"CARLTON\", \"CARMICHAEL\", \"CARMONA\", \"CARNES\", \"CARNEY\", \"CAROL\", \"CAROLYN\", \"CARON\", \"CARPENTER\", \"CARR\", \"CARRANZA\", \"CARRASCO\", \"CARREON\", \"CARRERA\", \"CARRIER\", \"CARRILLO\", \"CARRINGTON\", \"CARROLL\", \"CARSON\", \"CARTER\", \"CARTWRIGHT\", \"CARUSO\", \"CARVER\", \"CASAS\", \"CASE\", \"CASEY\", \"CASH\", \"CASILLAS\", \"CASPER\", \"CASSIDY\", \"CASTANEDA\", \"CASTELLANOS\", \"CASTILLO\", \"CASTLE\", \"CASTRO\", \"CATES\", \"CATHERINE\", \"CAUDILL\", \"CAVANAUGH\", \"CAVAZOS\", \"CAZARES\", \"CEBALLOS\", \"CEJA\", \"CENTENO\", \"CERDA\", \"CERVANTES\", \"CHACON\", \"CHADWICK\", \"CHAMBERLAIN\", \"CHAMBERS\", \"CHAMPAGNE\", \"CHAMPION\", \"CHAN\", \"CHANCE\", \"CHANDLER\", \"CHANEY\", \"CHANG\", \"CHAPA\", \"CHAPMAN\", \"CHAPPELL\", \"CHARLES\", \"CHARLOTTE\", \"CHASE\", \"CHASTAIN\", \"CHATMAN\", \"CHAU\", \"CHAVARRIA\", \"CHAVEZ\", \"CHAVIS\", \"CHEATHAM\", \"CHEEK\", \"CHEN\", \"CHENEY\", \"CHENG\", \"CHERRY\", \"CHERYL\", \"CHESTER\", \"CHEUNG\", \"CHILDERS\", \"CHILDRESS\", \"CHILDS\", \"CHIN\", \"CHISHOLM\", \"CHIU\", \"CHO\", \"CHOI\", \"CHONG\", \"CHOW\", \"CHOWDHURY\", \"CHRIS\", \"CHRISTENSEN\", \"CHRISTIAN\", \"CHRISTIANSEN\", \"CHRISTIE\", \"CHRISTINA\", \"CHRISTINE\", \"CHRISTMAN\", \"CHRISTOPHER\", \"CHRISTY\", \"CHU\", \"CHUN\", \"CHUNG\", \"CHURCH\", \"CHURCHILL\", \"CINTRON\", \"CISNEROS\", \"CLANCY\", \"CLARK\", \"CLARKE\", \"CLAY\", \"CLAYTON\", \"CLEARY\", \"CLEMENS\", \"CLEMENT\", \"CLEMENTS\", \"CLEMONS\", \"CLEVELAND\", \"CLEVENGER\", \"CLIFFORD\", \"CLIFTON\", \"CLINE\", \"CLINTON\", \"CLOUD\", \"COATES\", \"COATS\", \"COBB\", \"COBURN\", \"COCHRAN\", \"CODY\", \"COE\", \"COFFEY\", \"COFFMAN\", \"COHEN\", \"COKER\", \"COLBERT\", \"COLE\", \"COLEMAN\", \"COLES\", \"COLEY\", \"COLLAZO\", \"COLLIER\", \"COLLINS\", \"COLON\", \"COLVIN\", \"COMBS\", \"COMER\", \"COMPTON\", \"CONCEPCION\", \"CONDON\", \"CONKLIN\", \"CONLEY\", \"CONN\", \"CONNELL\", \"CONNELLY\", \"CONNER\", \"CONNOLLY\", \"CONNOR\", \"CONNORS\", \"CONRAD\", \"CONROY\", \"CONTRERAS\", \"CONWAY\", \"COOK\", \"COOKE\", \"COOLEY\", \"COON\", \"COONEY\", \"COOPER\", \"COPE\", \"COPELAND\", \"CORBETT\", \"CORBIN\", \"CORCORAN\", \"CORDERO\", \"CORDOVA\", \"COREY\", \"CORLEY\", \"CORMIER\", \"CORNEJO\", \"CORNELIUS\", \"CORNELL\", \"CORNETT\", \"CORNWELL\", \"CORONA\", \"CORONADO\", \"CORRAL\", \"CORREA\", \"CORTES\", \"CORTEZ\", \"COSTA\", \"COSTELLO\", \"COTE\", \"COTTON\", \"COTTRELL\", \"COUCH\", \"COUGHLIN\", \"COULTER\", \"COURTNEY\", \"COVARRUBIAS\", \"COVINGTON\", \"COWAN\", \"COX\", \"COY\", \"COYLE\", \"CRABTREE\", \"CRAFT\", \"CRAIG\", \"CRAIN\", \"CRAMER\", \"CRANDALL\", \"CRANE\", \"CRAVEN\", \"CRAWFORD\", \"CRAWLEY\", \"CREECH\", \"CRENSHAW\", \"CRESPO\", \"CREWS\", \"CRISP\", \"CROCKER\", \"CROCKETT\", \"CROFT\", \"CRONIN\", \"CROOK\", \"CROSBY\", \"CROSS\", \"CROUCH\", \"CROUSE\", \"CROW\", \"CROWDER\", \"CROWE\", \"CROWELL\", \"CROWLEY\", \"CRUM\", \"CRUMP\", \"CRUZ\", \"CUELLAR\", \"CUEVAS\", \"CULLEN\", \"CULP\", \"CULVER\", \"CUMMINGS\", \"CUMMINS\", \"CUNNINGHAM\", \"CURLEY\", \"CURRAN\", \"CURRIE\", \"CURRY\", \"CURTIS\", \"CUTLER\", \"CYNTHIA\", \"DAHL\", \"DAIGLE\", \"DAILEY\", \"DALE\", \"DALEY\", \"DALTON\", \"DALY\", \"DAMICO\", \"DANG\", \"DANIEL\", \"DANIELLE\", \"DANIELS\", \"DANIELSON\", \"DARBY\", \"DARDEN\", \"DARLING\", \"DARNELL\", \"DASILVA\", \"DAUGHERTY\", \"DAVENPORT\", \"DAVID\", \"DAVIDSON\", \"DAVIES\", \"DAVILA\", \"DAVIS\", \"DAVISON\", \"DAWKINS\", \"DAWSON\", \"DAY\", \"DEAL\", \"DEAN\", \"DEATON\", \"DEBORAH\", \"DEBRA\", \"DECKER\", \"DEJESUS\", \"DELACRUZ\", \"DELANEY\", \"DELAROSA\", \"DELATORRE\", \"DELEON\", \"DELGADILLO\", \"DELGADO\", \"DELONG\", \"DELOSSANTOS\", \"DELUCA\", \"DEMARCO\", \"DEMPSEY\", \"DENISE\", \"DENNEY\", \"DENNIS\", \"DENNISON\", \"DENNY\", \"DENSON\", \"DENT\", \"DENTON\", \"DESAI\", \"DEVINE\", \"DEVLIN\", \"DEVRIES\", \"DEWEY\", \"DEWITT\", \"DIAMOND\", \"DIANA\", \"DIANE\", \"DIAS\", \"DIAZ\", \"DICK\", \"DICKENS\", \"DICKERSON\", \"DICKEY\", \"DICKINSON\", \"DICKOW\", \"DICKSON\", \"DIEHL\", \"DIETRICH\", \"DIETZ\", \"DIGGS\", \"DILL\", \"DILLARD\", \"DILLON\", \"DINH\", \"DIXON\", \"DO\", \"DOAN\", \"DOBBINS\", \"DOBBS\", \"DOBSON\", \"DODD\", \"DODGE\", \"DODSON\", \"DOHERTY\", \"DOLAN\", \"DOMINGUEZ\", \"DONAHUE\", \"DONALD\", \"DONALDSON\", \"DONG\", \"DONNA\", \"DONNELLY\", \"DONOHUE\", \"DONOVAN\", \"DOOLEY\", \"DORAN\", \"DORIS\", \"DOROTHY\", \"DORSEY\", \"DOSS\", \"DOTSON\", \"DOTY\", \"DOUGHERTY\", \"DOUGLAS\", \"DOUGLASS\", \"DOVE\", \"DOW\", \"DOWD\", \"DOWDY\", \"DOWELL\", \"DOWLING\", \"DOWNEY\", \"DOWNING\", \"DOWNS\", \"DOYLE\", \"DOZIER\", \"DRAKE\", \"DRAPER\", \"DREW\", \"DRISCOLL\", \"DRIVER\", \"DRUMMOND\", \"DUARTE\", \"DUBOIS\", \"DUBOSE\", \"DUCKWORTH\", \"DUDLEY\", \"DUENAS\", \"DUFF\", \"DUFFY\", \"DUGAN\", \"DUGGAN\", \"DUKE\", \"DUKES\", \"DUMAS\", \"DUNBAR\", \"DUNCAN\", \"DUNHAM\", \"DUNLAP\", \"DUNN\", \"DUONG\", \"DUPREE\", \"DURAN\", \"DURANT\", \"DURBIN\", \"DURHAM\", \"DUTTON\", \"DUVALL\", \"DWYER\", \"DYE\", \"DYER\", \"DYKES\", \"DYLAN\", \"DYSON\", \"EARL\", \"EARLY\", \"EASLEY\", \"EASON\", \"EAST\", \"EASTER\", \"EASTMAN\", \"EATON\", \"EBERT\", \"ECHOLS\", \"ECKERT\", \"EDDY\", \"EDMONDS\", \"EDMONDSON\", \"EDWARD\", \"EDWARDS\", \"EGAN\", \"ELAM\", \"ELDER\", \"ELDRIDGE\", \"ELIAS\", \"ELIJAH\", \"ELIZABETH\", \"ELIZONDO\", \"ELKINS\", \"ELLIOTT\", \"ELLIS\", \"ELLISON\", \"ELLSWORTH\", \"ELMORE\", \"ELY\", \"EMERSON\", \"EMERY\", \"EMILY\", \"EMMA\", \"EMMONS\", \"ENGEL\", \"ENGLAND\", \"ENGLE\", \"ENGLISH\", \"ENNIS\", \"ENRIQUEZ\", \"EPPERSON\", \"EPPS\", \"EPSTEIN\", \"ERIC\", \"ERICKSON\", \"ERNST\", \"ERVIN\", \"ERWIN\", \"ESCALANTE\", \"ESCAMILLA\", \"ESCOBAR\", \"ESCOBEDO\", \"ESPARZA\", \"ESPINAL\", \"ESPINO\", \"ESPINOSA\", \"ESPINOZA\", \"ESPOSITO\", \"ESQUIVEL\", \"ESTEP\", \"ESTES\", \"ESTRADA\", \"ESTRELLA\", \"ETHAN\", \"EUBANKS\", \"EVANS\", \"EVELYN\", \"EVERETT\", \"EWING\", \"FABIAN\", \"FAGAN\", \"FAIR\", \"FAIRCHILD\", \"FAJARDO\", \"FALCON\", \"FALK\", \"FALLON\", \"FARIAS\", \"FARLEY\", \"FARMER\", \"FARNSWORTH\", \"FARR\", \"FARRAR\", \"FARRELL\", \"FARRIS\", \"FAULKNER\", \"FAUST\", \"FAY\", \"FELDER\", \"FELDMAN\", \"FELICIANO\", \"FELIX\", \"FELTON\", \"FENTON\", \"FERGUSON\", \"FERNANDES\", \"FERNANDEZ\", \"FERRARA\", \"FERRARO\", \"FERREIRA\", \"FERRELL\", \"FERRER\", \"FERRIS\", \"FIELD\", \"FIELDS\", \"FIERRO\", \"FIGUEROA\", \"FINCH\", \"FINK\", \"FINLEY\", \"FINN\", \"FINNEY\", \"FISCHER\", \"FISH\", \"FISHER\", \"FITCH\", \"FITZGERALD\", \"FITZPATRICK\", \"FLAHERTY\", \"FLANAGAN\", \"FLEMING\", \"FLETCHER\", \"FLINT\", \"FLOOD\", \"FLORES\", \"FLOWERS\", \"FLOYD\", \"FLYNN\", \"FOLEY\", \"FONG\", \"FONSECA\", \"FONTENOT\", \"FOOTE\", \"FORBES\", \"FORD\", \"FOREMAN\", \"FORREST\", \"FORRESTER\", \"FORTE\", \"FOSS\", \"FOSTER\", \"FOUNTAIN\", \"FOURNIER\", \"FOUST\", \"FOWLER\", \"FOX\", \"FOY\", \"FRANCES\", \"FRANCIS\", \"FRANCISCO\", \"FRANCO\", \"FRANCOIS\", \"FRANK\", \"FRANKLIN\", \"FRANKS\", \"FRANTZ\", \"FRASER\", \"FRAZIER\", \"FREDERICK\", \"FREEMAN\", \"FRENCH\", \"FREY\", \"FRIAS\", \"FRIEDMAN\", \"FRIEND\", \"FRITZ\", \"FROST\", \"FRY\", \"FRYE\", \"FUCHS\", \"FUENTES\", \"FULLER\", \"FULTON\", \"FUNK\", \"GABRIEL\", \"GAFFNEY\", \"GAGE\", \"GAGNON\", \"GAINES\", \"GALE\", \"GALINDO\", \"GALLAGHER\", \"GALLARDO\", \"GALLEGOS\", \"GALLO\", \"GALLOWAY\", \"GALVAN\", \"GALVEZ\", \"GAMBLE\", \"GAMBOA\", \"GAMEZ\", \"GANN\", \"GANNON\", \"GANT\", \"GAO\", \"GARAY\", \"GARBER\", \"GARCIA\", \"GARDNER\", \"GARIBAY\", \"GARLAND\", \"GARNER\", \"GARRETT\", \"GARRISON\", \"GARVIN\", \"GARY\", \"GARZA\", \"GASTON\", \"GATES\", \"GAUTHIER\", \"GAVIN\", \"GAY\", \"GAYTAN\", \"GEARY\", \"GEE\", \"GEIGER\", \"GENTILE\", \"GENTRY\", \"GEORGE\", \"GERALD\", \"GERBER\", \"GERMAN\", \"GIBBONS\", \"GIBBS\", \"GIBSON\", \"GIFFORD\", \"GIL\", \"GILBERT\", \"GILCHRIST\", \"GILES\", \"GILL\", \"GILLESPIE\", \"GILLETTE\", \"GILLIAM\", \"GILLILAND\", \"GILLIS\", \"GILMORE\", \"GIORDANO\", \"GIPSON\", \"GIRARD\", \"GIRON\", \"GIVENS\", \"GLASS\", \"GLEASON\", \"GLENN\", \"GLORIA\", \"GLOVER\", \"GODDARD\", \"GODFREY\", \"GODINEZ\", \"GODWIN\", \"GOETZ\", \"GOFF\", \"GOINS\", \"GOLD\", \"GOLDBERG\", \"GOLDEN\", \"GOLDMAN\", \"GOLDSMITH\", \"GOLDSTEIN\", \"GOMES\", \"GOMEZ\", \"GONZALES\", \"GONZALEZ\", \"GOOD\", \"GOODE\", \"GOODMAN\", \"GOODRICH\", \"GOODSON\", \"GOODWIN\", \"GORDON\", \"GORE\", \"GORMAN\", \"GOSS\", \"GOULD\", \"GRABER\", \"GRACE\", \"GRADY\", \"GRAF\", \"GRAFF\", \"GRAHAM\", \"GRANADOS\", \"GRANGER\", \"GRANT\", \"GRAVES\", \"GRAY\", \"GRAYSON\", \"GRECO\", \"GREEN\", \"GREENBERG\", \"GREENE\", \"GREENWOOD\", \"GREER\", \"GREGG\", \"GREGORY\", \"GREY\", \"GRIER\", \"GRIFFIN\", \"GRIFFITH\", \"GRIFFITHS\", \"GRIGGS\", \"GRIMES\", \"GRIMM\", \"GROSS\", \"GROSSMAN\", \"GROVE\", \"GROVER\", \"GROVES\", \"GRUBB\", \"GRUBBS\", \"GRUBER\", \"GUAJARDO\", \"GUARDADO\", \"GUERRA\", \"GUERRERO\", \"GUEVARA\", \"GUIDRY\", \"GUILLEN\", \"GUILLORY\", \"GUINN\", \"GUNDERSON\", \"GUNN\", \"GUNTER\", \"GUO\", \"GUPTA\", \"GUSTAFSON\", \"GUTHRIE\", \"GUTIERREZ\", \"GUY\", \"GUZMAN\", \"HA\", \"HAAS\", \"HACKER\", \"HACKETT\", \"HADLEY\", \"HAGAN\", \"HAGEN\", \"HAGER\", \"HAHN\", \"HAIL\", \"HAINES\", \"HAIRSTON\", \"HALE\", \"HALEY\", \"HALL\", \"HAM\", \"HAMBY\", \"HAMILTON\", \"HAMLIN\", \"HAMM\", \"HAMMER\", \"HAMMOND\", \"HAMMONDS\", \"HAMPTON\", \"HAMRICK\", \"HAN\", \"HANCOCK\", \"HAND\", \"HANDY\", \"HANEY\", \"HANKINS\", \"HANKS\", \"HANLEY\", \"HANNA\", \"HANNAH\", \"HANSEN\", \"HANSON\", \"HARDEN\", \"HARDIN\", \"HARDING\", \"HARDY\", \"HARE\", \"HARGROVE\", \"HARLEY\", \"HARMAN\", \"HARMON\", \"HARMS\", \"HAROLD\", \"HARP\", \"HARPER\", \"HARRELL\", \"HARRINGTON\", \"HARRIS\", \"HARRISON\", \"HART\", \"HARTLEY\", \"HARTMAN\", \"HARVEY\", \"HASKINS\", \"HASSAN\", \"HASTINGS\", \"HATCH\", \"HATCHER\", \"HATFIELD\", \"HATHAWAY\", \"HATTON\", \"HAUSER\", \"HAWK\", \"HAWKINS\", \"HAWLEY\", \"HAWTHORNE\", \"HAY\", \"HAYDEN\", \"HAYES\", \"HAYNES\", \"HAYS\", \"HAYWARD\", \"HAYWOOD\", \"HE\", \"HEAD\", \"HEALY\", \"HEARD\", \"HEARN\", \"HEATH\", \"HEATHER\", \"HEATON\", \"HEBERT\", \"HECK\", \"HEDRICK\", \"HEIM\", \"HEIN\", \"HELEN\", \"HELLER\", \"HELMS\", \"HELTON\", \"HEMPHILL\", \"HENDERSON\", \"HENDRICKS\", \"HENDRICKSON\", \"HENDRIX\", \"HENLEY\", \"HENNING\", \"HENRIQUEZ\", \"HENRY\", \"HENSLEY\", \"HENSON\", \"HER\", \"HERBERT\", \"HEREDIA\", \"HERMAN\", \"HERNANDEZ\", \"HERNDON\", \"HERR\", \"HERRERA\", \"HERRICK\", \"HERRING\", \"HERRINGTON\", \"HERRMANN\", \"HERRON\", \"HERSHBERGER\", \"HESS\", \"HESTER\", \"HEWITT\", \"HICKEY\", \"HICKMAN\", \"HICKS\", \"HIDALGO\", \"HIGGINBOTHAM\", \"HIGGINS\", \"HIGH\", \"HIGHTOWER\", \"HILL\", \"HILLIARD\", \"HILLMAN\", \"HILLS\", \"HILTON\", \"HINDS\", \"HINES\", \"HINKLE\", \"HINOJOSA\", \"HINSON\", \"HINTON\", \"HIRSCH\", \"HITCHCOCK\", \"HO\", \"HOANG\", \"HOBBS\", \"HOBSON\", \"HODGE\", \"HODGES\", \"HOFF\", \"HOFFMAN\", \"HOFFMANN\", \"HOGAN\", \"HOGUE\", \"HOLBROOK\", \"HOLCOMB\", \"HOLDEN\", \"HOLDER\", \"HOLGUIN\", \"HOLLAND\", \"HOLLEY\", \"HOLLIDAY\", \"HOLLINGSWORTH\", \"HOLLIS\", \"HOLLOWAY\", \"HOLM\", \"HOLMAN\", \"HOLMES\", \"HOLT\", \"HONEYCUTT\", \"HONG\", \"HOOD\", \"HOOK\", \"HOOKER\", \"HOOKS\", \"HOOPER\", \"HOOVER\", \"HOPE\", \"HOPKINS\", \"HOPPER\", \"HOPSON\", \"HORN\", \"HORNE\", \"HORNER\", \"HORTON\", \"HORVATH\", \"HOSKINS\", \"HOSTETLER\", \"HOUCK\", \"HOUGH\", \"HOUSE\", \"HOUSER\", \"HOUSTON\", \"HOWARD\", \"HOWE\", \"HOWELL\", \"HOYT\", \"HSU\", \"HU\", \"HUANG\", \"HUBBARD\", \"HUBER\", \"HUDDLESTON\", \"HUDSON\", \"HUERTA\", \"HUFF\", \"HUFFMAN\", \"HUGGINS\", \"HUGHES\", \"HULL\", \"HUMMEL\", \"HUMPHREY\", \"HUMPHREYS\", \"HUMPHRIES\", \"HUNT\", \"HUNTER\", \"HUNTLEY\", \"HURD\", \"HURLEY\", \"HURST\", \"HURT\", \"HURTADO\", \"HUSSAIN\", \"HUSTON\", \"HUTCHINS\", \"HUTCHINSON\", \"HUTCHISON\", \"HUTSON\", \"HUTTON\", \"HUYNH\", \"HWANG\", \"HYATT\", \"HYDE\", \"IBARRA\", \"IBRAHIM\", \"INGRAM\", \"INMAN\", \"IRELAND\", \"IRIZARRY\", \"IRVIN\", \"IRVING\", \"IRWIN\", \"ISAAC\", \"ISAACS\", \"ISABELLA\", \"IVERSON\", \"IVEY\", \"IVY\", \"JACK\", \"JACKSON\", \"JACOB\", \"JACOBS\", \"JACOBSEN\", \"JACOBSON\", \"JACQUELINE\", \"JACQUES\", \"JAEGER\", \"JAIME\", \"JAIMES\", \"JAMES\", \"JAMESON\", \"JAMISON\", \"JANET\", \"JANICE\", \"JANSEN\", \"JARAMILLO\", \"JARRELL\", \"JARRETT\", \"JARVIS\", \"JASON\", \"JASSO\", \"JAUREGUI\", \"JEAN\", \"JEFFERS\", \"JEFFERSON\", \"JEFFREY\", \"JEFFRIES\", \"JENKINS\", \"JENNIFER\", \"JENNINGS\", \"JENSEN\", \"JEREMY\", \"JERNIGAN\", \"JERRY\", \"JESSE\", \"JESSICA\", \"JETER\", \"JETT\", \"JEWELL\", \"JIANG\", \"JIMENEZ\", \"JOAN\", \"JOE\", \"JOHN\", \"JOHNS\", \"JOHNSON\", \"JOHNSTON\", \"JOINER\", \"JOLLY\", \"JONATHAN\", \"JONES\", \"JORDAN\", \"JORGENSEN\", \"JOSE\", \"JOSEPH\", \"JOSHUA\", \"JOY\", \"JOYCE\", \"JOYNER\", \"JUAN\", \"JUAREZ\", \"JUDD\", \"JUDITH\", \"JUDY\", \"JULIA\", \"JULIAN\", \"JULIE\", \"JUNG\", \"JUSTICE\", \"JUSTIN\", \"KAHN\", \"KAISER\", \"KAMINSKI\", \"KANE\", \"KANG\", \"KAPLAN\", \"KAREN\", \"KATHERINE\", \"KATHLEEN\", \"KATHRYN\", \"KATZ\", \"KAUFFMAN\", \"KAUFMAN\", \"KAUR\", \"KAY\", \"KAYLA\", \"KEARNEY\", \"KEARNS\", \"KEATING\", \"KEEN\", \"KEENAN\", \"KEENE\", \"KEENER\", \"KEITH\", \"KELLER\", \"KELLEY\", \"KELLOGG\", \"KELLY\", \"KELSEY\", \"KEMP\", \"KENDALL\", \"KENDRICK\", \"KENNEDY\", \"KENNETH\", \"KENNEY\", \"KENNY\", \"KENT\", \"KENYON\", \"KERN\", \"KERNS\", \"KERR\", \"KESSLER\", \"KEVIN\", \"KEY\", \"KEYES\", \"KEYS\", \"KHAN\", \"KIDD\", \"KILGORE\", \"KILLIAN\", \"KILPATRICK\", \"KIM\", \"KIMBALL\", \"KIMBERLY\", \"KIMBLE\", \"KIMBROUGH\", \"KINCAID\", \"KING\", \"KINNEY\", \"KINSEY\", \"KIRBY\", \"KIRK\", \"KIRKLAND\", \"KIRKPATRICK\", \"KISER\", \"KITCHEN\", \"KLEIN\", \"KLINE\", \"KNAPP\", \"KNIGHT\", \"KNOTT\", \"KNOWLES\", \"KNOX\", \"KNUTSON\", \"KO\", \"KOCH\", \"KOEHLER\", \"KOENIG\", \"KOHLER\", \"KONG\", \"KOWALSKI\", \"KRAFT\", \"KRAMER\", \"KRAUS\", \"KRAUSE\", \"KRUEGER\", \"KRUGER\", \"KRUSE\", \"KUHN\", \"KUMAR\", \"KURTZ\", \"KWON\", \"KYLE\", \"LACEY\", \"LACKEY\", \"LACY\", \"LADD\", \"LAI\", \"LAIRD\", \"LAKE\", \"LAM\", \"LAMB\", \"LAMBERT\", \"LANCASTER\", \"LANCE\", \"LAND\", \"LANDERS\", \"LANDIS\", \"LANDRUM\", \"LANDRY\", \"LANE\", \"LANG\", \"LANGE\", \"LANGFORD\", \"LANGLEY\", \"LANGSTON\", \"LANIER\", \"LANTZ\", \"LARA\", \"LARKIN\", \"LARRY\", \"LARSEN\", \"LARSON\", \"LASSITER\", \"LATHAM\", \"LAU\", \"LAUGHLIN\", \"LAURA\", \"LAUREN\", \"LAW\", \"LAWLER\", \"LAWRENCE\", \"LAWS\", \"LAWSON\", \"LAWTON\", \"LAY\", \"LAYNE\", \"LAYTON\", \"LAZO\", \"LE\", \"LEACH\", \"LEAL\", \"LEARY\", \"LEAVITT\", \"LEBLANC\", \"LEDBETTER\", \"LEDESMA\", \"LEDFORD\", \"LEE\", \"LEGGETT\", \"LEHMAN\", \"LEMON\", \"LEMONS\", \"LEMUS\", \"LENTZ\", \"LEON\", \"LEONARD\", \"LEONE\", \"LERMA\", \"LESLIE\", \"LESTER\", \"LEUNG\", \"LEVIN\", \"LEVINE\", \"LEVY\", \"LEWIS\", \"LEYVA\", \"LI\", \"LIAM\", \"LIANG\", \"LIGHT\", \"LILLY\", \"LIM\", \"LIMA\", \"LIMON\", \"LIN\", \"LINARES\", \"LINCOLN\", \"LIND\", \"LINDA\", \"LINDER\", \"LINDSAY\", \"LINDSEY\", \"LINK\", \"LINN\", \"LINTON\", \"LIPSCOMB\", \"LIRA\", \"LISA\", \"LITTLE\", \"LITTLEJOHN\", \"LIU\", \"LIVINGSTON\", \"LLOYD\", \"LO\", \"LOCKE\", \"LOCKETT\", \"LOCKHART\", \"LOCKLEAR\", \"LOCKWOOD\", \"LOERA\", \"LOFTON\", \"LOGAN\", \"LOMBARDI\", \"LOMBARDO\", \"LOMELI\", \"LONDON\", \"LONG\", \"LONGO\", \"LONGORIA\", \"LOOMIS\", \"LOONEY\", \"LOPES\", \"LOPEZ\", \"LORD\", \"LORENZ\", \"LORENZO\", \"LORI\", \"LOTT\", \"LOUIS\", \"LOVE\", \"LOVELACE\", \"LOVELL\", \"LOVETT\", \"LOW\", \"LOWE\", \"LOWERY\", \"LOWRY\", \"LOYA\", \"LOYD\", \"LOZANO\", \"LU\", \"LUCAS\", \"LUCERO\", \"LUDWIG\", \"LUGO\", \"LUJAN\", \"LUKE\", \"LUNA\", \"LUND\", \"LUNDY\", \"LUNSFORD\", \"LUONG\", \"LUSK\", \"LUTHER\", \"LUTZ\", \"LUU\", \"LY\", \"LYLE\", \"LYLES\", \"LYNCH\", \"LYNN\", \"LYON\", \"LYONS\", \"LYTLE\", \"MA\", \"MABRY\", \"MACDONALD\", \"MACE\", \"MACHADO\", \"MACIAS\", \"MACK\", \"MACKENZIE\", \"MACKEY\", \"MADDEN\", \"MADDOX\", \"MADISON\", \"MADRID\", \"MADRIGAL\", \"MADSEN\", \"MAGANA\", \"MAGEE\", \"MAGUIRE\", \"MAHAN\", \"MAHER\", \"MAHONEY\", \"MAI\", \"MAIER\", \"MAIN\", \"MAJOR\", \"MALDONADO\", \"MALIK\", \"MALLORY\", \"MALLOY\", \"MALONE\", \"MALONEY\", \"MANLEY\", \"MANN\", \"MANNING\", \"MANSFIELD\", \"MANUEL\", \"MANZO\", \"MARCUM\", \"MARCUS\", \"MARES\", \"MARGARET\", \"MARIA\", \"MARILYN\", \"MARIN\", \"MARINO\", \"MARION\", \"MARK\", \"MARKHAM\", \"MARKS\", \"MARLOW\", \"MARQUEZ\", \"MARRERO\", \"MARROQUIN\", \"MARSH\", \"MARSHALL\", \"MARTHA\", \"MARTIN\", \"MARTINEZ\", \"MARTINO\", \"MARY\", \"MASON\", \"MASSEY\", \"MAST\", \"MASTERS\", \"MASTERSON\", \"MATA\", \"MATEO\", \"MATHEW\", \"MATHEWS\", \"MATHIS\", \"MATLOCK\", \"MATOS\", \"MATSON\", \"MATTHEW\", \"MATTHEWS\", \"MATTINGLY\", \"MATTSON\", \"MAURER\", \"MAXWELL\", \"MAY\", \"MAYBERRY\", \"MAYER\", \"MAYES\", \"MAYFIELD\", \"MAYNARD\", \"MAYO\", \"MAYS\", \"MCAFEE\", \"MCALLISTER\", \"MCARTHUR\", \"MCBRIDE\", \"MCCABE\", \"MCCAIN\", \"MCCALL\", \"MCCANN\", \"MCCARTHY\", \"MCCARTNEY\", \"MCCARTY\", \"MCCAULEY\", \"MCCLAIN\", \"MCCLELLAN\", \"MCCLELLAND\", \"MCCLENDON\", \"MCCLOUD\", \"MCCLURE\", \"MCCOLLUM\", \"MCCONNELL\", \"MCCORD\", \"MCCORMACK\", \"MCCORMICK\", \"MCCOY\", \"MCCRACKEN\", \"MCCRARY\", \"MCCRAY\", \"MCCULLOUGH\", \"MCCURDY\", \"MCDANIEL\", \"MCDERMOTT\", \"MCDONALD\", \"MCDONNELL\", \"MCDONOUGH\", \"MCDOWELL\", \"MCELROY\", \"MCFADDEN\", \"MCFARLAND\", \"MCGEE\", \"MCGHEE\", \"MCGILL\", \"MCGINNIS\", \"MCGOVERN\", \"MCGOWAN\", \"MCGRATH\", \"MCGRAW\", \"MCGREGOR\", \"MCGUIRE\", \"MCHUGH\", \"MCINTOSH\", \"MCINTYRE\", \"MCKAY\", \"MCKEE\", \"MCKENNA\", \"MCKENZIE\", \"MCKINLEY\", \"MCKINNEY\", \"MCKINNON\", \"MCKNIGHT\", \"MCLAIN\", \"MCLAUGHLIN\", \"MCLEAN\", \"MCLEOD\", \"MCMAHAN\", \"MCMAHON\", \"MCMANUS\", \"MCMILLAN\", \"MCMULLEN\", \"MCNAIR\", \"MCNALLY\", \"MCNAMARA\", \"MCNEAL\", \"MCNEIL\", \"MCNEILL\", \"MCNULTY\", \"MCPHERSON\", \"MCQUEEN\", \"MCRAE\", \"MCWILLIAMS\", \"MEAD\", \"MEADE\", \"MEADOWS\", \"MEANS\", \"MEDEIROS\", \"MEDINA\", \"MEDLEY\", \"MEDRANO\", \"MEEHAN\", \"MEEK\", \"MEEKS\", \"MEGAN\", \"MEHTA\", \"MEIER\", \"MEJIA\", \"MELENDEZ\", \"MELISSA\", \"MELTON\", \"MELVIN\", \"MENA\", \"MENDEZ\", \"MENDOZA\", \"MERCADO\", \"MERCER\", \"MERCHANT\", \"MEREDITH\", \"MERRILL\", \"MERRITT\", \"MESA\", \"MESSER\", \"MESSINA\", \"METCALF\", \"METZ\", \"METZGER\", \"MEYER\", \"MEYERS\", \"MEZA\", \"MICHAEL\", \"MICHAELS\", \"MICHAUD\", \"MICHEL\", \"MICHELLE\", \"MIDDLETON\", \"MILES\", \"MILLARD\", \"MILLER\", \"MILLIGAN\", \"MILLS\", \"MILNER\", \"MILTON\", \"MIMS\", \"MINDY\", \"MINER\", \"MINOR\", \"MINTON\", \"MIRANDA\", \"MIRELES\", \"MITCHELL\", \"MIXON\", \"MOBLEY\", \"MOCK\", \"MOELLER\", \"MOHAMED\", \"MOHAMMED\", \"MOHR\", \"MOJICA\", \"MOLINA\", \"MONAHAN\", \"MONDRAGON\", \"MONK\", \"MONROE\", \"MONROY\", \"MONTALVO\", \"MONTANEZ\", \"MONTANO\", \"MONTERO\", \"MONTES\", \"MONTGOMERY\", \"MONTIEL\", \"MONTOYA\", \"MOODY\", \"MOON\", \"MOONEY\", \"MOORE\", \"MORA\", \"MORALES\", \"MORAN\", \"MORELAND\", \"MORENO\", \"MORGAN\", \"MORIN\", \"MORRIS\", \"MORRISON\", \"MORRISSEY\", \"MORROW\", \"MORSE\", \"MORTON\", \"MOSELEY\", \"MOSER\", \"MOSES\", \"MOSHER\", \"MOSLEY\", \"MOSS\", \"MOTA\", \"MOTT\", \"MOUA\", \"MOULTON\", \"MOYA\", \"MOYER\", \"MUELLER\", \"MUHAMMAD\", \"MULLEN\", \"MULLER\", \"MULLIGAN\", \"MULLINS\", \"MUNGUIA\", \"MUNIZ\", \"MUNOZ\", \"MUNSON\", \"MURDOCK\", \"MURILLO\", \"MURPHY\", \"MURRAY\", \"MUSE\", \"MYERS\", \"MYLES\", \"MYRICK\", \"NADEAU\", \"NAGEL\", \"NAGY\", \"NAJERA\", \"NANCE\", \"NANCY\", \"NAPIER\", \"NARANJO\", \"NASH\", \"NATALIE\", \"NATHAN\", \"NAVA\", \"NAVARRETE\", \"NAVARRO\", \"NAYLOR\", \"NEAL\", \"NEELY\", \"NEFF\", \"NEGRETE\", \"NEGRON\", \"NELSON\", \"NESBITT\", \"NEUMANN\", \"NEVAREZ\", \"NEWBERRY\", \"NEWCOMB\", \"NEWELL\", \"NEWMAN\", \"NEWSOME\", \"NEWTON\", \"NG\", \"NGO\", \"NGUYEN\", \"NICHOLAS\", \"NICHOLS\", \"NICHOLSON\", \"NICKERSON\", \"NICOLE\", \"NIELSEN\", \"NIETO\", \"NIEVES\", \"NIX\", \"NIXON\", \"NOAH\", \"NOBLE\", \"NOBLES\", \"NOEL\", \"NOLAN\", \"NOONAN\", \"NORIEGA\", \"NORMAN\", \"NORRIS\", \"NORTH\", \"NORTON\", \"NORWOOD\", \"NOVAK\", \"NOWAK\", \"NUGENT\", \"NUNES\", \"NUNEZ\", \"NUNN\", \"NYE\", \"OAKES\", \"OAKLEY\", \"OATES\", \"OBRIEN\", \"OCAMPO\", \"OCHOA\", \"OCONNELL\", \"OCONNOR\", \"ODELL\", \"ODOM\", \"ODONNELL\", \"OGDEN\", \"OGLE\", \"OGLESBY\", \"OH\", \"OHARA\", \"OJEDA\", \"OKEEFE\", \"OLDHAM\", \"OLEARY\", \"OLIVA\", \"OLIVARES\", \"OLIVAS\", \"OLIVEIRA\", \"OLIVER\", \"OLIVIA\", \"OLSEN\", \"OLSON\", \"OLVERA\", \"OMALLEY\", \"ONEAL\", \"ONEIL\", \"ONEILL\", \"ONTIVEROS\", \"ORDONEZ\", \"OREILLY\", \"ORELLANA\", \"ORLANDO\", \"ORNELAS\", \"OROURKE\", \"OROZCO\", \"ORR\", \"ORTEGA\", \"ORTIZ\", \"OSBORN\", \"OSBORNE\", \"OSORIO\", \"OSWALD\", \"OTERO\", \"OTT\", \"OTTO\", \"OUELLETTE\", \"OVERSTREET\", \"OVERTON\", \"OWEN\", \"OWENS\", \"PACE\", \"PACHECO\", \"PACK\", \"PADGETT\", \"PADILLA\", \"PADRON\", \"PAGAN\", \"PAGE\", \"PAIGE\", \"PAINTER\", \"PALACIOS\", \"PALMA\", \"PALMER\", \"PAMELA\", \"PAN\", \"PANTOJA\", \"PAPPAS\", \"PAREDES\", \"PARHAM\", \"PARIS\", \"PARISH\", \"PARK\", \"PARKER\", \"PARKS\", \"PARNELL\", \"PARR\", \"PARRA\", \"PARRIS\", \"PARRISH\", \"PARROTT\", \"PARSON\", \"PARSONS\", \"PASCUAL\", \"PATE\", \"PATEL\", \"PATINO\", \"PATRICIA\", \"PATRICK\", \"PATTERSON\", \"PATTON\", \"PAUL\", \"PAULSON\", \"PAYNE\", \"PAYTON\", \"PAZ\", \"PEACOCK\", \"PEARCE\", \"PEARSON\", \"PEASE\", \"PECK\", \"PEDERSEN\", \"PEDERSON\", \"PEDRAZA\", \"PELLETIER\", \"PENA\", \"PENCE\", \"PENDLETON\", \"PENN\", \"PENNINGTON\", \"PEOPLES\", \"PERALES\", \"PERALTA\", \"PERDUE\", \"PEREIRA\", \"PEREZ\", \"PERKINS\", \"PERRY\", \"PERSON\", \"PETER\", \"PETERS\", \"PETERSEN\", \"PETERSON\", \"PETTIT\", \"PETTY\", \"PFEIFFER\", \"PHAM\", \"PHAN\", \"PHELPS\", \"PHILLIPS\", \"PHIPPS\", \"PICKENS\", \"PICKERING\", \"PICKETT\", \"PIERCE\", \"PIERRE\", \"PIERSON\", \"PIKE\", \"PIMENTEL\", \"PINA\", \"PINEDA\", \"PINTO\", \"PIPER\", \"PITTMAN\", \"PITTS\", \"PLATT\", \"PLUMMER\", \"POE\", \"POLANCO\", \"POLK\", \"POLLARD\", \"POLLOCK\", \"PONCE\", \"POOL\", \"POOLE\", \"POPE\", \"PORRAS\", \"PORTER\", \"PORTILLO\", \"POSEY\", \"POST\", \"POTTER\", \"POTTS\", \"POWELL\", \"POWER\", \"POWERS\", \"PRADO\", \"PRATER\", \"PRATHER\", \"PRATT\", \"PRECIADO\", \"PRESCOTT\", \"PRESLEY\", \"PRESSLEY\", \"PRESTON\", \"PRICE\", \"PRIEST\", \"PRIETO\", \"PRINCE\", \"PRINGLE\", \"PRITCHARD\", \"PRITCHETT\", \"PROCTOR\", \"PRUETT\", \"PRUITT\", \"PRYOR\", \"PUCKETT\", \"PUENTE\", \"PUGH\", \"PULIDO\", \"PURCELL\", \"PURDY\", \"PURVIS\", \"PUTNAM\", \"PYLE\", \"QUALLS\", \"QUEEN\", \"QUEZADA\", \"QUICK\", \"QUIGLEY\", \"QUINN\", \"QUINONES\", \"QUINTANA\", \"QUINTANILLA\", \"QUINTERO\", \"QUIROZ\", \"RACHEL\", \"RADER\", \"RADFORD\", \"RAGLAND\", \"RAGSDALE\", \"RAHMAN\", \"RAINES\", \"RAINEY\", \"RALSTON\", \"RAMEY\", \"RAMIREZ\", \"RAMOS\", \"RAMSEY\", \"RANDALL\", \"RANDLE\", \"RANDOLPH\", \"RANDY\", \"RANGEL\", \"RANKIN\", \"RANSOM\", \"RAPP\", \"RASMUSSEN\", \"RATLIFF\", \"RAY\", \"RAYMOND\", \"RAZO\", \"REA\", \"READ\", \"REAGAN\", \"REARDON\", \"REAVES\", \"REBECCA\", \"RECTOR\", \"REDD\", \"REDDING\", \"REDDY\", \"REDMAN\", \"REDMOND\", \"REECE\", \"REED\", \"REEDER\", \"REES\", \"REESE\", \"REEVES\", \"REGALADO\", \"REGAN\", \"REICH\", \"REID\", \"REILLY\", \"REINHARDT\", \"REIS\", \"RENDON\", \"RENNER\", \"RENTERIA\", \"RESENDIZ\", \"REYES\", \"REYNA\", \"REYNOLDS\", \"REYNOSO\", \"RHOADES\", \"RHOADS\", \"RHODES\", \"RICE\", \"RICH\", \"RICHARD\", \"RICHARDS\", \"RICHARDSON\", \"RICHEY\", \"RICHMOND\", \"RICHTER\", \"RICKETTS\", \"RICKS\", \"RICO\", \"RIDDLE\", \"RIDER\", \"RIGGINS\", \"RIGGS\", \"RILEY\", \"RINCON\", \"RINEHART\", \"RING\", \"RIOS\", \"RITCHIE\", \"RITTER\", \"RIVAS\", \"RIVERA\", \"RIVERS\", \"RIZZO\", \"ROACH\", \"ROARK\", \"ROBB\", \"ROBBINS\", \"ROBERSON\", \"ROBERT\", \"ROBERTS\", \"ROBERTSON\", \"ROBINSON\", \"ROBISON\", \"ROBLEDO\", \"ROBLES\", \"ROCHA\", \"ROCHE\", \"ROCK\", \"ROCKWELL\", \"RODGERS\", \"RODRIGUES\", \"RODRIGUEZ\", \"RODRIQUEZ\", \"ROE\", \"ROGER\", \"ROGERS\", \"ROJAS\", \"ROLAND\", \"ROLDAN\", \"ROLLINS\", \"ROMAN\", \"ROMANO\", \"ROMERO\", \"ROMO\", \"RONALD\", \"ROONEY\", \"ROOT\", \"ROPER\", \"ROQUE\", \"ROSA\", \"ROSADO\", \"ROSALES\", \"ROSARIO\", \"ROSAS\", \"ROSE\", \"ROSEN\", \"ROSENBERG\", \"ROSENTHAL\", \"ROSS\", \"ROSSI\", \"ROTH\", \"ROUSE\", \"ROWAN\", \"ROWE\", \"ROWELL\", \"ROWLAND\", \"ROWLEY\", \"ROY\", \"ROYAL\", \"RUBIN\", \"RUBIO\", \"RUCKER\", \"RUDD\", \"RUDOLPH\", \"RUFF\", \"RUFFIN\", \"RUIZ\", \"RUSH\", \"RUSHING\", \"RUSS\", \"RUSSELL\", \"RUSSO\", \"RUST\", \"RUTH\", \"RUTHERFORD\", \"RUTLEDGE\", \"RYAN\", \"RYDER\", \"SAAVEDRA\", \"SADLER\", \"SAENZ\", \"SALAS\", \"SALAZAR\", \"SALCEDO\", \"SALDANA\", \"SALDIVAR\", \"SALGADO\", \"SALINAS\", \"SALISBURY\", \"SALMON\", \"SALTER\", \"SALVADOR\", \"SAM\", \"SAMANTHA\", \"SAMPSON\", \"SAMS\", \"SAMUEL\", \"SAMUELS\", \"SANCHEZ\", \"SANDERS\", \"SANDERSON\", \"SANDOVAL\", \"SANDRA\", \"SANDS\", \"SANFORD\", \"SANTAMARIA\", \"SANTANA\", \"SANTIAGO\", \"SANTILLAN\", \"SANTOS\", \"SAPP\", \"SARA\", \"SARAH\", \"SARGENT\", \"SARMIENTO\", \"SATTERFIELD\", \"SAUCEDO\", \"SAUER\", \"SAUNDERS\", \"SAVAGE\", \"SAWYER\", \"SAYLOR\", \"SCALES\", \"SCARBOROUGH\", \"SCHAEFER\", \"SCHAEFFER\", \"SCHAFER\", \"SCHAFFER\", \"SCHELL\", \"SCHERER\", \"SCHILLING\", \"SCHMIDT\", \"SCHMITT\", \"SCHMITZ\", \"SCHNEIDER\", \"SCHOFIELD\", \"SCHRADER\", \"SCHREIBER\", \"SCHROEDER\", \"SCHUBERT\", \"SCHULER\", \"SCHULTE\", \"SCHULTZ\", \"SCHULZ\", \"SCHUMACHER\", \"SCHUSTER\", \"SCHWAB\", \"SCHWARTZ\", \"SCHWARZ\", \"SCOTT\", \"SCRUGGS\", \"SEALS\", \"SEAMAN\", \"SEAN\", \"SEARS\", \"SEAY\", \"SEBASTIAN\", \"SEGOVIA\", \"SEGURA\", \"SEITZ\", \"SELF\", \"SELLERS\", \"SEPULVEDA\", \"SERNA\", \"SERRANO\", \"SEWELL\", \"SEXTON\", \"SEYMOUR\", \"SHAFER\", \"SHAFFER\", \"SHAH\", \"SHANK\", \"SHANNON\", \"SHAPIRO\", \"SHARMA\", \"SHARON\", \"SHARP\", \"SHARPE\", \"SHAVER\", \"SHAW\", \"SHEA\", \"SHEARER\", \"SHEEHAN\", \"SHEETS\", \"SHEFFIELD\", \"SHELBY\", \"SHELDON\", \"SHELL\", \"SHELLEY\", \"SHELTON\", \"SHEN\", \"SHEPARD\", \"SHEPHERD\", \"SHEPPARD\", \"SHERIDAN\", \"SHERMAN\", \"SHERRILL\", \"SHERWOOD\", \"SHIELDS\", \"SHIN\", \"SHIPLEY\", \"SHIPMAN\", \"SHIRLEY\", \"SHOCKLEY\", \"SHOEMAKER\", \"SHOOK\", \"SHORT\", \"SHULTZ\", \"SIEGEL\", \"SIERRA\", \"SILVA\", \"SILVER\", \"SILVERMAN\", \"SIMMONS\", \"SIMMS\", \"SIMON\", \"SIMONS\", \"SIMPSON\", \"SIMS\", \"SINCLAIR\", \"SINGER\", \"SINGH\", \"SINGLETARY\", \"SINGLETON\", \"SISK\", \"SIZEMORE\", \"SKAGGS\", \"SKELTON\", \"SKINNER\", \"SLACK\", \"SLADE\", \"SLATER\", \"SLAUGHTER\", \"SLOAN\", \"SLONE\", \"SMALL\", \"SMALLS\", \"SMALLWOOD\", \"SMART\", \"SMILEY\", \"SMITH\", \"SNEED\", \"SNELL\", \"SNIDER\", \"SNODGRASS\", \"SNOW\", \"SNYDER\", \"SOLANO\", \"SOLIS\", \"SOLOMON\", \"SOLORIO\", \"SOLORZANO\", \"SONG\", \"SOPHIA\", \"SORENSEN\", \"SORENSON\", \"SORIA\", \"SORIANO\", \"SOSA\", \"SOTELO\", \"SOTO\", \"SOUSA\", \"SOUZA\", \"SPANGLER\", \"SPANN\", \"SPARKS\", \"SPAULDING\", \"SPEAR\", \"SPEARS\", \"SPENCE\", \"SPENCER\", \"SPICER\", \"SPIVEY\", \"SPRAGUE\", \"SPRINGER\", \"SPURLOCK\", \"SQUIRES\", \"STACK\", \"STACY\", \"STAFFORD\", \"STAHL\", \"STALEY\", \"STALLINGS\", \"STAMPER\", \"STANFORD\", \"STANLEY\", \"STANTON\", \"STAPLES\", \"STAPLETON\", \"STARK\", \"STARKEY\", \"STARKS\", \"STARNES\", \"STARR\", \"STATON\", \"STAUFFER\", \"STCLAIR\", \"STEARNS\", \"STEELE\", \"STEEN\", \"STEIN\", \"STEINBERG\", \"STEINER\", \"STEPHANIE\", \"STEPHEN\", \"STEPHENS\", \"STEPHENSON\", \"STERLING\", \"STERN\", \"STEVEN\", \"STEVENS\", \"STEVENSON\", \"STEWARD\", \"STEWART\", \"STILES\", \"STILL\", \"STINSON\", \"STJOHN\", \"STOCK\", \"STOCKTON\", \"STODDARD\", \"STOKES\", \"STOLL\", \"STOLTZFUS\", \"STONE\", \"STONER\", \"STOREY\", \"STORY\", \"STOUT\", \"STOVALL\", \"STOVER\", \"STRANGE\", \"STRATTON\", \"STRAUSS\", \"STREET\", \"STREETER\", \"STRICKLAND\", \"STRINGER\", \"STRONG\", \"STROUD\", \"STUART\", \"STUBBS\", \"STUMP\", \"SU\", \"SUAREZ\", \"SUGGS\", \"SULLIVAN\", \"SUMMERS\", \"SUMNER\", \"SUN\", \"SUSAN\", \"SUTHERLAND\", \"SUTTON\", \"SWAIN\", \"SWAN\", \"SWANN\", \"SWANSON\", \"SWARTZ\", \"SWEENEY\", \"SWEET\", \"SWENSON\", \"SWIFT\", \"SYKES\", \"SYLVESTER\", \"TABOR\", \"TACKETT\", \"TALBERT\", \"TALBOT\", \"TALLEY\", \"TAM\", \"TAMAYO\", \"TAN\", \"TANG\", \"TANNER\", \"TAPIA\", \"TATE\", \"TATUM\", \"TAVARES\", \"TAYLOR\", \"TEAGUE\", \"TEJADA\", \"TEJEDA\", \"TELLEZ\", \"TEMPLE\", \"TEMPLETON\", \"TERESA\", \"TERRELL\", \"TERRY\", \"THACKER\", \"THAO\", \"THARP\", \"THAYER\", \"THERESA\", \"THIBODEAUX\", \"THOMAS\", \"THOMASON\", \"THOMPSON\", \"THOMSON\", \"THORNE\", \"THORNTON\", \"THORPE\", \"THRASHER\", \"THURMAN\", \"THURSTON\", \"TIDWELL\", \"TIERNEY\", \"TIFFANY\", \"TILLEY\", \"TILLMAN\", \"TIMMONS\", \"TIMOTHY\", \"TINSLEY\", \"TIPTON\", \"TIRADO\", \"TITUS\", \"TOBIAS\", \"TOBIN\", \"TODD\", \"TOLBERT\", \"TOLEDO\", \"TOLLIVER\", \"TOMLINSON\", \"TOMPKINS\", \"TONEY\", \"TONG\", \"TORRES\", \"TORREZ\", \"TOTH\", \"TOVAR\", \"TOWNSEND\", \"TRACY\", \"TRAHAN\", \"TRAMMELL\", \"TRAN\", \"TRAVIS\", \"TRAYLOR\", \"TREJO\", \"TRENT\", \"TREVINO\", \"TRIMBLE\", \"TRINH\", \"TRINIDAD\", \"TRIPLETT\", \"TRIPP\", \"TROTTER\", \"TROUT\", \"TROYER\", \"TRUJILLO\", \"TRUONG\", \"TUBBS\", \"TUCKER\", \"TURNER\", \"TUTTLE\", \"TYLER\", \"TYSON\", \"ULLOA\", \"ULRICH\", \"UNDERWOOD\", \"UNGER\", \"UPTON\", \"URBAN\", \"URBINA\", \"URIBE\", \"VALADEZ\", \"VALDES\", \"VALDEZ\", \"VALDIVIA\", \"VALENCIA\", \"VALENTIN\", \"VALENTINE\", \"VALENZUELA\", \"VALERIO\", \"VALLE\", \"VALLEJO\", \"VALLES\", \"VANCE\", \"VANDYKE\", \"VANG\", \"VANHORN\", \"VANN\", \"VARELA\", \"VARGAS\", \"VARNER\", \"VASQUEZ\", \"VAUGHAN\", \"VAUGHN\", \"VAZQUEZ\", \"VEGA\", \"VELA\", \"VELASCO\", \"VELASQUEZ\", \"VELAZQUEZ\", \"VELEZ\", \"VENEGAS\", \"VENTURA\", \"VERA\", \"VERGARA\", \"VERNON\", \"VICK\", \"VICKERS\", \"VICTORIA\", \"VIDAL\", \"VIGIL\", \"VILLA\", \"VILLALOBOS\", \"VILLANUEVA\", \"VILLARREAL\", \"VILLASENOR\", \"VILLEGAS\", \"VINCENT\", \"VINSON\", \"VIRGINIA\", \"VITALE\", \"VO\", \"VOGEL\", \"VOGT\", \"VOSS\", \"VU\", \"WADDELL\", \"WADE\", \"WAGGONER\", \"WAGNER\", \"WAGONER\", \"WAHL\", \"WAITE\", \"WAITERS\", \"WAKEFIELD\", \"WALDEN\", \"WALDRON\", \"WALKER\", \"WALL\", \"WALLACE\", \"WALLER\", \"WALLS\", \"WALSH\", \"WALTER\", \"WALTERS\", \"WALTON\", \"WANG\", \"WARD\", \"WARE\", \"WARNER\", \"WARREN\", \"WASHBURN\", \"WASHINGTON\", \"WATERMAN\", \"WATERS\", \"WATKINS\", \"WATSON\", \"WATT\", \"WATTS\", \"WAY\", \"WAYNE\", \"WEATHERS\", \"WEAVER\", \"WEBB\", \"WEBBER\", \"WEBER\", \"WEBSTER\", \"WEEKS\", \"WEINER\", \"WEINSTEIN\", \"WEIR\", \"WEISS\", \"WELCH\", \"WELDON\", \"WELLER\", \"WELLS\", \"WELSH\", \"WENDT\", \"WERNER\", \"WESLEY\", \"WEST\", \"WESTBROOK\", \"WESTFALL\", \"WESTON\", \"WETZEL\", \"WHALEN\", \"WHALEY\", \"WHEATLEY\", \"WHEELER\", \"WHIPPLE\", \"WHITAKER\", \"WHITE\", \"WHITEHEAD\", \"WHITFIELD\", \"WHITING\", \"WHITLEY\", \"WHITLOCK\", \"WHITMAN\", \"WHITMORE\", \"WHITNEY\", \"WHITT\", \"WHITTAKER\", \"WHITTEN\", \"WHITTINGTON\", \"WIGGINS\", \"WILBURN\", \"WILCOX\", \"WILDER\", \"WILES\", \"WILEY\", \"WILHELM\", \"WILKERSON\", \"WILKES\", \"WILKINS\", \"WILKINSON\", \"WILL\", \"WILLARD\", \"WILLETT\", \"WILLEY\", \"WILLIAM\", \"WILLIAMS\", \"WILLIAMSON\", \"WILLIE\", \"WILLINGHAM\", \"WILLIS\", \"WILLOUGHBY\", \"WILLS\", \"WILSON\", \"WING\", \"WINKLER\", \"WINN\", \"WINSLOW\", \"WINSTON\", \"WINTER\", \"WINTERS\", \"WISE\", \"WISEMAN\", \"WISNIEWSKI\", \"WITHERSPOON\", \"WITT\", \"WOLF\", \"WOLFE\", \"WOLFF\", \"WOMACK\", \"WONG\", \"WOO\", \"WOOD\", \"WOODALL\", \"WOODARD\", \"WOODRUFF\", \"WOODS\", \"WOODSON\", \"WOODWARD\", \"WOODY\", \"WOOTEN\", \"WORKMAN\", \"WORLEY\", \"WORTHINGTON\", \"WRAY\", \"WRIGHT\", \"WU\", \"WYATT\", \"WYLIE\", \"WYNN\", \"XIONG\", \"XU\", \"YANCEY\", \"YANEZ\", \"YANG\", \"YARBROUGH\", \"YATES\", \"YAZZIE\", \"YBARRA\", \"YEAGER\", \"YEE\", \"YI\", \"YODER\", \"YOO\", \"YOON\", \"YORK\", \"YOST\", \"YOUNG\", \"YOUNGBLOOD\", \"YU\", \"ZACHARY\", \"ZAMBRANO\", \"ZAMORA\", \"ZAPATA\", \"ZARAGOZA\", \"ZARATE\", \"ZAVALA\", \"ZEIGLER\", \"ZELAYA\", \"ZEPEDA\", \"ZHANG\", \"ZHAO\", \"ZHENG\", \"ZHOU\", \"ZHU\", \"ZIEGLER\", \"ZIMMER\", \"ZIMMERMAN\", \"ZUNIGA\"]"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/PopularNames.swift",
+      "kind": "Array",
+      "offset": 57003,
+      "length": 522,
+      "value": "[\"AMERICAN\", \"AUTHORIZED\", \"BANK\", \"BUSINESS\", \"CLUB\", \"CODE\", \"CREDIT\", \"CUSTOMER\", \"CUSTOMIZED\", \"CVV\", \"DEBIT\", \"DINERS\", \"DISCOVER\", \"ELITE\", \"EXP\", \"EXPRESS\", \"INTERNATIONAL\", \"MASTERCARD\", \"MEMBER\", \"PULSE\", \"REWARDS\", \"SIGNATURE\", \"SINCE\", \"SUPPORT\", \"THRU\", \"VALID\", \"VISA\", \"WORLD\"]"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/PopularNames.swift",
+      "kind": "Array",
+      "offset": 57572,
+      "length": 44,
+      "value": "[\"CHASE O\", \"CASH O\"]"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 583,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "StringLiteral",
+      "offset": 743,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "StringLiteral",
+      "offset": 790,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "StringLiteral",
+      "offset": 834,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "StringLiteral",
+      "offset": 878,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "StringLiteral",
+      "offset": 922,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1060,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1065,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1132,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1137,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1206,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1211,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1288,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1293,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1359,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1364,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1430,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1435,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2868,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/ManualCardEntryView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2933,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/ManualCardEntry\/CardComponentTextField.swift",
+      "kind": "Array",
+      "offset": 3699,
+      "length": 93,
+      "value": "[\"01\", \"02\", \"03\", \"04\", \"05\", \"06\", \"07\", \"08\", \"09\", \"10\", \"11\", \"12\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\"]"
+    },
+    {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
       "kind": "IntegerLiteral",
       "offset": 104,
@@ -8269,371 +9468,399 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 2229,
+      "offset": 2261,
       "length": 12,
       "value": "\"Tap to Pay\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 2263,
+      "offset": 2295,
       "length": 11,
       "value": "\"Invoicing\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 2298,
+      "offset": 2330,
       "length": 14,
       "value": "\"Payment Link\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 2338,
+      "offset": 2370,
       "length": 16,
       "value": "\"Full Autobooks\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3040,
+      "offset": 2412,
+      "length": 16,
+      "value": "\"Checkout Pages\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 3173,
       "length": 20,
       "value": "\"invoicingModuleUrl\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3092,
+      "offset": 3225,
       "length": 22,
       "value": "\"paymentFormModuleUrl\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3150,
+      "offset": 3283,
       "length": 20,
       "value": "\"virtualTerminalUrl\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 3204,
+      "offset": 3337,
       "length": 18,
       "value": "\"fullAutoBooksUrl\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 4816,
+      "offset": 3389,
+      "length": 18,
+      "value": "\"checkoutPagesUrl\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 5318,
       "length": 12,
       "value": "\"webViewUrl\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 6221,
+      "offset": 6751,
       "length": 12,
       "value": "\"moduleUrls\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 7429,
+      "offset": 8471,
       "length": 14,
       "value": "\"LoginSuccess\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 7475,
+      "offset": 8517,
       "length": 17,
       "value": "\"NeedsEnrollment\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 9657,
+      "offset": 11340,
       "length": 12,
       "value": "\"webViewUrl\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 9865,
+      "offset": 11548,
       "length": 17,
       "value": "\"WorldPayExpress\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 9913,
+      "offset": 11596,
       "length": 8,
       "value": "\"FiServ\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 14391,
+      "offset": 13915,
+      "length": 6,
+      "value": "\"TEST\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 13956,
+      "length": 6,
+      "value": "\"PROD\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
+      "kind": "StringLiteral",
+      "offset": 16531,
       "length": 16,
       "value": "\"HasMissingInfo\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 14450,
+      "offset": 16590,
       "length": 28,
       "value": "\"PaymentEnablementRequested\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 14529,
+      "offset": 16669,
       "length": 36,
       "value": "\"MerchantPendingApprovalForTapToPay\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 14592,
+      "offset": 16732,
       "length": 12,
       "value": "\"NotEnabled\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 14628,
+      "offset": 16768,
       "length": 9,
       "value": "\"Enabled\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 18099,
+      "offset": 21064,
       "length": 15,
       "value": "\"transactionId\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19326,
+      "offset": 22291,
       "length": 12,
       "value": "\"Cancelable\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19365,
+      "offset": 22330,
       "length": 12,
       "value": "\"Refundable\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19399,
+      "offset": 22364,
       "length": 7,
       "value": "\"Final\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19431,
+      "offset": 22396,
       "length": 10,
       "value": "\"Canceled\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19466,
+      "offset": 22431,
       "length": 10,
       "value": "\"Refunded\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19501,
+      "offset": 22466,
       "length": 10,
       "value": "\"Declined\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19535,
+      "offset": 22500,
       "length": 9,
       "value": "\"Unknown\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19629,
+      "offset": 22594,
       "length": 8,
       "value": "\"Refund\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19658,
+      "offset": 22623,
       "length": 6,
       "value": "\"Sale\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19687,
+      "offset": 22652,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 19724,
+      "offset": 22689,
       "length": 14,
       "value": "\"FallbackSale\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 23873,
+      "offset": 26838,
       "length": 7,
       "value": "\"Email\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 23900,
+      "offset": 26865,
       "length": 5,
       "value": "\"SMS\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 26645,
+      "offset": 29610,
       "length": 6,
       "value": "\"UUID\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 26673,
+      "offset": 29638,
       "length": 14,
       "value": "\"EmailAddress\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 26715,
+      "offset": 29680,
       "length": 13,
       "value": "\"PhoneNumber\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27510,
+      "offset": 30475,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27554,
+      "offset": 30519,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27598,
+      "offset": 30563,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27655,
+      "offset": 30620,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27691,
+      "offset": 30656,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27728,
+      "offset": 30693,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27763,
+      "offset": 30728,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27799,
+      "offset": 30764,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27841,
+      "offset": 30806,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27887,
+      "offset": 30852,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27931,
+      "offset": 30896,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 27985,
+      "offset": 30950,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 28021,
+      "offset": 30986,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 28051,
+      "offset": 31016,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 28089,
+      "offset": 31054,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
       "kind": "StringLiteral",
-      "offset": 28114,
+      "offset": 31079,
       "length": 2,
       "value": "\"\""
     },
@@ -8689,196 +9916,210 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 4744,
+      "offset": 5145,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 4822,
+      "offset": 5223,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 4904,
+      "offset": 5305,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "BooleanLiteral",
-      "offset": 5081,
+      "offset": 5482,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 6622,
+      "offset": 7023,
       "length": 4,
       "value": "\"US\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 25788,
+      "offset": 36272,
       "length": 31,
       "value": "\"co.autobooks.sdk.userActivity\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 25888,
+      "offset": 36372,
       "length": 38,
       "value": "\"co.autobooks.sdk.visitedTransactions\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 25987,
+      "offset": 36471,
       "length": 31,
       "value": "\"co.autobooks.sdk.tappedCharge\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26084,
+      "offset": 36568,
       "length": 36,
       "value": "\"co.autobooks.sdk.tappedManualEntry\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26186,
+      "offset": 36670,
       "length": 36,
       "value": "\"co.autobooks.sdk.tappedSendReceipt\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26290,
+      "offset": 36774,
       "length": 31,
       "value": "\"co.autobooks.sdk.tappedRefund\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26389,
+      "offset": 36873,
       "length": 31,
       "value": "\"co.autobooks.sdk.tappedCancel\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26486,
+      "offset": 36970,
       "length": 29,
       "value": "\"co.autobooks.sdk.tappedSkip\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26588,
+      "offset": 37072,
       "length": 43,
       "value": "\"co.autobooks.sdk.tappedSendAnotherReceipt\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26692,
+      "offset": 37176,
       "length": 38,
       "value": "\"co.autobooks.sdk.callUsActionClicked\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26791,
+      "offset": 37275,
       "length": 31,
       "value": "\"co.autobooks.sdk.viewedScreen\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26889,
+      "offset": 37373,
       "length": 37,
       "value": "\"co.autobooks.sdk.screenTimerWarning\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 26983,
+      "offset": 37467,
       "length": 27,
       "value": "\"co.autobooks.sdk.addedTip\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 27069,
+      "offset": 37553,
       "length": 29,
       "value": "\"co.autobooks.sdk.toggledTip\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 27162,
+      "offset": 37646,
       "length": 34,
       "value": "\"co.autobooks.sdk.toggledSalesTax\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 27278,
+      "offset": 37762,
       "length": 46,
       "value": "\"co.autobooks.sdk.toggledSalesTax.transaction\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 27386,
+      "offset": 37870,
       "length": 32,
       "value": "\"co.autobooks.sdk.readCancelled\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 27495,
+      "offset": 37979,
       "length": 55,
       "value": "\"co.autobooks.sdk.cancellationSupport.supportDismissal\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 27626,
+      "offset": 38110,
       "length": 47,
       "value": "\"co.autobooks.sdk.cancellationSupport.tryAgain\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 27760,
+      "offset": 38244,
       "length": 58,
       "value": "\"co.autobooks.sdk.cancellationSupport.openVirtualTerminal\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 27886,
+      "offset": 38371,
+      "length": 40,
+      "value": "\"co.autobooks.sdk.manualCardEntry.error\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
+      "kind": "StringLiteral",
+      "offset": 38482,
+      "length": 42,
+      "value": "\"co.autobooks.sdk.manualCardEntry.scanner\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
+      "kind": "StringLiteral",
+      "offset": 38592,
       "length": 37,
       "value": "\"co.autobooks.sdk.somethingWentWrong\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 27985,
+      "offset": 38691,
       "length": 32,
       "value": "\"co.autobooks.sdk.internalError\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 28085,
+      "offset": 38791,
       "length": 38,
       "value": "\"co.autobooks.sdk.transactionDeclined\""
     },
@@ -10887,7 +12128,7 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "BooleanLiteral",
-      "offset": 24823,
+      "offset": 24560,
       "length": 4,
       "value": "true"
     },
@@ -11209,21 +12450,28 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "BooleanLiteral",
-      "offset": 2804,
+      "offset": 2808,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "BooleanLiteral",
-      "offset": 3195,
+      "offset": 3199,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
       "kind": "BooleanLiteral",
-      "offset": 3591,
+      "offset": 3588,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/InitialLoad.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3987,
       "length": 5,
       "value": "false"
     },
@@ -11384,126 +12632,133 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 31860,
+      "offset": 31893,
       "length": 5,
       "value": "\"ttp\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 31932,
+      "offset": 31965,
       "length": 14,
       "value": "\"payment_form\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 31984,
+      "offset": 32017,
       "length": 16,
       "value": "\"full_autobooks\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 32164,
+      "offset": 32071,
+      "length": 16,
+      "value": "\"checkout_pages\""
+    },
+    {
+      "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
+      "kind": "StringLiteral",
+      "offset": 32251,
       "length": 19,
       "value": "\"minimum_durations\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "Array",
-      "offset": 40586,
+      "offset": 40673,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "Array",
-      "offset": 40620,
+      "offset": 40707,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "Array",
-      "offset": 40650,
+      "offset": 40737,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "Array",
-      "offset": 40678,
+      "offset": 40765,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "Array",
-      "offset": 40712,
+      "offset": 40799,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 41162,
+      "offset": 41249,
       "length": 11,
       "value": "\"page_sets\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "StringLiteral",
-      "offset": 44459,
+      "offset": 44546,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/UI\/SupportScreen.swift",
       "kind": "BooleanLiteral",
-      "offset": 57299,
+      "offset": 57386,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 1242,
+      "offset": 1419,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 1276,
+      "offset": 1453,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 1317,
+      "offset": 1494,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "FloatLiteral",
-      "offset": 1709,
+      "offset": 1886,
       "length": 4,
       "value": "0.06"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 1747,
+      "offset": 1924,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Architecture\/TapToPayDomain.swift",
       "kind": "BooleanLiteral",
-      "offset": 1802,
+      "offset": 1979,
       "length": 5,
       "value": "false"
     },
@@ -11524,35 +12779,35 @@
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9151,
+      "offset": 10546,
       "length": 8,
       "value": "\"Accept\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9185,
+      "offset": 10580,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9224,
+      "offset": 10619,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9266,
+      "offset": 10661,
       "length": 27,
       "value": "\"Ocp-Apim-Subscription-Key\""
     },
     {
       "filePath": "\/Users\/JEckstein\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/AutobooksAPI.swift",
       "kind": "StringLiteral",
-      "offset": 9315,
+      "offset": 10710,
       "length": 12,
       "value": "\"User-Agent\""
     },

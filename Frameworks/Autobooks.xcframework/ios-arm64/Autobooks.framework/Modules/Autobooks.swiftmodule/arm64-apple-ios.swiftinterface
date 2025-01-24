@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Autobooks
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVKit
@@ -14,6 +14,7 @@ import SceneKit
 import Swift
 import SwiftUI
 import UIKit
+import VisionKit
 import WebKit
 import _AVKit_SwiftUI
 import _Concurrency
@@ -45,7 +46,6 @@ extension Autobooks.Stubs {
 public enum AB {
   public enum LoginCredential {
     case token(Swift.String)
-    case usernameAndPassword(username: Swift.String, password: Swift.String)
   }
   public struct Style {
     public struct Colors {
@@ -141,11 +141,19 @@ public enum AB {
   }
   public typealias DismissalBlock = @_Concurrency.MainActor @Sendable (Autobooks.AB.DismissalReason) -> Swift.Void
   public typealias LoginProviderBlock = @_Concurrency.MainActor @Sendable (Autobooks.AB.LoginReason) async throws -> Autobooks.AB.LoginCredential
-  public static func startTapToPay(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration = .default, loginProvider: @escaping Autobooks.AB.LoginProviderBlock, completion: Autobooks.AB.DismissalBlock? = nil)
-  public static func startPaymentForm(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil)
-  public static func startInvoicing(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil)
-  public static func startFullAutobooks(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil)
+  @_Concurrency.MainActor public static func startTapToPay(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration = .default, loginProvider: @escaping Autobooks.AB.LoginProviderBlock, completion: Autobooks.AB.DismissalBlock? = nil)
+  @_Concurrency.MainActor public static func startPaymentForm(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil)
+  @_Concurrency.MainActor public static func makePaymentFormViewController(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil) -> UIKit.UIViewController
+  @_Concurrency.MainActor public static func startInvoicing(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil)
+  @_Concurrency.MainActor public static func makeInvoicingViewController(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil) -> UIKit.UIViewController
+  @_Concurrency.MainActor public static func startCheckoutPages(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil)
+  @_Concurrency.MainActor public static func makeCheckoutPagesViewController(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil) -> UIKit.UIViewController
+  @_Concurrency.MainActor public static func startFullAutobooks(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil)
+  @_Concurrency.MainActor public static func makeFullAutobooksViewController(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil) -> UIKit.UIViewController
+  @available(*, deprecated, message: "Using stop() is deprecated.  You are encouraged to use a UIViewController reference and dismiss it directly.")
   @_Concurrency.MainActor public static func stop()
+  @available(iOS 16.7, *)
+  @_Concurrency.MainActor public static func makeTapToPayController(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration, loginProvider: @escaping Autobooks.AB.LoginProviderBlock, bearerToken: Swift.String? = nil, completion: Autobooks.AB.DismissalBlock? = nil) -> UIKit.UINavigationController
   public enum DismissalReason : Swift.Equatable {
     case userInitiated
     case notAuthorized
@@ -189,6 +197,8 @@ public enum AB {
     public static let cancellationSupportDismissal: Foundation.Notification.Name
     public static let cancellationSupportTryAgain: Foundation.Notification.Name
     public static let cancellationSupportOpenVirtualTerminal: Foundation.Notification.Name
+    public static let manualCardEntryError: Foundation.Notification.Name
+    public static let manualCardEntryScanner: Foundation.Notification.Name
     public static let somethingWentWrong: Foundation.Notification.Name
     public static let internalError: Foundation.Notification.Name
     public static let transactionDeclined: Foundation.Notification.Name
