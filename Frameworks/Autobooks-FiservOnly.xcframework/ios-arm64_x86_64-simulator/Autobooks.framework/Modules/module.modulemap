@@ -1,4 +1,0 @@
-framework module Autobooks {
-  header "Autobooks-Swift.h"
-  requires objc
-}
