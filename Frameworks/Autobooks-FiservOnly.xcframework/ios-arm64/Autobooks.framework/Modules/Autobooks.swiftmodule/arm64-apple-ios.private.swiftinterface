@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Autobooks
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Autobooks
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import AVKit
 import CallKit
 import Combine
@@ -12,6 +12,7 @@ import Foundation
 import ProximityReader
 import SceneKit
 import Swift
+import SwiftData
 import SwiftUI
 import UIKit
 import VisionKit
@@ -21,15 +22,7 @@ import _Concurrency
 import _SceneKit_SwiftUI
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @_hasMissingDesignatedInitializers open class PhoneNumberFormatter : Foundation.Formatter {
-  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @objc deinit
-}
-extension Autobooks.PhoneNumberFormatter {
-  @objc override dynamic open func string(for obj: Any?) -> Swift.String?
-  @objc override dynamic open func getObjectValue(_ obj: Swift.AutoreleasingUnsafeMutablePointer<Swift.AnyObject?>?, for string: Swift.String, errorDescription error: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString?>?) -> Swift.Bool
-  @objc override dynamic open func isPartialStringValid(_ partialStringPtr: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString>, proposedSelectedRange proposedSelRangePtr: Foundation.NSRangePointer?, originalString origString: Swift.String, originalSelectedRange origSelRange: Foundation.NSRange, errorDescription error: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSString?>?) -> Swift.Bool
-}
+import _SwiftData_SwiftUI
 public struct Stubs : Swift.Equatable {
   public static func == (a: Autobooks.Stubs, b: Autobooks.Stubs) -> Swift.Bool
 }
@@ -77,8 +70,8 @@ public enum AB {
     public enum TextReceiptPrefixRequirement : Swift.Equatable {
       case required
       case omitted
-      public func hash(into hasher: inout Swift.Hasher)
       public static func == (a: Autobooks.AB.Configuration.TextReceiptPrefixRequirement, b: Autobooks.AB.Configuration.TextReceiptPrefixRequirement) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
       public var hashValue: Swift.Int {
         get
       }
@@ -102,8 +95,8 @@ public enum AB {
     public enum PrereleaseEnvironment : Swift.Equatable {
       case development
       case staging
-      public func hash(into hasher: inout Swift.Hasher)
       public static func == (a: Autobooks.AB.Mode.PrereleaseEnvironment, b: Autobooks.AB.Mode.PrereleaseEnvironment) -> Swift.Bool
+      public func hash(into hasher: inout Swift.Hasher)
       public var hashValue: Swift.Int {
         get
       }
@@ -114,8 +107,8 @@ public enum AB {
       get
     }
     public static func == (a: Autobooks.AB.Mode, b: Autobooks.AB.Mode) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
     public typealias AllCases = [Autobooks.AB.Mode]
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
@@ -152,15 +145,15 @@ public enum AB {
   @_Concurrency.MainActor public static func makeFullAutobooksViewController(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil) -> UIKit.UIViewController
   @available(*, deprecated, message: "Using stop() is deprecated.  You are encouraged to use a UIViewController reference and dismiss it directly.")
   @_Concurrency.MainActor public static func stop()
-  @available(iOS 16.7, *)
+  @available(iOS 17.0, *)
   @_Concurrency.MainActor public static func makeTapToPayController(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration, loginProvider: @escaping Autobooks.AB.LoginProviderBlock, bearerToken: Swift.String? = nil, completion: Autobooks.AB.DismissalBlock? = nil) -> UIKit.UINavigationController
   public enum DismissalReason : Swift.Equatable {
     case userInitiated
     case notAuthorized
     case forbidden
     case stopped
-    public func hash(into hasher: inout Swift.Hasher)
     public static func == (a: Autobooks.AB.DismissalReason, b: Autobooks.AB.DismissalReason) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
@@ -169,39 +162,16 @@ public enum AB {
     case first
     case retry
     case timer
-    case polling
-    public func hash(into hasher: inout Swift.Hasher)
+    case pollingDuringEnrollment
+    case pollingDuringMissingInfo
     public static func == (a: Autobooks.AB.LoginReason, b: Autobooks.AB.LoginReason) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
   }
   public enum Notifications {
     public static let userActivity: Foundation.Notification.Name
-    public static let visitedTransactions: Foundation.Notification.Name
-    public static let tappedCharge: Foundation.Notification.Name
-    public static let tappedManualEntry: Foundation.Notification.Name
-    public static let tappedSendReceipt: Foundation.Notification.Name
-    public static let tappedRefundPayment: Foundation.Notification.Name
-    public static let tappedCancelPayment: Foundation.Notification.Name
-    public static let tappedSkipReceipt: Foundation.Notification.Name
-    public static let tappedSendAnotherReceipt: Foundation.Notification.Name
-    public static let tappedCallUs: Foundation.Notification.Name
-    public static let viewedScreen: Foundation.Notification.Name
-    public static let screenTimerWarning: Foundation.Notification.Name
-    public static let addedTip: Foundation.Notification.Name
-    public static let toggledTip: Foundation.Notification.Name
-    public static let toggledSalesTax: Foundation.Notification.Name
-    public static let toggledSalesTaxForThisTransaction: Foundation.Notification.Name
-    public static let readCancelled: Foundation.Notification.Name
-    public static let cancellationSupportDismissal: Foundation.Notification.Name
-    public static let cancellationSupportTryAgain: Foundation.Notification.Name
-    public static let cancellationSupportOpenVirtualTerminal: Foundation.Notification.Name
-    public static let manualCardEntryError: Foundation.Notification.Name
-    public static let manualCardEntryScanner: Foundation.Notification.Name
-    public static let somethingWentWrong: Foundation.Notification.Name
-    public static let internalError: Foundation.Notification.Name
-    public static let transactionDeclined: Foundation.Notification.Name
   }
 }
 extension Autobooks.AB.Mode : Swift.CustomStringConvertible {

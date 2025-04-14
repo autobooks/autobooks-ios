@@ -6,35 +6,35 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		c03hMjJEFPUKCQBcn9JWyQh0jl4=
+		aNMhoB7UwMJH3nDw3848ogK0gmE=
 		</data>
 		<key>Headers/Autobooks-Swift.h</key>
 		<data>
-		D75clb+7hWH495CNKXhS1qb2BNY=
+		fYyJyHXk9m4XoLXHOj+Jb/pTgto=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bYkCgERDF8S/tzxlQTzap2GWNOQ=
+		zDKMWIKzYZ+qPTHNaOlfBWGOoVs=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		FULBc0B+D4KeuQoi9JtOZZonqws=
+		sxzmCDUko12c9s4TKqcfFNCcwWc=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		bdJlL1GYWpuLTFk5yvRDFTvyzDU=
+		otKnTyVblldv7NMRFqxcWto1SoQ=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		2RfkZzG0CyEaT8aZXy9X0Lsp2wc=
+		Plez5learT6ewpcOJF5LXvb26XQ=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bdJlL1GYWpuLTFk5yvRDFTvyzDU=
+		otKnTyVblldv7NMRFqxcWto1SoQ=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		9xMsZjGzpGFvRVrCC0pMlCh0lug=
+		ellQKGisdCekVx7NhpdzC8c0q5w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Onboarding.scnassets/Confetti.scn</key>
 		<data>
-		z3WQgkH0sFq5wpVjDsNFtLAe9So=
+		r+QRNOExVT3tYIZ1gpAOdZTKOQ8=
 		</data>
 		<key>Onboarding.storyboardc/165-Y1-QxF-view-9cn-wg-lEt.nib</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Onboarding.storyboardc/55D-eH-j4p-view-7Op-nI-lfG.nib</key>
 		<data>
-		gL7ji/hdoi8kAB0JzlKWJ6900rU=
+		jB9m0x1ky482yAT9J8JLLmm8j8E=
 		</data>
 		<key>Onboarding.storyboardc/ATU-mp-C6u-view-i1C-nd-jdq.nib</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Onboarding.storyboardc/Fam-qq-a4x-view-XJA-Jw-pWy.nib</key>
 		<data>
-		vtYwsls0mJI1SpowtkULzzAidqo=
+		8G/ABM8EwwgM74inoyRW6UZKeh8=
 		</data>
 		<key>Onboarding.storyboardc/HhW-ze-OzX-view-0Pe-bT-VV2.nib</key>
 		<data>
@@ -110,7 +110,11 @@
 		</data>
 		<key>PhoneNumberMetadata.json</key>
 		<data>
-		ZCx++vwKnMnW1iYTW1/5V4+vq5g=
+		nUZt2bfJOVc7hsEWGtOzlrSnTc4=
+		</data>
+		<key>PhoneNumberMetadata.xml</key>
+		<data>
+		4sIbB7YZNgHM25zsvbc3l4gHXhg=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -127,49 +131,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4sttwuIV21DSdJ+7BBre0UCHeJIcLnf2iOWq4WN3SZE=
+			LsKq+miapqfmG0BktQ8ZyMpvpK2OuyBj7ftXW6LpaUc=
 			</data>
 		</dict>
 		<key>Headers/Autobooks-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HeUGhzotVPsj8GeYUKr0wiR8MnDPigAB2LzhwtlJsTE=
+			M9ghPJQ9LlTDziHBMqdkDB70luoQTK+DgKWVbJzxQRE=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GVRadBX7/ZNIwCZBP5foUalegvnVz0qKPO7Cfxm1Kds=
+			pRufXF/ZBYVnvL1Pmm41lhkRMUWEV8jCYaamNCJ1nBM=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iu3zst8sgsdnYzUWQ8h4xZEBG0buz785SROct+uaESI=
+			AB7JprYJPlPuj0zQF7jgKyb1w8g6sVYDh7X2mZdPi4U=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qIlEMO6AwibonCznlGOFYH7uwNQMoMBLqNJHvjnceu0=
+			rhn8g7Kw4dcKX3KaUJdkM01r//GTfUoSZ1fqAvD1sL0=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iu3zst8sgsdnYzUWQ8h4xZEBG0buz785SROct+uaESI=
+			AB7JprYJPlPuj0zQF7jgKyb1w8g6sVYDh7X2mZdPi4U=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			S5N70GmC6ck77L4skjUBp0t8EGqTcFTgTn55ow/dG0Y=
+			nVyRUxMbwZ+wGxf3EWb1SqtQKBKNjHipVOXPwLIYiO0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -183,7 +187,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3ZbGR4/9OPlnHZUIyAJYbJZF71x0diOErv1DRw7UV7E=
+			IxGgq3ttIChpMXraVB3/rUdcsYK29JfZX1RcYkQNc60=
 			</data>
 		</dict>
 		<key>Onboarding.storyboardc/165-Y1-QxF-view-9cn-wg-lEt.nib</key>
@@ -197,7 +201,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L5vf2uLXCWnUYWO8UDdUpyreOOygN+2R0iAdD/QuaoA=
+			gkml1dGmEfqO8XSpdejJTxHj6sY3ypy3FXa6lqzZCzg=
 			</data>
 		</dict>
 		<key>Onboarding.storyboardc/ATU-mp-C6u-view-i1C-nd-jdq.nib</key>
@@ -211,7 +215,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pPrMYIVI2s2FTfnmGITmRqhLJpVb/sF7trrBjSQ3gD4=
+			nW1w9t8hriCKe1POAhGOj0aGoD1dMtoLMHXZdiL8wv8=
 			</data>
 		</dict>
 		<key>Onboarding.storyboardc/HhW-ze-OzX-view-0Pe-bT-VV2.nib</key>
@@ -302,7 +306,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			EMf01WkCoKmvlfENExaCHA+syLqja5CTOK0oOFHmIs4=
+			VNPLWRawZT9IUQBcHTuy9G4mcXsa6HCM+dkjC5sNnmU=
+			</data>
+		</dict>
+		<key>PhoneNumberMetadata.xml</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IeYvW6WgkwfvehQXPeZ00I0RUAR1Zxsn4kIBc+AVuJk=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
