@@ -277,6 +277,120 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "ProximityReader",
+        "printedName": "ProximityReader",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "Autobooks",
         "declAttributes": [
           "RawDocComment"
@@ -440,120 +554,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "CryptoKit",
-        "printedName": "CryptoKit",
-        "declKind": "Import",
-        "moduleName": "Autobooks",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "ProximityReader",
-        "printedName": "ProximityReader",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
       },
       {
         "kind": "Import",
@@ -4315,6 +4315,54 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "disableDuplicateDetection",
+            "printedName": "disableDuplicateDetection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Autobooks2ABO25disableDuplicateDetectionSbvpZ",
+            "mangledName": "$s9Autobooks2ABO25disableDuplicateDetectionSbvpZ",
+            "moduleName": "Autobooks",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Autobooks2ABO25disableDuplicateDetectionSbvgZ",
+                "mangledName": "$s9Autobooks2ABO25disableDuplicateDetectionSbvgZ",
+                "moduleName": "Autobooks",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "startTapToPay",
             "printedName": "startTapToPay(subscriptionKey:configuration:loginProvider:completion:)",
@@ -4976,7 +5024,7 @@
           {
             "kind": "Function",
             "name": "makeTapToPayController",
-            "printedName": "makeTapToPayController(subscriptionKey:configuration:loginProvider:bearerToken:completion:)",
+            "printedName": "makeTapToPayController(subscriptionKey:configuration:loginProvider:bearerToken:invokedFromPresenter:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5032,6 +5080,13 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Optional",
                 "printedName": "((Autobooks.AB.DismissalReason) -> ())?",
                 "children": [
@@ -5059,8 +5114,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9Autobooks2ABO22makeTapToPayController15subscriptionKey13configuration13loginProvider11bearerToken10completionSo012UINavigationG0CSS_AC13ConfigurationVAC15LoginCredentialOAC0R6ReasonOYaYbKScMYccSSSgyAC09DismissalT0OYbScMYccSgtFZ",
-            "mangledName": "$s9Autobooks2ABO22makeTapToPayController15subscriptionKey13configuration13loginProvider11bearerToken10completionSo012UINavigationG0CSS_AC13ConfigurationVAC15LoginCredentialOAC0R6ReasonOYaYbKScMYccSSSgyAC09DismissalT0OYbScMYccSgtFZ",
+            "usr": "s:9Autobooks2ABO22makeTapToPayController15subscriptionKey13configuration13loginProvider11bearerToken20invokedFromPresenter10completionSo012UINavigationG0CSS_AC13ConfigurationVAC15LoginCredentialOAC0U6ReasonOYaYbKScMYccSSSgSbyAC09DismissalW0OYbScMYccSgtFZ",
+            "mangledName": "$s9Autobooks2ABO22makeTapToPayController15subscriptionKey13configuration13loginProvider11bearerToken20invokedFromPresenter10completionSo012UINavigationG0CSS_AC13ConfigurationVAC15LoginCredentialOAC0U6ReasonOYaYbKScMYccSSSgSbyAC09DismissalW0OYbScMYccSgtFZ",
             "moduleName": "Autobooks",
             "static": true,
             "intro_iOS": "17.0",
@@ -6833,6 +6888,265 @@
       "value": "\"https:\/\/app.autobooks.co\/login\/init?launchmode=CheckoutPages&viewmode=CheckoutPages\""
     },
     {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/ProximityReader\/PaymentSession.swift",
+      "kind": "StringLiteral",
+      "offset": 4262,
+      "length": 11,
+      "value": "\"fakeToken\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/ProximityReader\/PaymentSession.swift",
+      "kind": "StringLiteral",
+      "offset": 6007,
+      "length": 34,
+      "value": "\"*** Preparation failed: \""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/ProximityReader\/PaymentSession.swift",
+      "kind": "StringLiteral",
+      "offset": 6040,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/ProximityReader\/PaymentSession.swift",
+      "kind": "StringLiteral",
+      "offset": 6286,
+      "length": 45,
+      "value": "\"Inner reader received other error: \""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/ProximityReader\/PaymentSession.swift",
+      "kind": "StringLiteral",
+      "offset": 6330,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/ProximityReader\/PaymentSession.swift",
+      "kind": "StringLiteral",
+      "offset": 6531,
+      "length": 34,
+      "value": "\"*** Preparation failed: \""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/ProximityReader\/PaymentSession.swift",
+      "kind": "StringLiteral",
+      "offset": 6564,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/ProximityReader\/PaymentSession.swift",
+      "kind": "StringLiteral",
+      "offset": 6808,
+      "length": 39,
+      "value": "\"Reader received other error: \""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/ProximityReader\/PaymentSession.swift",
+      "kind": "StringLiteral",
+      "offset": 6846,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Defaults.swift",
+      "kind": "StringLiteral",
+      "offset": 250,
+      "length": 24,
+      "value": "\"co.autobooks.tapToPay.\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/FiservTTP\/FiservTTPServices.swift",
+      "kind": "StringLiteral",
+      "offset": 1760,
+      "length": 5,
+      "value": "\"GET\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/FiservTTP\/FiservTTPServices.swift",
+      "kind": "StringLiteral",
+      "offset": 1782,
+      "length": 6,
+      "value": "\"POST\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/FiservTTP\/FiservTTPServices.swift",
+      "kind": "StringLiteral",
+      "offset": 1805,
+      "length": 6,
+      "value": "\"HEAD\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/FiservTTP\/FiservTTPServices.swift",
+      "kind": "StringLiteral",
+      "offset": 1827,
+      "length": 5,
+      "value": "\"PUT\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/FiservTTP\/FiservTTPServices.swift",
+      "kind": "StringLiteral",
+      "offset": 1851,
+      "length": 8,
+      "value": "\"DELETE\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 453,
+      "length": 13,
+      "value": "\"en_US_POSIX\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 528,
+      "length": 5,
+      "value": "\"UTC\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Log.swift",
+      "kind": "StringLiteral",
+      "offset": 574,
+      "length": 28,
+      "value": "\"yyyy-MM-dd'T'HH:mm:ssXXXXX\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/VirtualTerminal\/ExpressTransactionParserDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 223,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/VirtualTerminal\/ExpressTransactionParserDelegate.swift",
+      "kind": "StringLiteral",
+      "offset": 249,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/VirtualTerminal\/ExpressTransactionParserDelegate.swift",
+      "kind": "BooleanLiteral",
+      "offset": 344,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/VirtualTerminal\/ExpressTransactionParserDelegate.swift",
+      "kind": "Dictionary",
+      "offset": 523,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Processor.swift",
+      "kind": "StringLiteral",
+      "offset": 270,
+      "length": 31,
+      "value": "\"The transaction was approved.\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Processor.swift",
+      "kind": "StringLiteral",
+      "offset": 341,
+      "length": 63,
+      "value": "\"Expired Card. Please try an alternate card or digital wallet.\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Processor.swift",
+      "kind": "StringLiteral",
+      "offset": 446,
+      "length": 124,
+      "value": "\"Duplicate transaction detected. Please wait three minutes before resubmitting, or try an alternate card or digital wallet.\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Processor.swift",
+      "kind": "StringLiteral",
+      "offset": 610,
+      "length": 94,
+      "value": "\"The transaction failed. Please try manual card entry or an alternate card or digital wallet.\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Processor.swift",
+      "kind": "StringLiteral",
+      "offset": 730,
+      "length": 73,
+      "value": "\"The transaction failed. Please try an alternate card or digital wallet.\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 8462,
+      "length": 31,
+      "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSSSSSS\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 8540,
+      "length": 13,
+      "value": "\"en_US_POSIX\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Requests.swift",
+      "kind": "StringLiteral",
+      "offset": 8726,
+      "length": 5,
+      "value": "\"GMT\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 646,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 757,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1369,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1442,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2500,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2527,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2560,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumber+Codable.swift",
       "kind": "StringLiteral",
       "offset": 5532,
@@ -7454,265 +7768,6 @@
       "offset": 5387,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 646,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 757,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1369,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1442,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2500,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2527,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2560,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/ProximityReader\/PaymentSession.swift",
-      "kind": "StringLiteral",
-      "offset": 4262,
-      "length": 11,
-      "value": "\"fakeToken\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/ProximityReader\/PaymentSession.swift",
-      "kind": "StringLiteral",
-      "offset": 6007,
-      "length": 34,
-      "value": "\"*** Preparation failed: \""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/ProximityReader\/PaymentSession.swift",
-      "kind": "StringLiteral",
-      "offset": 6040,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/ProximityReader\/PaymentSession.swift",
-      "kind": "StringLiteral",
-      "offset": 6286,
-      "length": 45,
-      "value": "\"Inner reader received other error: \""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/ProximityReader\/PaymentSession.swift",
-      "kind": "StringLiteral",
-      "offset": 6330,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/ProximityReader\/PaymentSession.swift",
-      "kind": "StringLiteral",
-      "offset": 6531,
-      "length": 34,
-      "value": "\"*** Preparation failed: \""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/ProximityReader\/PaymentSession.swift",
-      "kind": "StringLiteral",
-      "offset": 6564,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/ProximityReader\/PaymentSession.swift",
-      "kind": "StringLiteral",
-      "offset": 6808,
-      "length": 39,
-      "value": "\"Reader received other error: \""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/ProximityReader\/PaymentSession.swift",
-      "kind": "StringLiteral",
-      "offset": 6846,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Defaults.swift",
-      "kind": "StringLiteral",
-      "offset": 250,
-      "length": 24,
-      "value": "\"co.autobooks.tapToPay.\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/FiservTTP\/FiservTTPServices.swift",
-      "kind": "StringLiteral",
-      "offset": 1760,
-      "length": 5,
-      "value": "\"GET\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/FiservTTP\/FiservTTPServices.swift",
-      "kind": "StringLiteral",
-      "offset": 1782,
-      "length": 6,
-      "value": "\"POST\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/FiservTTP\/FiservTTPServices.swift",
-      "kind": "StringLiteral",
-      "offset": 1805,
-      "length": 6,
-      "value": "\"HEAD\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/FiservTTP\/FiservTTPServices.swift",
-      "kind": "StringLiteral",
-      "offset": 1827,
-      "length": 5,
-      "value": "\"PUT\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/FiservTTP\/FiservTTPServices.swift",
-      "kind": "StringLiteral",
-      "offset": 1851,
-      "length": 8,
-      "value": "\"DELETE\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Log.swift",
-      "kind": "StringLiteral",
-      "offset": 453,
-      "length": 13,
-      "value": "\"en_US_POSIX\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Log.swift",
-      "kind": "StringLiteral",
-      "offset": 528,
-      "length": 5,
-      "value": "\"UTC\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Log.swift",
-      "kind": "StringLiteral",
-      "offset": 574,
-      "length": 28,
-      "value": "\"yyyy-MM-dd'T'HH:mm:ssXXXXX\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/VirtualTerminal\/ExpressTransactionParserDelegate.swift",
-      "kind": "StringLiteral",
-      "offset": 223,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/VirtualTerminal\/ExpressTransactionParserDelegate.swift",
-      "kind": "StringLiteral",
-      "offset": 249,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/VirtualTerminal\/ExpressTransactionParserDelegate.swift",
-      "kind": "BooleanLiteral",
-      "offset": 344,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/VirtualTerminal\/ExpressTransactionParserDelegate.swift",
-      "kind": "Dictionary",
-      "offset": 523,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Processor.swift",
-      "kind": "StringLiteral",
-      "offset": 270,
-      "length": 31,
-      "value": "\"The transaction was approved.\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Processor.swift",
-      "kind": "StringLiteral",
-      "offset": 341,
-      "length": 63,
-      "value": "\"Expired Card. Please try an alternate card or digital wallet.\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Processor.swift",
-      "kind": "StringLiteral",
-      "offset": 446,
-      "length": 124,
-      "value": "\"Duplicate transaction detected. Please wait three minutes before resubmitting, or try an alternate card or digital wallet.\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Processor.swift",
-      "kind": "StringLiteral",
-      "offset": 610,
-      "length": 94,
-      "value": "\"The transaction failed. Please try manual card entry or an alternate card or digital wallet.\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Processor.swift",
-      "kind": "StringLiteral",
-      "offset": 730,
-      "length": 73,
-      "value": "\"The transaction failed. Please try an alternate card or digital wallet.\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 8462,
-      "length": 31,
-      "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSSSSSS\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 8540,
-      "length": 13,
-      "value": "\"en_US_POSIX\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Requests.swift",
-      "kind": "StringLiteral",
-      "offset": 8726,
-      "length": 5,
-      "value": "\"GMT\""
     },
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/Fiserv.swift",
@@ -9543,8 +9598,22 @@
     },
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14147,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26668,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 36347,
+      "offset": 37060,
       "length": 31,
       "value": "\"co.autobooks.sdk.userActivity\""
     },
@@ -11560,7 +11629,7 @@
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "BooleanLiteral",
-      "offset": 24436,
+      "offset": 24466,
       "length": 4,
       "value": "true"
     },

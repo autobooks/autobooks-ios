@@ -4315,6 +4315,54 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "disableDuplicateDetection",
+            "printedName": "disableDuplicateDetection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9Autobooks2ABO25disableDuplicateDetectionSbvpZ",
+            "mangledName": "$s9Autobooks2ABO25disableDuplicateDetectionSbvpZ",
+            "moduleName": "Autobooks",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9Autobooks2ABO25disableDuplicateDetectionSbvgZ",
+                "mangledName": "$s9Autobooks2ABO25disableDuplicateDetectionSbvgZ",
+                "moduleName": "Autobooks",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "startTapToPay",
             "printedName": "startTapToPay(subscriptionKey:configuration:loginProvider:completion:)",
@@ -4976,7 +5024,7 @@
           {
             "kind": "Function",
             "name": "makeTapToPayController",
-            "printedName": "makeTapToPayController(subscriptionKey:configuration:loginProvider:bearerToken:completion:)",
+            "printedName": "makeTapToPayController(subscriptionKey:configuration:loginProvider:bearerToken:invokedFromPresenter:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5032,6 +5080,13 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Optional",
                 "printedName": "((Autobooks.AB.DismissalReason) -> ())?",
                 "children": [
@@ -5059,8 +5114,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:9Autobooks2ABO22makeTapToPayController15subscriptionKey13configuration13loginProvider11bearerToken10completionSo012UINavigationG0CSS_AC13ConfigurationVAC15LoginCredentialOAC0R6ReasonOYaYbKScMYccSSSgyAC09DismissalT0OYbScMYccSgtFZ",
-            "mangledName": "$s9Autobooks2ABO22makeTapToPayController15subscriptionKey13configuration13loginProvider11bearerToken10completionSo012UINavigationG0CSS_AC13ConfigurationVAC15LoginCredentialOAC0R6ReasonOYaYbKScMYccSSSgyAC09DismissalT0OYbScMYccSgtFZ",
+            "usr": "s:9Autobooks2ABO22makeTapToPayController15subscriptionKey13configuration13loginProvider11bearerToken20invokedFromPresenter10completionSo012UINavigationG0CSS_AC13ConfigurationVAC15LoginCredentialOAC0U6ReasonOYaYbKScMYccSSSgSbyAC09DismissalW0OYbScMYccSgtFZ",
+            "mangledName": "$s9Autobooks2ABO22makeTapToPayController15subscriptionKey13configuration13loginProvider11bearerToken20invokedFromPresenter10completionSo012UINavigationG0CSS_AC13ConfigurationVAC15LoginCredentialOAC0U6ReasonOYaYbKScMYccSSSgSbyAC09DismissalW0OYbScMYccSgtFZ",
             "moduleName": "Autobooks",
             "static": true,
             "intro_iOS": "17.0",
@@ -9543,8 +9598,22 @@
     },
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14147,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
+      "kind": "BooleanLiteral",
+      "offset": 26668,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/AB.swift",
       "kind": "StringLiteral",
-      "offset": 36347,
+      "offset": 37060,
       "length": 31,
       "value": "\"co.autobooks.sdk.userActivity\""
     },
@@ -11560,7 +11629,7 @@
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/UI\/TapToPayFlowController.swift",
       "kind": "BooleanLiteral",
-      "offset": 24436,
+      "offset": 24466,
       "length": 4,
       "value": "true"
     },

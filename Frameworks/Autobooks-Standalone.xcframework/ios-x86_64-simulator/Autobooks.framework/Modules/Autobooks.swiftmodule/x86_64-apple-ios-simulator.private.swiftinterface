@@ -145,6 +145,9 @@ public enum AB {
   public static var supportsTapToPay: Swift.Bool {
     get
   }
+  public static var disableDuplicateDetection: Swift.Bool {
+    get
+  }
   public typealias DismissalBlock = @_Concurrency.MainActor @Sendable (Autobooks.AB.DismissalReason) -> Swift.Void
   public typealias LoginProviderBlock = @_Concurrency.MainActor @Sendable (Autobooks.AB.LoginReason) async throws -> Autobooks.AB.LoginCredential
   @_Concurrency.MainActor public static func startTapToPay(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration = .default, loginProvider: @escaping Autobooks.AB.LoginProviderBlock, completion: Autobooks.AB.DismissalBlock? = nil)
@@ -159,7 +162,7 @@ public enum AB {
   @available(*, deprecated, message: "Using stop() is deprecated.  You are encouraged to use a UIViewController reference and dismiss it directly.")
   @_Concurrency.MainActor public static func stop()
   @available(iOS 17.0, *)
-  @_Concurrency.MainActor public static func makeTapToPayController(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration, loginProvider: @escaping Autobooks.AB.LoginProviderBlock, bearerToken: Swift.String? = nil, completion: Autobooks.AB.DismissalBlock? = nil) -> UIKit.UINavigationController
+  @_Concurrency.MainActor public static func makeTapToPayController(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration, loginProvider: @escaping Autobooks.AB.LoginProviderBlock, bearerToken: Swift.String? = nil, invokedFromPresenter: Swift.Bool = false, completion: Autobooks.AB.DismissalBlock? = nil) -> UIKit.UINavigationController
   @available(iOS 17.0, *)
   @_Concurrency.MainActor public static func authenticateUser(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration, loginProvider: @escaping Autobooks.AB.LoginProviderBlock) async -> Swift.Result<Autobooks.StandaloneAuthenticationResult, Autobooks.StandaloneAuthenticationError>
   public enum DismissalReason : Swift.Equatable {
