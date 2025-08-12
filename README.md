@@ -279,11 +279,6 @@ See [this document](https://learn.microsoft.com/en-us/azure/azure-monitor/app/ip
 * https://stg-cdn.autobooks.co
 * https://prd-cdn.autobooks.co
 
-#### GraphQL
-* https://dev-gql.autobooks.co
-* https://stg-gql.autobooks.co
-* https://gql.autobooks.co
-
 #### Segment
 * https://cdn.segment.com
 * https://api.segment.io
@@ -304,6 +299,3 @@ See [this document](https://learn.microsoft.com/en-us/azure/azure-monitor/app/ip
 
 #### Fraud monitoring
 * https://tst.kaptcha.com
-
-#### User Experience
-* https://fast.appcues.com
