@@ -7,10 +7,16 @@ OUTPUT_DIR="ZippedFrameworks"
 
 mkdir -p "$OUTPUT_DIR"
 
+# Clear previous checksums
+rm -f "$OUTPUT_DIR/checksums.txt"
+
 # Function to zip and compute checksum
 zip_and_checksum() {
     local framework_name=$1
     local zip_path="$OUTPUT_DIR/${framework_name}.xcframework.zip"
+
+    # Remove old zip to ensure clean build
+    rm -f "$zip_path"
 
     echo "Zipping $framework_name..."
     zip -r "$zip_path" "$FRAMEWORKS_DIR/${framework_name}.xcframework"

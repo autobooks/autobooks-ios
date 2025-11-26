@@ -4,24 +4,23 @@ The Autobooks SDK provides an interface for Apple's ProximityReader framework an
 
 ## Requirements
 
-### Minimum requirements
+### Minimum SDK requirements
 
-* iOS 14+
-* Xcode 13.4
+* iOS 16.7+ (as of 2.3.0; earlier versions supported iOS 15+)
+* Xcode 16.3
 
-Additionally, a US-based IP address may be required to connect to the Autobooks SDK backend.
+Additionally, a US-based IP address may be required to connect to the Autobooks SDK backend.  You may receive a 403 error outside the US.
 
 ### Tap to Pay requirements
 
-* iOS 16.7+
+* iOS 17.0+ (as of 2.3.0; earlier versions supported iOS 16.7+)
 * Tap to Pay on iPhone entitlement
-* A _physical_ iPhone XS or later
 
-On July 8th 2024, Apple changed the iOS version requirement for Tap to Pay from iOS 16 to 16.7.  This affects all current and future installations of the Autobooks SDK.  Notably, versions below 1.9.0 will return `true` for `AB.supportsTapToPay` but `AB.startTapToPay` will always fail with `osVersionNotSupported`.
+On July 8th 2024, Apple changed the runtime requirement for Tap to Pay from iOS 16.0 to iOS 16.7.  This affects all versions of the Autobooks SDK.  Notably, versions below 1.9.0 will return `true` for `AB.supportsTapToPay` but `AB.startTapToPay` will always fail with `osVersionNotSupported` on iOS 16.0–16.6.
 
 ## 1. Install the Autobooks SDK
 
-Currently both CocoaPods and manual installs are supported.
+CocoaPods, Swift Package Manager, and manual installs are supported.
 
 ### CocoaPods
 
@@ -41,7 +40,7 @@ pod 'Autobooks'
 
 ### Alternate framework flavors
 
-As of 1.7.2, a smaller alternate framework without Worldpay support is provided via `Autobooks-FiservOnly.xcframework`; if you don't know if you want this, you probably don't.  This is a drop-in replacement for the combination framework, but is only supported via the manual install method.  Importantly, the slices provided by each framework are a little different:
+As of 1.7.2, a smaller alternate framework without Worldpay support is provided via `Autobooks-FiservOnly.xcframework`; if you don't know if you want this, you probably don't.  This is a drop-in replacement for the combination framework, but is only supported via the manual or SPM install methods.  Importantly, the slices provided by each framework are a little different:
 
 #### `Autobooks.xcframework`
 * `ios-arm64`
@@ -219,6 +218,13 @@ See the `AB.Notifications` structure for more events.
                           configuration: configuration)
 ```
 
+#### Checkout Pages
+```swift
+    AB.startCheckoutPages(subscriptionKey: <#"your-subscription-key"#>,
+                          loginCredential: .token(<#"your-sso-token"#>)),
+                          configuration: configuration)
+```
+
 ### Tap to Pay
 
 Check the value of the `AB.supportsTapToPay` property to determine if the device meets the minimum requirements for Tap to Pay, then call:
@@ -279,6 +285,11 @@ See [this document](https://learn.microsoft.com/en-us/azure/azure-monitor/app/ip
 * https://stg-cdn.autobooks.co
 * https://prd-cdn.autobooks.co
 
+#### GraphQL
+* https://dev-gql.autobooks.co
+* https://stg-gql.autobooks.co
+* https://gql.autobooks.co
+
 #### Segment
 * https://cdn.segment.com
 * https://api.segment.io
@@ -299,3 +310,6 @@ See [this document](https://learn.microsoft.com/en-us/azure/azure-monitor/app/ip
 
 #### Fraud monitoring
 * https://tst.kaptcha.com
+
+#### User Experience
+* https://fast.appcues.com
