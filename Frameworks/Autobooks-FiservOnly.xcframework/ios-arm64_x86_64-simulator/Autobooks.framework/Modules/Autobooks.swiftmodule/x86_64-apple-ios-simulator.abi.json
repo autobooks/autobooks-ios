@@ -11633,21 +11633,21 @@
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 2714,
+      "offset": 2747,
       "length": 9,
       "value": "\"presale\""
     },
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 2754,
+      "offset": 2787,
       "length": 6,
       "value": "\"cart\""
     },
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Utilities\/Analytics.swift",
       "kind": "StringLiteral",
-      "offset": 2799,
+      "offset": 2832,
       "length": 15,
       "value": "\"product_sheet\""
     },

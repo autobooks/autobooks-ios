@@ -6,14 +6,14 @@ The Autobooks SDK provides an interface for Apple's ProximityReader framework an
 
 ### Minimum SDK requirements
 
-* iOS 16.7+ (as of 2.3.0; earlier versions supported iOS 15+)
+* iOS 16.0+
 * Xcode 16.3
 
 Additionally, a US-based IP address may be required to connect to the Autobooks SDK backend.  You may receive a 403 error outside the US.
 
 ### Tap to Pay requirements
 
-* iOS 17.0+ (as of 2.3.0; earlier versions supported iOS 16.7+)
+* iOS 17.0+
 * Tap to Pay on iPhone entitlement
 
 On July 8th 2024, Apple changed the runtime requirement for Tap to Pay from iOS 16.0 to iOS 16.7.  This affects all versions of the Autobooks SDK.  Notably, versions below 1.9.0 will return `true` for `AB.supportsTapToPay` but `AB.startTapToPay` will always fail with `osVersionNotSupported` on iOS 16.0–16.6.
