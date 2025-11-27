@@ -250,182 +250,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Contacts",
-        "printedName": "Contacts",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Autobooks",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "Autobooks"
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -5584,6 +5408,182 @@
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Contacts",
+        "printedName": "Contacts",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "Autobooks"
       },
       {
@@ -6379,678 +6379,6 @@
       "offset": 32309,
       "length": 85,
       "value": "\"https:\/\/app.autobooks.co\/login\/init?launchmode=CheckoutPages&viewmode=CheckoutPages\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 462,
-      "length": 55,
-      "value": "\"PhoneNumberKit.CountryCodePicker.SearchBarPlaceholder\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 538,
-      "length": 22,
-      "value": "\"Search Country Codes\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 583,
-      "length": 43,
-      "value": "\"Placeholder for country code search field\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 833,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 861,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 886,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1707,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
-      "kind": "Array",
-      "offset": 1987,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
-      "kind": "Array",
-      "offset": 2423,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 11008,
-      "length": 6,
-      "value": "\"Cell\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1891,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1770,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2178,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2209,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2441,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2897,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2907,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
-      "kind": "FloatLiteral",
-      "offset": 2916,
-      "length": 9,
-      "value": "0.0980392"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
-      "kind": "FloatLiteral",
-      "offset": 2934,
-      "length": 4,
-      "value": "0.22"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3250,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3260,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
-      "kind": "FloatLiteral",
-      "offset": 3269,
-      "length": 9,
-      "value": "0.0980392"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
-      "kind": "FloatLiteral",
-      "offset": 3287,
-      "length": 4,
-      "value": "0.22"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3440,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3987,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4307,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 3213,
-      "length": 4,
-      "value": "\"US\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 3253,
-      "length": 8,
-      "value": "\" ext. \""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 3295,
-      "length": 17,
-      "value": "\"999999999999999\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3346,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3386,
-      "length": 3,
-      "value": "250"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3428,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3463,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 3500,
-      "length": 10,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 3538,
-      "length": 6,
-      "value": "\"+＋\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 3582,
-      "length": 4,
-      "value": "\",;\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 3618,
-      "length": 4,
-      "value": "\"*#\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 3658,
-      "length": 22,
-      "value": "\"0-9０-９٠-٩۰-۹\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 3715,
-      "length": 10,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 3773,
-      "length": 3,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 3865,
-      "length": 10,
-      "value": "\"(\\$\\d)\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 3903,
-      "length": 7,
-      "value": "\"\\$FG\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 3938,
-      "length": 7,
-      "value": "\"\\$NP\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "Dictionary",
-      "offset": 3989,
-      "length": 360,
-      "value": "[(\"0\", \"0\"), (\"1\", \"1\"), (\"2\", \"2\"), (\"3\", \"3\"), (\"4\", \"4\"), (\"5\", \"5\"), (\"6\", \"6\"), (\"7\", \"7\"), (\"8\", \"8\"), (\"9\", \"9\"), (\"٠\", \"0\"), (\"١\", \"1\"), (\"٢\", \"2\"), (\"٣\", \"3\"), (\"٤\", \"4\"), (\"٥\", \"5\"), (\"٦\", \"6\"), (\"٧\", \"7\"), (\"٨\", \"8\"), (\"٩\", \"9\"), (\"۰\", \"0\"), (\"۱\", \"1\"), (\"۲\", \"2\"), (\"۳\", \"3\"), (\"۴\", \"4\"), (\"۵\", \"5\"), (\"۶\", \"6\"), (\"۷\", \"7\"), (\"۸\", \"8\"), (\"۹\", \"9\"), (\"*\", \"*\"), (\"#\", \"#\"), (\",\", \",\"), (\";\", \";\")]"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 4389,
-      "length": 26,
-      "value": "\"([0-9０-９٠-٩۰-۹])\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 4446,
-      "length": 221,
-      "value": "\"(?:;ext=([0-9０-９٠-٩۰-۹]{1,7})|[  \\t,]*(?:e?xt(?:ensi(?:ó?|ó))?n?|ｅ?ｘｔｎ?|[,xｘX#＃~～;]|int|anexo|ｉｎｔ)[:\\.．]?[  \\t,-]*([0-9０-９٠-٩۰-۹]{1,7})#?|[- ]+([0-9０-９٠-٩۰-۹]{1,5})#)$\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 4697,
-      "length": 13,
-      "value": "\"^(?:\\+|%@)\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 4743,
-      "length": 10,
-      "value": "\"^(?:%@)$\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 4794,
-      "length": 20,
-      "value": "\"\\[([^\\[\\]])*\\]\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 4856,
-      "length": 19,
-      "value": "\"\\d(?=[^,}][^,}])\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 4923,
-      "length": 9,
-      "value": "\"^(?:%@)\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 4974,
-      "length": 6,
-      "value": "\"[- ]\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 5024,
-      "length": 151,
-      "value": "\"^[-x‐-―−ー－-／ ­​⁠　()（）［］.\\[\\]\/~⁓∼～]*(\\$\\d[-x‐-―−ー－-／ ­​⁠　()（）［］.\\[\\]\/~⁓∼～]*)+$\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 5218,
-      "length": 10,
-      "value": "\"^[+＋]+\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 5272,
-      "length": 14,
-      "value": "\"[\\\\\\\/] *x\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 5324,
-      "length": 34,
-      "value": "\"[^0-9０-９٠-٩۰-۹A-Za-z#]+$\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 5395,
-      "length": 28,
-      "value": "\"[+＋0-9０-９٠-٩۰-۹]\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 5466,
-      "length": 721,
-      "value": "\"^[0-9０-９٠-٩۰-۹]{2}$|^[+＋]*(?:[-x‐-―−ー－-／  ­​⁠　()（）［］.\\[\\]\/~⁓∼～*]*[0-9０-９٠-٩۰-۹]){3,}[-x‐-―−ー－-／  ­​⁠　()（）［］.\\[\\]\/~⁓∼～*A-Za-z0-9０-９٠-٩۰-۹]*(?:(?:;ext=([0-9０-９٠-٩۰-۹]{1,7})|[  \\t,]*(?:e?xt(?:ensi(?:ó?|ó))?n?|ｅ?ｘｔｎ?|[,xｘX#＃~～;]|int|anexo|ｉｎｔ)[:\\.．]?[  \\t,-]*([0-9０-９٠-٩۰-۹]{1,7})#?|[- ]+([0-9０-９٠-٩۰-۹]{1,5})#)?$)?[,;]*$\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 6225,
-      "length": 15,
-      "value": "\"^[a-zA-Z]{2}$\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/MetadataParsing.swift",
-      "kind": "StringLiteral",
-      "offset": 303,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/MetadataParsing.swift",
-      "kind": "StringLiteral",
-      "offset": 876,
-      "length": 14,
-      "value": "\"numberFormat\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/MetadataParsing.swift",
-      "kind": "StringLiteral",
-      "offset": 4347,
-      "length": 15,
-      "value": "\"leadingDigits\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/MetadataParsing.swift",
-      "kind": "StringLiteral",
-      "offset": 4504,
-      "length": 27,
-      "value": "\"carrierCodeFormattingRule\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/NSRegularExpression+Swift.swift",
-      "kind": "Array",
-      "offset": 1222,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/NSRegularExpression+Swift.swift",
-      "kind": "Array",
-      "offset": 2213,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/NSRegularExpression+Swift.swift",
-      "kind": "Array",
-      "offset": 2568,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/NSRegularExpression+Swift.swift",
-      "kind": "Array",
-      "offset": 2907,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/NSRegularExpression+Swift.swift",
-      "kind": "Array",
-      "offset": 3266,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/NSRegularExpression+Swift.swift",
-      "kind": "Array",
-      "offset": 3685,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/ParseManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5387,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 646,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 757,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1369,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1442,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2500,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2527,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2560,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumber+Codable.swift",
-      "kind": "StringLiteral",
-      "offset": 5532,
-      "length": 53,
-      "value": "\"com.roymarmelstein.PhoneNumberKit.decoding-strategy\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumber+Codable.swift",
-      "kind": "StringLiteral",
-      "offset": 5648,
-      "length": 53,
-      "value": "\"com.roymarmelstein.PhoneNumberKit.encoding-strategy\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumber+Codable.swift",
-      "kind": "StringLiteral",
-      "offset": 5756,
-      "length": 44,
-      "value": "\"com.roymarmelstein.PhoneNumberKit.instance\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberFormatter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 477,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberFormatter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 807,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberFormatter.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1187,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberParser.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4617,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberUtility.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1207,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberUtility.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1880,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberUtility.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1926,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberUtility.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2567,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberUtility.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3133,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberUtility.swift",
-      "kind": "BooleanLiteral",
-      "offset": 8663,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberUtility.swift",
-      "kind": "Array",
-      "offset": 15598,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberUtility.swift",
-      "kind": "BooleanLiteral",
-      "offset": 15724,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberUtility.swift",
-      "kind": "BooleanLiteral",
-      "offset": 15834,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/RegexManager.swift",
-      "kind": "StringLiteral",
-      "offset": 583,
-      "length": 30,
-      "value": "\"com.phonenumberkit.regexpool\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/RegexManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3652,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/RegexManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5219,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/ProximityReader\/PaymentSession.swift",
@@ -11111,6 +10439,678 @@
       "offset": 15425,
       "length": 12,
       "value": "\"9999999.99\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/ParseManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5387,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 477,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 807,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1187,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 462,
+      "length": 55,
+      "value": "\"PhoneNumberKit.CountryCodePicker.SearchBarPlaceholder\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 538,
+      "length": 22,
+      "value": "\"Search Country Codes\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 583,
+      "length": 43,
+      "value": "\"Placeholder for country code search field\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 833,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 861,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 886,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1707,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "Array",
+      "offset": 1987,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "Array",
+      "offset": 2423,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/CountryCodePickerViewController.swift",
+      "kind": "StringLiteral",
+      "offset": 11008,
+      "length": 6,
+      "value": "\"Cell\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberUtility.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1207,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberUtility.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1880,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberUtility.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1926,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberUtility.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2567,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberUtility.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3133,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberUtility.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8663,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberUtility.swift",
+      "kind": "Array",
+      "offset": 15598,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberUtility.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15724,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberUtility.swift",
+      "kind": "BooleanLiteral",
+      "offset": 15834,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/MetadataParsing.swift",
+      "kind": "StringLiteral",
+      "offset": 303,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/MetadataParsing.swift",
+      "kind": "StringLiteral",
+      "offset": 876,
+      "length": 14,
+      "value": "\"numberFormat\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/MetadataParsing.swift",
+      "kind": "StringLiteral",
+      "offset": 4347,
+      "length": 15,
+      "value": "\"leadingDigits\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/MetadataParsing.swift",
+      "kind": "StringLiteral",
+      "offset": 4504,
+      "length": 27,
+      "value": "\"carrierCodeFormattingRule\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/NSRegularExpression+Swift.swift",
+      "kind": "Array",
+      "offset": 1222,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/NSRegularExpression+Swift.swift",
+      "kind": "Array",
+      "offset": 2213,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/NSRegularExpression+Swift.swift",
+      "kind": "Array",
+      "offset": 2568,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/NSRegularExpression+Swift.swift",
+      "kind": "Array",
+      "offset": 2907,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/NSRegularExpression+Swift.swift",
+      "kind": "Array",
+      "offset": 3266,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/NSRegularExpression+Swift.swift",
+      "kind": "Array",
+      "offset": 3685,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 646,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 757,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1369,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1442,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2500,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2527,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PartialFormatter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2560,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumber+Codable.swift",
+      "kind": "StringLiteral",
+      "offset": 5532,
+      "length": 53,
+      "value": "\"com.roymarmelstein.PhoneNumberKit.decoding-strategy\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumber+Codable.swift",
+      "kind": "StringLiteral",
+      "offset": 5648,
+      "length": 53,
+      "value": "\"com.roymarmelstein.PhoneNumberKit.encoding-strategy\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumber+Codable.swift",
+      "kind": "StringLiteral",
+      "offset": 5756,
+      "length": 44,
+      "value": "\"com.roymarmelstein.PhoneNumberKit.instance\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/PhoneNumberParser.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4617,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1891,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1770,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2178,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2209,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2441,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2897,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2907,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "FloatLiteral",
+      "offset": 2916,
+      "length": 9,
+      "value": "0.0980392"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "FloatLiteral",
+      "offset": 2934,
+      "length": 4,
+      "value": "0.22"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3250,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3260,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "FloatLiteral",
+      "offset": 3269,
+      "length": 9,
+      "value": "0.0980392"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "FloatLiteral",
+      "offset": 3287,
+      "length": 4,
+      "value": "0.22"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3440,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3987,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/UI\/PhoneNumberTextField.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4307,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/RegexManager.swift",
+      "kind": "StringLiteral",
+      "offset": 583,
+      "length": 30,
+      "value": "\"com.phonenumberkit.regexpool\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/RegexManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3652,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/RegexManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5219,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3213,
+      "length": 4,
+      "value": "\"US\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3253,
+      "length": 8,
+      "value": "\" ext. \""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3295,
+      "length": 17,
+      "value": "\"999999999999999\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3346,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3386,
+      "length": 3,
+      "value": "250"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3428,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3463,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3500,
+      "length": 10,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3538,
+      "length": 6,
+      "value": "\"+＋\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3582,
+      "length": 4,
+      "value": "\",;\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3618,
+      "length": 4,
+      "value": "\"*#\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3658,
+      "length": 22,
+      "value": "\"0-9０-９٠-٩۰-۹\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3715,
+      "length": 10,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3773,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3865,
+      "length": 10,
+      "value": "\"(\\$\\d)\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3903,
+      "length": 7,
+      "value": "\"\\$FG\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 3938,
+      "length": 7,
+      "value": "\"\\$NP\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "Dictionary",
+      "offset": 3989,
+      "length": 360,
+      "value": "[(\"0\", \"0\"), (\"1\", \"1\"), (\"2\", \"2\"), (\"3\", \"3\"), (\"4\", \"4\"), (\"5\", \"5\"), (\"6\", \"6\"), (\"7\", \"7\"), (\"8\", \"8\"), (\"9\", \"9\"), (\"٠\", \"0\"), (\"١\", \"1\"), (\"٢\", \"2\"), (\"٣\", \"3\"), (\"٤\", \"4\"), (\"٥\", \"5\"), (\"٦\", \"6\"), (\"٧\", \"7\"), (\"٨\", \"8\"), (\"٩\", \"9\"), (\"۰\", \"0\"), (\"۱\", \"1\"), (\"۲\", \"2\"), (\"۳\", \"3\"), (\"۴\", \"4\"), (\"۵\", \"5\"), (\"۶\", \"6\"), (\"۷\", \"7\"), (\"۸\", \"8\"), (\"۹\", \"9\"), (\"*\", \"*\"), (\"#\", \"#\"), (\",\", \",\"), (\";\", \";\")]"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4389,
+      "length": 26,
+      "value": "\"([0-9０-９٠-٩۰-۹])\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4446,
+      "length": 221,
+      "value": "\"(?:;ext=([0-9０-９٠-٩۰-۹]{1,7})|[  \\t,]*(?:e?xt(?:ensi(?:ó?|ó))?n?|ｅ?ｘｔｎ?|[,xｘX#＃~～;]|int|anexo|ｉｎｔ)[:\\.．]?[  \\t,-]*([0-9０-９٠-٩۰-۹]{1,7})#?|[- ]+([0-9０-９٠-٩۰-۹]{1,5})#)$\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4697,
+      "length": 13,
+      "value": "\"^(?:\\+|%@)\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4743,
+      "length": 10,
+      "value": "\"^(?:%@)$\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4794,
+      "length": 20,
+      "value": "\"\\[([^\\[\\]])*\\]\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4856,
+      "length": 19,
+      "value": "\"\\d(?=[^,}][^,}])\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4923,
+      "length": 9,
+      "value": "\"^(?:%@)\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 4974,
+      "length": 6,
+      "value": "\"[- ]\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5024,
+      "length": 151,
+      "value": "\"^[-x‐-―−ー－-／ ­​⁠　()（）［］.\\[\\]\/~⁓∼～]*(\\$\\d[-x‐-―−ー－-／ ­​⁠　()（）［］.\\[\\]\/~⁓∼～]*)+$\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5218,
+      "length": 10,
+      "value": "\"^[+＋]+\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5272,
+      "length": 14,
+      "value": "\"[\\\\\\\/] *x\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5324,
+      "length": 34,
+      "value": "\"[^0-9０-９٠-٩۰-۹A-Za-z#]+$\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5395,
+      "length": 28,
+      "value": "\"[+＋0-9０-９٠-٩۰-۹]\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5466,
+      "length": 721,
+      "value": "\"^[0-9０-９٠-٩۰-۹]{2}$|^[+＋]*(?:[-x‐-―−ー－-／  ­​⁠　()（）［］.\\[\\]\/~⁓∼～*]*[0-9０-９٠-٩۰-۹]){3,}[-x‐-―−ー－-／  ­​⁠　()（）［］.\\[\\]\/~⁓∼～*A-Za-z0-9０-９٠-٩۰-۹]*(?:(?:;ext=([0-9０-９٠-٩۰-۹]{1,7})|[  \\t,]*(?:e?xt(?:ensi(?:ó?|ó))?n?|ｅ?ｘｔｎ?|[,xｘX#＃~～;]|int|anexo|ｉｎｔ)[:\\.．]?[  \\t,-]*([0-9０-９٠-٩۰-۹]{1,7})#?|[- ]+([0-9０-９٠-٩۰-۹]{1,5})#)?$)?[,;]*$\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/PhoneNumberKit\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6225,
+      "length": 15,
+      "value": "\"^[a-zA-Z]{2}$\""
     },
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Onboarding\/OnboardingCheckmarkView.swift",
