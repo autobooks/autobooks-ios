@@ -19,19 +19,19 @@ let package = Package(
         .binaryTarget(
             name: "Autobooks",
             url: "https://github.com/autobooks/autobooks-ios/raw/2.3.4/ZippedFrameworks/Autobooks.xcframework.zip",
-            checksum: "a00e6653ca40a358379deefbd55383f56b0286cf02565cea9fdfa48ab7302c4b"
+            checksum: "6b586624b9c6b8895cd1ed7a0b8251c931b5609a5819d531cc3183e388ebcbcf"
         ),
         // Fiserv-only version that does NOT require triPOSMobileSDK
         .binaryTarget(
             name: "Autobooks-FiservOnly",
             url: "https://github.com/autobooks/autobooks-ios/raw/2.3.4/ZippedFrameworks/Autobooks-FiservOnly.xcframework.zip",
-            checksum: "3e6494e1c427454ded4fb1b7a34d10eae164d0431661bcb15a00ed981b47a84a"
+            checksum: "5b283b68385cca7a15bfd5f7326090c885c819eb5d770fdb71ee60d095d7fa29"
         ),
         // triPOS dependency for Autobooks
         .binaryTarget(
             name: "triPOSMobileSDK",
             url: "https://github.com/autobooks/autobooks-ios/raw/2.3.4/ZippedFrameworks/triPOSMobileSDK.xcframework.zip",
-            checksum: "bc78751976fb9827cb6201241101a3bb4e2d16910cb0793b190b134c48a4021d"
+            checksum: "01d5dd031a35611c99b9430a2df207176e41ba75badd5ca256be79ae1285b4a3"
         ),
     ]
 )
