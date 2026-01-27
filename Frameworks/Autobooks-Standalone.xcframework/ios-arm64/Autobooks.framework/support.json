@@ -1,0 +1,296 @@
+{
+    "categories": [
+        {
+            "id": "getting-started",
+            "name": "Getting Started",
+            "symbol": "arrow.down.forward.square.fill"
+        },
+        {
+            "id": "tap-to-pay-app-by-autobooks",
+            "name": "Tap to Pay App by Autobooks",
+            "symbol": "sparkles"
+        },
+        {
+            "id": "manage-my-transactions",
+            "name": "Manage My Transactions",
+            "symbol": "list.bullet.rectangle"
+        },
+        {
+            "id": "troubleshooting",
+            "name": "Troubleshooting",
+            "symbol": "questionmark.circle"
+        }
+    ],
+    "articles": [
+        {
+            "id": "enrolling-in-ttp",
+            "title": "Enrolling in Tap to Pay on iPhone",
+            "subtitle": "",
+            "category": "getting-started",
+            "kind": "link",
+            "url": "https://help.autobooks.co/knowledge/enrolling-in-tap-to-pay-on-iphone",
+            "poster_url": "posters/getting-started.png",
+            "related_videos": [
+
+            ],
+            "theme": "dark"
+        },
+        {
+            "id": "using-ttp",
+            "title": "Using Tap to Pay on iPhone",
+            "subtitle": "",
+            "category": "getting-started",
+            "kind": "link",
+            "url": "https://help.autobooks.co/knowledge/using-tap-to-pay-on-iphone",
+            "poster_url": "posters/getting-started.png",
+            "related_videos": [
+
+            ],
+            "theme": "dark"
+        },
+        {
+            "id": "best-practices",
+            "title": "Best Practices when using Tap to Pay on iPhone",
+            "subtitle": "",
+            "category": "getting-started",
+            "kind": "link",
+            "url": "https://help.autobooks.co/knowledge/best-practices-when-using-tap-to-pay-on-iphone",
+            "poster_url": "posters/getting-started.png",
+            "related_videos": [
+
+            ],
+            "theme": "dark"
+        },
+        {
+            "id": "send-a-receipt",
+            "title": "Send a receipt with Tap to Pay iPhone",
+            "subtitle": "",
+            "category": "getting-started",
+            "kind": "link",
+            "url": "https://help.autobooks.co/knowledge/send-a-receipt-with-tap-to-pay-iphone",
+            "poster_url": "posters/getting-started.png",
+            "related_videos": [
+
+            ],
+            "theme": "dark"
+        },
+        {
+            "id": "setting-up-ttp-users",
+            "title": "Setting up other Tap to Pay on iPhone users for your business",
+            "subtitle": "",
+            "category": "getting-started",
+            "kind": "link",
+            "url": "https://help.autobooks.co/knowledge/setting-up-other-tap-to-pay-on-iphone-users-for-your-business",
+            "poster_url": "posters/getting-started.png",
+            "related_videos": [
+
+            ],
+            "theme": "dark"
+        },
+        {
+            "id": "accept-payments",
+            "title": "Accept Payments with Autobooks Tap to Pay App",
+            "subtitle": "",
+            "category": "tap-to-pay-app-by-autobooks",
+            "kind": "link",
+            "url": "https://help.autobooks.co/knowledge/tap-to-pay-standalone-app",
+            "poster_url": "posters/tap-to-pay-app-by-autobooks.png",
+            "related_videos": [
+
+            ],
+            "theme": "dark"
+        },
+        {
+            "id": "how-to-view-transactions",
+            "title": "How to view transactions through Tap to Pay on iPhone",
+            "subtitle": "",
+            "category": "manage-my-transactions",
+            "kind": "link",
+            "url": "https://help.autobooks.co/knowledge/how-to-view-transactions-through-tap-to-pay-on-iphone",
+            "poster_url": "posters/manage-my-transactions.png",
+            "related_videos": [
+
+            ],
+            "theme": "dark"
+        },
+        {
+            "id": "how-to-cancel-a-payment",
+            "title": "How to cancel a payment when using Tap to Pay on iPhone",
+            "subtitle": "",
+            "category": "manage-my-transactions",
+            "kind": "link",
+            "url": "https://help.autobooks.co/knowledge/how-to-cancel-a-payment-when-using-tap-to-pay-on-iphone",
+            "poster_url": "posters/manage-my-transactions.png",
+            "related_videos": [
+
+            ],
+            "theme": "dark"
+        },
+        {
+            "id": "how-to-send-a-receipt",
+            "title": "How to send a receipt after a transaction is completed when using Tap to Pay on iPhone",
+            "subtitle": "",
+            "category": "manage-my-transactions",
+            "kind": "link",
+            "url": "https://help.autobooks.co/knowledge/how-to-send-a-receipt-after-a-transaction-is-completed-when-using-tap-to-pay-on-iphone",
+            "poster_url": "posters/manage-my-transactions.png",
+            "related_videos": [
+
+            ],
+            "theme": "dark"
+        },
+        {
+            "id": "how-to-refund-a-payment",
+            "title": "How to refund a payment when using Tap to Pay on iPhone",
+            "subtitle": "",
+            "category": "manage-my-transactions",
+            "kind": "link",
+            "url": "https://help.autobooks.co/knowledge/how-to-refund-a-payment-when-using-tap-to-pay-on-iphone",
+            "poster_url": "posters/manage-my-transactions.png",
+            "related_videos": [
+
+            ],
+            "theme": "dark"
+        },
+        {
+            "id": "why-do-card-numbers-differ",
+            "title": "Why do card numbers on the payment differ from the customer's physical card when I use Tap to Pay on iPhone?",
+            "subtitle": "",
+            "category": "manage-my-transactions",
+            "kind": "link",
+            "url": "https://help.autobooks.co/knowledge/why-do-card-numbers-on-the-payment-differ-from-the-customers-physical-card-when-i-use-tap-to-pay-on-iphone",
+            "poster_url": "posters/manage-my-transactions.png",
+            "related_videos": [
+
+            ],
+            "theme": "dark"
+        },
+        {
+            "id": "which-devices-are-supported",
+            "title": "Which devices are supported with Tap to Pay on iPhone?",
+            "subtitle": "",
+            "category": "troubleshooting",
+            "kind": "link",
+            "url": "https://help.autobooks.co/knowledge/which-devices-are-supported-with-tap-to-pay-on-iphone",
+            "poster_url": "posters/troubleshooting.png",
+            "related_videos": [
+
+            ],
+            "theme": "dark"
+        },
+        {
+            "id": "manual-card-entry",
+            "title": "Manual card entry when your client cannot use Tap to Pay on iPhone",
+            "subtitle": "",
+            "category": "troubleshooting",
+            "kind": "link",
+            "url": "https://help.autobooks.co/knowledge/contactless-2",
+            "poster_url": "posters/troubleshooting.png",
+            "related_videos": [
+
+            ],
+            "theme": "dark"
+        },
+        {
+            "id": "emv-recognition",
+            "title": "How do I know if a payment method is contactless?",
+            "subtitle": "",
+            "category": "troubleshooting",
+            "kind": "link",
+            "url": "https://help.autobooks.co/knowledge/how-do-i-know-if-my-customers-payment-card-is-contactless",
+            "poster_url": "posters/troubleshooting.png",
+            "related_videos": [
+
+            ],
+            "theme": "dark"
+        },
+        {
+            "id": "can-i-change-the-business-name",
+            "title": "Can I change the business name that shows on Tap to Pay on iPhone?",
+            "subtitle": "",
+            "category": "troubleshooting",
+            "kind": "link",
+            "url": "https://help.autobooks.co/knowledge/can-i-change-the-business-name-that-shows-on-tap-to-pay-on-iphone",
+            "poster_url": "posters/troubleshooting.png",
+            "related_videos": [
+
+            ],
+            "theme": "dark"
+        }
+    ],
+    "videos": [
+        {
+            "id": "how-to-tap",
+            "category": "ttp",
+            "description": "How to accept contactless payments on iPhone",
+            "url": "https://developer.apple.com/tap-to-pay/media/LaserTag_Main_Film_Shopify_960x540.mp4",
+            "poster_url": "posters/video-how-to-accept.png",
+            "related_articles": [
+
+            ]
+        },
+        {
+            "id": "apple-watch",
+            "category": "ttp",
+            "description": "Apple Pay on Apple Watch",
+            "url": "https://developer.apple.com/tap-to-pay/media/Tap-to-Pay-on-iPhone-Explainer-Video-Apple-Pay-Apple-Watch-Nov2022.mp4",
+            "poster_url": "posters/video-apple-watch.png",
+            "related_articles": [
+
+            ]
+        }
+    ],
+    "pages": [
+        {
+            "id": "loading-ttp-1",
+            "title": "Confirm the Card is Contactless",
+            "content": "Look for this symbol on the **front or back** of the credit or debit card.",
+            "duration": 5.0
+        },
+        {
+            "id": "loading-ttp-2",
+            "title": "Hold the Card Correctly",
+            "content": "Hold the card **horizontally and wait a few seconds** for the done checkmark to appear.",
+            "duration": 5.0
+        },
+        {
+            "id": "loading-ttp-3",
+            "title": "Try a Digital Wallet",
+            "content": "You can accept payments from digital wallets on **phones and watches.**",
+            "duration": 5.0
+        },
+        {
+            "id": "cancellation",
+            "title": "Let's check a few things",
+            "content": "Confirm that the card has a **contactless icon.**\n\nDepending on the type of card, it may need to be held closer or farther away from the iPhone.\n\n**Wait for a few seconds.**\n\nIf the card still doesn't work, try a different contactless card, digital wallet or key the card in manually."
+        }
+    ],
+    "page_sets": [
+        {
+            "order_randomly": true,
+            "offset_randomly": false,
+            "id": "loading-ttp",
+            "ids": [
+                "loading-ttp-1",
+                "loading-ttp-2",
+                "loading-ttp-3"
+            ]
+        },
+        {
+            "order_randomly": false,
+            "offset_randomly": false,
+            "id": "cancellation",
+            "ids": [
+                "cancellation"
+            ]
+        }
+    ],
+    "settings": {
+        "minimum_durations": {
+            "ttp": 5.0,
+            "invoicing": 0.0,
+            "payment_form": 0.0,
+            "full_autobooks": 0.0
+        }
+    }
+}
