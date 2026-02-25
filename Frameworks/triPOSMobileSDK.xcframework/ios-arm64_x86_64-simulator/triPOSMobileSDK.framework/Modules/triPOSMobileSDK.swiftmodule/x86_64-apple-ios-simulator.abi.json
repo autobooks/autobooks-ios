@@ -2269,6 +2269,55 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "saveLastError",
+            "printedName": "saveLastError(error:function:file:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@triPOSMobileSDK@objc(cs)PaymentCardReaderBridge(im)saveLastErrorWithError:function:file:line:",
+            "mangledName": "$s15triPOSMobileSDK23PaymentCardReaderBridgeC13saveLastError5error8function4file4lineys0J0_p_S2SSitF",
+            "moduleName": "triPOSMobileSDK",
+            "objc_name": "saveLastErrorWithError:function:file:line:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -2344,14 +2393,14 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ec2-user\/Documents\/_work\/44\/s\/triPOSMobileSDK\/PoiDevice\/PoiDevice\/AppleTapToPay\/PaymentCardReaderToken.swift",
+      "filePath": "\/Users\/ec2-user\/Documents\/_work\/32\/s\/triPOSMobileSDK\/PoiDevice\/PoiDevice\/AppleTapToPay\/PaymentCardReaderToken.swift",
       "kind": "StringLiteral",
       "offset": 120,
       "length": 22,
       "value": "\"triPOSMobileSDK.PaymentCardReaderToken\""
     },
     {
-      "filePath": "\/Users\/ec2-user\/Documents\/_work\/44\/s\/triPOSMobileSDK\/PoiDevice\/PoiDevice\/AppleTapToPay\/PaymentCardReaderBridge.swift",
+      "filePath": "\/Users\/ec2-user\/Documents\/_work\/32\/s\/triPOSMobileSDK\/PoiDevice\/PoiDevice\/AppleTapToPay\/PaymentCardReaderBridge.swift",
       "kind": "StringLiteral",
       "offset": 5447,
       "length": 8,

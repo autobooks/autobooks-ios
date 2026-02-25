@@ -23,7 +23,15 @@
 
 +(BOOL)isIccCardDebit:(VTPIccCardData *)iccCardData;
 
++(BOOL)isIccCardEbt:(VTPIccCardData *)iccCardData;
+
++(BOOL)isEbtAid:(NSString *)aid;
+
++(BOOL)isGlobalDebitAid:(NSString *)aid;
+
 +(BOOL)isCommonUsDebitAid:(NSString *)aid;
+
++(BOOL)isInteracDebitAid:(NSString *)aid;
 
 +(VTCEmvBrand)getBrandForAid:(NSString *)aid;
 
@@ -47,6 +55,9 @@
 +(BOOL) isQuickChipEnabled:(VTPConfiguration*) configuration;
 
 +(BOOL)isDiscoverAid:(NSString *)aid;
+
++(VTPDeviceLanguage) getEmvCardPreferredLanguage:(VTCTlvCollection)tags;
+
 
 @end
 

@@ -158,6 +158,13 @@ extern NSString * const VTCFinancialTrack2DataSeparator;
 ///
 @property (nonatomic, retain) NSString *discretionaryData;
 
+///
+/// \brief Card bin value
+///
+/// Card bin value for this card data. This property is masked if the card data is encrypted.
+///
+@property (nonatomic, retain) NSString *cardBinValue;
+
 @end
 
 #endif /* !DOXYGEN_SHOULD_SKIP_THIS */

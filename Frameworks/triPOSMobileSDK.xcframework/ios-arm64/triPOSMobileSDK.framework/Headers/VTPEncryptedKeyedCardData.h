@@ -66,6 +66,13 @@
 ///
 @property (nonatomic) VTPSecurityCodeStatus securityCodeStatus;
 
+///
+/// \brief Card bin value
+///
+/// Card bin value for this card data. 
+///
+@property (nonatomic, retain) NSString *cardBinValue;
+
 @end
 
 #endif /* VTPEncryptedKeyedCardData_h */

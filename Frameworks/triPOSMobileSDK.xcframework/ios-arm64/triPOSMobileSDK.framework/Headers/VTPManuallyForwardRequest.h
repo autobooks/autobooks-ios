@@ -7,13 +7,14 @@
 
 #import "VTPFinancialRequestAmounts.h"
 #import "VTPFinancialRequestConvenienceFeeAmount.h"
+#import "VTPFinancialRequestSurchargeAmount.h"
 
 ///
 /// \class VTPManuallyForwardRequest
 ///
 /// \brief The definition for an manually forward transaction request
 ///
-@interface VTPManuallyForwardRequest : NSObject <VTPFinancialRequestAmounts, VTPFinancialRequestConvenienceFeeAmount>
+@interface VTPManuallyForwardRequest : NSObject <VTPFinancialRequestAmounts, VTPFinancialRequestConvenienceFeeAmount, VTPFinancialRequestSurchargeAmount>
 
 @property (nonatomic, retain) NSString *tpId;
 

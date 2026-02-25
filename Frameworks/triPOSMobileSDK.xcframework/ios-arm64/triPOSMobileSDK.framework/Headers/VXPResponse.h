@@ -78,7 +78,7 @@
 ///
 /// An instance of the Enhanced BIN class. NOTE: This property is only present if the Enhanced BIN class is present in the Express response.
 ///
-@property (retain, nonatomic) VXPEnhancedBIN *enhancedBIN;
+@property (retain, nonatomic) VXPEnhancedBIN *EnhancedBIN;
 
 ///
 /// \brief TransactionSetup class

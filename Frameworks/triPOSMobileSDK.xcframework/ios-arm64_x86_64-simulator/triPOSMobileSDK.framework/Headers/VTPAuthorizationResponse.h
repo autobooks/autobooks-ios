@@ -15,6 +15,10 @@
 #import "VTPStoreAndForwardResponse.h"
 #import "VTPDccResponse.h"
 #import "VTPFinancialResponseSurchargeAmount.h"
+#import "VTPCommercialCardCustomerCodeResponse.h"
+#import "VTPDebitFinancialResponseBase.h"
+#import "VTPLanguageResponse.h"
+
 
 
 ///
@@ -22,7 +26,7 @@
 ///
 /// \brief The definition of the authorization response
 ///
-@interface VTPAuthorizationResponse : NSObject <VTPFinancialResponseBase, VTPFinancialResponseAmounts, VTPFinancialResponseTipAmount, VTPFinancialResponseCard, VTPFinancialResponseCardVerification, VTPFinancialResponseEmv, VTPFinancialResponseHost, VTPStoreAndForwardResponse, VTPDccResponse, VTPFinancialResponseSurchargeAmount>
+@interface VTPAuthorizationResponse : NSObject <VTPFinancialResponseBase, VTPFinancialResponseAmounts, VTPFinancialResponseTipAmount, VTPFinancialResponseCard, VTPFinancialResponseCardVerification, VTPFinancialResponseEmv, VTPFinancialResponseHost, VTPStoreAndForwardResponse, VTPDccResponse, VTPFinancialResponseSurchargeAmount, VTPCommercialCardCustomerCodeResponse, VTPDebitFinancialResponseBase, VTPLanguageResponse>
 
 @end
 

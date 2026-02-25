@@ -61,6 +61,9 @@
 // VTPFinancialRequestConvenienceFeeAmount
 @property (retain, nonatomic) NSString *convenienceFeeAmount;
 
+// VTPFinancialRequestSurchargeAmount
+@property (retain, nonatomic) NSString *surchargeAmount;
+
 // VTPTransactionConfiguration
 @property (nonatomic) VTPCurrencyCode currencyCode;
 

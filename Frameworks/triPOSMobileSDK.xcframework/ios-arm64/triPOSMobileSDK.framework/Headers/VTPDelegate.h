@@ -8,6 +8,7 @@
 #import "VTPStatus.h"
 #import "VTPBluetoothDevice.h"
 #import "VPDPairingConfirmationCallback.h"
+#import "VTPDeviceSetupResult.h"
 
 ///
 /// \protocol VTPDelegate
@@ -158,6 +159,73 @@
 ///
 
 -(void) onReturnPairingConfirmation:(NSArray*) ledSequence deviceName:(NSString*) deviceName callback:(id<VPDPairingConfirmationCallback>) callback;
+
+
+///
+/// \brief Device connected callback with firmware and configuration version
+///
+/// This protocol method is called to inform the delegate a recognized device has been connected.
+///
+/// \param description The description of the connected device.
+///
+/// \param model The model of the connected device.
+///
+/// \param serialNumber The serial number of the connected device. This value may be nil if the connected device does not supply this value. In some cases, this value may not be available immediately upon connection.
+///
+/// \param firmwareVersion The firmware version of the connected device.
+///
+/// \param configurationVersion The configuration/settings version of the connected device. This value may be nil if the connected device does not supply this value.
+///
+/// \param batteryPercentage The battery percentage of the connected device.
+///
+/// \param batteryLevel The battery level of the connected device.
+///
+/// \param deviceDescription The description\identifier for the device as provided in the device pool
+///
+/// \param address The IPAddress:Port number for the connected device
+///
+/// The method returns the details of the device configured during device pool setup
+///
+-(void) onDeviceSetupCompleted:(NSString *)description model:(NSString *)model serialNumber:(NSString *)serialNumber firmwareVersion:(NSString*) firmwareVersion configurationVersion:(NSString*) configurationVersion batteryPercentage:(NSString*) batteryPercentage batteryLevel:(NSString*) batteryLevel deviceDescription:(NSString *)deviceDescription address:(NSString *)address;
+
+///
+/// \brief Indicates the device setup from device pool failed
+///
+/// \param deviceDescription The description\identifier for the device as provided in the device pool
+///
+/// \param address The IPAddress:Port number for the connected device
+///
+/// The method indicates the connection\configuration of the device from the device pool failed
+///
+-(void)onDeviceSetupError:(NSError *)error deviceDescription:(NSString *)deviceDescription address:(NSString *)address;
+
+
+///
+/// \brief Device pool configuration completion callback with summary of the result.
+///
+/// \param deviceResult Summary of the device pool configuration with results for each device in the device pool.
+///
+/// This method returns the device pool setup completion callback with the details of each device in the device pool along with the status of the connection\configuration
+///
+-(void)onDevicePoolSetupCompleted:(NSArray<VTPDeviceSetupResult *> *) deviceResult;
+
+typedef void (^VTPConfirmConfigureonStartSession)(BOOL yes);
+
+
+///
+/// \brief Callback to confirm if the device needs to be configured during a start session.
+///
+/// \param message : Message to be displayed to the user.
+///
+/// \param callback: Delegate to send back the user confirmation to proceed with the configuration.
+///
+/// This method sends a request to confirm if the device needs to be configured during the start session operation.
+///
+/// <br /><br /><strong>NOTE:</strong> Based on the confirmation sent back through the delegate, the device will be configured before the session is established or if declined the start session operation will be aborted.
+///
+-(void)onConfirmConfigureDeviceOnStartSession:(NSString *)message callback:(VTPConfirmConfigureonStartSession)callback;
+
+
 @end
 
 #endif /* VTPDelegate_h */

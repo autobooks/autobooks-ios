@@ -18,7 +18,7 @@
 #import "VXPTerminalEnvironmentCode.h"
 #import "VXPTerminalType.h"
 #import "VXPTerminalPinCapability.h"
-    
+#import "VXPTerminalClassificationCode.h"
 ///
 /// \class VXPTerminal
 ///
@@ -76,6 +76,13 @@
 /// This property gets or sets the terminal capability code.
 ///
 @property (nonatomic) VXPTerminalCapabilityCode TerminalCapabilityCode;
+
+///
+/// \brief Gets or sets the terminal classification code
+///
+/// This property gets or sets the terminal classification code.
+///
+@property (nonatomic) VXPTerminalClassificationCode TerminalClassificationCode;
 
 ///
 /// \brief Gets or sets the terminal environment code

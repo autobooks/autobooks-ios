@@ -1,6 +1,0 @@
-framework module triPOSMobileSDK_Private
-{
-    header "VTCLogger.h"
-    
-    export *
-}

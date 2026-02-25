@@ -32,6 +32,8 @@ typedef enum _VPDErrorCode
     VPDErrorCodeNotInitialized,
     /// Parameter is nil
     VPDErrorCodeParameterIsNil,
+    /// Parameter is nil for Moby
+    VPDErrorCodeParameterIsNilForMoby,
     /// Completion handler is nil
     VPDErrorCodeCompletionHandlerIsNil,
     /// Cancelled by user
@@ -43,8 +45,12 @@ typedef enum _VPDErrorCode
     VPDErrorCodeConfigurationReadUnknown = 20,
     /// Unknown configuration write error
     VPDErrorCodeConfigurationWriteUnknown,
+    /// Unknown configuration write error for Moby
+    VPDErrorCodeConfigurationWriteUnknownForMoby,
     /// Unknown file write error
     VPDErrorCodeFileWriteUnknown,
+    /// Unknown file write error for Moby
+    VPDErrorCodeFileWriteUnknownForMoby,
     /// Unsupported device
     VPDErrorCodeUnsupportedDevice,
     
@@ -111,12 +117,30 @@ typedef enum _VPDErrorCode
     /// Firmware update error
     VPDErrorCodeFirmwareUpdateFailed,
     
+    /// Firmware update error for Moby
+    VPDErrorCodeFirmwareUpdateFailedForMoby,
+    
     /// Device token request error
     VPDErrorCodeDeviceTokenRequestError = 100,
     
     /// Device token is expired
     VPDErrorCodeDeviceTokenIsExpired,
     
+    /// Printer error
+    VPDErrorCodePrinter,
+    
+    /// Print out of paper error
+    VPDErrorCodeOutOfPaper,
+
+    /// Print request error
+    VPDErrorCodePrintRequest,
+
+    /// No printer found error
+    VPDErrorCodeNoPrinterFound,
+
+    /// Print limit exceeded error
+    VPDErrorCodePrintLimitExceeded,
+
     /// Unknown error
     VPDErrorCodeUnknown = INT_MAX
 }   VPDErrorCode;

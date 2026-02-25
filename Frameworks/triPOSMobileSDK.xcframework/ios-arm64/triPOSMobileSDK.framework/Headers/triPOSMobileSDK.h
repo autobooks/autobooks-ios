@@ -33,11 +33,11 @@
 ///
 /// <ul>
 ///
-/// <li>iOS 15</li>
-///
 /// <li>iOS 16</li>
 ///
 /// <li>iOS 17</li>
+///
+/// <li>iOS 18</li>
 ///
 /// </ul>
 ///
@@ -47,7 +47,7 @@
 ///
 /// <li>The iOS device being used requires a data connection. The data connection does not have to be always available, but it does have to be available at the time a transaction is processed. This connection may be Wi-Fi, mobile data, or any other data connection available that allows an HTTPS connection to the Express host.</li>
 ///
-/// <li>You must have credentials assigned by Worldpay Integrated Payments to use this framework. For development and certification, you may sign up for a free test account by <a href='https://developerengine.fisglobal.com/apis/tripos/tripos-mobile'>clicking here</a> or visiting <a href='https://developerengine.fisglobal.com/'>www.developerengine.fisglobal.com</a>. For production use, contact your Worldpay Integrated Payments sales representative.</li>
+/// <li>You must have credentials assigned by Worldpay Integrated Payments to use this framework. For development and certification, you may sign up for a free test account by <a href='https://docs.worldpay.com/apis/tripos/tripos-mobile/ios'>clicking here</a> or visiting <a href='https://docs.worldpay.com/apis/tripos/tripos-mobile/ios'>https://docs.worldpay.com/apis/tripos/tripos-mobile/ios</a>. For production use, contact your Worldpay Integrated Payments sales representative.</li>
 ///
 /// </ul>
 ///
@@ -104,7 +104,6 @@
 /// <li>com.ingenico.easypayemv.spm-sppchannel</li>
 /// <li>com.ingenico.easypayemv.spm-pppchannel</li>
 /// <li>com.ingenico.easypayemv.spm-configuration</li>
-/// <li>com.landicorp.USBdatapath</li>
 /// </ul>
 ///
 /// </ul>
@@ -114,8 +113,8 @@
 ///
 /// \subsection addDeviceFirmwareFiles Adding device firmware files for Ingenico devices
 ///
-/// Each version of the Worldpay triPOS® Mobile SDK Framework, if used with any Ingenico payment devices, requires that the payment device be updated to the correct firmware.  For each Ingenico device that is supported, the firmware file (with extension *.OGZ) must be added to the target iOS app product in the project.  The correct firmware file(s) to add can be found in a subfolder with the same name as the supported device in the "Firmware Files" folder.  
-///
+/// Changes have been made to the Ingenico Tetra firmware update process based on starting firmware versions. Following Ingenico implementation guidelines, the changes involve clearing the old JCB kernels, updating the firmware in parts with the required OGZ files, and loading a firmware patch file where required. Kindly refer to the integration guide for more details on the firmware update process.
+
 /// \subsection CustomIdleImage Custom idle images for Ingenico Tetra devices
 ///
 ///  A jpeg\jpg, png or gif image can be used as an idle image. The image file needs to be included in the target iOS app and the file name needs to be specified in the Application configuration during initialization. triPOS® Mobile SDK would look for an idle image and if not found picks the idlePrompt. If neither the idle image nor the prompt is provided, the default triPOS logo would be displayed. This is supported only on the Tetra devices (Lane 3000 and Link 2500) and not supported on Telium devices (iSmp4 and iPP350).
@@ -124,23 +123,20 @@
 ///
 ///  A optional BIN whitelisting file can be included with the target iOS App. The file name needs to be specified in the application configuration during initialization.
 ///
+/// \subsection BBPosChipper3XBTPairing  BBPos Chipper 3X BT Pairing
+///
+/// When a user first attemps to connect to a BBPos Chipper 3X BT device via the triPOS® Mobile SDK Framework, they will be prompted to enter a 6 digit code.  This code is located on the back of the BBPPos Chipper 3X BT device and is labeled BT Passkey.  After the code is correctly entered, the BBPos Chipper 3X BT device will be paired to the iOS device.
+///
+/// \subsection BBPosChipper3XBTFirmwareUpdates  BBPos Chipper 3X BT Firmware Updates
+///
+/// The triPOS® SDK manages OTA (Over the Air) firmware updates for BBPos devices, so there is no firmware file to add to the integrating application. The percentage progress of the OTA firmware update is reported back through the sendDeviceInitializationProgressToDelegates callback with currentStep of ConfigUpdateStepOTAFirmwareUpdateInProgress.
+///
 /// \subsection Ingenico Moby/5500 Pairing
 /// <ul>
 ///
 /// <li>Bluetooth Pairing</li>
 /// <ul>
 /// <li>During the first attempt to connect a Moby/5500 to the triPOS® Mobile SDK Framework, when prompted for Bluetooth pairing, select Pair. When prompted to confirm pairing, select Ok. The Moby/5500 is now paired with the iOS device.</li>
-/// </ul>
-///
-/// </ul>
-///
-/// <ul>
-/// 
-/// <li>USB Pairing</li>
-/// <ul>
-/// <li>To connect a Moby/5500 to the triPOS® Mobile SDK Framework using USB, an Ingenico Moby USB to Lightning cable must be used. No pairing is required, simply connect the appropriate ends of the cable to each device and initialize the SDK.</li>
-/// </ul>
-///
 /// </ul>
 ///
 /// \subsection useFramework Using the framework
@@ -166,20 +162,31 @@
 /// <ul>
 ///     <li>Ingenico RBA and Ingenico RBA TCP/IP
 ///         <ul>
-///             <li>FIS/Worldpay</li>
+///             <li>Worldpay</li>
 ///             <li>Fiserv/First Data - QuickChip only</li>
 ///        </ul>
 ///     </li>
 ///     <li>Ingenico UPP and Ingenico UPP TCP/IP
 ///         <ul>
-///             <li>FIS/Worldpay</li>
+///             <li>Worldpay</li>
 ///             <li>Fiserv/First Data </li>
 ///             <li>TSYS</li>
+///             <li>WorldpayCanada</li>
 ///         </ul>
 ///     </li>
-///       <li>Ingenico Moby Bluetooth and Ingenico Moby USB
+///     <li>BBPos
 ///         <ul>
-///             <li>FIS/Worldpay</li>
+///             <li>Worldpay - QuickChip only</li>
+///         </ul>
+///     </li>
+///     <li>Ingenico Moby Bluetooth
+///         <ul>
+///             <li>Worldpay</li>
+///         </ul>
+///     </li>
+///     <li>Apple Tap to Pay on iPhone
+///         <ul>
+///             <li>Worldpay</li>
 ///         </ul>
 ///     </li>
 /// </ul>
@@ -192,8 +199,8 @@
 ///
 /// <a href="triPOS%C2%AE%20Interface%20Software%20License%20-%20v1.2022.pdf">triPOS® Interface Software License - v1.2022.pdf</a>.
 ///
-/// \section triPOS® Mobile SDK Integration Guide
-/// <a href="triPOS%C2%AE%20Mobile%20iOS%20SDK%20Integration%20Guide.pdf">triPOS® Mobile iOS SDK Integration Guide.pdf</a>.
+/// \section Worldpay triPOS® Mobile SDK Integration Guide
+/// <a href="Worldpay%20triPOS%20Mobile%20iOS%20SDK%20Integration%20Guide.pdf">Worldpay triPOS® Mobile iOS SDK Integration Guide.pdf</a>.
 ///
 /// \section releaseNotes Release Notes
 ///

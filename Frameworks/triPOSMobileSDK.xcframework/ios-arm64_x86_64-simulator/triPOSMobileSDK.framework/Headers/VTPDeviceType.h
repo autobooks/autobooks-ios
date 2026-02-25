@@ -25,6 +25,9 @@ typedef enum _VTPDeviceType
     /// Ingenico RBA TCP/IP
     VTPDeviceTypeIngenicoRbaTcpIp,
     
+    /// BBPOS Bluetooth
+    VTPDeviceTypeBbPos,
+    
     /// Ingenico UPP
     VTPDeviceTypeIngenicoUpp,
     

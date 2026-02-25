@@ -12,13 +12,14 @@
 #import "VTPAddressRequest.h"
 #import "VTPHealthcareRequestAmounts.h"
 #import "VTPFinancialRequestSurchargeAmount.h"
+#import "VTPCommercialCardCustomerCodeRequest.h"
 
 ///
 /// \class VTPAuthorizationRequest
 ///
 /// \brief The definition for an authorization request
 ///
-@interface VTPAuthorizationRequest : NSObject <VTPFinancialRequestBase, VTPFinancialRequestAmounts, VTPFinancialRequestConvenienceFeeAmount, VTPFinancialRequestTipAmount, VTPAddressRequest,VTPHealthcareRequestAmounts, VTPFinancialRequestSurchargeAmount>
+@interface VTPAuthorizationRequest : NSObject <VTPFinancialRequestBase, VTPFinancialRequestAmounts, VTPFinancialRequestConvenienceFeeAmount, VTPFinancialRequestTipAmount, VTPAddressRequest,VTPHealthcareRequestAmounts, VTPFinancialRequestSurchargeAmount, VTPCommercialCardCustomerCodeRequest>
 
 @end
 

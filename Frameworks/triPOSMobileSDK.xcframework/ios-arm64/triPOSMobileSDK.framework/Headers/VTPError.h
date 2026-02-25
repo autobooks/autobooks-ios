@@ -93,6 +93,9 @@ typedef enum _VTPErrorCode
     /// Pre-read not valid for this transaction type
     VTPErrorCodePrereadNotValidForSelectedTransactionType,
     
+    /// Pre-read not supported
+    VTPErrorCodePrereadNotSupported,
+    
     /// Debit only card was read but debit is not enabled
     VTPErrorCodeDebitOnlyCardAndDebitNotEnabled,
     
@@ -125,6 +128,30 @@ typedef enum _VTPErrorCode
     
     /// Invalid surcharge fee amount. Surcharge amount cannot be less than 0.
     VTPErrorCodeInvalidSurchargeAmount,
+    
+    /// SDK is not initialized
+    VTPErrorCodeSdkNotInitialized,
+    
+    /// No active\open session
+    VTPErrorCodeNoOpenSession,
+    
+    /// device session already active
+    VTPErrorCodeSessionAlreadyOpen,
+    
+    /// device not part of device pool
+    VTPErrorCodeDeviceNotInPool,
+    
+    /// device connection failed
+    VTPErrorCodeDeviceConnectionFailed,
+    
+    /// device type is invalid
+    VTPErrorCodeInvalidDeviceType,
+    
+    /// card is not gift capable
+    VTPErrorCodeCardNotGiftCapable,
+
+    /// card is not EBT capable
+    VTPErrorCodeCardNotEBTCapable,
     
     /// Unknown error
     VTPErrorCodeUnknown = INT_MAX

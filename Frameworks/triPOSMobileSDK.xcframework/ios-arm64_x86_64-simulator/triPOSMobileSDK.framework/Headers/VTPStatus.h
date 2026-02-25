@@ -83,6 +83,18 @@ typedef enum _VTPStatus
     VTPStatusGettingFinalizingEmvTransaction,
     /// Finalizing flow
     VTPStatusFinalizing,
+    /// Initializing device pool
+    VTPStatusInitializingDevicePool,
+    /// Starting a new device session (Device pool device)
+    VTPStatusStartingSession,
+    /// Closing the active device session (Device pool device)
+    VTPStatusClosingSession,
+    /// A new session with the device established (Device pool device)
+    VTPStatusStartedSession,
+    /// The active session with the device closed (Device pool device)
+    VTPStatusClosedSession,
+    /// Transaction done
+    VTPStatusDone,
 }   VTPStatus;
 
 #endif /* VTPStatus_h */

@@ -1,13 +1,81 @@
 triPOS Mobile SDK Change Log
 Worldpay Integrated Payments
 
-v4.0.2, Release Date April 2024
+v5.2.2 Release Date April 2025
+- Disabled contactless PIN bypass.
+
+v5.2.1 Release Date March 2025
+- US2109081: Use a custom instance of Realm (instead of the default instance) for managing BIN lookup and to support "store and forward" capabilities.
+- US2115573: Attempt to perform a system reversal when the original transaction request to Express times out.
+- Updated Realm library to 10.54.2
+
+v5.2.0 Release Date March 2025
+- Added local BIN file lookup to determine Gift, Loyalty, and EBT cards.
+- Updated the Certificate Authority Public Keys (CAPKs) for card brands expiring on 12/31/2024 for all device types
+- Added support for Ingenico Moby5500 CL3 device that supports USB-C connectivity from iOS devices.
+- Added support for Ingenico Link2500 LE CL3 devices.
+- Added support for enabling Wi-Fi roaming for Wi-Fi capable Ingenico Tetra devices (L2500 & M5000).
+- Added support for AMEX PIN Debit transactions on Ingenico Tetra devices.
+- Return BIN data as part of preread response.
+- Modified the firmware update process for Ingenico Tetra devices (Link2500, Lane3000, Lane3600 and Move5000) to address an issue with firmware updates on low memory devices.
+- Updated OCMock library from v3.4 to v3.9.4.
+- Added a return value to cancelPreRead operation. The return value indicates the status of the request to cancel pre-read.
+- Added Terminal Classification Code in the transaction request to Express based on the device capability.
+- Support for iOS 18.
+- US2079265: Fixed an issue with handling errors during firmware update failures on Ingenico Moby devices. Initialization will be aborted on any failures while updating the device firmware.
+- US2079265: Fixed an issue related to incorrect battery level notifications for the Ingenico Moby5500.
+- US2069214: Improved pre-read data clean up after a pre-read cancel or pre-read expiration.
+- US2069457/US2081883: Fixed an issue to avoid application crash due to incorrect serial numbers or when the device does not have an injected serial number.
+- US2060991: Fixed an issue with updating forms on an Ingenico Telium device after a firmware update.
+
+v5.1.1 Release Date November 2024
+- Updated logic to restrict EMV pre host approvals by card.
+- Updated the firmware files for Ingenico Moby5500 and Moby5500M devices to replace firmware files with expired certificates.
+- US2060991: Fixed an issue where the firmware files were pushed to a previously updated Ingenico Telium or Tetra device. Initialization will be stopped if there are issues in obtaining the firmware on device.
+
+v5.1.0 Release Date September 2024
+- Added Worldpay Canada processor support for Ingenico Tetra devices.
+- Added support for a configurable number of card retries before entering fallback mode with a maximum of 5.
+- Added support for configurable NFC detection for Ingenico Moby5500 and Moby5500M devices
+- Added support for local BIN table
+- Added support for surcharge fees for store and forward transactions
+- Added support for Ingenico Tetra device Move5000 over TCP/IP on Worldpay and Worldpay-Canada processors.
+- Added support for validated Ingenico Tetra devices.
+- Updated the RBA SDK to 5.33.9.
+- Updated RUA SDK to 2.5.0
+- Updated the firmware of Ingenico Moby5500 and Moby5500M devices to 15.01.
+- US2027853: Fixed an issue where the triPOS SDK does not trigger the error delegate methods, when the required firmware files Ingenico Moby 5500/5500M device are not found during initialization.
+- US1980687: Fixed an issue with Lane3600 firmware update.
+
+v5.0.2 Release Date July 2024
+- US1997093/US1979538: Fixed an issue causing rejections on App Store publications.
+
+v5.0.1 Release Date June 2024
+- US1964159: Fixed an issue with firmware updates from UPP 6.81.20 to 7.83.49.
+- US1964234: Fixed issue with heartbeat not attempting to reestablish connection to device if the device is not available during initialization.
+- US1964248: Fixed an issue with incorrect status messages during firmware updates.
+- US1962293: Fixed Sample Application crash when creating OmniToken using Moby 5500/5500M.
+- US1968016: Fixed an issue that caused the SDK to crash during deinitialize after a failed attempt to connect to a Ingenico Telium device during initialization.
+
+v5.0.0, Release Date May 2024
+- Added support for connections from multiple iOS devices to multiple payment devices, providing the ability within the client app to select any device at the location to start a session and run the transaction.
+- Added support for processing Valutec gift cards with imported gift card ranges
+- Implemented synchronous connect and disconnect detection of Ingenico Tetra (UPP) devices outside of the RBA SDK to address various connection issues on Ingenico Tetra (UPP) devices.
+- Extended the heartbeat service to support Ingenico Moby 5500 devices.
+- Updated UPP version to 7.83.49 TKI for Ingenico Tetra devices (Lane3000, Lane3600 and Link2500).
+- Updated firmware version to v14.09 for Ingenico Moby 5500 devices.
+- US1882462: Fixed an issue where stored transactions with a tip amount were not being forwarded correctly.
+- US1755751: Added VTPStatusDone upon completion of device cleanup to prevent issues around subsequent transactions.
+
+v4.0.3, Release Date April 2024
 - Updated Ingenico RBA SDK library to 5.33.4
 - Updated Ingenico RUA SDK (Moby) library to 2.4.9.1
+- Added support for Apple privacy manifest requirement
+
+v4.0.2, Release Date April 2024
 - Updated Realm library to 10.49.1
 - Updated CocoaLumberjack library to 3.8.5
-- Added privacy manifest
-- Removed support for BBPos Chipper 2X BT and 3X BT devices
+- Added support for Apple privacy manifest requirement for reduced SDK
 
 v4.0.1, Release Date February 2024
 - Implemented support for the Apple M1 processor.

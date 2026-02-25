@@ -22,6 +22,8 @@ extern const NSTimeInterval VPDNonUserInputTimeout;
 
 extern const NSTimeInterval VPDUserInputQuickChipTimeout;
 
+typedef void (^VPDCofirmContinueConfigurationOnStartSession)(BOOL yes);
+
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 //
 // forward delcaration to avoid circular include files
@@ -93,6 +95,13 @@ extern const NSTimeInterval VPDUserInputQuickChipTimeout;
 ///
 -(BOOL)stopConnection:(NSError **)error;
 
+///
+/// \brief Returns a value to indicate if the active connection to the device can be stopped
+///
+/// Checks if the active connection to the device can be stopped
+///
+-(BOOL)canStopConnection:(NSError **)error;
+
 //
 /// \brief Scan for available Bluetooth devices
 ///
@@ -124,12 +133,83 @@ extern const NSTimeInterval VPDUserInputQuickChipTimeout;
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 -(void) enableDeviceDebugLogs:(BOOL) enable;
+
+///
+/// \brief Sets up the device heartbeat
+///
+/// Sets up the device heartbeat. Starts the timer to send the heartbeat at scheduled intervals
+///
+///
+-(void)setupHeartBeatToDevice;
+
+///
+/// \brief Stop the heartbeat timer
+///
+/// This method stops the heartbeats and invalidates the heartbeat timer.
+///
+-(void)stopHeartbeatTimer;
+
+-(void)setupPingToDevice;
+
+-(void)startPingTimer;
+
+-(void)stopPingTimer;
+
+-(void)heartbeat:(BOOL)enabled;
+
 #endif
 
 
 @end
 
 @interface VPDDevicePrivate : NSObject
+
+@property (nonatomic) int heartbeatAttemptCounter;
+
+@property (nonatomic, strong) NSTimer* deviceHeartBeatTimer;
+
+@property (nonatomic, strong) NSTimer* devicePingTimer;
+
+@property (nonatomic) BOOL initializationInProgress;
+
+@property (nonatomic) BOOL heartBeatCheckInProgress;
+
+@property (nonatomic, strong) NSString* connectedDeviceSerialNumber;
+
+-(BOOL)isDevicePingSupported;
+
+-(BOOL)canSendPingToDevice;
+
+-(BOOL)isHeartbeatSupported;
+
+-(void)sendPing;
+///
+/// \brief This method returns a flag indicating if the heartbeat can be sent to device
+///
+/// This method identifies if the heart beat can be sent to the device. Heartbeat cannot be sent when device is initializing or if the previous heartbeat is yet to complete
+///
+/// \return Returns the flag indicating if heartbeat can be sent
+///
+-(BOOL)canSendHeartbeatToDevice;
+
+///
+/// \brief Checks if the device needs to be configured on connection
+///
+/// This method identifies if the device connected to was previously configured before the reconnect
+///
+/// \param serialNumber The serial number of the device connected
+///
+///
+/// \return Returns a boolean value indicating if the device needs to be configured. False if the device was previously connected and configured
+///
+-(BOOL)shouldConfigureForSerialNumber:(NSString *)serialNumber;
+
+///
+/// \brief Sends the heartbeat to the device
+///
+/// This method sends a heartbeat to the device. Implemented in each device family.
+///
+-(void)sendHeartbeat;
 
 ///
 /// \brief Adds a receiver to the list of delegates
@@ -263,6 +343,27 @@ extern const NSTimeInterval VPDUserInputQuickChipTimeout;
 -(void)sendDevicePairConfirmationToDelegates:(NSArray*) ledSequence deviceName:(NSString*) deviceName callback:(id<VPDPairingConfirmationCallback>) pairingCallBack;
 
 ///
+/// \brief Sends event to indicate device connection failed
+///
+/// This methods sends a notification to indicate device connection failed
+///
+///  \param error Error object holding the details of the error resulting in the connection failure
+///
+-(void)sendDeviceConnectionFailedToDelegates:(NSError *)error;
+
+
+///
+/// \brief sends a request for user confirmation to proceed with configuration while starting a new session to a device pool device
+///
+/// Sends a request to get confirmation to proceed with the device configuration while starting a session.
+///
+/// \param prompt Prompt to display to the user
+///
+/// \param completionHandler delegate to pass back the user choice
+///
+-(void)sendConfigureDeviceConfirmation:(NSString *)prompt completionHandler:(VPDCofirmContinueConfigurationOnStartSession)completionHandler;
+
+///
 /// \brief Get the current device as a beep device
 ///
 /// This method attempts to get the current beep as a display device.
@@ -297,6 +398,15 @@ extern const NSTimeInterval VPDUserInputQuickChipTimeout;
 /// \return An VPDDisplayDevice object if the device supports choice input, otherwise nil.
 ///
 -(NSObject<VPDDisplay> *)getAsDisplayDevice;
+
+///
+/// \brief Get the current device as a print device
+///
+/// This method attempts to get the current device as a print device.
+///
+/// \return A VPDPrint object if the device supports printing, otherwise nil.
+///
+-(NSObject<VPDPrint> *)getAsPrintDevice;
 
 ///
 /// \brief Get the current device as an EMV device
@@ -351,6 +461,13 @@ extern const NSTimeInterval VPDUserInputQuickChipTimeout;
 /// \return A VPDDccInputDevice object if the device supports DCC, otherwise nil.
 ///
 -(VPDDccInputDevice)getAsDccInputDevice;
+
+///
+/// \brief Start the heart beat timer
+///
+///  This method starts the heartbeat timer after the SDK has been initialized. Internal to SDK.
+///
+-(void)startHeartbeatTimer;
 
 
 @end

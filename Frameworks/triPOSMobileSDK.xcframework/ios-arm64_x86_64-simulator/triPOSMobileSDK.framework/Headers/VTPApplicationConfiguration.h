@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 
 #import "VTPApplicationMode.h"
+#import "VTPDeviceLanguage.h"
 
 ///
 /// \class VTPApplicationConfiguration
@@ -24,6 +25,10 @@
 /// This property is used to set the application mode.
 ///
 @property (nonatomic) VTPApplicationMode mode;
+
+/// \brief Gets or sets the default device language
+///
+@property (nonatomic) VTPDeviceLanguage defaultDeviceLanguage;
 
 ///
 /// \brief Gets or sets the idle prompt

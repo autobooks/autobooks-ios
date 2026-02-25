@@ -19,10 +19,12 @@
 @protocol VPDDisplay;
 @protocol VPDEmv;
 @protocol VPDKeyboardNumericInput;
+@protocol VPDKeyboardAlphaInput;
 @protocol VPDPinInput;
 @protocol VPDYesNoInput;
 @protocol VPDBarcodeInput;
 @protocol VPDDccInput;
+@protocol VPDPrint;
 
 #endif
 
@@ -212,6 +214,22 @@ typedef NSObject<VPDDisplay> * VPDDisplayDevice;
 ///
 -(VPDDisplayDevice)getAsDisplayDevice;
 
+///
+/// \brief Definition for a device capable of printing text
+///
+/// Definition for a device capable of printing text.
+///
+typedef NSObject<VPDPrint> * VPDPrintDevice;
+
+///
+/// \brief Get the current device as a print device
+///
+/// This method attempts to get the current device as a print device.
+///
+/// \return A VPDPrintDevice object if the device supports print, otherwise nil.
+///
+-(VPDPrintDevice)getAsPrintDevice;
+
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
 ///
@@ -264,6 +282,22 @@ typedef NSObject<VPDKeyboardNumericInput> * VPDKeyboardNumericInputDevice;
 /// \return A VPDKeyboardNumericInputDevice object if the device supports keyboard numeric input, otherwise nil.
 ///
 -(VPDKeyboardNumericInputDevice)getAsKeyboardNumericInputDevice;
+
+///
+/// \brief Definition for a device capable of doing keyboard alpha input
+///
+/// Definition for a device capable of doing keyboard alpha input.
+///
+typedef NSObject<VPDKeyboardAlphaInput> * VPDKeyboardAlphaInputDevice;
+
+///
+/// \brief Get the current device as a keyboard alpha input device
+///
+/// This method attempts to get the current device as a keyboard alpha input device.
+///
+/// \return A VPDKeyboardAlphaInputDevice object if the device supports keyboard alpha input, otherwise nil.
+///
+-(VPDKeyboardAlphaInputDevice)getAsKeyboardAlphaInputDevice;
 
 ///
 /// \brief Definition for a device capable of doing PIN input

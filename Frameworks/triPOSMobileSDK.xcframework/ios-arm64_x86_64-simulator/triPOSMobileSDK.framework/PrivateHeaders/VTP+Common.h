@@ -57,9 +57,13 @@
 
 -(void) setPinlessPosConversionIndicatorToResponse:(NSObject <VTPFinancialResponseBase> *)response flowData:(NSObject<VTPFlowData, VTPFinancialFlowData> *)flowData;
 
+-(void) setCommericalCardCustomerCodeResponse:(NSObject <VTPFinancialResponseBase> *)response flowData:(NSObject<VTPFlowData, VTPFinancialFlowData> *)flowData;
+
 -(void) setResponseDcc:(NSObject <VTPFinancialResponseBase> *)response flowData:(NSObject<VTPFlowData, VTPFinancialFlowData> *)flowData;
 
 -(void) setResponseSurcharge:(NSObject <VTPFinancialResponseBase> *)response flowData:(NSObject<VTPFlowData, VTPFinancialFlowData> *)flowData;
+
+-(void) setResponseLanguage:(NSObject <VTPFinancialResponseBase> *)response flowData:(NSObject<VTPFlowData, VTPFinancialFlowData> *)flowData;
 
 -(BOOL) isTipAmountValid:(VTPErrorHandler)errorHandler
                tipAmount:(NSDecimalNumber *)tipAmount;
@@ -83,7 +87,7 @@
 
 +(NSString *)formatCurrencyCode: (NSString *) currencyCode;
 +(NSString *)formatConversionRate: (NSString *) conversionRate;
-
+-(BOOL) wasPinEntered:(NSObject<VTPFlowData> *)flowData;
 @end
 
 #endif /* !DOXYGEN_SHOULD_SKIP_THIS */

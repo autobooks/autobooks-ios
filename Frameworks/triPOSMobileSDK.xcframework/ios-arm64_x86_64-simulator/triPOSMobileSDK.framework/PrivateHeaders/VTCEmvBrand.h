@@ -16,6 +16,8 @@ typedef enum _VTCEmvBrand
     VTCEmvBrandDiscover,
     VTCEmvBrandUnionPay,
     VTCEmvBrandJcb,
+    VTCEmvBrandMasterCardEbt,
+    VTCEMVBrandInterac,
 }   VTCEmvBrand;
 
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */

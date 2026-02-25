@@ -8,6 +8,7 @@
 #import "VTPTransactionStatus.h"
 #import "VTPPaymentType.h"
 #import "VTPEbtType.h"
+#import "VTPDebitAccountType.h"
 
 ///
 /// \protocol VTPFinancialResponseBase

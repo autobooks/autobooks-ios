@@ -11,6 +11,12 @@
 
 @interface VPDVersionNumber : NSObject
 
+@property (nonatomic, retain) NSString *versionString;
+@property (nonatomic, assign) NSInteger majorVersion;
+@property (nonatomic, assign) NSInteger minorVersion;
+@property (nonatomic, assign) NSInteger microVersion;
+@property (nonatomic, assign) NSInteger buildNumber;
+
 -(instancetype) initWithVersionNumber:(NSString*) versionString;
 
 -(NSComparisonResult)compare:(VPDVersionNumber*)other;

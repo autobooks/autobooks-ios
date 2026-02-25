@@ -12,6 +12,7 @@
 #import "VTPFlow.h"
 #import "VTPStatus.h"
 #import "VTPStoreDatabase.h"
+#import "VTPBinEntryDatabase.h"
 #import "VTPCardPrereadFlowData.h"
 
 #import "VTPSaleFlowData.h"
@@ -34,6 +35,8 @@
 @property (retain, nonatomic) NSObject<VTPFlow> *runningFlow;
 
 @property (retain, nonatomic) NSObject<VTPStoreDatabase> *storeDatabase;
+
+@property (retain, nonatomic) NSObject<VTPBinEntryDatabase> *binEntryDatabase;
 
 @property (retain, nonatomic) VTPCardPrereadFlowData *cardFlowData;
 

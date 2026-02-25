@@ -31,6 +31,7 @@
 
 @property (nonatomic, readonly) VPDInitializationParameters* initializationParameters;
 
+-(BOOL)quickInitializeWithParameters:(VPDInitializationParameters *)parameters error:(NSError **)error;
 @end
 
 #endif /* !DOXYGEN_SHOULD_SKIP_THIS */

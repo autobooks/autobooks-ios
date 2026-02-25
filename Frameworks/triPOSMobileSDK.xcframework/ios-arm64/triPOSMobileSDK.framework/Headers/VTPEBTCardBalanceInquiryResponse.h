@@ -9,13 +9,14 @@
 #import "VTPFinancialResponseAmounts.h"
 #import "VTPFinancialResponseCard.h"
 #import "VTPFinancialResponseHost.h"
+#import "VTPFinancialResponseEmv.h"
 
 ///
 /// \class VTPEBTCardBalanceInquiryResponse
 ///
 /// \brief The definition of the sale response
 ///
-@interface VTPEBTCardBalanceInquiryResponse : NSObject <VTPFinancialResponseBase, VTPFinancialResponseAmounts, VTPFinancialResponseCard, VTPFinancialResponseHost>
+@interface VTPEBTCardBalanceInquiryResponse : NSObject <VTPFinancialResponseBase, VTPFinancialResponseAmounts, VTPFinancialResponseCard, VTPFinancialResponseHost, VTPFinancialResponseEmv>
 
 @end
 

@@ -16,8 +16,11 @@
 #import "VTPStoreAndForwardResponse.h"
 #import "VTPValutecRewardsResponse.h"
 #import "VTPPINlessPOSConversionIndicatorResponse.h"
+#import "VTPCommercialCardCustomerCodeResponse.h"
 #import "VTPDccResponse.h"
 #import "VTPFinancialResponseSurchargeAmount.h"
+#import "VTPDebitFinancialResponseBase.h"
+#import "VTPLanguageResponse.h"
 
 
 ///
@@ -25,7 +28,7 @@
 ///
 /// \brief The definition of the sale response
 ///
-@interface VTPSaleResponse : NSObject <VTPFinancialResponseBase, VTPFinancialResponseAmounts, VTPFinancialResponseCashbackAmount, VTPFinancialResponseTipAmount,VTPFinancialResponseCard, VTPFinancialResponseCardVerification, VTPFinancialResponseEmv, VTPFinancialResponseHost, VTPStoreAndForwardResponse, VTPValutecRewardsResponse, VTPPINlessPOSConversionIndicatorResponse, VTPDccResponse, VTPFinancialResponseSurchargeAmount>
+@interface VTPSaleResponse : NSObject <VTPFinancialResponseBase, VTPFinancialResponseAmounts, VTPFinancialResponseCashbackAmount, VTPFinancialResponseTipAmount,VTPFinancialResponseCard, VTPFinancialResponseCardVerification, VTPFinancialResponseEmv, VTPFinancialResponseHost, VTPStoreAndForwardResponse, VTPValutecRewardsResponse, VTPPINlessPOSConversionIndicatorResponse, VTPDccResponse, VTPFinancialResponseSurchargeAmount, VTPCommercialCardCustomerCodeResponse, VTPDebitFinancialResponseBase, VTPLanguageResponse>
 
 @end
 

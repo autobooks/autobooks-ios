@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8WeUBIptXBwSoYZrsUkYafDDrao=
+		sJwJu1kVkqOM4yTGidbXE8Mwch4=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		VPdkATPXQF5Dhs+q+s1U4/Qh48s=
+		w2M5rPMN9wpRAiLHzjB1qUW4n6c=
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vheJod9Z31jRKv3ATFHR7EUE+q8=
+		c8c36ZS+WqImrK4WlCb9krUQwUM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZZ7QpKAu6dvC3fchlKeacg1ZIMa+FVgph5x/T0TAykI=
+			ttTI5ep1e03Dyn/ZAVv0xMDWhf37dr8j75gSHEbZi6Q=
 			</data>
 		</dict>
 		<key>Modules/Autobooks.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -173,7 +173,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G4Tg2inL1yWf83tz5w6x49mVlrEc84ySk3SmLdbC0dU=
+			GaFCa6++W15mMKbCmRxPoLDMZlD2SeQGXM/bZhrpTEw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

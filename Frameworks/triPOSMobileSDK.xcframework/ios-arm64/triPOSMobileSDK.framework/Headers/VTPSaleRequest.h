@@ -15,13 +15,14 @@
 #import "VTPFinancialRequestFoodStampsAmount.h"
 #import "VTPHealthcareRequestAmounts.h"
 #import "VTPFinancialRequestSurchargeAmount.h"
+#import "VTPCommercialCardCustomerCodeRequest.h"
 
 ///
 /// \class VTPSaleRequest
 ///
 /// \brief The definition for a sale request
 ///
-@interface VTPSaleRequest : NSObject <VTPFinancialRequestBase, VTPFinancialRequestAmounts,VTPFinancialRequestFoodStampsAmount,VTPFinancialRequestConvenienceFeeAmount, VTPFinancialRequestTipAmount, VTPAddressRequest, VTPGiftProgramRequest, VTPPINlessPOSConversionRequest, VTPHealthcareRequestAmounts, VTPFinancialRequestSurchargeAmount>
+@interface VTPSaleRequest : NSObject <VTPFinancialRequestBase, VTPFinancialRequestAmounts,VTPFinancialRequestFoodStampsAmount,VTPFinancialRequestConvenienceFeeAmount, VTPFinancialRequestTipAmount, VTPAddressRequest, VTPGiftProgramRequest, VTPPINlessPOSConversionRequest, VTPHealthcareRequestAmounts, VTPFinancialRequestSurchargeAmount, VTPCommercialCardCustomerCodeRequest>
 
 @end
 

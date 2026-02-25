@@ -19,9 +19,11 @@
 #import "VPDChoiceInput.h"
 #import "VPDDisplay.h"
 #import "VPDKeyboardNumericInput.h"
+#import "VPDKeyboardAlphaInput.h"
 #import "VPDPinInput.h"
 #import "VPDYesNoInput.h"
 #import "VPDBarcodeInput.h"
+#import "VPDPrint.h"
 
 #import "VPDDccInput.h"
 

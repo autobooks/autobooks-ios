@@ -86,6 +86,8 @@ typedef enum _VPDBarcodeType
     VPDBarcodeTypeTelepen,
     /// Code 49
     VPDBarcodeTypeCode49,
+    /// Code 25
+    VPDBarcodeTypeCode25,
     /// CodaBlock A
     VPDBarcodeTypeCodaBlockA,
     /// CodaBlock F

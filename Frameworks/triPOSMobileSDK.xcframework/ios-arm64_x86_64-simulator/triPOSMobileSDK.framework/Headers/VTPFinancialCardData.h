@@ -54,6 +54,13 @@
 ///
 @property (retain, nonatomic) NSString *expirationYear;
 
+///
+/// \brief Gets the bin value for the card
+///
+/// This property contains the bin value for the card used for this transaction.
+///
+@property (retain, nonatomic) NSString *binValue;
+
 //
 /// \brief Gets the AID for the card.
 ///

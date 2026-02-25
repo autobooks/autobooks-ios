@@ -20,6 +20,9 @@ typedef enum _VTPPaymentProcessor
     /// First Data
     VTPPaymentProcessorFirstData,
     
+    /// Worldpay Canada
+    VTPPaymentProcessorWorldpayCanada,
+    
     /// TSYS
     VTPPaymentProcessorTsys,
     

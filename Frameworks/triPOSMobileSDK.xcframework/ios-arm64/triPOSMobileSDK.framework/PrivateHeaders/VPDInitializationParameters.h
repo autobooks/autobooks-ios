@@ -10,12 +10,19 @@
 #import "VTPEmvConfiguration.h"
 #import "VTPAidPreference.h"
 
+#import "VTPDeviceLanguage.h"
 #import "VTPPaymentProcessor.h"
 #import "VTPDeviceTypeEnum.h"
+
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
 @interface VPDInitializationParameters : NSObject
 
+/// \brief Gets or sets if enable Wi-Fi roaming.
+///
+/// This property gets or sets the enable/disable Wi-Fi roaming configuration
+///
+@property (assign, nonatomic) BOOL enableWiFiRoaming;
 ///
 /// \brief Gets or sets the whitelist file name
 ///
@@ -36,6 +43,15 @@
 /// This property is  image displayed on the device when idle. This value may be nil.
 ///
 @property (retain, nonatomic) NSString *idleImageName;
+
+///
+/// \brief Gets or sets the idle image name
+///
+/// This property is  image displayed on the device when idle. This value may be nil.
+///
+@property (nonatomic) VTPDeviceLanguage defaultDeviceLanguage;
+
+
 ///
 /// \brief Gets or sets the terminal ID
 ///
@@ -126,6 +142,25 @@
 /// This property gets or sets the device contactless card detection time in seconds. This value should be 0 or more.
 ///
 @property (nonatomic) double contactlessDetectionTime;
+
+///
+/// \brief Gets or sets the payment processor
+///
+/// This property gets or sets the payment processor.
+///
+@property (nonatomic) NSString * paymentProcessorName;
+/// \brief version of the triPOS SDK
+///
+/// This property gets or sets the version of the triPOS SDK.
+///
+@property (retain, nonatomic) NSString * version;
+
+///
+/// \brief Indicates if setup is part of starting a new session to the device
+///
+/// This property  gets or sets a boolean value indicating if the device setup is part of starting a new session
+///
+@property (nonatomic) BOOL startingSession;
 
 @end
 

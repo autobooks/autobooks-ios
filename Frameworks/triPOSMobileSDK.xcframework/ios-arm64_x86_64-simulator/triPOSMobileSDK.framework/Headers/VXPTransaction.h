@@ -336,6 +336,13 @@
 ///
 @property (assign) NSNumber *DCCRequested;
 
+///
+/// \brief Gets or sets the debit account type.
+///
+/// This property gets or sets the debit account type
+///
+@property (retain, nonatomic) NSNumber *DebitAccountType;
+
 @end
 
 #endif /* VXPTransaction_h */

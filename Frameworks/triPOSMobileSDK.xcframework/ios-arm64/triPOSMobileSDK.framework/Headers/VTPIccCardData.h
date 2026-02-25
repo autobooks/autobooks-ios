@@ -102,6 +102,13 @@
 ///
 @property (assign, nonatomic) VPDSignatureRequired isSignatureRequired;
 
+///
+/// \brief Returns if card is read as Quick Chip
+///
+/// This property returns  if card is read as Quick Chip
+///
+@property (nonatomic) BOOL isCardReadAsQuickChip;
+
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
 -(instancetype)initWithTags:(VTCTlvCollection)tags;

@@ -103,5 +103,6 @@ import triPOSMobileSDK_Private
   @objc public var lastErrorDescription: String? {
     get
   }
+  @objc public func saveLastError(error: Error, function: String = #function, file: String = #file, line: Int = #line)
   @objc deinit
 }

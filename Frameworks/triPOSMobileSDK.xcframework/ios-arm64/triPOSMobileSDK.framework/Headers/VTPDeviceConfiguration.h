@@ -7,6 +7,7 @@
 #import "VTPDeviceType.h"
 #import "VTPTerminalType.h"
 #import "VTPDeviceTcpIpConfiguration.h"
+#import "VTPDeviceConnectionInfo.h"
 
 ///
 /// \class VTPDeviceConfiguration
@@ -97,6 +98,14 @@
 ///
 @property (nonatomic) double contactlessDetectionTime;
 
+
+///
+/// \brief Gets or sets the devices in the device pool
+///
+/// This property gets or sets the devices in the device pool
+///
+@property (nonatomic, strong) NSArray<VTPDeviceConnectionInfo *> *devicePool;
+
 ///
 /// \brief Sets the hour of the day for which to restart the terminal
 ///
@@ -121,5 +130,12 @@
 /// \return YES if successful, NO otherwise.
 ///
 -(BOOL)validateConfiguration:(NSError **)error;
+
+///
+/// \brief Gets or sets the Wi-Fi roaming
+///
+/// This property gets or sets the enable/disable Wi-Fi roaming configuration applicable only for Tetra devices(L2500 and M5000) with Wi-Fi capability.
+///
+@property (nonatomic) BOOL enableWifiRoaming;
 
 @end

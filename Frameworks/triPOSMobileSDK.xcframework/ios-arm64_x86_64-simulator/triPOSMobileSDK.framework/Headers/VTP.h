@@ -9,6 +9,8 @@
 #import "VTPDeviceInteractionDelegate.h"
 #import "VTPBluetoothDevice.h"
 #import "VPDPairingConfirmationCallback.h"
+#import "VTPPrereadResponse.h"
+
 ///
 /// \class VTP
 ///
@@ -25,6 +27,12 @@
 ///
 typedef void (^VTPCardReadCompletionHandler)(BOOL readSuccesful);
 
+///
+/// \brief Block definition for completionHandler parameter of the preread card data method.
+///
+/// \param prereadResponse pre read status and financial card data
+///
+typedef void (^VTPPrereadCompletionHandler)(VTPPrereadResponse *prereadResponse);
 
 ///
 /// \brief Initialize an instance of the triPOS Mobile SDK
@@ -63,7 +71,7 @@ typedef void (^VTPCardReadCompletionHandler)(BOOL readSuccesful);
 /// Scans for available Bluetooth devices of the selected type.
 /// Results will be returned in the onReturnBluetoothScanResults VTPDelegate protocol method.
 ///
-/// <br /><br /><strong>NOTE:</strong> Some device types (for example Ingenico RBA) are Bluetooth classic and others (Moby) are BLE.
+/// <br /><br /><strong>NOTE:</strong> Some device types (for example Ingenico RBA) are Bluetooth classic and others (BBPos) are BLE.
 ///       For Bluetooth classic devices, onReturnBluetoothScanResults only returns those devices already paired
 ///       and connected to the iOS device.  For BLE, since it does not require
 ///       pairing, onReturnBluetoothScanResults returns all available devices of the configured type.
@@ -88,6 +96,18 @@ typedef void (^VTPCardReadCompletionHandler)(BOOL readSuccesful);
 /// \return YES if successful, NO otherwise.
 ///
 -(BOOL)deinitialize:(NSError **)error;
+
+///
+/// \brief Initialize an instance of the triPOS Mobile SDK
+///
+/// \param configuration The configuration for this instance of the triPOS Mobile SDK.
+///
+/// \param error Pointer to NSError object. If the initialization fails, error information is returned in this object. This parameter may be nil.
+///
+/// \return YES if successful, NO otherwise.
+///
+
+-(BOOL)initializeDevicePoolWithConfiguration:(VTPConfiguration *)configuration error:(NSError **)error;
 
 ///
 /// \brief Gets a value indicating if the SDK initialized or not
@@ -158,7 +178,7 @@ typedef void (^VTPCardReadCompletionHandler)(BOOL readSuccesful);
 ///
 /// \param errorHandler A VTPErrorHandler used to return any errors.
 ///
--(void)prereadCardWithCompletionHandler:(VTPCardReadCompletionHandler)completionHandler errorHandler:(VTPErrorHandler)errorHandler;
+-(void)prereadCardWithCompletionHandler:(VTPCardReadCompletionHandler)completionHandler errorHandler:(VTPErrorHandler)errorHandler __deprecated;;
 
 ///
 /// \brief Read a card without transaction information with transaction type info.
@@ -175,13 +195,41 @@ typedef void (^VTPCardReadCompletionHandler)(BOOL readSuccesful);
 ///
 /// \param errorHandler A VTPErrorHandler used to return any errors.
 ///
--(void)prereadCardWithTransactionType:(VTPTransactionType) transactionType completionHandler:(VTPCardReadCompletionHandler)completionHandler errorHandler:(VTPErrorHandler)errorHandler;
+-(void)prereadCardWithTransactionType:(VTPTransactionType) transactionType completionHandler:(VTPCardReadCompletionHandler)completionHandler errorHandler:(VTPErrorHandler)errorHandler __deprecated;
+
+///
+/// \brief Read a card without transaction information.
+///
+/// This method allows the user to pre-swipe, pre-insert, or pre-tap their card, and then to enter in transaction information after the card has been read.
+///
+/// \param completionHandler A VTPPrereadCompletionHandler used to return the card data.
+///
+/// \param errorHandler A VTPErrorHandler used to return any errors.
+///
+-(void)prereadCardDataWithCompletionHandler:(VTPPrereadCompletionHandler)completionHandler errorHandler:(VTPErrorHandler)errorHandler;
+///
+/// \brief Read a card without transaction information with transaction type info.
+///
+/// This method allows the user to pre-swipe, pre-insert, or pre-tap their card, and then to enter in transaction information after the card has been read.
+///
+/// <br /><br /><strong>NOTE:</strong> This method can be used with transaction type Sale to allow pre-read cashback.
+///
+/// \param transactionType The transaction type for which the card data obtained in the pre-read will be used.  Supports only two
+/// transaction types - VTPTransactionTypeUnknown and VTPTransactionTypeSale.  All other transaction types will be treated as
+/// VTPTransactionTypeUnknown.
+///
+/// \param completionHandler A VTPPrereadCompletionHandler used to return the card data.
+///
+/// \param errorHandler A VTPErrorHandler used to return any errors.
+///
+-(void)prereadCardDataWithTransactionType:(VTPTransactionType) transactionType completionHandler:(VTPPrereadCompletionHandler)completionHandler errorHandler:(VTPErrorHandler)errorHandler;
+
 
 ///
 /// \brief Cancel a preread/preswipe.
 ///
-/// This method cancels a preswipe.
--(void) cancelPreread;
+/// This method cancels a preswipe and return the cancel Preread status
+-(BOOL) cancelPreread;
 
 ///
 /// \brief Sets a receiver for device interacton
@@ -191,6 +239,7 @@ typedef void (^VTPCardReadCompletionHandler)(BOOL readSuccesful);
 /// \param delegate The receiver's delegate.
 ///
 -(void)setDeviceInteractionDelegate:(id <VTPDeviceInteractionDelegate>)delegate;
+
 ///
 /// \brief Moby device pairing confiramtion
 ///
@@ -199,6 +248,8 @@ typedef void (^VTPCardReadCompletionHandler)(BOOL readSuccesful);
 -(void) onReturnPairingConfirmation:(NSArray*) ledSequence deviceName:(NSString*) deviceName callback:(id<VPDPairingConfirmationCallback>) pairingCallBack;
 
 -(void)validateToRestrictStoringOfHealthcareTransactions:(BOOL)isStoringAllowed andIsHealthcareSupported:(BOOL)isHealthcareSupported;
+
+-(void)validateConfigurationWithSelectedHost:(VTPConfiguration *)configuration;
 
 ///
 /// \brief Enable or disable enhanced device debug logs
@@ -211,5 +262,31 @@ typedef void (^VTPCardReadCompletionHandler)(BOOL readSuccesful);
 ///
 -(void)enableEnhancedDeviceLogs:(BOOL)enable;
 
+///
+/// \brief Start a new session to the device
+///
+/// Starts a new session to the device. Verifies if the device is already configured and if not provides option to configure and then open the session. Supported only on Ingenico UPP TCP\IP devices.
+///
+/// <br /><br /><strong>NOTE:</strong> This device pool needs to be initialized before a session can be started to one of the devices from the device pool.
+///
+/// \param deviceToConnect The connection information of the device to start the session
+///
+/// \param error Pointer to NSError object. If the initialization fails, error information is returned in this object. This parameter may be nil.
+///
+/// Starts a new session to the device. Verifies if the device is already configured and if not provides option to configure and then open the session. Supported only on Ingenico UPP TCP\IP devices.
+///
+-(BOOL)startSessionWith:(VTPDeviceConnectionInfo *)deviceToConnect error:(NSError **)error;
+
+
+///
+/// \brief Closes the active session and disconnects from device
+///
+/// Closes the active connection to the device if the device is not busy. Can close session only if there are no transactions in progress on the device
+///
+/// \param error Pointer to NSError object. Includes details of any error during the close session
+///
+-(BOOL)closeSession:(NSError **)error;
+
 @end
+
 

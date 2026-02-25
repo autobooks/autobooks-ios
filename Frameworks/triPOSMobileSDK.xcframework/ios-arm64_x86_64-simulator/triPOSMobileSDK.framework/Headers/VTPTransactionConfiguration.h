@@ -192,13 +192,16 @@
 ///
 /// This property gets or sets if the user is automatically prompted (up to 3 times)  to re-swipe/insert/tap their card on a read error.
 ///
-@property (nonatomic) BOOL isAutoRetryForSwipeAndContactlessReadErrorsEnabled;
+/// @deprecated Use cardInputRetries instead.
+///
+@property (nonatomic) BOOL isAutoRetryForSwipeAndContactlessReadErrorsEnabled __deprecated;
 
+///
 ///
 /// \brief Gets or sets the placeholder amount for Quick Chip transactions.
 ///
 /// This property gets or sets the placeholder amount for Quick Chip transactions. This is also sometimes referred to as
-//  the provisonal amount, and must be greater than zero.
+///  the provisonal amount, and must be greater than zero.
 ///
 @property (nonatomic, strong) NSDecimalNumber* quickChipPlaceHolderAmount;
 
@@ -267,6 +270,13 @@
 /// This property indicates whether or not the card holder is prompted to confirm the convenience fee amount.
 ///
 @property (nonatomic) BOOL shouldConfirmConvenienceAmount;
+
+///
+/// \brief Gets or sets the devices card Input retries
+///
+/// This property gets or sets the number of attempts (between 0 and 5) to read the chip card before falling back to swipe. Defaulted to 2 attempts if not specified.
+///
+@property (nonatomic) int cardInputRetries;
 
 @end
 

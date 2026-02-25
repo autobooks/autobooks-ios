@@ -63,7 +63,7 @@
 #define VXPHostedPaymentsHostCert        VXPTransactionServerCert "." VXPHostedPaymentsDomain "/mobile"
 #define VXPHostedPaymentsUrlCert         [@"https://" stringByAppendingString: FROMCPP(VXPHostedPaymentsHostCert)]
 
-#define VXPHostedPaymentsHostLive        VXPTransactionServerLive "." VXPHostedPaymentsDomain
+#define VXPHostedPaymentsHostLive        VXPTransactionServerLive "." VXPHostedPaymentsDomain "/mobile"
 #define VXPHostedPaymentsUrlLive         [@"https://" stringByAppendingString: FROMCPP(VXPHostedPaymentsHostLive)]
 
 #define VXPHostedPaymentsReturnUrl       @"https://localhost/HostedPaymentsResponse"

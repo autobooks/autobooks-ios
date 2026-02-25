@@ -187,6 +187,19 @@ typedef void (^VPDTokenErrorHandler)(NSError *error);
 /// \param warning  The warning
 -(void) sendWarning: (NSString *) warning;
 
+///
+/// \brief Device connection failed
+///
+/// Indicates the device connection attempt failed and no attempt to restablish connection would be made
+///
+/// \param the error with the cause for the connection failure
+///
+-(void)devicePoolDeviceSetupError:(NSError *)error;
+
+typedef void (^VPDCofirmContinueConfigurationOnStartSession)(BOOL yes);
+
+-(void) onConfirmConfigureDuringSessionStart:(NSString *)description callback:(VPDCofirmContinueConfigurationOnStartSession) confirmCallback;
+
 @end
 
 #endif /* !DOXYGEN_SHOULD_SKIP_THIS */

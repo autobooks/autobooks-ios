@@ -319,6 +319,7 @@ SWIFT_CLASS("_TtC15triPOSMobileSDK23PaymentCardReaderBridge") SWIFT_AVAILABILITY
 - (void)resetWithCompletionHandler:(void (^ _Nonnull)(BOOL, NSError * _Nullable))completionHandler;
 @property (nonatomic, readonly, copy) NSString * _Nullable lastErrorName;
 @property (nonatomic, readonly, copy) NSString * _Nullable lastErrorDescription;
+- (void)saveLastErrorWithError:(NSError * _Nonnull)error function:(NSString * _Nonnull)function file:(NSString * _Nonnull)file line:(NSInteger)line;
 @end
 
 

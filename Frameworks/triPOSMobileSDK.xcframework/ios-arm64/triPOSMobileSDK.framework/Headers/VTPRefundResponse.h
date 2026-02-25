@@ -14,6 +14,8 @@
 #import "VTPStoreAndForwardResponse.h"
 #import "VTPValutecRewardsResponse.h"
 #import "VTPPINlessPOSConversionIndicatorResponse.h"
+#import "VTPDebitFinancialResponseBase.h"
+#import "VTPLanguageResponse.h"
 
 
 ///
@@ -21,7 +23,8 @@
 ///
 /// \brief The definition of the refund response
 ///
-@interface VTPRefundResponse : NSObject <VTPFinancialResponseBase, VTPFinancialResponseCard, VTPFinancialResponseCardVerification, VTPFinancialResponseEmv, VTPFinancialResponseHost, VTPStoreAndForwardResponse, VTPValutecRewardsResponse, VTPPINlessPOSConversionIndicatorResponse>
+@interface VTPRefundResponse : NSObject <VTPFinancialResponseBase, VTPFinancialResponseCard, VTPFinancialResponseCardVerification, VTPFinancialResponseEmv, VTPFinancialResponseHost, VTPStoreAndForwardResponse, VTPValutecRewardsResponse, VTPPINlessPOSConversionIndicatorResponse, VTPDebitFinancialResponseBase,
+VTPLanguageResponse, VTPFinancialResponseAmounts>
 
 @end
 
