@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Autobooks'
-  s.version = '2.3.5'
+  s.version = '2.4.0'
   s.license = 'Apache2'
   s.summary = 'Autobooks SDK for iOS'
   s.homepage = 'https://github.com/autobooks/autobooks-ios'
@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   
   s.vendored_frameworks = ['Frameworks/Autobooks.xcframework', 'Frameworks/triPOSMobileSDK.xcframework']
 
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  # No EXCLUDED_ARCHS: as of 2.4.0 every vendored slice (Autobooks, triPOS, Kount) ships a
+  # native arm64 iOS Simulator slice, matching the project (which removed EXCLUDED_ARCHS in 2.3.6).
+  # Excluding arm64 here would needlessly force Apple-silicon consumers into x86_64/Rosetta builds.
 end

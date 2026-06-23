@@ -7,7 +7,7 @@ The Autobooks SDK provides an interface for Apple's ProximityReader framework an
 ### Minimum SDK requirements
 
 * iOS 16.0+
-* Xcode 16.3
+* Xcode 26
 
 Additionally, a US-based IP address may be required to connect to the Autobooks SDK backend.  You may receive a 403 error outside the US.
 
@@ -40,15 +40,9 @@ pod 'Autobooks'
 
 ### Alternate framework flavors
 
-As of 1.7.2, a smaller alternate framework without Worldpay support is provided via `Autobooks-FiservOnly.xcframework`; if you don't know if you want this, you probably don't.  This is a drop-in replacement for the combination framework, but is only supported via the manual or SPM install methods.  Importantly, the slices provided by each framework are a little different:
+As of 1.7.2, a smaller alternate framework without Worldpay support is provided via `Autobooks-FiservOnly.xcframework`; if you don't know if you want this, you probably don't.  This is a drop-in replacement for the combination framework, but is only supported via the manual or SPM install methods.  Note that the full `Autobooks.xcframework` requires the `triPOSMobileSDK.xcframework` to also be embedded; the Fiserv-only variant does not.
 
-#### `Autobooks.xcframework`
-* `ios-arm64`
-* `ios-x86_64-simulator`
-
-#### `Autobooks-FiservOnly.xcframework`
-* `ios-arm64`
-* `ios-arm64_x86_64-simulator`
+Both frameworks provide `ios-arm64` and `ios-arm64_x86_64-simulator` slices.
 
 ## 2. Set up the entitlement for Tap to Pay on iPhone
 
@@ -61,10 +55,6 @@ First, import the Autobooks framework:
 ```swift
 import Autobooks
 ```
-
-### Tap to Pay Quick Start
-
-If you're here for Tap to Pay, you want the following code:
 
 ### Configuration
 
@@ -207,22 +197,29 @@ See the `AB.Notifications` structure for more events.
 #### Payment Form
 ```swift
     AB.startPaymentForm(subscriptionKey: <#"your-subscription-key"#>,
-                        loginCredential: .token(<#"your-sso-token"#>)),
+                        loginCredential: .token(<#"your-sso-token"#>),
                         configuration: configuration)
 ```
 
 #### Full Autobooks
 ```swift
     AB.startFullAutobooks(subscriptionKey: <#"your-subscription-key"#>,
-                          loginCredential: .token(<#"your-sso-token"#>)),
+                          loginCredential: .token(<#"your-sso-token"#>),
                           configuration: configuration)
 ```
 
 #### Checkout Pages
 ```swift
     AB.startCheckoutPages(subscriptionKey: <#"your-subscription-key"#>,
-                          loginCredential: .token(<#"your-sso-token"#>)),
+                          loginCredential: .token(<#"your-sso-token"#>),
                           configuration: configuration)
+```
+
+#### Capital
+```swift
+    AB.startCapital(subscriptionKey: <#"your-subscription-key"#>,
+                    loginCredential: .token(<#"your-sso-token"#>),
+                    configuration: configuration)
 ```
 
 ### Tap to Pay
@@ -232,9 +229,9 @@ Check the value of the `AB.supportsTapToPay` property to determine if the device
 ```swift
     AB.startTapToPay(subscriptionKey: <#"your-subscription-key"#>,
                      configuration: <#configuration#>,
-                     device: <#.real#>) { reason in
+                     loginProvider: { reason in
         return .token(<#"your-sso-token"#>)
-    }
+    })
 ```
 
 The trailing closure (the `loginProvider`) will be called regularly to obtain the most recent token to access the Autobooks API.  As of 1.8, this closure has a `reason` parameter that will specify why the `loginProvider` is being called.

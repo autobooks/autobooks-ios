@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
-// swift-module-flags: -target x86_64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Autobooks
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-compiler-version: Apple Swift version 6.2 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-module-flags: -target arm64-apple-ios16.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name Autobooks
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import AVKit
 import CallKit
 import Combine
@@ -22,7 +22,8 @@ import _SceneKit_SwiftUI
 import _StringProcessing
 import _SwiftConcurrencyShims
 import _SwiftData_SwiftUI
-public struct Stubs : Swift.Equatable {
+import _WebKit_SwiftUI
+public struct Stubs : Swift.Equatable, @unchecked Swift.Sendable {
   public static func == (a: Autobooks.Stubs, b: Autobooks.Stubs) -> Swift.Bool
 }
 extension Autobooks.Stubs {
@@ -34,25 +35,30 @@ extension Autobooks.Stubs {
   }
   public static func webPrompts(loadedWebURL: Foundation.URL, needsEnrollmentCallback: Foundation.URL, hasMissingInfoCallback: Foundation.URL) -> Autobooks.Stubs
 }
-#warning("ENABLE_TRIPOS=1, Linked with triPOSMobileSDK")
 public enum AB {
-  public enum LoginCredential {
+  public enum LoginCredential : Swift.Sendable {
     case token(Swift.String)
   }
-  public struct Style {
-    public struct Colors {
+  public struct Style : @unchecked Swift.Sendable {
+    public struct Colors : @unchecked Swift.Sendable {
       public static let `default`: Autobooks.AB.Style.Colors
+      #if compiler(>=5.3) && $NonescapableTypes
       public init(primaryColor: UIKit.UIColor, actionButtonColor: UIKit.UIColor? = nil, secondaryButtonColor: UIKit.UIColor? = nil, tertiaryButtonColor: UIKit.UIColor? = nil, linkColor: UIKit.UIColor? = nil, progressColor: UIKit.UIColor? = nil, progressTrackColor: UIKit.UIColor? = nil, confettiColor: UIKit.UIColor? = nil)
+      #endif
     }
-    public struct CustomNavigationBar {
+    public struct CustomNavigationBar : @unchecked Swift.Sendable {
       public static let `default`: Autobooks.AB.Style.CustomNavigationBar
+      #if compiler(>=5.3) && $NonescapableTypes
       public init(standardAppearance: UIKit.UINavigationBarAppearance? = nil, compactAppearance: UIKit.UINavigationBarAppearance? = nil, scrollEdgeAppearance: UIKit.UINavigationBarAppearance? = nil, compactScrollEdgeAppearance: UIKit.UINavigationBarAppearance? = nil, navigationBarClass: Swift.AnyClass? = nil, toolbarClass: Swift.AnyClass? = nil)
+      #endif
     }
     public static let `default`: Autobooks.AB.Style
     public init(primaryColor: UIKit.UIColor)
+    #if compiler(>=5.3) && $NonescapableTypes
     public init(colors: Autobooks.AB.Style.Colors, customNavigationBar: Autobooks.AB.Style.CustomNavigationBar? = nil)
+    #endif
   }
-  public struct Configuration {
+  public struct Configuration : Swift.Sendable {
     public static let `default`: Autobooks.AB.Configuration
     public let mode: Autobooks.AB.Mode
     public let style: Autobooks.AB.Style
@@ -60,13 +66,13 @@ public enum AB {
     public let shouldFallBackToPaymentForm: Swift.Bool
     public let shouldConfirmClose: Swift.Bool
     public let shouldCloseOnAPIError: Swift.Bool
-    public enum TextReceiptRegion : Swift.Equatable {
+    public enum TextReceiptRegion : Swift.Equatable, Swift.Sendable {
       case current
       case region(Swift.String)
       public static func == (a: Autobooks.AB.Configuration.TextReceiptRegion, b: Autobooks.AB.Configuration.TextReceiptRegion) -> Swift.Bool
     }
     public let textReceiptRegion: Autobooks.AB.Configuration.TextReceiptRegion
-    public enum TextReceiptPrefixRequirement : Swift.Equatable {
+    public enum TextReceiptPrefixRequirement : Swift.Equatable, Swift.Sendable {
       case required
       case omitted
       public static func == (a: Autobooks.AB.Configuration.TextReceiptPrefixRequirement, b: Autobooks.AB.Configuration.TextReceiptPrefixRequirement) -> Swift.Bool
@@ -76,7 +82,7 @@ public enum AB {
       }
     }
     public let textReceiptPrefixRequirement: Autobooks.AB.Configuration.TextReceiptPrefixRequirement
-    public enum CloseButtonStyle {
+    public enum CloseButtonStyle : Swift.Sendable {
       case close
       case signOut
       public static func == (a: Autobooks.AB.Configuration.CloseButtonStyle, b: Autobooks.AB.Configuration.CloseButtonStyle) -> Swift.Bool
@@ -89,9 +95,9 @@ public enum AB {
     public let webViewsShowControls: Swift.Bool
     public init(mode: Autobooks.AB.Mode = AB.Configuration.default.mode, style: Autobooks.AB.Style = AB.Configuration.default.style, responseProvider: Autobooks.AB.ResponseProvider = AB.Configuration.default.responseProvider, shouldFallBackToPaymentForm: Swift.Bool = AB.Configuration.default.shouldFallBackToPaymentForm, shouldConfirmClose: Swift.Bool = AB.Configuration.default.shouldConfirmClose, shouldCloseOnAPIError: Swift.Bool = AB.Configuration.default.shouldCloseOnAPIError, closeButtonStyle: Autobooks.AB.Configuration.CloseButtonStyle = AB.Configuration.default.closeButtonStyle, webViewsShowControls: Swift.Bool = AB.Configuration.default.webViewsShowControls, textReceiptRegion: Autobooks.AB.Configuration.TextReceiptRegion = AB.Configuration.default.textReceiptRegion, textReceiptPrefixRequirement: Autobooks.AB.Configuration.TextReceiptPrefixRequirement = AB.Configuration.default.textReceiptPrefixRequirement)
   }
-  public enum Mode : Swift.Equatable, Swift.Hashable, Swift.CaseIterable {
+  public enum Mode : Swift.Equatable, Swift.Hashable, Swift.CaseIterable, Swift.Sendable {
     public static let allCases: [Autobooks.AB.Mode]
-    public enum PrereleaseEnvironment : Swift.Equatable {
+    public enum PrereleaseEnvironment : Swift.Equatable, Swift.Sendable {
       case local
       case development
       case staging
@@ -113,7 +119,7 @@ public enum AB {
       get
     }
   }
-  public enum ResponseProvider : Swift.Equatable {
+  public enum ResponseProvider : Swift.Equatable, Swift.Sendable {
     case backendMocked
     case hybrid(Autobooks.Stubs)
     case live
@@ -132,27 +138,57 @@ public enum AB {
   public static var supportsTapToPay: Swift.Bool {
     get
   }
-  public static var disableDuplicateDetection: Swift.Bool {
+  nonisolated(unsafe) public static var disableDuplicateDetection: Swift.Bool {
     get
   }
   public typealias DismissalBlock = @_Concurrency.MainActor @Sendable (Autobooks.AB.DismissalReason) -> Swift.Void
   public typealias LoginProviderBlock = @_Concurrency.MainActor @Sendable (Autobooks.AB.LoginReason) async throws -> Autobooks.AB.LoginCredential
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public static func startTapToPay(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration = .default, loginProvider: @escaping Autobooks.AB.LoginProviderBlock, completion: Autobooks.AB.DismissalBlock? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public static func startPaymentForm(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public static func makePaymentFormViewController(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil) -> UIKit.UIViewController
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public static func startInvoicing(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public static func makeInvoicingViewController(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil) -> UIKit.UIViewController
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public static func startCheckoutPages(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public static func makeCheckoutPagesViewController(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil) -> UIKit.UIViewController
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public static func startCapital(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public static func makeCapitalViewController(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil) -> UIKit.UIViewController
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public static func startFullAutobooks(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public static func makeFullAutobooksViewController(subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil) -> UIKit.UIViewController
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public static func startURL(_ url: Foundation.URL, subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public static func makeURLViewController(_ url: Foundation.URL, subscriptionKey: Swift.String, loginCredential: Autobooks.AB.LoginCredential, configuration: Autobooks.AB.Configuration = .default, completion: Autobooks.AB.DismissalBlock? = nil) -> UIKit.UIViewController
+  #endif
   @available(*, deprecated, message: "Using stop() is deprecated.  You are encouraged to use a UIViewController reference and dismiss it directly.")
   @_Concurrency.MainActor public static func stop()
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 17.0, *)
   @_Concurrency.MainActor public static func makeTapToPayController(subscriptionKey: Swift.String, configuration: Autobooks.AB.Configuration, loginProvider: @escaping Autobooks.AB.LoginProviderBlock, bearerToken: Swift.String? = nil, invokedFromPresenter: Swift.Bool = false, completion: Autobooks.AB.DismissalBlock? = nil) -> UIKit.UINavigationController
-  public enum DismissalReason : Swift.Equatable {
+  #endif
+  public enum DismissalReason : Swift.Equatable, Swift.Sendable {
     case userInitiated
     case notAuthorized
     case forbidden
@@ -163,7 +199,7 @@ public enum AB {
       get
     }
   }
-  public enum LoginReason : Swift.Equatable {
+  public enum LoginReason : Swift.Equatable, Swift.Sendable {
     case first
     case retry
     case timer
@@ -184,8 +220,12 @@ extension Autobooks.AB.Mode : Swift.CustomStringConvertible {
     get
   }
 }
-@_hasMissingDesignatedInitializers final public class AutobooksAPI {
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class AutobooksAPI {
+  #if compiler(>=5.3) && $IsolatedDeinit
+  @objc nonisolated deinit
+  #else
   @objc deinit
+  #endif
 }
 extension Autobooks.AB.Configuration.TextReceiptPrefixRequirement : Swift.Hashable {}
 extension Autobooks.AB.Configuration.CloseButtonStyle : Swift.Equatable {}
@@ -193,3 +233,4 @@ extension Autobooks.AB.Configuration.CloseButtonStyle : Swift.Hashable {}
 extension Autobooks.AB.Mode.PrereleaseEnvironment : Swift.Hashable {}
 extension Autobooks.AB.DismissalReason : Swift.Hashable {}
 extension Autobooks.AB.LoginReason : Swift.Hashable {}
+extension Autobooks.AutobooksAPI : Swift.Sendable {}

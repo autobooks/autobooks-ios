@@ -845,10 +845,14 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "triPOSMobileSDK",
+        "printedName": "triPOSMobileSDK",
         "declKind": "Import",
-        "moduleName": "Autobooks"
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "AccessControl",
+          "Preconcurrency"
+        ]
       },
       {
         "kind": "Import",
@@ -945,6 +949,17 @@
         "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "Autobooks"
+      },
+      {
+        "kind": "Import",
+        "name": "triPOSMobileSDK",
+        "printedName": "triPOSMobileSDK",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "AccessControl",
+          "Preconcurrency"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -6209,6 +6224,17 @@
       },
       {
         "kind": "Import",
+        "name": "triPOSMobileSDK",
+        "printedName": "triPOSMobileSDK",
+        "declKind": "Import",
+        "moduleName": "Autobooks",
+        "declAttributes": [
+          "AccessControl",
+          "Preconcurrency"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Combine",
         "printedName": "Combine",
         "declKind": "Import",
@@ -7028,91 +7054,105 @@
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 27871,
-      "length": 5,
-      "value": "\"abc\""
+      "offset": 26080,
+      "length": 74,
+      "value": "\"079701FC1CBBEACDC0353ADFD246B965965C19C69BE2BC2B102DBCD524A78301A2AC6D01\""
     },
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 27939,
-      "length": 5,
-      "value": "\"123\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
-      "kind": "StringLiteral",
-      "offset": 28008,
-      "length": 5,
-      "value": "\"def\""
-    },
-    {
-      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
-      "kind": "StringLiteral",
-      "offset": 28077,
+      "offset": 26221,
       "length": 9,
-      "value": "\"abc-def\""
+      "value": "\"1045826\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
+      "kind": "StringLiteral",
+      "offset": 26298,
+      "length": 11,
+      "value": "\"364801436\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
+      "kind": "StringLiteral",
+      "offset": 26380,
+      "length": 7,
+      "value": "\"14643\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
+      "kind": "StringLiteral",
+      "offset": 26463,
+      "length": 7,
+      "value": "\"1.0.0\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
+      "kind": "StringLiteral",
+      "offset": 26543,
+      "length": 11,
+      "value": "\"Autobooks\""
     },
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "IntegerLiteral",
-      "offset": 28125,
+      "offset": 26593,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "IntegerLiteral",
-      "offset": 28137,
+      "offset": 26605,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 28154,
+      "offset": 26622,
       "length": 22,
       "value": "\"example@autobooks.co\""
     },
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "BooleanLiteral",
-      "offset": 28187,
+      "offset": 26655,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 28267,
+      "offset": 26735,
       "length": 38,
       "value": "\"3c00c000-a005-ea4c-5f64-02525e000001\""
     },
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 28730,
-      "length": 12,
-      "value": "\"##SECRET##\""
+      "offset": 27204,
+      "length": 8,
+      "value": "\"ABC123\""
     },
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "StringLiteral",
-      "offset": 28787,
-      "length": 5,
-      "value": "\"abc\""
+      "offset": 27257,
+      "length": 3,
+      "value": "\"1\""
     },
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "BooleanLiteral",
-      "offset": 28989,
+      "offset": 27457,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Stubbing.swift",
       "kind": "FloatLiteral",
-      "offset": 29330,
+      "offset": 27792,
       "length": 3,
       "value": "6.0"
     },
@@ -8571,6 +8611,160 @@
       "offset": 2361,
       "length": 4,
       "value": "1009"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 9646,
+      "length": 6,
+      "value": "\"2342\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 9741,
+      "length": 11,
+      "value": "\"364802200\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 9839,
+      "length": 9,
+      "value": "\"1234052\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 9941,
+      "length": 74,
+      "value": "\"7341786DC28710A1C8DA10871C74E27D5F857EAC594C29F2F9EA9788B88B0DD79272C001\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 10093,
+      "length": 19,
+      "value": "\"terminalProfileId\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 11756,
+      "length": 20,
+      "value": "\"*** vtp.initialize\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11851,
+      "length": 2,
+      "value": "26"
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 13326,
+      "length": 70,
+      "value": "\"*** vtp.initialize: already initialized, deinitializing and retrying\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 13621,
+      "length": 48,
+      "value": "\"*** vtp.initialize: reinitialized successfully\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 13758,
+      "length": 64,
+      "value": "\"*** vtp.initialize: deinitialize\/reinitialize failed: \""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 13821,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 14196,
+      "length": 37,
+      "value": "\"*** vtp.initialize failed: \""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 14232,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 14818,
+      "length": 50,
+      "value": "\"*** deviceDidError: \""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 14867,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 16064,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 16148,
+      "length": 4,
+      "value": "\"01\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 16278,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 19095,
+      "length": 33,
+      "value": "\"*** Sale succeeded: \""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 19127,
+      "length": 4,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 19529,
+      "length": 40,
+      "value": "\"*** Sale failed due to error: \""
+    },
+    {
+      "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Processors\/TriPOS.swift",
+      "kind": "StringLiteral",
+      "offset": 19568,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/josh\/Builds\/autobooks-ios-sdk\/Sources\/Networking\/Models.swift",
@@ -14509,49 +14703,49 @@
       "value": "\"User-Agent\""
     },
     {
-      "filePath": "\/Users\/josh\/Library\/Developer\/Xcode\/DerivedData\/Autobooks-aipqmbvjpkhfabelrtlqgshqesas\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Autobooks-FiservOnly\/IntermediateBuildFilesPath\/Autobooks.build\/Release - Fiserv Only-iphonesimulator\/Autobooks.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/josh\/Library\/Developer\/Xcode\/DerivedData\/Autobooks-aipqmbvjpkhfabelrtlqgshqesas\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Autobooks\/IntermediateBuildFilesPath\/Autobooks.build\/Release-iphonesimulator\/Autobooks.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 728,
       "length": 10,
       "value": "\"Card Pay\""
     },
     {
-      "filePath": "\/Users\/josh\/Library\/Developer\/Xcode\/DerivedData\/Autobooks-aipqmbvjpkhfabelrtlqgshqesas\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Autobooks-FiservOnly\/IntermediateBuildFilesPath\/Autobooks.build\/Release - Fiserv Only-iphonesimulator\/Autobooks.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/josh\/Library\/Developer\/Xcode\/DerivedData\/Autobooks-aipqmbvjpkhfabelrtlqgshqesas\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Autobooks\/IntermediateBuildFilesPath\/Autobooks.build\/Release-iphonesimulator\/Autobooks.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 865,
       "length": 11,
       "value": "\"Phone Pay\""
     },
     {
-      "filePath": "\/Users\/josh\/Library\/Developer\/Xcode\/DerivedData\/Autobooks-aipqmbvjpkhfabelrtlqgshqesas\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Autobooks-FiservOnly\/IntermediateBuildFilesPath\/Autobooks.build\/Release - Fiserv Only-iphonesimulator\/Autobooks.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/josh\/Library\/Developer\/Xcode\/DerivedData\/Autobooks-aipqmbvjpkhfabelrtlqgshqesas\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Autobooks\/IntermediateBuildFilesPath\/Autobooks.build\/Release-iphonesimulator\/Autobooks.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1020,
       "length": 19,
       "value": "\"fullAutobooksIcon\""
     },
     {
-      "filePath": "\/Users\/josh\/Library\/Developer\/Xcode\/DerivedData\/Autobooks-aipqmbvjpkhfabelrtlqgshqesas\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Autobooks-FiservOnly\/IntermediateBuildFilesPath\/Autobooks.build\/Release - Fiserv Only-iphonesimulator\/Autobooks.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/josh\/Library\/Developer\/Xcode\/DerivedData\/Autobooks-aipqmbvjpkhfabelrtlqgshqesas\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Autobooks\/IntermediateBuildFilesPath\/Autobooks.build\/Release-iphonesimulator\/Autobooks.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1175,
       "length": 15,
       "value": "\"invoicingIcon\""
     },
     {
-      "filePath": "\/Users\/josh\/Library\/Developer\/Xcode\/DerivedData\/Autobooks-aipqmbvjpkhfabelrtlqgshqesas\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Autobooks-FiservOnly\/IntermediateBuildFilesPath\/Autobooks.build\/Release - Fiserv Only-iphonesimulator\/Autobooks.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/josh\/Library\/Developer\/Xcode\/DerivedData\/Autobooks-aipqmbvjpkhfabelrtlqgshqesas\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Autobooks\/IntermediateBuildFilesPath\/Autobooks.build\/Release-iphonesimulator\/Autobooks.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1310,
       "length": 7,
       "value": "\"money\""
     },
     {
-      "filePath": "\/Users\/josh\/Library\/Developer\/Xcode\/DerivedData\/Autobooks-aipqmbvjpkhfabelrtlqgshqesas\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Autobooks-FiservOnly\/IntermediateBuildFilesPath\/Autobooks.build\/Release - Fiserv Only-iphonesimulator\/Autobooks.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/josh\/Library\/Developer\/Xcode\/DerivedData\/Autobooks-aipqmbvjpkhfabelrtlqgshqesas\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Autobooks\/IntermediateBuildFilesPath\/Autobooks.build\/Release-iphonesimulator\/Autobooks.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1451,
       "length": 14,
       "value": "\"paymentsIcon\""
     },
     {
-      "filePath": "\/Users\/josh\/Library\/Developer\/Xcode\/DerivedData\/Autobooks-aipqmbvjpkhfabelrtlqgshqesas\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Autobooks-FiservOnly\/IntermediateBuildFilesPath\/Autobooks.build\/Release - Fiserv Only-iphonesimulator\/Autobooks.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/josh\/Library\/Developer\/Xcode\/DerivedData\/Autobooks-aipqmbvjpkhfabelrtlqgshqesas\/Build\/Intermediates.noindex\/ArchiveIntermediates\/Autobooks\/IntermediateBuildFilesPath\/Autobooks.build\/Release-iphonesimulator\/Autobooks.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1599,
       "length": 14,
